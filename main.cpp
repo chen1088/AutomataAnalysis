@@ -1,14 +1,18 @@
 #include <iostream>
 #include <boost/dynamic_bitset.hpp>
 #include <gmp.h>
-int main(int, char**){
+#include <stdio.h>
+#include <iostream>
+#include <mp++/mp++.hpp>
+
+using int_t = mppp::integer<1>;
+
+int main()
+{
     boost::dynamic_bitset<> db(10);
     db.set(3);
     std::cout << db<<std::endl;
     std::cout << "Hello, from ProductAutomata!\n";
-    mpz_t a;
-    mpz_init(a);
-    mpz_set_ui(a, 10);
-    mpz_out_str(stdout,10,a);
-    std::cout << a << std::endl;
+    int_t n{42};
+    std::cout << n << '\n';
 }

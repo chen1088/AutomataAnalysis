@@ -12,12 +12,25 @@ set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF) 
 find_package(Boost 1.83.0 COMPONENTS filesystem boost) 
 
-if(Boost_FOUND)
-    include_directories(${Boost_INCLUDE_DIRS}) 
-    target_link_libraries(ProductAutomata PUBLIC Boost::filesystem)
-    target_link_libraries(ProductAutomata PUBLIC Boost::boost)
-endif()
+find_package(MPFR)
 
-if(GMP_FOUND)
-    target_link_libraries(ProductAutomata PUBLIC gmp gmpxx) 
-endif()
+find_package(mp++ REQUIRED)
+
+ # Create an executable, and link it to the mp++::mp++ imported target.
+ # This ensures that, in the compilation of 'main', mp++'s include
+ # dirs are added to the include path of the compiler and that mp++'s
+ # dependencies (e.g., GMP) are transitively linked to 'main'.
+target_link_libraries(ProductAutomata mp++::mp++)
+# if(Boost_FOUND)
+#     include_directories(${Boost_INCLUDE_DIRS}) 
+#     target_link_libraries(ProductAutomata PUBLIC Boost::filesystem)
+#     target_link_libraries(ProductAutomata PUBLIC Boost::boost)
+# endif()
+
+# if(GMP_FOUND)
+#     target_link_libraries(ProductAutomata PUBLIC gmp gmpxx) 
+# endif()
+
+# if(MPFR_FOUND)
+#     target_link_libraries(ProductAutomata PUBLIC mpfr)
+# endif()
