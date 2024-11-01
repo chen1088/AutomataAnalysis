@@ -3,11 +3,11 @@
 #include <gmp.h>
 #include <stdio.h>
 #include <iostream>
-#include <mp++/mp++.hpp>
+//#include <mp++/mp++.hpp>
 #include <mgl2/fltk.h>
-#include "orgf.h"
+#include "urgf.h"
 
-using int_t = mppp::integer<1>;
+//using int_t = mppp::integer<1>;
 
 int graph(mglGraph *gr) {
     gr->Title("MathGL Demo");
@@ -24,8 +24,8 @@ int main()
     db.set(3);
     std::cout << db<<std::endl;
     std::cout << "Hello, from ProductAutomata!\n";
-    int_t n{42};
-    std::cout << n << '\n';
+    //int_t n{42};
+    //std::cout << n << '\n';
     mglFLTK gr(graph, "MathGL demo window title");
     return gr.Run();
 }
