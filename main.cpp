@@ -6,6 +6,8 @@
 //#include <mp++/mp++.hpp>
 #include <mgl2/fltk.h>
 #include "urgf.h"
+#include"flint/arb.h"
+#include"flint/flint.h"
 
 //using int_t = mppp::integer<1>;
 
@@ -20,14 +22,16 @@ int graph(mglGraph *gr) {
 }
 int main()
 {
-    boost::dynamic_bitset<> db(10);
-    db.set(3);
-    std::cout << db<<std::endl;
-    std::cout << "Hello, from ProductAutomata!\n";
+    // boost::dynamic_bitset<> db(10);
+    // db.set(3);
+    // std::cout << db<<std::endl;
+    // std::cout << "Hello, from ProductAutomata!\n";
     //int_t n{42};
     //std::cout << n << '\n';
-    mglFLTK gr(graph, "MathGL demo window title");
-    return gr.Run();
+    urgf::test();
+    // mglFLTK gr(graph, "MathGL demo window title");
+    // return gr.Run();
+    return 0;
 }
 
 
