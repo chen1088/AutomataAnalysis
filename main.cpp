@@ -6,8 +6,8 @@
 //#include <mp++/mp++.hpp>
 #include <mgl2/fltk.h>
 #include "urgf.h"
-#include"flint/arb.h"
-#include"flint/flint.h"
+//#include"flint/arb.h"
+//#include"flint/flint.h"
 
 //using int_t = mppp::integer<1>;
 
@@ -29,8 +29,8 @@ int main()
     //int_t n{42};
     //std::cout << n << '\n';
     urgf::test();
-    // mglFLTK gr(graph, "MathGL demo window title");
-    // return gr.Run();
+    //mglFLTK gr(graph, "MathGL demo window title");
+    //return gr.Run();
     return 0;
 }
 
