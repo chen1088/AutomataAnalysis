@@ -2,14 +2,18 @@
 #include<map>
 #include<vector>
 #include <queue>
+#include <set>
+#include <ranges>
 using namespace std;
 #include<boost/dynamic_bitset/dynamic_bitset.hpp>
-using namespace boost;
+using boost::dynamic_bitset;
 class RegPDFA
 {
 public:
    bool is_end = false;
    unsigned int size;
+   // a state label is defined by the shortest string that reaches the state.
+   // We are not storing the states which have only one incoming transition.
    map<dynamic_bitset<>, dynamic_bitset<>> congruence0;
    map<dynamic_bitset<>, dynamic_bitset<>> congruence1;
    // for <k,v> pairs we only record the v's whose k's are more than 1
@@ -22,7 +26,8 @@ public:
    RegPDFA(unsigned int s);
    void reset_enumeration();
    void next();
-   dynamic_bitset<> get_next_state(dynamic_bitset<> currentstate, dynamic_bitset<> str);
+   dynamic_bitset<> reduce(dynamic_bitset<> currentstate, dynamic_bitset<> str);
+   bool check_completeness();
    static map<boost::dynamic_bitset<>,boost::dynamic_bitset<>> compute_product(map<boost::dynamic_bitset<>, boost::dynamic_bitset<>> a, map<boost::dynamic_bitset<>, boost::dynamic_bitset<>> b)
    {
       // we might need to use bi-map from boost library
