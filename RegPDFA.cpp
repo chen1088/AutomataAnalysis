@@ -24,42 +24,37 @@ void RegPDFA::next()
 
 dynamic_bitset<> RegPDFA::reduce(dynamic_bitset<> currentstate, dynamic_bitset<> str)
 {
-   auto res = dynamic_bitset<>(size);
-   // 1. s is in the map, this is good.
-   if (congruence0.find(currentstate) != congruence0.end())
+   // Given a current state and a string, reduce the state to the final state.
+   if (str.count() == 0)
+      return currentstate;
+   for(auto i = 0;i<str.count();i++)
    {
-      return congruence0[currentstate];
-   }
-   else if(congruence1.find(currentstate) != congruence1.end())
-   {
-      return congruence1[currentstate];
-   }
-   // 2. s is not in the map, and s can be reduced, we solve the congruence of s.
-   auto strcopy = str;
-   while(strcopy.count() > 0)
-   {
-      auto temp = strcopy;
-      strcopy = dynamic_bitset<>(size);
-      for(auto i = 0; i < size; i++)
+      if(str[i])
       {
-         if(temp[i] == 1)
-         {
-            if(congruence0.find(currentstate) != congruence0.end())
-            {
-               strcopy |= congruence0[currentstate];
-            }
-            if(congruence1.find(currentstate) != congruence1.end())
-            {
-               strcopy |= congruence1[currentstate];
-            }
-         }
+         if(congruence1.find(currentstate) != congruence1.end())
+            currentstate=congruence1[currentstate];
+         else
+            currentstate.append(true);
       }
-      if(strcopy == temp)
-         break;
+      else
+      {
+         if(congruence0.find(currentstate) != congruence0.end())
+            currentstate=congruence0[currentstate];
+         else
+            currentstate.append(false);
+      }
    }
-   // 3. s is not in the map, and s cannot be reduced, by default the sc(c is any character) is congruent to sc.
+   return currentstate;
+}
+
+RegPDFA RegPDFA::product(RegPDFA other)
+{
+   RegPDFA res(size+other.size);
+   res.congruence0 = compute_product(congruence0,other.congruence0);
+   res.congruence1 = compute_product(congruence1,other.congruence1);
    return res;
 }
+
 bool RegPDFA::check_completeness()
 {
    // Given congruence0 and congruence1, check if they are complete.
