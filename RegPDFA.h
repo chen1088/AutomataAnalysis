@@ -4,6 +4,8 @@
 #include <queue>
 #include <set>
 #include <ranges>
+#include<flint/fmpz_poly.h>
+#include"urgf.h"
 using namespace std;
 #include<boost/dynamic_bitset/dynamic_bitset.hpp>
 using boost::dynamic_bitset;
@@ -21,29 +23,18 @@ public:
    // 1. s is in the map, this is good.
    // 2. s is not in the map, and s can be reduced, we solve the congruence of s.
    // 3. s is not in the map, and s cannot be reduced, by default the sc(c is any character) is congruent to sc.
+   // Plan changed. Now congruences must be complete.
 
    RegPDFA();
    RegPDFA(unsigned int s);
+   RegPDFA(string s);
    void reset_enumeration();
    void next();
    dynamic_bitset<> reduce(dynamic_bitset<> currentstate, dynamic_bitset<> str);
+   RegPDFA cartesian_product(RegPDFA other);
+   void get_univariate_polynomial(fmpz_poly_t& poly, dynamic_bitset<> state);
    bool check_completeness();
-   static map<boost::dynamic_bitset<>,boost::dynamic_bitset<>> compute_product(map<boost::dynamic_bitset<>, boost::dynamic_bitset<>> a, map<boost::dynamic_bitset<>, boost::dynamic_bitset<>> b)
-   {
-      // we might need to use bi-map from boost library
-      // we should assume that the transition table is complete
-      map<boost::dynamic_bitset<>, boost::dynamic_bitset<>> res;
-      map<pair<boost::dynamic_bitset<>,boost::dynamic_bitset<>>, boost::dynamic_bitset<>> temp;
-      queue<pair<boost::dynamic_bitset<>, boost::dynamic_bitset<>>> q;
-      for (auto i : a)
-      {
-         for (auto j : b)
-         {
-            
-         }
-      }
-      return res;
-   }
+
    static map<boost::dynamic_bitset<>,boost::dynamic_bitset<>> renamestates(
       map<pair<boost::dynamic_bitset<>,boost::dynamic_bitset<>>, pair<boost::dynamic_bitset<>, boost::dynamic_bitset<>>> a)
    {

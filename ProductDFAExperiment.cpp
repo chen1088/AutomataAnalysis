@@ -28,14 +28,14 @@ void ProductDFAExperiment::incrementn()
    // update the strings as well.
    // put the two new <k,v> in the new table.
    map<StateLabel, vector<boost::dynamic_bitset<>>> newtable;
-   ProductPDFA product(unique_ptr<PDFA>(new BackToFirstDFA(m)));
+   ProductPDFA cartesian_product(unique_ptr<PDFA>(new BackToFirstDFA(m)));
    bool hardpairfound = false;
    for (auto it = table.begin(); it != table.end(); ++it)
    {
       StateLabel t = it->first;
       auto v = it->second;
-      StateLabel t0 = product.step(t, false);
-      StateLabel t1 = product.step(t, true);
+      StateLabel t0 = cartesian_product.step(t, false);
+      StateLabel t1 = cartesian_product.step(t, true);
       auto v0 = v;
       auto v1 = v;
       for (unsigned int i = 0; i < v.size(); ++i)
@@ -102,7 +102,7 @@ void ProductDFAExperiment::incrementm()
    // put the new <k,v> in the new table and merge if necessary.
    map<StateLabel, vector<boost::dynamic_bitset<>>> newtable;
    ++m;
-   ProductPDFA product(unique_ptr<PDFA>(new BackToFirstDFA(m)));
+   ProductPDFA cartesian_product(unique_ptr<PDFA>(new BackToFirstDFA(m)));
    for (auto it = table.begin(); it != table.end(); ++it)
    {
       // In trivial implementation, we consider every <k,v> in the table.
@@ -114,7 +114,7 @@ void ProductDFAExperiment::incrementm()
       {
          // evaluate when the individual state is a sink state.
          // now m-1 is the sink state.
-         StateLabel tnew = product.evaluate(*vit);
+         StateLabel tnew = cartesian_product.evaluate(*vit);
          if (newtable.find(tnew) == newtable.end())
          {
             newtable[tnew] = { *vit };
@@ -146,13 +146,13 @@ void ProductDFAExperiment::printtable()
 
 void ProductDFAExperiment::run()
 {
-   ProductPDFA product(unique_ptr<PDFA>(new BackToFirstDFA(2)));
+   ProductPDFA cartesian_product(unique_ptr<PDFA>(new BackToFirstDFA(2)));
    boost::dynamic_bitset<> teststr1(4, 4ul);
    VectorEnumerator::print(teststr1);
    boost::dynamic_bitset<> teststr2(4, 1ul);
    VectorEnumerator::print(teststr2);
-   StateLabel s = product.evaluate(teststr1);
-   StateLabel s2 = product.evaluate(teststr2);  
+   StateLabel s = cartesian_product.evaluate(teststr1);
+   StateLabel s2 = cartesian_product.evaluate(teststr2);  
 
    VectorEnumerator::print(s);
    VectorEnumerator::print(s2);
