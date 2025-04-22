@@ -6,6 +6,7 @@
 #include <ranges>
 #include<flint/fmpz_poly.h>
 #include"urgf.h"
+#include"urgftree.h"
 using namespace std;
 #include<boost/dynamic_bitset/dynamic_bitset.hpp>
 using boost::dynamic_bitset;
@@ -18,13 +19,15 @@ public:
    // We are not storing the states which have only one incoming transition.
    map<dynamic_bitset<>, dynamic_bitset<>> congruence0;
    map<dynamic_bitset<>, dynamic_bitset<>> congruence1;
+   map<dynamic_bitset<>, set<dynamic_bitset<>>> reversecongruence0;
+   map<dynamic_bitset<>, set<dynamic_bitset<>>> reversecongruence1;
    // for <k,v> pairs we only record the v's whose k's are more than 1
    // A complete congruence is that for any string s there can be three cases:
    // 1. s is in the map, this is good.
    // 2. s is not in the map, and s can be reduced, we solve the congruence of s.
    // 3. s is not in the map, and s cannot be reduced, by default the sc(c is any character) is congruent to sc.
    // Plan changed. Now congruences must be complete.
-
+   urgftree* tree;
    RegPDFA();
    RegPDFA(unsigned int s);
    RegPDFA(string s);
@@ -32,7 +35,9 @@ public:
    void next();
    dynamic_bitset<> reduce(dynamic_bitset<> currentstate, dynamic_bitset<> str);
    RegPDFA cartesian_product(RegPDFA other);
-   void get_univariate_polynomial(fmpz_poly_t& poly, dynamic_bitset<> state);
+   
+   urgftree compute_urgftree(dynamic_bitset<> state);
+   // Compute the urgf tree for some state.
    bool check_completeness();
 
    static map<boost::dynamic_bitset<>,boost::dynamic_bitset<>> renamestates(

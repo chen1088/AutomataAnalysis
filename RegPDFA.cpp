@@ -99,11 +99,12 @@ RegPDFA RegPDFA::cartesian_product(RegPDFA other)
    return res;
 }
 
-void RegPDFA::get_univariate_polynomial(fmpz_poly_t& poly, dynamic_bitset<> state)
+urgftree RegPDFA::compute_urgftree(dynamic_bitset<> state)
 {
-   map<dynamic_bitset<>,urgf> all_arcs;
-   
-}
+   // Given a state, compute the urgf tree of the state.
+   // Find the state first. And get the whole state in a vector.
+   vector<pair<dynamic_bitset<>, urgftree*>> stateswithurgf;
+}  
 bool RegPDFA::check_completeness()
 {
    // Given congruence0 and congruence1, check if they are complete.

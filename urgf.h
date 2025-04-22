@@ -1,6 +1,8 @@
 #pragma once
 #include <map>
 #include<flint/fmpz_poly.h>
+#include<flint/arb_fmpz_poly.h>
+#include<flint/acb.h>
 #include<iostream>
 using namespace std;
 
@@ -17,10 +19,9 @@ public:
    fmpz_poly_t numerator;
    fmpz_poly_t denominator;
    urgf operator+(urgf& other);
-   urgf operator-(urgf& other);
+   urgf operator-(urgf& other);  
    urgf operator*(urgf& other);
    urgf operator/(urgf& other);
-   
    urgf f1_minus_inv();
    std::string to_string();
    static void test()
@@ -38,6 +39,17 @@ public:
       fmpz_poly_mul(p3, p1, p2);
       fmpz_poly_gcd(p3,p1,p3);
       fmpz_poly_print_pretty(p3,"x");
+      for(int i = 0;i<100;i++)
+      {
+         fmpz_poly_mul(p3, p1, p3);
+      }
+      fmpz_poly_print_pretty(p3,"x");
+      acb_t res,x;
+      acb_init(res);
+      //acb_init(x);
+      acb_set_d_d(x,1.0,0.5);
+      arb_fmpz_poly_evaluate_acb(res,p3,x,1000);
+      acb_printd(res, 10);
    }
 };
 
