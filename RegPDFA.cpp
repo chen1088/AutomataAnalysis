@@ -103,7 +103,74 @@ urgftree RegPDFA::compute_urgftree(dynamic_bitset<> state)
 {
    // Given a state, compute the urgf tree of the state.
    // Find the state first. And get the whole state in a vector.
-   vector<pair<dynamic_bitset<>, urgftree*>> stateswithurgf;
+   // incoming and outgoing transitions do not count selfloops.
+   map<dynamic_bitset<>,vector<pair<dynamic_bitset<>,urgftree*>>> incoming_trans;
+   map<dynamic_bitset<>,vector<pair<dynamic_bitset<>,urgftree*>>> outgoing_trans;
+   map<dynamic_bitset<>,vector<urgftree*>> selfloop_trans;
+   // initialize a queue to store the states.
+   queue<dynamic_bitset<>> q;
+   for(auto i : congruence0)
+   {
+      if(i.first == state||i.first.count() == 0)
+      {
+         continue;
+      }
+      auto t = i.first;
+      q.push(t);
+   }
+   q.push(dynamic_bitset<>(0));
+   // the last state is always the starting state.
+   for(auto i : congruence0)
+   {
+      if(i.first == i.second)
+      {
+         selfloop_trans[i.first].push_back(new urgftree(urgf_operation::ATOMX));
+         continue;
+      }
+      auto from = i.first;
+      auto to = i.second;
+      incoming_trans[to].push_back({from,new urgftree(urgf_operation::ATOMX)});
+      outgoing_trans[from].push_back({to,new urgftree(urgf_operation::ATOMX)});
+   }
+   for(auto i : congruence1)
+   {
+      if(i.first == i.second)
+      {
+         selfloop_trans[i.first].push_back(new urgftree(urgf_operation::ATOMY));
+         continue;
+      }
+      auto from = i.first;
+      auto to = i.second;
+      incoming_trans[to].push_back({from,new urgftree(urgf_operation::ATOMY)});
+      outgoing_trans[from].push_back({to,new urgftree(urgf_operation::ATOMY)});
+   }
+   
+   while(!q.empty())
+   {
+      auto t = q.front();
+      q.pop();
+      // eliminate one state.
+      auto incoming = incoming_trans[t];
+      auto outgoing = outgoing_trans[t];
+      auto selfloop = selfloop_trans[t];
+      for(auto i : incoming)
+      {
+         for(auto j: outgoing)
+         {
+            if(selfloop.size()!=0)
+            {
+               // we should assume selfloops have been collected.
+               
+            }
+               for(auto k : selfloop)
+               {
+                  // add all selfloops up
+
+               }
+         }
+      }
+      //collect the parallel transtions.
+   }
 }  
 bool RegPDFA::check_completeness()
 {

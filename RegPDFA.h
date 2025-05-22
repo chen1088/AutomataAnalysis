@@ -2,9 +2,11 @@
 #include<map>
 #include<vector>
 #include <queue>
+#include <stack>
 #include <set>
 #include <ranges>
 #include<flint/fmpz_poly.h>
+#include<flint/fmpz_mpoly.h>
 #include"urgf.h"
 #include"urgftree.h"
 using namespace std;
