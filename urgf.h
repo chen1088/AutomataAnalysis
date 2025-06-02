@@ -9,6 +9,8 @@
 #include<flint/arb.h>
 #include<flint/acb.h>
 #include<iostream>
+#include<boost/dynamic_bitset.hpp>
+#include <vector>
 using namespace std;
 
 class urgf
@@ -145,8 +147,6 @@ public:
       // fmpq_clear(xval); fmpq_clear(yval); fmpq_clear(fval);
       // fmpq_mpoly_clear(poly, ctx);
       fmpq_mpoly_ctx_clear(ctx);
-
-
    }
 };
 

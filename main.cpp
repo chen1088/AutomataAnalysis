@@ -5,7 +5,8 @@
 #include <iostream>
 //#include <mp++/mp++.hpp>
 #include <mgl2/fltk.h>
-#include "urgf.h"
+//#include "urgf.h"
+#include "urgfdag.h"
 //#include"flint/arb.h"
 //#include"flint/flint.h"
 
@@ -28,7 +29,8 @@ int main()
     // std::cout << "Hello, from ProductAutomata!\n";
     //int_t n{42};
     //std::cout << n << '\n';
-    urgf::test();
+    //urgf::test();
+    urgfdag::test();
     //mglFLTK gr(graph, "MathGL demo window title");
     //return gr.Run();
     return 0;
