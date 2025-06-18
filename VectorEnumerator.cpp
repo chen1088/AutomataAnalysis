@@ -56,6 +56,13 @@ bool VectorEnumerator::next(boost::dynamic_bitset<>& in)
    return true;
 }
 
+dynamic_bitset<> VectorEnumerator::next_copy(const dynamic_bitset<> in)
+{
+   auto copy = dynamic_bitset<>(in);
+   next(copy);
+   return copy;
+}
+
 void VectorEnumerator::print(vector<unsigned int> in)
 {
    for (auto t : in)

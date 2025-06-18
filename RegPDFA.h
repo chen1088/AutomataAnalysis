@@ -15,14 +15,10 @@ using boost::dynamic_bitset;
 class RegPDFA
 {
 public:
-   bool is_end = false;
    unsigned int size;
    // a state label is defined by the shortest string that reaches the state.
    // We are not storing the states which have only one incoming transition.
-   map<dynamic_bitset<>, dynamic_bitset<>> congruence0;
-   map<dynamic_bitset<>, dynamic_bitset<>> congruence1;
-   map<dynamic_bitset<>, set<dynamic_bitset<>>> reversecongruence0;
-   map<dynamic_bitset<>, set<dynamic_bitset<>>> reversecongruence1;
+   
    // for <k,v> pairs we only record the v's whose k's are more than 1
    // A complete congruence is that for any string s there can be three cases:
    // 1. s is in the map, this is good.
@@ -32,10 +28,14 @@ public:
    urgfdag* dag;
    RegPDFA();
    RegPDFA(unsigned int s);
+   // Construct a RegPDFA from a string.
    RegPDFA(string s);
-   void reset_enumeration();
-   void next();
-   dynamic_bitset<> reduce(dynamic_bitset<> currentstate, dynamic_bitset<> str);
+   virtual RegPDFA* next();
+   virtual dynamic_bitset<> reduce(dynamic_bitset<> str);
+   virtual vector<dynamic_bitset<>> getallstates();
+   virtual void settransition(dynamic_bitset<> src, dynamic_bitset<> dst, char c);
+   virtual void initwithstring(string s);
+   virtual string to_string();
    RegPDFA cartesian_product(RegPDFA other);
    
    urgfdag* compute_urgfdag(dynamic_bitset<> state);
@@ -63,5 +63,8 @@ public:
 
       return res;
    }
+private:
+   map<dynamic_bitset<>, dynamic_bitset<>> congruence0;
+   map<dynamic_bitset<>, dynamic_bitset<>> congruence1;
 };
 

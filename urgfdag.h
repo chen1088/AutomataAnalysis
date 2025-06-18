@@ -35,12 +35,9 @@ public:
     urgf* urgf_ptr;
     static void test()
     {
-        map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> incoming_trans;
-        dynamic_bitset<> db1(4, 0b0010);
-        dynamic_bitset<> db2(4, 0b0101);
-        incoming_trans[db1][db2]={new urgfdag(urgf_operation::ATOMX),new urgfdag(urgf_operation::ATOMY)};
-        incoming_trans[db2][db1].push_back(new urgfdag(urgf_operation::ATOMY));
-        cout<<incoming_trans[db2][db1].size()<<endl;
-        cout<<incoming_trans.contains(db1);
+        dynamic_bitset<> a;
+        dynamic_bitset<> b;
+        cin >> a >> b;
+        cout<< a << " " << b << endl;
     }
 };

@@ -12,51 +12,71 @@ RegPDFA::RegPDFA(unsigned int s)
 
 RegPDFA::RegPDFA(string s)
 {
-   size = s.size();
-   for(auto i = 0;i<s.size();i++)
+   initwithstring(s);
+}
+
+RegPDFA* RegPDFA::next()
+{
+   // TODO: implement this function
+   return nullptr;
+}
+
+void RegPDFA::initwithstring(string s)
+{
+   return;
+}
+string RegPDFA::to_string()
+{
+   stringstream ss;
+   ss << "RegPDFA with size: " << size << endl;
+   ss << "Congruence0: " << endl;
+   for (const auto& pair : congruence0)
    {
-      if(s[i] == '0')
-         congruence0[dynamic_bitset<>(i)] = dynamic_bitset<>(i+1);
-      else
-         congruence1[dynamic_bitset<>(i)] = dynamic_bitset<>(i+1);
+      ss << pair.first << " -> " << pair.second << endl;
+   }
+   ss << "Congruence1: " << endl;
+   for (const auto& pair : congruence1)
+   {
+      ss << pair.first << " -> " << pair.second << endl;
+   }
+   return ss.str();
+}
+
+void RegPDFA::settransition(dynamic_bitset<> src, dynamic_bitset<> dst, char c)
+{
+   // Given a source state and a destination state, set the transition.
+   if(c == '0')
+   {
+      // if c is 0, it is a congruence0.
+      congruence0[src] = dst;
+   }
+   else if(c == '1')
+   {
+      // if c is 1, it is a congruence1.
+      congruence1[src] = dst;
    }
 }
 
-void RegPDFA::reset_enumeration()
-{
-   // TODO: implement this function
-   is_end = false;
-}
-
-void RegPDFA::next()
-{
-   // TODO: implement this function
-   is_end = true;
-}
-
-dynamic_bitset<> RegPDFA::reduce(dynamic_bitset<> currentstate, dynamic_bitset<> str)
+dynamic_bitset<> RegPDFA::reduce(dynamic_bitset<> str)
 {
    // Given a current state and a string, reduce the state to the final state.
-   if (str.count() == 0)
-      return currentstate;
-   for(auto i = 0;i<str.count();i++)
+   if(str.size() == 0)
    {
-      if(str[i])
-      {
-         if(congruence1.find(currentstate) != congruence1.end())
-            currentstate=congruence1[currentstate];
-         else
-            currentstate.append(true);
-      }
-      else
-      {
-         if(congruence0.find(currentstate) != congruence0.end())
-            currentstate=congruence0[currentstate];
-         else
-            currentstate.append(false);
-      }
+      // if the string is empty, return the current state.
+      return dynamic_bitset<>(0);
    }
-   return currentstate;
+   else if(str[str.size() - 1] == 0)
+   {
+      auto strpopped = dynamic_bitset<>(str);
+      strpopped.pop_back(); // remove the last character.
+      return congruence0[reduce(strpopped)];
+   }
+   else
+   {
+      auto strpopped = dynamic_bitset<>(str);
+      strpopped.pop_back(); // remove the last character.
+      return congruence1[reduce(strpopped)];
+   }
 }
 
 RegPDFA RegPDFA::cartesian_product(RegPDFA other)
@@ -73,31 +93,50 @@ RegPDFA RegPDFA::cartesian_product(RegPDFA other)
       auto t = q.front();
       auto tstate = visited[t];//tstate is a label of current state.
       q.pop();
-      auto t00 = congruence0[t.first];
-      auto t10 = other.congruence0[t.second];
+      auto t00 = dynamic_bitset<>(t.first);
+      t00.append(0);
+      t00 = reduce(t00);
+      auto t10 = dynamic_bitset<>(t.second);
+      t10.append(0);
+      t10 = other.reduce(t10);
       if(visited.find({t00,t10}) == visited.end())
       //first state appending 0 is not visited
       {
          auto tstate0 = dynamic_bitset<>(tstate);
          tstate0.append(0);
          visited[{t00,t10}] = tstate0;
-         res.congruence0[tstate] = tstate0;
+         res.settransition(tstate,tstate0,0);
          q.push({t00,t10});
       }
-      auto t01 = congruence1[t.first];
-      auto t11 = other.congruence1[t.second];
+      auto t01 = dynamic_bitset<>(t.first);
+      t01.append(1); // append 1 to the first state.
+      t01 = reduce(t01);
+      auto t11 = dynamic_bitset<>(t.second);
+      t11.append(1);
+      t11 = other.reduce(t11);
       if(visited.find({t01,t11}) == visited.end())
       //first state appending 1 is not visited
       {
          auto tstate1 = dynamic_bitset<>(tstate);
          tstate1.append(1);
          visited[{t01,t11}] = tstate1;
-         res.congruence1[tstate] = tstate1;
+         res.settransition(tstate,tstate1,1);
          q.push({t01,t11});
       }
    }
    return res;
 }
+vector<dynamic_bitset<>> RegPDFA::getallstates()
+{
+   // return all states in the PDFA.
+   vector<dynamic_bitset<>> res;
+   for(auto i : congruence0)
+   {
+      res.push_back(i.first);
+   }
+   return res;
+}
+
 urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<> dst)
 {
    // Given a source state and a destination state, compute the pairwise urgf from src to dst with selfloop on both included.
@@ -112,40 +151,43 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
    map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> outgoing_trans;
    map<dynamic_bitset<>,vector<urgfdag*>> selfloop_trans;
    // initialize a queue to store the states.
-   queue<dynamic_bitset<>> q;
-   for(auto i : congruence0)
+   stack<dynamic_bitset<>> q;
+   auto allstates = getallstates();
+   for(auto i : allstates)
    {
-      if(i.first == src || i.first == dst)
+      if(i != src && i != dst)
       {
-         // we leave out the starting state and the target state.
-         continue;
+         q.push(i);
       }
-      q.push(i.first);
-   }
-   for(auto i : congruence0)
-   {
-      if(i.first == i.second)
+      auto i0 = dynamic_bitset<>(i);
+      i0.append(0);
+      auto i1 = dynamic_bitset<>(i);
+      i1.append(1);
+      auto trans0 = reduce(i0);
+      auto trans1 = reduce(i1);
+      if(trans0 == i)
       {
-         selfloop_trans[i.first].push_back(new urgfdag(urgf_operation::ATOMX));
-         continue;
+         selfloop_trans[i].push_back(new urgfdag(urgf_operation::ATOMX));
       }
-      incoming_trans[i.second][i.first].push_back(new urgfdag(urgf_operation::ATOMX));
-      outgoing_trans[i.first][i.second].push_back(new urgfdag(urgf_operation::ATOMX));
-   }
-   for(auto i : congruence1)
-   {
-      if(i.first == i.second)
+      else
       {
-         selfloop_trans[i.first].push_back(new urgfdag(urgf_operation::ATOMY));
-         continue;
+         incoming_trans[trans0][i].push_back(new urgfdag(urgf_operation::ATOMX));
+         outgoing_trans[i][trans0].push_back(new urgfdag(urgf_operation::ATOMX));
       }
-      incoming_trans[i.second][i.first].push_back(new urgfdag(urgf_operation::ATOMY));
-      outgoing_trans[i.first][i.second].push_back(new urgfdag(urgf_operation::ATOMY));
+      if(trans0 == i)
+      {
+         selfloop_trans[i].push_back(new urgfdag(urgf_operation::ATOMY));
+      }
+      else
+      {
+         incoming_trans[trans1][i].push_back(new urgfdag(urgf_operation::ATOMY));
+         outgoing_trans[i][trans1].push_back(new urgfdag(urgf_operation::ATOMY));
+      }
    }
    
    while(!q.empty())
    {
-      auto t = q.front();
+      auto t = q.top();
       q.pop();
       // eliminate one state.
       auto incoming = incoming_trans[t];
@@ -388,18 +430,12 @@ bool RegPDFA::check_completeness()
    // for every string in the map, check if they form a complete congruence
    // This function should never be called.
    map<int,set<dynamic_bitset<>>> q;
-   for (auto i : congruence0)
+   auto allstates = getallstates();
+   for(auto i : allstates)
    {
-      auto t = i.first;
-      t.push_back(0);
-      q[t.count()].insert(t);
+      // add all states to the queue.
+      q[i.count()].insert(i);
    }
-   for (auto i : congruence1)
-   {
-      auto t = i.first;
-      t.push_back(1);
-      q[t.count()].insert(t);
-   }   
    auto ks = std::views::keys(q);
    auto vectorkey = vector<int>(ks.begin(),ks.end());
    // from the largest to the smallest
