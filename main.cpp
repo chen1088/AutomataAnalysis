@@ -29,8 +29,8 @@ int main()
     // std::cout << "Hello, from ProductAutomata!\n";
     //int_t n{42};
     //std::cout << n << '\n';
-    //urgf::test();
-    urgfdag::test();
+    urgf::test();
+    // urgfdag::test();
     //mglFLTK gr(graph, "MathGL demo window title");
     //return gr.Run();
     return 0;

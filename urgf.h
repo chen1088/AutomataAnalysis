@@ -19,17 +19,26 @@ class urgf
 public:
    urgf();
    ~urgf();
-   
+   static urgf &getinstance()
+   {
+      static urgf instance;
+      return instance;
+   }
    // The following functions are the basic operations on generating functions
    // The functions are overloaded to handle different types of generating functions
    // The functions are implemented
    fmpz_poly_t numerator;
    fmpz_poly_t denominator;
-   urgf operator+(urgf& other);
-   urgf operator-(urgf& other);  
-   urgf operator*(urgf& other);
-   urgf operator/(urgf& other);
+   urgf operator+(const urgf& other);
+   urgf operator-(const urgf& other);  
+   urgf operator*(const urgf& other);
+   urgf operator/(const urgf& other);
    urgf f1_minus_inv();
+   urgf atomx();
+   urgf atomy();
+   urgf empty();
+   void clear();
+   void reduce_factor();
    std::string to_string();
    static void test()
    {
@@ -61,6 +70,8 @@ public:
       // Initialize FLINT rational polynomial context with 2 variables (x, y)
       fmpq_mpoly_ctx_t ctx;
       fmpq_mpoly_ctx_init(ctx, 2, ORD_LEX);
+      fmpq_mpoly_ctx_t ctx2;
+      fmpq_mpoly_ctx_init(ctx2, 1, ORD_LEX);
 
       // Create the rational polynomial: f(x, y) = x^4 + y^4 - 4*x^2*y^2 + 2*x*y - 1/2
       fmpq_mpoly_t poly;
@@ -75,13 +86,25 @@ public:
       fmpq_init(testnumber2);
       fmpq_set_si(testnumber2, 1, 2);
       fmpq_mpoly_t testx;
-      fmpq_mpoly_init(testx, ctx);
+      fmpq_mpoly_init(testx, ctx2);
       fmpq_mpoly_evaluate_one_fmpq(testx,poly,0,testnumber,ctx);
       cout<<"Evaluate x: " << fmpq_mpoly_get_str_pretty(testx, vars, ctx) << endl;
+      
       fmpq_t testxy;
       fmpq_init(testxy);
       fmpq* testnumber_array[] = { testnumber, testnumber2 };
       fmpq_mpoly_evaluate_all_fmpq(testxy, testx, testnumber_array, ctx);
+      fmpq_t testx_coeff1;
+      fmpq_t testx_exp1_res;;
+      ulong * testx_exp1 = new ulong[2];
+      testx_exp1[0] = 0; // x^1
+      testx_exp1[1] = 3; // y^0
+      fmpq_init(testx_coeff1);
+      fmpq_mpoly_get_term_coeff_fmpq(testx_coeff1, testx, 1, ctx);
+      fmpq_mpoly_get_coeff_fmpq_ui(testx_exp1_res, testx, testx_exp1, ctx);
+      cout << "Evaluate x coefficient: " << fmpq_get_d(testx_coeff1) << endl;
+      cout << "Evaluate x exponent: ";
+      cout << fmpq_get_d(testx_exp1_res) << " ";
       // print testxy
       cout<<"Evaluate y: " << fmpq_get_d(testxy) << endl;
       // Grid setup

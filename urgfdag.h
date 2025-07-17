@@ -6,9 +6,7 @@ using namespace std;
 using boost::dynamic_bitset;
 enum class urgf_operation{
     ADD,
-    SUBTRACT,
     MULTIPLY,
-    DIVIDE,
     ONEMINUSINVERSE,
     ATOMX,
     ATOMY,
@@ -22,17 +20,108 @@ public:
         operation = op;
     }
     ~urgfdag();
-    urgf* resolvetourgf()
+    urgf resolvetourgf()
     {
         // Resolve the urgf tree to a single urgf.
         // This function is not implemented yet.
-        return nullptr;
+        if (is_resolved) {
+            return urgf_instance;
+        }
+        switch(operation){
+            case urgf_operation::ADD:
+            // adding all children
+            {
+                urgf result;
+                for (auto& child : children) {
+                    result = result + child->resolvetourgf();
+                    child->resolved_count++;
+                    if(child->resolved_count == child->ref_count) {
+                        child->clear();
+                    }
+                }
+                urgf_instance = result;
+                is_resolved = true;
+                return result;
+            }
+            case urgf_operation::MULTIPLY:
+            // multiplying all children by sequence
+            {
+                urgf result;
+                for (auto& child : children) {
+                    result = result * child->resolvetourgf();
+                    child->resolved_count++;
+                    if(child->resolved_count == child->ref_count) {
+                        child->clear();
+                    }
+                }
+                urgf_instance = result;
+                is_resolved = true;
+                return result;
+            }
+            case urgf_operation::ONEMINUSINVERSE:
+            // one minus inverse of the child
+            {
+                // we assume there is only one child
+                if (children.size() != 1) {
+                    throw std::runtime_error("ONEMINUSINVERSE operation requires exactly one child.");
+                }
+                urgf child_urgf = children[0]->resolvetourgf();
+                urgf_instance = child_urgf.f1_minus_inv();
+                is_resolved = true;
+                children[0]->resolved_count++;
+                if(children[0]->resolved_count == children[0]->ref_count) {
+                    children[0]->clear();
+                }
+            }
+            case urgf_operation::ATOMX:
+            // urgf equals x
+            {
+                urgf_instance = urgf::getinstance().atomx();
+                is_resolved = true;
+                // atom cannot have children
+                return urgf_instance;
+            }
+            case urgf_operation::ATOMY:
+            // urgf equals y
+            {
+                urgf_instance = urgf::getinstance().atomy();
+                is_resolved = true;
+                // atom cannot have children
+                return urgf_instance;
+            }
+            case urgf_operation::EMPTY:
+            // urgf equals 0
+            {
+                urgf_instance = urgf::getinstance().empty();
+                is_resolved = true;
+                // empty cannot have children
+                return urgf_instance;
+            }
+            default:
+            throw std::runtime_error("Unknown operation in urgfdag.");
+        }
     }
     void printTree();
-
+    void clear()
+    {
+        // clear urgf pointer
+        urgf_instance.clear();
+        is_resolved = false;
+    }
+    void add_child(urgfdag* child)
+    {
+        children.push_back(child);
+        child->ref_count++;
+    }
     vector<urgfdag*> children;
     urgf_operation operation;
-    urgf* urgf_ptr;
+    urgf urgf_instance;
+    bool is_resolved = false;
+    // The reference count for the dag node so we can make decision whether to clear the cache
+    int ref_count = 0;
+    // Record how many of parents have been resolved.
+    int resolved_count = 0;
+    
     static void test()
     {
         dynamic_bitset<> a;

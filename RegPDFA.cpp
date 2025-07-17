@@ -18,6 +18,7 @@ RegPDFA::RegPDFA(string s)
 RegPDFA* RegPDFA::next()
 {
    // TODO: implement this function
+   
    return nullptr;
 }
 
