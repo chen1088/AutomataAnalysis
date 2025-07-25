@@ -1,12 +1,12 @@
 #include <iostream>
 #include <boost/dynamic_bitset.hpp>
-#include <gmp.h>
 #include <stdio.h>
 #include <iostream>
 //#include <mp++/mp++.hpp>
 #include <mgl2/fltk.h>
 //#include "urgf.h"
-#include "urgfdag.h"
+//#include "urgfdag.h"
+#include "RegPDFA.h"
 //#include"flint/arb.h"
 //#include"flint/flint.h"
 
@@ -31,8 +31,11 @@ int main()
     //std::cout << n << '\n';
     urgf::test();
     // urgfdag::test();
-    //mglFLTK gr(graph, "MathGL demo window title");
-    //return gr.Run();
+    RegPDFA pdfa;
+    pdfa.initwithstring("4 001-100,000-0,01-0,1-_");
+    cout << pdfa.to_string() << endl;
+    // mglFLTK gr(graph, "MathGL demo window title");
+    // return gr.Run();
     return 0;
 }
 

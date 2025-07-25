@@ -1,4 +1,3 @@
-#pragma once
 #include <map>
 #include<flint/fmpz_poly.h>
 #include<flint/arb_fmpz_poly.h>
@@ -11,6 +10,7 @@
 #include<iostream>
 #include<boost/dynamic_bitset.hpp>
 #include <vector>
+#include <mgl2/mgl.h>
 using namespace std;
 
 class urgf

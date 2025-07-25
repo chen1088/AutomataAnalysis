@@ -15,6 +15,10 @@ RegPDFA::RegPDFA(string s)
    initwithstring(s);
 }
 
+RegPDFA::~RegPDFA()
+{
+   delete dag;
+}
 void RegPDFA::initwithstring(string s)
 {
    // the format of the string is "2 001-100,01-0,11-_"
@@ -51,7 +55,7 @@ void RegPDFA::initwithstring(string s)
       src_prefixes.insert(dynamic_bitset<>(src));
       dynamic_bitset<> buffer;
       dynamic_bitset<> buffer_append;
-      buffer.append(src[0]);
+      buffer_append.append(src[0]);
       for(int i = 0; i < src.size()-1; i++)
       {
          // add all prefixes of src to the transition table.
@@ -61,6 +65,7 @@ void RegPDFA::initwithstring(string s)
       }
       settransition(buffer, dst, src[src.size()-1]);
    }
+   size = leaf_count;
    // check completeness of the pdfa.
    
    return;
@@ -176,6 +181,7 @@ vector<dynamic_bitset<>> RegPDFA::getallstates()
    }
    return res;
 }
+
 
 urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<> dst)
 {
@@ -462,6 +468,28 @@ urgfdag* RegPDFA::compute_urgfdag(dynamic_bitset<> state)
 {
    return compute_urgfdag_plusplus(dynamic_bitset<>(0),state);
 }  
+urgfdag* RegPDFA::compute_urgfdag_selfloop(dynamic_bitset<> state)
+{
+   // TODO: compute the selfloop for the state.
+   return new urgfdag(urgf_operation::EMPTY);
+}
+
+urgfdag* RegPDFA::compute_urgfdag_minusminus(dynamic_bitset<> src, dynamic_bitset<> dst)
+{
+   // TODO: compute the minusminus for the state.
+   return new urgfdag(urgf_operation::EMPTY);
+}
+urgfdag* RegPDFA::compute_urgfdag_minusplus(dynamic_bitset<> src, dynamic_bitset<> dst)
+{
+   // TODO: compute the minusplus for the state.
+   return new urgfdag(urgf_operation::EMPTY);
+}
+urgfdag* RegPDFA::compute_urgfdag_plusminus(dynamic_bitset<> src, dynamic_bitset<> dst)
+{
+   // TODO: compute the plusminus for the state.
+   return new urgfdag(urgf_operation::EMPTY);
+}
+
 bool RegPDFA::check_completeness()
 {
    // Given congruence0 and congruence1, check if they are complete.

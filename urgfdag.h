@@ -19,7 +19,17 @@ public:
     {
         operation = op;
     }
-    ~urgfdag();
+    ~urgfdag()
+    {
+        // Clear the urgf instance if it is resolved.
+        if (is_resolved) {
+            urgf_instance.clear();
+        }
+        for (auto& child : children) {
+            delete child;
+        }
+        children.clear();
+    }
     urgf resolvetourgf()
     {
         // Resolve the urgf tree to a single urgf.
@@ -101,7 +111,15 @@ public:
             throw std::runtime_error("Unknown operation in urgfdag.");
         }
     }
-    void printTree();
+    void printTree()
+    {
+        // Print the tree structure for debugging purposes.
+        cout << "Operation: " << static_cast<int>(operation) << endl;
+        cout << "Children count: " << children.size() << endl;
+        for (auto& child : children) {
+            child->printTree();
+        }
+    }
     void clear()
     {
         // clear urgf pointer
