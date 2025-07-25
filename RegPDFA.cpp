@@ -15,15 +15,54 @@ RegPDFA::RegPDFA(string s)
    initwithstring(s);
 }
 
-RegPDFA* RegPDFA::next()
-{
-   // TODO: implement this function
-   
-   return nullptr;
-}
-
 void RegPDFA::initwithstring(string s)
 {
+   // the format of the string is "2 001-100,01-0,11-_"
+   // the first number is the number of leaf states.
+   // _ is the empty string.
+   // the second part is the transitions.
+   stringstream ss(s);
+   int leaf_count;
+   ss >> leaf_count;
+
+   // Read the transitions.
+   string transitions;
+   ss >> transitions;
+
+   // Parse the transitions.
+   stringstream trans_ss(transitions);
+   string transition;
+   set<dynamic_bitset<>> src_prefixes;
+   while (getline(trans_ss, transition, ','))
+   {
+      // Each transition is in the format "src-dst"
+      stringstream trans_pair(transition);
+      dynamic_bitset src, dst;
+      trans_pair >> src;
+      trans_pair.ignore(1); // ignore the '-'
+      trans_pair >> dst;
+
+      if(src_prefixes.find(dynamic_bitset<>(src)) != src_prefixes.end())
+      {
+         // if the src is already in the prefixes, we do not need to add it again.
+         continue;
+      }
+      //
+      src_prefixes.insert(dynamic_bitset<>(src));
+      dynamic_bitset<> buffer;
+      dynamic_bitset<> buffer_append;
+      buffer.append(src[0]);
+      for(int i = 0; i < src.size()-1; i++)
+      {
+         // add all prefixes of src to the transition table.
+         settransition(buffer, buffer_append, src[i]);
+         buffer.append(src[i]);
+         buffer_append.append(src[i+1]);
+      }
+      settransition(buffer, dst, src[src.size()-1]);
+   }
+   // check completeness of the pdfa.
+   
    return;
 }
 string RegPDFA::to_string()
@@ -200,7 +239,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          auto newtree = new urgfdag(urgf_operation::ADD);
          for(auto i : selfloop_trans[t])
          {
-            newtree->children.push_back(i);
+            newtree->add_child(i);
          }
          selfloop_trans[t].clear();
          selfloop_trans[t].push_back(newtree);
@@ -219,7 +258,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
             auto newtree = new urgfdag(urgf_operation::ADD);
             for(auto j : i.second)
             {
-               newtree->children.push_back(j);
+               newtree->add_child(j);
             }
             i.second.clear();
             i.second.push_back(newtree);
@@ -242,7 +281,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
                auto newtree = new urgfdag(urgf_operation::ADD);
                for(auto k : j.second)
                {
-                  newtree->children.push_back(k);
+                  newtree->add_child(k);
                }
                j.second.clear();
                j.second.push_back(newtree);
@@ -254,8 +293,8 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
             {
                // concatenate
                auto newtree = new urgfdag(urgf_operation::MULTIPLY);
-               newtree->children.push_back(i.second[0]);
-               newtree->children.push_back(j.second[0]);
+               newtree->add_child(i.second[0]);
+               newtree->add_child(j.second[0]);
                // replace with the new dag.
                // now i->t->j becomes i->j
                // remove i->t and remove t->j
@@ -277,11 +316,11 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
             {
                // oneinverse then concatenate
                auto newtree = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-               newtree->children.push_back(selfloop[0]);
+               newtree->add_child(selfloop[0]);
                auto newtree2 = new urgfdag(urgf_operation::MULTIPLY);
-               newtree2->children.push_back(i.second[0]);
-               newtree2->children.push_back(newtree);
-               newtree2->children.push_back(j.second[0]);
+               newtree2->add_child(i.second[0]);
+               newtree2->add_child(newtree);
+               newtree2->add_child(j.second[0]);
                // replace with the new dag.
                // now i->t->j becomes i->j
                incoming_trans[i.first].erase(t);
@@ -314,7 +353,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       auto newtree = new urgfdag(urgf_operation::ADD);
       for(auto i : selfloop_trans[src])
       {
-         newtree->children.push_back(i);
+         newtree->add_child(i);
       }
       selfloop_trans[src].clear();
       selfloop_trans[src].push_back(newtree);
@@ -325,7 +364,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       auto newtree = new urgfdag(urgf_operation::ADD);
       for(auto i : selfloop_trans[dst])
       {
-         newtree->children.push_back(i);
+         newtree->add_child(i);
       }
       selfloop_trans[dst].clear();
       selfloop_trans[dst].push_back(newtree);
@@ -336,7 +375,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       auto newtree = new urgfdag(urgf_operation::ADD);
       for(auto i : incoming_trans[src][dst])
       {
-         newtree->children.push_back(i);
+         newtree->add_child(i);
       }
       incoming_trans[src][dst].clear();
       incoming_trans[src][dst].push_back(newtree);
@@ -349,7 +388,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       auto newtree = new urgfdag(urgf_operation::ADD);
       for(auto i : incoming_trans[dst][src])
       {
-         newtree->children.push_back(i);
+         newtree->add_child(i);
       }
       incoming_trans[dst][src].clear();
       incoming_trans[dst][src].push_back(newtree);
@@ -364,37 +403,37 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       auto selfloopsrc = new urgfdag(urgf_operation::ONEMINUSINVERSE);
       if(selfloop_trans[src].size() != 0)
       {
-         selfloopsrc->children.push_back(selfloop_trans[src][0]);
-         res->children.push_back(selfloopsrc);
+         selfloopsrc->add_child(selfloop_trans[src][0]);
+         res->add_child(selfloopsrc);
       }
-      res->children.push_back(incoming_trans[dst][src][0]);
+      res->add_child(incoming_trans[dst][src][0]);
       // second part
       if(incoming_trans[src][dst].size() != 0)
       {
          // reduce a new selfloop that is dst->src(->src..)->dst.
          auto newselfloopdst = new urgfdag(urgf_operation::MULTIPLY);
-         newselfloopdst->children.push_back(incoming_trans[src][dst][0]);
+         newselfloopdst->add_child(incoming_trans[src][dst][0]);
          if(selfloop_trans[src].size() != 0)
          {  
-            newselfloopdst->children.push_back(selfloopsrc);
+            newselfloopdst->add_child(selfloopsrc);
          }
-         newselfloopdst->children.push_back(incoming_trans[src][dst][0]);
+         newselfloopdst->add_child(incoming_trans[src][dst][0]);
          // union the selfloop on dst.
          if(selfloop_trans[dst].size() != 0)
          {
             auto oldselfloopdst = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-            oldselfloopdst->children.push_back(selfloop_trans[dst][0]);
+            oldselfloopdst->add_child(selfloop_trans[dst][0]);
             auto allselfloopdst = new urgfdag(urgf_operation::ADD);
-            allselfloopdst->children.push_back(oldselfloopdst);
-            allselfloopdst->children.push_back(newselfloopdst);
-            res->children.push_back(allselfloopdst);
+            allselfloopdst->add_child(oldselfloopdst);
+            allselfloopdst->add_child(newselfloopdst);
+            res->add_child(allselfloopdst);
             return res;
          }
          else
          {
             auto allselfloopdst = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-            allselfloopdst->children.push_back(newselfloopdst);
-            res->children.push_back(allselfloopdst);
+            allselfloopdst->add_child(newselfloopdst);
+            res->add_child(allselfloopdst);
             return res;
          }
       }
@@ -404,8 +443,8 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          {
             // if there is a selfloop on dst, concatenate it.
             auto allselfloopdst = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-            allselfloopdst->children.push_back(selfloop_trans[dst][0]);
-            res->children.push_back(allselfloopdst);
+            allselfloopdst->add_child(selfloop_trans[dst][0]);
+            res->add_child(allselfloopdst);
             return res;
          }
          else

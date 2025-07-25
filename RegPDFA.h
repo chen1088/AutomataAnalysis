@@ -30,7 +30,6 @@ public:
    RegPDFA(unsigned int s);
    // Construct a RegPDFA from a string.
    RegPDFA(string s);
-   virtual RegPDFA* next();
    virtual dynamic_bitset<> reduce(dynamic_bitset<> str);
    virtual vector<dynamic_bitset<>> getallstates();
    virtual void settransition(dynamic_bitset<> src, dynamic_bitset<> dst, char c);
