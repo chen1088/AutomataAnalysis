@@ -17,7 +17,8 @@ RegPDFA::RegPDFA(string s)
 
 RegPDFA::~RegPDFA()
 {
-   delete dag;
+   if(dag != nullptr)
+      delete dag;
 }
 void RegPDFA::initwithstring(string s)
 {
@@ -41,29 +42,53 @@ void RegPDFA::initwithstring(string s)
    {
       // Each transition is in the format "src-dst"
       stringstream trans_pair(transition);
-      dynamic_bitset src, dst;
-      trans_pair >> src;
-      trans_pair.ignore(1); // ignore the '-'
-      trans_pair >> dst;
+      dynamic_bitset<> src, dst;
+      string src_str, dst_str;
+      getline(trans_pair, src_str, '-');
+      reverse(src_str.begin(), src_str.end()); // reverse the string to match the bit order
+      getline(trans_pair, dst_str);
+      reverse(dst_str.begin(), dst_str.end()); // reverse the string to match the bit order
+      src = dynamic_bitset<>(src_str);
+      
+      if (dst_str == "_")
+      {
+         // If the destination is "_", it means it is an empty state.
+         dst = dynamic_bitset<>(0);
+      }
+      else
+      {
+         dst = dynamic_bitset<>(dst_str);
+      }
 
-      if(src_prefixes.find(dynamic_bitset<>(src)) != src_prefixes.end())
+      if(src_prefixes.find(src) != src_prefixes.end())
       {
          // if the src is already in the prefixes, we do not need to add it again.
          continue;
       }
-      //
-      src_prefixes.insert(dynamic_bitset<>(src));
-      dynamic_bitset<> buffer;
-      dynamic_bitset<> buffer_append;
-      buffer_append.append(src[0]);
+      src_prefixes.insert(src);
+      dynamic_bitset<> buffer(0);
+      dynamic_bitset<> buffer_append(0);
+      buffer_append.push_back(src[0]);
       for(int i = 0; i < src.size()-1; i++)
       {
          // add all prefixes of src to the transition table.
+         if(issetransition(buffer, src[i]))
+         {
+            // if the transition already exists, we do not need to add it again.
+            continue;
+         }
          settransition(buffer, buffer_append, src[i]);
-         buffer.append(src[i]);
-         buffer_append.append(src[i+1]);
+         buffer.push_back(src[i]);
+         buffer_append.push_back(src[i+1]);
       }
-      settransition(buffer, dst, src[src.size()-1]);
+      dynamic_bitset<> src_pop = src;
+      src_pop.pop_back(); // remove the last character.
+      if(issetransition(src_pop, src[src.size()-1]))
+      {
+         // if the transition already exists, we do not need to add it again.
+         continue;
+      }
+      settransition(src_pop, dst, src[src.size()-1]);
    }
    size = leaf_count;
    // check completeness of the pdfa.
@@ -77,12 +102,24 @@ string RegPDFA::to_string()
    ss << "Congruence0: " << endl;
    for (const auto& pair : congruence0)
    {
-      ss << pair.first << " -> " << pair.second << endl;
+      string pair_first_reversed;
+      boost::to_string(pair.first, pair_first_reversed);
+      reverse(pair_first_reversed.begin(), pair_first_reversed.end());
+      string pair_second_reversed;
+      boost::to_string(pair.second, pair_second_reversed);
+      reverse(pair_second_reversed.begin(), pair_second_reversed.end());
+      ss << pair_first_reversed << " -> " << pair_second_reversed << endl;
    }
    ss << "Congruence1: " << endl;
    for (const auto& pair : congruence1)
    {
-      ss << pair.first << " -> " << pair.second << endl;
+      string pair_first_reversed;
+      boost::to_string(pair.first, pair_first_reversed);
+      reverse(pair_first_reversed.begin(), pair_first_reversed.end());
+      string pair_second_reversed;
+      boost::to_string(pair.second, pair_second_reversed);
+      reverse(pair_second_reversed.begin(), pair_second_reversed.end());
+      ss << pair_first_reversed << " -> " << pair_second_reversed << endl;
    }
    return ss.str();
 }
@@ -102,15 +139,55 @@ void RegPDFA::settransition(dynamic_bitset<> src, dynamic_bitset<> dst, char c)
    }
 }
 
+bool RegPDFA::issetransition(dynamic_bitset<> src, char c)
+{
+   // Check if there is a transition from src with character c.
+   if(c == '0')
+   {
+      return congruence0.contains(src);
+   }
+   else if(c == '1')
+   {
+      return congruence1.contains(src);
+   }
+   return false;
+}
+bool RegPDFA::issetransition(dynamic_bitset<> src, bool b)
+{
+   // Check if there is a transition from src with boolean b.
+   if(b)
+   {
+      return congruence1.contains(src);
+   }
+   else
+   {
+      return congruence0.contains(src);
+   }
+}
+void RegPDFA::settransition(dynamic_bitset<> src, dynamic_bitset<> dst, bool b)
+{
+   // Given a source state and a destination state, set the transition.
+   if(b)
+   {
+      // if b is true, it is a congruence1.
+      congruence1[src] = dst;
+   }
+   else
+   {
+      // if b is false, it is a congruence0.
+      congruence0[src] = dst;
+   }
+}
+
 dynamic_bitset<> RegPDFA::reduce(dynamic_bitset<> str)
 {
    // Given a current state and a string, reduce the state to the final state.
    if(str.size() == 0)
    {
-      // if the string is empty, return the current state.
+      // if the string is empty, return the starting state.
       return dynamic_bitset<>(0);
    }
-   else if(str[str.size() - 1] == 0)
+   else if(str[str.size() - 1] == false)
    {
       auto strpopped = dynamic_bitset<>(str);
       strpopped.pop_back(); // remove the last character.
@@ -126,7 +203,7 @@ dynamic_bitset<> RegPDFA::reduce(dynamic_bitset<> str)
 
 RegPDFA RegPDFA::cartesian_product(RegPDFA other)
 {
-   RegPDFA res(size+other.size);
+   RegPDFA res;
    // Given two PDFA, compute the cartesian product of the two PDFA.
    // empty string is the initial state.
    map<pair<dynamic_bitset<>,dynamic_bitset<>>,dynamic_bitset<>> visited;
@@ -139,34 +216,46 @@ RegPDFA RegPDFA::cartesian_product(RegPDFA other)
       auto tstate = visited[t];//tstate is a label of current state.
       q.pop();
       auto t00 = dynamic_bitset<>(t.first);
-      t00.append(0);
+      t00.push_back(false);
       t00 = reduce(t00);
       auto t10 = dynamic_bitset<>(t.second);
-      t10.append(0);
+      t10.push_back(false);
       t10 = other.reduce(t10);
       if(visited.find({t00,t10}) == visited.end())
       //first state appending 0 is not visited
       {
          auto tstate0 = dynamic_bitset<>(tstate);
-         tstate0.append(0);
+         tstate0.push_back(false);
          visited[{t00,t10}] = tstate0;
-         res.settransition(tstate,tstate0,0);
+         res.settransition(tstate,tstate0,false);
          q.push({t00,t10});
       }
+      else
+      {
+         // t00,t10 the dst is found.
+         // we can set the transition from tstate to tstate0.
+         res.settransition(tstate, visited[{t00,t10}], false);
+      }
       auto t01 = dynamic_bitset<>(t.first);
-      t01.append(1); // append 1 to the first state.
+      t01.push_back(true); // append 1 to the first state.
       t01 = reduce(t01);
       auto t11 = dynamic_bitset<>(t.second);
-      t11.append(1);
+      t11.push_back(true);
       t11 = other.reduce(t11);
       if(visited.find({t01,t11}) == visited.end())
       //first state appending 1 is not visited
       {
          auto tstate1 = dynamic_bitset<>(tstate);
-         tstate1.append(1);
+         tstate1.push_back(true);
          visited[{t01,t11}] = tstate1;
-         res.settransition(tstate,tstate1,1);
+         res.settransition(tstate,tstate1,true);
          q.push({t01,t11});
+      }
+      else
+      {
+         // t01,t11 the dst is found.
+         // we can set the transition from tstate to tstate1.
+         res.settransition(tstate, visited[{t01,t11}], true);
       }
    }
    return res;

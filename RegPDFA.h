@@ -26,7 +26,7 @@ public:
    // 2. s is not in the map, and s can be reduced, we solve the congruence of s.
    // 3. s is not in the map, and s cannot be reduced, by default the sc(c is any character) is congruent to sc.
    // Plan changed. Now congruences must be complete.
-   urgfdag* dag;
+   urgfdag* dag = nullptr;
    RegPDFA();
    ~RegPDFA();
    RegPDFA(unsigned int s);
@@ -34,7 +34,10 @@ public:
    RegPDFA(string s);
    virtual dynamic_bitset<> reduce(dynamic_bitset<> str);
    virtual vector<dynamic_bitset<>> getallstates();
+   virtual bool issetransition(dynamic_bitset<> src, char c);
+   virtual bool issetransition(dynamic_bitset<> src, bool b);
    virtual void settransition(dynamic_bitset<> src, dynamic_bitset<> dst, char c);
+   virtual void settransition(dynamic_bitset<> src, dynamic_bitset<> dst, bool b);
    virtual void initwithstring(string s);
    virtual string to_string();
    RegPDFA cartesian_product(RegPDFA other);

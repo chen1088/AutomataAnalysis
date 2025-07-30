@@ -32,7 +32,12 @@ int main()
     urgf::test();
     // urgfdag::test();
     RegPDFA pdfa;
-    pdfa.initwithstring("4 001-100,000-0,01-0,1-_");
+    pdfa.initwithstring("5 001-00,000-0,01-0,10-_,11-1");
+    RegPDFA pdfa2;
+    pdfa2.initwithstring("5 000-00,001-0,01-0,10-_,11-1");
+    auto pdfa3 = pdfa.cartesian_product(pdfa2);
+    std::cout << "PDFA3: " << pdfa3.to_string() << std::endl;
+    // mglFLTK gr(graph, "MathGL
     cout << pdfa.to_string() << endl;
     // mglFLTK gr(graph, "MathGL demo window title");
     // return gr.Run();
