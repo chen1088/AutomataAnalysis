@@ -47,6 +47,16 @@ void urgf::clear()
     fmpz_poly_clear(numerator);
     fmpz_poly_clear(denominator);
 }
+std::string urgf::to_string()
+{
+    // Convert the generating function to a string representation
+    std::string result = "urgf: ";
+    result += fmpz_poly_get_str_pretty(numerator, "x");
+    result += " / ";
+    result += fmpz_poly_get_str_pretty(denominator, "x");
+    return result;
+}
+
 urgf urgf::operator+(const urgf& other)
 {
     // f1(x) = g1(x)/h1(x)

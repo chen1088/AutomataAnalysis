@@ -8,8 +8,8 @@ enum class urgf_operation{
     ADD,
     MULTIPLY,
     ONEMINUSINVERSE,
-    ATOMX,
-    ATOMY,
+    ATOMX, // 0
+    ATOMY, // 1
     EMPTY,
 };
 class urgfdag {
@@ -111,15 +111,41 @@ public:
             throw std::runtime_error("Unknown operation in urgfdag.");
         }
     }
-    void printTree()
+    string to_string()
     {
-        // Print the tree structure for debugging purposes.
-        cout << "Operation: " << static_cast<int>(operation) << endl;
-        cout << "Children count: " << children.size() << endl;
-        for (auto& child : children) {
-            child->printTree();
+        // Convert the urgfdag to a string representation.
+        // This function is not implemented yet.
+        string result = "urgfdag: ";
+        switch(operation) {
+            case urgf_operation::ADD:
+                result += "ADD, ";
+                break;
+            case urgf_operation::MULTIPLY:
+                result += "MULTIPLY, ";
+                break;
+            case urgf_operation::ONEMINUSINVERSE:
+                result += "ONEMINUSINVERSE, ";
+                break;
+            case urgf_operation::ATOMX:
+                result += "ATOMX, ";
+                break;
+            case urgf_operation::ATOMY:
+                result += "ATOMY, ";
+                break;
+            case urgf_operation::EMPTY:
+                result += "EMPTY, ";
+                break;
         }
+        if(operation == urgf_operation::EMPTY || operation == urgf_operation::ATOMX || operation == urgf_operation::ATOMY) {
+            return result + "No children.";
+        }
+        for (size_t i = 0; i < children.size(); i++)
+        {
+            result += "Child " + std::to_string(i) + ": " + children[i]->to_string() + ", ";
+        }
+        return result;
     }
+    
     void clear()
     {
         // clear urgf pointer

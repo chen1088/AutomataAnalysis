@@ -98,7 +98,7 @@ void RegPDFA::initwithstring(string s)
 string RegPDFA::to_string()
 {
    stringstream ss;
-   ss << "RegPDFA with size: " << size << endl;
+   ss << "RegPDFA with size: " << congruence0.size() << endl;
    ss << "Congruence0: " << endl;
    for (const auto& pair : congruence0)
    {
@@ -295,9 +295,9 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          q.push(i);
       }
       auto i0 = dynamic_bitset<>(i);
-      i0.append(0);
+      i0.push_back(false);
       auto i1 = dynamic_bitset<>(i);
-      i1.append(1);
+      i1.push_back(true);
       auto trans0 = reduce(i0);
       auto trans1 = reduce(i1);
       if(trans0 == i)
@@ -309,7 +309,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          incoming_trans[trans0][i].push_back(new urgfdag(urgf_operation::ATOMX));
          outgoing_trans[i][trans0].push_back(new urgfdag(urgf_operation::ATOMX));
       }
-      if(trans0 == i)
+      if(trans1 == i)
       {
          selfloop_trans[i].push_back(new urgfdag(urgf_operation::ATOMY));
       }
@@ -325,9 +325,6 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       auto t = q.top();
       q.pop();
       // eliminate one state.
-      auto incoming = incoming_trans[t];
-      auto outgoing = outgoing_trans[t];
-      auto selfloop = selfloop_trans[t];
       if(selfloop_trans[t].size() > 1)
       {
          // if there are more than one selfloops, we have to collect them.
@@ -339,6 +336,8 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          selfloop_trans[t].clear();
          selfloop_trans[t].push_back(newtree);
       }
+      set<dynamic_bitset<>> markedasdelete_incoming;
+      set<dynamic_bitset<>> markedasdelete_outgoing;
       for(auto i : incoming_trans[t])
       {
          // collect the parrelled transitions.
@@ -381,10 +380,10 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
                j.second.clear();
                j.second.push_back(newtree);
                // update the incoming transitions as well.
-               incoming_trans[j.first][t].clear();
-               incoming_trans[j.first][t].push_back(newtree);
+               incoming_trans[t][j.first].clear();
+               incoming_trans[t][j.first].push_back(newtree);
             }
-            if(selfloop.size()==0)
+            if(selfloop_trans[t].size()==0)
             {
                // concatenate
                auto newtree = new urgfdag(urgf_operation::MULTIPLY);
@@ -393,8 +392,9 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
                // replace with the new dag.
                // now i->t->j becomes i->j
                // remove i->t and remove t->j
-               incoming_trans[i.first].erase(t);
-               outgoing_trans[t].erase(j.first);
+               //incoming_trans[i.first].erase(t);
+               //outgoing_trans[t].erase(j.first);
+               // remove selfloop as well.
                if(i.first == j.first)
                {
                   // if i and j are the same, it is the selfloop.
@@ -403,23 +403,23 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
                else
                {
                   // if i and j are not the same, add this i->j to incoming and outgoing transitions.
-                  incoming_trans[i.first][j.first].push_back(newtree);
-                  outgoing_trans[j.first][i.first].push_back(newtree);
+                  incoming_trans[j.first][i.first].push_back(newtree);
+                  outgoing_trans[i.first][j.first].push_back(newtree);
                }
             }
-            else if(selfloop.size() == 1)
+            else if(selfloop_trans[t].size() == 1)
             {
                // oneinverse then concatenate
                auto newtree = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-               newtree->add_child(selfloop[0]);
+               newtree->add_child(selfloop_trans[t][0]);
                auto newtree2 = new urgfdag(urgf_operation::MULTIPLY);
                newtree2->add_child(i.second[0]);
                newtree2->add_child(newtree);
                newtree2->add_child(j.second[0]);
                // replace with the new dag.
                // now i->t->j becomes i->j
-               incoming_trans[i.first].erase(t);
-               outgoing_trans[t].erase(j.first);
+               //incoming_trans[i.first].erase(t);
+               //utgoing_trans[t].erase(j.first);
                selfloop_trans[t].clear();
                if(i.first == j.first)
                {
@@ -429,8 +429,8 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
                else
                {
                   // if i and j are not the same, add this i->j to incoming and outgoing transitions.
-                  incoming_trans[i.first][j.first].push_back(newtree2);
-                  outgoing_trans[j.first][i.first].push_back(newtree2);
+                  incoming_trans[j.first][i.first].push_back(newtree2);
+                  outgoing_trans[i.first][j.first].push_back(newtree2);
                }
             }
             else
@@ -439,6 +439,8 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
                cout<<"Error: more than one selfloop."<<endl;
             }
          }
+         // TODO: remove any transition related to t.
+         
       }
    }
    // union the selfloop incoming and outgoing transitions.
