@@ -7,6 +7,7 @@
 #include <flint/fmpz.h>
 #include<flint/arb.h>
 #include<flint/acb.h>
+#include <flint/fmpz_poly_q.h>
 #include<iostream>
 #include<boost/dynamic_bitset.hpp>
 #include <vector>
@@ -27,8 +28,7 @@ public:
    // The following functions are the basic operations on generating functions
    // The functions are overloaded to handle different types of generating functions
    // The functions are implemented
-   fmpz_poly_t numerator;
-   fmpz_poly_t denominator;
+   fmpz_poly_q_t rgf_instance;
    urgf operator+(const urgf& other);
    urgf operator-(const urgf& other);  
    urgf operator*(const urgf& other);
@@ -38,7 +38,6 @@ public:
    urgf atomy();
    urgf empty();
    void clear();
-   void reduce_factor();
    std::string to_string();
    static void test()
    {

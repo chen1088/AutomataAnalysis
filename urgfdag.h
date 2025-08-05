@@ -58,7 +58,7 @@ public:
             {
                 urgf result;
                 for (auto& child : children) {
-                    result = result * child->resolvetourgf();
+                    result = result * (child->resolvetourgf());
                     child->resolved_count++;
                     if(child->resolved_count == child->ref_count) {
                         child->clear();
@@ -168,9 +168,26 @@ public:
     
     static void test()
     {
-        dynamic_bitset<> a;
-        dynamic_bitset<> b;
-        cin >> a >> b;
-        cout<< a << " " << b << endl;
+        urgfdag root(urgf_operation::MULTIPLY);
+        urgfdag* child1 = new urgfdag(urgf_operation::ATOMX);
+        urgfdag* child2 = new urgfdag(urgf_operation::ATOMY);
+        root.add_child(child1);
+        root.add_child(child2);
+        cout << "Urgfdag structure: " << root.to_string() << endl;
+        urgf result = root.resolvetourgf();
+        cout << "Resolved urgf: " << result.to_string() << endl;
+        fmpz_poly_q_t test1, test2, test3;
+        fmpz_poly_q_init(test1);
+        fmpz_poly_q_init(test2);
+        fmpz_poly_q_init(test3);
+        fmpz_poly_q_set_str(test1, "2  0 1/1  1");
+        fmpz_poly_q_set_str(test2, "2  0 1/1  1");
+        fmpz_poly_q_mul(test3, test1, test2);
+        cout << "Test multiplication result: ";
+        fmpz_poly_q_print_pretty(test3, "x");
+        cout << endl;
+        fmpz_poly_q_clear(test1);
+        fmpz_poly_q_clear(test2);
+        fmpz_poly_q_clear(test3);
     }
 };

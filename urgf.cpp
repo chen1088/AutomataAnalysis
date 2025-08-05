@@ -2,24 +2,21 @@
 
 urgf::urgf()
 {
-    fmpz_poly_init(numerator);
-    fmpz_poly_init(denominator);
+    fmpz_poly_q_init(rgf_instance);
 }
 
 urgf::~urgf()
 {
     // Destructor to clear the numerator and denominator
-    fmpz_poly_clear(numerator);
-    fmpz_poly_clear(denominator);
+    // fmpz_poly_q_clear(rgf_instance);
 }
 
 urgf urgf::atomx()
 {
     // Create an atom for x
     urgf result;
-    fmpz_poly_set_coeff_ui(result.numerator, 1, 1); // x^1
-    fmpz_poly_set_coeff_ui(result.numerator, 0, 0); // x^0
-    fmpz_poly_set_coeff_ui(result.denominator, 0, 1); // 1
+    fmpz_poly_q_init(result.rgf_instance);
+    fmpz_poly_q_set_str(result.rgf_instance, "2  0 1/1  1");
     return result;
 }
 urgf urgf::atomy()
@@ -27,9 +24,8 @@ urgf urgf::atomy()
     // Create an atom for y
     // This is urgf so atomy is atomx
     urgf result;
-    fmpz_poly_set_coeff_ui(result.numerator, 1, 1); // x^1
-    fmpz_poly_set_coeff_ui(result.numerator, 0, 0); // x^0
-    fmpz_poly_set_coeff_ui(result.denominator, 0, 1); // 1
+    fmpz_poly_q_init(result.rgf_instance);
+    fmpz_poly_q_set_str(result.rgf_instance, "2  0 1/1  1");
     return result;
 }
 
@@ -37,24 +33,19 @@ urgf urgf::empty()
 {
     // Create a 0 generating function
     urgf result;
-    fmpz_poly_set_coeff_ui(result.numerator, 0, 0); // 0
-    fmpz_poly_set_coeff_ui(result.denominator, 0, 1); // 1
+    fmpz_poly_q_set_str(result.rgf_instance, "1  0/1  1");
     return result;
 }
 void urgf::clear()
 {
     // Clear the numerator and denominator
-    fmpz_poly_clear(numerator);
-    fmpz_poly_clear(denominator);
+    // fmpz_poly_q_clear(rgf_instance);
+    fmpz_poly_q_init(rgf_instance);
 }
 std::string urgf::to_string()
 {
     // Convert the generating function to a string representation
-    std::string result = "urgf: ";
-    result += fmpz_poly_get_str_pretty(numerator, "x");
-    result += " / ";
-    result += fmpz_poly_get_str_pretty(denominator, "x");
-    return result;
+    return fmpz_poly_q_get_str_pretty(rgf_instance, "x");
 }
 
 urgf urgf::operator+(const urgf& other)
@@ -63,16 +54,8 @@ urgf urgf::operator+(const urgf& other)
     // f2(x) = g2(x)/h2(x)
     // f3(x) = f1(x) + g2(x) = (g1(x)h2(x) + g2(x)h1(x))/(h1(x)h2(x))
     urgf result;
-    fmpz_poly_t temp1, temp2;
-    fmpz_poly_t temp3, temp4;
-    fmpz_poly_mul(temp1, this->numerator,other.denominator);
-    fmpz_poly_mul(temp2, other.numerator, this->denominator);
-    fmpz_poly_add(result.numerator, temp1, temp2);
-    fmpz_poly_mul(result.denominator, this->denominator, other.denominator);
-    fmpz_poly_gcd(temp3, result.numerator, result.denominator);
-    fmpz_poly_div(result.numerator, result.numerator, temp3);
-    fmpz_poly_div(result.denominator, result.denominator, temp3);
-    return result;    
+    fmpz_poly_q_add(result.rgf_instance, this->rgf_instance, other.rgf_instance);
+    return result;
 }
 urgf urgf::operator*(const urgf& other)
 {
@@ -80,13 +63,7 @@ urgf urgf::operator*(const urgf& other)
     // f2(x) = g2(x)/h2(x)
     // f3(x) = f1(x) * g2(x) = g1(x)g2(x)/h1(x)h2(x)
     urgf result;
-    fmpz_poly_t temp1, temp2;
-    fmpz_poly_mul(temp1, this->numerator, other.numerator);
-    fmpz_poly_mul(result.numerator, temp1, other.numerator);
-    fmpz_poly_mul(result.denominator, this->denominator, other.denominator);
-    fmpz_poly_gcd(temp2, result.numerator, result.denominator);
-    fmpz_poly_div(result.numerator, result.numerator, temp2);
-    fmpz_poly_div(result.denominator, result.denominator, temp2);
+    fmpz_poly_q_mul(result.rgf_instance, this->rgf_instance, other.rgf_instance);
     return result;
 }
 urgf urgf::operator-(const urgf& other)
@@ -95,15 +72,7 @@ urgf urgf::operator-(const urgf& other)
     // f2(x) = g2(x)/h2(x)
     // f3(x) = f1(x) - g2(x) = (g1(x)h2(x) - g2(x)h1(x))/(h1(x)h2(x))
     urgf result;
-    fmpz_poly_t temp1, temp2;
-    fmpz_poly_t temp3, temp4;
-    fmpz_poly_mul(temp1, this->numerator, other.denominator);
-    fmpz_poly_mul(temp2, other.numerator, this->denominator);
-    fmpz_poly_sub(result.numerator, temp1, temp2);
-    fmpz_poly_mul(result.denominator, this->denominator, other.denominator);
-    fmpz_poly_gcd(temp3, result.numerator, result.denominator);
-    fmpz_poly_div(result.numerator, result.numerator, temp3);
-    fmpz_poly_div(result.denominator, result.denominator, temp3);
+    fmpz_poly_q_sub(result.rgf_instance, this->rgf_instance, other.rgf_instance);
     return result;    
 }
 urgf urgf::operator/(const urgf& other)
@@ -112,14 +81,7 @@ urgf urgf::operator/(const urgf& other)
     // f2(x) = g2(x)/h2(x)
     // f3(x) = f1(x) / g2(x) = g1(x)h2(x)/(h1(x)g2(x))
     urgf result;
-    fmpz_poly_t temp1, temp2;
-    fmpz_poly_mul(temp1, this->numerator, other.denominator);
-    fmpz_poly_mul(temp2, this->denominator, other.numerator);
-    fmpz_poly_set(result.numerator, temp1);
-    fmpz_poly_set(result.denominator, temp2);
-    fmpz_poly_gcd(temp1, result.numerator, result.denominator);
-    fmpz_poly_div(result.numerator, result.numerator, temp1);
-    fmpz_poly_div(result.denominator, result.denominator, temp1);
+    fmpz_poly_q_div(result.rgf_instance, this->rgf_instance, other.rgf_instance);
     return result;    
 }
 urgf urgf::f1_minus_inv()
@@ -127,31 +89,15 @@ urgf urgf::f1_minus_inv()
     // f(x) = g(x)/h(x)
     // 1/(1-f(x)) = h(x)/(h(x)-g(x))
     urgf result;
-    fmpz_poly_t temp;
-    fmpz_poly_sub(temp, this->denominator, this->numerator);
-    fmpz_poly_set(result.numerator, this->denominator);
-    fmpz_poly_set(result.denominator, temp);
-    fmpz_poly_gcd(temp, result.numerator, result.denominator);
-    if(fmpz_poly_is_one(temp))
+    fmpz_poly_q_t temp,one;
+    fmpz_poly_q_set_str(one, "1  1/1  1");
+    fmpz_poly_q_init(temp);
+    if(fmpz_poly_q_is_one(this->rgf_instance))
     {
-        // if the gcd is one, we do not need to reduce.
+        cout<< "Error: cannot compute f1_minus_inv for 1." << endl;
         return result;
     }
-    fmpz_poly_div(result.numerator, result.numerator, temp);
-    fmpz_poly_div(result.denominator, result.denominator, temp);
+    fmpz_poly_q_sub(temp, one, this->rgf_instance);
+    fmpz_poly_q_inv(result.rgf_instance, temp);
     return result;
-}
-
-void urgf::reduce_factor()
-{
-    // if the numerator and denominator have a common factor, we divide them from both.
-    fmpz_poly_t temp;
-    fmpz_poly_gcd(temp, this->numerator, this->denominator);
-    if (fmpz_poly_is_one(temp))
-    {
-        // if the gcd is one, we do not need to reduce.
-        return;
-    }
-    fmpz_poly_div(this->numerator, this->numerator, temp);
-    fmpz_poly_div(this->denominator, this->denominator, temp);
 }
