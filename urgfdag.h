@@ -21,14 +21,15 @@ public:
     }
     ~urgfdag()
     {
-        // Clear the urgf instance if it is resolved.
-        if (is_resolved) {
-            urgf_instance.clear();
-        }
-        for (auto& child : children) {
-            delete child;
+        for (auto child : children) {
+            if(child->ref_count == 1) {
+                delete child;
+            } else {
+                child->ref_count--;
+            }
         }
         children.clear();
+        clear();
     }
     urgf resolvetourgf()
     {
@@ -41,12 +42,17 @@ public:
             case urgf_operation::ADD:
             // adding all children
             {
-                urgf result;
-                for (auto& child : children) {
-                    result = result + child->resolvetourgf();
-                    child->resolved_count++;
-                    if(child->resolved_count == child->ref_count) {
-                        child->clear();
+                // we assume there is at least one child
+                if (children.size() == 0) {
+                    cout <<"Error: ADD operation with no children." << endl;
+                    return urgf::getinstance().empty();
+                }
+                urgf result = children[0]->resolvetourgf();
+                for (int i = 1; i < children.size(); i++) {
+                    result = result + children[i]->resolvetourgf();
+                    children[i]->resolved_count++;
+                    if(children[i]->resolved_count == children[i]->ref_count) {
+                        children[i]->clear();
                     }
                 }
                 urgf_instance = result;
@@ -56,12 +62,18 @@ public:
             case urgf_operation::MULTIPLY:
             // multiplying all children by sequence
             {
-                urgf result;
-                for (auto& child : children) {
-                    result = result * (child->resolvetourgf());
-                    child->resolved_count++;
-                    if(child->resolved_count == child->ref_count) {
-                        child->clear();
+                // we assume there is at least one child
+                if (children.size() == 0) {
+                    cout <<"Error: MULTIPLY operation with no children." << endl;
+                    return urgf::getinstance().empty();
+                }
+                urgf result = children[0]->resolvetourgf();
+
+                for (int i = 1; i < children.size(); i++) {
+                    result = result * (children[i]->resolvetourgf());
+                    children[i]->resolved_count++;
+                    if(children[i]->resolved_count == children[i]->ref_count) {
+                        children[i]->clear();
                     }
                 }
                 urgf_instance = result;
@@ -73,7 +85,8 @@ public:
             {
                 // we assume there is only one child
                 if (children.size() != 1) {
-                    throw std::runtime_error("ONEMINUSINVERSE operation requires exactly one child.");
+                    cout <<"Error: ONEMINUSINVERSE operation with more than one child." << endl;
+                    return urgf::getinstance().empty();
                 }
                 urgf child_urgf = children[0]->resolvetourgf();
                 urgf_instance = child_urgf.f1_minus_inv();
@@ -82,6 +95,7 @@ public:
                 if(children[0]->resolved_count == children[0]->ref_count) {
                     children[0]->clear();
                 }
+                return urgf_instance;
             }
             case urgf_operation::ATOMX:
             // urgf equals x
@@ -168,26 +182,21 @@ public:
     
     static void test()
     {
-        urgfdag root(urgf_operation::MULTIPLY);
+        urgfdag * root = new urgfdag(urgf_operation::MULTIPLY);
+        urgfdag* b1 = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+        urgfdag* b2 = new urgfdag(urgf_operation::ADD);
         urgfdag* child1 = new urgfdag(urgf_operation::ATOMX);
         urgfdag* child2 = new urgfdag(urgf_operation::ATOMY);
-        root.add_child(child1);
-        root.add_child(child2);
-        cout << "Urgfdag structure: " << root.to_string() << endl;
-        urgf result = root.resolvetourgf();
+        urgfdag* child3 = new urgfdag(urgf_operation::ATOMX);
+        b1->add_child(child3);
+        b2->add_child(child1);
+        b2->add_child(child3);
+        b2->add_child(child2);
+        root->add_child(b1);
+        root->add_child(b2);
+        cout << "Urgfdag structure: " << root->to_string() << endl;
+        urgf result = root->resolvetourgf();
         cout << "Resolved urgf: " << result.to_string() << endl;
-        fmpz_poly_q_t test1, test2, test3;
-        fmpz_poly_q_init(test1);
-        fmpz_poly_q_init(test2);
-        fmpz_poly_q_init(test3);
-        fmpz_poly_q_set_str(test1, "2  0 1/1  1");
-        fmpz_poly_q_set_str(test2, "2  0 1/1  1");
-        fmpz_poly_q_mul(test3, test1, test2);
-        cout << "Test multiplication result: ";
-        fmpz_poly_q_print_pretty(test3, "x");
-        cout << endl;
-        fmpz_poly_q_clear(test1);
-        fmpz_poly_q_clear(test2);
-        fmpz_poly_q_clear(test3);
+        delete root;
     }
 };

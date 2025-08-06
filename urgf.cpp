@@ -39,7 +39,7 @@ urgf urgf::empty()
 void urgf::clear()
 {
     // Clear the numerator and denominator
-    // fmpz_poly_q_clear(rgf_instance);
+    fmpz_poly_q_clear(rgf_instance);
     fmpz_poly_q_init(rgf_instance);
 }
 std::string urgf::to_string()
@@ -90,7 +90,8 @@ urgf urgf::f1_minus_inv()
     // 1/(1-f(x)) = h(x)/(h(x)-g(x))
     urgf result;
     fmpz_poly_q_t temp,one;
-    fmpz_poly_q_set_str(one, "1  1/1  1");
+    fmpz_poly_q_init(one);
+    fmpz_poly_q_one(one);
     fmpz_poly_q_init(temp);
     if(fmpz_poly_q_is_one(this->rgf_instance))
     {

@@ -42,15 +42,14 @@ int main()
     string state1_str;
     to_string(state1, state1_str);
     cout<< "State1: " << state1_str << endl;
-    // std::cout << "PDFA3: " << pdfa3.to_string() << std::endl;
-    // auto urgfdag1 = pdfa3.compute_urgfdag(state1);
-    // std::cout << "Urgfdag1: " << urgfdag1->to_string() << std::endl;
+    std::cout << "PDFA3: " << pdfa3.to_string() << std::endl;
+    auto urgfdag1 = pdfa3.compute_urgfdag(state1);
+    std::cout << "Urgfdag1: " << urgfdag1->to_string() << std::endl;
     // auto urgfres = urgfdag1->resolvetourgf();
     // std::cout << "Urgfres: " << urgfres.to_string() << std::endl;
-    // delete urgfdag1;
-    // mglFLTK gr(graph, "MathGL
-    // cout << pdfa.to_string() << endl;
-    urgfdag::test();
+    delete urgfdag1;
+    cout << pdfa.to_string() << endl;
+    // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");
     // return gr.Run();
     return 0;
