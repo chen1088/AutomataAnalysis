@@ -29,7 +29,6 @@ public:
             }
         }
         children.clear();
-        clear();
     }
     urgf resolvetourgf()
     {

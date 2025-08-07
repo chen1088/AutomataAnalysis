@@ -45,8 +45,8 @@ int main()
     std::cout << "PDFA3: " << pdfa3.to_string() << std::endl;
     auto urgfdag1 = pdfa3.compute_urgfdag(state1);
     std::cout << "Urgfdag1: " << urgfdag1->to_string() << std::endl;
-    // auto urgfres = urgfdag1->resolvetourgf();
-    // std::cout << "Urgfres: " << urgfres.to_string() << std::endl;
+    auto urgfres = urgfdag1->resolvetourgf();
+    std::cout << "Urgfres: " << urgfres.to_string() << std::endl;
     delete urgfdag1;
     cout << pdfa.to_string() << endl;
     // urgfdag::test();

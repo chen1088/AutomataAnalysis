@@ -7,7 +7,6 @@ urgf::urgf()
 
 urgf::~urgf()
 {
-    // Destructor to clear the numerator and denominator
     // fmpz_poly_q_clear(rgf_instance);
 }
 
@@ -38,7 +37,6 @@ urgf urgf::empty()
 }
 void urgf::clear()
 {
-    // Clear the numerator and denominator
     fmpz_poly_q_clear(rgf_instance);
     fmpz_poly_q_init(rgf_instance);
 }
