@@ -30,6 +30,61 @@ public:
         }
         children.clear();
     }
+    urgf resolvetourgf_nocache()
+    {
+        // Resolve the urgf tree to a single urgf without caching.
+        // This function is not implemented yet.
+        switch(operation){
+            case urgf_operation::ADD:
+            {
+                // adding all children
+                if (children.size() == 0) {
+                    cout <<"Error: ADD operation with no children." << endl;
+                    return urgf::getinstance().empty();
+                }
+                urgf result = children[0]->resolvetourgf_nocache();
+                for (int i = 1; i < children.size(); i++) {
+                    result = result + children[i]->resolvetourgf_nocache();
+                }
+                return result;
+            }
+            case urgf_operation::MULTIPLY:
+            {
+                // multiplying all children
+                if (children.size() == 0) {
+                    cout <<"Error: MULTIPLY operation with no children." << endl;
+                    return urgf::getinstance().empty();
+                }
+                urgf result = children[0]->resolvetourgf_nocache();
+                for (int i = 1; i < children.size(); i++) {
+                    result = result * children[i]->resolvetourgf_nocache();
+                }
+                return result;
+            }
+            case urgf_operation::ONEMINUSINVERSE:
+            {
+                // one minus inverse of the child
+                if (children.size() != 1) {
+                    cout <<"Error: ONEMINUSINVERSE operation with more than one child." << endl;
+                    return urgf::getinstance().empty();
+                }
+                urgf child_urgf = children[0]->resolvetourgf_nocache();
+                return child_urgf.f1_minus_inv();
+            }
+            case urgf_operation::ATOMX:
+            {
+                return urgf::getinstance().atomx();
+            }
+            case urgf_operation::ATOMY:
+            {
+                return urgf::getinstance().atomy();
+            }
+            case urgf_operation::EMPTY:
+                return urgf::getinstance().empty();
+            default:
+                throw std::runtime_error("Unknown operation in urgfdag.");
+        }
+    }
     urgf resolvetourgf()
     {
         // Resolve the urgf tree to a single urgf.
@@ -178,24 +233,17 @@ public:
     int ref_count = 0;
     // Record how many of parents have been resolved.
     int resolved_count = 0;
-    
+
+    static void testfunctionmapping(map<int,vector<int>> &input)
+    {
+        input[2].push_back(3);
+    }
+
     static void test()
     {
-        urgfdag * root = new urgfdag(urgf_operation::MULTIPLY);
-        urgfdag* b1 = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-        urgfdag* b2 = new urgfdag(urgf_operation::ADD);
-        urgfdag* child1 = new urgfdag(urgf_operation::ATOMX);
-        urgfdag* child2 = new urgfdag(urgf_operation::ATOMY);
-        urgfdag* child3 = new urgfdag(urgf_operation::ATOMX);
-        b1->add_child(child3);
-        b2->add_child(child1);
-        b2->add_child(child3);
-        b2->add_child(child2);
-        root->add_child(b1);
-        root->add_child(b2);
-        cout << "Urgfdag structure: " << root->to_string() << endl;
-        urgf result = root->resolvetourgf();
-        cout << "Resolved urgf: " << result.to_string() << endl;
-        delete root;
+        map<int,vector<int>> testmap;
+        testfunctionmapping(testmap);
+        cout << testmap[2][0] << endl; // should print 3, since the map is passed by reference
     }
+    
 };

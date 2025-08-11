@@ -1,5 +1,91 @@
 #include "RegPDFA.h"
 
+void eliminate_state(map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> &incoming_trans,
+                     map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> &outgoing_trans,
+                     map<dynamic_bitset<>,vector<urgfdag*>> &selfloop_trans,
+                     dynamic_bitset<> t);
+void print_transitions(map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> transitions)
+{
+   for(auto i : transitions)
+   {
+      string i_str;
+      boost::to_string(i.first, i_str);
+      reverse(i_str.begin(), i_str.end());
+      cout << "From state: " << i_str << endl;
+      for(auto j : i.second)
+      {
+         string j_str;
+         boost::to_string(j.first, j_str);
+         reverse(j_str.begin(), j_str.end());
+         cout << "  To state: " << j_str << " via " << j.second.size() << " transitions." << endl;
+         for(auto k : j.second)
+         {
+            auto urgfstr = k->resolvetourgf_nocache().to_string();
+            cout << "    urgf: " << urgfstr << endl;
+         }
+      }
+   }
+}
+void print_incomingtransitions(map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> incoming_trans)
+{
+   cout << "Incoming transitions:" << endl;
+   for(auto i : incoming_trans)
+   {
+      string i_str;
+      boost::to_string(i.first, i_str);
+      reverse(i_str.begin(), i_str.end());
+      for(auto j : i.second)
+      {
+         string j_str;
+         boost::to_string(j.first, j_str);
+         reverse(j_str.begin(), j_str.end());
+         cout << j_str << " to " << i_str<< " via " << j.second.size() << " transitions." << endl;
+         for(auto k : j.second)
+         {
+            auto urgfstr = k->resolvetourgf_nocache().to_string();
+            cout << "    urgf: " << urgfstr << endl;
+         }
+      }
+   }
+}
+void print_outgoingtransitions(map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> outgoing_trans)
+{
+   cout << "Outgoing transitions:" << endl;
+   for(auto i : outgoing_trans)
+   {
+      string i_str;
+      boost::to_string(i.first, i_str);
+      reverse(i_str.begin(), i_str.end());
+      for(auto j : i.second)
+      {
+         string j_str;
+         boost::to_string(j.first, j_str);
+         reverse(j_str.begin(), j_str.end());
+         cout << i_str << " to " << j_str << " via " << j.second.size() << " transitions." << endl;
+         for(auto k : j.second)
+         {
+            auto urgfstr = k->resolvetourgf_nocache().to_string();
+            cout << "    urgf: " << urgfstr << endl;
+         }
+      }
+   }
+}
+void print_selflooptransitions(map<dynamic_bitset<>,vector<urgfdag*>> selfloop_trans)
+{
+   for(auto i : selfloop_trans)
+   {
+      string i_str;
+      boost::to_string(i.first, i_str);
+      reverse(i_str.begin(), i_str.end());
+      cout << "Self-loop at state: " << i_str << endl;
+      for(auto k : i.second)
+      {
+         auto urgfstr = k->resolvetourgf_nocache().to_string();
+         cout << "    urgf: " << urgfstr << endl;
+      }
+   }
+}
+
 RegPDFA::RegPDFA()
 {
    size = 0;
@@ -307,7 +393,7 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       else
       {
          incoming_trans[trans0][i].push_back(new urgfdag(urgf_operation::ATOMX));
-         outgoing_trans[i][trans0].push_back(new urgfdag(urgf_operation::ATOMX));
+         outgoing_trans[i][trans0].push_back(new urgfdag(urgf_operation::ATOMX)); 
       }
       if(trans1 == i)
       {
@@ -319,139 +405,17 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          outgoing_trans[i][trans1].push_back(new urgfdag(urgf_operation::ATOMY));
       }
    }
-   
+   // print_incomingtransitions(incoming_trans);
+   // print_outgoingtransitions(outgoing_trans);
+   // print_selflooptransitions(selfloop_trans);
+
    while(!q.empty())
    {
       auto t = q.top();
       q.pop();
       // eliminate one state.
-      if(selfloop_trans[t].size() > 1)
-      {
-         // if there are more than one selfloops, we have to collect them.
-         auto newtree = new urgfdag(urgf_operation::ADD);
-         for(auto i : selfloop_trans[t])
-         {
-            newtree->add_child(i);
-         }
-         selfloop_trans[t].clear();
-         selfloop_trans[t].push_back(newtree);
-      }
-      set<dynamic_bitset<>> markedasdelete_incoming;
-      set<dynamic_bitset<>> markedasdelete_outgoing;
-      for(auto i : incoming_trans[t])
-      {
-         // collect the parrelled transitions.
-         if(i.second.size() == 0)
-         {
-            // if this is empty, why would we store it?
-            cout<<"Error: empty incoming transition."<<endl;
-         }
-         else if(i.second.size() > 1)
-         {
-            // if this is more than one, we have to collect them.
-            auto newtree = new urgfdag(urgf_operation::ADD);
-            for(auto j : i.second)
-            {
-               newtree->add_child(j);
-            }
-            i.second.clear();
-            i.second.push_back(newtree);
-            // update the outgoing transitions as well.
-            outgoing_trans[i.first][t].clear();
-            outgoing_trans[i.first][t].push_back(newtree);
-         }
-         
-         for(auto j: outgoing_trans[t])
-         {
-            //collect the outgoing transitions.
-            if(j.second.size() == 0)
-            {
-               // if this is empty, why would we store it?
-               cout<<"Error: empty outgoing transition."<<endl;
-            }
-            else if(j.second.size() > 1)
-            {
-               // if this is more than one, we have to collect them.
-               auto newtree = new urgfdag(urgf_operation::ADD);
-               for(auto k : j.second)
-               {
-                  newtree->add_child(k);
-               }
-               j.second.clear();
-               j.second.push_back(newtree);
-               // update the incoming transitions as well.
-               incoming_trans[t][j.first].clear();
-               incoming_trans[t][j.first].push_back(newtree);
-            }
-            if(selfloop_trans[t].size()==0)
-            {
-               // concatenate
-               auto newtree = new urgfdag(urgf_operation::MULTIPLY);
-               newtree->add_child(i.second[0]);
-               newtree->add_child(j.second[0]);
-               // replace with the new dag.
-               // now i->t->j becomes i->j
-               if(i.first == j.first)
-               {
-                  // if i and j are the same, it is the selfloop.
-                  selfloop_trans[i.first].push_back(newtree);
-               }
-               else
-               {
-                  // if i and j are not the same, add this i->j to incoming and outgoing transitions.
-                  incoming_trans[j.first][i.first].push_back(newtree);
-                  outgoing_trans[i.first][j.first].push_back(newtree);
-               }
-            }
-            else if(selfloop_trans[t].size() == 1)
-            {
-               // oneinverse then concatenate
-               auto newtree = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-               newtree->add_child(selfloop_trans[t][0]);
-               auto newtree2 = new urgfdag(urgf_operation::MULTIPLY);
-               newtree2->add_child(i.second[0]);
-               newtree2->add_child(newtree);
-               newtree2->add_child(j.second[0]);
-               // replace with the new dag.
-               // now i->t->j becomes i->j
-               if(i.first == j.first)
-               {
-                  // if i and j are the same, it is the selfloop.
-                  selfloop_trans[i.first].push_back(newtree2);
-               }
-               else
-               {
-                  // if i and j are not the same, add this i->j to incoming and outgoing transitions.
-                  incoming_trans[j.first][i.first].push_back(newtree2);
-                  outgoing_trans[i.first][j.first].push_back(newtree2);
-               }
-            }
-            else
-            {
-               // not possible
-               cout<<"Error: more than one selfloop."<<endl;
-            }
-         }
-      }
-      selfloop_trans.erase(t);
-      for(auto k:incoming_trans[t])
-      {
-         markedasdelete_incoming.insert(k.first);
-      }
-      for(auto k: markedasdelete_incoming)
-      {
-         outgoing_trans[k].erase(t);
-      }
-      for(auto k: outgoing_trans[t])
-      {
-         markedasdelete_outgoing.insert(k.first);
-      }
-      for(auto k: markedasdelete_outgoing)
-      {
-         incoming_trans[k].erase(t);
-      }
-      outgoing_trans.erase(t);
-      incoming_trans.erase(t);
+      eliminate_state(incoming_trans, outgoing_trans, selfloop_trans, t);
+      
    }
    // union the selfloop incoming and outgoing transitions.
    if(selfloop_trans[src].size() >= 1)
@@ -502,6 +466,9 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       outgoing_trans[src][dst].clear();
       outgoing_trans[src][dst].push_back(newtree);
    }
+   print_incomingtransitions(incoming_trans);
+   print_outgoingtransitions(outgoing_trans);
+   print_selflooptransitions(selfloop_trans);
    // the result includes both selfloops.
    if(incoming_trans[dst][src].size() !=0)
    {
@@ -524,16 +491,16 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          {  
             newselfloopdst->add_child(selfloopsrc);
          }
-         newselfloopdst->add_child(incoming_trans[src][dst][0]);
+         newselfloopdst->add_child(incoming_trans[dst][src][0]);
          // union the selfloop on dst.
          if(selfloop_trans[dst].size() != 0)
          {
-            auto oldselfloopdst = new urgfdag(urgf_operation::ONEMINUSINVERSE);
-            oldselfloopdst->add_child(selfloop_trans[dst][0]);
             auto allselfloopdst = new urgfdag(urgf_operation::ADD);
-            allselfloopdst->add_child(oldselfloopdst);
+            allselfloopdst->add_child(selfloop_trans[dst][0]);
             allselfloopdst->add_child(newselfloopdst);
-            res->add_child(allselfloopdst);
+            auto allselfloopdstoneminusinverse = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+            allselfloopdstoneminusinverse->add_child(allselfloopdst);
+            res->add_child(allselfloopdstoneminusinverse);
             return res;
          }
          else
@@ -627,4 +594,140 @@ bool RegPDFA::check_completeness()
       }
    }
    return true;
+}
+
+void eliminate_state(map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> &incoming_trans,
+                     map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> &outgoing_trans,
+                     map<dynamic_bitset<>,vector<urgfdag*>> &selfloop_trans,
+                     dynamic_bitset<> t)
+{
+   if(selfloop_trans[t].size() > 1)
+   {
+      // if there are more than one selfloops, we have to collect them.
+      auto newtree = new urgfdag(urgf_operation::ADD);
+      for(auto i : selfloop_trans[t])
+      {
+         newtree->add_child(i);
+      }
+      selfloop_trans[t].clear();
+      selfloop_trans[t].push_back(newtree);
+   }
+   set<dynamic_bitset<>> markedasdelete_incoming;
+   set<dynamic_bitset<>> markedasdelete_outgoing;
+   for(auto i : incoming_trans[t])
+   {
+      // collect the parrelled transitions.
+      if(i.second.size() == 0)
+      {
+         // This only happens if the state is the starting state.
+         cout<<"Error: empty incoming transition."<<endl;
+      }
+      else if(i.second.size() > 1)
+      {
+         // if this is more than one, we have to collect them.
+         auto newtree = new urgfdag(urgf_operation::ADD);
+         for(auto j : i.second)
+         {
+            newtree->add_child(j);
+         }
+         i.second.clear();
+         i.second.push_back(newtree);
+         // update the outgoing transitions as well.
+         outgoing_trans[i.first][t].clear();
+         outgoing_trans[i.first][t].push_back(newtree);
+      }
+      
+      for(auto j: outgoing_trans[t])
+      {
+         //collect the outgoing transitions.
+         if(j.second.size() == 0)
+         {
+            // if this is empty, why would we store it?
+            cout<<"Error: empty outgoing transition."<<endl;
+         }
+         else if(j.second.size() > 1)
+         {
+            // if this is more than one, we have to collect them.
+            auto newtree = new urgfdag(urgf_operation::ADD);
+            for(auto k : j.second)
+            {
+               newtree->add_child(k);
+            }
+            j.second.clear();
+            j.second.push_back(newtree);
+            // update the incoming transitions as well.
+            incoming_trans[j.first][t].clear();
+            incoming_trans[j.first][t].push_back(newtree);
+         }
+         if(selfloop_trans[t].size()==0)
+         {
+            // concatenate
+            auto newtree = new urgfdag(urgf_operation::MULTIPLY);
+            newtree->add_child(i.second[0]);
+            newtree->add_child(j.second[0]);
+            // replace with the new dag.
+            // now i->t->j becomes i->j
+            if(i.first == j.first)
+            {
+               // if i and j are the same, it is the selfloop.
+               selfloop_trans[i.first].push_back(newtree);
+            }
+            else
+            {
+               // if i and j are not the same, add this i->j to incoming and outgoing transitions.
+               incoming_trans[j.first][i.first].push_back(newtree);
+               outgoing_trans[i.first][j.first].push_back(newtree);
+            }
+         }
+         else if(selfloop_trans[t].size() == 1)
+         {
+            // oneinverse then concatenate
+            auto newtree = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+            newtree->add_child(selfloop_trans[t][0]);
+            auto newtree2 = new urgfdag(urgf_operation::MULTIPLY);
+            newtree2->add_child(i.second[0]);
+            newtree2->add_child(newtree);
+            newtree2->add_child(j.second[0]);
+            // replace with the new dag.
+            // now i->t->j becomes i->j
+            if(i.first == j.first)
+            {
+               // if i and j are the same, it is the selfloop.
+               selfloop_trans[i.first].push_back(newtree2);
+            }
+            else
+            {
+               // if i and j are not the same, add this i->j to incoming and outgoing transitions.
+               incoming_trans[j.first][i.first].push_back(newtree2);
+               outgoing_trans[i.first][j.first].push_back(newtree2);
+            }
+         }
+         else
+         {
+            // not possible
+            cout<<"Error: more than one selfloop."<<endl;
+         }
+      }
+   }
+   selfloop_trans.erase(t);
+   for(auto k:incoming_trans[t])
+   {
+      markedasdelete_incoming.insert(k.first);
+   }
+   for(auto k: markedasdelete_incoming)
+   {
+      outgoing_trans[k].erase(t);
+   }
+   for(auto k: outgoing_trans[t])
+   {
+      markedasdelete_outgoing.insert(k.first);
+   }
+   for(auto k: markedasdelete_outgoing)
+   {
+      incoming_trans[k].erase(t);
+   }
+   outgoing_trans.erase(t);
+   incoming_trans.erase(t);
+   
+
 }
