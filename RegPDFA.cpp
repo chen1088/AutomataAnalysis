@@ -405,9 +405,6 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
          outgoing_trans[i][trans1].push_back(new urgfdag(urgf_operation::ATOMY));
       }
    }
-   // print_incomingtransitions(incoming_trans);
-   // print_outgoingtransitions(outgoing_trans);
-   // print_selflooptransitions(selfloop_trans);
 
    while(!q.empty())
    {
@@ -466,9 +463,6 @@ urgfdag* RegPDFA::compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<
       outgoing_trans[src][dst].clear();
       outgoing_trans[src][dst].push_back(newtree);
    }
-   print_incomingtransitions(incoming_trans);
-   print_outgoingtransitions(outgoing_trans);
-   print_selflooptransitions(selfloop_trans);
    // the result includes both selfloops.
    if(incoming_trans[dst][src].size() !=0)
    {
@@ -538,8 +532,167 @@ urgfdag* RegPDFA::compute_urgfdag(dynamic_bitset<> state)
 }  
 urgfdag* RegPDFA::compute_urgfdag_selfloop(dynamic_bitset<> state)
 {
-   // TODO: compute the selfloop for the state.
-   return new urgfdag(urgf_operation::EMPTY);
+   // now we assume src and dst are different.
+   // incoming and outgoing transitions do not count selfloops.
+   map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> incoming_trans;
+   map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> outgoing_trans;
+   map<dynamic_bitset<>,vector<urgfdag*>> selfloop_trans;
+   // initialize a queue to store the states.
+   stack<dynamic_bitset<>> q;
+   auto allstates = getallstates();
+   for(auto i : allstates)
+   {
+      if(i != state && i != dynamic_bitset<>(0))
+      {
+         q.push(i);
+      }
+      auto i0 = dynamic_bitset<>(i);
+      i0.push_back(false);
+      auto i1 = dynamic_bitset<>(i);
+      i1.push_back(true);
+      auto trans0 = reduce(i0);
+      auto trans1 = reduce(i1);
+      if(trans0 == i)
+      {
+         selfloop_trans[i].push_back(new urgfdag(urgf_operation::ATOMX));
+      }
+      else
+      {
+         incoming_trans[trans0][i].push_back(new urgfdag(urgf_operation::ATOMX));
+         outgoing_trans[i][trans0].push_back(new urgfdag(urgf_operation::ATOMX)); 
+      }
+      if(trans1 == i)
+      {
+         selfloop_trans[i].push_back(new urgfdag(urgf_operation::ATOMY));
+      }
+      else
+      {
+         incoming_trans[trans1][i].push_back(new urgfdag(urgf_operation::ATOMY));
+         outgoing_trans[i][trans1].push_back(new urgfdag(urgf_operation::ATOMY));
+      }
+   }
+
+   while(!q.empty())
+   {
+      auto t = q.top();
+      q.pop();
+      // eliminate one state.
+      eliminate_state(incoming_trans, outgoing_trans, selfloop_trans, t);
+      
+   }
+   if(state == dynamic_bitset<>(0))
+   {
+      print_selflooptransitions(selfloop_trans);
+      // there is just one state left
+      if(selfloop_trans[state].size() >= 1)
+      {
+         // if there is a selfloop, we need to include it.
+         auto allselfloop = new urgfdag(urgf_operation::ADD);
+         for(auto i : selfloop_trans[state])
+         {
+            allselfloop->add_child(i);
+         }
+         auto res = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+         res->add_child(allselfloop);
+         return res;
+      }
+      else if(selfloop_trans[state].size() == 1)
+      {
+         // if there is exactly one selfloop, we need to include it.
+         auto res = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+         res->add_child(selfloop_trans[state][0]);
+         return res;
+      }
+      else
+      {
+         // if there is no selfloop, we return an empty urgfdag.
+         return new urgfdag(urgf_operation::EMPTY);
+      }
+   }
+   // union the selfloop incoming and outgoing transitions.
+   if(selfloop_trans[state].size() >= 1)
+   {
+      // if there are selfloops, we have to collect them.
+      auto newtree = new urgfdag(urgf_operation::ADD);
+      for(auto i : selfloop_trans[state])
+      {
+         newtree->add_child(i);
+      }
+      selfloop_trans[state].clear();
+      selfloop_trans[state].push_back(newtree);
+   }
+   if(incoming_trans[state][dynamic_bitset<>(0)].size() >=1)
+   {
+      auto newtree = new urgfdag(urgf_operation::ADD);
+      for(auto i : incoming_trans[state][dynamic_bitset<>(0)])
+      {
+         newtree->add_child(i);
+      }
+      incoming_trans[state][dynamic_bitset<>(0)].clear();
+      incoming_trans[state][dynamic_bitset<>(0)].push_back(newtree);
+      outgoing_trans[dynamic_bitset<>(0)][state].clear();
+      outgoing_trans[dynamic_bitset<>(0)][state].push_back(newtree);
+   }
+   if(incoming_trans[dynamic_bitset<>(0)][state].size() >=1)
+   {
+      auto newtree = new urgfdag(urgf_operation::ADD);
+      for(auto i : incoming_trans[dynamic_bitset<>(0)][state])
+      {
+         newtree->add_child(i);
+      }
+      incoming_trans[dynamic_bitset<>(0)][state].clear();
+      incoming_trans[dynamic_bitset<>(0)][state].push_back(newtree);
+      outgoing_trans[dynamic_bitset<>(0)][state].clear();
+      outgoing_trans[dynamic_bitset<>(0)][state].push_back(newtree);
+   }
+   if(selfloop_trans[dynamic_bitset<>(0)].size() >= 1)
+   {
+      // if there are selfloops, we have to collect them.
+      auto newtree = new urgfdag(urgf_operation::ADD);
+      for(auto i : selfloop_trans[dynamic_bitset<>(0)])
+      {
+         newtree->add_child(i);
+      }
+      selfloop_trans[dynamic_bitset<>(0)].clear();
+      selfloop_trans[dynamic_bitset<>(0)].push_back(newtree);
+   }
+   // the result includes both selfloops.
+   if(incoming_trans[state][dynamic_bitset<>(0)].size() !=0&&
+   incoming_trans[dynamic_bitset<>(0)][state].size() !=0)
+   {
+      // make a new loop
+      auto newloop = new urgfdag(urgf_operation::MULTIPLY);
+      newloop->add_child(incoming_trans[dynamic_bitset<>(0)][state][0]);
+      if(selfloop_trans[dynamic_bitset<>(0)].size() != 0)
+      {
+         auto selfloop0 = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+         selfloop0->add_child(selfloop_trans[dynamic_bitset<>(0)][0]);
+         newloop->add_child(selfloop0);
+      }
+      newloop->add_child(incoming_trans[state][dynamic_bitset<>(0)][0]);
+      if(selfloop_trans[state].size() != 0)
+      {
+         auto allloops= new urgfdag(urgf_operation::ADD);
+         allloops->add_child(selfloop_trans[state][0]);
+         allloops->add_child(newloop);
+         auto res = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+         res->add_child(allloops);
+         return res;
+      }
+      else
+      {
+         auto res = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+         res->add_child(newloop);
+         return res;
+      }
+      return newloop;
+   }
+   else
+   {
+      auto res = new urgfdag(urgf_operation::ONEMINUSINVERSE);
+      res->add_child(selfloop_trans[state][0]);
+      return res;
+   }
 }
 
 urgfdag* RegPDFA::compute_urgfdag_minusminus(dynamic_bitset<> src, dynamic_bitset<> dst)
@@ -599,7 +752,7 @@ bool RegPDFA::check_completeness()
 void eliminate_state(map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> &incoming_trans,
                      map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>> &outgoing_trans,
                      map<dynamic_bitset<>,vector<urgfdag*>> &selfloop_trans,
-                     dynamic_bitset<> t)
+                     const dynamic_bitset<> t)
 {
    if(selfloop_trans[t].size() > 1)
    {
@@ -642,7 +795,7 @@ void eliminate_state(map<dynamic_bitset<>,map<dynamic_bitset<>,vector<urgfdag*>>
          //collect the outgoing transitions.
          if(j.second.size() == 0)
          {
-            // if this is empty, why would we store it?
+            // It is impossible to have no outgoing transition.
             cout<<"Error: empty outgoing transition."<<endl;
          }
          else if(j.second.size() > 1)

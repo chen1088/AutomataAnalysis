@@ -37,7 +37,8 @@ int main()
     auto pdfa3 = pdfa.cartesian_product(pdfa2);
     RegPDFA pdfa4;
     pdfa4.initwithstring("4 00-_,01-0,10-1,11-0");
-    dynamic_bitset<> state1,state2;
+    dynamic_bitset<> state1,state2,state3;
+    state3 = dynamic_bitset<>(0);
     state2.push_back(false);
     state1.push_back(false);
     state1.push_back(false);
@@ -52,7 +53,7 @@ int main()
     std::cout << "Urgfdag1: " << urgfdag1->to_string() << std::endl;
     auto urgfres = urgfdag1->resolvetourgf();
     std::cout << "Urgfres: " << urgfres.to_string() << std::endl;
-    auto urgfdag2 = pdfa4.compute_urgfdag(state2);
+    auto urgfdag2 = pdfa4.compute_urgfdag(state3);
     std::cout << "Urgfdag2: " << urgfdag2->to_string() << std::endl;
     auto urgfres2 = urgfdag2->resolvetourgf();
     std::cout << "Urgfres2: " << urgfres2.to_string() << std::endl;
