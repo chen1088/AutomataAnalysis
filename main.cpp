@@ -6,6 +6,7 @@
 //#include <mgl2/fltk.h>
 //#include "urgf.h"
 #include "urgfdag.h"
+#include "brgfdag.h"
 //#include "RegPDFA.h"
 //#include"flint/arb.h"
 //#include"flint/flint.h"
@@ -53,9 +54,9 @@ int main()
     std::cout << "Urgfdag1: " << urgfdag1->to_string() << std::endl;
     auto urgfres = urgfdag1->resolvetourgf();
     std::cout << "Urgfres: " << urgfres.to_string() << std::endl;
-    auto urgfdag2 = urgfdag::compute_urgfdag(pdfa4, state3);
+    auto urgfdag2 = brgfdag::compute_brgfdag(pdfa4, state2);
     std::cout << "Urgfdag2: " << urgfdag2->to_string() << std::endl;
-    auto urgfres2 = urgfdag2->resolvetourgf();
+    auto urgfres2 = urgfdag2->resolvetobrgf();
     std::cout << "Urgfres2: " << urgfres2.to_string() << std::endl;
     delete urgfdag1;
     delete urgfdag2;
