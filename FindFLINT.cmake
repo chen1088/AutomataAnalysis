@@ -1,5 +1,7 @@
-find_path(FLINT_INCLUDE_DIR names flint/flint.h)
-find_library(FLINT_LIBRARY names flint)
+find_path(FLINT_INCLUDE_DIR NAMES flint/flint.h
+    PATHS /usr/local/include)
+find_library(FLINT_LIBRARY NAMES flint
+    PATHS /usr/local/lib)
 
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(FLINT DEFAULT_MSG FLINT_INCLUDE_DIR FLINT_LIBRARY)
