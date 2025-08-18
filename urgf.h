@@ -1,17 +1,18 @@
+#pragma once
+
 #include <map>
-#include<flint/fmpz_poly.h>
-#include<flint/arb_fmpz_poly.h>
+#include <flint/fmpz_poly.h>
+#include <flint/arb_fmpz_poly.h>
 #include <flint/fmpq_mpoly.h>
 #include <flint/fmpz_mpoly.h>
 #include <flint/fmpq_poly.h>
 #include <flint/fmpz.h>
-#include<flint/arb.h>
-#include<flint/acb.h>
+#include <flint/arb.h>
+#include <flint/acb.h>
 #include <flint/fmpz_poly_q.h>
-#include<iostream>
-#include<boost/dynamic_bitset.hpp>
+#include <iostream>
+#include <boost/dynamic_bitset.hpp>
 #include <vector>
-#include <mgl2/mgl.h>
 using namespace std;
 
 class urgf
@@ -22,15 +23,13 @@ public:
    ~urgf();
    static urgf &getinstance()
    {
-      static urgf instance;
-      return instance;
+     static urgf instance;
+     return instance;
    }
-   // The following functions are the basic operations on generating functions
-   // The functions are overloaded to handle different types of generating functions
-   // The functions are implemented
+
    fmpz_poly_q_t rgf_instance;
    urgf operator+(const urgf& other);
-   urgf operator-(const urgf& other);  
+   urgf operator-(const urgf& other);
    urgf operator*(const urgf& other);
    urgf operator/(const urgf& other);
    urgf f1_minus_inv();
@@ -39,136 +38,102 @@ public:
    urgf empty();
    void clear();
    std::string to_string();
+
    static void test()
    {
-      // fmpz_poly_t p1, p2, p3;
-      // fmpz_poly_init(p1);
-      // fmpz_poly_init(p2);
-      // fmpz_poly_init(p3);
-      // fmpz_poly_set_str(p1, "3  1 2 3");
-      // fmpz_poly_set_str(p2, "4  1 0 3 4");
-      // fmpz_poly_print_pretty(p1,"x");
-      // cout<<endl;
-      // fmpz_poly_print_pretty(p2,"x");
-      // cout<<endl;
-      // fmpz_poly_mul(p3, p1, p2);
-      // fmpz_poly_gcd(p3,p1,p3);
-      // fmpz_poly_print_pretty(p3,"x");
-      // for(int i = 0;i<100;i++)
-      // {
-      //    fmpz_poly_mul(p3, p1, p3);
-      // }
-      // fmpz_poly_print_pretty(p3,"x");
-      // acb_t res,x;
-      // acb_init(res);
-      // //acb_init(x);
-      // acb_set_d_d(x,1.0,0.5);
-      // arb_fmpz_poly_evaluate_acb(res,p3,x,1000);
-      // acb_printd(res, 10);
-
-      // Initialize FLINT rational polynomial context with 2 variables (x, y)
-      fmpq_mpoly_ctx_t ctx;
-      fmpq_mpoly_ctx_init(ctx, 2, ORD_LEX);
-      fmpq_mpoly_ctx_t ctx2;
-      fmpq_mpoly_ctx_init(ctx2, 1, ORD_LEX);
-
-      // Create the rational polynomial: f(x, y) = x^4 + y^4 - 4*x^2*y^2 + 2*x*y - 1/2
-      fmpq_mpoly_t poly;
-      fmpq_mpoly_init(poly, ctx);
-      const char *vars[] = {"x", "y"};
-      int r = fmpq_mpoly_set_str_pretty(poly, "x^4 + y^4 - 4*x^2*y^2 + 2*x*y - 1/2", vars, ctx);
-      cout << "Set polynomial: " << fmpq_mpoly_get_str_pretty(poly, vars, ctx) << endl;
-      fmpq_t testnumber;
-      fmpq_init(testnumber);
-      fmpq_set_si(testnumber, 1, 1);
-      fmpq_t testnumber2;
-      fmpq_init(testnumber2);
-      fmpq_set_si(testnumber2, 1, 2);
-      fmpq_mpoly_t testx;
-      fmpq_mpoly_init(testx, ctx2);
-      fmpq_mpoly_evaluate_one_fmpq(testx,poly,0,testnumber,ctx);
-      cout<<"Evaluate x: " << fmpq_mpoly_get_str_pretty(testx, vars, ctx) << endl;
-      
-      fmpq_t testxy;
-      fmpq_init(testxy);
-      fmpq* testnumber_array[] = { testnumber, testnumber2 };
-      fmpq_mpoly_evaluate_all_fmpq(testxy, testx, testnumber_array, ctx);
-      fmpq_t testx_coeff1;
-      fmpq_t testx_exp1_res;;
-      ulong * testx_exp1 = new ulong[2];
-      testx_exp1[0] = 0; // x^1
-      testx_exp1[1] = 3; // y^0
-      fmpq_init(testx_coeff1);
-      fmpq_mpoly_get_term_coeff_fmpq(testx_coeff1, testx, 1, ctx);
-      fmpq_mpoly_get_coeff_fmpq_ui(testx_exp1_res, testx, testx_exp1, ctx);
-      cout << "Evaluate x coefficient: " << fmpq_get_d(testx_coeff1) << endl;
-      cout << "Evaluate x exponent: ";
-      cout << fmpq_get_d(testx_exp1_res) << " ";
-      // print testxy
-      cout<<"Evaluate y: " << fmpq_get_d(testxy) << endl;
-      // Grid setup
-      const int Nx = 600, Ny = 600;
-      const double x_min = -3.0, x_max = 3.0;
-      const double y_min = -3.0, y_max = 3.0;
-      const double threshold = 0.01;
-      const slong scale = 1000000;
-
-      mglData data(Nx, Ny);
-
-      // Initialize FLINT temporaries
-      fmpq_t xval, yval, fval;
-      fmpz_t xnum, ynum, denom;
-      fmpq_init(xval); fmpq_init(yval); fmpq_init(fval);
-      fmpz_init(xnum); fmpz_init(ynum); fmpz_init(denom);
-      fmpz_set_si(denom, scale);
-
-      for (int j = 0; j < Ny; ++j) {
-         double y_real = y_min + (y_max - y_min) * j / (Ny - 1);
-         slong y_scaled = static_cast<slong>(y_real * scale);
-         fmpz_set_si(ynum, y_scaled);
-         fmpq_set_fmpz_frac(yval, ynum, denom);
-
-         for (int i = 0; i < Nx; ++i) {
-               double x_real = x_min + (x_max - x_min) * i / (Nx - 1);
-               slong x_scaled = static_cast<slong>(x_real * scale);
-               fmpz_set_si(xnum, x_scaled);
-               fmpq_set_fmpz_frac(xval, xnum, denom);
-
-               // Step 1: Evaluate at y = yval
-               fmpq_mpoly_t fx;
-               fmpq_mpoly_init(fx, ctx);
-               fmpq_mpoly_evaluate_one_fmpq(fx, poly, 1, yval, ctx);
-
-               // Step 2: Evaluate at x = xval
-               fmpq_mpoly_t fconst;
-               fmpq_mpoly_init(fconst, ctx);
-               fmpq_mpoly_evaluate_one_fmpq(fconst, fx, 0, xval, ctx);
-
-               // Step 3: Extract constant term
-               slong nvars = fmpq_mpoly_ctx_nvars(ctx);
-               std::vector<slong> expv(nvars, 0);
-               fmpq_mpoly_get_term_coeff_fmpq(fval, fconst, 0, ctx);
-
-               double fval_d = fmpq_get_d(fval);
-               data.a[i + Nx * j] = (std::fabs(fval_d) < threshold) ? 1.0 : 0.0;
-
-               fmpq_mpoly_clear(fx, ctx);
-               fmpq_mpoly_clear(fconst, ctx);
-         }
-      }
-
-      // // Plot using MathGL
-      // mglGraph gr;
-      // gr.SetRanges(x_min, x_max, y_min, y_max);
-      // gr.Axis("xy");
-      // gr.Dens(data, "kw");
-      // gr.WriteFrame("fmpq_constant_term_curve.png");
-
-      // // Cleanup
-      // fmpz_clear(xnum); fmpz_clear(ynum); fmpz_clear(denom);
-      // fmpq_clear(xval); fmpq_clear(yval); fmpq_clear(fval);
-      // fmpq_mpoly_clear(poly, ctx);
-      fmpq_mpoly_ctx_clear(ctx);
+     
    }
 };
+
+// Implementations (inlined to make header-only)
+inline urgf::urgf()
+{
+   fmpz_poly_q_init(rgf_instance);
+}
+
+inline urgf::~urgf()
+{
+   //fmpz_poly_q_clear(rgf_instance);
+}
+
+inline urgf urgf::atomx()
+{
+   // Create an atom for x
+   urgf result;
+   fmpz_poly_q_init(result.rgf_instance);
+   fmpz_poly_q_set_str(result.rgf_instance, "2  0 1/1  1");
+   return result;
+}
+inline urgf urgf::atomy()
+{
+   // Create an atom for y (same as x for this univariate class)
+   urgf result;
+   fmpz_poly_q_init(result.rgf_instance);
+   fmpz_poly_q_set_str(result.rgf_instance, "2  0 1/1  1");
+   return result;
+}
+
+inline urgf urgf::empty()
+{
+   // Create a 0 generating function
+   urgf result;
+   fmpz_poly_q_set_str(result.rgf_instance, "1  0/1  1");
+   return result;
+}
+
+inline void urgf::clear()
+{
+   fmpz_poly_q_clear(rgf_instance);
+   fmpz_poly_q_init(rgf_instance);
+}
+
+inline std::string urgf::to_string()
+{
+   // Convert the generating function to a string representation
+   return fmpz_poly_q_get_str_pretty(rgf_instance, "x");
+}
+
+inline urgf urgf::operator+(const urgf& other)
+{
+   urgf result;
+   fmpz_poly_q_add(result.rgf_instance, this->rgf_instance, other.rgf_instance);
+   return result;
+}
+inline urgf urgf::operator*(const urgf& other)
+{
+   urgf result;
+   fmpz_poly_q_mul(result.rgf_instance, this->rgf_instance, other.rgf_instance);
+   return result;
+}
+inline urgf urgf::operator-(const urgf& other)
+{
+   urgf result;
+   fmpz_poly_q_sub(result.rgf_instance, this->rgf_instance, other.rgf_instance);
+   return result;    
+}
+inline urgf urgf::operator/(const urgf& other)
+{
+   urgf result;
+   fmpz_poly_q_div(result.rgf_instance, this->rgf_instance, other.rgf_instance);
+   return result;    
+}
+inline urgf urgf::f1_minus_inv()
+{
+   urgf result;
+   fmpz_poly_q_t temp,one;
+   fmpz_poly_q_init(one);
+   fmpz_poly_q_one(one);
+   fmpz_poly_q_init(temp);
+   if(fmpz_poly_q_is_one(this->rgf_instance))
+   {
+      cout<< "Error: cannot compute f1_minus_inv for 1." << endl;
+      return result;
+   }
+   fmpz_poly_q_sub(temp, one, this->rgf_instance);
+   fmpz_poly_q_inv(result.rgf_instance, temp);
+   fmpz_poly_q_clear(temp);
+   fmpz_poly_q_clear(one);
+   return result;
+}
+
 

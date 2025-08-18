@@ -8,7 +8,6 @@
 #include <sstream>
 #include<flint/fmpz_poly.h>
 #include<flint/fmpz_mpoly.h>
-#include"urgfdag.h"
 using namespace std;
 #include<boost/dynamic_bitset/dynamic_bitset.hpp>
 using boost::dynamic_bitset;
@@ -26,7 +25,7 @@ public:
    // 2. s is not in the map, and s can be reduced, we solve the congruence of s.
    // 3. s is not in the map, and s cannot be reduced, by default the sc(c is any character) is congruent to sc.
    // Plan changed. Now congruences must be complete.
-   urgfdag* dag = nullptr;
+   
    RegPDFA();
    ~RegPDFA();
    RegPDFA(unsigned int s);
@@ -41,14 +40,6 @@ public:
    virtual void initwithstring(string s);
    virtual string to_string();
    RegPDFA cartesian_product(RegPDFA other);
-   
-   urgfdag* compute_urgfdag(dynamic_bitset<> state);
-   urgfdag* compute_urgfdag_plusplus(dynamic_bitset<> src, dynamic_bitset<> dst);
-   urgfdag* compute_urgfdag_plusminus(dynamic_bitset<> src, dynamic_bitset<> dst);
-   urgfdag* compute_urgfdag_minusminus(dynamic_bitset<> src, dynamic_bitset<> dst);
-   urgfdag* compute_urgfdag_minusplus(dynamic_bitset<> src, dynamic_bitset<> dst);
-   urgfdag* compute_urgfdag_selfloop(dynamic_bitset<> state);
-   // Compute the urgf tree for some state.
    bool check_completeness();
 private:
    map<dynamic_bitset<>, dynamic_bitset<>> congruence0;

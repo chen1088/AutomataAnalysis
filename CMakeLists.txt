@@ -3,7 +3,7 @@ set(CMAKE_CXX_STANDARD 20)
 project(ProductAutomata VERSION 0.1.0 LANGUAGES C CXX)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 
-add_executable(ProductAutomata main.cpp RegPDFA.cpp urgf.cpp)
+add_executable(ProductAutomata main.cpp RegPDFA.cpp)
 
 #find_package(mp++ REQUIRED)
 #target_link_libraries(ProductAutomata mp++::mp++)
