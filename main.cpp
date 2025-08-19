@@ -4,9 +4,7 @@
 #include <iostream>
 //#include <mp++/mp++.hpp>
 //#include <mgl2/fltk.h>
-//#include "urgf.h"
-#include "urgfdag.h"
-#include "brgfdag.h"
+#include "rgfdag.h"
 //#include "RegPDFA.h"
 //#include"flint/arb.h"
 //#include"flint/flint.h"
@@ -50,11 +48,11 @@ int main()
     to_string(state2, state2_str);
     cout<< "State2: " << state2_str << endl;
     std::cout << "PDFA3: " << pdfa3.to_string() << std::endl;
-    auto urgfdag1 = urgfdag::compute_urgfdag(pdfa3, state1);
+    auto urgfdag1 = rgfdag<urgf>::compute_rgfdag(pdfa3, state1);
     std::cout << "Urgfdag1: " << urgfdag1->to_string() << std::endl;
     auto urgfres = urgfdag1->resolvetourgf();
     std::cout << "Urgfres: " << urgfres.to_string() << std::endl;
-    auto urgfdag2 = brgfdag::compute_brgfdag(pdfa4, state2);
+    auto urgfdag2 = rgfdag<brgf>::compute_rgfdag(pdfa4, state2);
     std::cout << "Urgfdag2: " << urgfdag2->to_string() << std::endl;
     auto urgfres2 = urgfdag2->resolvetobrgf();
     std::cout << "Urgfres2: " << urgfres2.to_string() << std::endl;
