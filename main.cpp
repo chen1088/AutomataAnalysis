@@ -50,11 +50,11 @@ int main()
     std::cout << "PDFA3: " << pdfa3.to_string() << std::endl;
     auto urgfdag1 = rgfdag<urgf>::compute_rgfdag(pdfa3, state1);
     std::cout << "Urgfdag1: " << urgfdag1->to_string() << std::endl;
-    auto urgfres = urgfdag1->resolvetourgf();
+    auto urgfres = urgfdag1->resolvetorgf();
     std::cout << "Urgfres: " << urgfres.to_string() << std::endl;
     auto urgfdag2 = rgfdag<brgf>::compute_rgfdag(pdfa4, state2);
     std::cout << "Urgfdag2: " << urgfdag2->to_string() << std::endl;
-    auto urgfres2 = urgfdag2->resolvetobrgf();
+    auto urgfres2 = urgfdag2->resolvetorgf();
     std::cout << "Urgfres2: " << urgfres2.to_string() << std::endl;
     delete urgfdag1;
     delete urgfdag2;
