@@ -5,6 +5,8 @@
 //#include <mp++/mp++.hpp>
 //#include <mgl2/fltk.h>
 #include "rgfdag.h"
+#include "RegPDFAGenerator.h"
+#include "FullBinaryTreeGenerator.h"
 //#include "RegPDFA.h"
 //#include"flint/arb.h"
 //#include"flint/flint.h"
@@ -35,7 +37,7 @@ int main()
     pdfa2.initwithstring("5 000-00,001-0,01-0,10-_,11-1");
     auto pdfa3 = pdfa.cartesian_product(pdfa2);
     RegPDFA pdfa4;
-    pdfa4.initwithstring("4 00-_,01-0,10-1,11-0");
+    pdfa4.initwithstring("4 00-_,01-0,10-0,11-1");
     dynamic_bitset<> state1,state2,state3;
     state3 = dynamic_bitset<>(0);
     state2.push_back(false);
@@ -59,6 +61,7 @@ int main()
     delete urgfdag1;
     delete urgfdag2;
     cout << pdfa.to_string() << endl;
+    FullBinaryTreeGenerator::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");
     // return gr.Run();
