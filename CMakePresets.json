@@ -25,13 +25,5 @@
             "CMAKE_BUILD_TYPE": "Debug"
          }
       }
-   ],
-   "buildPresets": [
-      {
-         "name": "ProductAutomata",
-         "description": "",
-         "displayName": "",
-         "configurePreset": "GCC 14.2.0 x86_64-linux-gnu"
-      }
    ]
 }
