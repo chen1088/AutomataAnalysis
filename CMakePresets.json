@@ -12,6 +12,18 @@
             "CMAKE_CXX_COMPILER": "/usr/bin/g++",
             "CMAKE_BUILD_TYPE": "Debug"
          }
+      },
+      {
+         "name": "GCC 14.2.0 x86_64-linux-gnu",
+         "description": "Using compilers: downloaded 14.2.0 from xpack",
+         "displayName": "GCC 14.2.0 x86_64-linux-gnu",
+         "binaryDir": "${sourceDir}/out/build/${presetName}",
+         "cacheVariables": {
+            "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+            "CMAKE_C_COMPILER": "${sourceDir}/../xpack-gcc-14.2.0-2/bin/gcc",
+            "CMAKE_CXX_COMPILER": "${sourceDir}/../xpack-gcc-14.2.0-2/bin/g++",
+            "CMAKE_BUILD_TYPE": "Debug"
+         }
       }
    ],
    "buildPresets": [
@@ -19,7 +31,7 @@
          "name": "ProductAutomata",
          "description": "",
          "displayName": "",
-         "configurePreset": "GCC 13.2.0 x86_64-linux-gnu"
+         "configurePreset": "GCC 14.2.0 x86_64-linux-gnu"
       }
    ]
 }
