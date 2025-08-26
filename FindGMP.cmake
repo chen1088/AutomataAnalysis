@@ -9,10 +9,12 @@ find_path(GMP_INCLUDES
   $ENV{GMPDIR}
   ${INCLUDE_INSTALL_DIR}
   ../gmp-build/include
+  ../gmp-6.3.0/include
 )
 
 find_library(GMP_LIBRARIES gmp PATHS $ENV{GMPDIR}
 ../gmp-build/lib
+../gmp-6.3.0/lib
 ${LIB_INSTALL_DIR})
 
 include(FindPackageHandleStandardArgs)
