@@ -22,13 +22,10 @@ RegPDFA::~RegPDFA()
 }
 void RegPDFA::initwithstring(string s)
 {
-   // the format of the string is "2 001-100,01-0,11-_"
-   // the first number is the number of leaf states.
+   // the format of the string is "001-100,01-0,11-_"
    // _ is the empty string.
-   // the second part is the transitions.
+   // the transitions are in the format of pair of "pppc-qqqq".
    stringstream ss(s);
-   int leaf_count;
-   ss >> leaf_count;
 
    // Read the transitions.
    string transitions;
@@ -90,7 +87,6 @@ void RegPDFA::initwithstring(string s)
       }
       settransition(src_pop, dst, src[src.size()-1]);
    }
-   size = leaf_count;
    // check completeness of the pdfa.
    
    return;
