@@ -7,6 +7,7 @@
 #include "rgfdag.h"
 #include "RegPDFAGenerator.h"
 #include "FullBinaryTreeGenerator.h"
+#include "VectorNGenerator.h"
 //#include "RegPDFA.h"
 //#include"flint/arb.h"
 //#include"flint/flint.h"
@@ -62,6 +63,7 @@ int main()
     delete urgfdag2;
     cout << pdfa.to_string() << endl;
     FullBinaryTreeGenerator::test();
+    VectorNGenerator::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");
     // return gr.Run();
