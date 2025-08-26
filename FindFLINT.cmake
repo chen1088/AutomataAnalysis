@@ -1,12 +1,18 @@
-find_path(FLINT_INCLUDE_DIR NAMES flint/flint.h
-    PATHS /usr/local/include
-    ../flint/include
-    ../flint-build/include
+find_path(FLINT_INCLUDE_DIR NAMES flint/flint.h 
+  PATHS 
+  /opt/local/include
+  /usr/include
+  /usr/local/include
+  ../flint/include
+  ../flint-build/include
 )
 find_library(FLINT_LIBRARY NAMES flint
-    PATHS /usr/local/lib
-    ../flint/lib
-    ../flint-build/lib)
+  PATHS
+  /opt/local/lib
+  /usr/local/lib
+  /usr/lib
+  ../flint/lib
+  ../flint-build/lib)
 
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(FLINT DEFAULT_MSG FLINT_INCLUDE_DIR FLINT_LIBRARY)

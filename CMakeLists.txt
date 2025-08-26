@@ -5,6 +5,7 @@ project(ProductAutomata VERSION 0.1.0 LANGUAGES C CXX)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 
 add_executable(ProductAutomata main.cpp RegPDFA.cpp)
+add_executable(MatM mm.cpp RegPDFA.cpp)
 
 #find_package(mp++ REQUIRED)
 #target_link_libraries(ProductAutomata mp++::mp++)
@@ -13,7 +14,8 @@ add_executable(ProductAutomata main.cpp RegPDFA.cpp)
 find_package(GMP REQUIRED)
 target_link_libraries(ProductAutomata ${GMP_LIBRARIES})
 target_include_directories(ProductAutomata PUBLIC ${GMP_INCLUDES})
-
 find_package(FLINT REQUIRED)
 target_link_libraries(ProductAutomata ${FLINT_LIBRARIES})
 target_include_directories(ProductAutomata PUBLIC ${FLINT_INCLUDE_DIR})
+target_link_libraries(MatM ${FLINT_LIBRARIES})
+target_include_directories(MatM PUBLIC ${FLINT_INCLUDE_DIR})
