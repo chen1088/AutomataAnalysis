@@ -5,33 +5,33 @@ using namespace std;
 class VectorNGenerator
 {
 public:
-   static generator<vector<int>> generate(int n, int vector_size)
+   static generator<vector<int>> generate(const vector<int>& input)
    {
-      // It generates all vectors of length 'vector_size' where each element is in the range [0, n).
-      if (vector_size <= 0) co_return;
-      vector<int> current(vector_size, 0);
+      // It generates all vectors of length 'vector_size' where each element is in the range [0, input[i]).
+      if (input.empty()) co_return;
+      vector<int> current(input.size(), 0);
       while (true)
       {
          co_yield current;
          int i = 0;
-         while (i < vector_size)
+         while (i < input.size())
          {
             current[i]++;
-            if (current[i] < n)
+            if (current[i] < input[i])
                break;
             current[i] = 0;
             i++;
          }
-         if (i == vector_size)
+         if (i == input.size())
             break;
       }
    }
    static void test()
    {
       int n = 3;
-      int vector_size = 4;
-      cout << "Generating all vectors of size " << vector_size << " with elements in [0, " << n << "):\n";
-      for (const auto &vec : generate(n, vector_size))
+      cout << "Generating all vectors with elements in the ranges specified by the input vector:\n";
+      vector<int> input = {3, 3, 3, 5};
+      for (const auto &vec : generate(input))
       {
          cout << "[ ";
          for (int val : vec)

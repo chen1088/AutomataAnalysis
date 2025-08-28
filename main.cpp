@@ -64,6 +64,7 @@ int main()
     cout << pdfa.to_string() << endl;
     FullBinaryTreeGenerator::test();
     VectorNGenerator::test();
+    RegPDFAGenerator::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");
     // return gr.Run();
