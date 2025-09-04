@@ -23,9 +23,10 @@ enum class rgf_operation
    ADD,
    MULTIPLY,
    ONEMINUSINVERSE,
-   ATOMX, // 0
-   ATOMY, // 1
-   EMPTY,
+   ATOMX, // 0-transition
+   ATOMY, // 1-transition
+   ONE, // equals 1
+   EMPTY, // empty is 0
 };
 
 // Template DAG for rational generating functions.
@@ -110,6 +111,8 @@ public:
       }
       case rgf_operation::EMPTY:
          return T::getinstance().empty();
+      case rgf_operation::ONE:
+         return T::getinstance().one();
       default:
          throw std::runtime_error("Unknown operation in rgfdag.");
       }
@@ -192,6 +195,12 @@ public:
       case rgf_operation::ATOMY:
          {
             rgf_instance = T::getinstance().atomy();
+            is_resolved = true;
+            return rgf_instance;
+         }
+      case rgf_operation::ONE:
+         {
+            rgf_instance = T::getinstance().one();
             is_resolved = true;
             return rgf_instance;
          }
@@ -393,7 +402,7 @@ public:
       {
          auto t = q.top();
          q.pop();
-         eliminate_state(incoming_trans, outgoing_trans, selfloop_trans, t);
+         eliminate_state_v2(incoming_trans, outgoing_trans, selfloop_trans, t);
       }
       if (selfloop_trans[src].size() >= 1)
       {
@@ -486,16 +495,6 @@ public:
    static rgfdag<T> *compute_rgfdag(RegPDFA pdfa, dynamic_bitset<> state)
    {
       return compute_rgfdag_plusplus(pdfa, dynamic_bitset<>(0), state);
-   }
-
-   // Backwards-compatible static wrappers: older code calls compute_urgfdag / compute_brgfdag
-   static rgfdag<T> *compute_urgfdag(RegPDFA pdfa, dynamic_bitset<> state)
-   {
-      return compute_rgfdag(pdfa, state);
-   }
-   static rgfdag<T> *compute_brgfdag(RegPDFA pdfa, dynamic_bitset<> state)
-   {
-      return compute_rgfdag(pdfa, state);
    }
 
    static rgfdag<T> *compute_rgfdag_selfloop(RegPDFA pdfa, dynamic_bitset<> state)
@@ -608,7 +607,94 @@ public:
 
    static rgfdag<T> *compute_rgfdag_minusminus(RegPDFA pdfa, dynamic_bitset<> src, dynamic_bitset<> dst)
    {
-      return new rgfdag<T>(rgf_operation::EMPTY);
+      map<dynamic_bitset<>, map<dynamic_bitset<>, vector<rgfdag<T> *>>> incoming_trans;
+      map<dynamic_bitset<>, map<dynamic_bitset<>, vector<rgfdag<T> *>>> outgoing_trans;
+      map<dynamic_bitset<>, vector<rgfdag<T> *>> selfloop_trans;
+      stack<dynamic_bitset<>> q;
+      auto allstates = pdfa.getallstates();
+      for (auto i : allstates)
+      {
+         if (i != src && i != dst && i != dynamic_bitset<>(0))
+         {
+            q.push(i);
+         }
+         auto i0 = dynamic_bitset<>(i);
+         i0.push_back(false);
+         auto i1 = dynamic_bitset<>(i);
+         i1.push_back(true);
+         auto trans0 = pdfa.reduce(i0);
+         auto trans1 = pdfa.reduce(i1);
+         if (trans0 == i)
+         {
+            selfloop_trans[i].push_back(new rgfdag<T>(rgf_operation::ATOMX));
+         }
+         else
+         {
+            incoming_trans[trans0][i].push_back(new rgfdag<T>(rgf_operation::ATOMX));
+            outgoing_trans[i][trans0].push_back(new rgfdag<T>(rgf_operation::ATOMX));
+         }
+         if (trans1 == i)
+         {
+            selfloop_trans[i].push_back(new rgfdag<T>(rgf_operation::ATOMY));
+         }
+         else
+         {
+            incoming_trans[trans1][i].push_back(new rgfdag<T>(rgf_operation::ATOMY));
+            outgoing_trans[i][trans1].push_back(new rgfdag<T>(rgf_operation::ATOMY));
+         }
+      }
+
+      while (!q.empty())
+      {
+         auto t = q.top();
+         q.pop();
+         eliminate_state(incoming_trans, outgoing_trans, selfloop_trans, t);
+      }
+      if (incoming_trans[dynamic_bitset<>(0)].size() != 0)
+      {
+         // eliminate the starting state.
+         eliminate_state(incoming_trans, outgoing_trans, selfloop_trans, dynamic_bitset<>(0));
+      }
+      else
+      {
+
+      }
+      if (selfloop_trans[src].size() >= 1)
+      {
+         auto newtree = new rgfdag<T>(rgf_operation::ADD);
+         for (auto i : selfloop_trans[src]) newtree->add_child(i);
+         selfloop_trans[src].clear();
+         selfloop_trans[src].push_back(newtree);
+      }
+      if (selfloop_trans[dst].size() >= 1)
+      {
+         auto newtree = new rgfdag<T>(rgf_operation::ADD);
+         for (auto i : selfloop_trans[dst]) newtree->add_child(i);
+         selfloop_trans[dst].clear();
+         selfloop_trans[dst].push_back(newtree);
+      }
+      if (incoming_trans[src][dst].size() >= 1)
+      {
+         auto newtree = new rgfdag<T>(rgf_operation::ADD);
+         for (auto i : incoming_trans[src][dst]) newtree->add_child(i);
+         incoming_trans[src][dst].clear();
+         incoming_trans[src][dst].push_back(newtree);
+         outgoing_trans[dst][src].clear();
+         outgoing_trans[dst][src].push_back(newtree);
+      }
+      if (incoming_trans[dst][src].size() >= 1)
+      {
+         auto newtree = new rgfdag<T>(rgf_operation::ADD);
+         for (auto i : incoming_trans[dst][src]) newtree->add_child(i);
+         incoming_trans[dst][src].clear();
+         incoming_trans[dst][src].push_back(newtree);
+         outgoing_trans[src][dst].clear();
+         outgoing_trans[src][dst].push_back(newtree);
+      }
+
+      
+      
+      return incoming_trans[dst][src][0];
    }
    static rgfdag<T> *compute_rgfdag_minusplus(RegPDFA pdfa, dynamic_bitset<> src, dynamic_bitset<> dst)
    {
@@ -637,6 +723,9 @@ public:
          if (i.second.size() == 0)
          {
             cout << "Error: empty incoming transition." << endl;
+            // This only happens when we have a start state with no incoming transitions
+            // Shall we insert a pseudo incoming transition?
+            return;
          }
          else if (i.second.size() > 1)
          {
@@ -705,6 +794,96 @@ public:
       for (auto k : markedasdelete_outgoing) incoming_trans[k].erase(t);
       outgoing_trans.erase(t);
       incoming_trans.erase(t);
+   }
+
+   static void eliminate_state_v2(map<dynamic_bitset<>, map<dynamic_bitset<>, vector<rgfdag<T> *>>> &incoming_trans,
+                               map<dynamic_bitset<>, map<dynamic_bitset<>, vector<rgfdag<T> *>>> &outgoing_trans,
+                               map<dynamic_bitset<>, vector<rgfdag<T> *>> &selfloop_trans,
+                               const dynamic_bitset<> t)
+   {
+      // map<dynamic_bitset<>, vector<rgfdag<T> *>> pseudo_start;
+      bool noincoming_flag = false;
+      bool hasselfloop = false;
+      if (selfloop_trans[t].size() > 1)
+      {
+         auto newtree = new rgfdag<T>(rgf_operation::ADD);
+         for (auto i : selfloop_trans[t]) newtree->add_child(i);
+         selfloop_trans[t].clear(); selfloop_trans[t].push_back(newtree);
+      }
+      rgfdag<T> *selffinal = new rgfdag<T>(rgf_operation::ONEMINUSINVERSE);
+      if(selfloop_trans[t].size() == 1)
+      {
+         selffinal->add_child(selfloop_trans[t][0]);
+         hasselfloop = true;
+      }
+      set<dynamic_bitset<>> markedasdelete_incoming;
+      set<dynamic_bitset<>> markedasdelete_outgoing;
+      map<dynamic_bitset<>, vector<rgfdag<T> *>> pseudo_start;
+      for (auto i : incoming_trans[t])
+      {
+         if (i.second.size() == 0)
+         {
+            // This only happens when we have a start state with no incoming transitions
+            // Shall we insert a pseudo incoming transition?
+            i.second.push_back(new rgfdag<T>(rgf_operation::ONE));
+            outgoing_trans[t][i.first].push_back(i.second[0]);
+            noincoming_flag = true;
+         }
+         else if (i.second.size() > 1)
+         {
+            auto newtree = new rgfdag<T>(rgf_operation::ADD);
+            for (auto j : i.second) newtree->add_child(j);
+            i.second.clear(); i.second.push_back(newtree);
+            outgoing_trans[i.first][t].clear(); outgoing_trans[i.first][t].push_back(newtree);
+         }
+         auto newtree_incoming = new rgfdag<T>(rgf_operation::MULTIPLY);
+         newtree_incoming->add_child(i.second[0]);
+         if(hasselfloop) newtree_incoming->add_child(selffinal);
+         for (auto j : outgoing_trans[t])
+         {
+            if (j.second.size() > 1)
+            {
+               auto newtree = new rgfdag<T>(rgf_operation::ADD);
+               for (auto k : j.second) newtree->add_child(k);
+               j.second.clear(); j.second.push_back(newtree);
+               incoming_trans[j.first][t].clear(); incoming_trans[j.first][t].push_back(newtree);
+            }
+            auto newtree_incoming_outgoing = new rgfdag<T>(rgf_operation::MULTIPLY);
+            newtree_incoming_outgoing->add_child(newtree_incoming);
+            newtree_incoming_outgoing->add_child(j.second[0]);
+            if (i.first == j.first)
+            {
+               selfloop_trans[i.first].push_back(newtree_incoming_outgoing);
+            }
+            else
+            {
+               if(!noincoming_flag)
+               {
+                  incoming_trans[j.first][i.first].push_back(newtree_incoming_outgoing);
+                  outgoing_trans[i.first][j.first].push_back(newtree_incoming_outgoing);
+               }
+               else
+               {
+                  pseudo_start[j.first].push_back(newtree_incoming_outgoing);
+               }
+            }
+         }
+      }
+      selfloop_trans.erase(t);
+      for (auto k : incoming_trans[t]) markedasdelete_incoming.insert(k.first);
+      for (auto k : markedasdelete_incoming) outgoing_trans[k].erase(t);
+      for (auto k : outgoing_trans[t]) markedasdelete_outgoing.insert(k.first);
+      for (auto k : markedasdelete_outgoing) incoming_trans[k].erase(t);
+      outgoing_trans.erase(t);
+      incoming_trans.erase(t);
+      if(noincoming_flag)
+      {
+         for(auto i : pseudo_start)
+         {
+            incoming_trans[i.first][dynamic_bitset<>(0)].push_back(i.second[0]);
+            outgoing_trans[dynamic_bitset<>(0)][i.first].push_back(i.second[0]);
+         }
+      }
    }
    ///////////////////////////////////////////////////
 

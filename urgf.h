@@ -35,6 +35,7 @@ public:
    urgf f1_minus_inv();
    urgf atomx();
    urgf atomy();
+   urgf one();
    urgf empty();
    void clear();
    std::string to_string();
@@ -70,6 +71,14 @@ inline urgf urgf::atomy()
    urgf result;
    fmpz_poly_q_init(result.rgf_instance);
    fmpz_poly_q_set_str(result.rgf_instance, "2  0 1/1  1");
+   return result;
+}
+
+inline urgf urgf::one()
+{
+   // Create a 1 generating function
+   urgf result;
+   fmpz_poly_q_set_str(result.rgf_instance, "1  1/1");
    return result;
 }
 

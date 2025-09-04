@@ -43,6 +43,7 @@ public:
    // Constructors for atoms
    brgf atomx() const; // returns the generating function for x
    brgf atomy() const; // returns the generating function for y
+   brgf one() const;   // one generating function
    brgf empty() const; // zero generating function
 
    void clear();
@@ -82,6 +83,14 @@ inline brgf brgf::atomy() const
    brgf result;
    const char *vars[] = {"x", "y"};
    fmpz_mpoly_q_set_str_pretty(result.bgf_instance, "y", vars, result.ctx);
+   return result;
+}
+
+inline brgf brgf::one() const
+{
+   brgf result;
+   const char *vars[] = {"x", "y"};
+   fmpz_mpoly_q_set_str_pretty(result.bgf_instance, "1", vars, result.ctx);
    return result;
 }
 
