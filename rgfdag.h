@@ -214,7 +214,34 @@ public:
          throw std::runtime_error("Unknown operation in rgfdag.");
       }
    }
-
+   unsigned int get_size()
+   {
+      set<rgfdag<T> *> visited;
+      return get_size_recur(visited);
+   }
+   unsigned int get_size_recur(set<rgfdag<T> *> &visited)
+   {
+      if (visited.find(this) != visited.end())
+      {
+         return 0;
+      }
+      visited.insert(this);
+      switch (operation)
+      {
+         case rgf_operation::ONE:
+         case rgf_operation::ATOMX:
+         case rgf_operation::ATOMY:
+         case rgf_operation::EMPTY:
+            return 1;
+         default:
+            unsigned int size = 1;
+            for (auto child : children)
+            {
+               size += child->get_size_recur(visited);
+            }
+            return size;
+      }
+   }
    string to_string()
    {
       string result = "";
@@ -261,6 +288,10 @@ public:
       child->ref_count++;
    }
 
+   bool is_equivalent(rgfdag<T> *other)
+   {
+      return this->resolvetorgf_nocache() == other->resolvetorgf_nocache();
+   }
    vector<rgfdag<T> *> children;
    rgf_operation operation;
    T rgf_instance;
@@ -614,7 +645,7 @@ public:
       auto allstates = pdfa.getallstates();
       for (auto i : allstates)
       {
-         if (i != src && i != dst && i != dynamic_bitset<>(0))
+         if (i != src && i != dst)
          {
             q.push(i);
          }
@@ -648,17 +679,9 @@ public:
       {
          auto t = q.top();
          q.pop();
-         eliminate_state(incoming_trans, outgoing_trans, selfloop_trans, t);
+         eliminate_state_v2(incoming_trans, outgoing_trans, selfloop_trans, t);
       }
-      if (incoming_trans[dynamic_bitset<>(0)].size() != 0)
-      {
-         // eliminate the starting state.
-         eliminate_state(incoming_trans, outgoing_trans, selfloop_trans, dynamic_bitset<>(0));
-      }
-      else
-      {
-
-      }
+      
       if (selfloop_trans[src].size() >= 1)
       {
          auto newtree = new rgfdag<T>(rgf_operation::ADD);
@@ -691,18 +714,14 @@ public:
          outgoing_trans[src][dst].clear();
          outgoing_trans[src][dst].push_back(newtree);
       }
-
-      
-      
-      return incoming_trans[dst][src][0];
-   }
-   static rgfdag<T> *compute_rgfdag_minusplus(RegPDFA pdfa, dynamic_bitset<> src, dynamic_bitset<> dst)
-   {
-      return new rgfdag<T>(rgf_operation::EMPTY);
-   }
-   static rgfdag<T> *compute_rgfdag_plusminus(RegPDFA pdfa, dynamic_bitset<> src, dynamic_bitset<> dst)
-   {
-      return new rgfdag<T>(rgf_operation::EMPTY);
+      if(src == dst)
+      {
+         return selfloop_trans[src][0];
+      }
+      else
+      {
+         return incoming_trans[dst][src][0];
+      }
    }
 
    static void eliminate_state(map<dynamic_bitset<>, map<dynamic_bitset<>, vector<rgfdag<T> *>>> &incoming_trans,

@@ -32,9 +32,11 @@ public:
    urgf operator-(const urgf& other);
    urgf operator*(const urgf& other);
    urgf operator/(const urgf& other);
+   bool operator==(const urgf& other) const;
    urgf f1_minus_inv();
    urgf atomx();
    urgf atomy();
+   urgf atomz();
    urgf one();
    urgf empty();
    void clear();
@@ -42,7 +44,17 @@ public:
 
    static void test()
    {
-     
+      urgf a = urgf::getinstance().atomx();
+      urgf b = urgf::getinstance().atomy();
+      b = b + a;
+      urgf c = urgf::getinstance().atomz();
+      urgf aa = urgf::getinstance().atomx();
+      cout<< "a: " << a.to_string() << endl;
+      cout<< "b: " << b.to_string() << endl;
+      cout<< "c: " << c.to_string() << endl;
+      cout<< "aa: " << aa.to_string() << endl;
+      cout << "a==aa: " << (a==aa) << endl;
+      cout << "a==b: " << (a==b) << endl;
    }
 };
 
@@ -68,6 +80,14 @@ inline urgf urgf::atomx()
 inline urgf urgf::atomy()
 {
    // Create an atom for y (same as x for this univariate class)
+   urgf result;
+   fmpz_poly_q_init(result.rgf_instance);
+   fmpz_poly_q_set_str(result.rgf_instance, "2  0 1/1  1");
+   return result;
+}
+inline urgf urgf::atomz()
+{
+   // Create an atom for z (same as x for this univariate class)
    urgf result;
    fmpz_poly_q_init(result.rgf_instance);
    fmpz_poly_q_set_str(result.rgf_instance, "2  0 1/1  1");
@@ -126,6 +146,11 @@ inline urgf urgf::operator/(const urgf& other)
    fmpz_poly_q_div(result.rgf_instance, this->rgf_instance, other.rgf_instance);
    return result;    
 }
+inline bool urgf::operator==(const urgf& other) const
+{
+   return fmpz_poly_q_equal(this->rgf_instance, other.rgf_instance);
+}
+
 inline urgf urgf::f1_minus_inv()
 {
    urgf result;

@@ -38,6 +38,7 @@ public:
    brgf operator-(const brgf &other) const;
    brgf operator*(const brgf &other) const;
    brgf operator/(const brgf &other) const; // uses fmpz_mpoly_q_div
+   bool operator==(const brgf &other) const;
    brgf f1_minus_inv() const;               // compute 1/(1 - f)
 
    // Constructors for atoms
@@ -51,6 +52,19 @@ public:
 
    // Implementations inline
    // (constructor / destructor / ops are below)
+   static void test()
+   {
+      brgf a = brgf::getinstance().atomx();
+      brgf b = brgf::getinstance().atomy();
+      brgf c = brgf::getinstance().one();
+      brgf aa = brgf::getinstance().atomx();
+      cout << "a: " << a.to_string() << endl;
+      cout << "b: " << b.to_string() << endl;
+      cout << "c: " << c.to_string() << endl;
+      cout << "aa: " << aa.to_string() << endl;
+      cout << "a==aa: " << (a == aa) << endl;
+      cout << "a==b: " << (a == b) << endl;
+   }
 };
 
 // Implementations (inlined)
@@ -143,6 +157,10 @@ inline brgf brgf::operator/(const brgf &other) const
    return result;
 }
 
+inline bool brgf::operator==(const brgf &other) const
+{
+   return fmpz_mpoly_q_equal(this->bgf_instance, other.bgf_instance, ctx);
+}
 inline brgf brgf::f1_minus_inv() const
 {
    brgf result;
