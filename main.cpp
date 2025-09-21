@@ -65,7 +65,7 @@ int main()
     //FullBinaryTreeGenerator::test();
     //VectorNGenerator::test();
     //RegPDFAGenerator::test();
-    // urgf::test();
+    urgf::test();
     brgf::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");

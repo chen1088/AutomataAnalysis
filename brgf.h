@@ -39,7 +39,56 @@ public:
    brgf operator*(const brgf &other) const;
    brgf operator/(const brgf &other) const; // uses fmpz_mpoly_q_div
    bool operator==(const brgf &other) const;
+   bool is_zero() const { return fmpz_mpoly_q_is_zero(bgf_instance, ctx); }
    brgf f1_minus_inv() const;               // compute 1/(1 - f)
+   const fmpz* get_first_coefficient_in_fmpz() const
+   {
+      // get the numerator
+      auto numerator = fmpz_mpoly_q_numref(bgf_instance);
+      // we need to find the largest coefficient of the minimum degree term of the numerator
+      // for example, in (3x^2y + 2xy^2 + 5y^3)/(x - y), their degrees are all 3. The largest coefficient among these monomials is 5.
+      // the degree is sorted in descending order. So we can just find the first few terms with the same degree as the first term, and return the largest coefficient among them.
+      // if the numerator is 0, return 0
+      if(fmpz_mpoly_is_zero(numerator, ctx))
+         return numerator->coeffs;
+      fmpz* term[2];
+      fmpz_t sumofexponent;
+      fmpz_t minsumofexponent;
+      fmpz_t mincoeff;
+      fmpz_init(minsumofexponent);
+      fmpz_init(term[0]);
+      fmpz_init(term[1]);
+      fmpz_init(sumofexponent);
+      fmpz_init(mincoeff);
+      fmpz_mpoly_get_term_exp_fmpz(term, numerator, 0, ctx);
+      fmpz_add(minsumofexponent, term[0], term[1]);
+      fmpz_set(mincoeff, numerator->coeffs);
+      fmpz* res = numerator->coeffs;
+      for(int i = 0; i < fmpz_mpoly_length(numerator, ctx); i++)
+      {
+         fmpz_mpoly_get_term_exp_fmpz(term, numerator, i, ctx);
+         fmpz_add(sumofexponent, term[0], term[1]);
+         fmpz_print(sumofexponent);
+         if(fmpz_cmpabs(sumofexponent, minsumofexponent) < 0)
+         {
+            fmpz_set(minsumofexponent, sumofexponent);
+            fmpz_set(mincoeff, numerator->coeffs + i);
+            res = numerator->coeffs + i;
+         }
+         else if(fmpz_cmpabs(sumofexponent, minsumofexponent) == 0)
+         {
+            // same degree, compare coefficients, store the largest one
+            auto val = numerator->coeffs+i;
+            if(fmpz_cmpabs(val, mincoeff) > 0)
+            {
+               fmpz_set(mincoeff, val);
+               res = val;
+            }
+         }
+         cout << endl;
+      }
+      return res;
+   }
 
    // Constructors for atoms
    brgf atomx() const; // returns the generating function for x
@@ -56,14 +105,12 @@ public:
    {
       brgf a = brgf::getinstance().atomx();
       brgf b = brgf::getinstance().atomy();
-      brgf c = brgf::getinstance().one();
-      brgf aa = brgf::getinstance().atomx();
-      cout << "a: " << a.to_string() << endl;
-      cout << "b: " << b.to_string() << endl;
-      cout << "c: " << c.to_string() << endl;
-      cout << "aa: " << aa.to_string() << endl;
-      cout << "a==aa: " << (a == aa) << endl;
-      cout << "a==b: " << (a == b) << endl;
+      b = b + b; // now b = 2y
+      brgf c = (a + b).f1_minus_inv()*a;
+      brgf d = (c.f1_minus_inv() + a)*a;
+      cout << d.to_string() << endl;
+      fmpz_print(d.get_first_coefficient_in_fmpz());
+      cout << endl;
    }
 };
 
@@ -73,9 +120,6 @@ inline brgf::brgf()
    // initialize context for 2 variables (x,y)
    fmpz_mpoly_ctx_init(ctx, 2, ORD_LEX);
    fmpz_mpoly_q_init(bgf_instance, ctx);
-   // set to 0
-   const char *vars[] = {"x", "y"};
-   fmpz_mpoly_q_set_str_pretty(bgf_instance, "0", vars, ctx);
 }
 
 inline brgf::~brgf()

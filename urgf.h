@@ -39,6 +39,21 @@ public:
    urgf atomz();
    urgf one();
    urgf empty();
+   bool is_zero() const { return fmpz_poly_q_is_zero(rgf_instance); }
+   const fmpz* get_first_coefficient_in_fmpz() const
+   {
+      // get the numerator
+      auto numerator = fmpz_poly_q_numref(rgf_instance);
+      // fmpz_poly_lead returns a pointer to an array of 1 fmpz_t
+      for(int i = 0; i < fmpz_poly_degree(numerator); i++)
+      {
+         if(fmpz_is_zero(fmpz_poly_get_coeff_ptr(numerator, i)))
+            continue;
+         else
+            return fmpz_poly_get_coeff_ptr(numerator, i);
+      }
+      return fmpz_poly_get_coeff_ptr(numerator, 0);
+   }
    void clear();
    std::string to_string();
 
@@ -46,15 +61,12 @@ public:
    {
       urgf a = urgf::getinstance().atomx();
       urgf b = urgf::getinstance().atomy();
-      b = b + a;
-      urgf c = urgf::getinstance().atomz();
-      urgf aa = urgf::getinstance().atomx();
-      cout<< "a: " << a.to_string() << endl;
-      cout<< "b: " << b.to_string() << endl;
-      cout<< "c: " << c.to_string() << endl;
-      cout<< "aa: " << aa.to_string() << endl;
-      cout << "a==aa: " << (a==aa) << endl;
-      cout << "a==b: " << (a==b) << endl;
+      b = b + b; // now b = 2y
+      urgf c = (a + b).f1_minus_inv()*a;
+      urgf d = (c.f1_minus_inv() + a)*a;
+      cout << d.to_string() << endl;
+      fmpz_print(d.get_first_coefficient_in_fmpz());
+      cout << endl;
    }
 };
 
