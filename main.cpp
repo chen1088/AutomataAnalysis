@@ -61,11 +61,12 @@ int main()
     std::cout << "Urgfres2: " << urgfres2.to_string() << std::endl;
     delete urgfdag1;
     delete urgfdag2;
-    cout << pdfa.to_string() << endl;
+    std::cout << pdfa.to_string() << std::endl;
     //FullBinaryTreeGenerator::test();
     //VectorNGenerator::test();
     //RegPDFAGenerator::test();
     urgf::test();
+    cout<< "------------------" << endl;
     brgf::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");

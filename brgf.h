@@ -64,28 +64,29 @@ public:
       fmpz_add(minsumofexponent, term[0], term[1]);
       fmpz_set(mincoeff, numerator->coeffs);
       fmpz* res = numerator->coeffs;
-      for(int i = 0; i < fmpz_mpoly_length(numerator, ctx); i++)
+      auto length = numerator->length;
+      // flint_printf("Numerator has %d terms.\n", length);
+      for(int i = 0; i < length; i++)
       {
          fmpz_mpoly_get_term_exp_fmpz(term, numerator, i, ctx);
          fmpz_add(sumofexponent, term[0], term[1]);
          fmpz_print(sumofexponent);
-         if(fmpz_cmpabs(sumofexponent, minsumofexponent) < 0)
+         if(fmpz_cmp(sumofexponent, minsumofexponent) < 0)
          {
             fmpz_set(minsumofexponent, sumofexponent);
             fmpz_set(mincoeff, numerator->coeffs + i);
             res = numerator->coeffs + i;
          }
-         else if(fmpz_cmpabs(sumofexponent, minsumofexponent) == 0)
+         else if(fmpz_cmp(sumofexponent, minsumofexponent) == 0)
          {
             // same degree, compare coefficients, store the largest one
-            auto val = numerator->coeffs+i;
-            if(fmpz_cmpabs(val, mincoeff) > 0)
+            if(fmpz_cmpabs(numerator->coeffs + i, mincoeff) > 0)
             {
-               fmpz_set(mincoeff, val);
-               res = val;
+               fmpz_set(mincoeff, numerator->coeffs + i);
+               res = mincoeff;
             }
          }
-         cout << endl;
+         flint_printf("\n");
       }
       return res;
    }
@@ -97,7 +98,7 @@ public:
    brgf empty() const; // zero generating function
 
    void clear();
-   std::string to_string() const;
+   const char* to_string() const;
 
    // Implementations inline
    // (constructor / destructor / ops are below)
@@ -105,12 +106,14 @@ public:
    {
       brgf a = brgf::getinstance().atomx();
       brgf b = brgf::getinstance().atomy();
-      b = b + b; // now b = 2y
-      brgf c = (a + b).f1_minus_inv()*a;
+      brgf bb = b + b; // now b = 2y
+      brgf c = (a + bb).f1_minus_inv()*a;
       brgf d = (c.f1_minus_inv() + a)*a;
-      cout << d.to_string() << endl;
-      fmpz_print(d.get_first_coefficient_in_fmpz());
-      cout << endl;
+      auto res = d.get_first_coefficient_in_fmpz();
+      fmpz_print(res);
+      cout<<endl;
+      const char* d_str = d.to_string();
+      std::cout << d_str << std::endl;
    }
 };
 
@@ -167,8 +170,9 @@ inline void brgf::clear()
    // fmpz_mpoly_q_set_str_pretty(bgf_instance, "0", (const char *[]){"x", "y"}, ctx);
 }
 
-inline std::string brgf::to_string() const
+inline const char* brgf::to_string() const
 {
+   // TODO: this fmpz_mpoly_q_get_str_pretty behaves weird.
    const char *vars[] = {"x", "y"};
    return fmpz_mpoly_q_get_str_pretty(bgf_instance, vars, ctx);
 }

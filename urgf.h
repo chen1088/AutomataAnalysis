@@ -55,7 +55,7 @@ public:
       return fmpz_poly_get_coeff_ptr(numerator, 0);
    }
    void clear();
-   std::string to_string();
+   char* to_string() const;
 
    static void test()
    {
@@ -64,9 +64,9 @@ public:
       b = b + b; // now b = 2y
       urgf c = (a + b).f1_minus_inv()*a;
       urgf d = (c.f1_minus_inv() + a)*a;
-      cout << d.to_string() << endl;
       fmpz_print(d.get_first_coefficient_in_fmpz());
-      cout << endl;
+      cout<<endl;
+      std::cout << d.to_string() << std::endl;
    }
 };
 
@@ -128,7 +128,7 @@ inline void urgf::clear()
    fmpz_poly_q_init(rgf_instance);
 }
 
-inline std::string urgf::to_string()
+inline char* urgf::to_string() const
 {
    // Convert the generating function to a string representation
    return fmpz_poly_q_get_str_pretty(rgf_instance, "x");
