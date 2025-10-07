@@ -51,13 +51,14 @@ public:
       // if the numerator is 0, return 0
       if(fmpz_mpoly_is_zero(numerator, ctx))
          return numerator->coeffs;
-      fmpz* term[2];
+      fmpz** term;
       fmpz_t sumofexponent;
       fmpz_t minsumofexponent;
       fmpz_t mincoeff;
       fmpz_init(minsumofexponent);
-      fmpz_init(term[0]);
-      fmpz_init(term[1]);
+      term = (fmpz**) flint_malloc(2 * sizeof(fmpz*));
+      term[0] = (fmpz*) flint_malloc(sizeof(fmpz));
+      term[1] = (fmpz*) flint_malloc(sizeof(fmpz));
       fmpz_init(sumofexponent);
       fmpz_init(mincoeff);
       fmpz_mpoly_get_term_exp_fmpz(term, numerator, 0, ctx);
@@ -70,7 +71,7 @@ public:
       {
          fmpz_mpoly_get_term_exp_fmpz(term, numerator, i, ctx);
          fmpz_add(sumofexponent, term[0], term[1]);
-         fmpz_print(sumofexponent);
+         // fmpz_print(sumofexponent);
          if(fmpz_cmp(sumofexponent, minsumofexponent) < 0)
          {
             fmpz_set(minsumofexponent, sumofexponent);
@@ -86,8 +87,10 @@ public:
                res = mincoeff;
             }
          }
-         flint_printf("\n");
       }
+      free(term[0]);
+      free(term[1]);
+      free(term);
       return res;
    }
 
@@ -111,7 +114,6 @@ public:
       brgf d = (c.f1_minus_inv() + a)*a;
       auto res = d.get_first_coefficient_in_fmpz();
       fmpz_print(res);
-      cout<<endl;
       const char* d_str = d.to_string();
       std::cout << d_str << std::endl;
    }
