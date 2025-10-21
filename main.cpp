@@ -66,7 +66,6 @@ int main()
     //VectorNGenerator::test();
     //RegPDFAGenerator::test();
     urgf::test();
-    cout<< "------------------" << endl;
     brgf::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");
