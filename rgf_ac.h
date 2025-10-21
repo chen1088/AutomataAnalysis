@@ -2,9 +2,13 @@
 #include <iostream>
 #include <memory>
 #include <vector>
+#include <map>
+#include <set>
 #include "rgfdag.h"
 #include <boost/dynamic_bitset.hpp>
+using boost::to_string;
 using boost::dynamic_bitset;
+using std::move;
 using namespace std;
 enum rgf_ac_op{
    ADD,
@@ -12,11 +16,12 @@ enum rgf_ac_op{
    ONE_MINUS_INVERSE,
    ATOM
 };
-class rgf_ac: public std::enable_shared_from_this<rgf_ac> {
+class rgf_ac: public enable_shared_from_this<rgf_ac> {
 public:
    rgf_ac();
    ~rgf_ac();
    string to_string() const;
+   string to_string_nonrecursive() const;
    shared_ptr<rgf_ac> concatenate(shared_ptr<rgf_ac> other);
    shared_ptr<rgf_ac> disjoint_union(shared_ptr<rgf_ac> other);
    shared_ptr<rgf_ac> kleene_star();
@@ -32,6 +37,20 @@ public:
    vector<shared_ptr<rgf_ac>> children;
    rgf_ac_op operation;
    shared_ptr<dynamic_bitset<>> label;
+   static void test() {
+      map<int, map<int, weak_ptr<rgf_ac>>> testmap;
+      shared_ptr<rgf_ac> sp = rgf_ac::create_one_node();
+      weak_ptr<rgf_ac> wp(sp);
+      // testmap.insert(make_pair(1, map<int, weak_ptr<rgf_ac>>()));
+      // testmap[1].insert({2, wp});
+      cout<< wp.lock()->to_string_nonrecursive() << endl; // should print empty
+      testmap[1][2] = wp;
+      if(testmap[1][2].lock() != nullptr) {
+         cout << "Not null" << endl;
+         cout << testmap[1][2].lock()->to_string_nonrecursive() << endl; // should print empty
+      } else
+         cout << "Null" << endl;
+   }
 };
 class operation_history{
 public:
@@ -69,20 +88,43 @@ string rgf_ac::to_string() const
          return "";
    }
 }
+string rgf_ac::to_string_nonrecursive() const 
+{
+   string result = "Operation: ";
+   switch (operation) {
+      case ADD:
+         result += "ADD";
+         break;
+      case MULTIPLY:
+         result += "MULTIPLY";
+         break;
+      case ONE_MINUS_INVERSE:
+         result += "ONE_MINUS_INVERSE";
+         break;
+      case ATOM:
+         string buffer;
+         boost::to_string(*label, buffer);
+         result += "ATOM: ";
+         result += buffer;
+         break;
+   }
+   result += ", Children size: " + std::to_string(children.size());
+   return result;
+}
 shared_ptr<rgf_ac> rgf_ac::create_add_node(shared_ptr<rgf_ac> left, shared_ptr<rgf_ac> right) 
 {
    if(left.get()->operation == ADD) {
       left.get()->children.push_back(right);
-      return left;
+      return move(left);
    } else if(right.get()->operation == ADD) {
       right.get()->children.push_back(left);
-      return right;
+      return move(right);
    } else {
       auto node = make_shared<rgf_ac>();
       node->operation = ADD;
       node->children.push_back(left);
       node->children.push_back(right);
-      return node;
+      return move(node);
    }
 }
 shared_ptr<rgf_ac> rgf_ac::create_multiply_node(shared_ptr<rgf_ac> left, shared_ptr<rgf_ac> right) 
@@ -91,20 +133,27 @@ shared_ptr<rgf_ac> rgf_ac::create_multiply_node(shared_ptr<rgf_ac> left, shared_
    node->operation = MULTIPLY;
    node->children.push_back(left);
    node->children.push_back(right);
-   return node;
+   return move(node);
 }
 shared_ptr<rgf_ac> rgf_ac::create_oneminusinverse_node(shared_ptr<rgf_ac> child) 
 {
    auto node = make_shared<rgf_ac>();
    node->operation = ONE_MINUS_INVERSE;
    node->children.push_back(child);
-   return node;
+   return move(node);
 }
 shared_ptr<rgf_ac> rgf_ac::create_atom_node(shared_ptr<dynamic_bitset<>> label) 
 {
    auto node = make_shared<rgf_ac>();
    node->operation = ATOM;
-   node->label = label;
+   node->label = std::move(label);
+   return move(node);
+}
+shared_ptr<rgf_ac> rgf_ac::create_one_node() 
+{
+   auto node = make_shared<rgf_ac>();
+   node->operation = ATOM;
+   node->label = make_shared<dynamic_bitset<>>(0);
    return node;
 }
 shared_ptr<rgf_ac> rgf_ac::concatenate(shared_ptr<rgf_ac> other) 
@@ -149,89 +198,93 @@ static void eliminate_state(map<dynamic_bitset<>, map<dynamic_bitset<>, weak_ptr
                                const dynamic_bitset<> t)
 {
    operation_history op_hist;
-      bool noincoming_flag = false;
-      bool hasselfloop = false;
-      // if (selfloop_trans[t].size() > 1)
+   bool noincoming_flag = false;
+   bool hasselfloop = false;
+   // if (selfloop_trans[t].size() > 1)
+   // {
+   //    auto newtree = make_shared<rgf_ac>();
+   //    newtree->operation = ADD;
+   //    for (auto i : selfloop_trans[t]) newtree->children.push_back(i.lock());
+   //    selfloop_trans[t].clear(); selfloop_trans[t].push_back(newtree);
+   // }
+   // auto selffinal = make_shared<rgf_ac>();
+   // selffinal->operation = ONE_MINUS_INVERSE;
+   // if(selfloop_trans[t].size() == 1)
+   // {
+   //    selffinal->children.push_back(selfloop_trans[t][0].lock());
+   //    hasselfloop = true;
+   // }
+   set<dynamic_bitset<>> markedasdelete_incoming;
+   set<dynamic_bitset<>> markedasdelete_outgoing;
+   map<dynamic_bitset<>, weak_ptr<rgf_ac>> pseudo_start;
+   shared_ptr<rgf_ac> selfloop_node;
+   if(selfloop_trans.find(t) != selfloop_trans.end())
+   {
+      selfloop_node = selfloop_trans[t].lock()->kleene_star();
+      hasselfloop = true;
+   }
+   if(incoming_trans[t].size() == 0)
+   {
+      incoming_trans[t][dynamic_bitset<>(0)] = rgf_ac::create_one_node();
+      outgoing_trans[dynamic_bitset<>(0)][t] = rgf_ac::create_one_node();
+      noincoming_flag = true;
+   }
+   for (auto i : incoming_trans[t])
+   {
+      // if (i.second.size() == 0)
       // {
-      //    auto newtree = make_shared<rgf_ac>();
-      //    newtree->operation = ADD;
-      //    for (auto i : selfloop_trans[t]) newtree->children.push_back(i.lock());
-      //    selfloop_trans[t].clear(); selfloop_trans[t].push_back(newtree);
+      //    // This only happens when we have a start state with no incoming transitions
+      //    // Shall we insert a pseudo incoming transition?
+      //    i.second.push_back(new rgfdag<T>(rgf_operation::ONE));
+      //    outgoing_trans[t][i.first].push_back(i.second[0]);
+      //    noincoming_flag = true;
       // }
-      // auto selffinal = make_shared<rgf_ac>();
-      // selffinal->operation = ONE_MINUS_INVERSE;
-      // if(selfloop_trans[t].size() == 1)
+      // else if (i.second.size() > 1)
       // {
-      //    selffinal->children.push_back(selfloop_trans[t][0].lock());
-      //    hasselfloop = true;
+      //    auto newtree = new rgfdag<T>(rgf_operation::ADD);
+      //    for (auto j : i.second) newtree->add_child(j);
+      //    i.second.clear(); i.second.push_back(newtree);
+      //    outgoing_trans[i.first][t].clear(); outgoing_trans[i.first][t].push_back(newtree);
       // }
-      set<dynamic_bitset<>> markedasdelete_incoming;
-      set<dynamic_bitset<>> markedasdelete_outgoing;
-      map<dynamic_bitset<>, weak_ptr<rgf_ac>> pseudo_start;
-      shared_ptr<rgf_ac> selfloop_node;
-      if(selfloop_trans.find(t) != selfloop_trans.end())
+      shared_ptr<rgf_ac> newtree_incoming;
+      if(hasselfloop)
+         newtree_incoming = rgf_ac::create_multiply_node(i.second.lock(), selfloop_node);
+      else
+         newtree_incoming = i.second.lock();
+      for (auto j : outgoing_trans[t])
       {
-         selfloop_node = selfloop_trans[t].lock()->kleene_star();
-         hasselfloop = true;
-      }
-      if(incoming_trans[t].size() == 0)
-         noincoming_flag = true;
-      for (auto i : incoming_trans[t])
-      {
-         // if (i.second.size() == 0)
-         // {
-         //    // This only happens when we have a start state with no incoming transitions
-         //    // Shall we insert a pseudo incoming transition?
-         //    i.second.push_back(new rgfdag<T>(rgf_operation::ONE));
-         //    outgoing_trans[t][i.first].push_back(i.second[0]);
-         //    noincoming_flag = true;
-         // }
-         // else if (i.second.size() > 1)
-         // {
-         //    auto newtree = new rgfdag<T>(rgf_operation::ADD);
-         //    for (auto j : i.second) newtree->add_child(j);
-         //    i.second.clear(); i.second.push_back(newtree);
-         //    outgoing_trans[i.first][t].clear(); outgoing_trans[i.first][t].push_back(newtree);
-         // }
-         shared_ptr<rgf_ac> newtree_incoming;
-         if(hasselfloop)
-            newtree_incoming = rgf_ac::create_multiply_node(i.second.lock(), selfloop_node);
-         else
-            newtree_incoming = i.second.lock();
-         for (auto j : outgoing_trans[t])
+         auto newtree_incoming_outgoing = rgf_ac::create_multiply_node(newtree_incoming, j.second.lock());
+         if (i.first == j.first)
          {
-            auto newtree_incoming_outgoing = rgf_ac::create_multiply_node(newtree_incoming, j.second.lock());
-            if (i.first == j.first)
+            selfloop_trans[i.first].lock()->disjoint_union(newtree_incoming_outgoing);
+         }
+         else
+         {
+            if(!noincoming_flag)
             {
-               selfloop_trans[i.first].lock()->disjoint_union(newtree_incoming_outgoing);
+               incoming_trans[j.first][i.first].lock()->disjoint_union(newtree_incoming_outgoing);
+               outgoing_trans[i.first][j.first].lock()->disjoint_union(newtree_incoming_outgoing);
             }
             else
             {
-               if(!noincoming_flag)
-               {
-                  incoming_trans[j.first][i.first].lock()->disjoint_union(newtree_incoming_outgoing);
-                  outgoing_trans[i.first][j.first].lock()->disjoint_union(newtree_incoming_outgoing);
-               }
-               else
-               {
-                  pseudo_start[j.first].lock()->disjoint_union(newtree_incoming_outgoing);
-               }
+               pseudo_start[j.first].lock()->disjoint_union(newtree_incoming_outgoing);
             }
          }
       }
-      selfloop_trans.erase(t);
-      for (auto k : incoming_trans[t]) markedasdelete_incoming.insert(k.first);
-      for (auto k : markedasdelete_incoming) outgoing_trans[k].erase(t);
-      for (auto k : outgoing_trans[t]) markedasdelete_outgoing.insert(k.first);
-      for (auto k : markedasdelete_outgoing) incoming_trans[k].erase(t);
-      outgoing_trans.erase(t);
-      incoming_trans.erase(t);
-      if(noincoming_flag)
+   }
+   selfloop_trans.erase(t);
+   for (auto k : incoming_trans[t]) markedasdelete_incoming.insert(k.first);
+   for (auto k : markedasdelete_incoming) outgoing_trans[k].erase(t);
+   for (auto k : outgoing_trans[t]) markedasdelete_outgoing.insert(k.first);
+   for (auto k : markedasdelete_outgoing) incoming_trans[k].erase(t);
+   outgoing_trans.erase(t);
+   incoming_trans.erase(t);
+   if(noincoming_flag)
+   {
+      for(auto i : pseudo_start)
       {
-         for(auto i : pseudo_start)
-         {
-            incoming_trans[i.first][dynamic_bitset<>(0)].lock()->disjoint_union(i.second.lock());
-            outgoing_trans[dynamic_bitset<>(0)][i.first].lock()->disjoint_union(i.second.lock());
-         }
+         incoming_trans[i.first][dynamic_bitset<>(0)].lock()->disjoint_union(i.second.lock());
+         outgoing_trans[dynamic_bitset<>(0)][i.first].lock()->disjoint_union(i.second.lock());
       }
    }
+}

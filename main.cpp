@@ -8,6 +8,7 @@
 #include "RegPDFAGenerator.h"
 #include "FullBinaryTreeGenerator.h"
 #include "VectorNGenerator.h"
+#include "rgf_ac.h"
 //#include "RegPDFA.h"
 //#include"flint/arb.h"
 //#include"flint/flint.h"
@@ -67,6 +68,7 @@ int main()
     //RegPDFAGenerator::test();
     urgf::test();
     brgf::test();
+    rgf_ac::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");
     // return gr.Run();
