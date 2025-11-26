@@ -6,7 +6,6 @@
 #include <ranges>
 #include <set>
 #include "reversible_2d_bimap.h"
-#include "rgfdag.h"
 #include <boost/dynamic_bitset.hpp>
 using boost::to_string;
 using boost::dynamic_bitset;
@@ -84,6 +83,7 @@ string rgf_ac_node::to_string() const
       case ATOM: {
          string label_str;
          boost::to_string(*label, label_str);
+         reverse(label_str.begin(), label_str.end());
          return label_str;
       }
       default:
@@ -107,6 +107,7 @@ string rgf_ac_node::to_string_nonrecursive() const
          string buffer;
          boost::to_string(*label, buffer);
          result += "ATOM: ";
+         reverse(buffer.begin(), buffer.end());
          result += buffer;
          break;
    }

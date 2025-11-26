@@ -68,7 +68,7 @@ int main()
     //RegPDFAGenerator::test();
     urgf::test();
     brgf::test();
-    rgf_ac_node::test();
+    rgf_ac::test();
     reversible_2d_bimap<dynamic_bitset<>, dynamic_bitset<>, rgf_ac_node>::test();
     // urgfdag::test();
     // mglFLTK gr(graph, "MathGL demo window title");

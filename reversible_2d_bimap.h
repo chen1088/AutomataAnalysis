@@ -12,15 +12,16 @@ template<typename T,typename U, typename V>
 class reversible_2d_bimap {
 public:
    struct snapshot{
-      vector<tuple<T, U, weak_ptr<V>>> incoming_trans_to_restore;
+      vector<tuple<T, U, shared_ptr<V>>> incoming_trans_to_restore;
       vector<pair<T, U>> keys_to_delete;
    };
    stack<snapshot> revertible_operations;
    map<T, map<U, shared_ptr<V>>> incoming_transitions;
    map<T, map<U, weak_ptr<V>>> outgoing_transitions;
 
-   reversible_2d_bimap(map<T, map<U, shared_ptr<V>>> inc)
-       : incoming_transitions(move(inc))
+   reversible_2d_bimap(){}
+   reversible_2d_bimap(map<T, map<U, shared_ptr<V>>>& inc)
+       : incoming_transitions(inc)
    {
       for (const auto& from_pair : incoming_transitions) {
          const T& to_state = from_pair.first;
@@ -42,7 +43,7 @@ public:
       const auto& incoming_trans_to_restore = last_op.incoming_trans_to_restore;
       const auto& keys_to_delete = last_op.keys_to_delete;
       for (const auto& [from_state, to_state, old_value] : incoming_trans_to_restore) {
-         incoming_transitions[from_state][to_state] = old_value.lock();
+         incoming_transitions[from_state][to_state] = old_value;
       }
       for(const auto& key: keys_to_delete)
       {
@@ -105,7 +106,7 @@ public:
 
    }
 private:
-   void record(T key, U key2, weak_ptr<V> old_value) {
+   void record(T key, U key2, const shared_ptr<V>& old_value) {
       revertible_operations.top().incoming_trans_to_restore.push_back(make_tuple(key, key2, old_value));
    }
    void record_new(T key, U key2) {

@@ -135,7 +135,7 @@ void RegPDFA::settransition(dynamic_bitset<> src, dynamic_bitset<> dst, char c)
    }
 }
 
-bool RegPDFA::issetransition(dynamic_bitset<> src, char c)
+bool RegPDFA::issetransition(dynamic_bitset<> src, char c) const
 {
    // Check if there is a transition from src with character c.
    if(c == '0')
@@ -148,7 +148,7 @@ bool RegPDFA::issetransition(dynamic_bitset<> src, char c)
    }
    return false;
 }
-bool RegPDFA::issetransition(dynamic_bitset<> src, bool b)
+bool RegPDFA::issetransition(dynamic_bitset<> src, bool b) const
 {
    // Check if there is a transition from src with boolean b.
    if(b)
@@ -175,7 +175,7 @@ void RegPDFA::settransition(dynamic_bitset<> src, dynamic_bitset<> dst, bool b)
    }
 }
 
-dynamic_bitset<> RegPDFA::reduce(dynamic_bitset<> str)
+const dynamic_bitset<> RegPDFA::reduce(const dynamic_bitset<> str) const
 {
    // Given a current state and a string, reduce the state to the final state.
    if(str.size() == 0)
@@ -187,13 +187,13 @@ dynamic_bitset<> RegPDFA::reduce(dynamic_bitset<> str)
    {
       auto strpopped = dynamic_bitset<>(str);
       strpopped.pop_back(); // remove the last character.
-      return congruence0[reduce(strpopped)];
+      return congruence0.at(reduce(strpopped));
    }
    else
    {
       auto strpopped = dynamic_bitset<>(str);
       strpopped.pop_back(); // remove the last character.
-      return congruence1[reduce(strpopped)];
+      return congruence1.at(reduce(strpopped));
    }
 }
 
@@ -256,7 +256,7 @@ RegPDFA RegPDFA::cartesian_product(RegPDFA other)
    }
    return res;
 }
-vector<dynamic_bitset<>> RegPDFA::getallstates()
+vector<dynamic_bitset<>> RegPDFA::getallstates() const
 {
    // return all states in the PDFA.
    vector<dynamic_bitset<>> res;

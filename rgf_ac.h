@@ -7,11 +7,29 @@
 #include <set>
 #include "reversible_2d_bimap.h"
 #include "rgf_ac_node.h"
+#include "RegPDFA.h"
 #include <boost/dynamic_bitset.hpp>
 using boost::to_string;
 
 class rgf_ac{
 public:
+   rgf_ac();
+   rgf_ac(const RegPDFA& pdfa)
+   {
+      map<dynamic_bitset<>, map<dynamic_bitset<>, shared_ptr<rgf_ac_node>>> init;
+      auto states = pdfa.getallstates();
+      for (const auto& state : states) {
+         auto state0 = state;
+         state0.push_back(false);
+         auto state1 = state;
+         state1.push_back(true);
+         auto dest0 = pdfa.reduce(state0);
+         auto dest1 = pdfa.reduce(state1);
+         init[state][dest0] = rgf_ac_node::create_atom_node(make_shared<dynamic_bitset<>>(state0));
+         init[state][dest1] = rgf_ac_node::create_atom_node(make_shared<dynamic_bitset<>>(state1));
+      }
+      rgf_ac_bimap = reversible_2d_bimap<dynamic_bitset<>, dynamic_bitset<>, rgf_ac_node>(init);
+   }
    static shared_ptr<rgf_ac_node> construct_from_pdfa_with_source_and_dest_state_direct_pair(const RegPDFA& pdfa, const dynamic_bitset<>& source_state, const dynamic_bitset<>& dest_state);
    static shared_ptr<rgf_ac_node> construct_from_pdfa_with_source_and_dest_state(const RegPDFA& pdfa, const dynamic_bitset<>& source_state, const dynamic_bitset<>& dest_state);
    static vector<shared_ptr<rgf_ac_node>> construct_from_pdfa_with_dest_state(const RegPDFA& pdfa, const dynamic_bitset<>& dest_state);
@@ -34,16 +52,21 @@ public:
    bool has_selfloop_transition(const dynamic_bitset<>& state) {
       return rgf_ac_bimap.incoming_transitions.contains(state)&&rgf_ac_bimap.incoming_transitions.at(state).contains(state);
    }
-   // rgf_ac(RegPDFA& pdfa)
-   // {
-      
-   // }
+   void add_transition(const dynamic_bitset<>& from_state, const dynamic_bitset<>& to_state, const shared_ptr<rgf_ac_node>& node) {
+
+      rgf_ac_bimap.set_transition(from_state, to_state, node);
+   }
+   
+   void revert_to_last_snapshot() {
+      rgf_ac_bimap.revert_to_last_snapshot();
+   }
    void eliminate_starting_state()
    {
       bool hasselfloop = false;
       shared_ptr<rgf_ac_node> selfloop_node;
       if(has_selfloop_transition(dynamic_bitset<>(0)))
       {
+         //TODO: whenever a new node is created, check if it has been created before to avoid duplication
          selfloop_node = get_selfloop_transitions(dynamic_bitset<>(0)).lock()->kleene_star();
          hasselfloop = true;
       }
@@ -53,7 +76,7 @@ public:
          if(hasselfloop)
             newtree_incoming = rgf_ac_node::create_multiply_node(i.second, selfloop_node);
          else
-            newtree_incoming = move(i.second);
+            newtree_incoming = i.second;
          for (auto& j : get_outgoing_transitions(dynamic_bitset<>(0)))
          {
             auto newtree_incoming_outgoing = rgf_ac_node::create_multiply_node(newtree_incoming, j.second.lock());
@@ -95,7 +118,7 @@ public:
          selfloop_node = get_selfloop_transitions(t).lock()->kleene_star();
          hasselfloop = true;
       }
-      for (auto& i : get_incoming_transitions(t))
+      for (auto i : get_incoming_transitions(t))
       {
          shared_ptr<rgf_ac_node> newtree_incoming;
          if(hasselfloop)
@@ -127,16 +150,36 @@ public:
    };
    void print_bimap()
    {
-      cout << "Incoming transitions: " << endl;
       for (const auto& from_pair : rgf_ac_bimap.incoming_transitions) {
-         const dynamic_bitset<>& to_state = from_pair.first;
+         const dynamic_bitset<>& from_state = from_pair.first;
          for (const auto& to_pair : from_pair.second) {
-            const dynamic_bitset<>& from_state = to_pair.first;
+            const dynamic_bitset<>& to_state = to_pair.first;
             string from,to;
             to_string(from_state,from);
+            reverse(from.begin(), from.end());
             to_string(to_state,to);
-            cout << "From state: " << from << " To state: " << to << " RGF_AC Node: " << to_pair.second.get()->to_string_nonrecursive() << endl;
+            reverse(to.begin(), to.end());
+            cout << from << " -> " << to << " Node: " << to_pair.second.get()->to_string_nonrecursive() << endl;
          }
       }
+   }
+   void eliminate_to_two_states_with_no_snapshot(const dynamic_bitset<>& source_state, const dynamic_bitset<>& dest_state)
+   {
+      
+   }
+   static void test()
+   {
+      RegPDFA pdfa;
+      pdfa.initwithstring("001-00,000-0,01-0,10-_,11-1");
+      rgf_ac rgfac_obj(pdfa);
+      rgfac_obj.print_bimap();
+      auto state_to_eliminate = dynamic_bitset<>(0);
+      state_to_eliminate.push_back(false);
+      rgfac_obj.eliminate_state(state_to_eliminate);
+      cout << "After eliminating state 0:" << endl;
+      rgfac_obj.print_bimap();
+      rgfac_obj.revert_to_last_snapshot();
+      cout << "After reverting to last snapshot:" << endl;
+      rgfac_obj.print_bimap();
    }
 };

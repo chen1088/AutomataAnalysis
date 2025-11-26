@@ -13,6 +13,7 @@
 #include <iostream>
 #include <boost/dynamic_bitset.hpp>
 #include <vector>
+#include "rgf_ac.h"
 using namespace std;
 
 class urgf
@@ -67,6 +68,20 @@ public:
       fmpz_print(d.get_first_coefficient_in_fmpz());
       cout<<endl;
       std::cout << d.to_string() << std::endl;
+   }
+   urgf construct_from_rgf_ac_node(const shared_ptr<rgf_ac_node>& node, map<shared_ptr<rgf_ac_node>, urgf>& cache);
+   static void print_rgf_ac(rgf_ac ac)
+   {
+      for (const auto& [state, transitions] : ac.rgf_ac_bimap.incoming_transitions) {
+         string state_str;
+         boost::to_string(state, state_str);
+         cout << "State: " << state_str << endl;
+         for (const auto& [from_state, rgf_node_ptr] : transitions) {
+            string from_state_str;
+            boost::to_string(from_state, from_state_str);
+            cout << "  From State: " << from_state_str << " -> RGF Node: " << rgf_node_ptr->to_string_nonrecursive() << endl;
+         }
+      }
    }
 };
 
@@ -182,4 +197,42 @@ inline urgf urgf::f1_minus_inv()
    return result;
 }
 
+inline urgf urgf::construct_from_rgf_ac_node(const shared_ptr<rgf_ac_node>& node, map<shared_ptr<rgf_ac_node>, urgf>& cache)
+{
+   if(cache.find(node) != cache.end())
+   {
+      // already constructed
+      return cache[node]; // placeholder, should be replaced with actual cached value
+   }
+   
+   if(node.get()->operation == rgf_ac_op::ATOM)
+   {
+      return urgf::getinstance().atomx(); // For univariate, all atoms are the same
+   }
+   else if(node.get()->operation == rgf_ac_op::ADD)
+   {
+      urgf result = urgf::getinstance().empty();
+      for(const auto& child : node.get()->children)
+      {
+         result = result + construct_from_rgf_ac_node(child, cache);
+      }
+      cache[node] = result;
+      return result;
+   }
+   else if(node.get()->operation == rgf_ac_op::MULTIPLY)
+   {
+      urgf result = urgf::getinstance().one();
+      for(const auto& child : node.get()->children)
+      {
+         result = result * construct_from_rgf_ac_node(child, cache);
+      }
+      cache[node] = result;
+      return result;
+   }
+   else if(node.get()->operation == rgf_ac_op::ONE_MINUS_INVERSE)
+   {
+      urgf child_urgf = construct_from_rgf_ac_node(node.get()->children[0], cache);
+      return child_urgf.f1_minus_inv();
+   }
+}
 
