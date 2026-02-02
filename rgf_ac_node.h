@@ -15,7 +15,8 @@ enum rgf_ac_op{
    ADD,
    MULTIPLY,
    ONE_MINUS_INVERSE,
-   ATOM
+   ATOM,
+   ZERO
 };
 
 class rgf_ac_node: public enable_shared_from_this<rgf_ac_node> {
@@ -25,17 +26,17 @@ public:
    string to_string() const;
    string to_string_nonrecursive() const;
    shared_ptr<rgf_ac_node> concatenate(const shared_ptr<rgf_ac_node>& other);
-   shared_ptr<rgf_ac_node> disjoint_union_with_merge(const shared_ptr<rgf_ac_node>& other);
-   shared_ptr<rgf_ac_node> disjoint_union_with_no_merge(const shared_ptr<rgf_ac_node>& other);
+   shared_ptr<rgf_ac_node> disjoint_union(const shared_ptr<rgf_ac_node>& other);
    shared_ptr<rgf_ac_node> kleene_star();
-   static shared_ptr<rgf_ac_node> create_add_node_with_merge(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right);
-   static shared_ptr<rgf_ac_node> create_add_node_with_no_merge(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right);
+   static shared_ptr<rgf_ac_node> create_add_node(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right);
    static shared_ptr<rgf_ac_node> create_multiply_node(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right);
    static shared_ptr<rgf_ac_node> create_oneminusinverse_node(const shared_ptr<rgf_ac_node> &child);
    static shared_ptr<rgf_ac_node> create_atom_node(const shared_ptr<dynamic_bitset<>> &label);
    static shared_ptr<rgf_ac_node> create_one_node();
+   static shared_ptr<rgf_ac_node> create_zero_node();
 
-   vector<shared_ptr<rgf_ac_node>> children;
+   shared_ptr<rgf_ac_node> child1, child2; // for binary operations
+   vector<weak_ptr<rgf_ac_node>> parents;
    rgf_ac_op operation;
    shared_ptr<dynamic_bitset<>> label;
    
@@ -71,15 +72,11 @@ string rgf_ac_node::to_string() const
    stringstream ss;
    switch (operation) {
       case ADD:
-         ss << "ADD: terms: " << children.size() << " [ ";
-         for (const auto& child : children) {
-            ss << child->to_string() << " ";
-         }
-         return ss.str() + "]";
+         return "ADD: (" + child1->to_string() + " + " + child2->to_string() + ")";
       case MULTIPLY:
-         return "MUL: (" + children[0]->to_string() + " * " + children[1]->to_string() + ")";
+         return "MUL: (" + child1->to_string() + " * " + child2->to_string() + ")";
       case ONE_MINUS_INVERSE:
-         return "ONE_MINUS_INVERSE: (1 - 1/" + children[0]->to_string() + ")";
+         return "ONE_MINUS_INVERSE: (1 - 1/" + child1->to_string() + ")";
       case ATOM: {
          string label_str;
          boost::to_string(*label, label_str);
@@ -111,46 +108,30 @@ string rgf_ac_node::to_string_nonrecursive() const
          result += buffer;
          break;
    }
-   result += ", Children size: " + std::to_string(children.size());
    return result;
 }
-shared_ptr<rgf_ac_node> rgf_ac_node::create_add_node_with_merge(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right) 
-{
-   if(left.get()->operation == ADD) {
-      left.get()->children.push_back(right);
-      return move(left);
-   } else if(right.get()->operation == ADD) {
-      right.get()->children.push_back(left);
-      return move(right);
-   } else {
-      auto node = make_shared<rgf_ac_node>();
-      node->operation = ADD;
-      node->children.push_back(left);
-      node->children.push_back(right);
-      return move(node);
-   }
-}
-shared_ptr<rgf_ac_node> rgf_ac_node::create_add_node_with_no_merge(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right) 
+
+shared_ptr<rgf_ac_node> rgf_ac_node::create_add_node(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right) 
 {
    auto node = make_shared<rgf_ac_node>();
    node->operation = ADD;
-   node->children.push_back(left);
-   node->children.push_back(right);
+   node->child1 = left;
+   node->child2 = right;
    return move(node);
 }
 shared_ptr<rgf_ac_node> rgf_ac_node::create_multiply_node(const shared_ptr<rgf_ac_node> &left, const shared_ptr<rgf_ac_node> &right) 
 {
    auto node = make_shared<rgf_ac_node>();
    node->operation = MULTIPLY;
-   node->children.push_back(left);
-   node->children.push_back(right);
+   node->child1 = left;
+   node->child2 = right;
    return move(node);
 }
 shared_ptr<rgf_ac_node> rgf_ac_node::create_oneminusinverse_node(const shared_ptr<rgf_ac_node> &child) 
 {
    auto node = make_shared<rgf_ac_node>();
    node->operation = ONE_MINUS_INVERSE;
-   node->children.push_back(child);
+   node->child1 = child;
    return move(node);
 }
 shared_ptr<rgf_ac_node> rgf_ac_node::create_atom_node(const shared_ptr<dynamic_bitset<>> &label) 
@@ -167,37 +148,20 @@ shared_ptr<rgf_ac_node> rgf_ac_node::create_one_node()
    node->label = make_shared<dynamic_bitset<>>(0);
    return move(node);
 }
+shared_ptr<rgf_ac_node> rgf_ac_node::create_zero_node() 
+{
+   auto node = make_shared<rgf_ac_node>();
+   node->operation = ZERO;
+   return move(node);
+}
 shared_ptr<rgf_ac_node> rgf_ac_node::concatenate(const shared_ptr<rgf_ac_node> &other) 
 {
    return rgf_ac_node::create_multiply_node(shared_from_this(), other);
 }
-shared_ptr<rgf_ac_node> rgf_ac_node::disjoint_union_with_merge(const shared_ptr<rgf_ac_node> &other) 
-{
-   if(this->operation == ADD && other->operation != ADD) 
-   {
-      this->children.push_back(other);
-      return shared_from_this();
-   } 
-   else if (this->operation != ADD && other->operation != ADD)
-   {
-      return rgf_ac_node::create_add_node_with_merge(shared_from_this(), other);
-   } 
-   else if(this->operation == ADD && other->operation == ADD)
-   {
-      this->children.insert(this->children.end(), other->children.begin(), other->children.end());
-      // the other must be reset, but outside of this function.
-      // this cannot happen.
-      return shared_from_this();
-   }
-   else
-   {
-      return other->disjoint_union_with_merge(shared_from_this());
-   }
-}
 
-shared_ptr<rgf_ac_node> rgf_ac_node::disjoint_union_with_no_merge(const shared_ptr<rgf_ac_node> &other) 
+shared_ptr<rgf_ac_node> rgf_ac_node::disjoint_union(const shared_ptr<rgf_ac_node> &other) 
 {
-   return rgf_ac_node::create_add_node_with_no_merge(shared_from_this(), other);
+   return rgf_ac_node::create_add_node(shared_from_this(), other);
 }
 shared_ptr<rgf_ac_node> rgf_ac_node::kleene_star() 
 {

@@ -5,6 +5,7 @@
 #include <map>
 #include <ranges>
 #include <set>
+#include <generator>
 #include "reversible_2d_bimap.h"
 #include "rgf_ac_node.h"
 #include "RegPDFA.h"
@@ -25,8 +26,8 @@ public:
          state1.push_back(true);
          auto dest0 = pdfa.reduce(state0);
          auto dest1 = pdfa.reduce(state1);
-         init[state][dest0] = rgf_ac_node::create_atom_node(make_shared<dynamic_bitset<>>(state0));
-         init[state][dest1] = rgf_ac_node::create_atom_node(make_shared<dynamic_bitset<>>(state1));
+         init[dest0][state] = rgf_ac_node::create_atom_node(make_shared<dynamic_bitset<>>(state0));
+         init[dest1][state] = rgf_ac_node::create_atom_node(make_shared<dynamic_bitset<>>(state1));
       }
       rgf_ac_bimap = reversible_2d_bimap<dynamic_bitset<>, dynamic_bitset<>, rgf_ac_node>(init);
    }
@@ -35,6 +36,8 @@ public:
    static vector<shared_ptr<rgf_ac_node>> construct_from_pdfa_with_dest_state(const RegPDFA& pdfa, const dynamic_bitset<>& dest_state);
    static map<dynamic_bitset<>, map<dynamic_bitset<>, weak_ptr<rgf_ac_node>>> construct_from_pdfa_with_all_pairs(const RegPDFA& pdfa);
    reversible_2d_bimap<dynamic_bitset<>, dynamic_bitset<>, rgf_ac_node> rgf_ac_bimap;
+   set<dynamic_bitset<>> eliminated_states_set;
+   stack<dynamic_bitset<>> eliminated_states_stack;
 
    inline auto get_incoming_transitions(const dynamic_bitset<>& state) {
       return rgf_ac_bimap.incoming_transitions[state] | views::filter([&state](const auto& pair) {
@@ -46,12 +49,19 @@ public:
          return pair.first != state;
       });
    }
-   weak_ptr<rgf_ac_node> get_selfloop_transitions(const dynamic_bitset<>& state) {
+   inline weak_ptr<rgf_ac_node> get_selfloop_transitions(const dynamic_bitset<>& state) {
       return rgf_ac_bimap.incoming_transitions.at(state).at(state);
    }
-   bool has_selfloop_transition(const dynamic_bitset<>& state) {
+   inline bool has_selfloop_transition(const dynamic_bitset<>& state) {
       return rgf_ac_bimap.incoming_transitions.contains(state)&&rgf_ac_bimap.incoming_transitions.at(state).contains(state);
    }
+   inline bool has_outgoing_transition(const dynamic_bitset<>& state) {
+      return rgf_ac_bimap.outgoing_transitions.contains(state)&&!rgf_ac_bimap.outgoing_transitions.at(state).empty();
+   }
+   inline bool has_transition(const dynamic_bitset<>& from_state, const dynamic_bitset<>& to_state) {
+      return rgf_ac_bimap.incoming_transitions.contains(to_state)&&rgf_ac_bimap.incoming_transitions.at(to_state).contains(from_state);
+   }
+
    void add_transition(const dynamic_bitset<>& from_state, const dynamic_bitset<>& to_state, const shared_ptr<rgf_ac_node>& node) {
 
       rgf_ac_bimap.set_transition(from_state, to_state, node);
@@ -66,7 +76,6 @@ public:
       shared_ptr<rgf_ac_node> selfloop_node;
       if(has_selfloop_transition(dynamic_bitset<>(0)))
       {
-         //TODO: whenever a new node is created, check if it has been created before to avoid duplication
          selfloop_node = get_selfloop_transitions(dynamic_bitset<>(0)).lock()->kleene_star();
          hasselfloop = true;
       }
@@ -77,12 +86,18 @@ public:
             newtree_incoming = rgf_ac_node::create_multiply_node(i.second, selfloop_node);
          else
             newtree_incoming = i.second;
+         if(has_outgoing_transition(dynamic_bitset<>(0))==false)
+         {
+            // we need to add a zero transition to the outgoing transitions of the starting state.
+            auto zero_node = rgf_ac_node::create_zero_node();
+            rgf_ac_bimap.set_transition(dynamic_bitset<>(0), dynamic_bitset<>(0), zero_node);
+         }
          for (auto& j : get_outgoing_transitions(dynamic_bitset<>(0)))
          {
             auto newtree_incoming_outgoing = rgf_ac_node::create_multiply_node(newtree_incoming, j.second.lock());
-            if(rgf_ac_bimap.incoming_transitions.contains(j.first)&&rgf_ac_bimap.incoming_transitions.at(j.first).contains(i.first))
+            if(has_transition(i.first, j.first))
             {
-               auto newadded_node = rgf_ac_node::create_add_node_with_no_merge(rgf_ac_bimap.incoming_transitions[j.first][i.first], newtree_incoming_outgoing);
+               auto newadded_node = rgf_ac_node::create_add_node(rgf_ac_bimap.incoming_transitions[j.first][i.first], newtree_incoming_outgoing);
                rgf_ac_bimap.set_transition(i.first, j.first, newadded_node);
             }
             else
@@ -125,12 +140,19 @@ public:
             newtree_incoming = rgf_ac_node::create_multiply_node(i.second, selfloop_node);
          else
             newtree_incoming = i.second;
+         if(has_outgoing_transition(t)==false)
+         {
+            // we need to add a zero transition to the outgoing transitions to the starting state.
+            // The starting state must be eliminated at the last.
+            auto zero_node = rgf_ac_node::create_zero_node();
+            rgf_ac_bimap.set_transition(t, dynamic_bitset<>(0), zero_node);
+         }
          for (auto& j : get_outgoing_transitions(t))
          {
             auto newtree_incoming_outgoing = rgf_ac_node::create_multiply_node(newtree_incoming, j.second.lock());
-            if(rgf_ac_bimap.incoming_transitions.contains(j.first)&&rgf_ac_bimap.incoming_transitions.at(j.first).contains(i.first))
+            if(has_transition(i.first, j.first))
             {
-               auto newadded_node = rgf_ac_node::create_add_node_with_no_merge(rgf_ac_bimap.incoming_transitions[j.first][i.first], newtree_incoming_outgoing);
+               auto newadded_node = rgf_ac_node::create_add_node(rgf_ac_bimap.incoming_transitions[j.first][i.first], newtree_incoming_outgoing);
                rgf_ac_bimap.set_transition(i.first, j.first, newadded_node);
             }
             else
@@ -150,16 +172,16 @@ public:
    };
    void print_bimap()
    {
-      for (const auto& from_pair : rgf_ac_bimap.incoming_transitions) {
-         const dynamic_bitset<>& from_state = from_pair.first;
-         for (const auto& to_pair : from_pair.second) {
-            const dynamic_bitset<>& to_state = to_pair.first;
+      for (const auto& to_pair : rgf_ac_bimap.incoming_transitions) {
+         const dynamic_bitset<>& to_state = to_pair.first;
+         for (const auto& from_pair : to_pair.second) {
+            const dynamic_bitset<>& from_state = from_pair.first;
             string from,to;
             to_string(from_state,from);
             reverse(from.begin(), from.end());
             to_string(to_state,to);
             reverse(to.begin(), to.end());
-            cout << from << " -> " << to << " Node: " << to_pair.second.get()->to_string_nonrecursive() << endl;
+            cout << from << " -> " << to << " Node: " << from_pair.second.get()->to_string_nonrecursive() << endl;
          }
       }
    }
@@ -181,5 +203,14 @@ public:
       rgfac_obj.revert_to_last_snapshot();
       cout << "After reverting to last snapshot:" << endl;
       rgfac_obj.print_bimap();
+      rgfac_obj.eliminate_starting_state();
+      cout << "After eliminating starting state:" << endl;
+      rgfac_obj.print_bimap();
+      rgfac_obj.revert_to_last_snapshot();
+      cout << "After reverting to last snapshot:" << endl;
+      rgfac_obj.print_bimap();
    }
+private:
+
 };
+

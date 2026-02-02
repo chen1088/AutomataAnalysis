@@ -212,26 +212,24 @@ inline urgf urgf::construct_from_rgf_ac_node(const shared_ptr<rgf_ac_node>& node
    else if(node.get()->operation == rgf_ac_op::ADD)
    {
       urgf result = urgf::getinstance().empty();
-      for(const auto& child : node.get()->children)
-      {
-         result = result + construct_from_rgf_ac_node(child, cache);
-      }
+      auto left_child = node.get()->child1;
+      auto right_child = node.get()->child2;
+      result = construct_from_rgf_ac_node(left_child, cache) + construct_from_rgf_ac_node(right_child, cache);
       cache[node] = result;
       return result;
    }
    else if(node.get()->operation == rgf_ac_op::MULTIPLY)
    {
       urgf result = urgf::getinstance().one();
-      for(const auto& child : node.get()->children)
-      {
-         result = result * construct_from_rgf_ac_node(child, cache);
-      }
+      auto left_child = node.get()->child1;
+      auto right_child = node.get()->child2;
+      result = construct_from_rgf_ac_node(left_child, cache) * construct_from_rgf_ac_node(right_child, cache);
       cache[node] = result;
       return result;
    }
    else if(node.get()->operation == rgf_ac_op::ONE_MINUS_INVERSE)
    {
-      urgf child_urgf = construct_from_rgf_ac_node(node.get()->children[0], cache);
+      urgf child_urgf = construct_from_rgf_ac_node(node.get()->child1, cache);
       return child_urgf.f1_minus_inv();
    }
 }
