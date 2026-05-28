@@ -24,6 +24,48 @@
             "CMAKE_CXX_COMPILER": "${sourceDir}/../xpack-gcc-14.2.0-2/bin/g++",
             "CMAKE_BUILD_TYPE": "Debug"
          }
+      },
+      {
+         "name": "msvc-vcpkg",
+         "displayName": "MSVC + vcpkg",
+         "description": "Using Visual Studio MSVC with vcpkg manifest dependencies",
+         "generator": "Visual Studio 17 2022",
+         "architecture": "x64",
+         "binaryDir": "${sourceDir}/out/build/${presetName}",
+         "cacheVariables": {
+            "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+            "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+            "VCPKG_TARGET_TRIPLET": "x64-windows"
+         },
+         "condition": {
+            "type": "equals",
+            "lhs": "${hostSystemName}",
+            "rhs": "Windows"
+         }
+      }
+   ],
+   "buildPresets": [
+      {
+         "name": "msvc-vcpkg-debug",
+         "displayName": "MSVC + vcpkg Debug",
+         "configurePreset": "msvc-vcpkg",
+         "configuration": "Debug",
+         "condition": {
+            "type": "equals",
+            "lhs": "${hostSystemName}",
+            "rhs": "Windows"
+         }
+      },
+      {
+         "name": "msvc-vcpkg-release",
+         "displayName": "MSVC + vcpkg Release",
+         "configurePreset": "msvc-vcpkg",
+         "configuration": "Release",
+         "condition": {
+            "type": "equals",
+            "lhs": "${hostSystemName}",
+            "rhs": "Windows"
+         }
       }
    ]
 }
