@@ -4,3 +4,4 @@ build/*
 .codex
 .deps/
 CMakeUserPresets.json
+*.log

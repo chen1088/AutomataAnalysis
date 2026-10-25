@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.18)
 project(ProductAutomata VERSION 0.1.0 LANGUAGES C CXX)
 
+if(CMAKE_TOOLCHAIN_FILE)
+    message(STATUS "Using toolchain file: ${CMAKE_TOOLCHAIN_FILE}")
+endif()
+
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)

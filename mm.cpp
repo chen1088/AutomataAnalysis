@@ -36,12 +36,12 @@ int main()
     //urgf::test();
     // urgfdag::test();
     RegPDFA pdfa;
-    pdfa.initwithstring("5 001-00,000-0,01-0,10-_,11-1");
+    pdfa.initwithstring("001-00,000-0,01-0,10-_,11-1");
     RegPDFA pdfa2;
-    pdfa2.initwithstring("5 000-00,001-0,01-0,10-_,11-1");
+    pdfa2.initwithstring("000-00,001-0,01-0,10-_,11-1");
     //auto pdfa3 = pdfa.cartesian_product(pdfa2);
     RegPDFA pdfa3;
-    pdfa3.initwithstring("4 00-_,01-0,10-0,11-1");
+    pdfa3.initwithstring("00-_,01-0,10-0,11-1");
     dynamic_bitset<> state1;
     state1.push_back(false);
     //state1.push_back(false);

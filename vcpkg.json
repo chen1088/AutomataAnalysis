@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
   "name": "automata-analysis",
   "version-string": "0.1.0",
+  "builtin-baseline": "c748cb44f2a435fcf015c35225c9d5545fe0021c",
   "dependencies": [
     "boost-dynamic-bitset",
     "flint"
