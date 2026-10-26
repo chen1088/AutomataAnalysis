@@ -62,6 +62,10 @@ struct FinderOptions {
     std::uint64_t tail_threshold = 2, max_expansions = 10000, tie_seed = 1088, max_tail_calls = 16;
     TailLimits tail_limits;
     const volatile std::sig_atomic_t* interrupted = nullptr;
+    // Optional diagnostic retention only: defaults preserve the complete
+    // historical reports. Search decisions never depend on these controls.
+    bool retain_ranked_windows = true;
+    std::size_t max_window_reports = std::numeric_limits<std::size_t>::max();
 };
 struct FinderResult {
     std::string suffix, exact_tail_suffix;
@@ -74,6 +78,7 @@ struct FinderResult {
     bool found = false, all_merged = false, shortest_conditional = false, shortest_for_initial_pair = false;
     bool tail_capped = false, interrupted = false, expansion_limit_reached = false;
     bool proven_obstruction = false;
+    std::uint64_t window_reports_truncated = 0;
     TailResult last_tail;
     std::vector<WindowDistribution> window_distributions;
     double seconds = 0;
@@ -384,7 +389,15 @@ FinderResult find_hard_pair_suffix(State initial, const FinderOptions& options, 
             report.complete = report.ranked.size() == (std::size_t{1} << span);
             detail::summarize(report);
             report.seconds = std::chrono::duration<double>(std::chrono::steady_clock::now() - report_start).count();
-            result.window_distributions.push_back(std::move(report));
+            if (!options.retain_ranked_windows) std::vector<WindowEntry>().swap(report.ranked);
+            if (!options.max_window_reports) ++result.window_reports_truncated;
+            else {
+                if (result.window_distributions.size() == options.max_window_reports) {
+                    result.window_distributions.erase(result.window_distributions.begin());
+                    ++result.window_reports_truncated;
+                }
+                result.window_distributions.push_back(std::move(report));
+            }
         }
         if (stop) return finish();
         if (pool.empty()) break;

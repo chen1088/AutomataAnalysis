@@ -43,8 +43,8 @@ check reused the matching installed dependencies with
 MPFR checks or Windows security settings.
 
 Run CTest from the configured build directory, selecting `-C Release` or
-`-C Debug`. With `uv` installed, a fresh checkout registers **33 tests**. The
-optional 34th test, `family1-independent-m5`, is registered after the full local
+`-C Debug`. With `uv` installed, a fresh checkout registers **35 tests**. The
+optional 36th test, `family1-independent-m5`, is registered after the full local
 `out/family1-m1-m6/graphs.jsonl` journal has been regenerated and CMake has been
 reconfigured. That journal contains 203,321 evaluations and is intentionally
 excluded. See [the exact search commands](family1-search.md) and

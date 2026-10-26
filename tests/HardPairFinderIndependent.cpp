@@ -408,11 +408,44 @@ void generic_checks()
     require(interrupted.interrupted && !interrupted.shortest_conditional, "interrupted BFS made an exact claim");
 }
 
+void diagnostic_retention_checks()
+{
+    auto family = std::make_shared<ExplicitFamily>();
+    family->automata.push_back({{{0, 1}, {1, 0}}, 0});
+    auto initial = pair_state(family, "0", "1");
+    hardpair::FinderOptions options;
+    options.window_k = 2; options.beam_width = 2; options.max_suffix = 8;
+    options.tail_threshold = 0; options.max_expansions = 10000;
+    const auto full = finder(initial, options);
+    require(full.window_distributions.size() > 2, "diagnostic retention fixture needs multiple windows");
+    options.retain_ranked_windows = false; options.max_window_reports = 2;
+    const auto bounded = finder(initial, options);
+    require(bounded.found == full.found && bounded.suffix == full.suffix
+            && bounded.expanded_nodes == full.expanded_nodes && bounded.remaining_trace == full.remaining_trace,
+            "diagnostic retention changed search decisions");
+    require(bounded.window_distributions.size() == 2
+            && bounded.window_reports_truncated + 2 == full.window_distributions.size(),
+            "bounded diagnostic retention lost its truncation count");
+    for (std::size_t i = 0; i < 2; ++i) {
+        const auto& expected = full.window_distributions[full.window_distributions.size() - 2 + i];
+        const auto& actual = bounded.window_distributions[i];
+        require(actual.ranked.empty() && actual.complete == expected.complete
+                && actual.window_count == expected.window_count && actual.histogram == expected.histogram
+                && actual.mean_drop == expected.mean_drop && actual.variance_drop == expected.variance_drop,
+                "compact diagnostics failed to preserve exact window summaries");
+    }
+    options.max_window_reports = 0;
+    const auto disabled = finder(initial, options);
+    require(disabled.window_distributions.empty() && disabled.window_reports_truncated == full.window_distributions.size()
+            && disabled.suffix == full.suffix && disabled.expanded_nodes == full.expanded_nodes,
+            "disabled diagnostics changed search or lost its count");
+}
+
 } // namespace
 int main()
 {
     try {
-        const auto counts = tiny_family_checks(); generic_checks(); distance_bound_checks(); const auto improvement=tail_improvement_check();
+        const auto counts = tiny_family_checks(); generic_checks(); diagnostic_retention_checks(); distance_bound_checks(); const auto improvement=tail_improvement_check();
         std::cout << "{\"passed\":true,\"independent_rooted_classes\":" << counts.classes
             << ",\"conditional_bfs_pairs\":" << counts.conditional_pairs << ",\"forced_hash_cases\":" << counts.forced_hash_cases
             << ",\"complete_window_distributions\":" << counts.distributions

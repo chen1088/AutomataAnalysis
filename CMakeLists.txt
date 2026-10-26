@@ -9,6 +9,38 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+# This standard-library-only executable is deliberately separate from the
+# legacy algebra experiments and the SAT targets. A dedicated offline build
+# never enters dependency discovery or vcpkg manifest installation.
+option(FAMILY1_OFFLINE_ONLY "Build only the dependency-free Family1Offline executable" OFF)
+add_library(Family1OfflineCore STATIC Family1LargeGraph.cpp Family1LargeEnumerator.cpp
+    Family1ExactPacked.cpp Family1EditSearch.cpp)
+target_include_directories(Family1OfflineCore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(Family1Offline family1_offline.cpp)
+target_link_libraries(Family1Offline PRIVATE Family1OfflineCore)
+if(MSVC)
+    set_property(TARGET Family1OfflineCore Family1Offline PROPERTY
+        MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+    set_target_properties(Family1OfflineCore Family1Offline PROPERTIES
+        VS_GLOBAL_VcpkgEnabled "false" VS_GLOBAL_VcpkgEnableManifest "false")
+endif()
+install(TARGETS Family1Offline RUNTIME DESTINATION .)
+include(CTest)
+if(BUILD_TESTING)
+    add_test(NAME family1-offline-help COMMAND Family1Offline --help)
+    find_program(FAMILY1_OFFLINE_UV_EXECUTABLE NAMES uv)
+    if(FAMILY1_OFFLINE_UV_EXECUTABLE)
+        add_test(NAME family1-offline-cli COMMAND "${FAMILY1_OFFLINE_UV_EXECUTABLE}" run --no-project python
+            "${CMAKE_CURRENT_SOURCE_DIR}/tests/family1_offline_cli_test.py"
+            --exe $<TARGET_FILE:Family1Offline>)
+        set_tests_properties(family1-offline-cli PROPERTIES
+            WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}" TIMEOUT 180)
+    endif()
+endif()
+if(FAMILY1_OFFLINE_ONLY)
+    return()
+endif()
+
 add_executable(ProductAutomata main.cpp RegPDFA.cpp)
 add_executable(MatM mm.cpp RegPDFA.cpp)
 

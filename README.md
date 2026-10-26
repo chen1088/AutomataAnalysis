@@ -5,6 +5,24 @@ The repository includes source, compact results and current PDF/TikZ figures.
 Large raw datasets and build artifacts stay local; see the
 [artifact policy and fresh-checkout commands](docs/repository-artifacts.md).
 
+## Offline executable
+
+`Family1Offline.exe` accepts a seed size, an exact/heuristic switch and explicit
+graph-edit and hard-pair-search budgets. Its separate Windows build needs no
+vcpkg dependencies and produces a single executable with the static MSVC
+runtime. The executable runs offline without Python or repository datasets.
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -File scripts/build-family1-offline.ps1 -Configuration Release -Package
+.\out\build\family1-offline\Release\Family1Offline.exe --m 4 --heuristics off --depth 16 --max-layer-states 65536 --out out\offline-m4
+.\out\build\family1-offline\Release\Family1Offline.exe --m 8 --heuristics on --max-candidates 32 --max-graphs 32 --window 8 --max-window 12 --out out\offline-m8
+```
+
+See the [offline command reference](docs/family1-offline.md) and
+[heuristic method](docs/family1-heuristic-method.md). Release ZIPs stay in ignored
+`out/releases/`. Bounds, estimates, pending graphs and all tied best findings
+remain distinct in the exports.
+
 ## Family 1 graph search
 
 The **absolute maximum and every maximizing rooted class** are certified
@@ -48,9 +66,9 @@ and possible near-winners through size 20, ranks certified hard-root support,
 and queries every accessible root of each selected shape. Generation budgets
 are explicit; they do not give global pruning certificates. `Family1Threshold`
 tests one chosen equal length and preserves `unknown` without adding a bound.
-The native Windows Debug and Release builds each pass 34 local CTests, including
+The native Windows Debug and Release builds each pass 36 local CTests, including
 170 independent threshold decisions over all 64 classes through three states.
-Fresh checkouts register 33 tests; the additional test uses a regenerated full
+Fresh checkouts register 35 tests; the additional test uses a regenerated full
 evaluation journal, as described in the artifact policy.
 See also the [edit-priority limits](docs/family1-edit-priority.md) and
 [circulant construction comparison](docs/family1-circulant-comparison.md).
