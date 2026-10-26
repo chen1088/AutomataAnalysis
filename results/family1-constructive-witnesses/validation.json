@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "checks": [
+    {
+      "id": "literal-m20",
+      "native_full_mask_replay": 1048576,
+      "independent_python_binary_lifting_spot_checks": 256,
+      "resume_native_artifacts_unchanged": true,
+      "cycle_histogram_counts_verified": true
+    },
+    {
+      "id": "projection-m20",
+      "native_full_mask_replay": 1048576,
+      "independent_python_binary_lifting_spot_checks": 256,
+      "resume_native_artifacts_unchanged": true,
+      "cycle_histogram_counts_verified": true
+    }
+  ],
+  "spot_check_mask_selection": "0,allones,20singlebits,deterministicrandomseed20261026 until256unique",
+  "python_method": "binary lifting of both fixed-letter transition functions; independent of native Floyd/modular-power algorithms",
+  "scope": "All masks verified by native independent replay; Python cross-check is explicitly256 masks per graph."
+}

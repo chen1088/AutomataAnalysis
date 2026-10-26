@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "method": "independent-m8-complete-primitive-path-and-export-count-audit",
+  "status": "passed",
+  "publisher_manifest_before_audit": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\manifest-before-audit.json",
+    "sha256": "9da4f6b962cf519cf149757cc2b084e55dbabc3cd66d1ff32ab1d9224ec866fd",
+    "bytes": 3195
+  },
+  "auditor": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tests\\family1_m8_publication_audit.py",
+    "sha256": "b84e77b182f5f0ad0b8acdb32f5839cf3ddaf1a04316a11a66229d768c3c7974",
+    "bytes": 9601
+  },
+  "parents": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\initial-screen-inputs\\parents.jsonl",
+    "sha256": "23fae406513b5dd8be7d685ab0749b27429ca0492e914c2c02b340eceb1c34da",
+    "bytes": 31177
+  },
+  "parent_count": 55,
+  "path_audits": [
+    {
+      "file": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\generation-paths.jsonl.gz",
+        "sha256": "c83cee4cd235aff0f033f22e8c72892119502aa91c012201a71437b040c56b12",
+        "bytes": 289961
+      },
+      "radius": 1,
+      "paths_checked": 4861,
+      "unit_steps_checked": 4806,
+      "operation_counts": {
+        "insert-loop": 698,
+        "insert-two-edges": 4108
+      },
+      "all_root_fixed_paths_and_primitive_tables_valid": true
+    },
+    {
+      "file": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\extra-generation-0-paths.jsonl.gz",
+        "sha256": "07881550d32bcf0301f878a686de4aea08a269b1d23b24c441c4a25440c08f3e",
+        "bytes": 387418
+      },
+      "radius": 2,
+      "paths_checked": 5794,
+      "unit_steps_checked": 7840,
+      "operation_counts": {
+        "insert-loop": 1715,
+        "retarget": 3543,
+        "insert-two-edges": 2582
+      },
+      "all_root_fixed_paths_and_primitive_tables_valid": true
+    }
+  ],
+  "all_primitive_paths_replayed": true,
+  "unique_canonical_tables_cached": 14957,
+  "unique_primitive_steps_cached": 8586,
+  "source_record_rows": 46328,
+  "summary_counts_recomputed": {
+    "exported_rooted_classes": 26924,
+    "native_attempts": 43835,
+    "evaluated_rooted_classes": 13327,
+    "best_certified_lower_bound": 35,
+    "graphs_with_best_certified_lower_bound": 1,
+    "potential_maximizers_retained": 25795,
+    "unresolved_strict_challengers": 25739,
+    "no_verified_upper": 13954,
+    "exact_scores": 170
+  },
+  "record_union_and_all_generated_inclusion_checked": true,
+  "source_record_interval_minima_checked": true,
+  "all_observation_evaluation_counts_checked": true,
+  "potential_ties_and_strict_challengers_exactly_retained": true,
+  "observation_upper_minima_not_reflected": [],
+  "elapsed_seconds": 3.8671876000007614,
+  "no_global_maximum_claim": true
+}

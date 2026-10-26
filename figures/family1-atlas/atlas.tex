@@ -1,0 +1,420 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=13mm]{geometry}
+\usepackage{tikz,graphicx,booktabs,amsmath,amssymb}
+\usetikzlibrary{arrows.meta}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{plain}
+\begin{document}
+{\LARGE\bfseries Family 1 graph atlas}\par\vspace{3mm}
+{\large Exact reachable sizes $1$ through $20$}\par\vspace{5mm}
+A seed has a distinguished root, two outgoing ports at every vertex, and unrestricted indegree. Loops and coincident ports are allowed. Only root-accessibility is required.\par\vspace{2mm}
+Every mask is static: $\delta_\sigma(s,x)=\tau_{x\mathbin{\oplus}\sigma(s)}(s)$. The score $H(G)$ is the shortest positive length of two distinct, equal-length words whose endpoint vectors agree for all masks.\par\vspace{2mm}
+Let $F(m)=\max_{|G|=m} H(G)$, where exactly $m$ states are reachable. Root-preserving relabeling and independent port swaps identify graph classes. Different roots can therefore give different classes of the same ordinary shape.\par\vspace{4mm}
+\begin{center}\small\begin{tabular}{rcrrl}
+\toprule $m$ & $F(m)$ & Rooted winners & Shapes & Coverage \\ \midrule
+1 & $1$ & 1 & 1 & Certified complete \\
+2 & $3$ & 1 & 1 & Certified complete \\
+3 & $6$ & 2 & 1 & Certified complete \\
+4 & $10$ & 1 & 1 & Certified complete \\
+5 & $15$ & 5 & 4 & Certified complete \\
+6 & $23$ & 2 & 1 & Certified complete \\
+7 & $34$ & 8 & 4 & Certified complete \\
+8 & $\ge 35$ & -- & -- & Global maximum unresolved \\
+9 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+10 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+11 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+12 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+13 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+14 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+15 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+16 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+17 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+18 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+19 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+20 & $\ge 34$ & -- & -- & Global maximum unresolved \\
+\bottomrule\end{tabular}\end{center}\vspace{2mm}
+For $m\le7$, every maximizing rooted class is drawn. For $8\le m\le20$, each drawing is an explicit construction with $H(G)\ge34$, proved by a projection onto a certified seven-state maximizer. These pages give neither an exact graph score nor a global upper bound.\par\vspace{2mm}
+The cumulative size budget $1,\ldots,m$ is a different optimization problem. Removing unreachable vertices preserves every rooted trajectory and $H(G)$, so that budget reduces to the maximum over the exact reachable sizes. No strong-connectivity reduction is used.\par\vspace{2mm}
+Root $0$ is double-circled; solid and dashed arcs distinguish the two ports. Each snippet retains the full directed transition table.\par
+\clearpage
+{\Large\bfseries Family 1: $m=1$}\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $1$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{9cm}{!}{\input{snippets/m01-graph-01.tex}}\par
+{\footnotesize (a) $H(G)=1$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=2$}\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $3$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{9cm}{!}{\input{snippets/m02-graph-01.tex}}\par
+{\footnotesize (a) $H(G)=3$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=3$}\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $6$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m03-graph-01.tex}}\par
+{\footnotesize (a) $H(G)=6$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m03-graph-02.tex}}\par
+{\footnotesize (b) $H(G)=6$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=4$}\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $10$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{9cm}{!}{\input{snippets/m04-graph-01.tex}}\par
+{\footnotesize (a) $H(G)=10$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=5$}\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $15$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{5.7cm}{!}{\input{snippets/m05-graph-01.tex}}\par
+{\footnotesize (a) $H(G)=15$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{5.7cm}{!}{\input{snippets/m05-graph-02.tex}}\par
+{\footnotesize (b) $H(G)=15$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{5.7cm}{!}{\input{snippets/m05-graph-03.tex}}\par
+{\footnotesize (c) $H(G)=15$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{5.7cm}{!}{\input{snippets/m05-graph-04.tex}}\par
+{\footnotesize (d) $H(G)=15$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{5.7cm}{!}{\input{snippets/m05-graph-05.tex}}\par
+{\footnotesize (e) $H(G)=15$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=6$}\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $23$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m06-graph-01.tex}}\par
+{\footnotesize (a) $H(G)=23$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m06-graph-02.tex}}\par
+{\footnotesize (b) $H(G)=23$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=7$} (continued 1/2)\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $34$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-01.tex}}\par
+{\footnotesize (a) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-02.tex}}\par
+{\footnotesize (b) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-03.tex}}\par
+{\footnotesize (c) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-04.tex}}\par
+{\footnotesize (d) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=7$} (continued 2/2)\par
+\vspace{2mm}
+{\small The maximum merge length is proved to be $34$; the maximizing collection is complete.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-05.tex}}\par
+{\footnotesize (e) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-06.tex}}\par
+{\footnotesize (f) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\noindent\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-07.tex}}\par
+{\footnotesize (g) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{8.2cm}{!}{\input{snippets/m07-graph-08.tex}}\par
+{\footnotesize (h) $H(G)=34$.\par Proved maximum.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=8$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $35$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Displayed candidate only: its exact score is unknown. A complete length-$34$ collision check proves $H(G)\ge35$; a verified length-$52$ pair proves $H(G)\le52$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{9cm}{!}{\input{snippets/m08-graph-01.tex}}\par
+{\footnotesize (a) $35\le H(G)\le 52$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=9$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{9cm}{!}{\input{snippets/m09-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=10$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m10-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=11$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m11-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=12$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m12-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=13$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m13-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=14$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m14-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=15$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m15-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=16$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m16-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=17$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m17-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=18$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m18-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=19$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m19-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Family 1: $m=20$}\par
+\vspace{2mm}
+{\small The global maximum remains unresolved. The largest displayed certified lower bound is $34$.}\par
+\vspace{1mm}
+{\small Root $0$: double circle. Port $0$: solid; port $1$: dashed.}\par
+\vspace{3mm}
+{\small Constructive example only: its individual exact score is unknown. A static-mask projection onto a certified seven-state maximizer proves $H(G)\ge34$.}\par\vspace{2mm}
+\noindent\hfill
+\begin{minipage}[t]{.96\textwidth}\centering
+\resizebox{14cm}{!}{\input{snippets/m20-graph-01.tex}}\par
+{\footnotesize (a) $H(G)\ge 34$.\par Global maximum unresolved.}\par
+\end{minipage}\hfill
+\par\vspace{2.5mm}
+\clearpage
+{\Large\bfseries Graph edits and extremal growth}\par\vspace{4mm}
+We work on rooted isomorphism classes: vertex relabeling and independent port swaps cost zero. A port retarget changes one outgoing target and costs one. A routing insertion also costs one: choose two distinct edge occurrences $a\to b$ and $c\to d$, add a nonroot vertex $v$, and replace them by\[a\to v,\qquad c\to v,\qquad v\to b,\qquad v\to d.\]Sources or targets may coincide; edge occurrences remain distinct. Its inverse removes a nonroot vertex of indegree two without a loop and reconnects its incoming occurrences to its outgoing targets in either bijection.\par\vspace{2mm}
+The loop version replaces $a\to b$ by $a\to v$, $v\to v$, $v\to b$; its inverse smooths that nonroot vertex. Every intermediate seed must remain root-accessible and have two outgoing ports. The root is never deleted. The distance is the minimum number of these edits; this is a chosen unit cost for a growth operation, rather than a count of changed arcs.\par\vspace{3mm}
+\textbf{Consecutive sizes.} The table exhausts all allowed one-vertex smoothings of every certified maximizing child. It does not assume that a maximizing child must have a maximizing parent.\par\vspace{3mm}
+\begin{center}\small\begin{tabular}{crrrll}
+\toprule Sizes & Parent $F$ & Child $F$ & Winners & One insertion & Edit distances \\ \midrule
+$1\to2$ & 1 & 3 & 1 & 1/1 & $1$ \\
+$2\to3$ & 3 & 6 & 2 & 0/2 & $2,2$ \\
+$3\to4$ & 6 & 10 & 1 & 0/1 & $2$ \\
+$4\to5$ & 10 & 15 & 5 & 0/5 & $3,3,3,2,2$ \\
+$5\to6$ & 15 & 23 & 2 & 1/2 & $1,2$ \\
+$6\to7$ & 23 & 34 & 8 & 1/8 & $3,3,3,1,3,3,3,3$ \\
+\bottomrule\end{tabular}\end{center}\vspace{3mm}
+Edit distances are listed in child panel order. Each is the minimum distance to the entire previous-size winning collection. Complete unit neighborhoods exclude shorter paths, and explicit saved paths attain every displayed distance. The paths may pass through graphs that are not maximizers.\par\vspace{2mm}
+For $5\to6$, five-state panels (a) and (b) both grow into six-state panel (a), raising $H$ from $15$ to $23$. From panel (b), split $0\to1$ and $2\to3$ through the new vertex $5$, with outgoing targets $\{1,3\}$. All five previous winners are included in the comparison; panels (c), (d), and (e) have no winning child by this single insertion.\par\vspace{2mm}
+Six-state panel (b) has best predecessor score $14$, below $F(5)=15$. One such predecessor has the same ordinary shape as a five-state winner but a different root. Retaining only rooted winning parents would already omit a winning child.\par\vspace{2mm}
+With retargeting allowed, six-state panel (b) is at distance two from the five-state winning collection: one retarget followed by one insertion suffices. Thus every winning child through seven states lies within three edits of some previous-size winner under this metric.\par\vspace{2mm}
+The six-state winner reached from five-state winners is panel (a), whereas the six-state winner leading to a seven-state winner is panel (b). Hence there is no chain of maximizing rooted graphs $5\to6\to7$ using only one such insertion at each step.\par\vspace{2mm}
+The edits preserve old indegrees and give the new vertex indegree two. This operation is a structural comparison, not an enumeration rule for all two-outdegree graphs. In particular, it imposes no indegree restriction on the original global search.\par
+\clearpage
+{\Large\bfseries Seven-state predecessors}\par\vspace{4mm}
+All eight rooted seven-state winners have $H=34$. Their best six-state smoothing predecessors are:\par\vspace{3mm}
+\begin{center}\begin{tabular}{crrr}
+\toprule Child panel & Distinct parents & Best parent $H$ & Increase in $H$ \\ \midrule
+(a) & 9 & 21 & 13 \\
+(b) & 10 & 22 & 12 \\
+(c) & 10 & 21 & 13 \\
+(d) & 9 & 23 & 11 \\
+(e) & 9 & 22 & 12 \\
+(f) & 9 & 22 & 12 \\
+(g) & 10 & 22 & 12 \\
+(h) & 10 & 22 & 12 \\
+\bottomrule\end{tabular}\end{center}\vspace{4mm}
+\textbf{A one-edit maximizing extension.} Start with the six-state maximizer\[\begin{array}{c|rrrrrr}s&0&1&2&3&4&5\\\hline\{\tau_0(s),\tau_1(s)\}&\{1,2\}&\{0,3\}&\{4,5\}&\{2,3\}&\{0,1\}&\{4,5\}\end{array}\]Replace $0\to1$ and $1\to0$ by $0\to6$ and $1\to6$, and give vertex $6$ the targets $\{0,1\}$. The result is seven-state panel (d), up to a root-preserving relabeling and port swaps. Its score increases from $23$ to $34$. The graph distance is one; the score difference is eleven.\par\vspace{3mm}
+Exactly one of the eight rooted winners has a rooted six-state winning parent under this insertion. If only the predecessor's root is ignored, three of the four ordinary seven-state shapes have a predecessor of the ordinary winning six-state shape; their inherited-root scores are $20$, $23$, and $22$. Changing the root is not a free edit.\par\vspace{4mm}
+\textbf{Eight-state forecast.} The certified values $10,15,23,34$ have increments $5,8,11$. Continuing that increment pattern gives $F(8)\approx48$. An informal range $40$--$55$ expresses uncertainty; neither the point guess nor the range is a certified bound or a statistical confidence interval. These small values do not distinguish quadratic from cubic asymptotics.\par\vspace{3mm}
+The complete tables, witnesses, source hashes, all allowed predecessor operations, and reversible edit descriptions accompany the reusable TikZ sources.\par
+\end{document}

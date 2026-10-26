@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "configuration": "native MSVC/vcpkg Release",
+  "native_constructor": {
+    "path": "out/build/msvc-vcpkg/Release/Family1Construct.exe",
+    "sha256": "34abee74a71ad8b5c36212bfea9ce7fd1fcf45aac6d7d088c5763e3f68a34a1c"
+  },
+  "native_sampler": {
+    "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+    "sha256": "ae267552bfd2278ede1ba73045790c9dbd671ad93d767cc1ead66ca2a50c0ac3"
+  },
+  "constructor_cli": {
+    "passed": true,
+    "test": {
+      "path": "tests/family1_construct_cli_test.py",
+      "sha256": "b05b09239f8a632158076c9b6914a4e72d8bc20f932dcd20eb28d1ae8a619afd"
+    },
+    "independently_enumerated_rooted_classes": 64,
+    "class_counts_by_size": {
+      "1": 1,
+      "2": 6,
+      "3": 57
+    },
+    "checked": [
+      "all static masks",
+      "exact A/B/P against scalar functional orbits",
+      "generic universal construction",
+      "equal lengths and distinct unique-one positions",
+      "compressed and materialized endpoint equality",
+      "loops/coincident ports/static revisits",
+      "noncanonical rooted input",
+      "large modular powers",
+      "completed resume",
+      "overwrite/configuration guards",
+      "corrupt result rejection",
+      "interruption before atomic publication recovery"
+    ],
+    "command": [
+      "uv",
+      "run",
+      "--no-project",
+      "python",
+      "tests/family1_construct_cli_test.py",
+      "--exe",
+      "out/build/msvc-vcpkg/Release/Family1Construct.exe",
+      "--work-dir",
+      "out/family1-construct-cli-release-20261026",
+      "--benchmark-m",
+      "16",
+      "--benchmark-repeats",
+      "3"
+    ]
+  },
+  "sampler_cli": {
+    "passed": true,
+    "test": {
+      "path": "tests/family1_sample_cli_test.py",
+      "sha256": "3f371a328c660c6ecbf678059315d8ad7e59fec65cbd86aa2a36fd21d7336be8"
+    },
+    "independently_enumerated_rooted_classes": 64,
+    "all_tiny_class_pairs_verified_over_every_static_mask": true,
+    "additional_acceptance_sizes": [
+      4,
+      5,
+      6
+    ],
+    "known_m2_witness": [
+      "010",
+      "100"
+    ],
+    "checked": [
+      "deterministic complete tiny-word startup",
+      "complete packed profiles after forced hash collisions",
+      "sampled-mask false hits refuted by all-mask scalar replay",
+      "unknown/partial results carry no new score bound",
+      "noncanonical rooted input",
+      "seed determinism",
+      "partial checkpoint resume matches uninterrupted run",
+      "completed resume",
+      "overwrite/seed/length/budget guards",
+      "checkpoint/result corruption rejection",
+      "numeric option guards"
+    ],
+    "command": [
+      "uv",
+      "run",
+      "--no-project",
+      "python",
+      "tests/family1_sample_cli_test.py",
+      "--exe",
+      "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+      "--work-dir",
+      "out/family1-sample-cli-release-20261026"
+    ]
+  },
+  "constructor_benchmark": {
+    "path": "results/family1-native-witness-validation/constructor-benchmark.json",
+    "m": 16,
+    "masks": 65536,
+    "repeats": 3,
+    "python_median_seconds": 0.6208364999620244,
+    "native_median_seconds": 0.013158999965526164,
+    "observed_ratio": 47.179611033398174,
+    "bound": 73,
+    "comparison": "independently implemented end-to-end parameter construction and universal witness verification; native includes process startup/output I/O, Python omits output I/O"
+  },
+  "sampler_benchmark": "owned by sampler implementation agent; not duplicated by this validation",
+  "scope": "Witness correctness and native implementation validation; no shortestness or global graph maximum certified."
+}

@@ -10,7 +10,7 @@ RegPDFA::RegPDFA(unsigned int s)
    size = s;
 }
 
-RegPDFA::RegPDFA(string s)
+RegPDFA::RegPDFA(string s) : size(0)
 {
    initwithstring(s);
 }
@@ -69,12 +69,12 @@ void RegPDFA::initwithstring(string s)
       for(int i = 0; i < src.size()-1; i++)
       {
          // add all prefixes of src to the transition table.
-         if(issetransition(buffer, src[i]))
+         if(!issetransition(buffer, src[i]))
          {
-            // if the transition already exists, we do not need to add it again.
-            continue;
+            settransition(buffer, buffer_append, src[i]);
          }
-         settransition(buffer, buffer_append, src[i]);
+         // Existing edges still consume a character of this description.
+         // Otherwise later shared prefixes are attached to the wrong vertex.
          buffer.push_back(src[i]);
          buffer_append.push_back(src[i+1]);
       }

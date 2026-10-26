@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "method": "bounded-new-shape-radius2-eight-state-search",
+  "parents": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\initial-screen-inputs\\parents.jsonl",
+    "sha256": "23fae406513b5dd8be7d685ab0749b27429ca0492e914c2c02b340eceb1c34da"
+  },
+  "excluded_complete_r1": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\generation-r1\\candidates.jsonl",
+    "sha256": "75dbed20d7a8c1e8bcd6578ea4bb055f9aa885ee404e97e0a9bab6130d827ec6"
+  },
+  "edit_executable": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\binary\\Family1Edit.exe",
+    "sha256": "2cf91e05ce05cb85fc2de365fdb328487017e14d783df6755554697192319ef8"
+  },
+  "score_executable": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\binary\\Family1Sample.exe",
+    "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+  },
+  "sources": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\sources-used\\family1_m8_radius2_search.py",
+      "sha256": "be659bd50a8512ce8a8862cd29e1571783a0e7bc24b07ced7aaf81055a2a50cc"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\sources-used\\family1_rank_edit_candidates.py",
+      "sha256": "c193f66c8423d31302cb47daaeaf3073e8b0a4e261f7b76946764a7103758926"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\sources-used\\family1_graph_candidate_search.py",
+      "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\sources-used\\family1_study.py",
+      "sha256": "dabe12fc4cfe4e1a99b7c51da43ba1d690e82924d6490ab4ec8f85d95c9d1fe0"
+    }
+  ],
+  "target_m": 8,
+  "radius": 2,
+  "seed": 2027,
+  "max_paths": 16000,
+  "max_candidates": 4096,
+  "root_closure": true,
+  "selected_root_budget": 2048,
+  "coarse_caps": [
+    64,
+    40
+  ],
+  "samples": 128,
+  "beam": 4,
+  "window_k": 6,
+  "prefix_depth": 16,
+  "prefix_words": 65536,
+  "max_expansions": 10000,
+  "query_timeout_seconds": 10,
+  "jobs": 4,
+  "invocation_work_budget_seconds": 270,
+  "no_global_claim": true
+}

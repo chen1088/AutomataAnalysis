@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "both_native_configurations_passed": true,
+  "builds": [
+    {
+      "configuration": "release",
+      "ctests": 32,
+      "passed": 32,
+      "log": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\ctest-m8-release.log",
+        "sha256": "0e18c9246bba64056dddef172b15fc1f8a897feab6ee13f3ad9e8b0b1e884f3f",
+        "bytes": 4050
+      },
+      "executable": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1M8LayerVerify.exe",
+        "sha256": "063b51a058c851c65819b26eac0974717e1faa9ed43f28d7bbfe9ae246cc2d1e",
+        "bytes": 277504
+      }
+    },
+    {
+      "configuration": "debug",
+      "ctests": 32,
+      "passed": 32,
+      "log": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\ctest-m8-debug.log",
+        "sha256": "d27fc1106c46c308cc96e122b0be0de2aa736c9864e55a7412625c626ed3b5e9",
+        "bytes": 4050
+      },
+      "executable": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Debug\\Family1M8LayerVerify.exe",
+        "sha256": "3a0af055b1ec1fe6affc9e56be2a95cb0ab1bb5317f557779a39fb6061d894b1",
+        "bytes": 963584
+      }
+    }
+  ],
+  "accepted_complete_lower_certificate": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\certificate-run.json",
+    "sha256": "408c284b8fa22e5e41b725147bf01e24f0d7b43da54a0eb4d7865ca9ed57ee55",
+    "bytes": 3750
+  },
+  "negative_evidence_checks": [
+    {
+      "case": "capped_status",
+      "rejected": true,
+      "reason": "Layer verifier did not complete an injectivity proof"
+    },
+    {
+      "case": "timeout_reason",
+      "rejected": true,
+      "reason": "Layer verifier did not complete an injectivity proof"
+    },
+    {
+      "case": "unfinished_phase",
+      "rejected": true,
+      "reason": "Layer verifier did not complete an injectivity proof"
+    },
+    {
+      "case": "unrecognized_method",
+      "rejected": true,
+      "reason": "Unrecognized independent verifier method"
+    },
+    {
+      "case": "missing_representative",
+      "rejected": true,
+      "reason": "Incomplete representative coverage"
+    },
+    {
+      "case": "incomplete_bucket_fill",
+      "rejected": true,
+      "reason": "Incomplete representative coverage"
+    },
+    {
+      "case": "unfinished_bucket",
+      "rejected": true,
+      "reason": "Incomplete representative coverage"
+    },
+    {
+      "case": "incomplete_hash_replay",
+      "rejected": true,
+      "reason": "Repeated fingerprints were not replayed as complete states"
+    },
+    {
+      "case": "missing_replay_group",
+      "rejected": true,
+      "reason": "Repeated fingerprints have no replay group"
+    },
+    {
+      "case": "wrong_full_mask_claim",
+      "rejected": true,
+      "reason": "Incorrect full-family flag"
+    },
+    {
+      "case": "unchecked_self_orbit",
+      "rejected": true,
+      "reason": "Projected self-symmetries were not checked against complete states"
+    },
+    {
+      "case": "wrong_graph_binding",
+      "rejected": true,
+      "reason": "Layer graph binding failed"
+    },
+    {
+      "case": "changed_native_command",
+      "rejected": true,
+      "reason": "Report differs from the pinned native invocation"
+    },
+    {
+      "case": "changed_report_hash",
+      "rejected": true,
+      "reason": "Certificate evidence changed: C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\report.json"
+    },
+    {
+      "case": "changed_runner_pin",
+      "rejected": true,
+      "reason": "Certificate evidence changed: C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\snapshots\\family1_run_m8_layer.py"
+    },
+    {
+      "case": "changed_verifier_source",
+      "rejected": true,
+      "reason": "Certificate evidence changed: C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\snapshots\\Family1M8LayerVerify.cpp"
+    },
+    {
+      "case": "changed_fingerprint_coordinates",
+      "rejected": true,
+      "reason": "Certificate evidence changed: C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\snapshots\\fingerprint-masks.txt"
+    },
+    {
+      "case": "changed_reference_invocation",
+      "rejected": true,
+      "reason": "Reference test invocation differs from its pinned artifacts"
+    }
+  ],
+  "all_negative_cases_rejected": true,
+  "sources": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-validation\\sources-used\\CMakeLists.txt",
+      "sha256": "f6a599d560a3c716a3e8473805b41cf358c7ed8a0365a5d0e3d6c62d65255896",
+      "bytes": 12613,
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\CMakeLists.txt"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-validation\\sources-used\\Family1M8LayerVerify.cpp",
+      "sha256": "5a2c40a982dd3f8363eb881e6ed1ad83c45c0abec327f82c2f41eb8bdd12ff8a",
+      "bytes": 29991,
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tests\\Family1M8LayerVerify.cpp"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-validation\\sources-used\\family1_m8_layer_verify_test.py",
+      "sha256": "746f838c621e1ad483c2fb8a7d65729c6ae03a5f9e55bbf42e52f4919d785be2",
+      "bytes": 9768,
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tests\\family1_m8_layer_verify_test.py"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-validation\\sources-used\\family1_layer_certificate.py",
+      "sha256": "d4e955bd4cf5ed5ffb2905437e7d83d1be526dc84414c18449ad8a61a7f8806f",
+      "bytes": 6810,
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_layer_certificate.py"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-validation\\sources-used\\family1_run_m8_layer.py",
+      "sha256": "9ec32f4ee9daccaa0de2f35370bc58cf6447ef145f0a78065c1f63170d688f33",
+      "bytes": 6277,
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_run_m8_layer.py"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-validation\\sources-used\\family1_publish_m8_search.py",
+      "sha256": "2e987bdd1b37c78dd8509579c32961606eb9cd36d82dd8d64212b1c853a6e334",
+      "bytes": 13569,
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_publish_m8_search.py"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-validation\\sources-used\\family1_record_m8_validation.py",
+      "sha256": "efd37af1078997df85290016ca6781c1876eaf7d407b688bbb7df80f406b4213",
+      "bytes": 5184,
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_record_m8_validation.py"
+    }
+  ]
+}

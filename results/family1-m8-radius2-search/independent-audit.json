@@ -1,0 +1,11 @@
+{
+  "selected_roots": 2053,
+  "selected_shapes": 257,
+  "all_selected_shapes_absent_from_complete_r1": true,
+  "whole_selected_root_blocks_retained": true,
+  "independent_path_replays": 290,
+  "independent_unit_step_replays": 580,
+  "every_linked_path_has_retarget": true,
+  "graph_canonicalization": "independent Python discovery canonicalization; no native headers",
+  "no_global_coverage_claim": true
+}

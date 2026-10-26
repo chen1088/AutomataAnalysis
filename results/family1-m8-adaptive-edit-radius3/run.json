@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "method": "bounded-crowding-adaptive-edit-radius-controller",
+  "selection_plan_sha256": "e42100afb5f866397d73976bc2a5b3086408cfdc4a2df7bd74c51e44acec4334",
+  "trigger_band": 5,
+  "trigger_maximum_attempted_k": 16,
+  "prior_radius": 2,
+  "requested_radius": 3,
+  "score_executable": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\native-used\\Family1Sample.exe",
+    "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+  },
+  "edit_executable": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\native-used\\Family1Edit.exe",
+    "sha256": "2cf91e05ce05cb85fc2de365fdb328487017e14d783df6755554697192319ef8"
+  },
+  "source_snapshots": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\sources-used\\family1_adaptive_edit_search.py",
+      "sha256": "bd9020da06e7cb930021847296a5ee22a3659bdb52305d11834d3dd21b9b6100"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\sources-used\\family1_adaptive_candidate_search.py",
+      "sha256": "f6166db247f4424baddcd14a104ef8b6aad67c630b88e51a41785781d8b716c1"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\sources-used\\family1_graph_candidate_search.py",
+      "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\sources-used\\family1_rank_edit_candidates.py",
+      "sha256": "c193f66c8423d31302cb47daaeaf3073e8b0a4e261f7b76946764a7103758926"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\sources-used\\family1_study.py",
+      "sha256": "dabe12fc4cfe4e1a99b7c51da43ba1d690e82924d6490ab4ec8f85d95c9d1fe0"
+    }
+  ],
+  "corpus": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\records.jsonl.gz",
+    "sha256": "c6c28015c70d66dc70098c529bb8ee8ea074c2f2435335ae3f5c6ed621d1ba8c"
+  },
+  "jobs": 12,
+  "wall_seconds": 240,
+  "new_query_launch_reserve_seconds": 25,
+  "qualification": "completed strong stage AND independently verified finite new pair; timeout positives remain pending",
+  "global_optimality_claimed": false
+}

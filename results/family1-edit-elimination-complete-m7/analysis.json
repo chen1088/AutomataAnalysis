@@ -1,0 +1,15 @@
+{
+  "per_size": [
+    {
+      "m": 7,
+      "queries": 13329,
+      "eliminated": 12691,
+      "unresolved_winners": 8,
+      "unresolved_nonwinners": 630,
+      "witness_gap_histogram": {}
+    }
+  ],
+  "summed_native_invocation_seconds": 540.6586817958159,
+  "summed_new_native_invocation_seconds": 510.47456319781486,
+  "unique_queries_deduplicated_across_cohorts": true
+}

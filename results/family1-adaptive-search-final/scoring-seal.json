@@ -1,0 +1,15 @@
+{
+  "run": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\run.json",
+    "sha256": "18771100185968fce820fa2a1b01e30ade54065a66e1662044c564184667796a"
+  },
+  "records": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\records.jsonl",
+    "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+  },
+  "summary": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\summary.json",
+    "sha256": "69df88af5aecc5377b11de754c80576c7075ab19afef4ddbb7bd7b8e1bc1c793"
+  },
+  "evaluation_truth_not_used": true
+}

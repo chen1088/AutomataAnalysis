@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "m": 7,
+  "method": "independently-checked-complete-upper-cover-and-every-frontier-lower",
+  "graph_model": {
+    "root": 0,
+    "reachable_states": 7,
+    "outgoing_ports_per_state": 2,
+    "loops_allowed": true,
+    "coincident_ports_allowed": true,
+    "indegree_restriction": null,
+    "strong_connectivity_required": false,
+    "equivalence": "root-preserving vertex relabeling and independent port swaps",
+    "each_seed_scored_separately": true
+  },
+  "score_definition": "Least positive equal-length collision of distinct words over all static local XOR masks",
+  "evaluated": 4166855,
+  "enumeration_complete": true,
+  "maximum_value_certified": true,
+  "maximum_merge_length": 34,
+  "maximizing_collection_complete": true,
+  "maximizer_count": 8,
+  "maximizer_keys": [
+    "0001020302030405000604060105",
+    "0001020304050406050600010203",
+    "0102000301040204050600030506",
+    "0102000304050106000304050206",
+    "0102010203040005030604060005",
+    "0102010203040005050600060304",
+    "0102020304050006000604050103",
+    "0102030405060001000203040506"
+  ],
+  "all_other_graphs_have_verified_upper_at_most": 33,
+  "journal": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m7-global-certificate-v3\\refined-checkpoint.jsonl",
+    "sha256": "9d6de41b2f99dd220bd9d086d6910e5d466c16e23328f22f57520654c47e3d70"
+  },
+  "input_journal": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m7-complete-upper-v3\\checkpoint.jsonl",
+    "sha256": "c8e40464cc2321d22f929de3b051238b84c038805faabfaf64075fde3b66cf82"
+  },
+  "upper_audit": {
+    "path": "independent-refined-upper-audit.json",
+    "sha256": "91051f9ad29b159065d8094986cb5173658e6a1b679783252a5996b44a2f80a3"
+  },
+  "initial_upper_audit": {
+    "path": "independent-upper-audit.json",
+    "sha256": "4084594cc7d563a7ee77d890a1e9438f1f878ff245fa315d116eb480496620c6"
+  },
+  "independent_count": {
+    "path": "independent-burnside-counts.json",
+    "sha256": "72f3a585fc2d174a6acf39a8ebee631f199c1361f21b995e69e6e22238a09d91"
+  },
+  "independent_lower_checks": [
+    {
+      "key": "0001020302030405000604060105",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0001020302030405000604060105.json",
+      "sha256": "f9fadedf550b81b1ee8bc10ede17e50e524d156395d70a95d23350e7dfe39ecb"
+    },
+    {
+      "key": "0001020304050406050600010203",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0001020304050406050600010203.json",
+      "sha256": "90c16e01c053349a89df7ccc484fac8426a24c0b54363a1b36640426897d8fe9"
+    },
+    {
+      "key": "0102000301040204050600030506",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102000301040204050600030506.json",
+      "sha256": "a9d9a3a9ac048892f0b3cc961a37d070b47a66bad6ac1d006d52342154f1ed78"
+    },
+    {
+      "key": "0102000304050106000304050206",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102000304050106000304050206.json",
+      "sha256": "6f8aefba1efb0459b7b2b9fd4bf4b3b1d7660f1d32454163b25fa80bacc38706"
+    },
+    {
+      "key": "0102010203040005030604060005",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102010203040005030604060005.json",
+      "sha256": "10743f79456782e2cbdbcf28a8c7afa6fbe7f77228b0f519d1402448d884098b"
+    },
+    {
+      "key": "0102010203040005050600060304",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102010203040005050600060304.json",
+      "sha256": "bfa0abed86b5bca264a297ced326c905ea72c3d434f420bae1ac3a36ac19a235"
+    },
+    {
+      "key": "0102020304050006000604050103",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102020304050006000604050103.json",
+      "sha256": "00c4311d99b696dd8b66a1c3cae3118b8566c1125242dd2a4263dcba18f5a028"
+    },
+    {
+      "key": "0102030405060001000203040506",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102030405060001000203040506.json",
+      "sha256": "c1563691741cdc6d4902c6a895f92f6533a6e55ebcf8d7b87bc97f8f72d214aa"
+    }
+  ],
+  "initial_frontier_checks": [
+    {
+      "key": "0001020302030405000604060105",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0001020302030405000604060105.json",
+      "sha256": "f9fadedf550b81b1ee8bc10ede17e50e524d156395d70a95d23350e7dfe39ecb"
+    },
+    {
+      "key": "0001020304050406050600010203",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0001020304050406050600010203.json",
+      "sha256": "90c16e01c053349a89df7ccc484fac8426a24c0b54363a1b36640426897d8fe9"
+    },
+    {
+      "key": "0102000301040204050600030506",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102000301040204050600030506.json",
+      "sha256": "a9d9a3a9ac048892f0b3cc961a37d070b47a66bad6ac1d006d52342154f1ed78"
+    },
+    {
+      "key": "0102000301040506000302040506",
+      "outcome": "collision-found",
+      "upper_bound": 33,
+      "witness": [
+        "000000000000001111110000110100101",
+        "001111110000000000000000110100101"
+      ],
+      "cpu_scalar_masks_verified": 128,
+      "path": "lower-0102000301040506000302040506.json",
+      "sha256": "70b2372168ff772cfd56e53519b1d6895d2a4c40616cfdf4d3528fd0afe0454d"
+    },
+    {
+      "key": "0102000304050006010304050206",
+      "outcome": "collision-found",
+      "upper_bound": 33,
+      "witness": [
+        "000100100011011001000011101001110",
+        "101101101011011001000011101001110"
+      ],
+      "cpu_scalar_masks_verified": 128,
+      "path": "lower-0102000304050006010304050206.json",
+      "sha256": "9b79d0864babb75b49cf49c6c5b5d364863eca472522e0f254ffe6739d18cfa9"
+    },
+    {
+      "key": "0102000304050106000304050206",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102000304050106000304050206.json",
+      "sha256": "6f8aefba1efb0459b7b2b9fd4bf4b3b1d7660f1d32454163b25fa80bacc38706"
+    },
+    {
+      "key": "0102010203040005030604060005",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102010203040005030604060005.json",
+      "sha256": "10743f79456782e2cbdbcf28a8c7afa6fbe7f77228b0f519d1402448d884098b"
+    },
+    {
+      "key": "0102010203040005050600060304",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102010203040005050600060304.json",
+      "sha256": "bfa0abed86b5bca264a297ced326c905ea72c3d434f420bae1ac3a36ac19a235"
+    },
+    {
+      "key": "0102020304050006000604050103",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102020304050006000604050103.json",
+      "sha256": "00c4311d99b696dd8b66a1c3cae3118b8566c1125242dd2a4263dcba18f5a028"
+    },
+    {
+      "key": "0102030405060001000203040506",
+      "outcome": "collision-free",
+      "lower_bound": 34,
+      "path": "lower-0102030405060001000203040506.json",
+      "sha256": "c1563691741cdc6d4902c6a895f92f6533a6e55ebcf8d7b87bc97f8f72d214aa"
+    },
+    {
+      "key": "0102030405060004010200030506",
+      "outcome": "collision-found",
+      "upper_bound": 33,
+      "witness": [
+        "010011101111010110000111001101001",
+        "011110010001010110000111001101001"
+      ],
+      "cpu_scalar_masks_verified": 128,
+      "path": "lower-0102030405060004010200030506.json",
+      "sha256": "9f002383dcba1f980978c1818d285c42ba801fb6c5fa8fc7c5f3d18ca143313e"
+    }
+  ],
+  "initial_frontier_count": 11,
+  "refine_frontier": true,
+  "frontier_upper_refinements": 3,
+  "lower_threads": 8,
+  "verifiers": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1ExhaustiveVerify.exe",
+      "sha256": "0b15e4c13088fdb45f2f410ba5018d9fe3051e487f932898dd6644ae3838eaff"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1LayerVerify.exe",
+      "sha256": "886fb0dadebe84118eacf602cf67c83f1ec4b8d5f4d3d73c2322c1bdfe11dfbd"
+    }
+  ],
+  "verification_sources": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_verify_global_certificate.py",
+      "sha256": "23978ff07100b84beae960f6dc2bbf245639568b049477b1305750ef7e8a1910"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tests\\family1_burnside_count.py",
+      "sha256": "42e852481bd7c94622b2fbb0e871ec9af8e2bc0c1cfa6317409160e7e3c03809"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tests\\Family1ExhaustiveVerify.cpp",
+      "sha256": "9faabe60242f6cfebee82a6eb55cacc1cd6629f0c4b99dd1c7119990f7defc20"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tests\\Family1LayerVerify.cpp",
+      "sha256": "57935bd8d9abc4154148c29d0036dbe2e4922922805f956a4998ed542e8e969a"
+    }
+  ],
+  "reproduction": "Rerun this script on journal.path in a new output directory; CPU lower checks are executed, not imported."
+}

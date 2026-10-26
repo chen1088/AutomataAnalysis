@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "dataset_kind": "single-graph-certified-interval-overlay",
+  "record_count": 1,
+  "sources": {
+    "original_presentation": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-atlas-current\\champions.jsonl",
+      "sha256": "506241c4193c425feb4e8bc65cff96399502f130175d12fd5a3cc3a8413905e2"
+    },
+    "upper": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+      "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+    },
+    "lower_report": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\report.json",
+      "sha256": "123327bdfe8e40e5f3b78cf1ff0de1763e386e2b0f6c6bd7b205824a4e5e6d7d"
+    },
+    "lower_run_manifest": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\certificate-run.json",
+      "sha256": "408c284b8fa22e5e41b725147bf01e24f0d7b43da54a0eb4d7865ca9ed57ee55"
+    }
+  },
+  "generator": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_atlas_m8_overlay.py",
+    "sha256": "16650b8014e7d34a47a5bb93f0407b76a9352544f2df66d5e349624e8b3da974"
+  },
+  "sizes": [
+    {
+      "m": 8,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 35,
+      "global_maximum": null,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "maximizing_collection_complete": false,
+      "enumeration_complete": false
+    }
+  ]
+}

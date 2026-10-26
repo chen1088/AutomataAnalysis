@@ -1,0 +1,1054 @@
+{
+  "schema": 1,
+  "method": "best-near-pair-exhaustive-subsequence-union",
+  "source_script": {
+    "path": "out/family1-subsequence-recovery/minimum-substitute1/source-snapshot/family1_subsequence_recovery.py",
+    "sha256": "2474e47c8dd9f5fa020e7ddffac4adb3556b93904335b1bae37dc142dc2b780c"
+  },
+  "native_source": {
+    "path": "out/family1-subsequence-recovery/minimum-substitute1/source-snapshot/Family1SubsequenceRecovery.cpp",
+    "sha256": "7534bc1f569695b61b9e7029dc501bc5904af83719a721f97e8ae50d16593818"
+  },
+  "native_executable": {
+    "path": "out/family1-subsequence-recovery/minimum-substitute1/source-snapshot/Family1SubsequenceRecovery.exe",
+    "sha256": "815268dcdc8521a5b21cfd6f9508dc7291d83af935c91ed6dad06e1900797a89"
+  },
+  "row_sources": [
+    {
+      "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+      "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+    },
+    {
+      "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+      "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+    }
+  ],
+  "original_saved_witness_files_read": false,
+  "candidate_selection": "minimum",
+  "max_source_length": 42,
+  "substitution_radius": 1,
+  "max_nodes": 100000000,
+  "max_profiles": 1000000,
+  "max_words": 1000000,
+  "graph_count": 3,
+  "target_length": 34,
+  "recovered_graph_ordinals": [],
+  "restricted_complete_negative_ordinals": [
+    679758,
+    2221624,
+    2471796
+  ],
+  "no_global_lower_bound_claimed": true,
+  "outcomes": [
+    {
+      "ordinal": 679758,
+      "key": "0001020304050406050600010203",
+      "known_H": 34,
+      "source_near_length": 36,
+      "distinct_source_pairs": 3,
+      "source_length_range": [
+        36,
+        36
+      ],
+      "distinct_source_words": 6,
+      "target_length": 34,
+      "substitution_radius": 1,
+      "distinct_input_words": 222,
+      "decision": "unknown",
+      "upper_bound": null,
+      "complete_within_subsequence_space": true,
+      "no_pair_in_subsequence_space": true,
+      "union_distinct_subsequences": 30114,
+      "unique_complete_profiles": 30114,
+      "colliding_profiles": 0,
+      "native_seconds": 0.0726868,
+      "nodes": 478018,
+      "cap_reason": "",
+      "complete_inputs": 222,
+      "per_input_count_reference": [
+        176,
+        160,
+        175,
+        176,
+        160,
+        175,
+        176,
+        160,
+        177,
+        176,
+        160,
+        214,
+        129,
+        176,
+        178,
+        147,
+        178,
+        178,
+        145,
+        176,
+        178,
+        178,
+        176,
+        178,
+        213,
+        178,
+        178,
+        197,
+        214,
+        178,
+        176,
+        176,
+        143,
+        176,
+        178,
+        145,
+        145,
+        145,
+        160,
+        162,
+        162,
+        160,
+        160,
+        162,
+        164,
+        197,
+        197,
+        162,
+        162,
+        195,
+        164,
+        147,
+        162,
+        130,
+        160,
+        160,
+        129,
+        160,
+        160,
+        129,
+        162,
+        195,
+        164,
+        178,
+        213,
+        162,
+        216,
+        178,
+        160,
+        214,
+        177,
+        144,
+        144,
+        144,
+        177,
+        175,
+        142,
+        175,
+        175,
+        175,
+        176,
+        177,
+        159,
+        177,
+        212,
+        177,
+        175,
+        177,
+        177,
+        175,
+        144,
+        177,
+        177,
+        146,
+        177,
+        175,
+        178,
+        162,
+        177,
+        213,
+        195,
+        212,
+        178,
+        162,
+        177,
+        175,
+        159,
+        215,
+        177,
+        161,
+        176,
+        158,
+        143,
+        196,
+        195,
+        178,
+        194,
+        159,
+        144,
+        197,
+        192,
+        175,
+        234,
+        159,
+        144,
+        197,
+        113,
+        157,
+        159,
+        130,
+        159,
+        159,
+        128,
+        157,
+        159,
+        159,
+        157,
+        159,
+        192,
+        159,
+        159,
+        177,
+        193,
+        159,
+        157,
+        157,
+        126,
+        157,
+        159,
+        128,
+        128,
+        128,
+        142,
+        144,
+        144,
+        142,
+        142,
+        144,
+        146,
+        177,
+        177,
+        144,
+        144,
+        175,
+        146,
+        130,
+        144,
+        114,
+        142,
+        142,
+        113,
+        142,
+        142,
+        113,
+        144,
+        175,
+        146,
+        159,
+        194,
+        146,
+        197,
+        196,
+        177,
+        234,
+        197,
+        162,
+        162,
+        162,
+        197,
+        195,
+        160,
+        195,
+        195,
+        195,
+        196,
+        197,
+        178,
+        197,
+        234,
+        197,
+        195,
+        197,
+        197,
+        195,
+        162,
+        197,
+        197,
+        164,
+        197,
+        195,
+        194,
+        177,
+        195,
+        159,
+        144,
+        195,
+        157,
+        142,
+        195,
+        157,
+        142,
+        195
+      ],
+      "native_result": {
+        "path": "out/family1-subsequence-recovery/minimum-substitute1/679758/result.json",
+        "sha256": "98a09f5b89bd0eae9f32569fff06a8575c64878d1546b42d30768c16c3aa4ee8"
+      },
+      "input_words": {
+        "path": "out/family1-subsequence-recovery/minimum-substitute1/679758/input-words.txt",
+        "sha256": "f48353c7fb5846a420443115c402a73055768b9defd7e63d3f1d3cb094716a3f"
+      },
+      "independent_length_count_dp_passed": true,
+      "stored_witnesses_scalar_verified": [],
+      "command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+        "--graph",
+        "0001020304050406050600010203",
+        "--input-file",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-substitute1\\679758\\input-words.txt",
+        "--target",
+        "34",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-substitute1\\679758",
+        "--max-nodes",
+        "100000000",
+        "--max-profiles",
+        "1000000",
+        "--max-words",
+        "1000000"
+      ],
+      "sources": [
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k1-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t0-n128-s1088/result.json",
+            "sha256": "217729b969f8628b2cddedcdb8bcbc6843201f697742657941507d04a95878ef"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k1-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t2-n128-s1088/result.json",
+            "sha256": "304082ada23f64e05958ab3b0bce96084232ed06343f9cbda174188b66ed1da2"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k12-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k12-w4-t8-n128-s1088/result.json",
+            "sha256": "b4eaba023b08f1e9c1ab1b305a57d6d0de0503460ac65b7bd21fc67e7ecc6f17"
+          },
+          "words": [
+            "001100011000110101101001101100111000",
+            "110011100000110101101001101100111000"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k14-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k14-w4-t8-n128-s1088/result.json",
+            "sha256": "f2c6727b2f152b1d52009b16d29d3e00ef601729c02458c0e6c1c989395a601f"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k16-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k16-w4-t8-n128-s1088/result.json",
+            "sha256": "547be6e78891db6af15a5177f8f3e4c0e714c9dbeb1b147b5f569d030087c9f5"
+          },
+          "words": [
+            "001100011001000110110011011110011101",
+            "110011100001000110110011011110011101"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k8-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k8-w4-t8-n128-s1088/result.json",
+            "sha256": "ca28a208e60a45704844cc8467a353690b9a9badf64787b603bb98367de080d2"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        }
+      ]
+    },
+    {
+      "ordinal": 2221624,
+      "key": "0102000304050106000304050206",
+      "known_H": 34,
+      "source_near_length": 38,
+      "distinct_source_pairs": 1,
+      "source_length_range": [
+        38,
+        38
+      ],
+      "distinct_source_words": 2,
+      "target_length": 34,
+      "substitution_radius": 1,
+      "distinct_input_words": 78,
+      "decision": "unknown",
+      "upper_bound": null,
+      "complete_within_subsequence_space": true,
+      "no_pair_in_subsequence_space": true,
+      "union_distinct_subsequences": 168562,
+      "unique_complete_profiles": 168562,
+      "colliding_profiles": 0,
+      "native_seconds": 0.426005,
+      "nodes": 2179874,
+      "cap_reason": "",
+      "complete_inputs": 78,
+      "per_input_count_reference": [
+        2552,
+        2552,
+        3549,
+        3549,
+        2577,
+        3829,
+        3831,
+        2782,
+        2782,
+        3802,
+        3578,
+        3797,
+        5224,
+        3947,
+        3831,
+        3035,
+        3831,
+        5521,
+        5523,
+        3862,
+        2585,
+        2755,
+        2583,
+        2608,
+        4084,
+        5554,
+        5525,
+        3864,
+        3864,
+        5525,
+        5554,
+        4086,
+        2809,
+        4088,
+        5593,
+        5880,
+        2536,
+        5896,
+        5729,
+        1965,
+        4780,
+        2753,
+        2753,
+        1976,
+        3000,
+        3002,
+        2154,
+        2154,
+        2975,
+        2780,
+        2970,
+        4143,
+        3103,
+        3002,
+        2342,
+        3002,
+        4406,
+        4408,
+        3031,
+        1984,
+        2129,
+        1982,
+        2005,
+        3226,
+        4474,
+        4729,
+        4762,
+        4764,
+        4764,
+        4762,
+        4727,
+        4445,
+        3035,
+        3033,
+        4410,
+        4437,
+        3225,
+        2085
+      ],
+      "native_result": {
+        "path": "out/family1-subsequence-recovery/minimum-substitute1/2221624/result.json",
+        "sha256": "94f04e314cd2529d25e5719a8fd7c390b0f564cce8dd8c5b3fcf02c6706d326c"
+      },
+      "input_words": {
+        "path": "out/family1-subsequence-recovery/minimum-substitute1/2221624/input-words.txt",
+        "sha256": "15b2856334b735741eb46288b963432377270325f55f7b4189973d62258dd11e"
+      },
+      "independent_length_count_dp_passed": true,
+      "stored_witnesses_scalar_verified": [],
+      "command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+        "--graph",
+        "0102000304050106000304050206",
+        "--input-file",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-substitute1\\2221624\\input-words.txt",
+        "--target",
+        "34",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-substitute1\\2221624",
+        "--max-nodes",
+        "100000000",
+        "--max-profiles",
+        "1000000",
+        "--max-words",
+        "1000000"
+      ],
+      "sources": [
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k14-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k14-w4-t8-n128-s1088/result.json",
+            "sha256": "1e9ead338b3d7098055d86d62493baa365eb8476148bd339fcc9b134fa9ad841"
+          },
+          "words": [
+            "00000010100001100001011010101100001110",
+            "10100001100000000001011010101100001110"
+          ],
+          "length": 38
+        }
+      ]
+    },
+    {
+      "ordinal": 2471796,
+      "key": "0102010203040005050600060304",
+      "known_H": 34,
+      "source_near_length": 36,
+      "distinct_source_pairs": 2,
+      "source_length_range": [
+        36,
+        36
+      ],
+      "distinct_source_words": 4,
+      "target_length": 34,
+      "substitution_radius": 1,
+      "distinct_input_words": 148,
+      "decision": "unknown",
+      "upper_bound": null,
+      "complete_within_subsequence_space": true,
+      "no_pair_in_subsequence_space": true,
+      "union_distinct_subsequences": 17782,
+      "unique_complete_profiles": 17782,
+      "colliding_profiles": 0,
+      "native_seconds": 0.0444217,
+      "nodes": 283116,
+      "cap_reason": "",
+      "complete_inputs": 148,
+      "per_input_count_reference": [
+        111,
+        127,
+        144,
+        127,
+        141,
+        159,
+        172,
+        192,
+        141,
+        159,
+        141,
+        172,
+        141,
+        110,
+        141,
+        174,
+        174,
+        143,
+        141,
+        141,
+        112,
+        139,
+        140,
+        141,
+        125,
+        141,
+        174,
+        174,
+        143,
+        112,
+        110,
+        141,
+        172,
+        143,
+        141,
+        139,
+        157,
+        141,
+        157,
+        174,
+        157,
+        159,
+        161,
+        192,
+        159,
+        126,
+        128,
+        161,
+        194,
+        194,
+        159,
+        142,
+        159,
+        158,
+        157,
+        128,
+        159,
+        159,
+        161,
+        194,
+        194,
+        159,
+        126,
+        159,
+        192,
+        159,
+        174,
+        157,
+        141,
+        157,
+        139,
+        157,
+        141,
+        159,
+        159,
+        141,
+        157,
+        139,
+        157,
+        141,
+        157,
+        174,
+        159,
+        192,
+        159,
+        126,
+        159,
+        194,
+        194,
+        161,
+        159,
+        159,
+        128,
+        157,
+        158,
+        159,
+        142,
+        159,
+        194,
+        194,
+        161,
+        128,
+        126,
+        159,
+        192,
+        161,
+        159,
+        157,
+        174,
+        157,
+        141,
+        157,
+        139,
+        141,
+        143,
+        172,
+        141,
+        110,
+        112,
+        143,
+        174,
+        174,
+        141,
+        125,
+        141,
+        140,
+        139,
+        112,
+        141,
+        141,
+        143,
+        174,
+        174,
+        141,
+        110,
+        141,
+        172,
+        141,
+        159,
+        141,
+        192,
+        172,
+        159,
+        141,
+        127,
+        144,
+        127,
+        111
+      ],
+      "native_result": {
+        "path": "out/family1-subsequence-recovery/minimum-substitute1/2471796/result.json",
+        "sha256": "f617b659027484ef9171aeb24c3835d2cfeed51ab4aa8e5fc5232fc049ea6ead"
+      },
+      "input_words": {
+        "path": "out/family1-subsequence-recovery/minimum-substitute1/2471796/input-words.txt",
+        "sha256": "4c34de69fd6771963c0f3a12a87a88b1c9e553374ce585a89949903224cc7f7a"
+      },
+      "independent_length_count_dp_passed": true,
+      "stored_witnesses_scalar_verified": [],
+      "command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+        "--graph",
+        "0102010203040005050600060304",
+        "--input-file",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-substitute1\\2471796\\input-words.txt",
+        "--target",
+        "34",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-substitute1\\2471796",
+        "--max-nodes",
+        "100000000",
+        "--max-profiles",
+        "1000000",
+        "--max-words",
+        "1000000"
+      ],
+      "sources": [
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "3393cf90707dacbe0038540c926e9d89c6b140c1274225195695cfa8d06dd32a"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k3-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t0-n128-s1088/result.json",
+            "sha256": "ce7c67a116cb737f33ef115394ad7ffeb4556638ca064a1cc24bf0903a6fc131"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k3-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t2-n128-s1088/result.json",
+            "sha256": "9a46f9f59c679b15c96e6adea75851e93b40aa63c447273a0e061526a177a684"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k3-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t8-n128-s1088/result.json",
+            "sha256": "e3db5a8bc54f4f5f742688147efd6245a0aef11644f35dedc1d2be39019aa8bc"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t0-n128-s1088/result.json",
+            "sha256": "6f15ea40a9b25e7cd3c5d23fcc45a8a0e0c236c143ff195d53cb3932e1eba2ed"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t2-n128-s1088/result.json",
+            "sha256": "6cfc6df56032c04ee425704857a5124a5eb8200b33eb2f7a21ee03354578a83b"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "ae77a96637c5a2d4ea3c9b89831ec9f85bf0dd3851b9809479391848b84176d0"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k5-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t0-n128-s1088/result.json",
+            "sha256": "9727c924f4e637f5c4c7fd1a5947a3d7673a97f23832a9353ebece44af886475"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k5-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t2-n128-s1088/result.json",
+            "sha256": "85577c94872e0cad4a43f0853cff183b2e6ca0a24d3ec88b61632a6890b669c7"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k5-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t8-n128-s1088/result.json",
+            "sha256": "f949151d76e15d74b687063985cf99afdb6d0d0a91fe836b4dae316e5d358027"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k12-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k12-w4-t8-n128-s1088/result.json",
+            "sha256": "1fc3d8ee4da4dad5feab8a30ef19aabc4f0159116baf514c4908e9938ef5af6f"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k14-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k14-w4-t8-n128-s1088/result.json",
+            "sha256": "59fcd49777f1cdec9b563ae2d9b7c620065f2eb5391851149ec2d66ff58d58cc"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k16-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k16-w4-t8-n128-s1088/result.json",
+            "sha256": "534b7725b1e568775e5b28f7e4bc55913418fd349faf25472c30e82ade537b34"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "378a149851b8a6de4fe5f543da9453ce2905e7aff2975f22644ec807dc8c6ddb"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "00a1c0ad07ec39fef4a38fef4e7500585f73f5c5e35cb10569dfc714fec4b696"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k8-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k8-w4-t8-n128-s1088/result.json",
+            "sha256": "a173c72a6eca3df2e14a7fc9cb04e5a65bdf8f829c523a72f9309f8e92f3bbc1"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        }
+      ]
+    }
+  ]
+}

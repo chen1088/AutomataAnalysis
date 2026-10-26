@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "scope": "PDF presentation and consecutive-size graph-edit validation; no new global graph search",
+  "pdf": {
+    "path": "output/pdf/family1-atlas/family1-atlas-1-20.pdf",
+    "sha256": "6a5dd5accb118f647224375155a00b02191986511a55142a359fbd0ca8920f13",
+    "pages": 24,
+    "all_pages_rendered": true,
+    "all_pages_visually_reviewed": true,
+    "layout_warnings": []
+  },
+  "drawings": {
+    "total": 33,
+    "certified_rooted_maximizers": 20,
+    "larger_lower_bound_examples": 13,
+    "standalone_pdfs_built": 33,
+    "all_port_tables_checked": true,
+    "m5_manual_sources_preserved": true,
+    "m7_certified_shared_embeddings_preserved": true
+  },
+  "checks": {
+    "dataset_unit_tests": "5/5 PASS",
+    "ancestry_unit_tests": "7/7 PASS",
+    "edit_metric_unit_tests": "4/4 PASS",
+    "tikz_semantic_and_geometry_regressions": "PASS",
+    "independent_edit_neighborhood_audit": {
+      "winner_neighborhoods": 20,
+      "neighbor_incidences": 2138,
+      "exact_paths_and_lower_bounds": 19,
+      "status": "PASS"
+    }
+  },
+  "compiler": "native Windows pdfLaTeX via scripts/build-family1-atlas.ps1 -Individual",
+  "proof_status": "Exact maxima and complete collections inherited from pinned certificates for sizes1..7; exact scores/global maxima for8..20 remain unresolved.",
+  "preserved_previous_atlas": "out/family1-atlas-before-certified-through7/",
+  "manifest_sha256": "57f38cb016bc6c6320fd869ab9288a83ba3443ac5b5fac1d6df6c4702e70e110"
+}

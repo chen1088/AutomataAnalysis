@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "script_sha256": "4af13bf46bb748445aa5fe5522849fa83c8b26d3fdb79151811a69dc543e0a2c",
+  "source_sha256": "99abe8aa55c5251957d464d974bb8239aaab4f33ee309ad90d0dad993f2d95cb",
+  "artifacts": [
+    {
+      "path": "output/figures/family1-window-distributions/m7-early-late-ecdf.png",
+      "sha256": "d220276cb7a7b539b856a24bc99bd7a6101f2a7d9a92c9fb284cb536f305c39e"
+    },
+    {
+      "path": "output/figures/family1-window-distributions/m7-early-late-ecdf.svg",
+      "sha256": "df1c15466a7c7eb3a991381c456ac9559654a33b1bca87bac6541782be32f820"
+    },
+    {
+      "path": "output/figures/family1-window-distributions/m7-stage-summaries.png",
+      "sha256": "64190d7ce99dab230679a2b32e83a5a60b168f166c0f7990f0925c9280edf783"
+    },
+    {
+      "path": "output/figures/family1-window-distributions/m7-stage-summaries.svg",
+      "sha256": "6687ec068fc129d4bb44c3fc8ee058a3f6cee0d3ba37e5a7c292dcb5525ba1db"
+    },
+    {
+      "path": "output/figures/family1-window-distributions/neutral-plateau.png",
+      "sha256": "c1d80f22b06c463808ddd0531d0bd85c96fe6ae6b7a046f8a253d2c52a92591a"
+    },
+    {
+      "path": "output/figures/family1-window-distributions/neutral-plateau.svg",
+      "sha256": "012d76c2dcfdac7ab5d24c57c51024658f8ab895f1984079e451dbdae12f9252"
+    },
+    {
+      "path": "output/figures/family1-window-distributions/m20-literal-all-windows.png",
+      "sha256": "cb9067ffa40be15b31270d63184ac031c00a018a3d24fa25eb80a6914ab87651"
+    },
+    {
+      "path": "output/figures/family1-window-distributions/m20-literal-all-windows.svg",
+      "sha256": "e7bf1dff1e664adad8d493c63db316fecc3470d169d258cce9b23799fb71e6f5"
+    }
+  ],
+  "native_report": {
+    "path": "results/family1-window-distributions/native-v2.json",
+    "sha256": "f4838eea8afb59aacf7414f60d5c7262887a9a3348f85e8b6a1dec0cdf061b71"
+  }
+}

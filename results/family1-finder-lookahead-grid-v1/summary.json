@@ -1,0 +1,451 @@
+{
+  "schema": 1,
+  "binding": {
+    "binary": {
+      "source_exe": {
+        "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+        "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+      },
+      "snapshot_exe": {
+        "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+        "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+      },
+      "dlls": [
+        {
+          "path": "out/family1-finder-lookahead-grid-v1/binary/flint-24.dll",
+          "sha256": "ca50ea88627919fb4b2fb7d11d252be1022640af7a3717a83576bc76e9b5a4e0"
+        },
+        {
+          "path": "out/family1-finder-lookahead-grid-v1/binary/gmp-10.dll",
+          "sha256": "c568c5acf19e0a68ac5a9070c2a72e539043a7183d0629b98bb7625a43b66566"
+        },
+        {
+          "path": "out/family1-finder-lookahead-grid-v1/binary/libz3.dll",
+          "sha256": "b1da9832307d494d878fec75c30cfa5a5777b59de43a37f5c77abd7281c9b6c1"
+        },
+        {
+          "path": "out/family1-finder-lookahead-grid-v1/binary/mpfr-6.dll",
+          "sha256": "908bfb09f3a378766c41d9e42b0d3ea46d6627d43d212504a489f13d1fd4dd35"
+        },
+        {
+          "path": "out/family1-finder-lookahead-grid-v1/binary/pthreadVC3.dll",
+          "sha256": "0135209b0530ae12a8dd7172be2764d4100c7d18e761630d91526a7c7877a4bc"
+        }
+      ]
+    },
+    "graph_source": {
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    },
+    "samples": 128,
+    "prefix_depth": 16,
+    "prefix_max_words": 65536,
+    "prefix_max_pairs": 128,
+    "prefix_samples_per_depth": 16384,
+    "viability_checks": 8,
+    "tail_max_states": 100000,
+    "max_expansions": null,
+    "length_cap": 76,
+    "witness_or_witness_derived_prefix_hints_used": false
+  },
+  "total_preserved_runs": 144,
+  "current_requested_runs": 144,
+  "current_grid": {
+    "window": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "beam": [
+      4
+    ],
+    "tail": [
+      0,
+      2,
+      8
+    ],
+    "seed": [
+      1088
+    ]
+  },
+  "groups": [
+    {
+      "window_k": 1,
+      "beam_width": 4,
+      "tail_threshold": 0,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 39,
+        "679758": 36,
+        "1783759": 40,
+        "2221624": 45,
+        "2470130": 38,
+        "2471796": 38,
+        "3411148": 42,
+        "4099217": 41
+      },
+      "native_seconds": 0.7153713
+    },
+    {
+      "window_k": 1,
+      "beam_width": 4,
+      "tail_threshold": 2,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 36,
+        "679758": 36,
+        "1783759": 40,
+        "2221624": 45,
+        "2470130": 38,
+        "2471796": 38,
+        "3411148": 41,
+        "4099217": 40
+      },
+      "native_seconds": 0.7072076
+    },
+    {
+      "window_k": 1,
+      "beam_width": 4,
+      "tail_threshold": 8,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 36,
+        "679758": 38,
+        "1783759": 35,
+        "2221624": 42,
+        "2470130": 36,
+        "2471796": 38,
+        "3411148": 38,
+        "4099217": 40
+      },
+      "native_seconds": 0.8384525
+    },
+    {
+      "window_k": 2,
+      "beam_width": 4,
+      "tail_threshold": 0,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 36,
+        "679758": 38,
+        "1783759": 38,
+        "2221624": 41,
+        "2470130": 37,
+        "2471796": 38,
+        "3411148": 38,
+        "4099217": 41
+      },
+      "native_seconds": 0.718183
+    },
+    {
+      "window_k": 2,
+      "beam_width": 4,
+      "tail_threshold": 2,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 37,
+        "679758": 38,
+        "1783759": 38,
+        "2221624": 41,
+        "2470130": 37,
+        "2471796": 39,
+        "3411148": 38,
+        "4099217": 40
+      },
+      "native_seconds": 0.7183284
+    },
+    {
+      "window_k": 2,
+      "beam_width": 4,
+      "tail_threshold": 8,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 38,
+        "679758": 38,
+        "1783759": 37,
+        "2221624": 41,
+        "2470130": 36,
+        "2471796": 36,
+        "3411148": 38,
+        "4099217": 39
+      },
+      "native_seconds": 0.8380400000000001
+    },
+    {
+      "window_k": 3,
+      "beam_width": 4,
+      "tail_threshold": 0,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 41,
+        "679758": 38,
+        "1783759": 36,
+        "2221624": 44,
+        "2470130": 37,
+        "2471796": 36,
+        "3411148": 39,
+        "4099217": 41
+      },
+      "native_seconds": 0.7427791
+    },
+    {
+      "window_k": 3,
+      "beam_width": 4,
+      "tail_threshold": 2,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 41,
+        "679758": 38,
+        "1783759": 36,
+        "2221624": 42,
+        "2470130": 37,
+        "2471796": 36,
+        "3411148": 39,
+        "4099217": 41
+      },
+      "native_seconds": 0.7640494
+    },
+    {
+      "window_k": 3,
+      "beam_width": 4,
+      "tail_threshold": 8,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 40,
+        "679758": 38,
+        "1783759": 36,
+        "2221624": 42,
+        "2470130": 37,
+        "2471796": 36,
+        "3411148": 38,
+        "4099217": 40
+      },
+      "native_seconds": 0.9010711
+    },
+    {
+      "window_k": 4,
+      "beam_width": 4,
+      "tail_threshold": 0,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 40,
+        "679758": 37,
+        "1783759": 38,
+        "2221624": 39,
+        "2470130": 37,
+        "2471796": 36,
+        "3411148": 40,
+        "4099217": 40
+      },
+      "native_seconds": 0.7896827
+    },
+    {
+      "window_k": 4,
+      "beam_width": 4,
+      "tail_threshold": 2,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 0,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 40,
+        "679758": 37,
+        "1783759": 38,
+        "2221624": 39,
+        "2470130": 37,
+        "2471796": 36,
+        "3411148": 39,
+        "4099217": 40
+      },
+      "native_seconds": 0.8077540000000001
+    },
+    {
+      "window_k": 4,
+      "beam_width": 4,
+      "tail_threshold": 8,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 1,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 37,
+        "679758": 37,
+        "1783759": 37,
+        "2221624": 39,
+        "2470130": 34,
+        "2471796": 36,
+        "3411148": 39,
+        "4099217": 40
+      },
+      "native_seconds": 0.9153208
+    },
+    {
+      "window_k": 5,
+      "beam_width": 4,
+      "tail_threshold": 0,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 1,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 36,
+        "679758": 37,
+        "1783759": 36,
+        "2221624": 39,
+        "2470130": 34,
+        "2471796": 36,
+        "3411148": 39,
+        "4099217": 39
+      },
+      "native_seconds": 0.8852411
+    },
+    {
+      "window_k": 5,
+      "beam_width": 4,
+      "tail_threshold": 2,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 1,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 36,
+        "679758": 37,
+        "1783759": 36,
+        "2221624": 39,
+        "2470130": 34,
+        "2471796": 36,
+        "3411148": 39,
+        "4099217": 39
+      },
+      "native_seconds": 0.8845342
+    },
+    {
+      "window_k": 5,
+      "beam_width": 4,
+      "tail_threshold": 8,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 1,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 36,
+        "679758": 37,
+        "1783759": 36,
+        "2221624": 39,
+        "2470130": 34,
+        "2471796": 36,
+        "3411148": 39,
+        "4099217": 39
+      },
+      "native_seconds": 0.9988336999999999
+    },
+    {
+      "window_k": 6,
+      "beam_width": 4,
+      "tail_threshold": 0,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 1,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 35,
+        "679758": 37,
+        "1783759": 38,
+        "2221624": 41,
+        "2470130": 34,
+        "2471796": 37,
+        "3411148": 40,
+        "4099217": 39
+      },
+      "native_seconds": 1.019809
+    },
+    {
+      "window_k": 6,
+      "beam_width": 4,
+      "tail_threshold": 2,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 1,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 35,
+        "679758": 37,
+        "1783759": 38,
+        "2221624": 40,
+        "2470130": 34,
+        "2471796": 37,
+        "3411148": 39,
+        "4099217": 39
+      },
+      "native_seconds": 1.0074534
+    },
+    {
+      "window_k": 6,
+      "beam_width": 4,
+      "tail_threshold": 8,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 1,
+      "misses": 0,
+      "lengths_by_ordinal": {
+        "539749": 35,
+        "679758": 37,
+        "1783759": 38,
+        "2221624": 39,
+        "2470130": 34,
+        "2471796": 37,
+        "3411148": 39,
+        "4099217": 39
+      },
+      "native_seconds": 1.1227236
+    }
+  ],
+  "matches_H": [
+    "m7-2470130-k4-w4-t8-n128-s1088",
+    "m7-2470130-k5-w4-t0-n128-s1088",
+    "m7-2470130-k5-w4-t2-n128-s1088",
+    "m7-2470130-k5-w4-t8-n128-s1088",
+    "m7-2470130-k6-w4-t0-n128-s1088",
+    "m7-2470130-k6-w4-t2-n128-s1088",
+    "m7-2470130-k6-w4-t8-n128-s1088"
+  ],
+  "driver": {
+    "path": "tests/family1_finder_lookahead_benchmark.py",
+    "sha256": "e19fbe32fcf8940e38ea2758313115f6781cdc3feb6aea61f137ac7aa86e1f15"
+  },
+  "all_positive_pairs_independently_scalar_verified_on_128_masks": true,
+  "scope": "Heuristic calibration against independently known H34; conditional BFS alone proves no global minimum."
+}

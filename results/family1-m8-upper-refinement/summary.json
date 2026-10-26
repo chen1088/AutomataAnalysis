@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "m": 8,
+  "rooted_classes": 16,
+  "ordinary_shapes": 2,
+  "all_selected_graphs_and_ties_retained": true,
+  "verified_upper_histogram": {
+    "38": 1,
+    "39": 2,
+    "41": 1,
+    "42": 3,
+    "43": 2,
+    "44": 2,
+    "45": 1,
+    "46": 1,
+    "47": 1,
+    "49": 1,
+    "51": 1
+  },
+  "minimum_verified_upper": 38,
+  "maximum_verified_upper": 51,
+  "supplied_graph_specific_lower_bound": 1,
+  "new_lower_bounds": 0,
+  "main_native_attempts": 112,
+  "main_outcomes": {
+    "completed": 49,
+    "timeout": 63
+  },
+  "bestof_native_attempts": 16,
+  "bestof_time_caps": 8,
+  "warmstart_native_queries": 6,
+  "warmstart_variants_screened": 25984,
+  "warmstart_variants_with_dead_coordinate": 25977,
+  "warmstart_viable_variants": 7,
+  "full256_scalar_replay_for_every_final_witness": true,
+  "sampling_misses_are_not_lower_certificates": true,
+  "long_uppers_are_not_hardness_evidence": true,
+  "global_maximum_certified": false,
+  "sources": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\run.json",
+      "sha256": "67ae9b83a7a1d377a413a5546e39a02630a5b75b20fb6645d200b579b6db4403"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\run.json",
+      "sha256": "25feaa16a7d4ab54813c4373d0d1f6c2d3e3df26aa1e7882daff175d2e2392a9"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-warmstart-refinement\\run.json",
+      "sha256": "eaac7eea5286260e8d79263152396c3c43a14ba7b697d237cea6343acc58a9b3"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_refine_candidate_uppers.py",
+      "sha256": "8ea9dd2c9037e3e6e7d4977225094d6cc1ef4eeca762c4d97141448efa19bb97"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-refined-combined\\validate-and-package-used.py",
+      "sha256": "9e4466f38abbe9f0e5d4c17ec2e5b1c055661ce658285d6b6b31f4a9345c0900"
+    }
+  ]
+}

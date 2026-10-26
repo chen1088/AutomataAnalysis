@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "passed": true,
+  "run": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-neighbor-finder-8-20-v1",
+  "queries": 377,
+  "selected_shapes": 39,
+  "records": 3455,
+  "decisions": {
+    "unknown": 350,
+    "collision": 27
+  },
+  "sizes": [
+    {
+      "m": 8,
+      "selected_roots": 17,
+      "selected_shapes": 3,
+      "upper_witnesses": 3,
+      "unknown": 14,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 2
+    },
+    {
+      "m": 9,
+      "selected_roots": 19,
+      "selected_shapes": 3,
+      "upper_witnesses": 11,
+      "unknown": 8,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 3
+    },
+    {
+      "m": 10,
+      "selected_roots": 21,
+      "selected_shapes": 3,
+      "upper_witnesses": 4,
+      "unknown": 17,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 4
+    },
+    {
+      "m": 11,
+      "selected_roots": 23,
+      "selected_shapes": 3,
+      "upper_witnesses": 2,
+      "unknown": 21,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 5
+    },
+    {
+      "m": 12,
+      "selected_roots": 25,
+      "selected_shapes": 3,
+      "upper_witnesses": 2,
+      "unknown": 23,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 6
+    },
+    {
+      "m": 13,
+      "selected_roots": 27,
+      "selected_shapes": 3,
+      "upper_witnesses": 2,
+      "unknown": 25,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 7
+    },
+    {
+      "m": 14,
+      "selected_roots": 29,
+      "selected_shapes": 3,
+      "upper_witnesses": 2,
+      "unknown": 27,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 8
+    },
+    {
+      "m": 15,
+      "selected_roots": 31,
+      "selected_shapes": 3,
+      "upper_witnesses": 1,
+      "unknown": 30,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 9
+    },
+    {
+      "m": 16,
+      "selected_roots": 33,
+      "selected_shapes": 3,
+      "upper_witnesses": 0,
+      "unknown": 33,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 10
+    },
+    {
+      "m": 17,
+      "selected_roots": 35,
+      "selected_shapes": 3,
+      "upper_witnesses": 0,
+      "unknown": 35,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 11
+    },
+    {
+      "m": 18,
+      "selected_roots": 37,
+      "selected_shapes": 3,
+      "upper_witnesses": 0,
+      "unknown": 37,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 12
+    },
+    {
+      "m": 19,
+      "selected_roots": 39,
+      "selected_shapes": 3,
+      "upper_witnesses": 0,
+      "unknown": 39,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 13
+    },
+    {
+      "m": 20,
+      "selected_roots": 41,
+      "selected_shapes": 3,
+      "upper_witnesses": 0,
+      "unknown": 41,
+      "best_known_lower_bound": 34,
+      "best_lower_bound_ties": 14
+    }
+  ],
+  "selected_root_query_sets_equal": true,
+  "native_json_content_and_hashes_verified": true,
+  "all_upper_witness_scalar_counts_verified": true,
+  "fresh_all_mask_scalar_replay_performed": false,
+  "misses_add_no_lower_bound": true,
+  "all_incumbent_ties_and_potential_challengers_preserved": true,
+  "global_coverage_claim": false,
+  "publisher_sha256": "0778faf80c858e7d07b03e6dad76e2722352d7f030bfc3f00c1989d889429b1a"
+}

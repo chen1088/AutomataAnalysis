@@ -1,0 +1,38 @@
+{
+  "pdf": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-atlas\\family1-atlas-1-20.pdf",
+    "sha256": "88cb199dd09d0e162cae89dafbd64d35f16d540639ead73ee14d49fa6b7eaccd",
+    "bytes": 248422
+  },
+  "pages": 21,
+  "underlying_graphs": 26,
+  "certified_rooted_classes_retained": 20,
+  "certified_shapes": 13,
+  "m8_estimate": 49,
+  "m8_verified_pair": 50,
+  "all_arrows_unlabelled_and_solid": true,
+  "all_qualifying_starts_marked": true,
+  "source_manifest": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\figures\\family1-grouped-atlas\\source-manifest.json",
+    "sha256": "fa40b97c886145b5a9e7ee2ddcaa017345931847baaad648af49ad18cc4f8a09",
+    "bytes": 219880
+  },
+  "group_data": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-grouped-atlas\\graphs.jsonl",
+    "sha256": "564963157d6fa39a018db48d0b0c2e304dfdc0158c5e798bd08f14ace35b9f88",
+    "bytes": 86593
+  },
+  "m8_root_audit": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-root-audit\\audit.json",
+    "sha256": "50c512c1eb0be85c86c46d146377ad6d11869dbd605e1fe9672994ca7d10dfb9",
+    "bytes": 16662
+  },
+  "old_labelled_publication_preserved": "out/family1-pre-unlabelled-update",
+  "tikz_source_zip": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-atlas\\family1-atlas-tikz.zip",
+    "sha256": "bd7fe49a425443738fda63debea6b35301c40e2cfcca10aec032b72cf2f0e151",
+    "bytes": 570176
+  },
+  "portable_source_compile_passed": true,
+  "portable_source_pages": 21
+}

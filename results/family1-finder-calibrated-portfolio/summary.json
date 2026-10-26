@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "method": "calibrated-two-stage-m7-finder-portfolio-v1",
+  "run": {
+    "path": "out/family1-finder-calibrated-portfolio/run.json",
+    "sha256": "ff067ef1ec4b54859748dfcf4006f0fa5d6848d4ea55c9481f5c31b18f6695bd"
+  },
+  "graph_count": 8,
+  "verified_length34_graph_ordinals": [
+    539749,
+    679758,
+    1783759,
+    2221624,
+    2470130,
+    2471796,
+    3411148,
+    4099217
+  ],
+  "all_eight_verified": true,
+  "missing_graph_ordinals": [],
+  "total_native_attempts": 13,
+  "outcomes": {
+    "miss": 5,
+    "hit": 8
+  },
+  "whole_portfolio_seconds": 87.27271159994416,
+  "stages": [
+    {
+      "stage": "stage1-k6",
+      "selected_graph_ordinals": [
+        539749,
+        679758,
+        1783759,
+        2221624,
+        2470130,
+        2471796,
+        3411148,
+        4099217
+      ],
+      "returncode": 0,
+      "whole_stage_seconds": 3.352740200003609,
+      "summary": {
+        "schema": 1,
+        "cases": 8,
+        "finished_cases": 8,
+        "all_selected_cases_finished": true,
+        "target_hits": 3,
+        "native_attempts": 8,
+        "misses": 5,
+        "errors": 0,
+        "results": [
+          {
+            "ordinal": 539749,
+            "key": "0001020302030405000604060105",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 6,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          },
+          {
+            "ordinal": 679758,
+            "key": "0001020304050406050600010203",
+            "hit": false,
+            "attempts": 1,
+            "winning_configuration": null
+          },
+          {
+            "ordinal": 1783759,
+            "key": "0102000301040204050600030506",
+            "hit": false,
+            "attempts": 1,
+            "winning_configuration": null
+          },
+          {
+            "ordinal": 2221624,
+            "key": "0102000304050106000304050206",
+            "hit": false,
+            "attempts": 1,
+            "winning_configuration": null
+          },
+          {
+            "ordinal": 2470130,
+            "key": "0102010203040005030604060005",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 6,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          },
+          {
+            "ordinal": 2471796,
+            "key": "0102010203040005050600060304",
+            "hit": false,
+            "attempts": 1,
+            "winning_configuration": null
+          },
+          {
+            "ordinal": 3411148,
+            "key": "0102020304050006000604050103",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 6,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          },
+          {
+            "ordinal": 4099217,
+            "key": "0102030405060001000203040506",
+            "hit": false,
+            "attempts": 1,
+            "winning_configuration": null
+          }
+        ],
+        "proof_scope": "Every hit independently replayed on all128 static masks; misses give no lower bound; adaptive configs are not a controlled k comparison."
+      },
+      "summary_reference": {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/summary.json",
+        "sha256": "5bec46e93f18ce8ec7650a37fb03d9e45e440c0734c82d6789a07c6a99a37ebc"
+      }
+    },
+    {
+      "stage": "stage2-k16",
+      "selected_graph_ordinals": [
+        679758,
+        1783759,
+        2221624,
+        2471796,
+        4099217
+      ],
+      "returncode": 0,
+      "whole_stage_seconds": 83.9093136000447,
+      "summary": {
+        "schema": 1,
+        "cases": 5,
+        "finished_cases": 5,
+        "all_selected_cases_finished": true,
+        "target_hits": 5,
+        "native_attempts": 5,
+        "misses": 0,
+        "errors": 0,
+        "results": [
+          {
+            "ordinal": 679758,
+            "key": "0001020304050406050600010203",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 16,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          },
+          {
+            "ordinal": 1783759,
+            "key": "0102000301040204050600030506",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 16,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          },
+          {
+            "ordinal": 2221624,
+            "key": "0102000304050106000304050206",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 16,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          },
+          {
+            "ordinal": 2471796,
+            "key": "0102010203040005050600060304",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 16,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          },
+          {
+            "ordinal": 4099217,
+            "key": "0102030405060001000203040506",
+            "hit": true,
+            "attempts": 1,
+            "winning_configuration": {
+              "k": 16,
+              "beam": 16,
+              "tail": 8,
+              "seed": 1088
+            }
+          }
+        ],
+        "proof_scope": "Every hit independently replayed on all128 static masks; misses give no lower bound; adaptive configs are not a controlled k comparison."
+      },
+      "summary_reference": {
+        "path": "out/family1-finder-calibrated-portfolio/stage2-k16/summary.json",
+        "sha256": "f828566e23caa07dfdf3c059304cc263ef977d9d38c970c935e3ccce5b50daf6"
+      }
+    }
+  ],
+  "no_saved_word_hints": true,
+  "misses_give_no_lower_bound": true,
+  "known_H_from_separate_certificate": true
+}

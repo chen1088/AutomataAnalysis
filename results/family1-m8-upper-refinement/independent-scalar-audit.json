@@ -1,0 +1,345 @@
+{
+  "method": "straightforward independent per-word per-mask state loops",
+  "graphs": 16,
+  "total_masks_replayed": 4096,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "key": "00010203010403040506000702070506",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 43,
+      "witness": [
+        "0010001011000001100001110001011010100101011",
+        "0011101011000001100001110001011010100101011"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "a24b93d9396a9e33e5b04e37029ad96f7bcdd28df9fca5553a8efcc9844e8c8f",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\00010203010403040506000702070506\\native\\result.json",
+        "sha256": "87d6d505ec88040d5f0c8324d9e5c69ae9cc753ee19bd88c960626205b48d254"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\00010203010403040506000702070506\\native\\run.json",
+        "sha256": "5bfde633de202e22c5dadfdc64abe96d6b2af27ef45d0bbf89b1a8a2d7b85b52"
+      }
+    },
+    {
+      "key": "00010203040504060203010706070005",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 46,
+      "witness": [
+        "0000000101110000010101001111111000110000001111",
+        "0101110000000000010101001111111000110000001111"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "acbf3a3a07a83b69d164f4a980b59f0c6ae878bbf231ddff0a39754edd22ced5",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\00010203040504060203010706070005\\native\\result.json",
+        "sha256": "18bc2f87406cd66e9fbf5e5e91244fec9210b585ef6d6efb3aa14b3e78a3f637"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\00010203040504060203010706070005\\native\\run.json",
+        "sha256": "305802fb0e9ae0650fff27625e49474a7443610361ae32ea01b366ebd47be2be"
+      }
+    },
+    {
+      "key": "00010203040504060507020603070001",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 44,
+      "witness": [
+        "01000001110001101011101000101110110111000111",
+        "01011100000001101011101000101110110111000111"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "607f85e04930454eb9d9581ca359605fe18df4f09978cc705e4b7611f16d0bcc",
+      "proof_kind": "positive-checkpoint-with-complete-independent-replay",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\00010203040504060507020603070001\\native\\checkpoints\\sample-1024.txt",
+        "sha256": "1ace64bc06d3df358a7cdfde95e7d5494ab6b083596218c841379f5bb0f797c0"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\00010203040504060507020603070001\\native\\run.json",
+        "sha256": "8f1f622cd48d38dab7f2d3606c4f09aa04307eec2b85506d0a41c27e6b4813d2"
+      }
+    },
+    {
+      "key": "01020003000403050506040701020607",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 42,
+      "witness": [
+        "000010000100000101011101100010010011101000",
+        "001000010000000101011101100010010011101000"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "d36d0078d9190f7aab21d05071d2fd681f001dca2f6b252b695d6f3560da34c2",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003000403050506040701020607\\native\\result.json",
+        "sha256": "a5a8b6c2ec4ef8da7639704f5c905c095933596b2b66c53e752908a545ab878b"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003000403050506040701020607\\native\\run.json",
+        "sha256": "ba16359ea766263cd230baa824df11212b6b499c7e1b1265aabdb55c107828b6"
+      }
+    },
+    {
+      "key": "01020003010404050607020300050607",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 42,
+      "witness": [
+        "000001011001111001110010001110011000010110",
+        "111101011001111001110010001110011000010110"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "8f974d331eaab929a2f07cb378c1d9ff2ff59a84869bdb673318090bc32dfc33",
+      "proof_kind": "positive-checkpoint-with-complete-independent-replay",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003010404050607020300050607\\native\\checkpoints\\sample-1024.txt",
+        "sha256": "3e0841c89f9b3c7ae49cbf5985b6e7789c0a8c76e867d316f3ef7ea6c56b78fc"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003010404050607020300050607\\native\\run.json",
+        "sha256": "8c85f6a28c6d268ffeb0b9a5db273f45573ff9de07b3b9cbb95c4a8babaafc8b"
+      }
+    },
+    {
+      "key": "01020003020304050106060704050007",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 47,
+      "witness": [
+        "00001111100000011011101111111010001101010010110",
+        "00111110000000011011101111111010001101010010110"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "b3d91c607ea711492ecaa64b7665cc9505cd86a7e18916ffb611595cb52431e1",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003020304050106060704050007\\native\\result.json",
+        "sha256": "262c6198d9b49555df7f147303f178fbc4206b2b0cbe80a7f39a0897253d6fc6"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003020304050106060704050007\\native\\run.json",
+        "sha256": "d1748a9d0ee71d1f1b84289dc73d59725253791d20c43260e0c28dff058da426"
+      }
+    },
+    {
+      "key": "01020003020401050506040706070003",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 39,
+      "witness": [
+        "000000000000010000001000010010100111001",
+        "000100000000000000001000010010100111001"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "f22ce4c413065293794618b05ed180ed16c1ddbfa30694e31ae1a84b66deb2b8",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-3-heavy48\\01020003020401050506040706070003\\native\\result.json",
+        "sha256": "2360fbb105ec841fc6e90c533b254a599f61d41570fa4e275c1c427fdfd02740"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-3-heavy48\\01020003020401050506040706070003\\native\\run.json",
+        "sha256": "c3368319af9a5930706811414621b8e8b3b842dab787afa53b3e196639be6859"
+      }
+    },
+    {
+      "key": "01020003030405060107000705060204",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 38,
+      "witness": [
+        "00010100100010100011110110101011101011",
+        "11010100100010100011110110101011101011"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "e73289df45c734950365487c56a2e83c228d5c294f6cef82de5fb2a49de74862",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\01020003030405060107000705060204\\native\\result.json",
+        "sha256": "c458d151e399d8c96558d4e9b8491555426d5a20aca66105010539de5d73a0f2"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\01020003030405060107000705060204\\native\\run.json",
+        "sha256": "027f4108a1d1b31f5616ade4a391e85e2365de345d2f918ff6ee5411d41fc989"
+      }
+    },
+    {
+      "key": "01020003040500040607020301050607",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 41,
+      "witness": [
+        "00011101011000101010011100011000001110101",
+        "11100001011000101010011100011000001110101"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "d65b876be1c203a2aaeb7487345b8a6026f0b0d6a5ff2847db19b87cf097451c",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\01020003040500040607020301050607\\native\\result.json",
+        "sha256": "7d9c96e2992c74d92425a36b23555257668d6d7eaa0ed35cacb663dfed184de6"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\01020003040500040607020301050607\\native\\run.json",
+        "sha256": "740fef97e589ce22cf582865f7ceccd45110416e94b8826dd04513c743624538"
+      }
+    },
+    {
+      "key": "01020003040501060003020705060407",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 51,
+      "witness": [
+        "100110000100010101001011110001101010000100001100100",
+        "100110011100010101001011110001101010000100001100100"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "f2b99531052e8a004a934dd7edd3c01c6eb814407a6fbdb99c6edba9c9442653",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003040501060003020705060407\\native\\result.json",
+        "sha256": "ba9d75a1006130cc9057affbe3207aebf2c3bd0377e751f2aba605eb25097f2f"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003040501060003020705060407\\native\\run.json",
+        "sha256": "7f6a676c1757e842857227f88559a9801e022da356af9d818f388917e3f652b6"
+      }
+    },
+    {
+      "key": "01020003040502030006060704050107",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 49,
+      "witness": [
+        "0010000110001010111100100101111000001100001011111",
+        "0100011001101010111100100101111000001100001011111"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "1e058929bcb6ed7ff5158e40c13da788c7b5e0494b979a3db12fab8c19450b5b",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003040502030006060704050107\\native\\result.json",
+        "sha256": "f778271ef25dcce45ceebb963aaa087fb1b3f14ad43dd32e5be7eff968daead0"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003040502030006060704050107\\native\\run.json",
+        "sha256": "1d316aa8d67b9b30654badbfb9d3a88fa697dfe0b7970542f2bda6d4ec435110"
+      }
+    },
+    {
+      "key": "01020003040502060107040500070306",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 45,
+      "witness": [
+        "011111101110010001110101111100001001011101001",
+        "100000101110010001110101111100001001011101001"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "17fbcd9f16c8b7874ac7cfa99a69506638c4654e5092f68dec98802d22ac0fab",
+      "proof_kind": "positive-checkpoint-with-complete-independent-replay",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003040502060107040500070306\\native\\checkpoints\\sample-1024.txt",
+        "sha256": "93ee6589283196f63f8c9145175c435b38b3d0832b182aebc72743b51348093e"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020003040502060107040500070306\\native\\run.json",
+        "sha256": "91f3e251d5c5410a1a4d4001c8d93e448b8eaaa4f024b3d01247d921252973ab"
+      }
+    },
+    {
+      "key": "01020102030405060507000603070004",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 44,
+      "witness": [
+        "11000001110001101011111010011000101000010101",
+        "11011100000001101011111010011000101000010101"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "71d076eebf80f7cc6168b0118fc9fc828ff9f559d35352e6d7b19b610fdb1891",
+      "proof_kind": "positive-checkpoint-with-complete-independent-replay",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020102030405060507000603070004\\native\\checkpoints\\sample-1280.txt",
+        "sha256": "962fb1c90634cf609690c9d28f7b3a2f2c0ca64bf793ab3ed6d0d37c668cc84e"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020102030405060507000603070004\\native\\run.json",
+        "sha256": "fab55ead813b8faf42ed2528cdceb2d429f8b3153b592cf2ead77ba8dea3e22d"
+      }
+    },
+    {
+      "key": "01020304030501020006050604070007",
+      "shape_key": "00010203010403040506000702070506",
+      "lower_bound": 1,
+      "upper_bound": 43,
+      "witness": [
+        "0000011111100010100001011100100001110001101",
+        "1100000111100010100001011100100001110001101"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "3bd8d23f258d8420da733a780cd40d54f01e5ff09d6f7f74dc4c40b6ab95fc0b",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020304030501020006050604070007\\native\\result.json",
+        "sha256": "971100becf1afa9f15cd2ab58fa34c2443e6ff9b9f5b7ff01792db6855829f74"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\queries\\01020304030501020006050604070007\\native\\run.json",
+        "sha256": "f13f78cbd13f0db6c6f4783c3ffed8764f7b821049e958081992190011e930c7"
+      }
+    },
+    {
+      "key": "01020304030504060105020600070007",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 39,
+      "witness": [
+        "010101001010111010011001010111000010110",
+        "100101001010111010011001010111000010110"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "0b5adb1fd0ddeeedc14a59c91512a96676ccf4e7dc396fd4dc7a3a95136331c0",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\01020304030504060105020600070007\\native\\result.json",
+        "sha256": "d38a881c33f8a0cd9bd1945fc4041b9a879654807e7540033b99bb1743fa0979"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-2-coarse48\\01020304030504060105020600070007\\native\\run.json",
+        "sha256": "1c4c6f84270c155cd74a53f1221da9e452931852b9e8be23d0876f42415db0d0"
+      }
+    },
+    {
+      "key": "01020304050600010207030705060004",
+      "shape_key": "00010203040504060507020603070001",
+      "lower_bound": 1,
+      "upper_bound": 42,
+      "witness": [
+        "010101101000110101100101111100100011101000",
+        "101010101000110101100101111100100011101000"
+      ],
+      "scalar_masks_independently_replayed": 256,
+      "product_state_sha256": "835630cf907347bf446ab049663b9e2538f5987d2aeed5d291ff53f6fb12cc37",
+      "proof_kind": "completed-native-result",
+      "proof": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-1-coarse64\\01020304050600010207030705060004\\native\\result.json",
+        "sha256": "570ec6969a14e7c620c5643d26d9cdbad9fc5404ec5c0f0d908818c3e0550fac"
+      },
+      "native_configuration": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\queries\\phase-1-coarse64\\01020304050600010207030705060004\\native\\run.json",
+        "sha256": "b91dabeb905dd0c33597c790a0cdd9ef1f3e82ef0fdf51ac9cf51a658bba4bfd"
+      }
+    }
+  ],
+  "no_shortestness_or_new_lower_claim": true
+}

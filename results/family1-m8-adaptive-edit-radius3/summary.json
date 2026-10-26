@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "method": "bounded-crowding-adaptive-edit-radius-controller",
+  "trigger": {
+    "crowded_top_band": 5,
+    "threshold": 3,
+    "maximum_attempted_k": 16,
+    "prior_radius": 2,
+    "expanded_radius": 3
+  },
+  "generated_rooted_classes": 25471,
+  "generated_ordinary_shapes": 3250,
+  "generation_complete": false,
+  "selected_roots": 261,
+  "selected_new_shapes": 33,
+  "verified_observations": 261,
+  "selected_without_query": 0,
+  "outcomes": {
+    "completed": 261
+  },
+  "completed_stages": 261,
+  "positive_observations": 261,
+  "new_qualified_classes": 261,
+  "total_qualified_classes": 311,
+  "archived_classes": 45004,
+  "active_best_ties": 2,
+  "active_verified_upper_length": 51,
+  "active_estimate": {
+    "point": 50,
+    "rough_band": [
+      49,
+      51
+    ],
+    "certified": false,
+    "rule": "user heuristic: H approximately L-1, rough[L-2,L]"
+  },
+  "all_generated_unselected_unknowns_retained": true,
+  "timeout_checkpoint_positives_qualified": false,
+  "misses_raise_lower_bound": false,
+  "global_maximum_claimed": false,
+  "selection_plan": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\selection-plan.json",
+    "sha256": "e42100afb5f866397d73976bc2a5b3086408cfdc4a2df7bd74c51e44acec4334"
+  },
+  "run": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\run.json",
+    "sha256": "b5deeb54223a5d23f7854c734080e134e6dc8ed84fef4711d168d40920d7cd92"
+  },
+  "whole_invocation_seconds": 20.92200000002049
+}

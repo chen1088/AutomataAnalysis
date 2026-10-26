@@ -1,0 +1,179 @@
+{
+  "method": "byte-identical-compact-certificate-copy-v1",
+  "source_certificate_directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m7-global-certificate-v3",
+  "source_files_preserved": true,
+  "copied_files": [
+    {
+      "path": "burnside-count.log",
+      "sha256": "3dc576cb81c1717b6e8cf91544ef3c250e9be4a19fd45b44289125ddfece06cb",
+      "bytes": 256
+    },
+    {
+      "path": "frontier-upper-refinements.jsonl",
+      "sha256": "5830a3375356fb0b58062d0fabe8468d90a8b792aee45e34a58e97d4e5764d0c",
+      "bytes": 777
+    },
+    {
+      "path": "independent-burnside-counts.json",
+      "sha256": "72f3a585fc2d174a6acf39a8ebee631f199c1361f21b995e69e6e22238a09d91",
+      "bytes": 6634
+    },
+    {
+      "path": "independent-refined-upper-audit.json",
+      "sha256": "91051f9ad29b159065d8094986cb5173658e6a1b679783252a5996b44a2f80a3",
+      "bytes": 2597
+    },
+    {
+      "path": "independent-upper-audit.json",
+      "sha256": "4084594cc7d563a7ee77d890a1e9438f1f878ff245fa315d116eb480496620c6",
+      "bytes": 2679
+    },
+    {
+      "path": "initial-frontier-records.jsonl",
+      "sha256": "29a1503db3d444b9e415b481c9fd0b1077032ef3cd7f3e02313ac3e6eb1aa695",
+      "bytes": 3760
+    },
+    {
+      "path": "lower-0001020302030405000604060105.json",
+      "sha256": "f9fadedf550b81b1ee8bc10ede17e50e524d156395d70a95d23350e7dfe39ecb",
+      "bytes": 325
+    },
+    {
+      "path": "lower-0001020302030405000604060105.log",
+      "sha256": "b0ad3a671b3c5f8dd0175d8669321d8cb4c3e7486dc416594f09b684d7974c33",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0001020304050406050600010203.json",
+      "sha256": "90c16e01c053349a89df7ccc484fac8426a24c0b54363a1b36640426897d8fe9",
+      "bytes": 328
+    },
+    {
+      "path": "lower-0001020304050406050600010203.log",
+      "sha256": "1957242986191578aa88908e2aadfe2fa6f5f068658c704a9370376b433247b8",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0102000301040204050600030506.json",
+      "sha256": "a9d9a3a9ac048892f0b3cc961a37d070b47a66bad6ac1d006d52342154f1ed78",
+      "bytes": 328
+    },
+    {
+      "path": "lower-0102000301040204050600030506.log",
+      "sha256": "2358c0952529c7e278dafdb0e83e17bbcfa10a2ed79f6b6cbe63663afdf92288",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0102000301040506000302040506.json",
+      "sha256": "70b2372168ff772cfd56e53519b1d6895d2a4c40616cfdf4d3528fd0afe0454d",
+      "bytes": 395
+    },
+    {
+      "path": "lower-0102000301040506000302040506.log",
+      "sha256": "36d553966e2ace7396a08a49d229f6de2b9770fa3350791189f67646b74849e4",
+      "bytes": 133
+    },
+    {
+      "path": "lower-0102000304050006010304050206.json",
+      "sha256": "9b79d0864babb75b49cf49c6c5b5d364863eca472522e0f254ffe6739d18cfa9",
+      "bytes": 395
+    },
+    {
+      "path": "lower-0102000304050006010304050206.log",
+      "sha256": "01255203617a8e778d593c82a31138960ea5c003577c46a08b9fe34aba5fef3a",
+      "bytes": 133
+    },
+    {
+      "path": "lower-0102000304050106000304050206.json",
+      "sha256": "6f8aefba1efb0459b7b2b9fd4bf4b3b1d7660f1d32454163b25fa80bacc38706",
+      "bytes": 328
+    },
+    {
+      "path": "lower-0102000304050106000304050206.log",
+      "sha256": "50db87a002609d49b48c5cb52ab2d0961a0d81da4744de6dfc411af5be782560",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0102010203040005030604060005.json",
+      "sha256": "10743f79456782e2cbdbcf28a8c7afa6fbe7f77228b0f519d1402448d884098b",
+      "bytes": 328
+    },
+    {
+      "path": "lower-0102010203040005030604060005.log",
+      "sha256": "4977c48a4b87883a6e4c82d5c9a91ac7a57e25cb2b88fc569dffe5ac01bb0be4",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0102010203040005050600060304.json",
+      "sha256": "bfa0abed86b5bca264a297ced326c905ea72c3d434f420bae1ac3a36ac19a235",
+      "bytes": 328
+    },
+    {
+      "path": "lower-0102010203040005050600060304.log",
+      "sha256": "86e98c89cda1a3c0b3c010d3c3d9314ac940451f0b21459fdf504e2ab8791a99",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0102020304050006000604050103.json",
+      "sha256": "00c4311d99b696dd8b66a1c3cae3118b8566c1125242dd2a4263dcba18f5a028",
+      "bytes": 328
+    },
+    {
+      "path": "lower-0102020304050006000604050103.log",
+      "sha256": "5adc6cdccf4c31c029a4f65553244843c0607ffce58b9e95de7729a107064423",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0102030405060001000203040506.json",
+      "sha256": "c1563691741cdc6d4902c6a895f92f6533a6e55ebcf8d7b87bc97f8f72d214aa",
+      "bytes": 328
+    },
+    {
+      "path": "lower-0102030405060001000203040506.log",
+      "sha256": "2fc969a05fc646a9812a1dcfbfc7796f2b2617d3811c9919f79d1cf16415658a",
+      "bytes": 132
+    },
+    {
+      "path": "lower-0102030405060004010200030506.json",
+      "sha256": "9f002383dcba1f980978c1818d285c42ba801fb6c5fa8fc7c5f3d18ca143313e",
+      "bytes": 395
+    },
+    {
+      "path": "lower-0102030405060004010200030506.log",
+      "sha256": "723bc701e2008fc46d76bd5c52b7fc57e8db61eb56f4d6b0ddba97c935fdf132",
+      "bytes": 132
+    },
+    {
+      "path": "maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f",
+      "bytes": 2694
+    },
+    {
+      "path": "refined-upper-audit.log",
+      "sha256": "a6a81c4c2cf327d6c90c396b00e2d2c145e6f67dd18c564513f48e37c355c7ce",
+      "bytes": 256
+    },
+    {
+      "path": "summary.json",
+      "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50",
+      "bytes": 9309
+    },
+    {
+      "path": "upper-audit.log",
+      "sha256": "36d8a35d843915c9ed5e7c72ae947f3ab6403c8b9841d7adae0ffbb6c2d279a6",
+      "bytes": 248
+    }
+  ],
+  "omitted_large_journal": {
+    "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m7-global-certificate-v3\\refined-checkpoint.jsonl",
+    "sha256": "9d6de41b2f99dd220bd9d086d6910e5d466c16e23328f22f57520654c47e3d70",
+    "bytes": 1207340983,
+    "archive_path": "data/checkpoint.jsonl"
+  },
+  "portable_certificate_zip": {
+    "path": "out/family1-m7-certificate.zip",
+    "sha256": "6fe3dabe21a7175fe1bc07377df81eaea5df80d0d31a6e5f002037e7c60d1588",
+    "bytes": 87086445
+  },
+  "original_absolute_paths_are_execution_provenance": true
+}

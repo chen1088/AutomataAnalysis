@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-25",
+  "m5_rooted_classes": 5,
+  "m5_unrooted_shapes": 4,
+  "figures_preserved": true,
+  "m5_exact_scores_independently_rechecked": true,
+  "native_debug_tests_passed": 8,
+  "native_release_tests_passed": 8,
+  "m7_enumerated_classes": 4166855,
+  "m7_enumeration_complete": true,
+  "m8_counted_prefix": 66715648,
+  "m8_enumeration_complete": false,
+  "global_absolute_optima_certified_through": 6,
+  "global_absolute_optima_unresolved": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "m7_full_mask_individual_lower_bound": 29,
+  "m7_individual_lower_bound_is_not_global_optimum": true
+}

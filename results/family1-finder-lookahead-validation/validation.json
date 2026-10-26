@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "platform": "native Windows x64, MSVC 2022, CMake, pinned vcpkg",
+  "configurations": [
+    {
+      "configuration": "Release",
+      "passed": 28,
+      "failed": 0,
+      "log": {
+        "path": "out/ctest-lookahead-final-release.log",
+        "sha256": "79964d53c90eacc2ac3c233a64d3b083f1bed57bdbc12a83b6959426356a67e6"
+      },
+      "seconds": 37.0,
+      "finder_executable": {
+        "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+        "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+      }
+    },
+    {
+      "configuration": "Debug",
+      "passed": 28,
+      "failed": 0,
+      "log": {
+        "path": "out/ctest-lookahead-final-debug.log",
+        "sha256": "252d9c63a94c10cc3a7f208821370b0b76245dbb408a5b7f2a921fcab13ddd19"
+      },
+      "seconds": 89.35,
+      "finder_executable": {
+        "path": "out/build/msvc-vcpkg/Debug/Family1Sample.exe",
+        "sha256": "2219a75e6b375e0055316851b75def538a4675178f1f7ebee351764d7202062a"
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "path": "HardPairFinder.h",
+      "sha256": "1f634faccadff9a47efeaee5bc78f91c81c57e76dd5bd118f1504bbc0244c58e"
+    },
+    {
+      "path": "HardPairPrefixSeeds.h",
+      "sha256": "cacc00cd5526d5c0b1f4a80e1e432fd22e1bf85325b5f1936b36ac7b4b3e7147"
+    },
+    {
+      "path": "HardPairViability.h",
+      "sha256": "04152a0fecdccccbbc263da62d11c6121cb3b9323fec41344a28ccc50320ff21"
+    },
+    {
+      "path": "Family1PairAgreement.h",
+      "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+    },
+    {
+      "path": "Family1FullGuidance.h",
+      "sha256": "6a1233e2e3a49a4b2fcf87cb3040caf5e8b350b8935fe0a772d5e9b9c3f9e0ec"
+    },
+    {
+      "path": "family1_sample.cpp",
+      "sha256": "b7787e25efe2fb98970180a9d003237862c9becf99bf4444d878e728ee0595da"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "26b345a88ce6e059775e2c87a31fa6202274e40ffe5bcfd0ea58bcbb91a483a6"
+    },
+    {
+      "path": "tests/HardPairFinderIndependent.cpp",
+      "sha256": "29ac2ea25ebcd3b7e5f8034251ce711802f0cac28037d1b326ed498633ac33a3"
+    },
+    {
+      "path": "tests/HardPairPrefixSeedsIndependent.cpp",
+      "sha256": "80294dd1a7dbf81f4f0549cb97815eeebb56b3573803b4d93605d2f4d41b184b"
+    },
+    {
+      "path": "tests/HardPairViabilityIndependent.cpp",
+      "sha256": "95b613e8f3d0e6922b748da2697b060530b892476b08d68c39de4ec3359b7bd8"
+    },
+    {
+      "path": "tests/Family1PairAgreementVerify.cpp",
+      "sha256": "eb7432da25035d754f3287280af85f2ba9952c23fecd0bebeb97245dd0d7be5f"
+    },
+    {
+      "path": "tests/family1_finder_cli_test.py",
+      "sha256": "6860acedf068a05adac161eda09206e70bed205acf61b5582a63701c62351411"
+    },
+    {
+      "path": "tests/family1_viability_cli_test.py",
+      "sha256": "eb9685932e600f03b8197d838fc7ec30c32abdb1485f41352f6bb6a041252cc4"
+    }
+  ],
+  "independent_checks": {
+    "rooted_accessible_classes_m_le_3": 64,
+    "conditional_BFS_comparisons": 1263,
+    "forced_hash_cases": 48,
+    "complete_window_distributions": 128,
+    "explicit_binary_DFAs_for_prefix_and_viability_checks": 746,
+    "prefix_reference_pairs": 12992,
+    "viability_ordered_pairs": 6626,
+    "heterogeneous_state_counts": [
+      2,
+      3,
+      5
+    ],
+    "full_metric_m20_masks_per_case": 1048576,
+    "caps_resume_static_revisits_and_common_prefixes_checked": true
+  },
+  "limits": "A shortest conditional tail is not a shortest whole pair. Sampling misses do not prove lower bounds. Global maxima above seven states remain unproved."
+}

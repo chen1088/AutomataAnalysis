@@ -1,0 +1,101 @@
+[
+  {
+    "phase": "m8-k8",
+    "raw_directory": "out/family1-m8-adaptive-v1",
+    "producer_version": "old",
+    "queries": 3,
+    "outcomes": {
+      "completed": 3
+    },
+    "positive_artifacts_replayed_by_query_driver": 96
+  },
+  {
+    "phase": "m8-k10-k16",
+    "raw_directory": "out/family1-m8-adaptive-v2",
+    "producer_version": "old",
+    "queries": 10,
+    "outcomes": {
+      "completed": 8,
+      "timeout": 2
+    },
+    "positive_artifacts_replayed_by_query_driver": 130
+  },
+  {
+    "phase": "m8-pending-admission",
+    "raw_directory": "out/family1-m8-adaptive-v3-pending",
+    "producer_version": "old",
+    "queries": 25,
+    "outcomes": {
+      "completed": 18,
+      "timeout": 7
+    },
+    "positive_artifacts_replayed_by_query_driver": 670
+  },
+  {
+    "phase": "m8-old-broad",
+    "raw_directory": "out/family1-m8-adaptive-broad-prefix",
+    "producer_version": "old",
+    "queries": 5,
+    "outcomes": {
+      "timeout": 5
+    },
+    "positive_artifacts_replayed_by_query_driver": 0
+  },
+  {
+    "phase": "m7-baseline-adaptive",
+    "raw_directory": "out/family1-adaptive-m7-calibration",
+    "producer_version": "old",
+    "queries": 24,
+    "outcomes": {
+      "completed": 20,
+      "timeout": 4
+    },
+    "positive_artifacts_replayed_by_query_driver": 0,
+    "baseline_queries": 8,
+    "adaptive_outcomes": {
+      "completed": 12,
+      "timeout": 4
+    }
+  },
+  {
+    "phase": "m7-old-broad",
+    "raw_directory": "out/family1-adaptive-m7-broad-prefix",
+    "producer_version": "old",
+    "queries": 4,
+    "outcomes": {
+      "timeout": 4
+    },
+    "positive_artifacts_replayed_by_query_driver": 168
+  },
+  {
+    "phase": "m7-m8-old-resume",
+    "raw_directory": "out/family1-broad-checkpoint-continuation",
+    "producer_version": "old",
+    "queries": 4,
+    "outcomes": {
+      "timeout": 4
+    },
+    "positive_artifacts_replayed_by_query_driver": 1523
+  },
+  {
+    "phase": "m8-r3-k10-k16",
+    "raw_directory": "out/family1-m8-adaptive-r3-fixed-checkpoint",
+    "producer_version": "immediate-positive-checkpoint",
+    "queries": 20,
+    "outcomes": {
+      "completed": 15,
+      "timeout": 5
+    },
+    "positive_artifacts_replayed_by_query_driver": 283
+  },
+  {
+    "phase": "m8-final-broad",
+    "raw_directory": "out/family1-m8-adaptive-r3-broad-fixed-checkpoint",
+    "producer_version": "immediate-positive-checkpoint",
+    "queries": 5,
+    "outcomes": {
+      "timeout": 5
+    },
+    "positive_artifacts_replayed_by_query_driver": 0
+  }
+]

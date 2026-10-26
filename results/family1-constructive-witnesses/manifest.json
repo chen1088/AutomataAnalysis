@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "method": "two-full-size-native-compressed-construction-checks",
+  "entries": [
+    {
+      "id": "literal-m20",
+      "source": {
+        "path": "results/family1-circulant-family/champions.jsonl",
+        "sha256": "40c00f9bb33768ee5a7851f7c1a6cbe9cbccd10bb32e07cc9f82ee3739de6a21"
+      },
+      "key": "01020304030506070608070910111012111312130014001514161516021701181718051904190809",
+      "result_file": "literal-m20.json",
+      "result_sha256": "592788caae18fd4234cfbea07768f19fc9942a535b93d06a49656bd9fb950cd6",
+      "run_file": "literal-m20-run.json",
+      "run_sha256": "34cd1529f6249c3689ced5df85c301cbf942371808b25be4b83b805006ac991b",
+      "masks_enumerated": 1048576,
+      "universal_verification_mask_count": 1048576,
+      "A": 15,
+      "B": 15,
+      "P": 60,
+      "constructed_word_length": 91,
+      "native_seconds": 0.0763655,
+      "invocation_seconds": 0.08618889993522316,
+      "known_lower_bound_from_pinned_dataset": 2,
+      "combined_known_interval": [
+        2,
+        91
+      ],
+      "exact_score_certified": false
+    },
+    {
+      "id": "projection-m20",
+      "source": {
+        "path": "results/family1-atlas-current/champions.jsonl",
+        "sha256": "506241c4193c425feb4e8bc65cff96399502f130175d12fd5a3cc3a8413905e2"
+      },
+      "key": "01020203040502060405070802090010071002110208021202130214021502160217021802190002",
+      "result_file": "projection-m20.json",
+      "result_sha256": "996e0f9ef4261028c4f2c2f3375a65ef7e833583c0f419d9e88bf2ff1d61e2fc",
+      "run_file": "projection-m20-run.json",
+      "run_sha256": "955556425fc71c29afa59d824c43bddc6d46a42096caecf09d3c344b5e1f2c4d",
+      "masks_enumerated": 1048576,
+      "universal_verification_mask_count": 1048576,
+      "A": 18,
+      "B": 18,
+      "P": 232792560,
+      "constructed_word_length": 232792597,
+      "native_seconds": 0.0610368,
+      "invocation_seconds": 0.07142980000935495,
+      "known_lower_bound_from_pinned_dataset": 34,
+      "combined_known_interval": [
+        34,
+        232792597
+      ],
+      "exact_score_certified": false
+    }
+  ],
+  "native_executable": {
+    "path": "out/build/msvc-vcpkg/Release/Family1Construct.exe",
+    "sha256": "34abee74a71ad8b5c36212bfea9ce7fd1fcf45aac6d7d088c5763e3f68a34a1c"
+  },
+  "sources": {
+    "family1_construct.cpp": {
+      "sha256": "6191df0bfb6e0e04109cbf13d35253c51009113e952251720408e31bdd16426f"
+    },
+    "Family1CliArtifacts.h": {
+      "sha256": "f4da56617b1b7db069dfc8b46815863097c2022ec9efa5b6b76470b155ce915c"
+    },
+    "Family1LargeGraph.cpp": {
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    "Family1LargeGraph.h": {
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    }
+  },
+  "timing_scope": "Two invocations ran concurrently; native elapsed includes both all-mask construction passes and independent all-mask compressed verification.",
+  "proof_scope": "Universal collisions for each supplied rooted graph separately; upper bounds only, no shortest-score/global-maximum claim."
+}

@@ -1,9 +1,143 @@
-WIP This is a C++ project that computes and visualizes the generating function of the product automata.
+This C++ project computes generating functions of product automata and searches
+Family 1 graph realizations for long shortest equal-length merges.
+
+The repository includes source, compact results and current PDF/TikZ figures.
+Large raw datasets and build artifacts stay local; see the
+[artifact policy and fresh-checkout commands](docs/repository-artifacts.md).
+
+## Family 1 graph search
+
+The **absolute maximum and every maximizing rooted class** are certified
+through seven states. For **m=7 the maximum is 34**, attained by **eight rooted
+classes across four underlying shapes**. The independent certificate covers
+all **4,166,855** accessible seven-state classes: every other class has a
+verified witness of length at most 33, and every maximizer has a complete
+length-33 injectivity proof over all 128 static masks. Indegrees are unrestricted;
+loops and coincident ports are included, without imposing strong connectivity.
+
+The maxima for reachable sizes 1 through 7 are **1, 3, 6, 10, 15, 23, 34**.
+See the [certificate and all maximizing tables](results/family1-m7/README.md),
+[structural report](results/family1-m7-structures/structure.md),
+[complete PDF plate](output/pdf/family1-m7/family1-m7.pdf), and
+[reusable TikZ sources](figures/family1-m7/README.md).
+The absolute maxima for sizes eight through twenty remain unresolved. The
+[eight-state search](docs/FAMILY1_M8_SEARCH.md) now has an independently certified
+**lower bound of 35**, exhaustively covering the entire length-34 layer of one
+graph. The current [adaptive search](docs/FAMILY1_ADAPTIVE_CANDIDATES.md) keeps
+only the best refined estimates and every top tie in its
+[active shortlist](results/family1-m8-estimates/best-candidates.jsonl). Crowded
+top bands trigger larger word windows and then wider edit neighborhoods.
+The [best-only PDF](output/pdf/family1-m8-active-best/active-best.pdf) and
+[TikZ picture](output/pdf/family1-m8-active-best/graph-01.tex) display the current
+working leader, estimated at 49 from a verified length-50 pair.
+
+The updated [1--20 PDF atlas](output/pdf/family1-atlas/family1-atlas-1-20.pdf)
+groups the 20 certified rooted winners through seven states into 13 underlying
+graphs, marking every optimal starting vertex. All edges are unlabelled and
+drawn alike. At size eight it shows the one current candidate, with working
+estimate 49 and verified pair length 50. The separate rigorous bound `F(8)>=35`
+comes from another graph. Sizes nine through twenty show `H>=34` examples. See the
+[current grouped presentation data](results/family1-grouped-atlas/README.md),
+[all consecutive-size predecessors](results/family1-ancestry-through7/README.md),
+and [rooted edit distances](results/family1-edit-distance-through7/README.md).
+The [edit definition](docs/family1-graph-edits.md) keeps the root fixed and
+separates graph distance from the change in merge length.
+
+The [root-aware edit search](docs/family1-neighbor-search.md) expands winners
+and possible near-winners through size 20, ranks certified hard-root support,
+and queries every accessible root of each selected shape. Generation budgets
+are explicit; they do not give global pruning certificates. `Family1Threshold`
+tests one chosen equal length and preserves `unknown` without adding a bound.
+The native Windows Debug and Release builds each pass 34 local CTests, including
+170 independent threshold decisions over all 64 classes through three states.
+Fresh checkouts register 33 tests; the additional test uses a regenerated full
+evaluation journal, as described in the artifact policy.
+See also the [edit-priority limits](docs/family1-edit-priority.md) and
+[circulant construction comparison](docs/family1-circulant-comparison.md).
+
+The native [edit-based candidate finder](docs/FAMILY1_EDIT_CANDIDATES.md)
+generates bounded edit neighborhoods, retains every accessible root, and feeds
+the calibrated hard-pair scorer. Its benchmark expands all previous near-top
+classes: at seven states, parent-strata priority retains all eight known
+maximizers within about 2,048 candidate roots for each of three seeds. Verified
+short words then reduce those pools to 161--163 unresolved candidates, including
+all eight winners. These are measured shortlists, not global certificates;
+all negative cases, ties and unresolved graphs remain exported.
+
+The reusable [hard-pair finder](docs/hard-pair-finder.md) works with arbitrary
+finite families of binary DFAs, including different coordinate sizes and roots.
+It records complete common-window gain distributions, retains multiple suffix
+candidates, and invokes exact conditional tail search near completion. Its
+Family 1 adapter uses all static masks in the objective and independently
+replays every accepted pair. The updated blind benchmark finds pairs for all
+24 test graphs, but neither a sampling miss nor a shortest conditional suffix
+certifies the graph's global merge length.
+
+The [seven-state lookahead calibration](results/family1-finder-calibration/README.md)
+now independently reconstructs minimum-length 34 pairs for all eight maximizing
+classes, using larger windows and broader prefix coverage. Controlled tests
+through k=16 show that increasing k alone does not solve every case. The report
+preserves complete configurations, timing limits, failures, and every verified
+pair; it uses the previously certified H=34 as its target length.
+
+`Family1GlobalCheck.exe` searches the whole accessible graph space for
+stronger graphs and exports replayable exclusion certificates only after
+UNSAT. An `unknown` result supplies no global bound. The larger candidate
+atlas and `Family1Explore.exe` do not meet this completion criterion.
+
+The five-state results include five rooted classes but four underlying shapes:
+the former (a) and (c) have the same graph with different roots. The current
+atlas combines them and marks both starting vertices. The independent
+[five-state audit](docs/family1-rooted-isomorphism.md) verifies their exact
+scores and all TikZ edges; the original rooted sources remain available.
+
+`Family1Search.exe` enumerates rooted accessible seed graphs, identifies them
+under root-preserving relabeling and independent port swaps, and scores each
+seed using all static XOR masks. It retains **every** class tied for each
+maximum. Exact, depth-capped, and incomplete scores are kept distinct.
+
+After the Release build below:
+
+```powershell
+.\out\build\msvc-vcpkg\Release\Family1Search.exe --out .\out\family1-new-run --min-m 1 --max-m 6 --depth 24 --dot
+```
+
+The supported seed sizes are `1..6`. Results include all evaluated graphs,
+all maximizing graphs, witnesses, coverage summaries, and optional Graphviz
+drawings. Add `--resume` with the same size range to continue an existing run;
+depth and memory budgets may be increased. See [the search documentation](docs/family1-search.md)
+for the mathematics, export schema, bounds, tests, and complete reproduction
+commands. The generating-function executables remain available independently.
+
+`Family1Exhaustive.exe` extends complete graph-class traversal through seven
+states using reusable, verified collision witnesses and exact packed scoring.
+It retains interval bounds for unresolved graphs, supports deterministic resume
+and stronger refinement passes, and exports all tied classes only after both
+the maximum and complete collection are certified. The independent
+`Family1ExhaustiveVerify.exe` checks every graph, rooted canonical form and
+upper witness; `Family1LayerVerify.exe` supplies complete-mask lower checks.
+See [the seven-state workflow](docs/family1-seven-state-search.md) for commands,
+the independent Burnside count and complete proof. The optional
+[GPU witness workflow](docs/family1-gpu-witness-search.md) accelerates proposals;
+all accepted witnesses and final lower proofs are independently checked by
+native C++ verifiers. The certificate can be replayed without a GPU.
+
+`Family1Explore.exe` supports graphs through **20 states**, using exact discovery
+canonicalization, sampled-mask lower bounds, SAT counterexample refinement, and
+parallel scoring. Graph generation is heuristic; it retains every evaluated
+class and every best exact/lower-bound tie without claiming a global maximum.
+
+```powershell
+.\out\build\msvc-vcpkg\Release\Family1Explore.exe --out out\family1-explore-new --min-m 7 --max-m 20 --candidates 16 --jobs 4 --dot
+```
+
+See [scaling to twenty states](docs/family1-scaling.md) for the algorithm,
+certification limits, measured results, and independent certificate replay.
 
 ## Build
 
-The project uses CMake and requires a C++23 compiler, Boost Dynamic Bitset, and
-FLINT. The Windows build uses native MSVC and vcpkg.
+The project uses CMake and requires a C++23 compiler, Boost Dynamic Bitset,
+FLINT, and Z3. The Windows build uses native MSVC and the pinned vcpkg manifest.
 
 ### Windows: MSVC + vcpkg
 

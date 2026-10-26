@@ -1,0 +1,1123 @@
+{
+  "source": "results/family1-m1-m6/maximizers.jsonl",
+  "source_sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee",
+  "method": "All m! vertex permutations for ordinary canonicalization and isomorphism, retaining only permutations fixing 0 for rooted comparisons. Each transformed successor pair is independently sorted, exactly allowing independent swaps of the two outgoing ports.",
+  "automorphism_convention": "Counts vertex permutations preserving unordered successor pairs; additional permutations of coincident port occurrences are not counted as different vertex automorphisms.",
+  "score_checks": "Saved exact H metadata matches 1,3,6,10,15,23. Each saved witness is verified by direct static-mask simulation over all 2^m masks. This script does not repeat per-graph shortest-length proofs or global enumeration/scoring coverage.",
+  "interpretation": "Among the supplied complete m=1..6 winner collections, only m=5 has more than one ordinary unrooted shape. This is a verified finite-data observation, not a theorem explaining why m=5 is exceptional or predicting later sizes.",
+  "summary": [
+    {
+      "m": 1,
+      "saved_exact_maximum": 1,
+      "rooted_winner_count": 1,
+      "ordinary_unrooted_shape_count": 1
+    },
+    {
+      "m": 2,
+      "saved_exact_maximum": 3,
+      "rooted_winner_count": 1,
+      "ordinary_unrooted_shape_count": 1
+    },
+    {
+      "m": 3,
+      "saved_exact_maximum": 6,
+      "rooted_winner_count": 2,
+      "ordinary_unrooted_shape_count": 1
+    },
+    {
+      "m": 4,
+      "saved_exact_maximum": 10,
+      "rooted_winner_count": 1,
+      "ordinary_unrooted_shape_count": 1
+    },
+    {
+      "m": 5,
+      "saved_exact_maximum": 15,
+      "rooted_winner_count": 5,
+      "ordinary_unrooted_shape_count": 4
+    },
+    {
+      "m": 6,
+      "saved_exact_maximum": 23,
+      "rooted_winner_count": 2,
+      "ordinary_unrooted_shape_count": 1
+    }
+  ],
+  "sizes": [
+    {
+      "m": 1,
+      "saved_exact_maximum": 1,
+      "rooted_winner_count": 1,
+      "ordinary_unrooted_shape_count": 1,
+      "shapes": [
+        {
+          "ordinary_canonical_key": "0000",
+          "ordinary_canonical_table": [
+            [
+              0,
+              0
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "00",
+              "saved_ordinal": 0,
+              "saved_rooted_table": [
+                [
+                  0,
+                  0
+                ]
+              ],
+              "canonical_root_images": [
+                0
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            2
+          ],
+          "loop_vertices": [
+            0
+          ],
+          "self_loop_port_count": 2,
+          "coincident_port_vertices": [
+            0
+          ],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 1
+          }
+        }
+      ],
+      "all_pairs_of_saved_winners": []
+    },
+    {
+      "m": 2,
+      "saved_exact_maximum": 3,
+      "rooted_winner_count": 1,
+      "ordinary_unrooted_shape_count": 1,
+      "shapes": [
+        {
+          "ordinary_canonical_key": "00010001",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 2,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0,
+              1
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "0101",
+              "saved_ordinal": 1,
+              "saved_rooted_table": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "canonical_root_images": [
+                0,
+                1
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            2,
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            2,
+            2
+          ],
+          "loop_vertices": [
+            0,
+            1
+          ],
+          "self_loop_port_count": 2,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 2,
+            "2": 1
+          }
+        }
+      ],
+      "all_pairs_of_saved_winners": []
+    },
+    {
+      "m": 3,
+      "saved_exact_maximum": 6,
+      "rooted_winner_count": 2,
+      "ordinary_unrooted_shape_count": 1,
+      "shapes": [
+        {
+          "ordinary_canonical_key": "000100020002",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "011201",
+              "saved_ordinal": 7,
+              "saved_rooted_table": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "canonical_root_images": [
+                2
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            },
+            {
+              "saved_key": "120112",
+              "saved_ordinal": 45,
+              "saved_rooted_table": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "canonical_root_images": [
+                1
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            3,
+            1,
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            1,
+            2,
+            3
+          ],
+          "loop_vertices": [
+            0,
+            2
+          ],
+          "self_loop_port_count": 2,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 2,
+            "2": 1,
+            "3": 1
+          }
+        }
+      ],
+      "all_pairs_of_saved_winners": [
+        {
+          "first_saved_key": "011201",
+          "second_saved_key": "120112",
+          "ordinary_isomorphisms": [
+            {
+              "old_to_new": [
+                2,
+                1,
+                0
+              ],
+              "port_flip_at_old_source": [
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "root_preserving_isomorphisms": []
+        }
+      ]
+    },
+    {
+      "m": 4,
+      "saved_exact_maximum": 10,
+      "rooted_winner_count": 1,
+      "ordinary_unrooted_shape_count": 1,
+      "shapes": [
+        {
+          "ordinary_canonical_key": "0001020300030102",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "12021303",
+              "saved_ordinal": 443,
+              "saved_rooted_table": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ],
+              "canonical_root_images": [
+                1
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "loop_vertices": [
+            0
+          ],
+          "self_loop_port_count": 1,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 1,
+            "2": 2,
+            "3": 2,
+            "4": 1
+          }
+        }
+      ],
+      "all_pairs_of_saved_winners": []
+    },
+    {
+      "m": 5,
+      "saved_exact_maximum": 15,
+      "rooted_winner_count": 5,
+      "ordinary_unrooted_shape_count": 4,
+      "shapes": [
+        {
+          "ordinary_canonical_key": "00010102030400020304",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "0123013424",
+              "saved_ordinal": 1391,
+              "saved_rooted_table": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "canonical_root_images": [
+                4
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            },
+            {
+              "saved_key": "1203123404",
+              "saved_ordinal": 5982,
+              "saved_rooted_table": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  0,
+                  4
+                ]
+              ],
+              "canonical_root_images": [
+                2
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "loop_vertices": [
+            0,
+            1,
+            4
+          ],
+          "self_loop_port_count": 3,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 3,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1
+          }
+        },
+        {
+          "ordinary_canonical_key": "00010203000100040204",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "1203340314",
+              "saved_ordinal": 6811,
+              "saved_rooted_table": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "canonical_root_images": [
+                1
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            3,
+            2,
+            2,
+            1,
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            1,
+            2,
+            2,
+            2,
+            3
+          ],
+          "loop_vertices": [
+            0,
+            4
+          ],
+          "self_loop_port_count": 2,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 2,
+            "2": 1,
+            "3": 2,
+            "4": 1,
+            "5": 1
+          }
+        },
+        {
+          "ordinary_canonical_key": "00010203000301040204",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "0123031424",
+              "saved_ordinal": 1511,
+              "saved_rooted_table": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  4
+                ]
+              ],
+              "canonical_root_images": [
+                0
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "loop_vertices": [
+            0,
+            4
+          ],
+          "self_loop_port_count": 2,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 2,
+            "2": 1,
+            "3": 3,
+            "5": 1
+          }
+        },
+        {
+          "ordinary_canonical_key": "00010203000402030102",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "1203142314",
+              "saved_ordinal": 6241,
+              "saved_rooted_table": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "canonical_root_images": [
+                4
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            2,
+            2,
+            3,
+            2,
+            1
+          ],
+          "indegree_multiset_counting_both_ports": [
+            1,
+            2,
+            2,
+            2,
+            3
+          ],
+          "loop_vertices": [
+            0,
+            3
+          ],
+          "self_loop_port_count": 2,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 2,
+            "2": 1,
+            "3": 2,
+            "4": 2
+          }
+        }
+      ],
+      "all_pairs_of_saved_winners": [
+        {
+          "first_saved_key": "0123013424",
+          "second_saved_key": "0123031424",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "0123013424",
+          "second_saved_key": "1203123404",
+          "ordinary_isomorphisms": [
+            {
+              "old_to_new": [
+                2,
+                1,
+                0,
+                3,
+                4
+              ],
+              "port_flip_at_old_source": [
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "0123013424",
+          "second_saved_key": "1203142314",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "0123013424",
+          "second_saved_key": "1203340314",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "0123031424",
+          "second_saved_key": "1203123404",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "0123031424",
+          "second_saved_key": "1203142314",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "0123031424",
+          "second_saved_key": "1203340314",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "1203123404",
+          "second_saved_key": "1203142314",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "1203123404",
+          "second_saved_key": "1203340314",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        },
+        {
+          "first_saved_key": "1203142314",
+          "second_saved_key": "1203340314",
+          "ordinary_isomorphisms": [],
+          "root_preserving_isomorphisms": []
+        }
+      ]
+    },
+    {
+      "m": 6,
+      "saved_exact_maximum": 23,
+      "rooted_winner_count": 2,
+      "ordinary_unrooted_shape_count": 1,
+      "shapes": [
+        {
+          "ordinary_canonical_key": "000102030203040500050104",
+          "ordinary_canonical_table": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "vertex_automorphism_count_with_unordered_ports": 1,
+          "vertex_orbits_under_automorphisms": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ]
+          ],
+          "maximizing_rooted_members": [
+            {
+              "saved_key": "012334250145",
+              "saved_ordinal": 33343,
+              "saved_rooted_table": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  4
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  5
+                ]
+              ],
+              "canonical_root_images": [
+                2
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            },
+            {
+              "saved_key": "120345230145",
+              "saved_ordinal": 117031,
+              "saved_rooted_table": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  3
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  5
+                ]
+              ],
+              "canonical_root_images": [
+                5
+              ],
+              "root_preserving_vertex_automorphism_count": 1,
+              "saved_witness_verified_over_all_masks": true
+            }
+          ],
+          "indegree_by_canonical_vertex_counting_both_ports": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "indegree_multiset_counting_both_ports": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "loop_vertices": [
+            0,
+            2
+          ],
+          "self_loop_port_count": 2,
+          "coincident_port_vertices": [],
+          "strongly_connected": true,
+          "simple_directed_cycle_counts_by_length": {
+            "1": 2,
+            "2": 1,
+            "3": 1,
+            "4": 3,
+            "5": 3,
+            "6": 1
+          }
+        }
+      ],
+      "all_pairs_of_saved_winners": [
+        {
+          "first_saved_key": "012334250145",
+          "second_saved_key": "120345230145",
+          "ordinary_isomorphisms": [
+            {
+              "old_to_new": [
+                5,
+                4,
+                0,
+                1,
+                2,
+                3
+              ],
+              "port_flip_at_old_source": [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "root_preserving_isomorphisms": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "review": "All three final PNGs visually inspected at generated resolution; SVG counterparts parsed and hashes checked",
+  "checks": [
+    "titles and legends readable",
+    "axis labels separate from notes and count table",
+    "whole-block actual count ranges visible",
+    "no text cropped by bar boundaries",
+    "local completeness and retrospective truth labels explicit"
+  ],
+  "artifacts": [
+    {
+      "path": "output/figures/family1-edit-candidates/budgeted-m7-ranking-recall.png",
+      "sha256": "486017b7c25121c6db9a71fa292083838dd6e05a2377ec763293141b366f2e6c"
+    },
+    {
+      "path": "output/figures/family1-edit-candidates/complete-local-growth-recall.png",
+      "sha256": "3e247d1b6744390a46cf7588ff65226d48ea174825155ad352d62467c099726d"
+    },
+    {
+      "path": "output/figures/family1-edit-candidates/complete-m7-elimination.png",
+      "sha256": "e843576a94787e6042db61e97f1d34db54a498fd5a6ad93dce139b1164a30f26"
+    },
+    {
+      "path": "output/figures/family1-edit-candidates/budgeted-m7-ranking-recall.svg",
+      "sha256": "acd588cacd716e3d310bf7cfa1277612160c12607f8af4d80591c2087e6127c0"
+    },
+    {
+      "path": "output/figures/family1-edit-candidates/complete-local-growth-recall.svg",
+      "sha256": "a7ad49a9117f46c263b9b769b25e4cdabedc1cf4c1f53b62532df4725e2f2eb0"
+    },
+    {
+      "path": "output/figures/family1-edit-candidates/complete-m7-elimination.svg",
+      "sha256": "cd757677429ec7f673fa80570e76d59b944a43ee995612fb94ccfa1d4ed5f1a6"
+    }
+  ],
+  "all_svg_xml_valid": true,
+  "artifact_hashes_verified": true,
+  "frozen_plot_data_reproduction": "All six regenerated PNG/SVG artifacts are byte-identical"
+}

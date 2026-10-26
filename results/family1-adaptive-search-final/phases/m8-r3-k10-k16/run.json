@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "method": "crowding-adaptive-heuristic-candidate-refinement",
+  "sources": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\archive-records.jsonl.gz",
+      "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+      "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+      "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\qualified-records.jsonl",
+      "sha256": "32187c2fcf95b70050600e3a91b0f57dbc0f494c7922e42c83a8dfc12be79fe2"
+    }
+  ],
+  "code": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_adaptive_candidate_search.py",
+      "sha256": "f6166db247f4424baddcd14a104ef8b6aad67c630b88e51a41785781d8b716c1"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_graph_candidate_search.py",
+      "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_study.py",
+      "sha256": "dabe12fc4cfe4e1a99b7c51da43ba1d690e82924d6490ab4ec8f85d95c9d1fe0"
+    }
+  ],
+  "exe": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1Sample.exe",
+    "sha256": "22a4e4ed04f93ec4028094ff3c976c19ca618a5e190c321efddf581bb14e3a08"
+  },
+  "dlls": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\flint-24.dll",
+      "sha256": "ca50ea88627919fb4b2fb7d11d252be1022640af7a3717a83576bc76e9b5a4e0"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\gmp-10.dll",
+      "sha256": "c568c5acf19e0a68ac5a9070c2a72e539043a7183d0629b98bb7625a43b66566"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\libz3.dll",
+      "sha256": "b1da9832307d494d878fec75c30cfa5a5777b59de43a37f5c77abd7281c9b6c1"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\mpfr-6.dll",
+      "sha256": "908bfb09f3a378766c41d9e42b0d3ea46d6627d43d212504a489f13d1fd4dd35"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\pthreadVC3.dll",
+      "sha256": "0135209b0530ae12a8dd7172be2764d4100c7d18e761630d91526a7c7877a4bc"
+    }
+  ],
+  "settings": {
+    "m": 8,
+    "jobs": 12,
+    "wall_seconds": 240,
+    "max_queries": 64,
+    "query_seconds": 20,
+    "crowding_threshold": 3,
+    "band_width": 2,
+    "batch_size": 12,
+    "window_multiplier": 4,
+    "min_expansions": 100000,
+    "memory_mib": 512,
+    "strong_prefix": false,
+    "seed": 1088,
+    "start_window": 10,
+    "admission_window": 8,
+    "admit_first": false,
+    "admit_pending": 0,
+    "max_length": 128
+  }
+}

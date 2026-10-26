@@ -1,0 +1,412 @@
+{
+  "1": {
+    "status": "exact",
+    "merge_length": 1,
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "witness": [
+      "0",
+      "1"
+    ],
+    "completed_injective_layers": [],
+    "all_static_masks": 2,
+    "first_collision_depth": 1,
+    "collision_layer_complete": false
+  },
+  "2": {
+    "status": "exact",
+    "merge_length": 3,
+    "lower_bound": 3,
+    "upper_bound": 3,
+    "witness": [
+      "010",
+      "100"
+    ],
+    "completed_injective_layers": [
+      {
+        "depth": 1,
+        "word_count": 2,
+        "distinct_complete_product_states": 2,
+        "vectors_sha256_in_word_order": "557ab3958ef6add24e13753188a3b659deed489a536a691cb0979fd3646f7e38",
+        "complete": true
+      },
+      {
+        "depth": 2,
+        "word_count": 4,
+        "distinct_complete_product_states": 4,
+        "vectors_sha256_in_word_order": "5dc667d12d711294d088bba5038e3ecefe848f79a1e9363189cf116acb5595eb",
+        "complete": true
+      }
+    ],
+    "all_static_masks": 4,
+    "first_collision_depth": 3,
+    "collision_layer_complete": false
+  },
+  "3": {
+    "status": "exact",
+    "merge_length": 1,
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "witness": [
+      "0",
+      "1"
+    ],
+    "completed_injective_layers": [],
+    "all_static_masks": 8,
+    "first_collision_depth": 1,
+    "collision_layer_complete": false
+  },
+  "4": {
+    "status": "exact",
+    "merge_length": 1,
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "witness": [
+      "0",
+      "1"
+    ],
+    "completed_injective_layers": [],
+    "all_static_masks": 16,
+    "first_collision_depth": 1,
+    "collision_layer_complete": false
+  },
+  "5": {
+    "status": "exact",
+    "merge_length": 1,
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "witness": [
+      "0",
+      "1"
+    ],
+    "completed_injective_layers": [],
+    "all_static_masks": 32,
+    "first_collision_depth": 1,
+    "collision_layer_complete": false
+  },
+  "6": {
+    "status": "exact",
+    "merge_length": 11,
+    "lower_bound": 11,
+    "upper_bound": 11,
+    "witness": [
+      "01000100100",
+      "01001000100"
+    ],
+    "completed_injective_layers": [
+      {
+        "depth": 1,
+        "word_count": 2,
+        "distinct_complete_product_states": 2,
+        "vectors_sha256_in_word_order": "802db282b42f39c0679eeb54bd959500547d2696b22a3dd5d8c2f33cc77f4938",
+        "complete": true
+      },
+      {
+        "depth": 2,
+        "word_count": 4,
+        "distinct_complete_product_states": 4,
+        "vectors_sha256_in_word_order": "52c3b56c4fc8c219fe0984e992ea52edf019a29c5fd6f47a9441048430da0d12",
+        "complete": true
+      },
+      {
+        "depth": 3,
+        "word_count": 8,
+        "distinct_complete_product_states": 8,
+        "vectors_sha256_in_word_order": "73e08e861fd2957dcab1f88972f93136e8baf7fca0234698c874e2ff02344626",
+        "complete": true
+      },
+      {
+        "depth": 4,
+        "word_count": 16,
+        "distinct_complete_product_states": 16,
+        "vectors_sha256_in_word_order": "8214dab7efbbfe11216397d7bb78336ea8e9fce39807825c244ef6ef665798ac",
+        "complete": true
+      },
+      {
+        "depth": 5,
+        "word_count": 32,
+        "distinct_complete_product_states": 32,
+        "vectors_sha256_in_word_order": "37447f3475fc429ad6f2ca76a9ee5e30b6834089b5ae37d17b2f0661f4e7db02",
+        "complete": true
+      },
+      {
+        "depth": 6,
+        "word_count": 64,
+        "distinct_complete_product_states": 64,
+        "vectors_sha256_in_word_order": "c75362b8a1502007d43da85187499119752a31bfa0646e4884419d33039f608f",
+        "complete": true
+      },
+      {
+        "depth": 7,
+        "word_count": 128,
+        "distinct_complete_product_states": 128,
+        "vectors_sha256_in_word_order": "5fec81736bed82c615fef7bdf321d2c249b48f5945102c934224a1172a22da77",
+        "complete": true
+      },
+      {
+        "depth": 8,
+        "word_count": 256,
+        "distinct_complete_product_states": 256,
+        "vectors_sha256_in_word_order": "72fe4ae47fb77931f045e663b9b186609f6212c2a474a207853c00b030745710",
+        "complete": true
+      },
+      {
+        "depth": 9,
+        "word_count": 512,
+        "distinct_complete_product_states": 512,
+        "vectors_sha256_in_word_order": "55d76ba639782ef17632a1d39c5fad46def142556de4f3a43d3576e9d4c8e120",
+        "complete": true
+      },
+      {
+        "depth": 10,
+        "word_count": 1024,
+        "distinct_complete_product_states": 1024,
+        "vectors_sha256_in_word_order": "0af99307d2ec0d2101e93904bd258b69e500c0fcabc670e4ad6b926e37a10bcb",
+        "complete": true
+      }
+    ],
+    "all_static_masks": 64,
+    "first_collision_depth": 11,
+    "collision_layer_complete": false
+  },
+  "7": {
+    "status": "exact",
+    "merge_length": 14,
+    "lower_bound": 14,
+    "upper_bound": 14,
+    "witness": [
+      "00100001000100",
+      "00100010000100"
+    ],
+    "completed_injective_layers": [
+      {
+        "depth": 1,
+        "word_count": 2,
+        "distinct_complete_product_states": 2,
+        "vectors_sha256_in_word_order": "c2bb63335cc391e8b312479c75d7b0365cc3f7df5a5d75d31303eed5dc7402d9",
+        "complete": true
+      },
+      {
+        "depth": 2,
+        "word_count": 4,
+        "distinct_complete_product_states": 4,
+        "vectors_sha256_in_word_order": "825b5ce6aa3bac02d0e827bdc13e0ff815ca15594403d0fbeac46ca1b416fb64",
+        "complete": true
+      },
+      {
+        "depth": 3,
+        "word_count": 8,
+        "distinct_complete_product_states": 8,
+        "vectors_sha256_in_word_order": "3b7099b78ebaf2128136d15d0d0798c2c07973c90f704a317f051683d44b2045",
+        "complete": true
+      },
+      {
+        "depth": 4,
+        "word_count": 16,
+        "distinct_complete_product_states": 16,
+        "vectors_sha256_in_word_order": "2f3e464b48ea2554aca43b53402a8596f03656e80eefc0f5e8f1eaee4b886908",
+        "complete": true
+      },
+      {
+        "depth": 5,
+        "word_count": 32,
+        "distinct_complete_product_states": 32,
+        "vectors_sha256_in_word_order": "13e9c5221353f4b1820d62792b4513ded9caef37a120f695dd50d843be45dee1",
+        "complete": true
+      },
+      {
+        "depth": 6,
+        "word_count": 64,
+        "distinct_complete_product_states": 64,
+        "vectors_sha256_in_word_order": "fa371fdace218cc63ef48218a6c6193f9d9b59acee74451b557581ac91a6bf02",
+        "complete": true
+      },
+      {
+        "depth": 7,
+        "word_count": 128,
+        "distinct_complete_product_states": 128,
+        "vectors_sha256_in_word_order": "4eb2a514bd33dd4fc4f5c2a5104ba2118643497c3261cbaf32d3fbdcdc703362",
+        "complete": true
+      },
+      {
+        "depth": 8,
+        "word_count": 256,
+        "distinct_complete_product_states": 256,
+        "vectors_sha256_in_word_order": "7f8a5f848e4ae68f0d0acd0f2d58954979b93d5fa3e289942ca84f9309cb4135",
+        "complete": true
+      },
+      {
+        "depth": 9,
+        "word_count": 512,
+        "distinct_complete_product_states": 512,
+        "vectors_sha256_in_word_order": "cc7d051e08ce93b53e51f8d9b5d401834ee58bd31465b0c6657dff0cb05a69ba",
+        "complete": true
+      },
+      {
+        "depth": 10,
+        "word_count": 1024,
+        "distinct_complete_product_states": 1024,
+        "vectors_sha256_in_word_order": "c51301d25dc66e2b1dbe9720784a9652696cb7d9fc79e53f8bfe5a0e0d5e374c",
+        "complete": true
+      },
+      {
+        "depth": 11,
+        "word_count": 2048,
+        "distinct_complete_product_states": 2048,
+        "vectors_sha256_in_word_order": "f08a9ccd84b64085103e79ade1cebf03317af769ff7c0170f04307826f19d7e3",
+        "complete": true
+      },
+      {
+        "depth": 12,
+        "word_count": 4096,
+        "distinct_complete_product_states": 4096,
+        "vectors_sha256_in_word_order": "7613e2d4582c05bc93ac993420f060fa1a9e19192ac8786bdfc2b2a26141b3c3",
+        "complete": true
+      },
+      {
+        "depth": 13,
+        "word_count": 8192,
+        "distinct_complete_product_states": 8192,
+        "vectors_sha256_in_word_order": "1164511becc4c9a9ad431df6e3cfb410fe353476e0c0be7d728be86a59ccf9e1",
+        "complete": true
+      }
+    ],
+    "all_static_masks": 128,
+    "first_collision_depth": 14,
+    "collision_layer_complete": false
+  },
+  "8": {
+    "status": "exact",
+    "merge_length": 18,
+    "lower_bound": 18,
+    "upper_bound": 18,
+    "witness": [
+      "001110001110011100",
+      "001110011100011100"
+    ],
+    "completed_injective_layers": [
+      {
+        "depth": 1,
+        "word_count": 2,
+        "distinct_complete_product_states": 2,
+        "vectors_sha256_in_word_order": "f153a967f6be6f50dca03589d9e0ec22711d9903dd746a95f5572c4c3c07d854",
+        "complete": true
+      },
+      {
+        "depth": 2,
+        "word_count": 4,
+        "distinct_complete_product_states": 4,
+        "vectors_sha256_in_word_order": "7efcb4b94963ea513cda154a621d54b494fd56b2a2c515fc1fe8b4d7222fc214",
+        "complete": true
+      },
+      {
+        "depth": 3,
+        "word_count": 8,
+        "distinct_complete_product_states": 8,
+        "vectors_sha256_in_word_order": "67ae15fd4a281993f23c5b6f741a853a0453ec4fe3593c5a53074bc900470240",
+        "complete": true
+      },
+      {
+        "depth": 4,
+        "word_count": 16,
+        "distinct_complete_product_states": 16,
+        "vectors_sha256_in_word_order": "66be7edde0003cec7717e5121f25dc14516329ca82f34ba6487a6fcd4432f146",
+        "complete": true
+      },
+      {
+        "depth": 5,
+        "word_count": 32,
+        "distinct_complete_product_states": 32,
+        "vectors_sha256_in_word_order": "13f01d420a35987fcda4bacd03a9d6a8a29b2e770ec38f1e11fc043aed3b4612",
+        "complete": true
+      },
+      {
+        "depth": 6,
+        "word_count": 64,
+        "distinct_complete_product_states": 64,
+        "vectors_sha256_in_word_order": "c890ac318b1b771f7d73e5f5a0f4c7bed1a48a86d800a48a80b89ace1377760e",
+        "complete": true
+      },
+      {
+        "depth": 7,
+        "word_count": 128,
+        "distinct_complete_product_states": 128,
+        "vectors_sha256_in_word_order": "de8bd8ff92537a25ea15df73a36da4358b7578f58344550b11a2bb27c05ef26d",
+        "complete": true
+      },
+      {
+        "depth": 8,
+        "word_count": 256,
+        "distinct_complete_product_states": 256,
+        "vectors_sha256_in_word_order": "e8cba0c62fa3454f0788d8b27219c6b7e74c2461d5750002c6e38426c4afdd5e",
+        "complete": true
+      },
+      {
+        "depth": 9,
+        "word_count": 512,
+        "distinct_complete_product_states": 512,
+        "vectors_sha256_in_word_order": "99cd72803ea388cd23283fbe2f3b763e63fa49542d4a8ba771a9eea98d1197b9",
+        "complete": true
+      },
+      {
+        "depth": 10,
+        "word_count": 1024,
+        "distinct_complete_product_states": 1024,
+        "vectors_sha256_in_word_order": "b8778c371ff91cbd5874651618b2632184893082565cbcfa9185cd55eb9939e7",
+        "complete": true
+      },
+      {
+        "depth": 11,
+        "word_count": 2048,
+        "distinct_complete_product_states": 2048,
+        "vectors_sha256_in_word_order": "2cb146559a134af392a4ca0aa404a974f626b98a5dbdf4203494f4ee1533cb25",
+        "complete": true
+      },
+      {
+        "depth": 12,
+        "word_count": 4096,
+        "distinct_complete_product_states": 4096,
+        "vectors_sha256_in_word_order": "88b526cacff71503c1d0812aadab98b2ef54e220be2832432df99dae20feb65c",
+        "complete": true
+      },
+      {
+        "depth": 13,
+        "word_count": 8192,
+        "distinct_complete_product_states": 8192,
+        "vectors_sha256_in_word_order": "9c1c8456719f0cee16aa14b17360a7dc83d2fb0ee5332461e0f7f44cc3186d58",
+        "complete": true
+      },
+      {
+        "depth": 14,
+        "word_count": 16384,
+        "distinct_complete_product_states": 16384,
+        "vectors_sha256_in_word_order": "0fc7199507e0b22df524e19d05da53338d801f99591104185afdf9050ec909fa",
+        "complete": true
+      },
+      {
+        "depth": 15,
+        "word_count": 32768,
+        "distinct_complete_product_states": 32768,
+        "vectors_sha256_in_word_order": "a78c600a5e60172562f852d911ce0d7b06cf13ae8a83392b93a7073fef40b51a",
+        "complete": true
+      },
+      {
+        "depth": 16,
+        "word_count": 65536,
+        "distinct_complete_product_states": 65536,
+        "vectors_sha256_in_word_order": "aeab3f2695ae0125578b17465eec47ab16c8bf7ae19c8a97e59b54e4f0d28115",
+        "complete": true
+      },
+      {
+        "depth": 17,
+        "word_count": 131072,
+        "distinct_complete_product_states": 131072,
+        "vectors_sha256_in_word_order": "6f63e3443ca798522985a4f34bb036f3a11c61ff3ba131072dc4f66fe11691e7",
+        "complete": true
+      }
+    ],
+    "all_static_masks": 256,
+    "first_collision_depth": 18,
+    "collision_layer_complete": false
+  }
+}

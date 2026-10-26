@@ -1,0 +1,8 @@
+{
+  "states": 4,
+  "threshold": 10,
+  "independent_solver": "PicoSAT",
+  "result": "UNSAT",
+  "clauses": 45083,
+  "drat_trace_checked": false
+}

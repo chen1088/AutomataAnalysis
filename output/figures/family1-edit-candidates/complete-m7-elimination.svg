@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="534.528pt" height="326.186062pt" viewBox="0 0 534.528 326.186062" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Family1 sealed benchmark plotting</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 326.186062 
+L 534.528 326.186062 
+L 534.528 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 12.27442 143.05824 
+L 495.427379 143.05824 
+L 495.427379 112.45536 
+L 12.27442 112.45536 
+z
+" clip-path="url(#p3423896091)" style="fill: #0072b2; stroke: #ffffff; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 495.427379 143.05824 
+L 519.411807 143.05824 
+L 519.411807 112.45536 
+L 495.427379 112.45536 
+z
+" clip-path="url(#p3423896091)" style="fill: #d55e00; stroke: #ffffff; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 519.411807 143.05824 
+L 519.716371 143.05824 
+L 519.716371 112.45536 
+L 519.411807 112.45536 
+z
+" clip-path="url(#p3423896091)" style="fill: #009e73; stroke: #ffffff; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 12.27442 215.92224 
+L 513.353462 215.92224 
+L 513.353462 185.31936 
+L 12.27442 185.31936 
+z
+" clip-path="url(#p3423896091)" style="fill: #d55e00; stroke: #ffffff; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 513.353462 215.92224 
+L 519.716371 215.92224 
+L 519.716371 185.31936 
+L 513.353462 185.31936 
+z
+" clip-path="url(#p3423896091)" style="fill: #009e73; stroke: #ffffff; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="12.27442" y="102.98304" transform="rotate(-0 12.27442 102.98304)">13,329 graphs — complete local pool</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(189.176915 124.013148)">12,691 certified H ≤ 33</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(201.557931 137.216155)">95.21% of the pool</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 408.234943 97.660059 
+Q 456.931806 109.556511 505.628669 121.452962 
+" style="fill: none; stroke: #6b7280; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #6b7280" x="377.632624" y="92.78208" transform="rotate(-0 377.632624 92.78208)">638 not eliminated</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="12.27442" y="175.84704" transform="rotate(-0 12.27442 175.84704)">638 survivors — conditional zoom</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(208.437847 196.877148)">630 nonmaximizers</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #ffffff" transform="translate(197.609722 210.080155)">unresolved by this filter</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 444.528895 226.095948 
+Q 479.576015 215.115149 514.623136 204.13435 
+" style="fill: none; stroke: #009e73; stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #009e73" transform="translate(346.286552 237.29268)">8 known maximizers</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #009e73" transform="translate(344.765459 249.295414)">(retrospective labels)</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="249.12" y="17.837812" transform="rotate(-0 249.12 17.837812)">Certified elimination in the complete local seven-state pool</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="249.12" y="28.728" transform="rotate(-0 249.12 28.728)">Short-witness search at length ≤ 33; 128 prefix seeds per graph</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6b7280" x="7.2" y="303.624" transform="rotate(-0 7.2 303.624)">Ground-truth labels were applied after sealing generation, ranking and query plans.</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6b7280" x="7.2" y="316.872" transform="rotate(-0 7.2 316.872)">A filter miss supplies no new lower bound. Graphs outside this local pool are not excluded.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3423896091">
+   <rect x="7.2" y="76.752" width="520.128" height="182.16"/>
+  </clipPath>
+ </defs>
+</svg>

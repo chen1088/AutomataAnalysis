@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "graph_and_construction_unchanged": true,
+  "native_lower_manifest_and_all_source_pins_validated": true,
+  "upper_witness_masks_independently_replayed": 256,
+  "lower_bound": 35,
+  "upper_bound": 52,
+  "global_maximum_certified": false
+}

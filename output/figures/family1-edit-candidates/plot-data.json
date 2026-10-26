@@ -1,0 +1,687 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "path": "results/family1-edit-candidate-benchmark/observations.jsonl",
+      "sha256": "73dfa1267b38de71470757f0e7198873a9932916154dce133f6b9467ac7b02c3"
+    },
+    {
+      "path": "results/family1-edit-candidate-benchmark/generation-seal.json",
+      "sha256": "567805d0a604ce968d5bcd7a1a08040818088c355c5c25267da8877da47fb515"
+    },
+    {
+      "path": "results/family1-edit-ranked-candidate-benchmark/observations.jsonl",
+      "sha256": "c67c4c12d8b56c7c1987bddd05cf1323f03dd643e161a4c2fb3f1e64d87a0254"
+    },
+    {
+      "path": "results/family1-edit-elimination-complete-m7/summary.json",
+      "sha256": "07cde468d213d7b64acb4c28483c583064f39ab9e8e4860c8753b2cca373caf5"
+    },
+    {
+      "path": "results/family1-edit-elimination-complete-m7/analysis.json",
+      "sha256": "3483722ba7dca64b37e09adbcfa51230e530f421c3c57466fe8044ce418b80de"
+    },
+    {
+      "path": "out/family1-edit-candidate-benchmark/native/m2-near2-complete-growth-r1-s1088-roots1/candidates.jsonl",
+      "sha256": "1abcf1d981c5469524612d8076393f68ee24ec493b1a36805d3896c04cd36049"
+    },
+    {
+      "path": "out/family1-edit-candidate-benchmark/native/m3-near2-complete-growth-r1-s1088-roots1/candidates.jsonl",
+      "sha256": "14fcf7d8a4a46a768f8d281c573c28843e54bb8ef296bdfc3e9f03107e3bf6ab"
+    },
+    {
+      "path": "out/family1-edit-candidate-benchmark/native/m4-near2-complete-growth-r1-s1088-roots1/candidates.jsonl",
+      "sha256": "ef7cd07059632b98c7e241a73b583982b82d31e2ca160775ed43dab21b11648f"
+    },
+    {
+      "path": "out/family1-edit-candidate-benchmark/native/m5-near2-complete-growth-r1-s1088-roots1/candidates.jsonl",
+      "sha256": "bc1bc3204da12e14d47fec071a1609c2d18a9b574ef4c01828ab3508db75556f"
+    },
+    {
+      "path": "out/family1-edit-candidate-benchmark/native/m6-near2-complete-growth-r1-s1088-roots1/candidates.jsonl",
+      "sha256": "ad0698fb18cd8deba39bfa045147908b44a9c72267b0e9ba6b523dbf961581d7"
+    },
+    {
+      "path": "out/family1-edit-candidate-benchmark/native/m7-near2-complete-growth-r1-s1088-roots1/candidates.jsonl",
+      "sha256": "4ac514b524d13a1308e28602d3fa19d7bf29d3bc39c528d9a2b7e812609ed36a"
+    }
+  ],
+  "full_local_growth": [
+    {
+      "m": 2,
+      "parents": "winners",
+      "all_roots": false,
+      "hits": 1,
+      "total": 1,
+      "actual_candidates": 2,
+      "run_id": "m2-winners-r1-s1088-roots0",
+      "local_complete": true
+    },
+    {
+      "m": 2,
+      "parents": "winners",
+      "all_roots": true,
+      "hits": 1,
+      "total": 1,
+      "actual_candidates": 2,
+      "run_id": "m2-winners-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 2,
+      "parents": "near2",
+      "all_roots": false,
+      "hits": 1,
+      "total": 1,
+      "actual_candidates": 2,
+      "run_id": "m2-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 2,
+      "parents": "near2",
+      "all_roots": true,
+      "hits": 1,
+      "total": 1,
+      "actual_candidates": 2,
+      "run_id": "m2-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 3,
+      "parents": "winners",
+      "all_roots": false,
+      "hits": 0,
+      "total": 2,
+      "actual_candidates": 7,
+      "run_id": "m3-winners-r1-s1088-roots0",
+      "local_complete": true
+    },
+    {
+      "m": 3,
+      "parents": "winners",
+      "all_roots": true,
+      "hits": 0,
+      "total": 2,
+      "actual_candidates": 7,
+      "run_id": "m3-winners-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 3,
+      "parents": "near2",
+      "all_roots": false,
+      "hits": 1,
+      "total": 2,
+      "actual_candidates": 33,
+      "run_id": "m3-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 3,
+      "parents": "near2",
+      "all_roots": true,
+      "hits": 2,
+      "total": 2,
+      "actual_candidates": 42,
+      "run_id": "m3-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 4,
+      "parents": "winners",
+      "all_roots": false,
+      "hits": 0,
+      "total": 1,
+      "actual_candidates": 39,
+      "run_id": "m4-winners-r1-s1088-roots0",
+      "local_complete": true
+    },
+    {
+      "m": 4,
+      "parents": "winners",
+      "all_roots": true,
+      "hits": 0,
+      "total": 1,
+      "actual_candidates": 70,
+      "run_id": "m4-winners-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 4,
+      "parents": "near2",
+      "all_roots": false,
+      "hits": 1,
+      "total": 1,
+      "actual_candidates": 276,
+      "run_id": "m4-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 4,
+      "parents": "near2",
+      "all_roots": true,
+      "hits": 1,
+      "total": 1,
+      "actual_candidates": 364,
+      "run_id": "m4-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 5,
+      "parents": "winners",
+      "all_roots": false,
+      "hits": 0,
+      "total": 5,
+      "actual_candidates": 25,
+      "run_id": "m5-winners-r1-s1088-roots0",
+      "local_complete": true
+    },
+    {
+      "m": 5,
+      "parents": "winners",
+      "all_roots": true,
+      "hits": 1,
+      "total": 5,
+      "actual_candidates": 72,
+      "run_id": "m5-winners-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 5,
+      "parents": "near2",
+      "all_roots": false,
+      "hits": 5,
+      "total": 5,
+      "actual_candidates": 1065,
+      "run_id": "m5-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 5,
+      "parents": "near2",
+      "all_roots": true,
+      "hits": 5,
+      "total": 5,
+      "actual_candidates": 1915,
+      "run_id": "m5-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 6,
+      "parents": "winners",
+      "all_roots": false,
+      "hits": 1,
+      "total": 2,
+      "actual_candidates": 212,
+      "run_id": "m6-winners-r1-s1088-roots0",
+      "local_complete": true
+    },
+    {
+      "m": 6,
+      "parents": "winners",
+      "all_roots": true,
+      "hits": 2,
+      "total": 2,
+      "actual_candidates": 885,
+      "run_id": "m6-winners-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 6,
+      "parents": "near2",
+      "all_roots": false,
+      "hits": 2,
+      "total": 2,
+      "actual_candidates": 5066,
+      "run_id": "m6-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 6,
+      "parents": "near2",
+      "all_roots": true,
+      "hits": 2,
+      "total": 2,
+      "actual_candidates": 11693,
+      "run_id": "m6-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 7,
+      "parents": "winners",
+      "all_roots": false,
+      "hits": 1,
+      "total": 8,
+      "actual_candidates": 123,
+      "run_id": "m7-winners-r1-s1088-roots0",
+      "local_complete": true
+    },
+    {
+      "m": 7,
+      "parents": "winners",
+      "all_roots": true,
+      "hits": 3,
+      "total": 8,
+      "actual_candidates": 391,
+      "run_id": "m7-winners-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 7,
+      "parents": "near2",
+      "all_roots": false,
+      "hits": 8,
+      "total": 8,
+      "actual_candidates": 3581,
+      "run_id": "m7-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    },
+    {
+      "m": 7,
+      "parents": "near2",
+      "all_roots": true,
+      "hits": 8,
+      "total": 8,
+      "actual_candidates": 13329,
+      "run_id": "m7-near2-complete-growth-r1-s1088-roots1",
+      "local_complete": true
+    }
+  ],
+  "budgeted_m7_rankings": [
+    {
+      "strategy": "discovery",
+      "nominal_budget": 32,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 35
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 35
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 35
+        }
+      ]
+    },
+    {
+      "strategy": "discovery",
+      "nominal_budget": 128,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 133
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 133
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 133
+        }
+      ]
+    },
+    {
+      "strategy": "discovery",
+      "nominal_budget": 512,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 518
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 518
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 518
+        }
+      ]
+    },
+    {
+      "strategy": "discovery",
+      "nominal_budget": 2048,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 2053
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 2051
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 2053
+        }
+      ]
+    },
+    {
+      "strategy": "structural",
+      "nominal_budget": 32,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 35
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 32
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 37
+        }
+      ]
+    },
+    {
+      "strategy": "structural",
+      "nominal_budget": 128,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 130
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 134
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 132
+        }
+      ]
+    },
+    {
+      "strategy": "structural",
+      "nominal_budget": 512,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 2,
+          "total": 8,
+          "actual_candidates": 514
+        },
+        {
+          "seed": 2027,
+          "hits": 1,
+          "total": 8,
+          "actual_candidates": 515
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 517
+        }
+      ]
+    },
+    {
+      "strategy": "structural",
+      "nominal_budget": 2048,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 8,
+          "total": 8,
+          "actual_candidates": 2049
+        },
+        {
+          "seed": 2027,
+          "hits": 7,
+          "total": 8,
+          "actual_candidates": 2054
+        },
+        {
+          "seed": 65537,
+          "hits": 7,
+          "total": 8,
+          "actual_candidates": 2054
+        }
+      ]
+    },
+    {
+      "strategy": "parent-strata",
+      "nominal_budget": 32,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 1,
+          "total": 8,
+          "actual_candidates": 35
+        },
+        {
+          "seed": 2027,
+          "hits": 1,
+          "total": 8,
+          "actual_candidates": 35
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 32
+        }
+      ]
+    },
+    {
+      "strategy": "parent-strata",
+      "nominal_budget": 128,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 1,
+          "total": 8,
+          "actual_candidates": 129
+        },
+        {
+          "seed": 2027,
+          "hits": 1,
+          "total": 8,
+          "actual_candidates": 130
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 128
+        }
+      ]
+    },
+    {
+      "strategy": "parent-strata",
+      "nominal_budget": 512,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 3,
+          "total": 8,
+          "actual_candidates": 516
+        },
+        {
+          "seed": 2027,
+          "hits": 2,
+          "total": 8,
+          "actual_candidates": 513
+        },
+        {
+          "seed": 65537,
+          "hits": 1,
+          "total": 8,
+          "actual_candidates": 515
+        }
+      ]
+    },
+    {
+      "strategy": "parent-strata",
+      "nominal_budget": 2048,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 8,
+          "total": 8,
+          "actual_candidates": 2051
+        },
+        {
+          "seed": 2027,
+          "hits": 8,
+          "total": 8,
+          "actual_candidates": 2050
+        },
+        {
+          "seed": 65537,
+          "hits": 8,
+          "total": 8,
+          "actual_candidates": 2048
+        }
+      ]
+    },
+    {
+      "strategy": "matched-random",
+      "nominal_budget": 32,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 35
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 38
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 39
+        }
+      ]
+    },
+    {
+      "strategy": "matched-random",
+      "nominal_budget": 128,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 133
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 138
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 133
+        }
+      ]
+    },
+    {
+      "strategy": "matched-random",
+      "nominal_budget": 512,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 523
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 519
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 521
+        }
+      ]
+    },
+    {
+      "strategy": "matched-random",
+      "nominal_budget": 2048,
+      "seeds": [
+        {
+          "seed": 1088,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 2057
+        },
+        {
+          "seed": 2027,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 2055
+        },
+        {
+          "seed": 65537,
+          "hits": 0,
+          "total": 8,
+          "actual_candidates": 2054
+        }
+      ]
+    }
+  ],
+  "full_m7_filter": {
+    "total": 13329,
+    "certified_weaker": 12691,
+    "unresolved_nonwinners": 630,
+    "known_winners": 8,
+    "false_eliminations": 0
+  },
+  "global_graph_enumeration_claimed": false,
+  "ranking_truth_loaded_only_after_seal": true,
+  "random_sampling": "uniform labelled port tables, accessibility rejection, rooted-class deduplication; not uniform graph classes"
+}

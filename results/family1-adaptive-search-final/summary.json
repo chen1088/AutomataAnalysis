@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "archived_rooted_classes": 45004,
+  "eligible_refined_classes": 311,
+  "pending_coarse_classes": 44693,
+  "active_best_keys": [
+    "01020003040501060003020705060407"
+  ],
+  "active_verified_upper_length": 50,
+  "heuristic_point": 49,
+  "heuristic_rough_band": [
+    48,
+    50
+  ],
+  "heuristic_band_certified": false,
+  "top_band_within_two_count": 5,
+  "maximum_window_k": 16,
+  "global_maximum_claimed": false,
+  "misses_create_lower_bounds": false,
+  "m8_adaptive_core_queries": 58,
+  "m8_broad_queries": 11,
+  "m8_outer_r3_qualification_queries": 261,
+  "m7_calibration_queries": 31,
+  "final_scalar_graph_mask_checks": 79616,
+  "final_scalar_and_bitset_audit_passed": true,
+  "m7_final_lengths": [
+    34,
+    34,
+    34,
+    34,
+    34,
+    35,
+    36,
+    38
+  ],
+  "m7_rough_band_coverage": {
+    "covered": 7,
+    "total": 8,
+    "certified": false
+  },
+  "final_record_source": {
+    "path": "out/family1-m8-adaptive-r3-broad-fixed-checkpoint/records.jsonl",
+    "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+  },
+  "complete_archive_source": {
+    "path": "out/family1-m8-adaptive-edit-r3/archive-records.jsonl.gz",
+    "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+  },
+  "sources": [
+    {
+      "path": "scripts/family1_adaptive_candidate_search.py",
+      "sha256": "f6166db247f4424baddcd14a104ef8b6aad67c630b88e51a41785781d8b716c1"
+    },
+    {
+      "path": "scripts/family1_broad_prefix_refinement.py",
+      "sha256": "81b5964eb2417ece64cc79674d88a836a4dd8d3296484c35de374702911c09b3"
+    },
+    {
+      "path": "scripts/family1_graph_candidate_search.py",
+      "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+    },
+    {
+      "path": "tests/family1_adaptive_candidate_search_test.py",
+      "sha256": "6fb9a03eb2d60119d4aa264f1e4189126176fbe515eaff7dc431587d04b1f96d"
+    },
+    {
+      "path": "tests/family1_adaptive_candidate_benchmark.py",
+      "sha256": "fc018723c577f79b97d69571f719863e4caeb867749c9ce6d6d0ff199cb559f8"
+    }
+  ],
+  "native_tests_parent_reported": {
+    "Release": 34,
+    "Debug": 34,
+    "all_passed": true
+  },
+  "adaptive_specific_tests": {
+    "Release": 8,
+    "Debug": 8,
+    "all_passed": true
+  }
+}

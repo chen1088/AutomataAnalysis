@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "method": "general-bounded-calibrated-style-graph-candidate-portfolio",
+  "settings": {
+    "max_shapes": 0,
+    "length_caps": [
+      5
+    ],
+    "target_upper": 5,
+    "incumbent_lower": 6,
+    "enable_stage2": true,
+    "jobs": 2,
+    "seed": 1088,
+    "beam_width": 16,
+    "memory_mib": 512,
+    "tail_threshold": 8,
+    "tail_max_states": 100000,
+    "viability_coordinates": 128,
+    "prefix_samples_per_depth": 16,
+    "stage1_k": 6,
+    "stage1_samples": 8,
+    "stage1_prefix_pairs": 8,
+    "stage1_prefix_depth": 4,
+    "stage1_prefix_words": 16,
+    "stage1_expansions": 10000,
+    "stage1_timeout": 5,
+    "stage2_k": 16,
+    "stage2_samples": 16,
+    "stage2_prefix_pairs": 16,
+    "stage2_prefix_depth": 4,
+    "stage2_prefix_words": 16,
+    "stage2_expansions": 500,
+    "stage2_timeout": 5,
+    "query_mode": "incumbent-elimination"
+  },
+  "candidates": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-candidate-module-pilot\\edit-m3-winner\\candidates.jsonl",
+      "sha256": "2d68211f33ef7d010cc0fb019c2de760db6de393afed3a727434265121af8b72"
+    }
+  ],
+  "bounds": [],
+  "native_executable": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1Sample.exe",
+    "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+  },
+  "native_dlls": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\flint-24.dll",
+      "sha256": "ca50ea88627919fb4b2fb7d11d252be1022640af7a3717a83576bc76e9b5a4e0"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\gmp-10.dll",
+      "sha256": "c568c5acf19e0a68ac5a9070c2a72e539043a7183d0629b98bb7625a43b66566"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\libz3.dll",
+      "sha256": "b1da9832307d494d878fec75c30cfa5a5777b59de43a37f5c77abd7281c9b6c1"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\mpfr-6.dll",
+      "sha256": "908bfb09f3a378766c41d9e42b0d3ea46d6627d43d212504a489f13d1fd4dd35"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\pthreadVC3.dll",
+      "sha256": "0135209b0530ae12a8dd7172be2764d4100c7d18e761630d91526a7c7877a4bc"
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_graph_candidate_search.py",
+      "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_study.py",
+      "sha256": "dabe12fc4cfe4e1a99b7c51da43ba1d690e82924d6490ab4ec8f85d95c9d1fe0"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\family1_sample.cpp",
+      "sha256": "b7787e25efe2fb98970180a9d003237862c9becf99bf4444d878e728ee0595da"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\Family1LargeGraph.h",
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\Family1LargeGraph.cpp",
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\Family1PairAgreement.h",
+      "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\Family1FullGuidance.h",
+      "sha256": "6a1233e2e3a49a4b2fcf87cb3040caf5e8b350b8935fe0a772d5e9b9c3f9e0ec"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\HardPairFinder.h",
+      "sha256": "1f634faccadff9a47efeaee5bc78f91c81c57e76dd5bd118f1504bbc0244c58e"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\HardPairPrefixSeeds.h",
+      "sha256": "cacc00cd5526d5c0b1f4a80e1e432fd22e1bf85325b5f1936b36ac7b4b3e7147"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\HardPairViability.h",
+      "sha256": "04152a0fecdccccbbc263da62d11c6121cb3b9323fec41344a28ccc50320ff21"
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\Family1CliArtifacts.h",
+      "sha256": "f4da56617b1b7db069dfc8b46815863097c2022ec9efa5b6b76470b155ce915c"
+    }
+  ],
+  "plan_sha256": "835c2930ec52a7cb4dbb45cb294518c99a0507d89c998142c623c792d1de3022",
+  "scorer_uses_only_graph_and_explicit_settings": true,
+  "saved_word_hints_used": false,
+  "imported_intervals_do_not_control_search_schedule": true,
+  "default_stage2_memory_scaling_is_reported": true
+}

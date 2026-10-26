@@ -1,0 +1,315 @@
+{
+  "schema": 1,
+  "parent_m": 4,
+  "child_m": 5,
+  "operation_scope": "Keep root 0; delete one nonroot indegree-2 vertex; reconnect both external edge bijections, or smooth one external edge and delete its single self-loop; retain root-accessible parents.",
+  "scope_exhaustive": "Every allowed operation on all certified child maximizers, not every possible definition of graph growth.",
+  "parent_global_maximum": 10,
+  "child_global_maximum": 15,
+  "child_maximizer_count": 5,
+  "child_count": 5,
+  "parent_maximizer_count": 1,
+  "parent_winners_with_winning_child": 0,
+  "winner_links": [],
+  "parent_winner_coverage": [
+    {
+      "key": "0102000201030003",
+      "ordinal": 443,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "merge_length": 10,
+      "has_winning_child": false,
+      "child_keys": [],
+      "operation_ids": []
+    }
+  ],
+  "children_with_global_maximizing_parent": 0,
+  "children_with_ordinary_winning_shape_parent": 1,
+  "child_ordinary_shape_count": 4,
+  "child_ordinary_shapes_with_ordinary_winning_shape_parent": 1,
+  "distinct_parent_classes": 17,
+  "operation_count": 25,
+  "accessible_operation_count": 25,
+  "inaccessible_operation_count": 0,
+  "all_accessible_operations_reverse_verified": true,
+  "parent_scores_loaded": 678,
+  "sources": {
+    "parent_scores": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m1-m6\\graphs.jsonl",
+      "sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156"
+    },
+    "parent_summary": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m1-m6\\summary.json",
+      "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+    },
+    "child_maximizers": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m1-m6\\maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    "child_summary": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m1-m6\\summary.json",
+      "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+    }
+  },
+  "children": [
+    {
+      "key": "00010203000103040204",
+      "ordinal": 1391,
+      "canonical_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "merge_length": 15,
+      "accessible_parent_count": 3,
+      "accessible_operation_count": 6,
+      "inaccessible_operation_count": 0,
+      "parent_score_histogram": {
+        "7": 2,
+        "9": 1
+      },
+      "best_parent_merge_length": 9,
+      "best_parent_keys": [
+        "0001020300010203"
+      ],
+      "increase_from_best_parent": 6,
+      "has_global_maximizing_parent": false,
+      "ordinary_shape_key": "00010102030400020304",
+      "ordinary_winning_shape_parent_keys": [],
+      "ordinary_winning_shape_parent_scores": {},
+      "best_operation_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "00010203000301040204",
+      "ordinal": 1511,
+      "canonical_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "merge_length": 15,
+      "accessible_parent_count": 6,
+      "accessible_operation_count": 7,
+      "inaccessible_operation_count": 0,
+      "parent_score_histogram": {
+        "6": 1,
+        "7": 3,
+        "9": 2
+      },
+      "best_parent_merge_length": 9,
+      "best_parent_keys": [
+        "0001020300010203",
+        "0001020300030102"
+      ],
+      "increase_from_best_parent": 6,
+      "has_global_maximizing_parent": false,
+      "ordinary_shape_key": "00010203000301040204",
+      "ordinary_winning_shape_parent_keys": [
+        "0001020300030102"
+      ],
+      "ordinary_winning_shape_parent_scores": {
+        "0001020300030102": 9
+      },
+      "best_operation_ids": [
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "01020003010203040004",
+      "ordinal": 5982,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "merge_length": 15,
+      "accessible_parent_count": 4,
+      "accessible_operation_count": 5,
+      "inaccessible_operation_count": 0,
+      "parent_score_histogram": {
+        "1": 1,
+        "7": 2,
+        "9": 1
+      },
+      "best_parent_merge_length": 9,
+      "best_parent_keys": [
+        "0102000301020003"
+      ],
+      "increase_from_best_parent": 6,
+      "has_global_maximizing_parent": false,
+      "ordinary_shape_key": "00010102030400020304",
+      "ordinary_winning_shape_parent_keys": [],
+      "ordinary_winning_shape_parent_scores": {},
+      "best_operation_ids": [
+        16,
+        17
+      ]
+    },
+    {
+      "key": "01020003010402030104",
+      "ordinal": 6241,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "merge_length": 15,
+      "accessible_parent_count": 4,
+      "accessible_operation_count": 4,
+      "inaccessible_operation_count": 0,
+      "parent_score_histogram": {
+        "1": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "best_parent_merge_length": 9,
+      "best_parent_keys": [
+        "0102000201030103"
+      ],
+      "increase_from_best_parent": 6,
+      "has_global_maximizing_parent": false,
+      "ordinary_shape_key": "00010203000402030102",
+      "ordinary_winning_shape_parent_keys": [],
+      "ordinary_winning_shape_parent_scores": {},
+      "best_operation_ids": [
+        20
+      ]
+    },
+    {
+      "key": "01020003030400030104",
+      "ordinal": 6811,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "merge_length": 15,
+      "accessible_parent_count": 3,
+      "accessible_operation_count": 3,
+      "inaccessible_operation_count": 0,
+      "parent_score_histogram": {
+        "7": 2,
+        "8": 1
+      },
+      "best_parent_merge_length": 8,
+      "best_parent_keys": [
+        "0102000301030003"
+      ],
+      "increase_from_best_parent": 7,
+      "has_global_maximizing_parent": false,
+      "ordinary_shape_key": "00010203000100040204",
+      "ordinary_winning_shape_parent_keys": [],
+      "ordinary_winning_shape_parent_scores": {},
+      "best_operation_ids": [
+        24
+      ]
+    }
+  ]
+}

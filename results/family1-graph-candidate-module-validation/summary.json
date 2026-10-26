@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "method": "general-bounded-calibrated-style-graph-candidate-portfolio",
+  "run_sha256": "218bcfda7ccacedab4dc382efbd58d02c91571e34abe458a633cafa07005ea20",
+  "sizes": [
+    {
+      "m": 3,
+      "best_certified_lower_bound": 1,
+      "all_top_lower_bound_ties": 12,
+      "recorded_rooted_classes": 12,
+      "potential_tie_or_better_classes": 12,
+      "strictly_excluded_by_upper_certificate": 0,
+      "selected_root_classes": 12,
+      "completed_root_classes": 12,
+      "finite_record_maximum_value_certified": false,
+      "finite_record_maximizer_collection_complete": false,
+      "global_maximum_certified": false,
+      "global_maximizer_collection_complete": false
+    }
+  ],
+  "native_attempt_count": 14,
+  "selected_root_classes": 12,
+  "completed_root_classes": 12,
+  "all_selected_roots_scored": true,
+  "all_candidate_roots_scored": true,
+  "enumeration_complete": false,
+  "global_maximum_certified": false,
+  "all_ties_retained": true,
+  "misses_give_no_lower_bounds": true,
+  "long_heuristic_witness_is_only_an_upper_bound": true,
+  "imported_lower_proofs_are_attributed_not_reproved": true,
+  "query_mode": "incumbent-elimination",
+  "incumbent_lower": 6,
+  "query_length_cap": 5,
+  "eliminated_recorded_classes": 10,
+  "surviving_recorded_classes": 2,
+  "survival_does_not_certify_competitiveness": true
+}

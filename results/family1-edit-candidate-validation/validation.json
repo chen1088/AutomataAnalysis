@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "platform": "native Windows x64, MSVC2022, CMake, pinned vcpkg",
+  "configurations": [
+    {
+      "configuration": "Release",
+      "passed": 31,
+      "failed": 0,
+      "log": {
+        "path": "out/ctest-edit-candidates-release.log",
+        "sha256": "d28d23db68961541b81a4f120b43b65356379ce256dc69db3d51f3198f2d122f"
+      },
+      "seconds": 44.79,
+      "executables": [
+        {
+          "path": "out/build/msvc-vcpkg/Release/Family1Edit.exe",
+          "sha256": "2cf91e05ce05cb85fc2de365fdb328487017e14d783df6755554697192319ef8"
+        },
+        {
+          "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+          "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+        }
+      ]
+    },
+    {
+      "configuration": "Debug",
+      "passed": 31,
+      "failed": 0,
+      "log": {
+        "path": "out/ctest-edit-candidates-debug.log",
+        "sha256": "35a1fdd7a73af5d209ebc0dd5f5c53f59792204bd47b963ac9a33f238d414937"
+      },
+      "seconds": 115.18,
+      "executables": [
+        {
+          "path": "out/build/msvc-vcpkg/Debug/Family1Edit.exe",
+          "sha256": "529a6a99c44f2bb897d35dae35d4abc5db7a440340ea3c9c5bdba057461cbc8c"
+        },
+        {
+          "path": "out/build/msvc-vcpkg/Debug/Family1Sample.exe",
+          "sha256": "2219a75e6b375e0055316851b75def538a4675178f1f7ebee351764d7202062a"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "3b4c21e021c2129caa24ca97699abf80f0260fb0492b3a7bc1d5a91fe401093c"
+    },
+    {
+      "path": "Family1EditSearch.h",
+      "sha256": "d6f405a474da0b518f6c882cd04b44d87067d7d868c6e5d726490ea1c268f3cd"
+    },
+    {
+      "path": "Family1EditSearch.cpp",
+      "sha256": "12489e3576c44c687302b877c3ce4205e510126a08f30e1102e4cba2e3586cb2"
+    },
+    {
+      "path": "family1_edit.cpp",
+      "sha256": "cbfd050b4b914af2767252aa9b9275dd7a564d52eb6f7077e930d7ccbc1a7fef"
+    },
+    {
+      "path": "Family1LargeGraph.h",
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    },
+    {
+      "path": "Family1LargeGraph.cpp",
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    {
+      "path": "Family1CliArtifacts.h",
+      "sha256": "f4da56617b1b7db069dfc8b46815863097c2022ec9efa5b6b76470b155ce915c"
+    },
+    {
+      "path": "scripts/family1_graph_candidate_search.py",
+      "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+    },
+    {
+      "path": "scripts/family1_rank_edit_candidates.py",
+      "sha256": "c193f66c8423d31302cb47daaeaf3073e8b0a4e261f7b76946764a7103758926"
+    },
+    {
+      "path": "scripts/family1_edit_candidate_pilot.py",
+      "sha256": "4de7baa879abaf7df27c52db1a191e832b0647becf05bf2332a54a6e8cfd7740"
+    },
+    {
+      "path": "tests/family1_edit_candidate_cli_test.py",
+      "sha256": "ec8dc6f4a60da3f85614b436d414717b9ae23ecad4374e29d909b6196239fd7d"
+    },
+    {
+      "path": "tests/family1_graph_candidate_search_test.py",
+      "sha256": "156cd6dce471d2d266fd83cd1845fb10147be6378fe7ae30447e3786c30aa497"
+    },
+    {
+      "path": "tests/family1_rank_edit_candidates_test.py",
+      "sha256": "d11190083752f47d6bd5a586fb2ad4906f687a323adbc05019cd000cbcd45255"
+    }
+  ],
+  "benchmarks": [
+    {
+      "path": "results/family1-edit-candidate-benchmark/summary.json",
+      "sha256": "aaf008c7e6edafc921028ae1833df8c251590cd0f6274e6086ed7d9f8c023350"
+    },
+    {
+      "path": "results/family1-edit-candidate-benchmark/independent-audit.json",
+      "sha256": "983a6871739c028967239d5fee19a038443c2c495d21f8d6e8832be00e38e41a"
+    },
+    {
+      "path": "results/family1-edit-ranked-candidate-benchmark/summary.json",
+      "sha256": "c159b6e734dd6d7f4953a9775abe2d1252d03b53e30802a49222ffefe8fedf3c"
+    },
+    {
+      "path": "results/family1-edit-elimination-benchmark/summary.json",
+      "sha256": "ccfca626d35d31da548e64b6901df5dd539b59c9391d56479dca1d2d873986e8"
+    },
+    {
+      "path": "results/family1-edit-elimination-complete-m7/summary.json",
+      "sha256": "07cde468d213d7b64acb4c28483c583064f39ab9e8e4860c8753b2cca373caf5"
+    }
+  ],
+  "pilot_resume_log": {
+    "path": "out/family1-edit-candidate-pilot-8-20-resume.log",
+    "sha256": "5d12dc459a2708eecab2e7a7c0795d0699f817b1f93fac67066ed39a64f9213c"
+  },
+  "coverage": {
+    "complete_tiny_unit_neighborhood_source_classes": 64,
+    "larger_sampled_paths": 256,
+    "larger_primitive_steps": 616,
+    "parent_classes_in_complete_growth_comparison": 288,
+    "generated_shapes_with_complete_root_closure_checks": 4467
+  },
+  "limits": "Finite edit pools and heuristic screening do not prove global coverage or new exact scores. Unknown, unselected and time-capped graphs remain exported."
+}

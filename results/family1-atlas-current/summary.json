@@ -1,0 +1,453 @@
+{
+  "schema": 1,
+  "dataset_kind": "selected-presentation-data-not-a-search-journal",
+  "record_count": 33,
+  "min_m": 1,
+  "max_m": 20,
+  "graph_model": {
+    "root": 0,
+    "outgoing_ports_per_state": 2,
+    "loops_allowed": true,
+    "coincident_ports_allowed": true,
+    "indegree_restriction": null,
+    "strong_connectivity_required": false,
+    "equivalence": "root-preserving vertex relabeling and independent local port swaps",
+    "each_seed_scored_separately": true
+  },
+  "scope": "All rooted maximizers for exact sizes 1..7; one constructive lower-bound example per exact size 8..20.",
+  "sources": [
+    {
+      "records": {
+        "path": "results/family1-m1-m6/maximizers.jsonl",
+        "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+      },
+      "summary": {
+        "path": "results/family1-m1-m6/summary.json",
+        "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+      }
+    },
+    {
+      "records": {
+        "path": "results/family1-m7/maximizers.jsonl",
+        "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+      },
+      "summary": {
+        "path": "results/family1-m7/summary.json",
+        "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50"
+      }
+    }
+  ],
+  "generator": {
+    "path": "scripts/family1_atlas_dataset.py",
+    "sha256": "1bf3205459fe7a6348c7db359c85bf50953503e09d7059fd287c240a37064d36"
+  },
+  "larger_examples": {
+    "method": "static-mask-projection-to-certified-seven-state-base",
+    "base_key": "0001020302030405000604060105",
+    "lower_bound": 34,
+    "individual_exact_scores_known": false,
+    "enumeration_complete": false,
+    "global_maxima_known": false,
+    "complete_maximizing_collections_known": false
+  },
+  "historical_observations": {
+    "path": "results/family1-through20/larger-graph-observations.jsonl",
+    "sha256": "0d30c5ef1034bdf0dee664c1c5927a624cff8b28dec7a54f7b65afce9783d8c2",
+    "note": "Historical larger classes remain unresolved and are preserved separately; a lower displayed bound does not exclude a challenger."
+  },
+  "m8_prediction": {
+    "point_guess": 48,
+    "informal_range": [
+      40,
+      55
+    ],
+    "status": "heuristic-not-a-bound",
+    "rationale": "Continue increments 5,8,11 by14; 34+14=48.",
+    "statistical_confidence_claim": false
+  },
+  "sizes": [
+    {
+      "m": 1,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": true,
+      "maximum_value_certified": true,
+      "maximum_certified": true,
+      "global_maximum": 1,
+      "maximum_merge_length": 1,
+      "maximizing_collection_complete": true,
+      "maximizer_count": 1,
+      "ordinary_shape_count": 1,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 1,
+      "status": "global-maximum-and-all-rooted-ties-certified",
+      "coverage_source": {
+        "records": {
+          "path": "results/family1-m1-m6/maximizers.jsonl",
+          "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+        },
+        "summary": {
+          "path": "results/family1-m1-m6/summary.json",
+          "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+        }
+      }
+    },
+    {
+      "m": 2,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": true,
+      "maximum_value_certified": true,
+      "maximum_certified": true,
+      "global_maximum": 3,
+      "maximum_merge_length": 3,
+      "maximizing_collection_complete": true,
+      "maximizer_count": 1,
+      "ordinary_shape_count": 1,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 3,
+      "status": "global-maximum-and-all-rooted-ties-certified",
+      "coverage_source": {
+        "records": {
+          "path": "results/family1-m1-m6/maximizers.jsonl",
+          "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+        },
+        "summary": {
+          "path": "results/family1-m1-m6/summary.json",
+          "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+        }
+      }
+    },
+    {
+      "m": 3,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": true,
+      "maximum_value_certified": true,
+      "maximum_certified": true,
+      "global_maximum": 6,
+      "maximum_merge_length": 6,
+      "maximizing_collection_complete": true,
+      "maximizer_count": 2,
+      "ordinary_shape_count": 1,
+      "displayed_graphs": 2,
+      "largest_displayed_lower_bound": 6,
+      "status": "global-maximum-and-all-rooted-ties-certified",
+      "coverage_source": {
+        "records": {
+          "path": "results/family1-m1-m6/maximizers.jsonl",
+          "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+        },
+        "summary": {
+          "path": "results/family1-m1-m6/summary.json",
+          "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+        }
+      }
+    },
+    {
+      "m": 4,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": true,
+      "maximum_value_certified": true,
+      "maximum_certified": true,
+      "global_maximum": 10,
+      "maximum_merge_length": 10,
+      "maximizing_collection_complete": true,
+      "maximizer_count": 1,
+      "ordinary_shape_count": 1,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 10,
+      "status": "global-maximum-and-all-rooted-ties-certified",
+      "coverage_source": {
+        "records": {
+          "path": "results/family1-m1-m6/maximizers.jsonl",
+          "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+        },
+        "summary": {
+          "path": "results/family1-m1-m6/summary.json",
+          "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+        }
+      }
+    },
+    {
+      "m": 5,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": true,
+      "maximum_value_certified": true,
+      "maximum_certified": true,
+      "global_maximum": 15,
+      "maximum_merge_length": 15,
+      "maximizing_collection_complete": true,
+      "maximizer_count": 5,
+      "ordinary_shape_count": 4,
+      "displayed_graphs": 5,
+      "largest_displayed_lower_bound": 15,
+      "status": "global-maximum-and-all-rooted-ties-certified",
+      "coverage_source": {
+        "records": {
+          "path": "results/family1-m1-m6/maximizers.jsonl",
+          "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+        },
+        "summary": {
+          "path": "results/family1-m1-m6/summary.json",
+          "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+        }
+      }
+    },
+    {
+      "m": 6,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": true,
+      "maximum_value_certified": true,
+      "maximum_certified": true,
+      "global_maximum": 23,
+      "maximum_merge_length": 23,
+      "maximizing_collection_complete": true,
+      "maximizer_count": 2,
+      "ordinary_shape_count": 1,
+      "displayed_graphs": 2,
+      "largest_displayed_lower_bound": 23,
+      "status": "global-maximum-and-all-rooted-ties-certified",
+      "coverage_source": {
+        "records": {
+          "path": "results/family1-m1-m6/maximizers.jsonl",
+          "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+        },
+        "summary": {
+          "path": "results/family1-m1-m6/summary.json",
+          "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+        }
+      }
+    },
+    {
+      "m": 7,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": true,
+      "maximum_value_certified": true,
+      "maximum_certified": true,
+      "global_maximum": 34,
+      "maximum_merge_length": 34,
+      "maximizing_collection_complete": true,
+      "maximizer_count": 8,
+      "ordinary_shape_count": 4,
+      "displayed_graphs": 8,
+      "largest_displayed_lower_bound": 34,
+      "status": "global-maximum-and-all-rooted-ties-certified",
+      "coverage_source": {
+        "records": {
+          "path": "results/family1-m7/maximizers.jsonl",
+          "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+        },
+        "summary": {
+          "path": "results/family1-m7/summary.json",
+          "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50"
+        }
+      }
+    },
+    {
+      "m": 8,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 9,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 10,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 11,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 12,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 13,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 14,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 15,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 16,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 17,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 18,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 19,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    },
+    {
+      "m": 20,
+      "scope": "exactly-m-root-reachable-states",
+      "enumeration_complete": false,
+      "maximum_value_certified": false,
+      "maximum_certified": false,
+      "global_maximum": null,
+      "maximum_merge_length": null,
+      "maximizing_collection_complete": false,
+      "maximizer_count": null,
+      "ordinary_shape_count": null,
+      "displayed_graphs": 1,
+      "largest_displayed_lower_bound": 34,
+      "status": "constructive-lower-bound; global-maximum-unresolved",
+      "coverage_source": null
+    }
+  ]
+}

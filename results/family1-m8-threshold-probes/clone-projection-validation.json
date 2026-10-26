@@ -1,0 +1,74 @@
+[
+  {
+    "key": "01020002030403040506000705070206",
+    "lower_bound": 34,
+    "base_key": "0001020302030405000604060105",
+    "projection": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "mask_lift_xor": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "static_transition_checks": 2048,
+    "root_preserved": true,
+    "all_checks_passed": true,
+    "source": {
+      "path": "results/family1-edit-priority/root-lift-candidates.jsonl",
+      "sha256": "2c29e8c2463d9f16792378947868d4f7954612cd53914abcdc060a971ce01c44"
+    },
+    "base_certificate": {
+      "path": "results/family1-m7/summary.json",
+      "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50"
+    }
+  },
+  {
+    "key": "01020002030403040506010705070206",
+    "lower_bound": 34,
+    "base_key": "0001020302030405000604060105",
+    "projection": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "mask_lift_xor": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "static_transition_checks": 2048,
+    "root_preserved": true,
+    "all_checks_passed": true,
+    "source": {
+      "path": "results/family1-edit-priority/root-lift-candidates.jsonl",
+      "sha256": "2c29e8c2463d9f16792378947868d4f7954612cd53914abcdc060a971ce01c44"
+    },
+    "base_certificate": {
+      "path": "results/family1-m7/summary.json",
+      "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50"
+    }
+  }
+]

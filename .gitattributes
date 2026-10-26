@@ -1,0 +1,10 @@
+# Accept native Windows line endings while still checking real whitespace
+# errors. Preserve evidence bytes: do not normalize historical reports.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# These reports/manifests contain byte-level evidence hashes. Check them out
+# byte for byte on every platform, independently of core.autocrlf.
+results/** -text
+figures/** -text
+output/** -text
+# Matplotlib deliberately emits whitespace inside SVG path strings.
+*.svg -whitespace

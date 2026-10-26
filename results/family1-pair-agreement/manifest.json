@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "files": {
+    "release-validation.json": {
+      "sha256": "b7942cffeb167998f4b35f7a3bfcde73859c4d50b82eded3fe13f1456687e2bb",
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-pair-agreement-release\\validation.json"
+    },
+    "release-test.log": {
+      "sha256": "443d7c702ee2fb91b2dde3adaced887da4089951bdc0c179783d2cb94e816675",
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-pair-agreement-release\\test.log"
+    },
+    "debug-validation.json": {
+      "sha256": "cf044fd9e08d8592a038b6a3b93046e9ebf55f374bd9f131252b6314dc23f6c6",
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-pair-agreement-debug\\validation.json"
+    },
+    "debug-test.log": {
+      "sha256": "443d7c702ee2fb91b2dde3adaced887da4089951bdc0c179783d2cb94e816675",
+      "original_path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-pair-agreement-debug\\test.log"
+    }
+  },
+  "both_msvc_configurations_passed": true,
+  "cmake_changes": false,
+  "previous_executable_changes": false
+}

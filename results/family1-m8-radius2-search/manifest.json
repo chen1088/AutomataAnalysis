@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "raw_directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search",
+  "file_sha256": {
+    "generated-candidates.jsonl.gz": "5dbf7dac7c4f731c4b1d0b9435bd81d11b6f49fedbc4f4219df895dc85fe4cd1",
+    "generation-paths.jsonl.gz": "6390b08050d51c3054cfd301897eb2304dd6589c55e24e862c7ab77be8b06487",
+    "independent-audit.json": "734d55ae640b7795c4a0d91203b6d40b56e3598d4132b69bae13290d3b6e344b",
+    "observations.jsonl.gz": "cd5f5693e5f4f1fbb5fbb6e9576f0bdb466acbbc1fb7794d78f78607ed490b81",
+    "plan.json": "4ea356791e03ae69d15d935b84096b88ba6f8c545dd6b9bc9fa8009a6446b065",
+    "README.md": "c25f3469769bc25bd2cd22b25a4e340cbb7d8118167adc8b037e8bf8ba93b3e0",
+    "records.jsonl.gz": "1d32c65e316aa16af138a6494a36eee5dc927acf836cc8c9a91f76f0560536bf",
+    "run.json": "cc35f40c971b8ffc35dc0f59981faaa39d93b4b621686eefa805ba28442b1f88",
+    "summary.json": "0df20cb5aa86b649a36833b29c8b058530080e8f9e547fc46a05efd0e6d42ea6"
+  },
+  "source_run_sha256": "cc35f40c971b8ffc35dc0f59981faaa39d93b4b621686eefa805ba28442b1f88",
+  "all_generated_classes_preserved": true
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "method": "certified-upper-aware-near-top-priority",
+  "margin": 2,
+  "counts": {
+    "1": 1,
+    "2": 6,
+    "3": 25,
+    "4": 48,
+    "5": 139,
+    "6": 69,
+    "7": 55
+  },
+  "records": 343,
+  "global_pruning_rule": false,
+  "sources": [
+    {
+      "path": "out\\family1-m1-m6\\graphs.jsonl",
+      "sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156"
+    },
+    {
+      "path": "out\\family1-m7-global-certificate-v3\\refined-checkpoint.jsonl",
+      "sha256": "9d6de41b2f99dd220bd9d086d6910e5d466c16e23328f22f57520654c47e3d70"
+    },
+    {
+      "path": "results\\family1-m7\\maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "output_sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81",
+  "unresolved_note": "Seven-state upper >=32 permits near-optimality; only a sufficient lower bound certifies it."
+}

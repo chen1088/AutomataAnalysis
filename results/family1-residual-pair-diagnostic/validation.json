@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "passed": true,
+  "diagnostic": {
+    "path": "results/family1-residual-pair-diagnostic/literal20-oldpilot.json",
+    "sha256": "6f2eec0e0a789f7981afc13193da90647cc17d222a8c2db1bbce5ceebf24f627"
+  },
+  "independent_test": {
+    "path": "tests/family1_residual_pair_diagnostic_test.py",
+    "sha256": "000e64a2ae01c005283624ef3fb62abbfcea1b509032b59c6fdef1f00ae324f6"
+  },
+  "native_source": {
+    "path": "tests/Family1ResidualPairDiagnostic.cpp",
+    "sha256": "97ac48d0d32c31f85af2244c5411b019d9d1b5e082d16f6a7d7e5f72ca4227b8"
+  },
+  "native_executable": {
+    "path": "out/family1-residual-pair-diagnostic/Family1ResidualPairDiagnostic.exe",
+    "sha256": "4d1028f5daf3d671b36bc6cc915f35ab66ca8995301798a83a3061e8781ed36e"
+  },
+  "source_family": {
+    "path": "results/family1-circulant-family/champions.jsonl",
+    "sha256": "40c00f9bb33768ee5a7851f7c1a6cbe9cbccd10bb32e07cc9f82ee3739de6a21"
+  },
+  "residual_coordinates_checked": 501,
+  "closed_negative_certificates_checked": 496,
+  "all_local_BFS_distances_independently_recomputed": true,
+  "distance_histogram": {
+    "1": 1,
+    "4": 2,
+    "10": 2
+  },
+  "all_negative_coordinates_period10_and_antipodal_in_raw_labels": true,
+  "all_1024_period10_masks_independently_checked": true,
+  "native_all_mask_count": 1048576,
+  "python_million_mask_scan_performed": false,
+  "common_suffix_impossible_for_this_pair": true,
+  "maximum_additional_agreement_upper_bound": 5,
+  "global_H_bound_claimed": false,
+  "source_old_native_result": {
+    "path": "out/family1-neighbor-full-metric-8-20-v1/queries/m20/01020304030506070608070910111012111312130014001514161516021701181718051904190809/length-96/result.json",
+    "sha256": "5013dd2e51405f283e325f893c7c1ab787abad487baa10af7c70b42fc36fe045"
+  }
+}

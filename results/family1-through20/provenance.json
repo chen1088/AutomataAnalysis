@@ -1,0 +1,3689 @@
+{
+  "schema": 1,
+  "generation_description": "Deterministic restart seeds; edge-splitting growth, accepted accessible mutations, and cycle-plus-random-edge candidates. This is not uniform sampling of graph classes and supplies no statistical confidence claim.",
+  "scheduled_restarts": [],
+  "sources": [
+    {
+      "source_id": 0,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m1-m6",
+      "graphs_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m1-m6\\graphs.jsonl",
+      "graphs_sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156",
+      "is_exact_run": true,
+      "metadata": {
+        "schema": 1,
+        "method": "family1-static-full-mask-bitplanes-v1",
+        "enumeration": "rooted-accessible-port-unordered-lex-v1",
+        "min_m": 1,
+        "max_m": 6
+      },
+      "summary": {
+        "schema": 1,
+        "min_m": 1,
+        "max_m": 6,
+        "sizes": [
+          {
+            "m": 1,
+            "evaluated": 1,
+            "exact": 1,
+            "depth_capped": 0,
+            "incomplete": 0,
+            "enumeration_complete": true,
+            "scoring_complete": true,
+            "maximum_certified": true,
+            "maximum_merge_length": 1,
+            "best_exact_merge_length": 1,
+            "maximizer_count": 1,
+            "best_exact_count": 1
+          },
+          {
+            "m": 2,
+            "evaluated": 6,
+            "exact": 6,
+            "depth_capped": 0,
+            "incomplete": 0,
+            "enumeration_complete": true,
+            "scoring_complete": true,
+            "maximum_certified": true,
+            "maximum_merge_length": 3,
+            "best_exact_merge_length": 3,
+            "maximizer_count": 1,
+            "best_exact_count": 1
+          },
+          {
+            "m": 3,
+            "evaluated": 57,
+            "exact": 57,
+            "depth_capped": 0,
+            "incomplete": 0,
+            "enumeration_complete": true,
+            "scoring_complete": true,
+            "maximum_certified": true,
+            "maximum_merge_length": 6,
+            "best_exact_merge_length": 6,
+            "maximizer_count": 2,
+            "best_exact_count": 2
+          },
+          {
+            "m": 4,
+            "evaluated": 678,
+            "exact": 678,
+            "depth_capped": 0,
+            "incomplete": 0,
+            "enumeration_complete": true,
+            "scoring_complete": true,
+            "maximum_certified": true,
+            "maximum_merge_length": 10,
+            "best_exact_merge_length": 10,
+            "maximizer_count": 1,
+            "best_exact_count": 1
+          },
+          {
+            "m": 5,
+            "evaluated": 10398,
+            "exact": 10398,
+            "depth_capped": 0,
+            "incomplete": 0,
+            "enumeration_complete": true,
+            "scoring_complete": true,
+            "maximum_certified": true,
+            "maximum_merge_length": 15,
+            "best_exact_merge_length": 15,
+            "maximizer_count": 5,
+            "best_exact_count": 5
+          },
+          {
+            "m": 6,
+            "evaluated": 192181,
+            "exact": 192181,
+            "depth_capped": 0,
+            "incomplete": 0,
+            "enumeration_complete": true,
+            "scoring_complete": true,
+            "maximum_certified": true,
+            "maximum_merge_length": 23,
+            "best_exact_merge_length": 23,
+            "maximizer_count": 2,
+            "best_exact_count": 2
+          }
+        ],
+        "cumulative": {
+          "scope": "size-budget-1-through-max-m",
+          "min_m": 1,
+          "max_m": 6,
+          "m": 0,
+          "evaluated": 203321,
+          "exact": 203321,
+          "depth_capped": 0,
+          "incomplete": 0,
+          "enumeration_complete": true,
+          "scoring_complete": true,
+          "maximum_certified": true,
+          "maximum_merge_length": 23,
+          "best_exact_merge_length": 23,
+          "maximizer_count": 2,
+          "best_exact_count": 2
+        }
+      },
+      "observation_count": 203321,
+      "unique_graphs": 203321,
+      "sizes": {
+        "1": 1,
+        "2": 6,
+        "3": 57,
+        "4": 678,
+        "5": 10398,
+        "6": 192181
+      }
+    },
+    {
+      "source_id": 1,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-explore-m7-m20",
+      "graphs_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-explore-m7-m20\\graphs.jsonl",
+      "graphs_sha256": "fefe8729fb17b06538bd223bcc181c3b6adcddd2649227f74eaa02d7b10d57ec",
+      "is_exact_run": false,
+      "metadata": {
+        "schema": 1,
+        "method": "heuristic-growth-mutation-static-mask-sat-v1",
+        "min_m": 7,
+        "max_m": 20,
+        "candidates": 4,
+        "beam": 3,
+        "seed": 1088,
+        "timeout_ms": 6000,
+        "solve_timeout_ms": 1000,
+        "max_length": 64,
+        "max_refinements": 256,
+        "projection_depth": 20,
+        "projection_max_states": 1048576,
+        "graph": "",
+        "seed_graphs": [
+          "0000",
+          "00010001",
+          "000101020001",
+          "010200010102",
+          "0102000201030003",
+          "00010203000103040204",
+          "00010203000301040204",
+          "01020003010203040004",
+          "01020003010402030104",
+          "01020003030400030104",
+          "000102030304020500010405",
+          "010200030405020300010405"
+        ]
+      },
+      "summary": {
+        "schema": 1,
+        "method": "heuristic-graph-exploration",
+        "enumeration_complete": false,
+        "maximum_certified": false,
+        "global_maximum": null,
+        "candidate_traversal_complete": true,
+        "min_m": 7,
+        "max_m": 20,
+        "sizes": [
+          {
+            "m": 7,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 1,
+            "best_exact_count": 0
+          },
+          {
+            "m": 8,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 20,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 1,
+            "best_exact_count": 0
+          },
+          {
+            "m": 9,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 1,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": 1,
+            "best_lower_bound_count": 2,
+            "best_exact_count": 1
+          },
+          {
+            "m": 10,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 2,
+            "best_exact_count": 0
+          },
+          {
+            "m": 11,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 12,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 13,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 14,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 15,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 16,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 17,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 18,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 19,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          },
+          {
+            "m": 20,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 4,
+            "exact": 0,
+            "largest_certified_lower_bound": 21,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 4,
+            "best_exact_count": 0
+          }
+        ]
+      },
+      "observation_count": 56,
+      "unique_graphs": 56,
+      "sizes": {
+        "7": 4,
+        "8": 4,
+        "9": 4,
+        "10": 4,
+        "11": 4,
+        "12": 4,
+        "13": 4,
+        "14": 4,
+        "15": 4,
+        "16": 4,
+        "17": 4,
+        "18": 4,
+        "19": 4,
+        "20": 4
+      }
+    },
+    {
+      "source_id": 2,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-explore-m20-depth24",
+      "graphs_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-explore-m20-depth24\\graphs.jsonl",
+      "graphs_sha256": "c2626b533719d7f9bfc0ba2f0a181c28643261f608bd7918592fabcd1c8ab418",
+      "is_exact_run": false,
+      "metadata": {
+        "schema": 1,
+        "method": "heuristic-growth-mutation-static-mask-sat-v1",
+        "min_m": 20,
+        "max_m": 20,
+        "candidates": 8,
+        "beam": 3,
+        "seed": 1088,
+        "timeout_ms": 20000,
+        "solve_timeout_ms": 1500,
+        "max_length": 24,
+        "max_refinements": 256,
+        "projection_depth": 24,
+        "projection_max_states": 16777216,
+        "graph": "",
+        "seed_graphs": [
+          "0000",
+          "00010001",
+          "000101020001",
+          "010200010102",
+          "0102000201030003",
+          "00010203000103040204",
+          "00010203000301040204",
+          "01020003010203040004",
+          "01020003010402030104",
+          "01020003030400030104",
+          "000102030304020500010405",
+          "010200030405020300010405"
+        ]
+      },
+      "summary": {
+        "schema": 1,
+        "method": "heuristic-graph-exploration",
+        "enumeration_complete": false,
+        "maximum_certified": false,
+        "global_maximum": null,
+        "candidate_traversal_complete": true,
+        "min_m": 20,
+        "max_m": 20,
+        "sizes": [
+          {
+            "m": 20,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 8,
+            "exact": 0,
+            "largest_certified_lower_bound": 25,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 8,
+            "best_exact_count": 0
+          }
+        ]
+      },
+      "observation_count": 8,
+      "unique_graphs": 8,
+      "sizes": {
+        "20": 8
+      }
+    },
+    {
+      "source_id": 3,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m20-depth26",
+      "graphs_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m20-depth26\\graphs.jsonl",
+      "graphs_sha256": "4533f97495ae1a5a2d3b5e3fd4eef312427dca0fe08048e02ed6d09c188047ea",
+      "is_exact_run": false,
+      "metadata": {
+        "schema": 1,
+        "method": "heuristic-growth-mutation-static-mask-sat-v1",
+        "min_m": 20,
+        "max_m": 20,
+        "candidates": 8,
+        "beam": 4,
+        "seed": 1088,
+        "timeout_ms": 90000,
+        "solve_timeout_ms": 2000,
+        "max_length": 26,
+        "max_refinements": 256,
+        "projection_depth": 26,
+        "projection_max_states": 67108864,
+        "graph": "01020304030506070008090910111012060613141516000211170812111800080112001316191013",
+        "seed_graphs": []
+      },
+      "summary": {
+        "schema": 1,
+        "method": "heuristic-graph-exploration",
+        "enumeration_complete": false,
+        "maximum_certified": false,
+        "global_maximum": null,
+        "candidate_traversal_complete": true,
+        "min_m": 20,
+        "max_m": 20,
+        "sizes": [
+          {
+            "m": 20,
+            "enumeration_complete": false,
+            "maximum_certified": false,
+            "global_maximum": null,
+            "evaluated": 1,
+            "exact": 0,
+            "largest_certified_lower_bound": 27,
+            "best_exact_merge_length": null,
+            "best_lower_bound_count": 1,
+            "best_exact_count": 0
+          }
+        ]
+      },
+      "observation_count": 1,
+      "unique_graphs": 1,
+      "sizes": {
+        "20": 1
+      }
+    }
+  ],
+  "global_certificate_attempts": [
+    {
+      "certificate_id": 0,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m01\\result.json",
+      "states": 1,
+      "threshold": 1,
+      "reported_decision": "impossible",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 1,
+        "threshold": 1,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 1,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 1,
+        "sat_variables": 9,
+        "sat_clauses": 20,
+        "seconds": 0.0046711,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "edb9d95ea3948b7371fcb11d8cad0213e2b5128e5de27f670751f6ed8dbeb48c",
+        "original_cnf_sha256": "450fa21e586129d3c5092aa54bcd8c7c7bafcb9f57c0168223a8eed79841bc5d",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "global_executable_sha256": "4bcf513ef3fd6950dd7a0d01b3baa2e6fd9c68f655bbe9aa3db27500b8589020"
+      },
+      "replay_verified": true,
+      "verified_global_upper_bound": 1,
+      "replay_command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1GlobalCheck.exe",
+        "--replay",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\3ad86854baca23eec214078df043abadb9f5ff7c545af7d1c33fc56e8ee59f1a\\input",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\3ad86854baca23eec214078df043abadb9f5ff7c545af7d1c33fc56e8ee59f1a\\attempt-000",
+        "--timeout-ms",
+        "30000",
+        "--solve-timeout-ms",
+        "30000"
+      ],
+      "replay_result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\3ad86854baca23eec214078df043abadb9f5ff7c545af7d1c33fc56e8ee59f1a\\attempt-000\\result.json",
+      "replay_result_sha256": "0c464bd9fa7ffcc9b80ade341865d9f713ca6cb6512b51961ee8864a30aefcf4",
+      "replay_cached": false,
+      "replay_report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 1,
+        "threshold": 1,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 1,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 0,
+        "sat_variables": 9,
+        "sat_clauses": 20,
+        "seconds": 0.0032787,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "formal_status": "global-upper-bound-replay-verified"
+    },
+    {
+      "certificate_id": 1,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m02\\result.json",
+      "states": 2,
+      "threshold": 3,
+      "reported_decision": "impossible",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 2,
+        "threshold": 3,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 3,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 3,
+        "sat_variables": 34,
+        "sat_clauses": 135,
+        "seconds": 0.0057303,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "00",
+            "11"
+          ],
+          [
+            "010",
+            "100"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "2f3acdd5c7f566de7dc14e6f10ab0231de2f506d8bfc1746beceecfd3ce41559",
+        "original_cnf_sha256": "8351815321c3988056e50d78cd1dc15b7843705cdab54631213d1ebf5cbcb2d1",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "global_executable_sha256": "4bcf513ef3fd6950dd7a0d01b3baa2e6fd9c68f655bbe9aa3db27500b8589020"
+      },
+      "replay_verified": true,
+      "verified_global_upper_bound": 3,
+      "replay_command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1GlobalCheck.exe",
+        "--replay",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\9e8bd342f0ab4360c6000f23444c37aca944246f347be01796eb7a691c8364ab\\input",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\9e8bd342f0ab4360c6000f23444c37aca944246f347be01796eb7a691c8364ab\\attempt-000",
+        "--timeout-ms",
+        "30000",
+        "--solve-timeout-ms",
+        "30000"
+      ],
+      "replay_result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\9e8bd342f0ab4360c6000f23444c37aca944246f347be01796eb7a691c8364ab\\attempt-000\\result.json",
+      "replay_result_sha256": "8145cbb2630e19c6ffe42bb3d115c91f6df230534922e5436765726616bb409c",
+      "replay_cached": false,
+      "replay_report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 2,
+        "threshold": 3,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 3,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 0,
+        "sat_variables": 34,
+        "sat_clauses": 135,
+        "seconds": 0.0034024,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "00",
+            "11"
+          ],
+          [
+            "010",
+            "100"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "formal_status": "global-upper-bound-replay-verified"
+    },
+    {
+      "certificate_id": 2,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m03\\result.json",
+      "states": 3,
+      "threshold": 6,
+      "reported_decision": "impossible",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 3,
+        "threshold": 6,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 6,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 17,
+        "sat_variables": 404,
+        "sat_clauses": 3681,
+        "seconds": 0.0385342,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "00",
+            "01"
+          ],
+          [
+            "0010",
+            "1000"
+          ],
+          [
+            "001111",
+            "011011"
+          ],
+          [
+            "0111",
+            "1000"
+          ],
+          [
+            "000",
+            "010"
+          ],
+          [
+            "0011",
+            "1100"
+          ],
+          [
+            "0110",
+            "1000"
+          ],
+          [
+            "00011",
+            "01111"
+          ],
+          [
+            "0000",
+            "1010"
+          ],
+          [
+            "00010",
+            "01110"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0100",
+            "1000"
+          ],
+          [
+            "00100",
+            "01000"
+          ],
+          [
+            "000100",
+            "010000"
+          ],
+          [
+            "01000",
+            "10110"
+          ],
+          [
+            "00100",
+            "01100"
+          ],
+          [
+            "00100",
+            "10000"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "76ae3c16a878b72550fd4197d5a1f72d122dce88c14084bc6ad0ca9ef60b8284",
+        "original_cnf_sha256": "2d839fbb5daa1276bd39c11c6e1334abbca767a95b6a844cc17ddc207159adb4",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "global_executable_sha256": "4bcf513ef3fd6950dd7a0d01b3baa2e6fd9c68f655bbe9aa3db27500b8589020"
+      },
+      "replay_verified": true,
+      "verified_global_upper_bound": 6,
+      "replay_command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1GlobalCheck.exe",
+        "--replay",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\7ed8bcdd4164283fd9218b854342f3eb5bbc59d58c452b6b45bc726041d3d933\\input",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\7ed8bcdd4164283fd9218b854342f3eb5bbc59d58c452b6b45bc726041d3d933\\attempt-000",
+        "--timeout-ms",
+        "30000",
+        "--solve-timeout-ms",
+        "30000"
+      ],
+      "replay_result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\7ed8bcdd4164283fd9218b854342f3eb5bbc59d58c452b6b45bc726041d3d933\\attempt-000\\result.json",
+      "replay_result_sha256": "46cf7ace436d70640a474b1c179ef356d6600a97d7d063c9740f1cf5b587d8ad",
+      "replay_cached": false,
+      "replay_report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 3,
+        "threshold": 6,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 6,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 0,
+        "sat_variables": 404,
+        "sat_clauses": 3681,
+        "seconds": 0.0181782,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "00",
+            "01"
+          ],
+          [
+            "0010",
+            "1000"
+          ],
+          [
+            "001111",
+            "011011"
+          ],
+          [
+            "0111",
+            "1000"
+          ],
+          [
+            "000",
+            "010"
+          ],
+          [
+            "0011",
+            "1100"
+          ],
+          [
+            "0110",
+            "1000"
+          ],
+          [
+            "00011",
+            "01111"
+          ],
+          [
+            "0000",
+            "1010"
+          ],
+          [
+            "00010",
+            "01110"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0100",
+            "1000"
+          ],
+          [
+            "00100",
+            "01000"
+          ],
+          [
+            "000100",
+            "010000"
+          ],
+          [
+            "01000",
+            "10110"
+          ],
+          [
+            "00100",
+            "01100"
+          ],
+          [
+            "00100",
+            "10000"
+          ]
+        ]
+      },
+      "formal_status": "global-upper-bound-replay-verified"
+    },
+    {
+      "certificate_id": 3,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m04\\result.json",
+      "states": 4,
+      "threshold": 10,
+      "reported_decision": "impossible",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 4,
+        "threshold": 10,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 10,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 95,
+        "sat_variables": 3375,
+        "sat_clauses": 45083,
+        "seconds": 12.6923458,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "01100",
+            "10000"
+          ],
+          [
+            "00011",
+            "11011"
+          ],
+          [
+            "0000100",
+            "0011100"
+          ],
+          [
+            "0001110",
+            "0110110"
+          ],
+          [
+            "000110",
+            "100110"
+          ],
+          [
+            "01001100",
+            "10101100"
+          ],
+          [
+            "00001001",
+            "00100001"
+          ],
+          [
+            "000101",
+            "010001"
+          ],
+          [
+            "00000010",
+            "10100010"
+          ],
+          [
+            "0001100",
+            "0101100"
+          ],
+          [
+            "000111",
+            "100111"
+          ],
+          [
+            "010100",
+            "100100"
+          ],
+          [
+            "010011",
+            "100011"
+          ],
+          [
+            "000011",
+            "101011"
+          ],
+          [
+            "001000",
+            "100000"
+          ],
+          [
+            "0011000",
+            "1100000"
+          ],
+          [
+            "0001101",
+            "1101101"
+          ],
+          [
+            "0110001",
+            "0111101"
+          ],
+          [
+            "0001100",
+            "1001100"
+          ],
+          [
+            "00110110",
+            "10100110"
+          ],
+          [
+            "010010",
+            "100010"
+          ],
+          [
+            "00111",
+            "11000"
+          ],
+          [
+            "000101",
+            "110101"
+          ],
+          [
+            "0001000",
+            "1101000"
+          ],
+          [
+            "000011",
+            "010011"
+          ],
+          [
+            "00011000",
+            "01100000"
+          ],
+          [
+            "0001001",
+            "0101001"
+          ],
+          [
+            "0100010",
+            "1011010"
+          ],
+          [
+            "0000100",
+            "0100100"
+          ],
+          [
+            "0011110",
+            "0101110"
+          ],
+          [
+            "0000010",
+            "0101010"
+          ],
+          [
+            "00000101",
+            "01000101"
+          ],
+          [
+            "00110011",
+            "11000011"
+          ],
+          [
+            "00011111",
+            "01100111"
+          ],
+          [
+            "0011100",
+            "0101100"
+          ],
+          [
+            "00001",
+            "10001"
+          ],
+          [
+            "001100",
+            "011100"
+          ],
+          [
+            "01001",
+            "01101"
+          ],
+          [
+            "0001001",
+            "1000001"
+          ],
+          [
+            "0001001",
+            "0100001"
+          ],
+          [
+            "0100111",
+            "0111111"
+          ],
+          [
+            "0100110",
+            "0110110"
+          ],
+          [
+            "01110",
+            "10000"
+          ],
+          [
+            "0010000",
+            "1010100"
+          ],
+          [
+            "010111000",
+            "100001000"
+          ],
+          [
+            "0000100",
+            "0100000"
+          ],
+          [
+            "0010011",
+            "1000011"
+          ],
+          [
+            "000111100",
+            "011001100"
+          ],
+          [
+            "0001011",
+            "0011011"
+          ],
+          [
+            "0000110",
+            "0100110"
+          ],
+          [
+            "0100111",
+            "1000111"
+          ],
+          [
+            "001001010",
+            "100001010"
+          ],
+          [
+            "0010101",
+            "0100101"
+          ],
+          [
+            "001111001",
+            "010100001"
+          ],
+          [
+            "0010001",
+            "0110001"
+          ],
+          [
+            "01010111",
+            "10100111"
+          ],
+          [
+            "0001010",
+            "0100010"
+          ],
+          [
+            "00111100",
+            "10011100"
+          ],
+          [
+            "00001001",
+            "10101001"
+          ],
+          [
+            "0001001",
+            "1101001"
+          ],
+          [
+            "00010101",
+            "01000101"
+          ],
+          [
+            "01000011",
+            "10000011"
+          ],
+          [
+            "00110001",
+            "11000001"
+          ],
+          [
+            "0101000",
+            "0110110"
+          ],
+          [
+            "010010",
+            "011010"
+          ],
+          [
+            "00101010",
+            "10100010"
+          ],
+          [
+            "0001000",
+            "0111000"
+          ],
+          [
+            "01010110",
+            "01100110"
+          ],
+          [
+            "00001000",
+            "00100000"
+          ],
+          [
+            "001000110",
+            "100000110"
+          ],
+          [
+            "0000101",
+            "1000101"
+          ],
+          [
+            "01010011",
+            "01100011"
+          ],
+          [
+            "00100001",
+            "00110001"
+          ],
+          [
+            "00011100",
+            "10111100"
+          ],
+          [
+            "01000111",
+            "10000111"
+          ],
+          [
+            "010001101",
+            "100111101"
+          ],
+          [
+            "00000101",
+            "01000001"
+          ],
+          [
+            "0000101",
+            "1010101"
+          ],
+          [
+            "0101101",
+            "0110101"
+          ],
+          [
+            "001010",
+            "001110"
+          ],
+          [
+            "0100010",
+            "0111010"
+          ],
+          [
+            "000101010",
+            "001010010"
+          ],
+          [
+            "0100001",
+            "1010001"
+          ],
+          [
+            "0011010",
+            "1100010"
+          ],
+          [
+            "000001010",
+            "010101010"
+          ],
+          [
+            "01011101",
+            "01101101"
+          ],
+          [
+            "000100110",
+            "001000110"
+          ],
+          [
+            "00111010",
+            "01101010"
+          ],
+          [
+            "00010010",
+            "01101010"
+          ],
+          [
+            "00100010",
+            "01000010"
+          ],
+          [
+            "0010110",
+            "0110110"
+          ],
+          [
+            "00111001",
+            "01011001"
+          ],
+          [
+            "00001100",
+            "00111100"
+          ],
+          [
+            "0000010",
+            "1010010"
+          ],
+          [
+            "0000010001",
+            "0010000001"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "9a47631036dfceb739bac83b36bca408497f4a0547daa05e46edd9365b57dc9a",
+        "original_cnf_sha256": "88bfa86854a7a18c4d7ef9ca802fad6ce395a922c310932a7416fc25e0328abe",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "global_executable_sha256": "4bcf513ef3fd6950dd7a0d01b3baa2e6fd9c68f655bbe9aa3db27500b8589020"
+      },
+      "replay_verified": true,
+      "verified_global_upper_bound": 10,
+      "replay_command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1GlobalCheck.exe",
+        "--replay",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\d6b0bb683dd6b334690360d934e8343b3d3e84e780d747a0ea0225f9f2d2d451\\input",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\d6b0bb683dd6b334690360d934e8343b3d3e84e780d747a0ea0225f9f2d2d451\\attempt-000",
+        "--timeout-ms",
+        "30000",
+        "--solve-timeout-ms",
+        "30000"
+      ],
+      "replay_result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\d6b0bb683dd6b334690360d934e8343b3d3e84e780d747a0ea0225f9f2d2d451\\attempt-000\\result.json",
+      "replay_result_sha256": "dac55f6c413c82a666983e61ff88c71296c705932379c668ac65dd9d5507c330",
+      "replay_cached": false,
+      "replay_report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 4,
+        "threshold": 10,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 10,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 0,
+        "sat_variables": 3375,
+        "sat_clauses": 45083,
+        "seconds": 2.8223529,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "01100",
+            "10000"
+          ],
+          [
+            "00011",
+            "11011"
+          ],
+          [
+            "0000100",
+            "0011100"
+          ],
+          [
+            "0001110",
+            "0110110"
+          ],
+          [
+            "000110",
+            "100110"
+          ],
+          [
+            "01001100",
+            "10101100"
+          ],
+          [
+            "00001001",
+            "00100001"
+          ],
+          [
+            "000101",
+            "010001"
+          ],
+          [
+            "00000010",
+            "10100010"
+          ],
+          [
+            "0001100",
+            "0101100"
+          ],
+          [
+            "000111",
+            "100111"
+          ],
+          [
+            "010100",
+            "100100"
+          ],
+          [
+            "010011",
+            "100011"
+          ],
+          [
+            "000011",
+            "101011"
+          ],
+          [
+            "001000",
+            "100000"
+          ],
+          [
+            "0011000",
+            "1100000"
+          ],
+          [
+            "0001101",
+            "1101101"
+          ],
+          [
+            "0110001",
+            "0111101"
+          ],
+          [
+            "0001100",
+            "1001100"
+          ],
+          [
+            "00110110",
+            "10100110"
+          ],
+          [
+            "010010",
+            "100010"
+          ],
+          [
+            "00111",
+            "11000"
+          ],
+          [
+            "000101",
+            "110101"
+          ],
+          [
+            "0001000",
+            "1101000"
+          ],
+          [
+            "000011",
+            "010011"
+          ],
+          [
+            "00011000",
+            "01100000"
+          ],
+          [
+            "0001001",
+            "0101001"
+          ],
+          [
+            "0100010",
+            "1011010"
+          ],
+          [
+            "0000100",
+            "0100100"
+          ],
+          [
+            "0011110",
+            "0101110"
+          ],
+          [
+            "0000010",
+            "0101010"
+          ],
+          [
+            "00000101",
+            "01000101"
+          ],
+          [
+            "00110011",
+            "11000011"
+          ],
+          [
+            "00011111",
+            "01100111"
+          ],
+          [
+            "0011100",
+            "0101100"
+          ],
+          [
+            "00001",
+            "10001"
+          ],
+          [
+            "001100",
+            "011100"
+          ],
+          [
+            "01001",
+            "01101"
+          ],
+          [
+            "0001001",
+            "1000001"
+          ],
+          [
+            "0001001",
+            "0100001"
+          ],
+          [
+            "0100111",
+            "0111111"
+          ],
+          [
+            "0100110",
+            "0110110"
+          ],
+          [
+            "01110",
+            "10000"
+          ],
+          [
+            "0010000",
+            "1010100"
+          ],
+          [
+            "010111000",
+            "100001000"
+          ],
+          [
+            "0000100",
+            "0100000"
+          ],
+          [
+            "0010011",
+            "1000011"
+          ],
+          [
+            "000111100",
+            "011001100"
+          ],
+          [
+            "0001011",
+            "0011011"
+          ],
+          [
+            "0000110",
+            "0100110"
+          ],
+          [
+            "0100111",
+            "1000111"
+          ],
+          [
+            "001001010",
+            "100001010"
+          ],
+          [
+            "0010101",
+            "0100101"
+          ],
+          [
+            "001111001",
+            "010100001"
+          ],
+          [
+            "0010001",
+            "0110001"
+          ],
+          [
+            "01010111",
+            "10100111"
+          ],
+          [
+            "0001010",
+            "0100010"
+          ],
+          [
+            "00111100",
+            "10011100"
+          ],
+          [
+            "00001001",
+            "10101001"
+          ],
+          [
+            "0001001",
+            "1101001"
+          ],
+          [
+            "00010101",
+            "01000101"
+          ],
+          [
+            "01000011",
+            "10000011"
+          ],
+          [
+            "00110001",
+            "11000001"
+          ],
+          [
+            "0101000",
+            "0110110"
+          ],
+          [
+            "010010",
+            "011010"
+          ],
+          [
+            "00101010",
+            "10100010"
+          ],
+          [
+            "0001000",
+            "0111000"
+          ],
+          [
+            "01010110",
+            "01100110"
+          ],
+          [
+            "00001000",
+            "00100000"
+          ],
+          [
+            "001000110",
+            "100000110"
+          ],
+          [
+            "0000101",
+            "1000101"
+          ],
+          [
+            "01010011",
+            "01100011"
+          ],
+          [
+            "00100001",
+            "00110001"
+          ],
+          [
+            "00011100",
+            "10111100"
+          ],
+          [
+            "01000111",
+            "10000111"
+          ],
+          [
+            "010001101",
+            "100111101"
+          ],
+          [
+            "00000101",
+            "01000001"
+          ],
+          [
+            "0000101",
+            "1010101"
+          ],
+          [
+            "0101101",
+            "0110101"
+          ],
+          [
+            "001010",
+            "001110"
+          ],
+          [
+            "0100010",
+            "0111010"
+          ],
+          [
+            "000101010",
+            "001010010"
+          ],
+          [
+            "0100001",
+            "1010001"
+          ],
+          [
+            "0011010",
+            "1100010"
+          ],
+          [
+            "000001010",
+            "010101010"
+          ],
+          [
+            "01011101",
+            "01101101"
+          ],
+          [
+            "000100110",
+            "001000110"
+          ],
+          [
+            "00111010",
+            "01101010"
+          ],
+          [
+            "00010010",
+            "01101010"
+          ],
+          [
+            "00100010",
+            "01000010"
+          ],
+          [
+            "0010110",
+            "0110110"
+          ],
+          [
+            "00111001",
+            "01011001"
+          ],
+          [
+            "00001100",
+            "00111100"
+          ],
+          [
+            "0000010",
+            "1010010"
+          ],
+          [
+            "0000010001",
+            "0010000001"
+          ]
+        ]
+      },
+      "formal_status": "global-upper-bound-replay-verified"
+    },
+    {
+      "certificate_id": 4,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m05\\result.json",
+      "states": 5,
+      "threshold": 15,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 5,
+        "threshold": 15,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 88,
+        "sat_variables": 5711,
+        "sat_clauses": 99929,
+        "seconds": 52.2817152,
+        "reason": "graph-solver-canceled",
+        "learned_pairs": [
+          [
+            "000",
+            "010"
+          ],
+          [
+            "00100",
+            "01000"
+          ],
+          [
+            "00010",
+            "01000"
+          ],
+          [
+            "0110011",
+            "0111111"
+          ],
+          [
+            "0100100111",
+            "0111100111"
+          ],
+          [
+            "0000100",
+            "0010100"
+          ],
+          [
+            "0000100",
+            "0010000"
+          ],
+          [
+            "0001010",
+            "0100010"
+          ],
+          [
+            "01010",
+            "01110"
+          ],
+          [
+            "000100011",
+            "100000011"
+          ],
+          [
+            "00011011",
+            "10011011"
+          ],
+          [
+            "01100001",
+            "10010001"
+          ],
+          [
+            "010000010",
+            "100000010"
+          ],
+          [
+            "010001110",
+            "100001110"
+          ],
+          [
+            "00000111",
+            "01000111"
+          ],
+          [
+            "01001100110",
+            "01010100110"
+          ],
+          [
+            "0000010010",
+            "0010000010"
+          ],
+          [
+            "00100101",
+            "10000101"
+          ],
+          [
+            "000100101",
+            "011100101"
+          ],
+          [
+            "00010101",
+            "11010101"
+          ],
+          [
+            "010000100101",
+            "100000100101"
+          ],
+          [
+            "0011110",
+            "0111110"
+          ],
+          [
+            "000011",
+            "010011"
+          ],
+          [
+            "000101010",
+            "010100010"
+          ],
+          [
+            "000001000",
+            "001000000"
+          ],
+          [
+            "000110110",
+            "011000110"
+          ],
+          [
+            "0000110001",
+            "0010110001"
+          ],
+          [
+            "010001",
+            "010101"
+          ],
+          [
+            "00010000110",
+            "10000000110"
+          ],
+          [
+            "010111010111",
+            "011101010111"
+          ],
+          [
+            "000010000",
+            "010000000"
+          ],
+          [
+            "011000101100",
+            "011110101100"
+          ],
+          [
+            "0101011100",
+            "1001011100"
+          ],
+          [
+            "011000",
+            "100000"
+          ],
+          [
+            "000100101101",
+            "001101101101"
+          ],
+          [
+            "00101111",
+            "01101111"
+          ],
+          [
+            "000101011",
+            "010100011"
+          ],
+          [
+            "0011110",
+            "0110110"
+          ],
+          [
+            "010000111",
+            "100000111"
+          ],
+          [
+            "0000101011",
+            "0101000011"
+          ],
+          [
+            "00110000",
+            "11000000"
+          ],
+          [
+            "0000010101010",
+            "0101000001010"
+          ],
+          [
+            "00000000",
+            "11111100"
+          ],
+          [
+            "01010111100",
+            "10100111100"
+          ],
+          [
+            "0010110001001",
+            "1010010001001"
+          ],
+          [
+            "01110101",
+            "10000101"
+          ],
+          [
+            "0100001001100",
+            "1000001001100"
+          ],
+          [
+            "000000100001",
+            "001000000001"
+          ],
+          [
+            "000000000010001",
+            "000010000000001"
+          ],
+          [
+            "001010",
+            "001110"
+          ],
+          [
+            "0000001",
+            "0100001"
+          ],
+          [
+            "01110111101",
+            "10000111101"
+          ],
+          [
+            "00000010",
+            "01000010"
+          ],
+          [
+            "0001000110",
+            "1011100110"
+          ],
+          [
+            "010100110",
+            "011100110"
+          ],
+          [
+            "011000110",
+            "100000110"
+          ],
+          [
+            "00010001001",
+            "10000001001"
+          ],
+          [
+            "00011100",
+            "11100000"
+          ],
+          [
+            "000000101",
+            "101000101"
+          ],
+          [
+            "000001001100",
+            "001000001100"
+          ],
+          [
+            "00011111",
+            "01100111"
+          ],
+          [
+            "01100010100",
+            "01101010000"
+          ],
+          [
+            "0001111100",
+            "0110011100"
+          ],
+          [
+            "000100100101",
+            "100000100101"
+          ],
+          [
+            "001001011010",
+            "011010010010"
+          ],
+          [
+            "01001101110",
+            "10001101110"
+          ],
+          [
+            "0000000101",
+            "1010000101"
+          ],
+          [
+            "000011011000011",
+            "001101100000011"
+          ],
+          [
+            "001100101000",
+            "110000101000"
+          ],
+          [
+            "0000010",
+            "0101010"
+          ],
+          [
+            "000100011001",
+            "100000011001"
+          ],
+          [
+            "0001010010",
+            "0011010010"
+          ],
+          [
+            "0000111011",
+            "0100011111"
+          ],
+          [
+            "01010001",
+            "10100001"
+          ],
+          [
+            "0000111101001",
+            "0110001101001"
+          ],
+          [
+            "000111100010",
+            "011010000010"
+          ],
+          [
+            "0010010",
+            "0100000"
+          ],
+          [
+            "000110101",
+            "010010101"
+          ],
+          [
+            "00110010110",
+            "01001010110"
+          ],
+          [
+            "00100001",
+            "10000001"
+          ],
+          [
+            "001000111",
+            "100000111"
+          ],
+          [
+            "000100111",
+            "110100111"
+          ],
+          [
+            "0010101000",
+            "0101001000"
+          ],
+          [
+            "0001001001",
+            "0100001001"
+          ],
+          [
+            "01001010",
+            "10001010"
+          ],
+          [
+            "000110100",
+            "010110100"
+          ],
+          [
+            "01110101100",
+            "10000101100"
+          ],
+          [
+            "0100000100",
+            "1011000100"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "e9aaf9e8338f1278d8a5de0641bdd968932c54e95187176aa3dc46f31ed39b4e",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 5,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m06\\result.json",
+      "states": 6,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 6,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 47,
+        "sat_variables": 4294,
+        "sat_clauses": 91295,
+        "seconds": 18.2523235,
+        "reason": "graph-solver-canceled",
+        "learned_pairs": [
+          [
+            "0101100",
+            "0111100"
+          ],
+          [
+            "000111000",
+            "010011000"
+          ],
+          [
+            "000111000",
+            "100011000"
+          ],
+          [
+            "00001000001",
+            "01000000001"
+          ],
+          [
+            "0001001011",
+            "0001101011"
+          ],
+          [
+            "001000101",
+            "100100101"
+          ],
+          [
+            "010101110111010",
+            "010111011101010"
+          ],
+          [
+            "01000100010",
+            "01001100010"
+          ],
+          [
+            "00010001110",
+            "00110001110"
+          ],
+          [
+            "000100110",
+            "001100110"
+          ],
+          [
+            "0101000011",
+            "1010000011"
+          ],
+          [
+            "0011110001110000101",
+            "0101110001110000101"
+          ],
+          [
+            "010011001",
+            "010111001"
+          ],
+          [
+            "0010101010110",
+            "0101001010110"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0101010110101000",
+            "0101101010101000"
+          ],
+          [
+            "001011011011101101",
+            "001011101101101101"
+          ],
+          [
+            "000100010010010010",
+            "000100100100010010"
+          ],
+          [
+            "000110001111001",
+            "110110001111001"
+          ],
+          [
+            "00001011000",
+            "01000011000"
+          ],
+          [
+            "0001001011",
+            "1101001011"
+          ],
+          [
+            "00000000010010001",
+            "00010000000010001"
+          ],
+          [
+            "0000111100011110",
+            "1111000000011110"
+          ],
+          [
+            "000000100001",
+            "010000100001"
+          ],
+          [
+            "00000001000100",
+            "00001000000100"
+          ],
+          [
+            "00001000010101010101",
+            "00001101000001010101"
+          ],
+          [
+            "000000100000010100",
+            "001000000000010100"
+          ],
+          [
+            "00000011",
+            "01001011"
+          ],
+          [
+            "010010100111011",
+            "011010100111011"
+          ],
+          [
+            "0010001111000",
+            "1101101111000"
+          ],
+          [
+            "0011101101100",
+            "0111101101100"
+          ],
+          [
+            "0011000110011111",
+            "1100000110011111"
+          ],
+          [
+            "0010110000110",
+            "0110010000110"
+          ],
+          [
+            "000110011010000",
+            "001110011010000"
+          ],
+          [
+            "00010101011101",
+            "00010111010101"
+          ],
+          [
+            "00011100111100011101",
+            "11100000111100011101"
+          ],
+          [
+            "0000110011011001010",
+            "0110000011011001010"
+          ],
+          [
+            "00100010",
+            "00110010"
+          ],
+          [
+            "0100110100100",
+            "0110100100100"
+          ],
+          [
+            "0010101000001",
+            "0110101000001"
+          ],
+          [
+            "0000000010000101011",
+            "0010000000000101011"
+          ],
+          [
+            "000001000111011",
+            "001000000111011"
+          ],
+          [
+            "0000010000010001",
+            "0100000000010001"
+          ],
+          [
+            "0000101010101",
+            "0010100010101"
+          ],
+          [
+            "00000000001010000",
+            "00001010000000000"
+          ],
+          [
+            "00000100010111",
+            "11110100010111"
+          ],
+          [
+            "000001010111000",
+            "001010000111000"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "65c9a63ff3652b042a510a9b8f66f553b039212defb41fc2afee32c2f5738fd5",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 6,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m07\\result.json",
+      "states": 7,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 7,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 5,
+        "sat_variables": 337,
+        "sat_clauses": 4980,
+        "seconds": 3.0579983,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "000",
+            "001"
+          ],
+          [
+            "000010",
+            "011010"
+          ],
+          [
+            "00010011",
+            "11010011"
+          ],
+          [
+            "001010001",
+            "001110001"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "a7b92d0b2bc69e5d23aeec058b68f0a6ef5ecfad1eefa178a8766432e541469f",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 7,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m08\\result.json",
+      "states": 8,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 8,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 2,
+        "sat_variables": 254,
+        "sat_clauses": 2885,
+        "seconds": 3.0353269,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "00010110010",
+            "10100010010"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "cda0b324a4ed2f6b0b4cd7c388073a72c3563339e6929523bccb689a96ee27a9",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 8,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m09\\result.json",
+      "states": 9,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 9,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 2,
+        "sat_variables": 320,
+        "sat_clauses": 3770,
+        "seconds": 3.0374281,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "001100111",
+            "011100111"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "a76fb71713e3c6aa928fbc2fe691f28e5520f59b72b42cd8fe09a22e40c11226",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 9,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m10\\result.json",
+      "states": 10,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 10,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 3,
+        "sat_variables": 461,
+        "sat_clauses": 7594,
+        "seconds": 3.0703133,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "0000010100",
+            "1111100100"
+          ],
+          [
+            "000101010",
+            "011101010"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "2605fb69f25b05704bb7fe71c6fe46e4f30e3f5e0890ca5536a0db4cac52bf63",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 10,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m11\\result.json",
+      "states": 11,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 11,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 2,
+        "sat_variables": 410,
+        "sat_clauses": 4681,
+        "seconds": 3.044717,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "00000011",
+            "00100011"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "aec6ceb8e2790e226b52ea5591c526174d5af2d6520ed8b387494eb776b2271a",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 11,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m12\\result.json",
+      "states": 12,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 12,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 2,
+        "sat_variables": 481,
+        "sat_clauses": 6125,
+        "seconds": 4.7198046,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "0000010110",
+            "0101000010"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "39689d479dbfce520c470043d5335d3c794b0b9732d43dd20abf7f86d4acfc10",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 12,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m13\\result.json",
+      "states": 13,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 13,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 3,
+        "sat_variables": 621,
+        "sat_clauses": 10265,
+        "seconds": 3.0869353,
+        "reason": "candidate-timeout",
+        "learned_pairs": [
+          [
+            "0000010100",
+            "1111100100"
+          ],
+          [
+            "00001110",
+            "11001110"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "eac46238dd9ad6b9d9cd07f282de4a0e9af5c7a7b58222cb3cdb1586da0c2faa",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 13,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m14\\result.json",
+      "states": 14,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 14,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 2,
+        "sat_variables": 627,
+        "sat_clauses": 9117,
+        "seconds": 3.0990867,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "0100000001000",
+            "0100001001000"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "2cb542f3154b6b03c9232787d81f08ca69fe0eeef2392ad7e69c32d22be579d0",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 14,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m15\\result.json",
+      "states": 15,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 15,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 1,
+        "sat_variables": 571,
+        "sat_clauses": 3870,
+        "seconds": 3.0258141,
+        "reason": "candidate-encoding-timeout",
+        "learned_pairs": []
+      },
+      "source_binding": {
+        "result_sha256": "01699474a111b49a21179be01e9b160f2cbf7ebd6c0629fa15342d740e98ec89",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 15,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m16\\result.json",
+      "states": 16,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 16,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 2,
+        "sat_variables": 749,
+        "sat_clauses": 10177,
+        "seconds": 3.0765489,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "00000001010",
+            "00000101010"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "1422119b4de7be3facc633a6011059dcfb327c4596e78f198365f5237eea1dde",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 16,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m17\\result.json",
+      "states": 17,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 17,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 2,
+        "sat_variables": 781,
+        "sat_clauses": 6532,
+        "seconds": 3.0501512,
+        "reason": "candidate-canceled",
+        "learned_pairs": [
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "313b0d12388d49b275dbc91afc2f80c207d84c0e76c75add905528f749bc23d2",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 17,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m18\\result.json",
+      "states": 18,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 18,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 1,
+        "sat_variables": 829,
+        "sat_clauses": 6696,
+        "seconds": 3.041351,
+        "reason": "candidate-canceled",
+        "learned_pairs": []
+      },
+      "source_binding": {
+        "result_sha256": "c66adef3fdf25cc4dec51e5c6b43d010b570948f1c0d99e34ba4a53f4aad11a5",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 18,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m19\\result.json",
+      "states": 19,
+      "threshold": 23,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 19,
+        "threshold": 23,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 1,
+        "sat_variables": 913,
+        "sat_clauses": 7638,
+        "seconds": 3.0400103,
+        "reason": "candidate-canceled",
+        "learned_pairs": []
+      },
+      "source_binding": {
+        "result_sha256": "852e1bf1f6e8872b39d79441812d4decc9fca4695b7d017645c685e815a9e294",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 19,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-formal-1-20\\m20\\result.json",
+      "states": 20,
+      "threshold": 27,
+      "reported_decision": "unknown",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "unknown",
+        "states": 20,
+        "threshold": 27,
+        "global_upper_bound_certified": false,
+        "proven_upper_bound": null,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 1,
+        "sat_variables": 1001,
+        "sat_clauses": 8660,
+        "seconds": 3.0360723,
+        "reason": "candidate-canceled",
+        "learned_pairs": []
+      },
+      "source_binding": {
+        "result_sha256": "d974d45b5d3f7dbff6e73e2f74c9dec689199688bb514e7741fb8db75b7151d2",
+        "original_cnf_sha256": null,
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1"
+      },
+      "replay_verified": false,
+      "verified_global_upper_bound": null,
+      "formal_status": "unresolved-no-global-upper-bound"
+    },
+    {
+      "certificate_id": 20,
+      "result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-global-m4\\result.json",
+      "states": 4,
+      "threshold": 10,
+      "reported_decision": "impossible",
+      "report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 4,
+        "threshold": 10,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 10,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 95,
+        "sat_variables": 3375,
+        "sat_clauses": 45083,
+        "seconds": 8.7002424,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "01100",
+            "10000"
+          ],
+          [
+            "00011",
+            "11011"
+          ],
+          [
+            "0000100",
+            "0011100"
+          ],
+          [
+            "0001110",
+            "0110110"
+          ],
+          [
+            "000110",
+            "100110"
+          ],
+          [
+            "01001100",
+            "10101100"
+          ],
+          [
+            "00001001",
+            "00100001"
+          ],
+          [
+            "000101",
+            "010001"
+          ],
+          [
+            "00000010",
+            "10100010"
+          ],
+          [
+            "0001100",
+            "0101100"
+          ],
+          [
+            "000111",
+            "100111"
+          ],
+          [
+            "010100",
+            "100100"
+          ],
+          [
+            "010011",
+            "100011"
+          ],
+          [
+            "000011",
+            "101011"
+          ],
+          [
+            "001000",
+            "100000"
+          ],
+          [
+            "0011000",
+            "1100000"
+          ],
+          [
+            "0001101",
+            "1101101"
+          ],
+          [
+            "0110001",
+            "0111101"
+          ],
+          [
+            "0001100",
+            "1001100"
+          ],
+          [
+            "00110110",
+            "10100110"
+          ],
+          [
+            "010010",
+            "100010"
+          ],
+          [
+            "00111",
+            "11000"
+          ],
+          [
+            "000101",
+            "110101"
+          ],
+          [
+            "0001000",
+            "1101000"
+          ],
+          [
+            "000011",
+            "010011"
+          ],
+          [
+            "00011000",
+            "01100000"
+          ],
+          [
+            "0001001",
+            "0101001"
+          ],
+          [
+            "0100010",
+            "1011010"
+          ],
+          [
+            "0000100",
+            "0100100"
+          ],
+          [
+            "0011110",
+            "0101110"
+          ],
+          [
+            "0000010",
+            "0101010"
+          ],
+          [
+            "00000101",
+            "01000101"
+          ],
+          [
+            "00110011",
+            "11000011"
+          ],
+          [
+            "00011111",
+            "01100111"
+          ],
+          [
+            "0011100",
+            "0101100"
+          ],
+          [
+            "00001",
+            "10001"
+          ],
+          [
+            "001100",
+            "011100"
+          ],
+          [
+            "01001",
+            "01101"
+          ],
+          [
+            "0001001",
+            "1000001"
+          ],
+          [
+            "0001001",
+            "0100001"
+          ],
+          [
+            "0100111",
+            "0111111"
+          ],
+          [
+            "0100110",
+            "0110110"
+          ],
+          [
+            "01110",
+            "10000"
+          ],
+          [
+            "0010000",
+            "1010100"
+          ],
+          [
+            "010111000",
+            "100001000"
+          ],
+          [
+            "0000100",
+            "0100000"
+          ],
+          [
+            "0010011",
+            "1000011"
+          ],
+          [
+            "000111100",
+            "011001100"
+          ],
+          [
+            "0001011",
+            "0011011"
+          ],
+          [
+            "0000110",
+            "0100110"
+          ],
+          [
+            "0100111",
+            "1000111"
+          ],
+          [
+            "001001010",
+            "100001010"
+          ],
+          [
+            "0010101",
+            "0100101"
+          ],
+          [
+            "001111001",
+            "010100001"
+          ],
+          [
+            "0010001",
+            "0110001"
+          ],
+          [
+            "01010111",
+            "10100111"
+          ],
+          [
+            "0001010",
+            "0100010"
+          ],
+          [
+            "00111100",
+            "10011100"
+          ],
+          [
+            "00001001",
+            "10101001"
+          ],
+          [
+            "0001001",
+            "1101001"
+          ],
+          [
+            "00010101",
+            "01000101"
+          ],
+          [
+            "01000011",
+            "10000011"
+          ],
+          [
+            "00110001",
+            "11000001"
+          ],
+          [
+            "0101000",
+            "0110110"
+          ],
+          [
+            "010010",
+            "011010"
+          ],
+          [
+            "00101010",
+            "10100010"
+          ],
+          [
+            "0001000",
+            "0111000"
+          ],
+          [
+            "01010110",
+            "01100110"
+          ],
+          [
+            "00001000",
+            "00100000"
+          ],
+          [
+            "001000110",
+            "100000110"
+          ],
+          [
+            "0000101",
+            "1000101"
+          ],
+          [
+            "01010011",
+            "01100011"
+          ],
+          [
+            "00100001",
+            "00110001"
+          ],
+          [
+            "00011100",
+            "10111100"
+          ],
+          [
+            "01000111",
+            "10000111"
+          ],
+          [
+            "010001101",
+            "100111101"
+          ],
+          [
+            "00000101",
+            "01000001"
+          ],
+          [
+            "0000101",
+            "1010101"
+          ],
+          [
+            "0101101",
+            "0110101"
+          ],
+          [
+            "001010",
+            "001110"
+          ],
+          [
+            "0100010",
+            "0111010"
+          ],
+          [
+            "000101010",
+            "001010010"
+          ],
+          [
+            "0100001",
+            "1010001"
+          ],
+          [
+            "0011010",
+            "1100010"
+          ],
+          [
+            "000001010",
+            "010101010"
+          ],
+          [
+            "01011101",
+            "01101101"
+          ],
+          [
+            "000100110",
+            "001000110"
+          ],
+          [
+            "00111010",
+            "01101010"
+          ],
+          [
+            "00010010",
+            "01101010"
+          ],
+          [
+            "00100010",
+            "01000010"
+          ],
+          [
+            "0010110",
+            "0110110"
+          ],
+          [
+            "00111001",
+            "01011001"
+          ],
+          [
+            "00001100",
+            "00111100"
+          ],
+          [
+            "0000010",
+            "1010010"
+          ],
+          [
+            "0000010001",
+            "0010000001"
+          ]
+        ]
+      },
+      "source_binding": {
+        "result_sha256": "a83f8abab02023e6c6c7b5682e12341764a116e76a6dffcc389721cbb70f475f",
+        "original_cnf_sha256": "88bfa86854a7a18c4d7ef9ca802fad6ce395a922c310932a7416fc25e0328abe",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "global_executable_sha256": "4bcf513ef3fd6950dd7a0d01b3baa2e6fd9c68f655bbe9aa3db27500b8589020"
+      },
+      "replay_verified": true,
+      "verified_global_upper_bound": 10,
+      "replay_command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1GlobalCheck.exe",
+        "--replay",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\a85fa400ca4d57ce26cc1e9a3fedcd76305b027c49faa432a9db243d60d38077\\input",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\a85fa400ca4d57ce26cc1e9a3fedcd76305b027c49faa432a9db243d60d38077\\attempt-000",
+        "--timeout-ms",
+        "30000",
+        "--solve-timeout-ms",
+        "30000"
+      ],
+      "replay_result_file": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-study-1-20\\proof-replays\\a85fa400ca4d57ce26cc1e9a3fedcd76305b027c49faa432a9db243d60d38077\\attempt-000\\result.json",
+      "replay_result_sha256": "90121a078ef8e4ed231d0e0f7010f7529c6b40d8bcf7fadd18d848e02c183f97",
+      "replay_cached": false,
+      "replay_report": {
+        "schema": 1,
+        "method": "family1-global-synthesis",
+        "encoder_version": "family1-accessible-prior-incoming-static-mask-separation-cnf-v1",
+        "decision": "impossible",
+        "states": 4,
+        "threshold": 10,
+        "global_upper_bound_certified": true,
+        "proven_upper_bound": 10,
+        "challenger_lower_bound": null,
+        "challenger_key": "",
+        "challenger_table": [],
+        "candidates_checked": 0,
+        "sat_variables": 3375,
+        "sat_clauses": 45083,
+        "seconds": 2.7588989,
+        "reason": "",
+        "learned_pairs": [
+          [
+            "01100",
+            "10000"
+          ],
+          [
+            "00011",
+            "11011"
+          ],
+          [
+            "0000100",
+            "0011100"
+          ],
+          [
+            "0001110",
+            "0110110"
+          ],
+          [
+            "000110",
+            "100110"
+          ],
+          [
+            "01001100",
+            "10101100"
+          ],
+          [
+            "00001001",
+            "00100001"
+          ],
+          [
+            "000101",
+            "010001"
+          ],
+          [
+            "00000010",
+            "10100010"
+          ],
+          [
+            "0001100",
+            "0101100"
+          ],
+          [
+            "000111",
+            "100111"
+          ],
+          [
+            "010100",
+            "100100"
+          ],
+          [
+            "010011",
+            "100011"
+          ],
+          [
+            "000011",
+            "101011"
+          ],
+          [
+            "001000",
+            "100000"
+          ],
+          [
+            "0011000",
+            "1100000"
+          ],
+          [
+            "0001101",
+            "1101101"
+          ],
+          [
+            "0110001",
+            "0111101"
+          ],
+          [
+            "0001100",
+            "1001100"
+          ],
+          [
+            "00110110",
+            "10100110"
+          ],
+          [
+            "010010",
+            "100010"
+          ],
+          [
+            "00111",
+            "11000"
+          ],
+          [
+            "000101",
+            "110101"
+          ],
+          [
+            "0001000",
+            "1101000"
+          ],
+          [
+            "000011",
+            "010011"
+          ],
+          [
+            "00011000",
+            "01100000"
+          ],
+          [
+            "0001001",
+            "0101001"
+          ],
+          [
+            "0100010",
+            "1011010"
+          ],
+          [
+            "0000100",
+            "0100100"
+          ],
+          [
+            "0011110",
+            "0101110"
+          ],
+          [
+            "0000010",
+            "0101010"
+          ],
+          [
+            "00000101",
+            "01000101"
+          ],
+          [
+            "00110011",
+            "11000011"
+          ],
+          [
+            "00011111",
+            "01100111"
+          ],
+          [
+            "0011100",
+            "0101100"
+          ],
+          [
+            "00001",
+            "10001"
+          ],
+          [
+            "001100",
+            "011100"
+          ],
+          [
+            "01001",
+            "01101"
+          ],
+          [
+            "0001001",
+            "1000001"
+          ],
+          [
+            "0001001",
+            "0100001"
+          ],
+          [
+            "0100111",
+            "0111111"
+          ],
+          [
+            "0100110",
+            "0110110"
+          ],
+          [
+            "01110",
+            "10000"
+          ],
+          [
+            "0010000",
+            "1010100"
+          ],
+          [
+            "010111000",
+            "100001000"
+          ],
+          [
+            "0000100",
+            "0100000"
+          ],
+          [
+            "0010011",
+            "1000011"
+          ],
+          [
+            "000111100",
+            "011001100"
+          ],
+          [
+            "0001011",
+            "0011011"
+          ],
+          [
+            "0000110",
+            "0100110"
+          ],
+          [
+            "0100111",
+            "1000111"
+          ],
+          [
+            "001001010",
+            "100001010"
+          ],
+          [
+            "0010101",
+            "0100101"
+          ],
+          [
+            "001111001",
+            "010100001"
+          ],
+          [
+            "0010001",
+            "0110001"
+          ],
+          [
+            "01010111",
+            "10100111"
+          ],
+          [
+            "0001010",
+            "0100010"
+          ],
+          [
+            "00111100",
+            "10011100"
+          ],
+          [
+            "00001001",
+            "10101001"
+          ],
+          [
+            "0001001",
+            "1101001"
+          ],
+          [
+            "00010101",
+            "01000101"
+          ],
+          [
+            "01000011",
+            "10000011"
+          ],
+          [
+            "00110001",
+            "11000001"
+          ],
+          [
+            "0101000",
+            "0110110"
+          ],
+          [
+            "010010",
+            "011010"
+          ],
+          [
+            "00101010",
+            "10100010"
+          ],
+          [
+            "0001000",
+            "0111000"
+          ],
+          [
+            "01010110",
+            "01100110"
+          ],
+          [
+            "00001000",
+            "00100000"
+          ],
+          [
+            "001000110",
+            "100000110"
+          ],
+          [
+            "0000101",
+            "1000101"
+          ],
+          [
+            "01010011",
+            "01100011"
+          ],
+          [
+            "00100001",
+            "00110001"
+          ],
+          [
+            "00011100",
+            "10111100"
+          ],
+          [
+            "01000111",
+            "10000111"
+          ],
+          [
+            "010001101",
+            "100111101"
+          ],
+          [
+            "00000101",
+            "01000001"
+          ],
+          [
+            "0000101",
+            "1010101"
+          ],
+          [
+            "0101101",
+            "0110101"
+          ],
+          [
+            "001010",
+            "001110"
+          ],
+          [
+            "0100010",
+            "0111010"
+          ],
+          [
+            "000101010",
+            "001010010"
+          ],
+          [
+            "0100001",
+            "1010001"
+          ],
+          [
+            "0011010",
+            "1100010"
+          ],
+          [
+            "000001010",
+            "010101010"
+          ],
+          [
+            "01011101",
+            "01101101"
+          ],
+          [
+            "000100110",
+            "001000110"
+          ],
+          [
+            "00111010",
+            "01101010"
+          ],
+          [
+            "00010010",
+            "01101010"
+          ],
+          [
+            "00100010",
+            "01000010"
+          ],
+          [
+            "0010110",
+            "0110110"
+          ],
+          [
+            "00111001",
+            "01011001"
+          ],
+          [
+            "00001100",
+            "00111100"
+          ],
+          [
+            "0000010",
+            "1010010"
+          ],
+          [
+            "0000010001",
+            "0010000001"
+          ]
+        ]
+      },
+      "formal_status": "global-upper-bound-replay-verified"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+% Five-state extremal seed graph (a).
+% Requires \usepackage{tikz} and \usetikzlibrary{arrows.meta}.
+\begin{tikzpicture}[
+  x=1cm,y=1cm,>=Stealth,
+  f1m5 vertex/.style={circle,draw=black,line width=.65pt,minimum size=6.4mm,inner sep=0pt,font=\small},
+  f1m5 root/.style={f1m5 vertex,double,double distance=1.1pt},
+  f1m5 port zero/.style={->,draw=black,line width=.65pt},
+  f1m5 port one/.style={->,draw=black,line width=.65pt,dash pattern=on 3pt off 2pt},
+  f1m5 label/.style={font=\scriptsize,fill=white,inner sep=1.1pt}
+]
+\path[use as bounding box] (-2.60,-2.65) rectangle (2.60,2.65);
+\node[f1m5 root] (q0) at (-1.60,1.05) {$ 0 $};
+\node[f1m5 vertex] (q1) at (0.20,1.05) {$ 1 $};
+\node[f1m5 vertex] (q2) at (-1.60,-0.90) {$ 2 $};
+\node[f1m5 vertex] (q3) at (1.60,-0.60) {$ 3 $};
+\node[f1m5 vertex] (q4) at (0.00,-1.35) {$ 4 $};
+% edge 0 0 0
+\draw[f1m5 port zero] (q0) edge[loop above,min distance=6mm] node[f1m5 label,above left] {$ 0 $} (q0);
+% edge 0 1 1
+\draw[f1m5 port one] (q0) edge[] node[f1m5 label,above] {$ 1 $} (q1);
+% edge 1 0 2
+\draw[f1m5 port zero] (q1) edge[bend left=12] node[f1m5 label,above right] {$ 0 $} (q2);
+% edge 1 1 3
+\draw[f1m5 port one] (q1) edge[] node[f1m5 label,above right] {$ 1 $} (q3);
+% edge 2 0 0
+\draw[f1m5 port zero] (q2) edge[] node[f1m5 label,left] {$ 0 $} (q0);
+% edge 2 1 1
+\draw[f1m5 port one] (q2) edge[bend left=12] node[f1m5 label,below left] {$ 1 $} (q1);
+% edge 3 0 3
+\draw[f1m5 port zero] (q3) edge[loop right,min distance=6mm] node[f1m5 label,right] {$ 0 $} (q3);
+% edge 3 1 4
+\draw[f1m5 port one] (q3) edge[] node[f1m5 label,below right] {$ 1 $} (q4);
+% edge 4 0 2
+\draw[f1m5 port zero] (q4) edge[] node[f1m5 label,below left] {$ 0 $} (q2);
+% edge 4 1 4
+\draw[f1m5 port one] (q4) edge[loop below,min distance=6mm] node[f1m5 label,below] {$ 1 $} (q4);
+\end{tikzpicture}

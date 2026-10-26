@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "binding": {
+    "binary": {
+      "source_exe": {
+        "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+        "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+      },
+      "snapshot_exe": {
+        "path": "out/family1-finder-target34-k6-w16/binary/Family1Sample.exe",
+        "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+      },
+      "dlls": [
+        {
+          "path": "out/family1-finder-target34-k6-w16/binary/flint-24.dll",
+          "sha256": "ca50ea88627919fb4b2fb7d11d252be1022640af7a3717a83576bc76e9b5a4e0"
+        },
+        {
+          "path": "out/family1-finder-target34-k6-w16/binary/gmp-10.dll",
+          "sha256": "c568c5acf19e0a68ac5a9070c2a72e539043a7183d0629b98bb7625a43b66566"
+        },
+        {
+          "path": "out/family1-finder-target34-k6-w16/binary/libz3.dll",
+          "sha256": "b1da9832307d494d878fec75c30cfa5a5777b59de43a37f5c77abd7281c9b6c1"
+        },
+        {
+          "path": "out/family1-finder-target34-k6-w16/binary/mpfr-6.dll",
+          "sha256": "908bfb09f3a378766c41d9e42b0d3ea46d6627d43d212504a489f13d1fd4dd35"
+        },
+        {
+          "path": "out/family1-finder-target34-k6-w16/binary/pthreadVC3.dll",
+          "sha256": "0135209b0530ae12a8dd7172be2764d4100c7d18e761630d91526a7c7877a4bc"
+        }
+      ]
+    },
+    "graph_source": {
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    },
+    "samples": 1024,
+    "prefix_depth": 16,
+    "prefix_max_words": 65536,
+    "prefix_max_pairs": 1024,
+    "prefix_samples_per_depth": 16384,
+    "viability_checks": 8,
+    "tail_max_states": 100000,
+    "max_expansions": null,
+    "length_cap": 34,
+    "witness_or_witness_derived_prefix_hints_used": false
+  },
+  "total_preserved_runs": 8,
+  "current_requested_runs": 8,
+  "current_grid": {
+    "window": [
+      6
+    ],
+    "beam": [
+      16
+    ],
+    "tail": [
+      8
+    ],
+    "seed": [
+      1088
+    ]
+  },
+  "groups": [
+    {
+      "window_k": 6,
+      "beam_width": 16,
+      "tail_threshold": 8,
+      "seed": 1088,
+      "graphs": 8,
+      "H_matches": 3,
+      "misses": 5,
+      "lengths_by_ordinal": {
+        "539749": 34,
+        "679758": null,
+        "1783759": null,
+        "2221624": null,
+        "2470130": 34,
+        "2471796": null,
+        "3411148": 34,
+        "4099217": null
+      },
+      "native_seconds": 11.7632614
+    }
+  ],
+  "matches_H": [
+    "m7-539749-k6-w16-t8-n1024-s1088",
+    "m7-2470130-k6-w16-t8-n1024-s1088",
+    "m7-3411148-k6-w16-t8-n1024-s1088"
+  ],
+  "driver": {
+    "path": "tests/family1_finder_lookahead_benchmark.py",
+    "sha256": "e19fbe32fcf8940e38ea2758313115f6781cdc3feb6aea61f137ac7aa86e1f15"
+  },
+  "all_positive_pairs_independently_scalar_verified_on_128_masks": true,
+  "scope": "Heuristic calibration against independently known H34; conditional BFS alone proves no global minimum."
+}

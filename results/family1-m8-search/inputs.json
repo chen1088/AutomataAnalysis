@@ -1,0 +1,116 @@
+{
+  "records": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\root-lift8.jsonl",
+      "sha256": "3275ed9a78a1dee719214044fdf854b5eba599f659849cf7543b2722c7bf32b0",
+      "bytes": 1595
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\cheap-r1\\records.jsonl",
+      "sha256": "1398294fcb1f394dbfd80878c8bcf3575f653819c40b031d8dc1550442bbd502",
+      "bytes": 29791049
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\cheap-upper-r1\\records.jsonl",
+      "sha256": "9608fa47a3457d262c6f053e07402d08d2cd23ef444d0b9acb2a41089c2250c4",
+      "bytes": 44407199
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+      "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973",
+      "bytes": 36048
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\root-lift8-scored\\records.jsonl",
+      "sha256": "c01f3e39b6b48e8cc3789762b96d1db825bf2ca3bfd57d83e4481146ca730288",
+      "bytes": 25054
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+      "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916",
+      "bytes": 67440
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\records.jsonl",
+      "sha256": "1bdd2eed92e8cb162e3a3cf69c43befa0c61b9781fb6ab1d3c6c3905ffbfe4c9",
+      "bytes": 54808145
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-lower34-root-lift\\report.json",
+      "sha256": "123327bdfe8e40e5f3b78cf1ff0de1763e386e2b0f6c6bd7b205824a4e5e6d7d",
+      "bytes": 1807
+    }
+  ],
+  "observations": [
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\cheap-r1\\observations.jsonl",
+      "sha256": "a57d23077c9f4487019d33894aef9c58ff623154dc32139e11ac0a1ffeeb14a1",
+      "bytes": 14697314
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\cheap-upper-r1\\cap-96\\observations.jsonl",
+      "sha256": "c2275f28111f667daf884aeff37359d69ed28e72b3972da8daffaee1f8bb7d10",
+      "bytes": 18203482
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\cheap-upper-r1\\cap-48\\observations.jsonl",
+      "sha256": "3e67493bcae3cb7ee39616b565f1e950de5c19a5558fe3df3394235088a2d0e4",
+      "bytes": 10993891
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\cheap-upper-r1\\cap-40\\observations.jsonl",
+      "sha256": "96aa5c933eaccd57ae496633f9be52ddb483265041cc8f75de62c716f9fbac1b",
+      "bytes": 13641950
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-upper-refinement\\observations.jsonl",
+      "sha256": "10e7a27227def13dad1501340426419b55ef907fb9cdbff344e1ee412a25f9ba",
+      "bytes": 159644
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-bestof-refinement\\records.jsonl",
+      "sha256": "b862bcfb67404fe2e6b54264d438ccf48d4aeb97add9162f2ed607def94db1aa",
+      "bytes": 14024
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-warmstart-refinement\\observations.jsonl",
+      "sha256": "56a1bbbe73e56646def8fed9de0d3cb1463941ad207d2c2b4708100f2aeb138a",
+      "bytes": 2736
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\root-lift8-scored\\observations.jsonl",
+      "sha256": "5555ac2ecdbcd6ea5d5eecfe2eba7d136d794264376517d6157b71b4affa1588",
+      "bytes": 64473
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-fresh-prefix-refinement\\observations.jsonl",
+      "sha256": "0440f90d6d569ece04e10e3e8c1bfe5e3c78585223c25024ba6578cd633ddd22",
+      "bytes": 57867
+    },
+    {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r2-search\\observations.jsonl",
+      "sha256": "930b60a7b857a2b6c081ef8a4c648e13322c9a69419456400600dd8526e86e9c",
+      "bytes": 7857598
+    }
+  ],
+  "generation": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\generation-r1\\summary.json",
+    "sha256": "191572224038662915c706647f36d64deee0f4c308254237c7065f665652d494",
+    "bytes": 21731
+  },
+  "universe_count": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-search-v1\\rooted-universe.json",
+    "sha256": "c1a00601decd51a2bc1080c4ff562ae92ac82fc1e59cfd5501addca8936f67a8",
+    "bytes": 9884
+  },
+  "publisher": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_publish_m8_search.py",
+    "sha256": "2e987bdd1b37c78dd8509579c32961606eb9cd36d82dd8d64212b1c853a6e334",
+    "bytes": 13569
+  },
+  "witness_verifier": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_graph_candidate_search.py",
+    "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425",
+    "bytes": 41323
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "passed": true,
+  "all_paths_replayed": 10047,
+  "all_primitive_steps_replayed": 19076,
+  "all_source_parents": 55,
+  "selected_whole_shape_roots": 261,
+  "selected_novel_shapes": 33,
+  "selected_linked_paths": 33,
+  "selected_linked_primitive_counts": {
+    "insert-loop": 31,
+    "smooth-loop": 8,
+    "smooth-two-edges": 24,
+    "insert-two-edges": 34,
+    "retarget": 2
+  },
+  "prior_qualified": 50,
+  "new_qualified": 261,
+  "qualified_union": 311,
+  "full_mask_observations_revalidated": 261,
+  "mask_count": 256,
+  "resume_backend_subprocesses": 0,
+  "unchanged_native_artifacts": 1044,
+  "resume_semantic_records_and_active_ties_identical": true,
+  "observation_multiset_identical": true,
+  "tuple_list_json_normalization_applied": true,
+  "historical_pinned_executable_used": true,
+  "seconds": 25.17200000002049,
+  "auditor_sha256": "e95601d9c25f413f3935a1f53526938f75aaf2484aeaba1761ee1437c10999da"
+}

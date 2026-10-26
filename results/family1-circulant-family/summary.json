@@ -1,0 +1,279 @@
+{
+  "schema": 1,
+  "dataset_kind": "one-supplied-circulant-class-per-exact-size-not-global-champions",
+  "variant": "literal",
+  "min_m": 1,
+  "max_m": 20,
+  "records": 20,
+  "all_roots_translation_equivalent": true,
+  "indegree_restriction_used_for_search": null,
+  "global_enumeration_performed": false,
+  "global_maxima_claimed": false,
+  "numeric_asymptotic_lower_bound_imported": false,
+  "quadratic_family_context": "The initial quadratic-family discussion involves different formulas and a cumulative product. No fixed-graph quadratic H theorem or numerical bound is asserted by this export.",
+  "manuscript_reference_caution": "The manuscript variant has a different second step; a theorem for a cumulative product over seed sizes is not transferred to fixed-graph H.",
+  "generator": {
+    "path": "scripts/family1_circulant_family.py",
+    "sha256": "9bbff043d13e8be8caef55c1ad2f764aff3bc3b5e5d4fb406bd3441eff0ff78a",
+    "exact_through": 8,
+    "depth_cap": 20
+  },
+  "sizes": [
+    {
+      "m": 1,
+      "key": "0000",
+      "status": "exact",
+      "merge_length": 1,
+      "lower_bound": 1,
+      "upper_bound": 1,
+      "vertex_root_multiplicity": 1,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 2,
+      "key": "00010001",
+      "status": "exact",
+      "merge_length": 3,
+      "lower_bound": 3,
+      "upper_bound": 3,
+      "vertex_root_multiplicity": 2,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 3,
+      "key": "010102020000",
+      "status": "exact",
+      "merge_length": 1,
+      "lower_bound": 1,
+      "upper_bound": 1,
+      "vertex_root_multiplicity": 3,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 4,
+      "key": "0101020203030000",
+      "status": "exact",
+      "merge_length": 1,
+      "lower_bound": 1,
+      "upper_bound": 1,
+      "vertex_root_multiplicity": 4,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 5,
+      "key": "01010202030304040000",
+      "status": "exact",
+      "merge_length": 1,
+      "lower_bound": 1,
+      "upper_bound": 1,
+      "vertex_root_multiplicity": 5,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 6,
+      "key": "010202030304040500050001",
+      "status": "exact",
+      "merge_length": 11,
+      "lower_bound": 11,
+      "upper_bound": 11,
+      "vertex_root_multiplicity": 6,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 7,
+      "key": "0102020303040405050600060001",
+      "status": "exact",
+      "merge_length": 14,
+      "lower_bound": 14,
+      "upper_bound": 14,
+      "vertex_root_multiplicity": 7,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 8,
+      "key": "01020203030404050506060700070001",
+      "status": "exact",
+      "merge_length": 18,
+      "lower_bound": 18,
+      "upper_bound": 18,
+      "vertex_root_multiplicity": 8,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 9,
+      "key": "010203040305060700060107020804080005",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 9,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 10,
+      "key": "0102030403050607020607080509000900040108",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 10,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 11,
+      "key": "01020304030506070206070805090910011000080004",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 11,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 12,
+      "key": "010203040305060700060708020909100110051104110008",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 12,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 13,
+      "key": "0102030403050607060807090010101100090111021204120508",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 13,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 14,
+      "key": "01020304030506070608070910111012021104120013051300080109",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 14,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 15,
+      "key": "010203040305060700060708020909101011051212130113081404140011",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 15,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 16,
+      "key": "0102030403050607060807090010101100121112021313140114051504150809",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 16,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 17,
+      "key": "01020304030506070608070910111012091112130014001314150115021604160508",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 17,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 18,
+      "key": "010203040305060700060708020909101011051212131314081515160116111704170014",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 18,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 19,
+      "key": "0102030403050607060807090010101100121113021414150116121505171617041809180813",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 19,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    },
+    {
+      "m": 20,
+      "key": "01020304030506070608070910111012111312130014001514161516021701181718051904190809",
+      "status": "incomplete",
+      "merge_length": null,
+      "lower_bound": 2,
+      "upper_bound": null,
+      "vertex_root_multiplicity": 20,
+      "distinct_rooted_classes": 1,
+      "global_maximum_certified": false,
+      "maximizing_collection_complete": false
+    }
+  ],
+  "sources": {
+    "out\\family1-m1-m6\\graphs.jsonl": {
+      "sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156"
+    },
+    "out\\family1-m7-global-certificate-v3\\refined-checkpoint.jsonl": {
+      "sha256": "9d6de41b2f99dd220bd9d086d6910e5d466c16e23328f22f57520654c47e3d70"
+    }
+  },
+  "validation": {
+    "all_raw_formula_tables_verified": true,
+    "all_root_translations_verified": true,
+    "all_canonical_vertex_maps_and_port_swaps_verified": true,
+    "all_available_witnesses_all_static_masks_all_raw_roots_verified": true,
+    "small_exact_scores_independently_recomputed": true,
+    "complete_vectors_used_for_matching_hashes": true
+  }
+}

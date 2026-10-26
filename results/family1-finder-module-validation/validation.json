@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "generic_module": {
+    "path": "HardPairFinder.h",
+    "sha256": "0bd800fe84aecb2fafdbff0e8cc314d7d64c99aae00c352125e8b662e7891c65"
+  },
+  "independent_driver": {
+    "path": "tests/HardPairFinderIndependent.cpp",
+    "sha256": "94f8c72a5b289a959befd973765ff7e8edc78b15640ead5dea828fd6fdc609d0"
+  },
+  "Release": {
+    "executable": {
+      "path": "out/build/msvc-vcpkg/Release/HardPairFinderIndependent.exe",
+      "sha256": "10eea967329ce1b8ae9ba700ac6c0ea0cdefb896affac53668450eb4804e5e38"
+    },
+    "result": {
+      "passed": true,
+      "independent_rooted_classes": 64,
+      "conditional_bfs_pairs": 1263,
+      "forced_hash_cases": 48,
+      "complete_window_distributions": 128,
+      "heterogeneous_state_counts": [
+        2,
+        3,
+        5
+      ],
+      "heterogeneous_shortest_conditional_suffix_length": 4,
+      "caps_preserve_incompleteness": true,
+      "global_visited_checked": true,
+      "common_prefix_cancellation_rejected": true,
+      "tail_improvement": {
+        "route_code": 0,
+        "tie_seed": 0,
+        "window_only_suffix_length": null,
+        "exact_tail_suffix_length": 3,
+        "window_k": 2,
+        "beam_width": 1,
+        "conditional_starting_words": [
+          "0",
+          "1"
+        ],
+        "whole_word_pair_length": 4,
+        "whole_family_exact_H": 3,
+        "global_shortestness_not_inferred": true
+      }
+    }
+  },
+  "Debug": {
+    "executable": {
+      "path": "out/build/msvc-vcpkg/Debug/HardPairFinderIndependent.exe",
+      "sha256": "7fe88ab50a41e50d5d0ec6ae6c76e97d206698926601f850e3942d7e2c848a1e"
+    },
+    "result": {
+      "passed": true,
+      "independent_rooted_classes": 64,
+      "conditional_bfs_pairs": 1263,
+      "forced_hash_cases": 48,
+      "complete_window_distributions": 128,
+      "heterogeneous_state_counts": [
+        2,
+        3,
+        5
+      ],
+      "heterogeneous_shortest_conditional_suffix_length": 4,
+      "caps_preserve_incompleteness": true,
+      "global_visited_checked": true,
+      "common_prefix_cancellation_rejected": true,
+      "tail_improvement": {
+        "route_code": 0,
+        "tie_seed": 0,
+        "window_only_suffix_length": null,
+        "exact_tail_suffix_length": 3,
+        "window_k": 2,
+        "beam_width": 1,
+        "conditional_starting_words": [
+          "0",
+          "1"
+        ],
+        "whole_word_pair_length": 4,
+        "whole_family_exact_H": 3,
+        "global_shortestness_not_inferred": true
+      }
+    }
+  },
+  "family1_adapter_Debug": {
+    "executable": {
+      "path": "out/build/msvc-vcpkg/Debug/Family1Sample.exe",
+      "sha256": "eea6ce6facb1013caa550e324aa1e03f1de09ae330325ab68dd056cb81e7e615"
+    },
+    "test": {
+      "path": "tests/family1_finder_cli_test.py",
+      "sha256": "24a445ac63fc814d936e6cfd8ef2c8afea15856ca776ebb048a9c7709b89969e"
+    },
+    "passed": true,
+    "rooted_classes": 64,
+    "valid_pair_hits": 64,
+    "automatic_seeds": 16,
+    "conditional_certificates_recomputed": 31,
+    "partial_best_of_resume_passed": true,
+    "caps_do_not_prove_shortestness": true
+  },
+  "scope": "Generic conditional common-suffix correctness and Family1 adapter validation; no new global H theorem.",
+  "family1_adapter_Release": {
+    "executable": {
+      "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+      "sha256": "ed67e2959ee36dd57cb6b001683dae8bfffc8cb7e48e16cd07b2c61175215efe"
+    },
+    "test": {
+      "path": "tests/family1_finder_cli_test.py",
+      "sha256": "24a445ac63fc814d936e6cfd8ef2c8afea15856ca776ebb048a9c7709b89969e"
+    },
+    "passed": true,
+    "rooted_classes": 64,
+    "valid_pair_hits": 64,
+    "automatic_seeds": 16,
+    "conditional_certificates_recomputed": 31,
+    "partial_best_of_resume_passed": true,
+    "caps_do_not_prove_shortestness": true
+  },
+  "blind_benchmark": {
+    "summary": {
+      "path": "results/family1-finder-blind-benchmark/summary.json",
+      "sha256": "8d6270e50b9237dcc0b231e5e0a955c1e7efc1b1c6b3fb5795b8344c692d8013"
+    },
+    "analysis": {
+      "path": "results/family1-finder-blind-benchmark/analysis.json",
+      "sha256": "a3263905bafbbfafa8e86370603eed31e64003d1f49643e40b246261ccc9812c"
+    },
+    "cases": 24,
+    "runs": 72,
+    "predeclared_thresholds": [
+      0,
+      2,
+      8
+    ],
+    "source_word_hints_used": false
+  }
+}

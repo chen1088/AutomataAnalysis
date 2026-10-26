@@ -1,17 +1,24 @@
 #include "BackToFirstDFA.h"
+#include <stdexcept>
 
 BackToFirstDFA::BackToFirstDFA(unsigned int s) : graph(s), labels(s), PDFA(s)
 {
 }
 unsigned int BackToFirstDFA::get_next_state(unsigned int currentstate, bool c)
 {
-   bool debug = labels[currentstate];
-   return graph.get_next_v(currentstate, debug ^ c);// need a test
+   // The legacy reset family has `size` labelled vertices and an additional
+   // absorbing sink at `size`. Its two sink ports coincide, so no mask bit is
+   // needed there. In particular, never index labels[size].
+   if (currentstate > size)
+      throw std::out_of_range("BackToFirstDFA state outside reset graph");
+   if (currentstate == size)
+      return size;
+   return graph.get_next_v(currentstate, static_cast<bool>(labels[currentstate]) ^ c);
 }
 
 unsigned int BackToFirstDFA::get_next_state(unsigned int currentstate, boost::dynamic_bitset<> str)
 {
-   unsigned int res = 0;
+   unsigned int res = currentstate;
    for (unsigned int i = 0; i < str.size(); ++i)
    {
       res = get_next_state(res, (bool)str[i]);
@@ -41,6 +48,8 @@ vector<unsigned int> BackToFirstDFA::get_transitions_1()
 
 void BackToFirstDFA::setW(boost::dynamic_bitset<> w)
 {
+   if (w.size() != size)
+      throw std::invalid_argument("BackToFirstDFA mask must have size entries");
    labels = w;
    is_end = false;
 }
@@ -53,20 +62,7 @@ void BackToFirstDFA::reset_enumeration()
 
 void BackToFirstDFA::next()
 {
-   unsigned int cur = 0;
-   while (labels[cur])
-   {
-      labels[cur] = false;
-      if (cur < labels.size())
-      {
-         cur++;
-      }
-      else
-      {
-         is_end = true;
-         return ;
-      }
-   }
-   labels[cur] = true;
+   if (!is_end)
+      is_end = !VectorEnumerator::next(labels);
 }
 

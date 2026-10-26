@@ -1,0 +1,15 @@
+\documentclass[tikz,border=8pt,multi=tikzpicture]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+\node[font=\large\bfseries] at (0,4.3) {Eight-state estimated leader};
+\node[font=\large] at (0,3.85) {$\widehat H=49\quad\text{(rough range }48\text{--}50\text{)}$};
+\node[inner sep=0pt] at (0,0) {\scalebox{1.2}{\input{graph-01.tex}}};
+\node[align=center,font=\small] at (0,-4.05) {Verified pair length: 50. Best estimated start(s): $\{0\}$.\\The shortest length is estimated; all arrows are unlabelled.};
+\node[align=center,font=\small] at (0,-4.7) {Marked vertices are alternative starting states, chosen one at a time.\\Isomorphic rooted cases share one graph drawing.};
+\node[font=\scriptsize\ttfamily] at (0,-5.2) {01020003040501060003020705060407};
+\end{tikzpicture}
+\end{document}

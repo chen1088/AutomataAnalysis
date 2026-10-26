@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "scope": "historical bounded R3 generation and first strong k8 refinement; later active estimates remain separate",
+  "script": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_adaptive_edit_search.py",
+    "sha256": "bd9020da06e7cb930021847296a5ee22a3659bdb52305d11834d3dd21b9b6100",
+    "bytes": 15326
+  },
+  "auditor": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tests\\family1_adaptive_edit_audit.py",
+    "sha256": "e95601d9c25f413f3935a1f53526938f75aaf2484aeaba1761ee1437c10999da",
+    "bytes": 4799
+  },
+  "source_generation": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r3-instant-generated\\run.json",
+    "sha256": "db7a8be17aae4540daf38f1d2ed8430ea391f942dba8dec701d02ada94aec6ea",
+    "bytes": 3786
+  },
+  "all_raw_files": 35283,
+  "deduplicated_objects": 35022,
+  "zip_objects_verified": true,
+  "global_maximum_claimed": false,
+  "files": {
+    "active-best.jsonl": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\active-best.jsonl",
+      "sha256": "e0c6a788aff9202cef38d78ce0990550af55f21fc1db8f3f4504c4ae46ddd64e",
+      "bytes": 6791
+    },
+    "archive-records.jsonl.gz": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\archive-records.jsonl.gz",
+      "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89",
+      "bytes": 1795384
+    },
+    "candidates.jsonl.gz": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\candidates.jsonl.gz",
+      "sha256": "dd979d7fbce592084e41c0593ea715f13bb59216ca5258f1469194393fd0da7e",
+      "bytes": 832440
+    },
+    "independent-audit.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\independent-audit.json",
+      "sha256": "56eec39e66c3ae71387ea95c55b638da54598c1562d7476271c88b701e8aa11b",
+      "bytes": 961
+    },
+    "new-qualified-records.jsonl": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\new-qualified-records.jsonl",
+      "sha256": "e493e03655925e990336beeafc089a7abcf581f6ee0e8f856f7f2cae6576febe",
+      "bytes": 842667
+    },
+    "paths.jsonl.gz": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\paths.jsonl.gz",
+      "sha256": "ba08e728162dcc7e98b23a77f72d035b6449c652f8f3e15881a7be015e1d6eea",
+      "bytes": 737409
+    },
+    "raw-evidence.zip": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\raw-evidence.zip",
+      "sha256": "f6183bd372597e3e5f17ba9019d98303c453f745ac8b9fb16d760d160cb2fb3e",
+      "bytes": 77825053
+    },
+    "raw-inventory.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\raw-inventory.json",
+      "sha256": "04aa56b129223ebb84eb0a5ddb96ab872a061753d86d9993ed13c53c2b550fef",
+      "bytes": 14000218
+    },
+    "README.md": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\README.md",
+      "sha256": "3c49eaa570fcf6bad78de643644076ecc5b7996d77b7a47b2fac2eaa2788c41e",
+      "bytes": 3803
+    },
+    "records.jsonl": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\records.jsonl",
+      "sha256": "32187c2fcf95b70050600e3a91b0f57dbc0f494c7922e42c83a8dfc12be79fe2",
+      "bytes": 952431
+    },
+    "run.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\run.json",
+      "sha256": "b5deeb54223a5d23f7854c734080e134e6dc8ed84fef4711d168d40920d7cd92",
+      "bytes": 2506
+    },
+    "selected-candidates.jsonl": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\selected-candidates.jsonl",
+      "sha256": "dd23f4b8345f4d7da1735c2fa55a653bd082ee60e94e9369188e383b2648a5bb",
+      "bytes": 397897
+    },
+    "selection-plan.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\selection-plan.json",
+      "sha256": "e42100afb5f866397d73976bc2a5b3086408cfdc4a2df7bd74c51e44acec4334",
+      "bytes": 453368
+    },
+    "summary.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-adaptive-edit-radius3\\summary.json",
+      "sha256": "2ed8dbf295b027577833ea12f3c2ff56e826ad5a936a684c880f31ba2b52187d",
+      "bytes": 1601
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "method": "crowding-adaptive-heuristic-candidate-refinement",
+  "m": 8,
+  "archived_classes": 26924,
+  "eligible_refined_classes": 42,
+  "pending_coarse_classes": 26882,
+  "active_best_ties": 1,
+  "active_verified_upper_length": 51,
+  "active_estimate": {
+    "point": 50,
+    "rough_band": [
+      49,
+      51
+    ],
+    "certified": false,
+    "rule": "user heuristic: H approximately L-1, rough[L-2,L]"
+  },
+  "crowded_top_band": 3,
+  "crowding_threshold": 3,
+  "batches": [
+    {
+      "index": 0,
+      "window_k": 8,
+      "trigger": "crowded eligible top band; increase window",
+      "previous_plan_sha256": null,
+      "pre_batch_band_size": 3,
+      "pre_batch_active_length": 52,
+      "admission": false,
+      "queries": [
+        {
+          "key": "01020002030403040506000705070206",
+          "cap": 51,
+          "stage": {
+            "name": "adaptive-k8",
+            "window_k": 8,
+            "beam_width": 16,
+            "samples": 1024,
+            "prefix_pairs": 1024,
+            "prefix_depth": 16,
+            "prefix_words": 65536,
+            "prefix_samples_per_depth": 16384,
+            "distance_coordinates": 256,
+            "ranking": "remaining",
+            "common_prefix_depth": 8,
+            "expansions": 100000,
+            "timeout_seconds": 20,
+            "tail_threshold": 8,
+            "tail_max_states": 100000,
+            "viability_coordinates": 256,
+            "seed": 1088,
+            "memory_budget_mib": 512,
+            "memory_estimate_is_not_an_os_limit": true,
+            "estimated_pair_working_bytes": 31744,
+            "distinct_permutation_dfas": 0,
+            "requested_prefix_words": 65536,
+            "prefix_word_budget_scaled": false,
+            "pair_working_estimate_exceeds_budget": false,
+            "expansion_scope": "per prefix seed across all beam parents/windows"
+          }
+        },
+        {
+          "key": "01020003040501060003020705060407",
+          "cap": 50,
+          "stage": {
+            "name": "adaptive-k8",
+            "window_k": 8,
+            "beam_width": 16,
+            "samples": 1024,
+            "prefix_pairs": 1024,
+            "prefix_depth": 16,
+            "prefix_words": 65536,
+            "prefix_samples_per_depth": 16384,
+            "distance_coordinates": 256,
+            "ranking": "remaining",
+            "common_prefix_depth": 8,
+            "expansions": 100000,
+            "timeout_seconds": 20,
+            "tail_threshold": 8,
+            "tail_max_states": 100000,
+            "viability_coordinates": 256,
+            "seed": 1088,
+            "memory_budget_mib": 512,
+            "memory_estimate_is_not_an_os_limit": true,
+            "estimated_pair_working_bytes": 31744,
+            "distinct_permutation_dfas": 4,
+            "requested_prefix_words": 65536,
+            "prefix_word_budget_scaled": false,
+            "pair_working_estimate_exceeds_budget": false,
+            "expansion_scope": "per prefix seed across all beam parents/windows"
+          }
+        },
+        {
+          "key": "01020002030403040506010705070206",
+          "cap": 49,
+          "stage": {
+            "name": "adaptive-k8",
+            "window_k": 8,
+            "beam_width": 16,
+            "samples": 1024,
+            "prefix_pairs": 1024,
+            "prefix_depth": 16,
+            "prefix_words": 65536,
+            "prefix_samples_per_depth": 16384,
+            "distance_coordinates": 256,
+            "ranking": "remaining",
+            "common_prefix_depth": 8,
+            "expansions": 100000,
+            "timeout_seconds": 20,
+            "tail_threshold": 8,
+            "tail_max_states": 100000,
+            "viability_coordinates": 256,
+            "seed": 1088,
+            "memory_budget_mib": 512,
+            "memory_estimate_is_not_an_os_limit": true,
+            "estimated_pair_working_bytes": 31744,
+            "distinct_permutation_dfas": 0,
+            "requested_prefix_words": 65536,
+            "prefix_word_budget_scaled": false,
+            "pair_working_estimate_exceeds_budget": false,
+            "expansion_scope": "per prefix seed across all beam parents/windows"
+          }
+        }
+      ],
+      "plan_sha256": "747be6af299c75a79807fba56af1d1d704a75fe12c27575a0ae71edd8f04f58d",
+      "completed_stages": 3
+    }
+  ],
+  "query_count": 3,
+  "outcomes": {
+    "completed": 3
+  },
+  "stopping_reason": "requested batch checkpoint",
+  "all_raw_graphs_and_ties_archived": true,
+  "active_selection_is_heuristic": true,
+  "pending_coarse_could_contain_better_graphs": true,
+  "rough_bands_are_certified_intervals": false,
+  "misses_change_lower_bounds": false,
+  "global_maximum_certified": false,
+  "run_sha256": "bf444a5e525d001afe0158fa0f7261d91a3e6d0df2b322ad47b2a06cafcf16d8"
+}

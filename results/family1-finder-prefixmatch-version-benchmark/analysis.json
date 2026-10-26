@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "comparison_scope": "combined new version against frozen first version; same outer seed/window/tail grid with additional prefix preprocessing and optional proven viability",
+  "per_threshold_against_first_version": [
+    {
+      "threshold": 0,
+      "same_common_hit": 13,
+      "longer_common_hit": 2,
+      "shorter_common_hit": 2,
+      "miss_removed": 7
+    },
+    {
+      "threshold": 2,
+      "same_common_hit": 13,
+      "longer_common_hit": 2,
+      "shorter_common_hit": 2,
+      "miss_removed": 7
+    },
+    {
+      "threshold": 8,
+      "same_common_hit": 10,
+      "longer_common_hit": 3,
+      "shorter_common_hit": 4,
+      "miss_removed": 7
+    }
+  ],
+  "exported_viability_closed_proof_examples_independently_checked": 216,
+  "complete_vs_sampled_prefix_layer_metadata_checked": true,
+  "new_version_all72_hits": true,
+  "prefix_length_caution": "Complete enumeration is only through depth16; longer20/24/28/32 layers are deterministic samples. Only128 selected prefix pairs are scheduled, not every compatible pair.",
+  "conditional_exactness_caution": "The BFS suffix is shortest from its particular queried pair, not necessarily from the original root or across all initial words.",
+  "ablation": {
+    "threshold": 2,
+    "cases": 24,
+    "same_lengths": 23,
+    "changes": [
+      {
+        "case": "literal-m8",
+        "H": 18,
+        "checks8_length": 42,
+        "checks0_length": 40
+      }
+    ],
+    "report": "results/family1-finder-prefixmatch-viability0-ablation/README.md"
+  }
+}

@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=16mm]{geometry}
+\usepackage{tikz,amsmath,booktabs,lmodern,graphicx}
+\usetikzlibrary{arrows.meta}
+\setlength{\parindent}{0pt}
+\begin{document}
+{\LARGE\bfseries Family 1: grouped graph atlas}\par\vspace{3mm}
+{\large Exact reachable sizes $1$ through $20$}\par\vspace{4mm}
+Each vertex has two outgoing edges and unrestricted indegree. Loops and parallel edges are allowed. Arrows have identical styles: their local port order is immaterial. Vertex numbers identify possible starting states.\par\vspace{2mm}
+For a chosen start, $H(G)$ is the shortest positive length of two distinct equal-length words whose endpoint vectors agree for every static mask. Different starting states are scored separately. A double circle marks an alternative start, never a simultaneous collection of roots.\par\vspace{3mm}
+\begin{center}\small\begin{tabular}{rcrrl}\toprule $m$ & $F(m)$ & Rooted winners & Shapes & Evidence \\\midrule
+1 & $1$ & 1 & 1 & Certified complete \\
+2 & $3$ & 1 & 1 & Certified complete \\
+3 & $6$ & 2 & 1 & Certified complete \\
+4 & $10$ & 1 & 1 & Certified complete \\
+5 & $15$ & 5 & 4 & Certified complete \\
+6 & $23$ & 2 & 1 & Certified complete \\
+7 & $34$ & 8 & 4 & Certified complete \\
+8 & $\ge35$ & -- & -- & Global maximum unresolved \\
+9 & $\ge34$ & -- & -- & Constructive lower example \\
+10 & $\ge34$ & -- & -- & Constructive lower example \\
+11 & $\ge34$ & -- & -- & Constructive lower example \\
+12 & $\ge34$ & -- & -- & Constructive lower example \\
+13 & $\ge34$ & -- & -- & Constructive lower example \\
+14 & $\ge34$ & -- & -- & Constructive lower example \\
+15 & $\ge34$ & -- & -- & Constructive lower example \\
+16 & $\ge34$ & -- & -- & Constructive lower example \\
+17 & $\ge34$ & -- & -- & Constructive lower example \\
+18 & $\ge34$ & -- & -- & Constructive lower example \\
+19 & $\ge34$ & -- & -- & Constructive lower example \\
+20 & $\ge34$ & -- & -- & Constructive lower example \\
+\bottomrule\end{tabular}\end{center}\vspace{2mm}
+For $m\le7$, the 20 certified maximizing rooted classes are grouped into 13 ordinary graph shapes. Every vertex giving one of those rooted classes is marked, including automorphically equivalent vertices. The source witnesses and full root-to-class mappings are preserved in the accompanying JSON.\par\vspace{2mm}
+At $m=8$, the picture is the current heuristic leader: finder length $50$, estimated $H\approx49$ (rough range $48$--$50$), rigorous graph bound $1\le H\le50$. The independently certified global lower bound $F(8)\ge35$ comes from a different graph. No exact score or global maximality is claimed for the pictured graph.\par\vspace{2mm}
+For $9\le m\le20$, a marked vertex is only the start of an example with $H\ge34$, proved by projection to a certified seven-state graph. These are not asserted to be winners.\par\vspace{2mm}
+Exactly $m$ reachable vertices is distinct from a cumulative budget $1,\ldots,m$. Deleting unreachable vertices preserves all rooted trajectories and $H(G)$; the cumulative optimum is therefore the maximum over the exact reachable sizes. No strong connectivity assumption is imposed.
+\clearpage
+{\LARGE\bfseries $m=1$}\par\vspace{3mm}
+Global maximum $F(1)=1$; all 1 rooted maximizing classes, grouped into 1 ordinary shape.\par\vspace{2mm}
+Double-circled vertices are all optimal starting states. Choose one marked start at a time; each choice defines a separate rooted graph.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m01-shape-01.tex}}\par
+\small\textbf{(a)} $H=1$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=2$}\par\vspace{3mm}
+Global maximum $F(2)=3$; all 1 rooted maximizing classes, grouped into 1 ordinary shape.\par\vspace{2mm}
+Double-circled vertices are all optimal starting states. Choose one marked start at a time; each choice defines a separate rooted graph.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m02-shape-01.tex}}\par
+\small\textbf{(a)} $H=3$. Optimal starts: $\{0, 1\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=3$}\par\vspace{3mm}
+Global maximum $F(3)=6$; all 2 rooted maximizing classes, grouped into 1 ordinary shape.\par\vspace{2mm}
+Double-circled vertices are all optimal starting states. Choose one marked start at a time; each choice defines a separate rooted graph.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m03-shape-01.tex}}\par
+\small\textbf{(a)} $H=6$. Optimal starts: $\{0, 2\}$.\\2 distinct rooted maximizing classes.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=4$}\par\vspace{3mm}
+Global maximum $F(4)=10$; all 1 rooted maximizing classes, grouped into 1 ordinary shape.\par\vspace{2mm}
+Double-circled vertices are all optimal starting states. Choose one marked start at a time; each choice defines a separate rooted graph.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m04-shape-01.tex}}\par
+\small\textbf{(a)} $H=10$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=5$}\par\vspace{3mm}
+Global maximum $F(5)=15$; all 5 rooted maximizing classes, grouped into 4 ordinary shapes.\par\vspace{2mm}
+Double-circled vertices are all optimal starting states. Choose one marked start at a time; each choice defines a separate rooted graph.\par\vspace{3mm}
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m05-shape-01.tex}}\par
+\small\textbf{(a)} $H=15$. Optimal starts: $\{0, 2\}$.\\2 distinct rooted maximizing classes.\par\end{minipage}
+\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m05-shape-02.tex}}\par
+\small\textbf{(b)} $H=15$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\par\vspace{5mm}
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m05-shape-03.tex}}\par
+\small\textbf{(c)} $H=15$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m05-shape-04.tex}}\par
+\small\textbf{(d)} $H=15$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\par\vspace{5mm}
+\clearpage
+{\LARGE\bfseries $m=6$}\par\vspace{3mm}
+Global maximum $F(6)=23$; all 2 rooted maximizing classes, grouped into 1 ordinary shape.\par\vspace{2mm}
+Double-circled vertices are all optimal starting states. Choose one marked start at a time; each choice defines a separate rooted graph.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m06-shape-01.tex}}\par
+\small\textbf{(a)} $H=23$. Optimal starts: $\{0, 2\}$.\\2 distinct rooted maximizing classes.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=7$}\par\vspace{3mm}
+Global maximum $F(7)=34$; all 8 rooted maximizing classes, grouped into 4 ordinary shapes.\par\vspace{2mm}
+Double-circled vertices are all optimal starting states. Choose one marked start at a time; each choice defines a separate rooted graph.\par\vspace{3mm}
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m07-shape-01.tex}}\par
+\small\textbf{(a)} $H=34$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m07-shape-02.tex}}\par
+\small\textbf{(b)} $H=34$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\par\vspace{5mm}
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m07-shape-03.tex}}\par
+\small\textbf{(c)} $H=34$. Optimal starts: $\{0\}$.\\1 distinct rooted maximizing class.\par\end{minipage}
+\hfill
+\begin{minipage}[t]{.48\textwidth}\centering
+\resizebox{6.9cm}{!}{\input{snippets/m07-shape-04.tex}}\par
+\small\textbf{(d)} $H=34$. Optimal starts: $\{0, 2, 3, 4, 5\}$.\\5 distinct rooted maximizing classes.\par\end{minipage}
+\par\vspace{5mm}
+\clearpage
+{\LARGE\bfseries $m=8$}\par\vspace{3mm}
+\textbf{One candidate found.} The working estimate is $49$ (rough range $48$--$50$), with a verified pair of length $50$. The marked start $0$ gives the best current estimate; start $2$ of the same graph is the runner-up.\par\vspace{2mm}
+All eight starting states of this graph were checked heuristically. The returned pair lengths are:\par\smallskip\begin{center}\begin{tabular}{r|rrrrrrrr}Start &0&1&2&3&4&5&6&7\\\hline Pair length &50&42&49&39&43&47&43&46\end{tabular}\end{center}\vspace{2mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m08-shape-01.tex}}\par
+\small\textbf{(a)} Best current estimated start: $0$.\\Finder length $50$; working estimate $H\approx49$.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=9$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m09-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=10$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m10-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=11$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m11-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=12$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m12-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=13$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m13-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=14$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m14-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=15$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m15-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=16$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m16-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=17$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m17-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=18$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m18-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=19$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m19-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\clearpage
+{\LARGE\bfseries $m=20$}\par\vspace{3mm}
+\textbf{Constructive lower-bound example.} The indicated start gives $H\ge34$ by a static-mask projection onto a certified seven-state maximizer. This graph has not been certified globally optimal; its exact score is unresolved.\par\vspace{3mm}
+\begin{minipage}[t]{.94\textwidth}\centering
+\resizebox{10.3cm}{!}{\input{snippets/m20-shape-01.tex}}\par
+\small\textbf{(a)} Example start: $0$. Proved $H\ge34$.\\Exact score and global maximum unresolved.\par\end{minipage}
+\end{document}

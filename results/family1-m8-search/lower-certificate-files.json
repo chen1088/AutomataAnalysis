@@ -1,0 +1,46 @@
+{
+  "certificate-run.json": {
+    "sha256": "408c284b8fa22e5e41b725147bf01e24f0d7b43da54a0eb4d7865ca9ed57ee55",
+    "bytes": 3750
+  },
+  "invocation.json": {
+    "sha256": "9ff9e2f5a05d85b079ff9a7d724c1fd87dff7840fbb3e821727d0ace864954f6",
+    "bytes": 2372
+  },
+  "native.log": {
+    "sha256": "c23b11f3cb0996405d85f7116430c4efa5bafcb81c0956fce23c64900b9418f2",
+    "bytes": 227
+  },
+  "reference-check.log": {
+    "sha256": "1b2b7f991eef225779717ce8fb3d9d3d32070bd591c1d052f3b5c0b40d408523",
+    "bytes": 108
+  },
+  "report.json": {
+    "sha256": "123327bdfe8e40e5f3b78cf1ff0de1763e386e2b0f6c6bd7b205824a4e5e6d7d",
+    "bytes": 1807
+  },
+  "snapshots/family1_layer_certificate.py": {
+    "sha256": "d4e955bd4cf5ed5ffb2905437e7d83d1be526dc84414c18449ad8a61a7f8806f",
+    "bytes": 6810
+  },
+  "snapshots/family1_m8_layer_verify_test.py": {
+    "sha256": "746f838c621e1ad483c2fb8a7d65729c6ae03a5f9e55bbf42e52f4919d785be2",
+    "bytes": 9768
+  },
+  "snapshots/family1_run_m8_layer.py": {
+    "sha256": "b3a6e35247344a568b69ab59b2f7d0868445a18ec927b81ef6e062c54263f0a9",
+    "bytes": 5607
+  },
+  "snapshots/Family1M8LayerVerify.cpp": {
+    "sha256": "5a2c40a982dd3f8363eb881e6ed1ad83c45c0abec327f82c2f41eb8bdd12ff8a",
+    "bytes": 29991
+  },
+  "snapshots/Family1M8LayerVerify.exe": {
+    "sha256": "063b51a058c851c65819b26eac0974717e1faa9ed43f28d7bbfe9ae246cc2d1e",
+    "bytes": 277504
+  },
+  "snapshots/fingerprint-masks.txt": {
+    "sha256": "13c5835434a2f0b82d64f6b51885aadd1a6bcd5398985b7c9fc5ecdcbec9ecbd",
+    "bytes": 456
+  }
+}

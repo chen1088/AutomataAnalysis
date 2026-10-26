@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "records": {
+    "path": "results/family1-atlas-current/champions.jsonl",
+    "sha256": "506241c4193c425feb4e8bc65cff96399502f130175d12fd5a3cc3a8413905e2"
+  },
+  "source_exact_witness_count": 20,
+  "source_exact_upper_witnesses_all_static_masks_verified": true,
+  "source_exact_rooted_canonical_tables_verified": true,
+  "construction_sizes": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "construction_exact_reachable_sizes_verified": true,
+  "construction_canonical_projection_identities_verified": true,
+  "global_coverage_and_lower_certificates": "inherited-from-pinned-source-certificates; not-rerun-here",
+  "larger_graph_scoring_performed": false,
+  "larger_global_search_performed": false
+}

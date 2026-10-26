@@ -9,6 +9,7 @@ public:
    bool is_end = false;
    PDFA();
    PDFA(unsigned int s);
+   virtual ~PDFA() = default;
    virtual unsigned int get_next_state(unsigned int currentstate, bool c) = 0; // input is a character
    virtual unsigned int get_next_state(unsigned int currentstate, boost::dynamic_bitset<> str) = 0; // input is a string
    virtual vector<unsigned int> get_transitions_0();

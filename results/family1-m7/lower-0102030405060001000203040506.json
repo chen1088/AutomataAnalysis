@@ -1,0 +1,1 @@
+{"method":"independent-one-hot-DFS-hash-radix-full-state-replay","m":7,"key":"0102030405060001000203040506","depth":33,"status":"collision-free","lower_bound":34,"upper_bound":null,"witness":null,"compact_storage":true,"threads":8,"generated_representatives":4294967296,"hash_matches_replayed":1,"seconds":112.547,"reason":""}

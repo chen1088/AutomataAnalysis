@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "ranked_runs": 666,
+  "metric_rows": 2664,
+  "ranker": {
+    "path": "out/family1-edit-ranked-candidate-benchmark/ranker-used.py",
+    "sha256": "c193f66c8423d31302cb47daaeaf3073e8b0a4e261f7b76946764a7103758926"
+  },
+  "same_candidate_classes_across_strategies": true,
+  "no_target_truth_in_ranking": true,
+  "no_global_optimality_claim": true
+}

@@ -1,0 +1,79 @@
+{
+  "exe": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1Sample.exe",
+  "query_method": "finder",
+  "samples": 8,
+  "sampling_seed": 1088,
+  "beam_width": 4,
+  "lookahead": 2,
+  "full_agreement": false,
+  "full_guidance": false,
+  "window_k": 2,
+  "tail_threshold": 4,
+  "tail_max_states": 100000,
+  "best_of_seeds": true,
+  "seeds": [
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-neighbor-seeds\\near-top.jsonl"
+  ],
+  "shape_seeds": [
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-circulant-family\\champions.jsonl"
+  ],
+  "baselines": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-atlas-current\\champions.jsonl",
+  "min_m": 8,
+  "max_m": 20,
+  "radius": 2,
+  "shapes_per_size": 1,
+  "candidate_shapes": 16,
+  "path_budget": 512,
+  "jobs": 4,
+  "threshold": 96,
+  "timeout_ms": 1000,
+  "solve_timeout_ms": 1000,
+  "max_refinements": 64,
+  "projection_masks": 64,
+  "schema": 1,
+  "input_hashes": {
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-atlas-current\\champions.jsonl": "506241c4193c425feb4e8bc65cff96399502f130175d12fd5a3cc3a8413905e2",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-neighbor-seeds\\near-top.jsonl": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-circulant-family\\champions.jsonl": "40c00f9bb33768ee5a7851f7c1a6cbe9cbccd10bb32e07cc9f82ee3739de6a21"
+  },
+  "small_certificate_sources": [
+    {
+      "records": {
+        "path": "results/family1-m1-m6/maximizers.jsonl",
+        "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+      },
+      "summary": {
+        "path": "results/family1-m1-m6/summary.json",
+        "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+      }
+    },
+    {
+      "records": {
+        "path": "results/family1-m7/maximizers.jsonl",
+        "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+      },
+      "summary": {
+        "path": "results/family1-m7/summary.json",
+        "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50"
+      }
+    }
+  ],
+  "program_hashes": {
+    "family1_neighbor_search.py": "a6c2d15033b7287b78a6e905cf870d1764a15072312869edfee8135b696c285d",
+    "family1_edit_distance.py": "c79392789d94a387848b64c8cc869d106d8f7eba5c27288ca350c18bf5930514",
+    "family1_ancestry.py": "0216700bb01d42e2be84261a0c184bc676daf1c1f766b5770498eeb791ebd82e",
+    "family1_study.py": "dabe12fc4cfe4e1a99b7c51da43ba1d690e82924d6490ab4ec8f85d95c9d1fe0",
+    "family1_atlas_dataset.py": "1bf3205459fe7a6348c7db359c85bf50953503e09d7059fd287c240a37064d36",
+    "family1_certified_tikz.py": "6a1fd19a02358bba5db80bb81d611c8b97026afaf26510b9dc4c15b52e23fc31"
+  },
+  "native_executable_sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a",
+  "native_source_hashes": {
+    "family1_sample.cpp": "773616d7733be935ef051f54f3dbc714ada49a0463a16ccfa1954ed1dea88018",
+    "Family1CliArtifacts.h": "f4da56617b1b7db069dfc8b46815863097c2022ec9efa5b6b76470b155ce915c",
+    "Family1PairAgreement.h": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c",
+    "Family1FullGuidance.h": "6a1233e2e3a49a4b2fcf87cb3040caf5e8b350b8935fe0a772d5e9b9c3f9e0ec",
+    "HardPairFinder.h": "9b4b3ec4e18e300a03474b4f681e146635dcb6970703e85470848518566291a8",
+    "HardPairPrefixSeeds.h": "d7216011bc9ca149303ef356ad9d3339c1580061ddeb901d66910ef995229403",
+    "HardPairViability.h": "04152a0fecdccccbbc263da62d11c6121cb3b9323fec41344a28ccc50320ff21"
+  }
+}

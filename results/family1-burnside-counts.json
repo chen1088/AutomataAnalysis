@@ -1,0 +1,306 @@
+{
+  "method": "independent-root-fixed-Burnside-reachable-set-recurrence",
+  "indegree_restriction": null,
+  "loops_and_coincident_ports": true,
+  "brute_fixed_set_check_through_m": 4,
+  "sizes": [
+    {
+      "m": 1,
+      "rooted_classes": 1,
+      "burnside_terms": [
+        {
+          "nonroot_cycle_lengths": [],
+          "centralizer_order": 1,
+          "fixed_accessible_tables": 1
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "rooted_classes": 6,
+      "burnside_terms": [
+        {
+          "nonroot_cycle_lengths": [
+            1
+          ],
+          "centralizer_order": 1,
+          "fixed_accessible_tables": 6
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "rooted_classes": 57,
+      "burnside_terms": [
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1
+          ],
+          "centralizer_order": 2,
+          "fixed_accessible_tables": 108
+        },
+        {
+          "nonroot_cycle_lengths": [
+            2
+          ],
+          "centralizer_order": 2,
+          "fixed_accessible_tables": 6
+        }
+      ]
+    },
+    {
+      "m": 4,
+      "rooted_classes": 678,
+      "burnside_terms": [
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            1
+          ],
+          "centralizer_order": 6,
+          "fixed_accessible_tables": 3960
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            2
+          ],
+          "centralizer_order": 2,
+          "fixed_accessible_tables": 36
+        },
+        {
+          "nonroot_cycle_lengths": [
+            3
+          ],
+          "centralizer_order": 3,
+          "fixed_accessible_tables": 0
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "rooted_classes": 10398,
+      "burnside_terms": [
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "centralizer_order": 24,
+          "fixed_accessible_tables": 244350
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            2
+          ],
+          "centralizer_order": 4,
+          "fixed_accessible_tables": 732
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            3
+          ],
+          "centralizer_order": 3,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            2,
+            2
+          ],
+          "centralizer_order": 8,
+          "fixed_accessible_tables": 270
+        },
+        {
+          "nonroot_cycle_lengths": [
+            4
+          ],
+          "centralizer_order": 4,
+          "fixed_accessible_tables": 0
+        }
+      ]
+    },
+    {
+      "m": 6,
+      "rooted_classes": 192181,
+      "burnside_terms": [
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "centralizer_order": 120,
+          "fixed_accessible_tables": 22725360
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "centralizer_order": 12,
+          "fixed_accessible_tables": 30558
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            3
+          ],
+          "centralizer_order": 6,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            2,
+            2
+          ],
+          "centralizer_order": 8,
+          "fixed_accessible_tables": 2052
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            4
+          ],
+          "centralizer_order": 4,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            2,
+            3
+          ],
+          "centralizer_order": 6,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            5
+          ],
+          "centralizer_order": 5,
+          "fixed_accessible_tables": 0
+        }
+      ]
+    },
+    {
+      "m": 7,
+      "rooted_classes": 4166855,
+      "burnside_terms": [
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "centralizer_order": 720,
+          "fixed_accessible_tables": 2965707360
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "centralizer_order": 48,
+          "fixed_accessible_tables": 2126520
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "centralizer_order": 18,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "centralizer_order": 16,
+          "fixed_accessible_tables": 46432
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            1,
+            4
+          ],
+          "centralizer_order": 8,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            2,
+            3
+          ],
+          "centralizer_order": 6,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            1,
+            5
+          ],
+          "centralizer_order": 5,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            2,
+            2,
+            2
+          ],
+          "centralizer_order": 48,
+          "fixed_accessible_tables": 29064
+        },
+        {
+          "nonroot_cycle_lengths": [
+            2,
+            4
+          ],
+          "centralizer_order": 8,
+          "fixed_accessible_tables": 56
+        },
+        {
+          "nonroot_cycle_lengths": [
+            3,
+            3
+          ],
+          "centralizer_order": 18,
+          "fixed_accessible_tables": 0
+        },
+        {
+          "nonroot_cycle_lengths": [
+            6
+          ],
+          "centralizer_order": 6,
+          "fixed_accessible_tables": 0
+        }
+      ]
+    }
+  ]
+}

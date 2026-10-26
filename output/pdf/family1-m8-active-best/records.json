@@ -1,0 +1,1102 @@
+{
+  "source": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-estimates\\best-candidates.jsonl",
+    "sha256": "f4385db783c114143cef29380b4195b0e3693e2cc3f0fad9c48d1612500d6dd0",
+    "bytes": 9919
+  },
+  "all_top_ties": [
+    {
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "certificate_interval": [
+        1,
+        50
+      ],
+      "completed_k": 12,
+      "eligible": true,
+      "estimate": {
+        "certified": false,
+        "point": 49,
+        "rough_band": [
+          48,
+          50
+        ],
+        "rule": "user heuristic: H approximately L-1, rough[L-2,L]"
+      },
+      "estimate_assumption": "User assumption: shortest merge length is approximately one or two below the verified finder length L; use point L-1 and rough band [L-2,L], clipped to certified bounds. This is not a validation guarantee.",
+      "estimate_is_certified": false,
+      "estimate_method": "user-assumed-one-or-two-below-verified-upper",
+      "estimated_band": [
+        48,
+        50
+      ],
+      "estimated_merge_length": 49,
+      "generation_provenance": {
+        "candidates": {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r3-instant-generated\\candidates.jsonl",
+          "sha256": "e934e706c30b4bb2af301a8d134369f46dae39211693cdf4335498cc78df5375"
+        },
+        "path_ids": [
+          132
+        ],
+        "paths": {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r3-instant-generated\\paths.jsonl",
+          "sha256": "c7f9eceddb452c5ba03edcf2ed0a232313795c7ec093c96c89306f7a518d0c8c"
+        },
+        "root_metadata": [
+          {
+            "endpoint_key": "01020003040501060003020705060407",
+            "path_id": 132,
+            "root_fixed_path": true,
+            "root_in_endpoint": 0
+          },
+          {
+            "endpoint_key": "01020304030501020006050604070007",
+            "path_id": 207,
+            "root_fixed_path": false,
+            "root_in_endpoint": 1
+          },
+          {
+            "endpoint_key": "00010203040504060203010706070005",
+            "path_id": 549,
+            "root_fixed_path": false,
+            "root_in_endpoint": 2
+          },
+          {
+            "endpoint_key": "01020003020304050106060704050007",
+            "path_id": 829,
+            "root_fixed_path": false,
+            "root_in_endpoint": 4
+          },
+          {
+            "endpoint_key": "00010203010403040506000702070506",
+            "path_id": 850,
+            "root_fixed_path": false,
+            "root_in_endpoint": 6
+          },
+          {
+            "endpoint_key": "01020003040502030006060704050107",
+            "path_id": 1976,
+            "root_fixed_path": false,
+            "root_in_endpoint": 4
+          },
+          {
+            "endpoint_key": "00010203010403040506000702070506",
+            "path_id": 8768,
+            "root_fixed_path": false,
+            "root_in_endpoint": 6
+          },
+          {
+            "endpoint_key": "01020304030501020006050604070007",
+            "path_id": 8879,
+            "root_fixed_path": false,
+            "root_in_endpoint": 1
+          },
+          {
+            "endpoint_key": "00010203010403040506000702070506",
+            "path_id": 9455,
+            "root_fixed_path": false,
+            "root_in_endpoint": 6
+          },
+          {
+            "endpoint_key": "00010203040504060203010706070005",
+            "path_id": 9984,
+            "root_fixed_path": false,
+            "root_in_endpoint": 2
+          }
+        ],
+        "rooted_edit_distance_upper_bound": 1
+      },
+      "key": "01020003040501060003020705060407",
+      "lower_bound": 1,
+      "m": 8,
+      "max_attempted_k": 16,
+      "merge_length": null,
+      "merged_verified_interval": [
+        1,
+        50
+      ],
+      "observations": [
+        {
+          "batch": 1,
+          "completed_stage": true,
+          "k": 10,
+          "native_configuration": {
+            "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-1\\01020003040501060003020705060407\\native\\run.json",
+            "sha256": "60acf53c0561b901af7463c1ca809b28abfb07dbe712f6caa4f4f0379b571a80"
+          },
+          "node_budget_cap_reported": false,
+          "outcome": "completed"
+        },
+        {
+          "batch": 2,
+          "completed_stage": true,
+          "k": 12,
+          "native_configuration": {
+            "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-2\\01020003040501060003020705060407\\native\\run.json",
+            "sha256": "d29248099b52f19b50bb3d700f1fe9e2d2a70e38ec9c4f14800934d0ec902734"
+          },
+          "node_budget_cap_reported": false,
+          "outcome": "completed"
+        },
+        {
+          "batch": 3,
+          "completed_stage": false,
+          "k": 16,
+          "native_configuration": {
+            "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-3\\01020003040501060003020705060407\\native\\run.json",
+            "sha256": "cd94eeb9d498f58fa2b76a7edbe6e58ec79bd5d9311c623d225c45911bc30120"
+          },
+          "node_budget_cap_reported": null,
+          "outcome": "timeout"
+        }
+      ],
+      "provenance": [
+        {
+          "line": 11845,
+          "role": "sealed-corpus",
+          "source": {
+            "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\records.jsonl.gz",
+            "sha256": "c6c28015c70d66dc70098c529bb8ee8ea074c2f2435335ae3f5c6ed621d1ba8c"
+          }
+        },
+        {
+          "line": 1,
+          "role": "explicit-prior-refinement-qualification",
+          "source": {
+            "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\records.jsonl",
+            "sha256": "b2372c153ec14e14e0c9a8d8f4d8f4b735fd12d13a14d9214ab095090717ed4f"
+          }
+        }
+      ],
+      "refined_record_sources": [
+        {
+          "bytes": 410759,
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\records.jsonl",
+          "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+        },
+        {
+          "bytes": 67440,
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+          "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+        },
+        {
+          "bytes": 36048,
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+          "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+        }
+      ],
+      "refinement_eligible": true,
+      "refinement_evaluation_count": 3,
+      "refinement_status": "refined",
+      "status": "bounded",
+      "upper_bound": 50,
+      "upper_budget_provenance": [],
+      "upper_source_pins": [
+        {
+          "observations": [
+            {
+              "batch": 1,
+              "completed_stage": true,
+              "k": 10,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-1\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "60acf53c0561b901af7463c1ca809b28abfb07dbe712f6caa4f4f0379b571a80"
+              },
+              "node_budget_cap_reported": false,
+              "outcome": "completed"
+            },
+            {
+              "batch": 2,
+              "completed_stage": true,
+              "k": 12,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-2\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "d29248099b52f19b50bb3d700f1fe9e2d2a70e38ec9c4f14800934d0ec902734"
+              },
+              "node_budget_cap_reported": false,
+              "outcome": "completed"
+            },
+            {
+              "batch": 3,
+              "completed_stage": false,
+              "k": 16,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-3\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "cd94eeb9d498f58fa2b76a7edbe6e58ec79bd5d9311c623d225c45911bc30120"
+              },
+              "node_budget_cap_reported": null,
+              "outcome": "timeout"
+            }
+          ],
+          "provenance": [
+            {
+              "line": 11845,
+              "role": "sealed-corpus",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\records.jsonl.gz",
+                "sha256": "c6c28015c70d66dc70098c529bb8ee8ea074c2f2435335ae3f5c6ed621d1ba8c"
+              }
+            },
+            {
+              "line": 1,
+              "role": "explicit-prior-refinement-qualification",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\records.jsonl",
+                "sha256": "b2372c153ec14e14e0c9a8d8f4d8f4b735fd12d13a14d9214ab095090717ed4f"
+              }
+            }
+          ],
+          "source_record_file": {
+            "bytes": 1795384,
+            "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\archive-records.jsonl.gz",
+            "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+          },
+          "source_record_line": 20821,
+          "source_sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89",
+          "upper_bound": 50,
+          "upper_certificate": null,
+          "verification": {
+            "method": "imported-pinned-archive-witness"
+          }
+        },
+        {
+          "completed_k": 12,
+          "max_attempted_k": 16,
+          "observations": [
+            {
+              "batch": 0,
+              "completed_stage": true,
+              "k": 10,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-fixed-checkpoint\\queries\\batch-0\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "60acf53c0561b901af7463c1ca809b28abfb07dbe712f6caa4f4f0379b571a80"
+              },
+              "node_budget_cap_reported": false,
+              "outcome": "completed"
+            },
+            {
+              "batch": 1,
+              "completed_stage": true,
+              "k": 12,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-fixed-checkpoint\\queries\\batch-1\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "d29248099b52f19b50bb3d700f1fe9e2d2a70e38ec9c4f14800934d0ec902734"
+              },
+              "node_budget_cap_reported": false,
+              "outcome": "completed"
+            },
+            {
+              "batch": 2,
+              "completed_stage": false,
+              "k": 16,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-fixed-checkpoint\\queries\\batch-2\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "cd94eeb9d498f58fa2b76a7edbe6e58ec79bd5d9311c623d225c45911bc30120"
+              },
+              "node_budget_cap_reported": null,
+              "outcome": "timeout"
+            }
+          ],
+          "provenance": [
+            {
+              "line": 20821,
+              "role": "sealed-corpus",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\archive-records.jsonl.gz",
+                "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+              }
+            },
+            {
+              "line": 10,
+              "role": "explicit-prior-refinement-qualification",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+                "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+              }
+            },
+            {
+              "line": 30,
+              "role": "explicit-prior-refinement-qualification",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+                "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+              }
+            },
+            {
+              "line": 3,
+              "role": "explicit-prior-refinement-qualification",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\qualified-records.jsonl",
+                "sha256": "32187c2fcf95b70050600e3a91b0f57dbc0f494c7922e42c83a8dfc12be79fe2"
+              }
+            }
+          ],
+          "refinement_sources": null,
+          "source_record_file": {
+            "bytes": 410759,
+            "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\records.jsonl",
+            "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+          },
+          "source_sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88",
+          "upper_bound": 50,
+          "upper_certificate": null,
+          "verification": {
+            "mask_count": 256,
+            "method": "independent-postprocess-scalar-static-mask-replay",
+            "passed": true
+          }
+        }
+      ],
+      "verified_finder_length": 50,
+      "verified_finder_witness": [
+        "00001101101010101011000111100000011010010011100010",
+        "00100011011010101011000111100000011010010011100010"
+      ],
+      "witness": [
+        "00001101101010101011000111100000011010010011100010",
+        "00100011011010101011000111100000011010010011100010"
+      ]
+    }
+  ],
+  "underlying_graphs": [
+    {
+      "shape_key": "00010203010403040506000702070506",
+      "representative_key": "01020003040501060003020705060407",
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "marked_start_vertices": [
+        0
+      ],
+      "source_rooted_cases": [
+        {
+          "canonical_table": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "certificate_interval": [
+            1,
+            50
+          ],
+          "completed_k": 12,
+          "eligible": true,
+          "estimate": {
+            "certified": false,
+            "point": 49,
+            "rough_band": [
+              48,
+              50
+            ],
+            "rule": "user heuristic: H approximately L-1, rough[L-2,L]"
+          },
+          "estimate_assumption": "User assumption: shortest merge length is approximately one or two below the verified finder length L; use point L-1 and rough band [L-2,L], clipped to certified bounds. This is not a validation guarantee.",
+          "estimate_is_certified": false,
+          "estimate_method": "user-assumed-one-or-two-below-verified-upper",
+          "estimated_band": [
+            48,
+            50
+          ],
+          "estimated_merge_length": 49,
+          "generation_provenance": {
+            "candidates": {
+              "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r3-instant-generated\\candidates.jsonl",
+              "sha256": "e934e706c30b4bb2af301a8d134369f46dae39211693cdf4335498cc78df5375"
+            },
+            "path_ids": [
+              132
+            ],
+            "paths": {
+              "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-r3-instant-generated\\paths.jsonl",
+              "sha256": "c7f9eceddb452c5ba03edcf2ed0a232313795c7ec093c96c89306f7a518d0c8c"
+            },
+            "root_metadata": [
+              {
+                "endpoint_key": "01020003040501060003020705060407",
+                "path_id": 132,
+                "root_fixed_path": true,
+                "root_in_endpoint": 0
+              },
+              {
+                "endpoint_key": "01020304030501020006050604070007",
+                "path_id": 207,
+                "root_fixed_path": false,
+                "root_in_endpoint": 1
+              },
+              {
+                "endpoint_key": "00010203040504060203010706070005",
+                "path_id": 549,
+                "root_fixed_path": false,
+                "root_in_endpoint": 2
+              },
+              {
+                "endpoint_key": "01020003020304050106060704050007",
+                "path_id": 829,
+                "root_fixed_path": false,
+                "root_in_endpoint": 4
+              },
+              {
+                "endpoint_key": "00010203010403040506000702070506",
+                "path_id": 850,
+                "root_fixed_path": false,
+                "root_in_endpoint": 6
+              },
+              {
+                "endpoint_key": "01020003040502030006060704050107",
+                "path_id": 1976,
+                "root_fixed_path": false,
+                "root_in_endpoint": 4
+              },
+              {
+                "endpoint_key": "00010203010403040506000702070506",
+                "path_id": 8768,
+                "root_fixed_path": false,
+                "root_in_endpoint": 6
+              },
+              {
+                "endpoint_key": "01020304030501020006050604070007",
+                "path_id": 8879,
+                "root_fixed_path": false,
+                "root_in_endpoint": 1
+              },
+              {
+                "endpoint_key": "00010203010403040506000702070506",
+                "path_id": 9455,
+                "root_fixed_path": false,
+                "root_in_endpoint": 6
+              },
+              {
+                "endpoint_key": "00010203040504060203010706070005",
+                "path_id": 9984,
+                "root_fixed_path": false,
+                "root_in_endpoint": 2
+              }
+            ],
+            "rooted_edit_distance_upper_bound": 1
+          },
+          "key": "01020003040501060003020705060407",
+          "lower_bound": 1,
+          "m": 8,
+          "max_attempted_k": 16,
+          "merge_length": null,
+          "merged_verified_interval": [
+            1,
+            50
+          ],
+          "observations": [
+            {
+              "batch": 1,
+              "completed_stage": true,
+              "k": 10,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-1\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "60acf53c0561b901af7463c1ca809b28abfb07dbe712f6caa4f4f0379b571a80"
+              },
+              "node_budget_cap_reported": false,
+              "outcome": "completed"
+            },
+            {
+              "batch": 2,
+              "completed_stage": true,
+              "k": 12,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-2\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "d29248099b52f19b50bb3d700f1fe9e2d2a70e38ec9c4f14800934d0ec902734"
+              },
+              "node_budget_cap_reported": false,
+              "outcome": "completed"
+            },
+            {
+              "batch": 3,
+              "completed_stage": false,
+              "k": 16,
+              "native_configuration": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-3\\01020003040501060003020705060407\\native\\run.json",
+                "sha256": "cd94eeb9d498f58fa2b76a7edbe6e58ec79bd5d9311c623d225c45911bc30120"
+              },
+              "node_budget_cap_reported": null,
+              "outcome": "timeout"
+            }
+          ],
+          "provenance": [
+            {
+              "line": 11845,
+              "role": "sealed-corpus",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\records.jsonl.gz",
+                "sha256": "c6c28015c70d66dc70098c529bb8ee8ea074c2f2435335ae3f5c6ed621d1ba8c"
+              }
+            },
+            {
+              "line": 1,
+              "role": "explicit-prior-refinement-qualification",
+              "source": {
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\records.jsonl",
+                "sha256": "b2372c153ec14e14e0c9a8d8f4d8f4b735fd12d13a14d9214ab095090717ed4f"
+              }
+            }
+          ],
+          "refined_record_sources": [
+            {
+              "bytes": 410759,
+              "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\records.jsonl",
+              "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+            },
+            {
+              "bytes": 67440,
+              "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+              "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+            },
+            {
+              "bytes": 36048,
+              "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+              "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+            }
+          ],
+          "refinement_eligible": true,
+          "refinement_evaluation_count": 3,
+          "refinement_status": "refined",
+          "status": "bounded",
+          "upper_bound": 50,
+          "upper_budget_provenance": [],
+          "upper_source_pins": [
+            {
+              "observations": [
+                {
+                  "batch": 1,
+                  "completed_stage": true,
+                  "k": 10,
+                  "native_configuration": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-1\\01020003040501060003020705060407\\native\\run.json",
+                    "sha256": "60acf53c0561b901af7463c1ca809b28abfb07dbe712f6caa4f4f0379b571a80"
+                  },
+                  "node_budget_cap_reported": false,
+                  "outcome": "completed"
+                },
+                {
+                  "batch": 2,
+                  "completed_stage": true,
+                  "k": 12,
+                  "native_configuration": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-2\\01020003040501060003020705060407\\native\\run.json",
+                    "sha256": "d29248099b52f19b50bb3d700f1fe9e2d2a70e38ec9c4f14800934d0ec902734"
+                  },
+                  "node_budget_cap_reported": false,
+                  "outcome": "completed"
+                },
+                {
+                  "batch": 3,
+                  "completed_stage": false,
+                  "k": 16,
+                  "native_configuration": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\queries\\batch-3\\01020003040501060003020705060407\\native\\run.json",
+                    "sha256": "cd94eeb9d498f58fa2b76a7edbe6e58ec79bd5d9311c623d225c45911bc30120"
+                  },
+                  "node_budget_cap_reported": null,
+                  "outcome": "timeout"
+                }
+              ],
+              "provenance": [
+                {
+                  "line": 11845,
+                  "role": "sealed-corpus",
+                  "source": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\records.jsonl.gz",
+                    "sha256": "c6c28015c70d66dc70098c529bb8ee8ea074c2f2435335ae3f5c6ed621d1ba8c"
+                  }
+                },
+                {
+                  "line": 1,
+                  "role": "explicit-prior-refinement-qualification",
+                  "source": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\records.jsonl",
+                    "sha256": "b2372c153ec14e14e0c9a8d8f4d8f4b735fd12d13a14d9214ab095090717ed4f"
+                  }
+                }
+              ],
+              "source_record_file": {
+                "bytes": 1795384,
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\archive-records.jsonl.gz",
+                "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+              },
+              "source_record_line": 20821,
+              "source_sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89",
+              "upper_bound": 50,
+              "upper_certificate": null,
+              "verification": {
+                "method": "imported-pinned-archive-witness"
+              }
+            },
+            {
+              "completed_k": 12,
+              "max_attempted_k": 16,
+              "observations": [
+                {
+                  "batch": 0,
+                  "completed_stage": true,
+                  "k": 10,
+                  "native_configuration": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-fixed-checkpoint\\queries\\batch-0\\01020003040501060003020705060407\\native\\run.json",
+                    "sha256": "60acf53c0561b901af7463c1ca809b28abfb07dbe712f6caa4f4f0379b571a80"
+                  },
+                  "node_budget_cap_reported": false,
+                  "outcome": "completed"
+                },
+                {
+                  "batch": 1,
+                  "completed_stage": true,
+                  "k": 12,
+                  "native_configuration": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-fixed-checkpoint\\queries\\batch-1\\01020003040501060003020705060407\\native\\run.json",
+                    "sha256": "d29248099b52f19b50bb3d700f1fe9e2d2a70e38ec9c4f14800934d0ec902734"
+                  },
+                  "node_budget_cap_reported": false,
+                  "outcome": "completed"
+                },
+                {
+                  "batch": 2,
+                  "completed_stage": false,
+                  "k": 16,
+                  "native_configuration": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-fixed-checkpoint\\queries\\batch-2\\01020003040501060003020705060407\\native\\run.json",
+                    "sha256": "cd94eeb9d498f58fa2b76a7edbe6e58ec79bd5d9311c623d225c45911bc30120"
+                  },
+                  "node_budget_cap_reported": null,
+                  "outcome": "timeout"
+                }
+              ],
+              "provenance": [
+                {
+                  "line": 20821,
+                  "role": "sealed-corpus",
+                  "source": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\archive-records.jsonl.gz",
+                    "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+                  }
+                },
+                {
+                  "line": 10,
+                  "role": "explicit-prior-refinement-qualification",
+                  "source": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+                    "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+                  }
+                },
+                {
+                  "line": 30,
+                  "role": "explicit-prior-refinement-qualification",
+                  "source": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+                    "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+                  }
+                },
+                {
+                  "line": 3,
+                  "role": "explicit-prior-refinement-qualification",
+                  "source": {
+                    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\qualified-records.jsonl",
+                    "sha256": "32187c2fcf95b70050600e3a91b0f57dbc0f494c7922e42c83a8dfc12be79fe2"
+                  }
+                }
+              ],
+              "refinement_sources": null,
+              "source_record_file": {
+                "bytes": 410759,
+                "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\records.jsonl",
+                "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+              },
+              "source_sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88",
+              "upper_bound": 50,
+              "upper_certificate": null,
+              "verification": {
+                "mask_count": 256,
+                "method": "independent-postprocess-scalar-static-mask-replay",
+                "passed": true
+              }
+            }
+          ],
+          "verified_finder_length": 50,
+          "verified_finder_witness": [
+            "00001101101010101011000111100000011010010011100010",
+            "00100011011010101011000111100000011010010011100010"
+          ],
+          "witness": [
+            "00001101101010101011000111100000011010010011100010",
+            "00100011011010101011000111100000011010010011100010"
+          ]
+        }
+      ],
+      "root_audit": [
+        {
+          "vertex": 0,
+          "accessible": true,
+          "rooted_key": "01020003040501060003020705060407",
+          "vertex_to_rooted_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "selected": true
+        },
+        {
+          "vertex": 1,
+          "accessible": true,
+          "rooted_key": "01020003000403050506040701020607",
+          "vertex_to_rooted_labels": [
+            2,
+            0,
+            4,
+            1,
+            6,
+            5,
+            3,
+            7
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 2,
+          "accessible": true,
+          "rooted_key": "01020003040502030006060704050107",
+          "vertex_to_rooted_labels": [
+            4,
+            6,
+            0,
+            5,
+            2,
+            1,
+            7,
+            3
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 3,
+          "accessible": true,
+          "rooted_key": "01020003020401050506040706070003",
+          "vertex_to_rooted_labels": [
+            3,
+            1,
+            5,
+            0,
+            7,
+            4,
+            2,
+            6
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 4,
+          "accessible": true,
+          "rooted_key": "01020304030501020006050604070007",
+          "vertex_to_rooted_labels": [
+            1,
+            3,
+            4,
+            2,
+            0,
+            6,
+            5,
+            7
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 5,
+          "accessible": true,
+          "rooted_key": "01020003020304050106060704050007",
+          "vertex_to_rooted_labels": [
+            4,
+            6,
+            1,
+            5,
+            3,
+            0,
+            7,
+            2
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 6,
+          "accessible": true,
+          "rooted_key": "00010203010403040506000702070506",
+          "vertex_to_rooted_labels": [
+            6,
+            7,
+            2,
+            5,
+            4,
+            1,
+            0,
+            3
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 7,
+          "accessible": true,
+          "rooted_key": "00010203040504060203010706070005",
+          "vertex_to_rooted_labels": [
+            2,
+            4,
+            5,
+            3,
+            1,
+            7,
+            6,
+            0
+          ],
+          "selected": false
+        }
+      ]
+    }
+  ],
+  "graph_and_witness_audit": [
+    {
+      "key": "01020003040501060003020705060407",
+      "shape_key": "00010203010403040506000702070506",
+      "marked_start_vertices": [
+        0
+      ],
+      "root_audit": [
+        {
+          "vertex": 0,
+          "accessible": true,
+          "rooted_key": "01020003040501060003020705060407",
+          "vertex_to_rooted_labels": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "selected": true
+        },
+        {
+          "vertex": 1,
+          "accessible": true,
+          "rooted_key": "01020003000403050506040701020607",
+          "vertex_to_rooted_labels": [
+            2,
+            0,
+            4,
+            1,
+            6,
+            5,
+            3,
+            7
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 2,
+          "accessible": true,
+          "rooted_key": "01020003040502030006060704050107",
+          "vertex_to_rooted_labels": [
+            4,
+            6,
+            0,
+            5,
+            2,
+            1,
+            7,
+            3
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 3,
+          "accessible": true,
+          "rooted_key": "01020003020401050506040706070003",
+          "vertex_to_rooted_labels": [
+            3,
+            1,
+            5,
+            0,
+            7,
+            4,
+            2,
+            6
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 4,
+          "accessible": true,
+          "rooted_key": "01020304030501020006050604070007",
+          "vertex_to_rooted_labels": [
+            1,
+            3,
+            4,
+            2,
+            0,
+            6,
+            5,
+            7
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 5,
+          "accessible": true,
+          "rooted_key": "01020003020304050106060704050007",
+          "vertex_to_rooted_labels": [
+            4,
+            6,
+            1,
+            5,
+            3,
+            0,
+            7,
+            2
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 6,
+          "accessible": true,
+          "rooted_key": "00010203010403040506000702070506",
+          "vertex_to_rooted_labels": [
+            6,
+            7,
+            2,
+            5,
+            4,
+            1,
+            0,
+            3
+          ],
+          "selected": false
+        },
+        {
+          "vertex": 7,
+          "accessible": true,
+          "rooted_key": "00010203040504060203010706070005",
+          "vertex_to_rooted_labels": [
+            2,
+            4,
+            5,
+            3,
+            1,
+            7,
+            6,
+            0
+          ],
+          "selected": false
+        }
+      ],
+      "edge_table_checked": true,
+      "witness_verification": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5492fbd9d8abb4bc50afd94a68dc5cabcab3bf6e632530014879038a5c12257c"
+      }
+    }
+  ],
+  "all_edges_unlabelled_and_solid": true,
+  "heuristic_estimates_are_certificates": false
+}

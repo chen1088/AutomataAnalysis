@@ -1,0 +1,27 @@
+{
+  "visual_review_passed": true,
+  "all_edges_solid": true,
+  "edge_labels_shown": false,
+  "pages": 1,
+  "source": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\records.json",
+    "sha256": "d7e43127ea97d0bf37ccdfe48582d5f247d639623173959fc5ec1a1a341e3930",
+    "bytes": 38888
+  },
+  "preview": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tmp\\pdfs\\family1-unlabelled-final\\final-active.png",
+    "sha256": "b8d0fc90432582887c8d2f8d455c041337e32029b52a1b46415e34b8735f40c6",
+    "bytes": 48894
+  },
+  "all_top_rooted_cases_retained": true,
+  "generator": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_active_best_figure.py",
+    "sha256": "3bfd66d11e961c91fd713ac8e25e7fc62bf70431baacf75d63f8eb9660f397fb",
+    "bytes": 5347
+  },
+  "grouping": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_grouped_atlas.py",
+    "sha256": "34c6d5ecde6342db4e1ac8fdb5764580477a645eb1eb4acc5f07b083cca66bc0",
+    "bytes": 19943
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "method": "bounded-separate-broad-prefix-fallback",
+  "records": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-calibration\\adaptive\\records.jsonl",
+    "sha256": "00607b6a300e31a68a7f4bafaedcd32e03838eb7187fb0bd1668ffaa061e40f5"
+  },
+  "driver": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_broad_prefix_refinement.py",
+    "sha256": "81b5964eb2417ece64cc79674d88a836a4dd8d3296484c35de374702911c09b3"
+  },
+  "adaptive_module": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_adaptive_candidate_search.py",
+    "sha256": "f6166db247f4424baddcd14a104ef8b6aad67c630b88e51a41785781d8b716c1"
+  },
+  "scorer": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_graph_candidate_search.py",
+    "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+  },
+  "exe": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1Sample.exe",
+    "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+  },
+  "settings": {
+    "jobs": 4,
+    "query_seconds": 30,
+    "wall_seconds": 120,
+    "memory_mib": 1024,
+    "samples": 65536,
+    "max_queries": 16,
+    "batch_size": 12,
+    "band_width": 2
+  },
+  "evaluation_scores_used_for_queries": false,
+  "saved_word_hints_used": false,
+  "window_k": 16,
+  "beam": 16,
+  "seed": 1088,
+  "strong_prefix": true,
+  "prefix_budget_actuals_reported_per_query": true
+}

@@ -1,0 +1,315 @@
+{
+  "ordinal": 2471796,
+  "key": "0102010203040005050600060304",
+  "known_H": 34,
+  "source_near_length": 36,
+  "distinct_source_pairs": 2,
+  "distinct_source_words": 4,
+  "target_length": 34,
+  "decision": "unknown",
+  "upper_bound": null,
+  "complete_within_subsequence_space": true,
+  "no_pair_in_subsequence_space": true,
+  "union_distinct_subsequences": 600,
+  "unique_complete_profiles": 600,
+  "colliding_profiles": 0,
+  "native_seconds": 0.001274,
+  "nodes": 7544,
+  "native_result": {
+    "path": "out/family1-subsequence-recovery/minimum-pools/2471796/result.json",
+    "sha256": "8622c933ddd7cd13004b6b49c22a4534b7af0da7d373a3ed20d2346f4d053c60"
+  },
+  "input_words": {
+    "path": "out/family1-subsequence-recovery/minimum-pools/2471796/input-words.txt",
+    "sha256": "e3fe307959a25c8865027971df476be4e8d07ac9a52e83157680f44ee5b87466"
+  },
+  "independent_length_count_dp_passed": true,
+  "stored_witnesses_scalar_verified": [],
+  "command": [
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+    "--graph",
+    "0102010203040005050600060304",
+    "--input-file",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-pools\\2471796\\input-words.txt",
+    "--target",
+    "34",
+    "--out",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-pools\\2471796",
+    "--max-nodes",
+    "10000000"
+  ],
+  "sources": [
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k2-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "3393cf90707dacbe0038540c926e9d89c6b140c1274225195695cfa8d06dd32a"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k3-w4-t0-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "ce7c67a116cb737f33ef115394ad7ffeb4556638ca064a1cc24bf0903a6fc131"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k3-w4-t2-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "9a46f9f59c679b15c96e6adea75851e93b40aa63c447273a0e061526a177a684"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k3-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "e3db5a8bc54f4f5f742688147efd6245a0aef11644f35dedc1d2be39019aa8bc"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k4-w4-t0-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "6f15ea40a9b25e7cd3c5d23fcc45a8a0e0c236c143ff195d53cb3932e1eba2ed"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k4-w4-t2-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "6cfc6df56032c04ee425704857a5124a5eb8200b33eb2f7a21ee03354578a83b"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k4-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "ae77a96637c5a2d4ea3c9b89831ec9f85bf0dd3851b9809479391848b84176d0"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k5-w4-t0-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "9727c924f4e637f5c4c7fd1a5947a3d7673a97f23832a9353ebece44af886475"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k5-w4-t2-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "85577c94872e0cad4a43f0853cff183b2e6ca0a24d3ec88b61632a6890b669c7"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k5-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "f949151d76e15d74b687063985cf99afdb6d0d0a91fe836b4dae316e5d358027"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k12-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "1fc3d8ee4da4dad5feab8a30ef19aabc4f0159116baf514c4908e9938ef5af6f"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k14-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "59fcd49777f1cdec9b563ae2d9b7c620065f2eb5391851149ec2d66ff58d58cc"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k16-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "534b7725b1e568775e5b28f7e4bc55913418fd349faf25472c30e82ade537b34"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k2-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "378a149851b8a6de4fe5f543da9453ce2905e7aff2975f22644ec807dc8c6ddb"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k4-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "00a1c0ad07ec39fef4a38fef4e7500585f73f5c5e35cb10569dfc714fec4b696"
+      },
+      "words": [
+        "010011100110001101110000100101111001",
+        "101100011110001101110000100101111001"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 2471796,
+      "run_id": "m7-2471796-k8-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "a173c72a6eca3df2e14a7fc9cb04e5a65bdf8f829c523a72f9309f8e92f3bbc1"
+      },
+      "words": [
+        "010011100001110010001111011010000110",
+        "101100011001110010001111011010000110"
+      ],
+      "length": 36
+    }
+  ]
+}

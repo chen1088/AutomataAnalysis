@@ -1,0 +1,7 @@
+digraph Family1 {
+  rankdir=LR;
+  start [shape=point]; start -> 0;
+  0 [shape=doublecircle];
+  0 -> 0 [label="tau0"];
+  0 -> 0 [label="tau1"];
+}

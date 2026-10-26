@@ -1,0 +1,988 @@
+{
+  "schema": 1,
+  "driver": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-broad-checkpoint-continuation\\driver-used.py",
+    "sha256": "611ed8fe4617495e5a5487380e37565f1a9c862c00c03d6a61bd9ab70055ef24"
+  },
+  "module": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_adaptive_candidate_search.py",
+    "sha256": "f6166db247f4424baddcd14a104ef8b6aad67c630b88e51a41785781d8b716c1"
+  },
+  "exe": {
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-v3-pending\\native-used\\Family1Sample.exe",
+    "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+  },
+  "plans": [
+    {
+      "name": "m7",
+      "key": "0102000304050106000304050206",
+      "graph": {
+        "m": 7,
+        "key": "0102000304050106000304050206",
+        "canonical_table": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      },
+      "stage": {
+        "name": "adaptive-k16",
+        "window_k": 16,
+        "beam_width": 16,
+        "samples": 65536,
+        "prefix_pairs": 65536,
+        "prefix_depth": 21,
+        "prefix_words": 2097152,
+        "prefix_samples_per_depth": 16384,
+        "distance_coordinates": 128,
+        "ranking": "remaining",
+        "common_prefix_depth": 8,
+        "expansions": 8388480,
+        "timeout_seconds": 60,
+        "tail_threshold": 8,
+        "tail_max_states": 100000,
+        "viability_coordinates": 128,
+        "seed": 1088,
+        "memory_budget_mib": 1024,
+        "memory_estimate_is_not_an_os_limit": true,
+        "estimated_pair_working_bytes": 16128,
+        "distinct_permutation_dfas": 8,
+        "requested_prefix_words": 2097152,
+        "prefix_word_budget_scaled": false,
+        "pair_working_estimate_exceeds_budget": false,
+        "expansion_scope": "per prefix seed across all beam parents/windows",
+        "window_blocks_unit": "retained length-k leaves, not complete rounds",
+        "global_word_coverage_claimed": false
+      },
+      "cap": 37,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-broad-checkpoint-continuation\\m7\\queries\\0102000304050106000304050206",
+      "source_config": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\run.json",
+        "sha256": "c6319ae2d66f317865514360a03c9a0b29596a6d2d1440cc41c3a40c6e58e840"
+      },
+      "source_checkpoints": [
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-112.txt",
+          "sha256": "d326641cf186ff83b02e6698136c9d8d8f7338cb566e968a5c4c108ee7fcbeca"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-128.txt",
+          "sha256": "91e868ff960c880d7340b5c0774dfbd847816324ce99086e7e2033b5a64ba0ea"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-144.txt",
+          "sha256": "ca2c121bbaf71da1b9b72c2ce7e8cbfae8ea5cabd60e410411d2c8fc1abed979"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-16.txt",
+          "sha256": "d17096376c5dc5e6ec3aa98e85a691bed1452e36c0f200886fa79c41c5494df1"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-160.txt",
+          "sha256": "2e2ed1ff8a6e9fb8f222e586aeb337c32ae3dcfe1ae823128d184ce261c01c3e"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-176.txt",
+          "sha256": "c790202e2c9776ddfafa235571bc648f30d077b67bb571b26bfa1e81eff3ebc3"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-192.txt",
+          "sha256": "439fce9b17ff0ab11d813e10260f63ab8fdf73b6171f1d316654c50c18441bc1"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-208.txt",
+          "sha256": "50833447b4897039707661ad32c91f2f2ac030ecb131bd96d89c97f72e521ecd"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-224.txt",
+          "sha256": "2cf086a4245413bf409f3160a607558b553ee5262ecfb65ecf4395379a407ec4"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-240.txt",
+          "sha256": "4490e52f007c384165b6cc78cc51b52c88abff8ae058aba01a88046f4d5ca081"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-256.txt",
+          "sha256": "faa32d675b1a2d96160592b7463b2e53f4bb530105f06ea8dd95233b619cfd69"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-272.txt",
+          "sha256": "4a4c2a2a4ec8375a602192aa7221a14e0146ec14b8668142735f3a9b28890adc"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-288.txt",
+          "sha256": "2152df6390833279a6fbdf271c849da8ec6cd4eebbf49eceef88c6b5adfb0749"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-304.txt",
+          "sha256": "56441462cfb945cdefc3b7fe47ef9e16cac5d6aa16a34f23834081d61ad007e4"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-32.txt",
+          "sha256": "d2bc16422683f4eb0d5ca8105bc46610029bfd39e9acf0c9250ffc5c18af807f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-320.txt",
+          "sha256": "a9ec75dcd3bd11695eaf2d5322e6d60bbbeea205a049ec7662aa6fe09fbce781"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-336.txt",
+          "sha256": "2977cc77a61edc7dbcc42fe171f6f27084826824662fad3d3da4b0da041d1560"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-352.txt",
+          "sha256": "829c86da9e99b680f996d1cce1fcbf5dd4863d626bcc8d922fcb49887b002c70"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-368.txt",
+          "sha256": "8352d0420cbe3319e1c5388c98ea73d7e1ae31207dc828ae239172c492b89626"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-48.txt",
+          "sha256": "34121e7c1f2922bf7b495451e166b7fd576322be098417146844129d9a0e4011"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-64.txt",
+          "sha256": "7b65a0b6618f02004b53017466845de0ac4303f529d4f74bc9adb30b4e4d344c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-80.txt",
+          "sha256": "16edff5021aa260e833ad06b4f3270a2ca2d115a86c99fd824026f40a3a791cc"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102000304050106000304050206\\native\\checkpoints\\sample-96.txt",
+          "sha256": "f2513d2b730b152fa741a41305901412cd16080f801cc4dfe7f4271cf1350ca7"
+        }
+      ]
+    },
+    {
+      "name": "m7",
+      "key": "0001020304050406050600010203",
+      "graph": {
+        "m": 7,
+        "key": "0001020304050406050600010203",
+        "canonical_table": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      "stage": {
+        "name": "adaptive-k16",
+        "window_k": 16,
+        "beam_width": 16,
+        "samples": 65536,
+        "prefix_pairs": 65536,
+        "prefix_depth": 21,
+        "prefix_words": 2097152,
+        "prefix_samples_per_depth": 16384,
+        "distance_coordinates": 128,
+        "ranking": "remaining",
+        "common_prefix_depth": 8,
+        "expansions": 8388480,
+        "timeout_seconds": 60,
+        "tail_threshold": 8,
+        "tail_max_states": 100000,
+        "viability_coordinates": 128,
+        "seed": 1088,
+        "memory_budget_mib": 1024,
+        "memory_estimate_is_not_an_os_limit": true,
+        "estimated_pair_working_bytes": 16128,
+        "distinct_permutation_dfas": 8,
+        "requested_prefix_words": 2097152,
+        "prefix_word_budget_scaled": false,
+        "pair_working_estimate_exceeds_budget": false,
+        "expansion_scope": "per prefix seed across all beam parents/windows",
+        "window_blocks_unit": "retained length-k leaves, not complete rounds",
+        "global_word_coverage_claimed": false
+      },
+      "cap": 35,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-broad-checkpoint-continuation\\m7\\queries\\0001020304050406050600010203",
+      "source_config": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\run.json",
+        "sha256": "3799779203cdef4efbee2ddf4195220899f41ffa730f9df87cb8f661ea8e05fd"
+      },
+      "source_checkpoints": [
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-112.txt",
+          "sha256": "2cd9d0941ed7dc1119ed92749816b3e827152334555df77b5bd7a6999825f9da"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-128.txt",
+          "sha256": "2837583e62241a7a40fdf5cd1711772de27fd07178a643053ed2d68226424d06"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-144.txt",
+          "sha256": "280eb712e3fc689ad9800bb3f6143d14bc5368074f625054f38e118e4cbd0a22"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-16.txt",
+          "sha256": "e7900c5527c959799055bc00879e0867363f67713ffb41458f1085efda859ac7"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-160.txt",
+          "sha256": "93b8ab8db2204e19dcd87e82ca526f8dc2f1546d05454476e0ee4da198f429b8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-176.txt",
+          "sha256": "8945ac637bace971ad078febef73470def7c400a103531a3e817ba2d05a114f5"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-192.txt",
+          "sha256": "3bf446c62877f8e431281ac04241bb8790827dd8db6dc1a611f55319c56d1cc0"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-208.txt",
+          "sha256": "5116ba8dbec3ad1bd4241f3390250e26ee1f4e519fcf5dbfcb46eaa9890d8ae9"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-224.txt",
+          "sha256": "bcb7930c8970e48c2015fc2d0fdfeb4951de455ef7bfab6d0dc880d66878d6b6"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-240.txt",
+          "sha256": "c23feae91e800eff40d86aad9e949607cf177a587beeaf0cb1dbd6e0db9b4af0"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-256.txt",
+          "sha256": "8340a4ea1b071e5e9ef7187ef7f419c65db24addbcdfe72829071a863b6c4aa8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-272.txt",
+          "sha256": "ebdb305efc8555c6569f55b7f21f2dbe0e77af9125560bc9064d9eb6aa299f6c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-288.txt",
+          "sha256": "c128cc4f0c06018be6a23e8068e581ae1428bc21f35b5065d357ffd7d039dbeb"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-304.txt",
+          "sha256": "1befa74dd44773db75c8a6cd61b8cb1c70f1f697eb70d288f5e7f3ea32004b67"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-32.txt",
+          "sha256": "60f8495389a7c6b0412758f3a20cffb5490ce5d86fcda50473db93ef9fb25e06"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-320.txt",
+          "sha256": "208415153fbe949e94cd638efe7456836805ad86651e4cf40c6038dc7db233b7"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-336.txt",
+          "sha256": "202df0053b2a6d90d41d52704a2ac9ae116caa7b6f6fc568ca13ac43825ab034"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-352.txt",
+          "sha256": "9474b832f0a66c39fe20e51fa65afde1e94e82c45821b8d373c4bb9ee8118808"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-368.txt",
+          "sha256": "228ef40f231a1903ba2f03e86fe7436e7965ec1ec5a4389793ae01e8630c02c3"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-384.txt",
+          "sha256": "55b4725c688659fb729b9065db489a3d59dbb8eb3231aba4b21cf525843e828c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-400.txt",
+          "sha256": "9c2dd2d534574cad3d60d4c5108722e0b543526222e5ba62bd328f979f8406c4"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-416.txt",
+          "sha256": "d48768fd5fc78c23f1160ebe318ac749bd760a6dc515463872d051312ab87424"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-432.txt",
+          "sha256": "bbb931f55d6df2f81b01ef821664a9cbf59ae3819279cd8289eeee922a9b5429"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-448.txt",
+          "sha256": "15ee1ee549fe26efbba14740d26f81a90aa044bb319f9709b1bfb7433195acd9"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-464.txt",
+          "sha256": "72c2e3671c47aa1597fd4feb4d5ec966edd39a6a50ca9ded2bfba157a7ae5cf9"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-48.txt",
+          "sha256": "66751575634214becda58265ef489745f30c6718b6ec81382e95bd76c34c4e41"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-480.txt",
+          "sha256": "76d508a443720f967b829053219252d04158cfae137e317124462e754ae182ea"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-496.txt",
+          "sha256": "8380e8ab3feb9eef3c5a7b9e8d7ca111d8eb834e63839188c247c1ba1968d9c8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-512.txt",
+          "sha256": "dfb6534735da46b5ed80d755e88432698cbf85ccec716928cf07499c10d6df7d"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-528.txt",
+          "sha256": "4966a689d5ffcf2083490879ad9cf559af3cd300f6b8629de1c467ad5629cf3b"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-544.txt",
+          "sha256": "fe38837afbd862f090758e20317c954fd16d022920e8eb06584ebd19c312718b"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-560.txt",
+          "sha256": "9390b2a3d3ebc2629f4a4b550220a7835d377428c56c44a989c7f7f803346627"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-576.txt",
+          "sha256": "7467424fdf50075add5f60e2d5ed1a3ce0477d723724357b952e4668fbc7239f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-592.txt",
+          "sha256": "e6498884359cee4291676e3a3cea017abe38a5144673536af6655e18a8a64225"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-608.txt",
+          "sha256": "0839990b997c030be9705d5246f97033e2dba002cec6a6417606ce51b852cf39"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-624.txt",
+          "sha256": "528820f25bbcf81f9e17cb5b830600835023b7a9572ddd1ab0251e93daaa5ab9"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-64.txt",
+          "sha256": "7b2cba81f3bf7769354a25456887eb34451fde886e3f6dc7712ce978f849bf28"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-640.txt",
+          "sha256": "cd237ba4fa6a040cf5a7de135f7c419b1c9767c70b7c7f8b730fd331c4b769b7"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-656.txt",
+          "sha256": "03caa169382e893f8df863772ecb6138faf746fe152ab2f842d34f21be89f2ce"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-672.txt",
+          "sha256": "014b57fa5ae92b4ad2aca2a9c0dbec624436c751ce33de1693ab962ddcbc721b"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-688.txt",
+          "sha256": "7edd05d1d6a8b51705081f3f9849f1159caa8ec4973699f39af2352b502a368a"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-704.txt",
+          "sha256": "d5e7e3cb796008a5e75e326ca09c63a1ee0ccb5ea84288beb140f654990fa009"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-720.txt",
+          "sha256": "0675e0fd3f11d6c1056e52c68c7551b5b92074231df0cb2deb21d1e781f81c8e"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-736.txt",
+          "sha256": "98523c17b539793a9218227dae580fd80ce2c27e947a49d8e0a44f60d9be9eea"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-752.txt",
+          "sha256": "e4b557fc9f0931c8faa1785c3e169002a7b977281f6d637b17bd725e3ca78e4c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-768.txt",
+          "sha256": "18d7157f6897032c26f51dca224000aff4d680b6f128d60b9f05dcbb54b2285a"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-784.txt",
+          "sha256": "ab6263e7be4869b498ba1f252d002a007d0db39a421097aefd590f0b0262c04a"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-80.txt",
+          "sha256": "9ab8bea277b434286a9081004bbd19735a0bdea98552b6cc7e706c038a1cd378"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-800.txt",
+          "sha256": "d0f606ba780f058b613b92ef26f30020f2b8b878708546f40687e689f88d8ce8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-816.txt",
+          "sha256": "11cbeb1904ef0d453c491f4ff9a72c914429c175fb149db2d00e81702d0a360b"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-832.txt",
+          "sha256": "29aae3ffc569019771aee43ee6778f232978c66f08ae2185cba99616478ea1bc"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-848.txt",
+          "sha256": "4d0c352edf893b88811744bc1befcf20989aedaead92fd2c41554396f8a23806"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-864.txt",
+          "sha256": "85a324991e323a6c64c71a33e608bba6be1680ca5ac276177919aacf76d4f205"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-880.txt",
+          "sha256": "fee3767445af355dadb73149e1e4396817df987aac25dcb2079971b2c07fd842"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-896.txt",
+          "sha256": "d36e1299fd354979402a810d2e65ed3793cc99bed127f12a9d1e3275d3acc551"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-912.txt",
+          "sha256": "e578018ef917b7a6181d8eba9798720cc7dbeb02fce996e98a34eeea6e82f8aa"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-928.txt",
+          "sha256": "0c9d2acfe134fe49e83bc56e5b3f1c5d82f0eb14bf1fb788cf775fab2441206d"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-944.txt",
+          "sha256": "4f6fa6e1508a0225618ab1f65952cf2b5ae69ef23bc981a9bd7ca5cce4f05384"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-96.txt",
+          "sha256": "e679d38fc1cc13dc5de0ebb3b2f6599de8ec1f120762b0313d59000466b3f2c6"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-960.txt",
+          "sha256": "ab167feea2fb9570b991f254a10708926cd90f4b5043e0f3915ae0e254548646"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0001020304050406050600010203\\native\\checkpoints\\sample-976.txt",
+          "sha256": "b3fde3e3e0d7d1e3e7926c563f9e3854bc3cf4e767f592f15f7a5af2906ecf6b"
+        }
+      ]
+    },
+    {
+      "name": "m7",
+      "key": "0102010203040005050600060304",
+      "graph": {
+        "m": 7,
+        "key": "0102010203040005050600060304",
+        "canonical_table": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "stage": {
+        "name": "adaptive-k16",
+        "window_k": 16,
+        "beam_width": 16,
+        "samples": 65536,
+        "prefix_pairs": 65536,
+        "prefix_depth": 21,
+        "prefix_words": 2097152,
+        "prefix_samples_per_depth": 16384,
+        "distance_coordinates": 128,
+        "ranking": "remaining",
+        "common_prefix_depth": 8,
+        "expansions": 8388480,
+        "timeout_seconds": 60,
+        "tail_threshold": 8,
+        "tail_max_states": 100000,
+        "viability_coordinates": 128,
+        "seed": 1088,
+        "memory_budget_mib": 1024,
+        "memory_estimate_is_not_an_os_limit": true,
+        "estimated_pair_working_bytes": 16128,
+        "distinct_permutation_dfas": 8,
+        "requested_prefix_words": 2097152,
+        "prefix_word_budget_scaled": false,
+        "pair_working_estimate_exceeds_budget": false,
+        "expansion_scope": "per prefix seed across all beam parents/windows",
+        "window_blocks_unit": "retained length-k leaves, not complete rounds",
+        "global_word_coverage_claimed": false
+      },
+      "cap": 35,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-broad-checkpoint-continuation\\m7\\queries\\0102010203040005050600060304",
+      "source_config": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\run.json",
+        "sha256": "bd2b74739396f952f1e4b646e93b4a1a6d51276331e4d6a733c95250d8cf7258"
+      },
+      "source_checkpoints": [
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-112.txt",
+          "sha256": "eeec89ef21d34adc5c5e93519129ab2d1a8dba79775d51c1279e6be04ed95269"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-128.txt",
+          "sha256": "4fd50027f488efd6e2bb45dd709999300da83395f06044841aef5014f2a51218"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-144.txt",
+          "sha256": "ee746abeecd9cfc8262b317e59436918f659f9dff2b94554083f621ebc12d578"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-16.txt",
+          "sha256": "33003518c7e058ec8a1c2a200ff73bb086e6b079f329b68f1b922b42c9e4c9aa"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-160.txt",
+          "sha256": "dac32354c61fd55099158cea31acd0b19cbcd6448aa0729c621c23b445bfe06b"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-176.txt",
+          "sha256": "720b77d593bb5bf1ea340da5c3995f2f02db10202a9cec0ffdb63b18eac64a8f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-192.txt",
+          "sha256": "a44a138acdeec09d41ae0b62d5eaf4c95011a8a31a81536c924540b07591020f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-208.txt",
+          "sha256": "ba7a7c68d0e525272bcbb7dffe0056fda51d7639f7d73c755e36c4259f7f80bf"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-224.txt",
+          "sha256": "bcac517686599a5ed4ec040443d30b809b0314179ae608357ac0d72a8fc609ca"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-240.txt",
+          "sha256": "26b8cc859ed6d5979fe625618b2c128e09a03e2bca856ea1b89c36778ad8ce3c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-256.txt",
+          "sha256": "362101d2214888d84155180ec7750cf12906cc24b17d8387690be7a3970d86c0"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-272.txt",
+          "sha256": "998b73118759d056fd58ab85c8b3a5a3279a17e427b88358e7ccd0cccd3d882c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-288.txt",
+          "sha256": "bfb5cdbe18a9769f2a04bf0b9a133fcf3c1a78568fdce576df6cf48fcf8a93d3"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-304.txt",
+          "sha256": "a361216f3bdfac4309a58c08c16ad3e2e1373cf3275f49286e4da4dc50239e4f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-32.txt",
+          "sha256": "e14980af81dad1e08e575efcb1ed2217ac0270c69e4d21e328d6e8cfa37ce6c3"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-320.txt",
+          "sha256": "98e1b10ef347d442100554f9f769f482b17df3e8a8271d0ab96f0ccbd70d641e"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-336.txt",
+          "sha256": "900e4500b240286b52dda0f7f25d05de6cd6d357feea22ba085f24434abfad66"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-352.txt",
+          "sha256": "bc4199a3f287f6e96baf4bc3f48e83673bbfb1a82f0f2c45cc171c2d36b929b5"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-368.txt",
+          "sha256": "00ecd8cf7b53a324e062fc1c9a9c62bd17d079823a120ae5fe72f82d7c73d0d4"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-384.txt",
+          "sha256": "0dbb6b4cb81ebfc7aef9d71385b3a6fde07d5fffe1d04de03c82f1d7e546cfcf"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-400.txt",
+          "sha256": "9abd4e1c0a68af5613e8fe92f4eae302da887485b0049d61567769f88ebce2fc"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-416.txt",
+          "sha256": "aeadb5839ab750b64d26c6bb5c366310825fa3b87173bad004b3ae56cd23fbae"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-432.txt",
+          "sha256": "de0f68dfaaa1079b99cec52822d365cbabb334f68ba868ccaa46e74372dd1ea1"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-448.txt",
+          "sha256": "dbc2aff03493fa5b98d58a0998deaadcfd660e4bf314db16c250039aa8dcacfb"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-464.txt",
+          "sha256": "f7784ea76712c50b5ba7aa10538ad2f5931a1fee29f49d00c7ded394e338a2ef"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-48.txt",
+          "sha256": "44f2e35f74d37c31f67e5d1ae97e497f91fb3772b9e5268a211cf4758de1c997"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-480.txt",
+          "sha256": "3938a6dc36b372e7b3b32fb0fc33b739119860e22e66b9854404d77b32364d52"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-496.txt",
+          "sha256": "bdab136b3d869ace95af2636d0cf172cbd9b4d54b4a123a0548ea189bfee97f8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-512.txt",
+          "sha256": "9d79602d5a84fa97f9546cda9ec836ad5bc254bacae254a9632d1060241536c7"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-528.txt",
+          "sha256": "37696bd3bff723ca2af20f869a2c7c520f0fd90df9749f132420ce6884a1b313"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-544.txt",
+          "sha256": "2d9b43031f270a6a5bad1ac7a7632fb277bc5a3f4b901ca447ade0564e58bd13"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-560.txt",
+          "sha256": "8503908bd89b0e9ee552fc9ed3fdc8b00972388f7cd5a8dfb7278805ad67c108"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-576.txt",
+          "sha256": "bde518e8eed86b9a35c28d2b0a35b62523e139f352bbdcecf67a3bada734cdee"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-592.txt",
+          "sha256": "ae442bdc3e52cffab3b4a654dc8284b32a3256a2a9b4b68bbb67f503c4314248"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-608.txt",
+          "sha256": "44117218725e961af78dfe6e9d218c2a23cf014f68f3eed70613eb69b0d74fdc"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-624.txt",
+          "sha256": "0d1d82d6259ea81833779ab3ba71fd85618a9dd23150ba3a20c602f1bf36bc4a"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-64.txt",
+          "sha256": "b483a967e10fde457aea3f4456b287068e1d4b2c105c3e231aee05a88b7bf2fe"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-640.txt",
+          "sha256": "15d1423aeb49852ebfc0e1a666fd696e2506be24fe994b93928473525440c356"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-656.txt",
+          "sha256": "3cf175dd57b8a32c66f5122ee46c1dceec9e062ee56caea7154776001027ff1f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-672.txt",
+          "sha256": "2e618c24439dba611f73b0c94a83a85393225ee0de99496ba722fc055fb07a1f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-688.txt",
+          "sha256": "4273cd1b8bf923004437c27d137c7754d4cdb7d0f04f26883a4a375a167b8dfd"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-704.txt",
+          "sha256": "3a29212b2f3ad4d0ab11f05c211ee9274b619312d658c5d806d76f656c2be50b"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-720.txt",
+          "sha256": "491be29025e43481da37460632ce7abaa5314bc74166cf21cc35aafc078a99f0"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-736.txt",
+          "sha256": "65daaa9e29e95f79acdefefcd49c393aa2c319fcc185ffc87471bcedd2b6d785"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-752.txt",
+          "sha256": "c85ac9386f35c2aa8abbe995fd06fb0083bb2d6c4e9c3d01804ee0d4564e651f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-768.txt",
+          "sha256": "4c9a018827199404dfcefc5028ae685dccd504f2529e866be8bbfb65f745fb64"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-784.txt",
+          "sha256": "d214045dd9b7bc4e3e414a311444fe21137d2a0a6ddb9e184a01a34d727e06e5"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-80.txt",
+          "sha256": "2bc55f2633d4bb0d0b047d785721b729c141e0559c9959e13b3c35401bb49b1b"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-800.txt",
+          "sha256": "10a7ce4870df5efd0eb6f30e4cb87cace5cdf58d806c35b4283f06f88ac783c8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-816.txt",
+          "sha256": "61c6a16a7bb1a000f5641dc3658cd6768bd8b1da7ba048bc6180fb40f7fc1237"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-832.txt",
+          "sha256": "d8729f8e91978c86f00d632e1d11bb30cb1c38915a46ae6f1778e6c6669a5635"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-848.txt",
+          "sha256": "ecb28f44f4e04bbe574aa2f426602fb67567f757d0ff33741c6cc31291e7ebf7"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-864.txt",
+          "sha256": "5e19015ad579f87519dfd0ad4a0a7a80905cc7b596cff1fde3422f8b7d6c0066"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-880.txt",
+          "sha256": "1eb660217951230bd96d5db6a89efdfc61d4a42ac15380831a5411a6153f1461"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-896.txt",
+          "sha256": "13cad7547e4591e9653a56065b2ba8c8d88ad3d22dcf0469ee0251723a9794d8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-912.txt",
+          "sha256": "4f443080092be9f2f0bfdec40adb6195315930b2c4d55063857aec15a2d0989e"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-928.txt",
+          "sha256": "16d623326f7e5d1557633c0a55414edf5c6562505cac24151ad6f58c4f82be37"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-944.txt",
+          "sha256": "d58ee1fda10f2735932d3da4241969178ab72d8981cde8e892bc51b25adb6f94"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-96.txt",
+          "sha256": "208fcdc9e920e60a4e202bdb60b29c7b74b67013500c105c2ad8a67be8225093"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-adaptive-m7-broad-prefix\\queries\\batch-0\\0102010203040005050600060304\\native\\checkpoints\\sample-960.txt",
+          "sha256": "921eedf0ed2fe67d15cccf1e30490b4d73a810c861dcf1926ec705b33fba305b"
+        }
+      ]
+    },
+    {
+      "name": "m8",
+      "key": "01020003040501060003020705060407",
+      "graph": {
+        "m": 8,
+        "key": "01020003040501060003020705060407",
+        "canonical_table": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            4,
+            7
+          ]
+        ]
+      },
+      "stage": {
+        "name": "adaptive-k16",
+        "window_k": 16,
+        "beam_width": 16,
+        "samples": 65536,
+        "prefix_pairs": 65536,
+        "prefix_depth": 21,
+        "prefix_words": 2097152,
+        "prefix_samples_per_depth": 16384,
+        "distance_coordinates": 256,
+        "ranking": "remaining",
+        "common_prefix_depth": 8,
+        "expansions": 8388480,
+        "timeout_seconds": 60,
+        "tail_threshold": 8,
+        "tail_max_states": 100000,
+        "viability_coordinates": 256,
+        "seed": 1088,
+        "memory_budget_mib": 1024,
+        "memory_estimate_is_not_an_os_limit": true,
+        "estimated_pair_working_bytes": 36864,
+        "distinct_permutation_dfas": 4,
+        "requested_prefix_words": 2097152,
+        "prefix_word_budget_scaled": false,
+        "pair_working_estimate_exceeds_budget": false,
+        "expansion_scope": "per prefix seed across all beam parents/windows",
+        "window_blocks_unit": "retained length-k leaves, not complete rounds",
+        "global_word_coverage_claimed": false
+      },
+      "cap": 49,
+      "directory": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-broad-checkpoint-continuation\\m8\\queries\\01020003040501060003020705060407",
+      "source_config": {
+        "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\run.json",
+        "sha256": "7d5b45a902553fb50828f7c47eefeca5182cadb2e17254f2571a54ae80ed020a"
+      },
+      "source_checkpoints": [
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-112.txt",
+          "sha256": "f820b1f097a483087049c0d5645aa6061d1e290435904967377ee6b87878f784"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-128.txt",
+          "sha256": "72ea47b91f12037f466739d6849344c933682b1ec5a2c9e4786f49d391df786d"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-144.txt",
+          "sha256": "0ea2902eb3ff4ede3870e84f3481ef7364c1bd2325ccc4ce70d8e07e944a7277"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-16.txt",
+          "sha256": "4241bfd1a7512d4238f28f17487b67ee281e6204e76283c0c54f7bf2f68661c8"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-160.txt",
+          "sha256": "ea59a91747a016754046c03778e03cde100ee09db8750f7b285a2403feaec47c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-176.txt",
+          "sha256": "4e72eae8246526d55f3599fde69a2b7823fe355c3858f9f0947bb04c163f0c8c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-192.txt",
+          "sha256": "aa0d6d959f781b45055daaca796e8b2d67c1ccd71c7824d5a26ae9cee50c7563"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-208.txt",
+          "sha256": "4ab46843c4d64226ab3a4fa738fdebe99a0e06bc8be8d619a02d482648975c58"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-224.txt",
+          "sha256": "f8ee43e25e54a48c7a0e806f8fb31f1dd9387658338075a7f8020fc63c6005da"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-240.txt",
+          "sha256": "f507b08bd789ea05caed84e77cd236c05aa8b99f820f296044728fe424c56e50"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-256.txt",
+          "sha256": "f3563b4545407f54365e956d1845a77170bc59a9a914950657b58402d27e2ada"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-272.txt",
+          "sha256": "2bb0c2286dc14c0e167cbcc6dede758d1a17601612fa80e0d9c313267f3876b0"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-288.txt",
+          "sha256": "e45852d2ce2ce23e6e34bd1109dcb16c94c16482e01ee9699240a87a1d0b241c"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-304.txt",
+          "sha256": "6783373fa9264eb55939cebc1dff348e900dc2614068442d8cc29a31d79a0d60"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-32.txt",
+          "sha256": "fc6727dfc5e8e8ad59e5ff7e828431cd4b3a3918a9ea63075cbb8e174675bb47"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-320.txt",
+          "sha256": "7fa3f11e26d770bbe55f8fe335f43df678a6db5951e8d1ec5ec5e3e916b1885d"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-336.txt",
+          "sha256": "32a0113762548b1534c2d8f27085caa7b1f83afc41aa2498b53493aa4075d712"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-352.txt",
+          "sha256": "15c53f86a8f9ab425ce87f31c00ce2a94d77ec80bf3e8eddf84ddcdc34fc508f"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-48.txt",
+          "sha256": "d8c4e18349398700ae18e9e0b86cae773eb662b0a950a8645c941d482afc6246"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-64.txt",
+          "sha256": "a8f9d225f7b73ef36931edbb3f78a0c7b14f0c13245399abaec371ee728ae9f9"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-80.txt",
+          "sha256": "f0b8b5adfeee0cc8df1da18b269ebc494383d6daef4c0fa3c7a3fc4373ebe983"
+        },
+        {
+          "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-broad-prefix\\queries\\batch-0\\01020003040501060003020705060407\\native\\checkpoints\\sample-96.txt",
+          "sha256": "7cd783431a208e1abb902a41f7858f6b264013ac8cac4b603a2fc44d713f3a1f"
+        }
+      ]
+    }
+  ],
+  "native_settings_unchanged": true,
+  "additional_seconds": 60,
+  "saved_word_hints_used": false
+}

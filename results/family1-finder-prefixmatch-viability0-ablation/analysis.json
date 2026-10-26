@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "thresholds_run": [
+    2
+  ],
+  "runs": 24,
+  "viability_checks": 0,
+  "compared_against_checks": 8,
+  "hits_both": 24,
+  "same_pair_lengths": 23,
+  "differences": [
+    {
+      "case": "literal-m8",
+      "H": 18,
+      "checks8_length": 42,
+      "checks0_length": 40
+    }
+  ]
+}

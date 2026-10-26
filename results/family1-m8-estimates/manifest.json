@@ -1,0 +1,52 @@
+{
+  "archive_manifest": {
+    "bytes": 3693,
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-estimates-archive\\ce6df71c7c9051b8-21e1c3cfcf63\\manifest.json",
+    "sha256": "975329d84cfc62cfc198b92b422673262ba912982f2e9e9857c0f255a4c92464"
+  },
+  "files": {
+    "best-candidates.jsonl": {
+      "bytes": 9919,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-estimates\\best-candidates.jsonl",
+      "sha256": "f4385db783c114143cef29380b4195b0e3693e2cc3f0fad9c48d1612500d6dd0"
+    },
+    "summary.json": {
+      "bytes": 2557,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-estimates\\summary.json",
+      "sha256": "e4122358e78d30737fc1db85928ba41735ce981f4e84e4306dc3eb527c0434a3"
+    }
+  },
+  "input": {
+    "bytes": 1795384,
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\archive-records.jsonl.gz",
+    "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+  },
+  "refined_record_inputs": [
+    {
+      "bytes": 410759,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\records.jsonl",
+      "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+    },
+    {
+      "bytes": 67440,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+      "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+    },
+    {
+      "bytes": 36048,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+      "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+    }
+  ],
+  "schema": 1,
+  "script": {
+    "bytes": 18329,
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_estimate_merge_lengths.py",
+    "sha256": "6f0ccba2a20cc64cd9996d38fc990cb779f4c07ee3f3ebdd2fabb43feb9dc3f4"
+  },
+  "source_inputs": {
+    "bytes": 5512,
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-search\\inputs.json",
+    "sha256": "9373ae33db63d8f345436ac5fddf0f30b80b59f56748aaaa5e0e93856b2b954d"
+  }
+}

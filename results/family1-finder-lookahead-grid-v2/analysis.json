@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "runs": 64,
+  "window_grid": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+  ],
+  "beam_width": 4,
+  "tail_threshold": 8,
+  "outer_seeds": 128,
+  "length_cap": 76,
+  "max_expansions": 1000000,
+  "all_positive_pairs_independently_replayed_on_128_masks": true,
+  "per_graph": [
+    {
+      "ordinal": 539749,
+      "minimum_matched_k_within_tested_grid": null,
+      "matched_ks": [],
+      "best_length": 35,
+      "lengths": {
+        "2": 38,
+        "4": 37,
+        "6": 35,
+        "8": 37,
+        "10": 35,
+        "12": 36,
+        "14": 36,
+        "16": 35
+      },
+      "gaps": {
+        "2": 4,
+        "4": 3,
+        "6": 1,
+        "8": 3,
+        "10": 1,
+        "12": 2,
+        "14": 2,
+        "16": 1
+      }
+    },
+    {
+      "ordinal": 679758,
+      "minimum_matched_k_within_tested_grid": null,
+      "matched_ks": [],
+      "best_length": 36,
+      "lengths": {
+        "2": 38,
+        "4": 37,
+        "6": 37,
+        "8": 36,
+        "10": 37,
+        "12": 36,
+        "14": 36,
+        "16": 36
+      },
+      "gaps": {
+        "2": 4,
+        "4": 3,
+        "6": 3,
+        "8": 2,
+        "10": 3,
+        "12": 2,
+        "14": 2,
+        "16": 2
+      }
+    },
+    {
+      "ordinal": 1783759,
+      "minimum_matched_k_within_tested_grid": null,
+      "matched_ks": [],
+      "best_length": 35,
+      "lengths": {
+        "2": 37,
+        "4": 37,
+        "6": 38,
+        "8": 38,
+        "10": 36,
+        "12": 35,
+        "14": 37,
+        "16": 36
+      },
+      "gaps": {
+        "2": 3,
+        "4": 3,
+        "6": 4,
+        "8": 4,
+        "10": 2,
+        "12": 1,
+        "14": 3,
+        "16": 2
+      }
+    },
+    {
+      "ordinal": 2221624,
+      "minimum_matched_k_within_tested_grid": null,
+      "matched_ks": [],
+      "best_length": 38,
+      "lengths": {
+        "2": 41,
+        "4": 39,
+        "6": 39,
+        "8": 39,
+        "10": 39,
+        "12": 39,
+        "14": 38,
+        "16": 39
+      },
+      "gaps": {
+        "2": 7,
+        "4": 5,
+        "6": 5,
+        "8": 5,
+        "10": 5,
+        "12": 5,
+        "14": 4,
+        "16": 5
+      }
+    },
+    {
+      "ordinal": 2470130,
+      "minimum_matched_k_within_tested_grid": 4,
+      "matched_ks": [
+        4,
+        6,
+        8,
+        10,
+        14,
+        16
+      ],
+      "best_length": 34,
+      "lengths": {
+        "2": 36,
+        "4": 34,
+        "6": 34,
+        "8": 34,
+        "10": 34,
+        "12": 35,
+        "14": 34,
+        "16": 34
+      },
+      "gaps": {
+        "2": 2,
+        "4": 0,
+        "6": 0,
+        "8": 0,
+        "10": 0,
+        "12": 1,
+        "14": 0,
+        "16": 0
+      }
+    },
+    {
+      "ordinal": 2471796,
+      "minimum_matched_k_within_tested_grid": null,
+      "matched_ks": [],
+      "best_length": 36,
+      "lengths": {
+        "2": 36,
+        "4": 36,
+        "6": 37,
+        "8": 36,
+        "10": 37,
+        "12": 36,
+        "14": 36,
+        "16": 36
+      },
+      "gaps": {
+        "2": 2,
+        "4": 2,
+        "6": 3,
+        "8": 2,
+        "10": 3,
+        "12": 2,
+        "14": 2,
+        "16": 2
+      }
+    },
+    {
+      "ordinal": 3411148,
+      "minimum_matched_k_within_tested_grid": null,
+      "matched_ks": [],
+      "best_length": 38,
+      "lengths": {
+        "2": 38,
+        "4": 39,
+        "6": 39,
+        "8": 38,
+        "10": 39,
+        "12": 38,
+        "14": 38,
+        "16": 38
+      },
+      "gaps": {
+        "2": 4,
+        "4": 5,
+        "6": 5,
+        "8": 4,
+        "10": 5,
+        "12": 4,
+        "14": 4,
+        "16": 4
+      }
+    },
+    {
+      "ordinal": 4099217,
+      "minimum_matched_k_within_tested_grid": null,
+      "matched_ks": [],
+      "best_length": 38,
+      "lengths": {
+        "2": 39,
+        "4": 40,
+        "6": 39,
+        "8": 40,
+        "10": 39,
+        "12": 38,
+        "14": 39,
+        "16": 39
+      },
+      "gaps": {
+        "2": 5,
+        "4": 6,
+        "6": 5,
+        "8": 6,
+        "10": 5,
+        "12": 4,
+        "14": 5,
+        "16": 5
+      }
+    }
+  ],
+  "resource_counts": {
+    "expansion_limit_events": 0
+  }
+}

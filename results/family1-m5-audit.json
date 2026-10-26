@@ -1,0 +1,1086 @@
+{
+  "scope": "Five saved m=5 rooted maximizers and their actual TikZ source arrows",
+  "methods": {
+    "isomorphism": "All 120 vertex bijections per pair; successor pairs compared as multisets, allowing independent port swaps. Root-preserving checks require image(0)=0.",
+    "score": "Enumerate all binary words at each length using exact 32-coordinate endpoint tuples. Fresh collision dictionary per length. No collision through 14; an equal-length collision at 15. Whole-word direct static-mask simulation independently checks every word through 7 and both collision witnesses.",
+    "figure": "Strip comments and parse each actual draw command, verifying source, target, port style and port label; check all node labels and the double root marker."
+  },
+  "limitations": "This audits the five supplied classes and their scores. It does not independently re-enumerate all 10398 five-state rooted classes or prove that no omitted class exceeds 15.",
+  "rooted_class_count": 5,
+  "ordinary_unrooted_class_count": 4,
+  "ordinary_unrooted_groups": [
+    [
+      "a",
+      "c"
+    ],
+    [
+      "b"
+    ],
+    [
+      "d"
+    ],
+    [
+      "e"
+    ]
+  ],
+  "pairwise_isomorphism_audits": [
+    {
+      "first": "a",
+      "second": "b",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "a",
+      "second": "c",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": [
+        {
+          "old_to_new": [
+            2,
+            1,
+            0,
+            3,
+            4
+          ],
+          "port_flip_at_old_source": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "first": "a",
+      "second": "d",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "a",
+      "second": "e",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "b",
+      "second": "c",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "b",
+      "second": "d",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "b",
+      "second": "e",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "c",
+      "second": "d",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "c",
+      "second": "e",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    },
+    {
+      "first": "d",
+      "second": "e",
+      "root_preserving_isomorphisms": [],
+      "ordinary_isomorphisms_with_port_swaps": []
+    }
+  ],
+  "a_c_root_obstruction": "Panel a has a self-loop at its root 0; panel c has no self-loop at its root 0. This invariant rules out root-preserving isomorphism. The ordinary isomorphism sends a vertex 2 to c root 0, so c uses root 2 in a's labelling.",
+  "panels": [
+    {
+      "panel": "a",
+      "canonical_key": "0123013424",
+      "canonical_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "figure": {
+        "file": "figures/family1-m5/graph-01.tex",
+        "sha256": "e40e26cc4d6cdbd54a25a43153e25c713ded339e581f3b900921d214785ab271",
+        "actual_draw_commands_verified": 10,
+        "root": 0,
+        "node_labels_verified": 5
+      },
+      "rooted_canonical_table_independently_verified": true,
+      "independent_score": {
+        "status": "exact",
+        "merge_length": 15,
+        "witness": [
+          "000011011000011",
+          "001101100000011"
+        ],
+        "collision_free_layers": [
+          {
+            "length": 1,
+            "words": 2,
+            "distinct_vectors": 2
+          },
+          {
+            "length": 2,
+            "words": 4,
+            "distinct_vectors": 4
+          },
+          {
+            "length": 3,
+            "words": 8,
+            "distinct_vectors": 8
+          },
+          {
+            "length": 4,
+            "words": 16,
+            "distinct_vectors": 16
+          },
+          {
+            "length": 5,
+            "words": 32,
+            "distinct_vectors": 32
+          },
+          {
+            "length": 6,
+            "words": 64,
+            "distinct_vectors": 64
+          },
+          {
+            "length": 7,
+            "words": 128,
+            "distinct_vectors": 128
+          },
+          {
+            "length": 8,
+            "words": 256,
+            "distinct_vectors": 256
+          },
+          {
+            "length": 9,
+            "words": 512,
+            "distinct_vectors": 512
+          },
+          {
+            "length": 10,
+            "words": 1024,
+            "distinct_vectors": 1024
+          },
+          {
+            "length": 11,
+            "words": 2048,
+            "distinct_vectors": 2048
+          },
+          {
+            "length": 12,
+            "words": 4096,
+            "distinct_vectors": 4096
+          },
+          {
+            "length": 13,
+            "words": 8192,
+            "distinct_vectors": 8192
+          },
+          {
+            "length": 14,
+            "words": 16384,
+            "distinct_vectors": 16384
+          }
+        ],
+        "colliding_layer_words_examined": 6916,
+        "full_mask_coordinates": 32
+      },
+      "saved_witness_verified": true
+    },
+    {
+      "panel": "b",
+      "canonical_key": "0123031424",
+      "canonical_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "figure": {
+        "file": "figures/family1-m5/graph-02.tex",
+        "sha256": "41f68717bd013a7f86e897790c6a24096a05fd8b5cca1b09bcd8c383eb4c6076",
+        "actual_draw_commands_verified": 10,
+        "root": 0,
+        "node_labels_verified": 5
+      },
+      "rooted_canonical_table_independently_verified": true,
+      "independent_score": {
+        "status": "exact",
+        "merge_length": 15,
+        "witness": [
+          "000000001010000",
+          "001010000000000"
+        ],
+        "collision_free_layers": [
+          {
+            "length": 1,
+            "words": 2,
+            "distinct_vectors": 2
+          },
+          {
+            "length": 2,
+            "words": 4,
+            "distinct_vectors": 4
+          },
+          {
+            "length": 3,
+            "words": 8,
+            "distinct_vectors": 8
+          },
+          {
+            "length": 4,
+            "words": 16,
+            "distinct_vectors": 16
+          },
+          {
+            "length": 5,
+            "words": 32,
+            "distinct_vectors": 32
+          },
+          {
+            "length": 6,
+            "words": 64,
+            "distinct_vectors": 64
+          },
+          {
+            "length": 7,
+            "words": 128,
+            "distinct_vectors": 128
+          },
+          {
+            "length": 8,
+            "words": 256,
+            "distinct_vectors": 256
+          },
+          {
+            "length": 9,
+            "words": 512,
+            "distinct_vectors": 512
+          },
+          {
+            "length": 10,
+            "words": 1024,
+            "distinct_vectors": 1024
+          },
+          {
+            "length": 11,
+            "words": 2048,
+            "distinct_vectors": 2048
+          },
+          {
+            "length": 12,
+            "words": 4096,
+            "distinct_vectors": 4096
+          },
+          {
+            "length": 13,
+            "words": 8192,
+            "distinct_vectors": 8192
+          },
+          {
+            "length": 14,
+            "words": 16384,
+            "distinct_vectors": 16384
+          }
+        ],
+        "colliding_layer_words_examined": 5121,
+        "full_mask_coordinates": 32
+      },
+      "saved_witness_verified": true
+    },
+    {
+      "panel": "c",
+      "canonical_key": "1203123404",
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "figure": {
+        "file": "figures/family1-m5/graph-03.tex",
+        "sha256": "6ee3ea9247ad1aba5144c6a7f65c2832da64dffbfacaae6ab1077151011e7047",
+        "actual_draw_commands_verified": 10,
+        "root": 0,
+        "node_labels_verified": 5
+      },
+      "rooted_canonical_table_independently_verified": true,
+      "independent_score": {
+        "status": "exact",
+        "merge_length": 15,
+        "witness": [
+          "001000011111100",
+          "001011000111100"
+        ],
+        "collision_free_layers": [
+          {
+            "length": 1,
+            "words": 2,
+            "distinct_vectors": 2
+          },
+          {
+            "length": 2,
+            "words": 4,
+            "distinct_vectors": 4
+          },
+          {
+            "length": 3,
+            "words": 8,
+            "distinct_vectors": 8
+          },
+          {
+            "length": 4,
+            "words": 16,
+            "distinct_vectors": 16
+          },
+          {
+            "length": 5,
+            "words": 32,
+            "distinct_vectors": 32
+          },
+          {
+            "length": 6,
+            "words": 64,
+            "distinct_vectors": 64
+          },
+          {
+            "length": 7,
+            "words": 128,
+            "distinct_vectors": 128
+          },
+          {
+            "length": 8,
+            "words": 256,
+            "distinct_vectors": 256
+          },
+          {
+            "length": 9,
+            "words": 512,
+            "distinct_vectors": 512
+          },
+          {
+            "length": 10,
+            "words": 1024,
+            "distinct_vectors": 1024
+          },
+          {
+            "length": 11,
+            "words": 2048,
+            "distinct_vectors": 2048
+          },
+          {
+            "length": 12,
+            "words": 4096,
+            "distinct_vectors": 4096
+          },
+          {
+            "length": 13,
+            "words": 8192,
+            "distinct_vectors": 8192
+          },
+          {
+            "length": 14,
+            "words": 16384,
+            "distinct_vectors": 16384
+          }
+        ],
+        "colliding_layer_words_examined": 5693,
+        "full_mask_coordinates": 32
+      },
+      "saved_witness_verified": true
+    },
+    {
+      "panel": "d",
+      "canonical_key": "1203142314",
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "figure": {
+        "file": "figures/family1-m5/graph-04.tex",
+        "sha256": "baddd4be32382b4d1c40517c0ad1aa34d5d0427346dfd9e66582506b0816970b",
+        "actual_draw_commands_verified": 10,
+        "root": 0,
+        "node_labels_verified": 5
+      },
+      "rooted_canonical_table_independently_verified": true,
+      "independent_score": {
+        "status": "exact",
+        "merge_length": 15,
+        "witness": [
+          "000000000010001",
+          "000010000000001"
+        ],
+        "collision_free_layers": [
+          {
+            "length": 1,
+            "words": 2,
+            "distinct_vectors": 2
+          },
+          {
+            "length": 2,
+            "words": 4,
+            "distinct_vectors": 4
+          },
+          {
+            "length": 3,
+            "words": 8,
+            "distinct_vectors": 8
+          },
+          {
+            "length": 4,
+            "words": 16,
+            "distinct_vectors": 16
+          },
+          {
+            "length": 5,
+            "words": 32,
+            "distinct_vectors": 32
+          },
+          {
+            "length": 6,
+            "words": 64,
+            "distinct_vectors": 64
+          },
+          {
+            "length": 7,
+            "words": 128,
+            "distinct_vectors": 128
+          },
+          {
+            "length": 8,
+            "words": 256,
+            "distinct_vectors": 256
+          },
+          {
+            "length": 9,
+            "words": 512,
+            "distinct_vectors": 512
+          },
+          {
+            "length": 10,
+            "words": 1024,
+            "distinct_vectors": 1024
+          },
+          {
+            "length": 11,
+            "words": 2048,
+            "distinct_vectors": 2048
+          },
+          {
+            "length": 12,
+            "words": 4096,
+            "distinct_vectors": 4096
+          },
+          {
+            "length": 13,
+            "words": 8192,
+            "distinct_vectors": 8192
+          },
+          {
+            "length": 14,
+            "words": 16384,
+            "distinct_vectors": 16384
+          }
+        ],
+        "colliding_layer_words_examined": 1026,
+        "full_mask_coordinates": 32
+      },
+      "saved_witness_verified": true
+    },
+    {
+      "panel": "e",
+      "canonical_key": "1203340314",
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "figure": {
+        "file": "figures/family1-m5/graph-05.tex",
+        "sha256": "4ed0c80c3f05df72360d1339ec4e7d844e5b165ecddc5a82d7a6d2360c0365fd",
+        "actual_draw_commands_verified": 10,
+        "root": 0,
+        "node_labels_verified": 5
+      },
+      "rooted_canonical_table_independently_verified": true,
+      "independent_score": {
+        "status": "exact",
+        "merge_length": 15,
+        "witness": [
+          "000001111000011",
+          "000111100000011"
+        ],
+        "collision_free_layers": [
+          {
+            "length": 1,
+            "words": 2,
+            "distinct_vectors": 2
+          },
+          {
+            "length": 2,
+            "words": 4,
+            "distinct_vectors": 4
+          },
+          {
+            "length": 3,
+            "words": 8,
+            "distinct_vectors": 8
+          },
+          {
+            "length": 4,
+            "words": 16,
+            "distinct_vectors": 16
+          },
+          {
+            "length": 5,
+            "words": 32,
+            "distinct_vectors": 32
+          },
+          {
+            "length": 6,
+            "words": 64,
+            "distinct_vectors": 64
+          },
+          {
+            "length": 7,
+            "words": 128,
+            "distinct_vectors": 128
+          },
+          {
+            "length": 8,
+            "words": 256,
+            "distinct_vectors": 256
+          },
+          {
+            "length": 9,
+            "words": 512,
+            "distinct_vectors": 512
+          },
+          {
+            "length": 10,
+            "words": 1024,
+            "distinct_vectors": 1024
+          },
+          {
+            "length": 11,
+            "words": 2048,
+            "distinct_vectors": 2048
+          },
+          {
+            "length": 12,
+            "words": 4096,
+            "distinct_vectors": 4096
+          },
+          {
+            "length": 13,
+            "words": 8192,
+            "distinct_vectors": 8192
+          },
+          {
+            "length": 14,
+            "words": 16384,
+            "distinct_vectors": 16384
+          }
+        ],
+        "colliding_layer_words_examined": 3844,
+        "full_mask_coordinates": 32
+      },
+      "saved_witness_verified": true
+    }
+  ],
+  "all_root_scores_of_panel_a_underlying_graph": [
+    {
+      "root_in_panel_a_labelling": 0,
+      "status": "exact",
+      "merge_length": 15,
+      "witness": [
+        "000011011000011",
+        "001101100000011"
+      ],
+      "collision_free_layers": [
+        {
+          "length": 1,
+          "words": 2,
+          "distinct_vectors": 2
+        },
+        {
+          "length": 2,
+          "words": 4,
+          "distinct_vectors": 4
+        },
+        {
+          "length": 3,
+          "words": 8,
+          "distinct_vectors": 8
+        },
+        {
+          "length": 4,
+          "words": 16,
+          "distinct_vectors": 16
+        },
+        {
+          "length": 5,
+          "words": 32,
+          "distinct_vectors": 32
+        },
+        {
+          "length": 6,
+          "words": 64,
+          "distinct_vectors": 64
+        },
+        {
+          "length": 7,
+          "words": 128,
+          "distinct_vectors": 128
+        },
+        {
+          "length": 8,
+          "words": 256,
+          "distinct_vectors": 256
+        },
+        {
+          "length": 9,
+          "words": 512,
+          "distinct_vectors": 512
+        },
+        {
+          "length": 10,
+          "words": 1024,
+          "distinct_vectors": 1024
+        },
+        {
+          "length": 11,
+          "words": 2048,
+          "distinct_vectors": 2048
+        },
+        {
+          "length": 12,
+          "words": 4096,
+          "distinct_vectors": 4096
+        },
+        {
+          "length": 13,
+          "words": 8192,
+          "distinct_vectors": 8192
+        },
+        {
+          "length": 14,
+          "words": 16384,
+          "distinct_vectors": 16384
+        }
+      ],
+      "colliding_layer_words_examined": 6916,
+      "full_mask_coordinates": 32
+    },
+    {
+      "root_in_panel_a_labelling": 1,
+      "status": "exact",
+      "merge_length": 12,
+      "witness": [
+        "000010010000",
+        "001001000000"
+      ],
+      "collision_free_layers": [
+        {
+          "length": 1,
+          "words": 2,
+          "distinct_vectors": 2
+        },
+        {
+          "length": 2,
+          "words": 4,
+          "distinct_vectors": 4
+        },
+        {
+          "length": 3,
+          "words": 8,
+          "distinct_vectors": 8
+        },
+        {
+          "length": 4,
+          "words": 16,
+          "distinct_vectors": 16
+        },
+        {
+          "length": 5,
+          "words": 32,
+          "distinct_vectors": 32
+        },
+        {
+          "length": 6,
+          "words": 64,
+          "distinct_vectors": 64
+        },
+        {
+          "length": 7,
+          "words": 128,
+          "distinct_vectors": 128
+        },
+        {
+          "length": 8,
+          "words": 256,
+          "distinct_vectors": 256
+        },
+        {
+          "length": 9,
+          "words": 512,
+          "distinct_vectors": 512
+        },
+        {
+          "length": 10,
+          "words": 1024,
+          "distinct_vectors": 1024
+        },
+        {
+          "length": 11,
+          "words": 2048,
+          "distinct_vectors": 2048
+        }
+      ],
+      "colliding_layer_words_examined": 577,
+      "full_mask_coordinates": 32
+    },
+    {
+      "root_in_panel_a_labelling": 2,
+      "status": "exact",
+      "merge_length": 15,
+      "witness": [
+        "001000011111100",
+        "001011000111100"
+      ],
+      "collision_free_layers": [
+        {
+          "length": 1,
+          "words": 2,
+          "distinct_vectors": 2
+        },
+        {
+          "length": 2,
+          "words": 4,
+          "distinct_vectors": 4
+        },
+        {
+          "length": 3,
+          "words": 8,
+          "distinct_vectors": 8
+        },
+        {
+          "length": 4,
+          "words": 16,
+          "distinct_vectors": 16
+        },
+        {
+          "length": 5,
+          "words": 32,
+          "distinct_vectors": 32
+        },
+        {
+          "length": 6,
+          "words": 64,
+          "distinct_vectors": 64
+        },
+        {
+          "length": 7,
+          "words": 128,
+          "distinct_vectors": 128
+        },
+        {
+          "length": 8,
+          "words": 256,
+          "distinct_vectors": 256
+        },
+        {
+          "length": 9,
+          "words": 512,
+          "distinct_vectors": 512
+        },
+        {
+          "length": 10,
+          "words": 1024,
+          "distinct_vectors": 1024
+        },
+        {
+          "length": 11,
+          "words": 2048,
+          "distinct_vectors": 2048
+        },
+        {
+          "length": 12,
+          "words": 4096,
+          "distinct_vectors": 4096
+        },
+        {
+          "length": 13,
+          "words": 8192,
+          "distinct_vectors": 8192
+        },
+        {
+          "length": 14,
+          "words": 16384,
+          "distinct_vectors": 16384
+        }
+      ],
+      "colliding_layer_words_examined": 5693,
+      "full_mask_coordinates": 32
+    },
+    {
+      "root_in_panel_a_labelling": 3,
+      "status": "exact",
+      "merge_length": 14,
+      "witness": [
+        "01010100001111",
+        "10010100001111"
+      ],
+      "collision_free_layers": [
+        {
+          "length": 1,
+          "words": 2,
+          "distinct_vectors": 2
+        },
+        {
+          "length": 2,
+          "words": 4,
+          "distinct_vectors": 4
+        },
+        {
+          "length": 3,
+          "words": 8,
+          "distinct_vectors": 8
+        },
+        {
+          "length": 4,
+          "words": 16,
+          "distinct_vectors": 16
+        },
+        {
+          "length": 5,
+          "words": 32,
+          "distinct_vectors": 32
+        },
+        {
+          "length": 6,
+          "words": 64,
+          "distinct_vectors": 64
+        },
+        {
+          "length": 7,
+          "words": 128,
+          "distinct_vectors": 128
+        },
+        {
+          "length": 8,
+          "words": 256,
+          "distinct_vectors": 256
+        },
+        {
+          "length": 9,
+          "words": 512,
+          "distinct_vectors": 512
+        },
+        {
+          "length": 10,
+          "words": 1024,
+          "distinct_vectors": 1024
+        },
+        {
+          "length": 11,
+          "words": 2048,
+          "distinct_vectors": 2048
+        },
+        {
+          "length": 12,
+          "words": 4096,
+          "distinct_vectors": 4096
+        },
+        {
+          "length": 13,
+          "words": 8192,
+          "distinct_vectors": 8192
+        }
+      ],
+      "colliding_layer_words_examined": 9488,
+      "full_mask_coordinates": 32
+    },
+    {
+      "root_in_panel_a_labelling": 4,
+      "status": "exact",
+      "merge_length": 14,
+      "witness": [
+        "00011000100111",
+        "11000000100111"
+      ],
+      "collision_free_layers": [
+        {
+          "length": 1,
+          "words": 2,
+          "distinct_vectors": 2
+        },
+        {
+          "length": 2,
+          "words": 4,
+          "distinct_vectors": 4
+        },
+        {
+          "length": 3,
+          "words": 8,
+          "distinct_vectors": 8
+        },
+        {
+          "length": 4,
+          "words": 16,
+          "distinct_vectors": 16
+        },
+        {
+          "length": 5,
+          "words": 32,
+          "distinct_vectors": 32
+        },
+        {
+          "length": 6,
+          "words": 64,
+          "distinct_vectors": 64
+        },
+        {
+          "length": 7,
+          "words": 128,
+          "distinct_vectors": 128
+        },
+        {
+          "length": 8,
+          "words": 256,
+          "distinct_vectors": 256
+        },
+        {
+          "length": 9,
+          "words": 512,
+          "distinct_vectors": 512
+        },
+        {
+          "length": 10,
+          "words": 1024,
+          "distinct_vectors": 1024
+        },
+        {
+          "length": 11,
+          "words": 2048,
+          "distinct_vectors": 2048
+        },
+        {
+          "length": 12,
+          "words": 4096,
+          "distinct_vectors": 4096
+        },
+        {
+          "length": 13,
+          "words": 8192,
+          "distinct_vectors": 8192
+        }
+      ],
+      "colliding_layer_words_examined": 12328,
+      "full_mask_coordinates": 32
+    }
+  ],
+  "total_actual_tikz_arrows_verified": 50
+}

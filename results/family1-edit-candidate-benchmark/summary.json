@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "native_generation_runs": 222,
+  "metric_rows": 895,
+  "generation_sealed_before_truth": true,
+  "truth_sources": {
+    "exact_m1_m6": {
+      "path": "out/family1-m1-m6/graphs.jsonl",
+      "sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156"
+    },
+    "complete_m7_winners": {
+      "path": "results/family1-m7/summary.json",
+      "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50"
+    }
+  },
+  "complete_global_search_claimed": false,
+  "random_baseline_uniform_graph_classes_claimed": false
+}

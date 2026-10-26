@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "method": "circulant-family-fixed-length-native-queries",
+  "family": "tau0(i)=(i+1) modm; tau1(i)=(i+floor(m/3)) modm",
+  "min_m": 8,
+  "max_m": 20,
+  "length": 34,
+  "requested_graphs": 13,
+  "completed_graphs": 13,
+  "all_requested_queries_complete": true,
+  "decision_counts": {
+    "collision": 0,
+    "no_collision": 0,
+    "unknown": 13
+  },
+  "pending_sizes": [],
+  "sizes": [
+    {
+      "m": 8,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.3470504
+    },
+    {
+      "m": 9,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.5898447
+    },
+    {
+      "m": 10,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.7060603
+    },
+    {
+      "m": 11,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.7422443
+    },
+    {
+      "m": 12,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.8062566
+    },
+    {
+      "m": 13,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.8524176
+    },
+    {
+      "m": 14,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.9458322
+    },
+    {
+      "m": 15,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 5.9871058
+    },
+    {
+      "m": 16,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "canceled",
+      "mask_count": 65,
+      "seconds": 8.469579
+    },
+    {
+      "m": 17,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 6.5335307
+    },
+    {
+      "m": 18,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 6.6313005
+    },
+    {
+      "m": 19,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 6.6591514
+    },
+    {
+      "m": 20,
+      "decision": "unknown",
+      "lower_bound": 2,
+      "upper_bound": null,
+      "reason": "timeout",
+      "mask_count": 64,
+      "seconds": 6.7289357
+    }
+  ],
+  "configuration": {
+    "schema": 1,
+    "input": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-circulant-family\\champions.jsonl",
+      "sha256": "40c00f9bb33768ee5a7851f7c1a6cbe9cbccd10bb32e07cc9f82ee3739de6a21"
+    },
+    "native_executable": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\build\\msvc-vcpkg\\Release\\Family1Threshold.exe",
+      "sha256": "db14586fd9f6e63bb4fbd5babde123a033cf0d22ec6b6b4f1abf27c5c45acbd4"
+    },
+    "driver": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_circulant_threshold.py",
+      "sha256": "e219f32b0dd4344d931aaa599ec59710400615141ee1f31162d18dc994f50f8e"
+    },
+    "length": 34,
+    "jobs": 4,
+    "timeout_ms": 10000,
+    "solve_timeout_ms": 5000,
+    "max_refinements": 256,
+    "projection_masks": 64,
+    "sizes": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "keys": [
+      "01020203030404050506060700070001",
+      "010203040305060700060107020804080005",
+      "0102030403050607020607080509000900040108",
+      "01020304030506070206070805090910011000080004",
+      "010203040305060700060708020909100110051104110008",
+      "0102030403050607060807090010101100090111021204120508",
+      "01020304030506070608070910111012021104120013051300080109",
+      "010203040305060700060708020909101011051212130113081404140011",
+      "0102030403050607060807090010101100121112021313140114051504150809",
+      "01020304030506070608070910111012091112130014001314150115021604160508",
+      "010203040305060700060708020909101011051212131314081515160116111704170014",
+      "0102030403050607060807090010101100121113021414150116121505171617041809180813",
+      "01020304030506070608070910111012111312130014001514161516021701181718051904190809"
+    ]
+  },
+  "coverage": "One supplied family, one rooted class per size by translations; no global optimality claim.",
+  "unknown_semantics": "UNKNOWN is preserved and supplies no bound beyond the independently checked H>=2.",
+  "maximum_value_certified": false,
+  "maximizing_collection_complete": false,
+  "enumeration_complete": false
+}

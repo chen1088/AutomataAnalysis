@@ -52,7 +52,7 @@ void ProductDFAExperiment::incrementn()
          // if we found two strings for the same state, we need to merge them.
          auto v0new = newtable[t0];
          v0new.insert(v0new.end(), v0.begin(), v0.end());
-         // newtable[t0] = v0new;
+         newtable[t0] = v0new;
          // Pair that is not separated.
          hardpairfound = true;
          cout << "Hard pair found for n: " << n+1 << " m: " << m << " the pair: (";
@@ -74,7 +74,7 @@ void ProductDFAExperiment::incrementn()
          // if we found two strings for the same state, we need to merge them.
          auto v1new = newtable[t1];
          v1new.insert(v1new.end(), v1.begin(), v1.end());
-         //newtable[t1] = v1new;
+         newtable[t1] = v1new;
          hardpairfound = true;
          cout << "Hard pair found for n: " << n+1 << " m: " << m << " the pair: (";
          for (auto vit = v1new.begin(); vit != v1new.end(); ++vit)
@@ -113,7 +113,7 @@ void ProductDFAExperiment::incrementm()
       for( auto vit = v.begin(); vit != v.end();++vit)
       {
          // evaluate when the individual state is a sink state.
-         // now m-1 is the sink state.
+         // The old sink was m-1; the enlarged reset graph has sink m.
          StateLabel tnew = cartesian_product.evaluate(*vit);
          if (newtable.find(tnew) == newtable.end())
          {

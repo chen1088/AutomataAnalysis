@@ -1,0 +1,1637 @@
+{
+  "schema": 1,
+  "scope": "edit-search priority observations and rigorous lower-bound constructions; no global coverage claimed beyond certified sizes1..7",
+  "unit_retarget_counterexamples": {
+    "winner_count": 8,
+    "all_winners_have_accessible_H1_neighbor": true,
+    "verified_neighbor_operations": 12,
+    "records": [
+      {
+        "winner_ordinal": 539749,
+        "winner_key": "0001020302030405000604060105",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 0,
+            "old_target": 0,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                1,
+                5
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      },
+      {
+        "winner_ordinal": 679758,
+        "winner_key": "0001020304050406050600010203",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 0,
+            "old_target": 0,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      },
+      {
+        "winner_ordinal": 1783759,
+        "winner_key": "0102000301040204050600030506",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 0,
+            "old_target": 1,
+            "new_target": 2,
+            "table": [
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          },
+          {
+            "changed_root_port": 1,
+            "old_target": 2,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      },
+      {
+        "winner_ordinal": 2221624,
+        "winner_key": "0102000304050106000304050206",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 0,
+            "old_target": 1,
+            "new_target": 2,
+            "table": [
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          },
+          {
+            "changed_root_port": 1,
+            "old_target": 2,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      },
+      {
+        "winner_ordinal": 2470130,
+        "winner_key": "0102010203040005030604060005",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 1,
+            "old_target": 2,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      },
+      {
+        "winner_ordinal": 2471796,
+        "winner_key": "0102010203040005050600060304",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 1,
+            "old_target": 2,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      },
+      {
+        "winner_ordinal": 3411148,
+        "winner_key": "0102020304050006000604050103",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 0,
+            "old_target": 1,
+            "new_target": 2,
+            "table": [
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          },
+          {
+            "changed_root_port": 1,
+            "old_target": 2,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                0,
+                6
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      },
+      {
+        "winner_ordinal": 4099217,
+        "winner_key": "0102030405060001000203040506",
+        "winner_merge_length": 34,
+        "unit_edit_score_change": 33,
+        "neighbors": [
+          {
+            "changed_root_port": 0,
+            "old_target": 1,
+            "new_target": 2,
+            "table": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          },
+          {
+            "changed_root_port": 1,
+            "old_target": 2,
+            "new_target": 1,
+            "table": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            "root_accessible": true,
+            "merge_length": 1,
+            "status": "exact",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "all_128_static_masks_verified": true
+          }
+        ]
+      }
+    ]
+  },
+  "unbounded_constant_lipschitz": {
+    "theorem": "No finite constant C independent of m can bound absolute H changes under one port retarget.",
+    "construction": "m=2^L: root(loop,full-binary-tree-root), tree depthL-1, coincident leaf loops. Zero mask separates every word of each length<=L, henceH>=L+1. Retarget root loop to the tree root: H=1 and accessibility retained.",
+    "finite_sanity_checks": [
+      {
+        "L": 1,
+        "m": 2,
+        "single_zero_mask_injective_through_length": 1,
+        "proved_original_lower_bound": 2,
+        "edited_root_coincident_exact_H": 1,
+        "edited_graph_accessible": true
+      },
+      {
+        "L": 2,
+        "m": 4,
+        "single_zero_mask_injective_through_length": 2,
+        "proved_original_lower_bound": 3,
+        "edited_root_coincident_exact_H": 1,
+        "edited_graph_accessible": true
+      },
+      {
+        "L": 3,
+        "m": 8,
+        "single_zero_mask_injective_through_length": 3,
+        "proved_original_lower_bound": 4,
+        "edited_root_coincident_exact_H": 1,
+        "edited_graph_accessible": true
+      },
+      {
+        "L": 4,
+        "m": 16,
+        "single_zero_mask_injective_through_length": 4,
+        "proved_original_lower_bound": 5,
+        "edited_root_coincident_exact_H": 1,
+        "edited_graph_accessible": true
+      },
+      {
+        "L": 5,
+        "m": 32,
+        "single_zero_mask_injective_through_length": 5,
+        "proved_original_lower_bound": 6,
+        "edited_root_coincident_exact_H": 1,
+        "edited_graph_accessible": true
+      },
+      {
+        "L": 6,
+        "m": 64,
+        "single_zero_mask_injective_through_length": 6,
+        "proved_original_lower_bound": 7,
+        "edited_root_coincident_exact_H": 1,
+        "edited_graph_accessible": true
+      }
+    ]
+  },
+  "H1_two_retarget_domination": {
+    "theorem": "Every accessible rooted two-out graph can reach a same-size H=1 graph by at most2 accessible port retargets.",
+    "proof": "Keep a DFS spanningtree. With one root child, retarget the other root port to that child. With two root childrenA,B, first retarget a leaf port in subtreeA toB, then retarget root->B toA. Each intermediate remains accessible.",
+    "tiny_rooted_classes_checked": 64,
+    "tiny_step_histogram": {
+      "0": 22,
+      "1": 28,
+      "2": 14
+    },
+    "all_eight_m7_winners_checked": true
+  },
+  "root_profiles": [
+    {
+      "m": 1,
+      "ordinary_key": "0000",
+      "reference_table": [
+        [
+          0,
+          0
+        ]
+      ],
+      "global_maximum": 1,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "0000",
+          "merge_length": 1,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1
+    },
+    {
+      "m": 2,
+      "ordinary_key": "00010001",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "global_maximum": 3,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "00010001",
+          "merge_length": 3,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "00010001",
+          "merge_length": 3,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 2,
+      "winning_rooted_class_count": 1
+    },
+    {
+      "m": 3,
+      "ordinary_key": "000100020002",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "global_maximum": 6,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "000101020001",
+          "merge_length": 6,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "000100020002",
+          "merge_length": 5,
+          "status": "exact"
+        },
+        {
+          "old_root": 2,
+          "key": "010200010102",
+          "merge_length": 6,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 2,
+      "winning_rooted_class_count": 2
+    },
+    {
+      "m": 4,
+      "ordinary_key": "0001020300030102",
+      "reference_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "global_maximum": 10,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "0102000201030003",
+          "merge_length": 10,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "0102000200030103",
+          "merge_length": 8,
+          "status": "exact"
+        },
+        {
+          "old_root": 2,
+          "key": "0102000302030001",
+          "merge_length": 7,
+          "status": "exact"
+        },
+        {
+          "old_root": 3,
+          "key": "0001020300030102",
+          "merge_length": 9,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1
+    },
+    {
+      "m": 5,
+      "ordinary_key": "00010102030400020304",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "global_maximum": 15,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "00010203000103040204",
+          "merge_length": 15,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "01020003020400030104",
+          "merge_length": 12,
+          "status": "exact"
+        },
+        {
+          "old_root": 2,
+          "key": "01020003010203040004",
+          "merge_length": 15,
+          "status": "exact"
+        },
+        {
+          "old_root": 3,
+          "key": "00010102030400020304",
+          "merge_length": 14,
+          "status": "exact"
+        },
+        {
+          "old_root": 4,
+          "key": "00010203010402030004",
+          "merge_length": 14,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 2,
+      "winning_rooted_class_count": 2
+    },
+    {
+      "m": 5,
+      "ordinary_key": "00010203000100040204",
+      "reference_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "global_maximum": 15,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "01020003030400030104",
+          "merge_length": 15,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "01020003010202040004",
+          "merge_length": 12,
+          "status": "exact"
+        },
+        {
+          "old_root": 2,
+          "key": "01020103020400040103",
+          "merge_length": 14,
+          "status": "exact"
+        },
+        {
+          "old_root": 3,
+          "key": "00010203000100040204",
+          "merge_length": 12,
+          "status": "exact"
+        },
+        {
+          "old_root": 4,
+          "key": "00010203010402030003",
+          "merge_length": 13,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1
+    },
+    {
+      "m": 5,
+      "ordinary_key": "00010203000301040204",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "global_maximum": 15,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "00010203000301040204",
+          "merge_length": 15,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "01020003010402030004",
+          "merge_length": 14,
+          "status": "exact"
+        },
+        {
+          "old_root": 2,
+          "key": "01020103030400020004",
+          "merge_length": 14,
+          "status": "exact"
+        },
+        {
+          "old_root": 3,
+          "key": "01020003020300040104",
+          "merge_length": 13,
+          "status": "exact"
+        },
+        {
+          "old_root": 4,
+          "key": "00010203000403040102",
+          "merge_length": 13,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1
+    },
+    {
+      "m": 5,
+      "ordinary_key": "00010203000402030102",
+      "reference_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "global_maximum": 15,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "01020003010402030104",
+          "merge_length": 15,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "01020003020300040004",
+          "merge_length": 12,
+          "status": "exact"
+        },
+        {
+          "old_root": 2,
+          "key": "01020102030400020004",
+          "merge_length": 13,
+          "status": "exact"
+        },
+        {
+          "old_root": 3,
+          "key": "00010203000402030102",
+          "merge_length": 13,
+          "status": "exact"
+        },
+        {
+          "old_root": 4,
+          "key": "00010203010403040001",
+          "merge_length": 13,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1
+    },
+    {
+      "m": 6,
+      "ordinary_key": "000102030203040500050104",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "global_maximum": 23,
+      "root_scores": [
+        {
+          "old_root": 0,
+          "key": "000102030304020500010405",
+          "merge_length": 23,
+          "status": "exact"
+        },
+        {
+          "old_root": 1,
+          "key": "010202030104000503040005",
+          "merge_length": 22,
+          "status": "exact"
+        },
+        {
+          "old_root": 2,
+          "key": "010200030405020300010405",
+          "merge_length": 23,
+          "status": "exact"
+        },
+        {
+          "old_root": 3,
+          "key": "010200030203040500010405",
+          "merge_length": 19,
+          "status": "exact"
+        },
+        {
+          "old_root": 4,
+          "key": "010201020304000403050005",
+          "merge_length": 22,
+          "status": "exact"
+        },
+        {
+          "old_root": 5,
+          "key": "000102030203040500050104",
+          "merge_length": 20,
+          "status": "exact"
+        }
+      ],
+      "winning_vertex_count": 2,
+      "winning_rooted_class_count": 2
+    },
+    {
+      "m": 7,
+      "ordinary_key": "0001020302030405000601060405",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "global_maximum": 34,
+      "winning_roots_in_reference_table": [
+        5
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1,
+      "vertex_automorphism_count": 1,
+      "other_root_upper_bound": 33,
+      "other_root_exact_scores_known": false
+    },
+    {
+      "m": 7,
+      "ordinary_key": "0001020302030405000604060105",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "global_maximum": 34,
+      "winning_roots_in_reference_table": [
+        0
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1,
+      "vertex_automorphism_count": 1,
+      "other_root_upper_bound": 33,
+      "other_root_exact_scores_known": false
+    },
+    {
+      "m": 7,
+      "ordinary_key": "0001020303040506050600010204",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "global_maximum": 34,
+      "winning_roots_in_reference_table": [
+        5
+      ],
+      "winning_vertex_count": 1,
+      "winning_rooted_class_count": 1,
+      "vertex_automorphism_count": 1,
+      "other_root_upper_bound": 33,
+      "other_root_exact_scores_known": false
+    },
+    {
+      "m": 7,
+      "ordinary_key": "0001020304050406050600010203",
+      "reference_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "global_maximum": 34,
+      "winning_roots_in_reference_table": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "winning_vertex_count": 5,
+      "winning_rooted_class_count": 5,
+      "vertex_automorphism_count": 1,
+      "other_root_upper_bound": 33,
+      "other_root_exact_scores_known": false
+    }
+  ],
+  "nearmax_routing_parent_coverage": [
+    {
+      "parent_m": 1,
+      "child_m": 2,
+      "parent_global_maximum": 1,
+      "nearmax_cutoff": -1,
+      "best_parent_scores": [
+        1
+      ],
+      "all_child_winners_covered_by_nearmax_routing_growth": true,
+      "child_winners_without_any_allowed_parent": []
+    },
+    {
+      "parent_m": 2,
+      "child_m": 3,
+      "parent_global_maximum": 3,
+      "nearmax_cutoff": 1,
+      "best_parent_scores": [
+        null,
+        1
+      ],
+      "all_child_winners_covered_by_nearmax_routing_growth": false,
+      "child_winners_without_any_allowed_parent": [
+        "000101020001"
+      ]
+    },
+    {
+      "parent_m": 3,
+      "child_m": 4,
+      "parent_global_maximum": 6,
+      "nearmax_cutoff": 4,
+      "best_parent_scores": [
+        5
+      ],
+      "all_child_winners_covered_by_nearmax_routing_growth": true,
+      "child_winners_without_any_allowed_parent": []
+    },
+    {
+      "parent_m": 4,
+      "child_m": 5,
+      "parent_global_maximum": 10,
+      "nearmax_cutoff": 8,
+      "best_parent_scores": [
+        9,
+        9,
+        9,
+        9,
+        8
+      ],
+      "all_child_winners_covered_by_nearmax_routing_growth": true,
+      "child_winners_without_any_allowed_parent": []
+    },
+    {
+      "parent_m": 5,
+      "child_m": 6,
+      "parent_global_maximum": 15,
+      "nearmax_cutoff": 13,
+      "best_parent_scores": [
+        15,
+        14
+      ],
+      "all_child_winners_covered_by_nearmax_routing_growth": true,
+      "child_winners_without_any_allowed_parent": []
+    },
+    {
+      "parent_m": 6,
+      "child_m": 7,
+      "parent_global_maximum": 23,
+      "nearmax_cutoff": 21,
+      "best_parent_scores": [
+        21,
+        22,
+        21,
+        23,
+        22,
+        22,
+        22,
+        22
+      ],
+      "all_child_winners_covered_by_nearmax_routing_growth": true,
+      "child_winners_without_any_allowed_parent": []
+    }
+  ],
+  "projection_root_lifts": {
+    "source_dataset": {
+      "path": "results/family1-atlas-current/champions.jsonl",
+      "sha256": "506241c4193c425feb4e8bc65cff96399502f130175d12fd5a3cc3a8413905e2"
+    },
+    "base_certificate": {
+      "path": "results/family1-m7/summary.json",
+      "sha256": "d13d3ed5b5d8c4f351bb9bdc84d98f92ad94fc7a18590c1b4641cb74c1083c50"
+    },
+    "lower_bound": 34,
+    "exact_scores_known": false,
+    "global_maxima_known": false,
+    "distinct_rooted_records_exported": 104,
+    "records_path": "results/family1-edit-priority/root-lift-candidates.jsonl",
+    "record_sha256": "2c29e8c2463d9f16792378947868d4f7954612cd53914abcdc060a971ce01c44",
+    "sizes": [
+      {
+        "m": 8,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7
+        ],
+        "root_count": 2,
+        "distinct_certified_rooted_classes": 2,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 9,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8
+        ],
+        "root_count": 3,
+        "distinct_certified_rooted_classes": 3,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 10,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9
+        ],
+        "root_count": 4,
+        "distinct_certified_rooted_classes": 4,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 11,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10
+        ],
+        "root_count": 5,
+        "distinct_certified_rooted_classes": 5,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 12,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "root_count": 6,
+        "distinct_certified_rooted_classes": 6,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 13,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "root_count": 7,
+        "distinct_certified_rooted_classes": 7,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 14,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "root_count": 8,
+        "distinct_certified_rooted_classes": 8,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 15,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "root_count": 9,
+        "distinct_certified_rooted_classes": 9,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 16,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "root_count": 10,
+        "distinct_certified_rooted_classes": 10,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 17,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "root_count": 11,
+        "distinct_certified_rooted_classes": 11,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 18,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "root_count": 12,
+        "distinct_certified_rooted_classes": 12,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 19,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "root_count": 13,
+        "distinct_certified_rooted_classes": 13,
+        "all_128_static_base_mask_lifts_verified": true
+      },
+      {
+        "m": 20,
+        "all_vertices_accessible_from_all_m_roots": true,
+        "roots_mapping_to_base_root": [
+          0,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "root_count": 14,
+        "distinct_certified_rooted_classes": 14,
+        "all_128_static_base_mask_lifts_verified": true
+      }
+    ]
+  },
+  "sources": {
+    "results/family1-m1-m6/maximizers.jsonl": {
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    "out/family1-m1-m6/graphs.jsonl": {
+      "path": "out/family1-m1-m6/graphs.jsonl",
+      "sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156"
+    },
+    "results/family1-m7/maximizers.jsonl": {
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    },
+    "results/family1-m7-structures/structure.json": {
+      "path": "results/family1-m7-structures/structure.json",
+      "sha256": "78bd18ddf67cc5b8a645d9a88714c04f96ffdcde5a575a929c3c61657901afd6"
+    },
+    "results/family1-ancestry-through7/summary.json": {
+      "path": "results/family1-ancestry-through7/summary.json",
+      "sha256": "9c3f442415124270894688e6cefbaf04e7947755c81e3b0f49724cdd044f832d"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "headers": [
+    {
+      "path": "HardPairPrefixSeeds.h",
+      "sha256": "d7216011bc9ca149303ef356ad9d3339c1580061ddeb901d66910ef995229403"
+    },
+    {
+      "path": "HardPairViability.h",
+      "sha256": "04152a0fecdccccbbc263da62d11c6121cb3b9323fec41344a28ccc50320ff21"
+    },
+    {
+      "path": "HardPairFinder.h",
+      "sha256": "9b4b3ec4e18e300a03474b4f681e146635dcb6970703e85470848518566291a8"
+    }
+  ],
+  "prefix_independent_test": {
+    "path": "tests/HardPairPrefixSeedsIndependent.cpp",
+    "sha256": "b0afba74c0f5797d8230f505b7e3b5d5930610d7d41904946db0c921dd5fcb04"
+  },
+  "viability_independent_test": {
+    "path": "tests/HardPairViabilityIndependent.cpp",
+    "sha256": "95b613e8f3d0e6922b748da2697b060530b892476b08d68c39de4ec3359b7bd8"
+  },
+  "viability_CLI_test": {
+    "path": "tests/family1_viability_cli_test.py",
+    "sha256": "eb9685932e600f03b8197d838fc7ec30c32abdb1485f41352f6bb6a041252cc4"
+  },
+  "prefix_and_viability_generic_Release_Debug_passed": true,
+  "prefix_result": {
+    "passed": true,
+    "explicit_binary_DFAs": 746,
+    "complete_reference_pairs": 12992,
+    "fresh_per_length_tables_checked": true,
+    "full_profiles_checked_under_forced_hash": true,
+    "common_prefix_preserved": true,
+    "heterogeneous_roots_checked": true,
+    "depth_diversity_checked": true,
+    "long_sampled_layers_labeled_and_deterministic": true,
+    "caps_interrupt_empty_family_checked": true
+  },
+  "viability_result": {
+    "passed": true,
+    "explicit_binary_DFAs": 746,
+    "ordered_pair_comparisons": 6626,
+    "negative_closed_sets_checked": true,
+    "caps_and_interruptions_never_prune": true,
+    "generic_initial_and_child_pruning_checked": true
+  },
+  "adapter_Release_Debug": {
+    "negative_closed_proofs_verified": true,
+    "disabled_viability_never_prunes": true,
+    "cache_hits_consume_fixed_coordinate_budget": true,
+    "warm_uninterrupted_matches_cold_resumed_branch_decisions": true
+  },
+  "executables": {
+    "Release": {
+      "HardPairPrefixSeedsIndependent": {
+        "path": "out/build/msvc-vcpkg/Release/HardPairPrefixSeedsIndependent.exe",
+        "sha256": "05c8fa46060379deaca962cc7896ba13d5c59ce8739f28f6ef930b396a01cd16"
+      },
+      "HardPairViabilityIndependent": {
+        "path": "out/build/msvc-vcpkg/Release/HardPairViabilityIndependent.exe",
+        "sha256": "837af9e4479e8b846c31493d93f7a9a7bfaf348fcb48f892e5748045fb6caa9a"
+      },
+      "Family1Sample": {
+        "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+        "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+      }
+    },
+    "Debug": {
+      "HardPairPrefixSeedsIndependent": {
+        "path": "out/build/msvc-vcpkg/Debug/HardPairPrefixSeedsIndependent.exe",
+        "sha256": "25864f4c23056a72d1fc7637d1d59ca35d8f0207c0a47b72a2f93c8a3841e037"
+      },
+      "HardPairViabilityIndependent": {
+        "path": "out/build/msvc-vcpkg/Debug/HardPairViabilityIndependent.exe",
+        "sha256": "433c2f12c6f1ff30f29977cd1db8023e437d492ce1721957f6343e1ff384b454"
+      },
+      "Family1Sample": {
+        "path": "out/build/msvc-vcpkg/Debug/Family1Sample.exe",
+        "sha256": "819e5132929e0163a0a5e02f6d1896be7c7d9e37f1601d8b35b940f7d455ee2d"
+      }
+    }
+  },
+  "main_quality_grid": {
+    "path": "results/family1-finder-prefixmatch-version-benchmark/summary.json",
+    "sha256": "14f85a5c56459d2638fb815c97af7703b589e49fc6208ed05ee41d073c552289"
+  },
+  "main_analysis": {
+    "path": "results/family1-finder-prefixmatch-version-benchmark/analysis.json",
+    "sha256": "6a7c6edd14c527cb9beee0670ba5ec0c0559bf2a9129fb97862919249c7ca02d"
+  },
+  "optional_T2_viability0_ablation": {
+    "path": "results/family1-finder-prefixmatch-viability0-ablation/analysis.json",
+    "sha256": "46cc8c39343777c2836f03e51c5dea3be94018aa8c13e4a444ee0a7454ec3fe5"
+  },
+  "exported_native_viability_closed_set_examples_independently_verified": 216,
+  "old_baseline_preserved": {
+    "path": "results/family1-finder-blind-benchmark/summary.json",
+    "sha256": "8d6270e50b9237dcc0b231e5e0a955c1e7efc1b1c6b3fb5795b8344c692d8013"
+  },
+  "residual20_local_diagnostic": {
+    "path": "results/family1-residual-pair-diagnostic/validation.json",
+    "sha256": "1875f8b6d852b524e617ea8674dc440f2951d5356ca6c614c65b0ce047d63c7a"
+  },
+  "no_new_global_H_certificate_claimed": true
+}

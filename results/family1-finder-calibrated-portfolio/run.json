@@ -1,0 +1,346 @@
+{
+  "schema": 1,
+  "method": "calibrated-two-stage-m7-finder-portfolio-v1",
+  "native_executable": {
+    "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+    "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+  },
+  "portfolio_script": {
+    "path": "out/family1-finder-calibrated-portfolio/portfolio-used.py",
+    "sha256": "2ddb02347b5fe21a4aab6b8dc206002e4ffa60e57e856b21c792b0046b3d0616"
+  },
+  "target_runner": {
+    "path": "out/family1-finder-calibrated-portfolio/target-runner-used.py",
+    "sha256": "a25a76da0a41233c4a2322c8c5d1e0642c6de5d2e3a74703d59ed5ecf3e1290f"
+  },
+  "graph_metadata_source": {
+    "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+    "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+  },
+  "graphs": [
+    {
+      "ordinal": 539749,
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    {
+      "ordinal": 679758,
+      "key": "0001020304050406050600010203",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "ordinal": 1783759,
+      "key": "0102000301040204050600030506",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "ordinal": 2221624,
+      "key": "0102000304050106000304050206",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "ordinal": 2470130,
+      "key": "0102010203040005030604060005",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "ordinal": 2471796,
+      "key": "0102010203040005050600060304",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "ordinal": 3411148,
+      "key": "0102020304050006000604050103",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "ordinal": 4099217,
+      "key": "0102030405060001000203040506",
+      "m": 7,
+      "known_H": 34,
+      "canonical_table": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "name": "stage1-k6",
+      "k": 6,
+      "attempts": 1024,
+      "prefix_pairs": 1024,
+      "prefix_depth": 16,
+      "prefix_words": 65536,
+      "distance": 0,
+      "ranking": "drop",
+      "common": 0,
+      "expansions": 10000
+    },
+    {
+      "name": "stage2-k16",
+      "k": 16,
+      "attempts": 65536,
+      "prefix_pairs": 65536,
+      "prefix_depth": 21,
+      "prefix_words": 2097152,
+      "distance": 128,
+      "ranking": "remaining",
+      "common": 8,
+      "expansions": 50000
+    }
+  ],
+  "jobs": 4,
+  "native_timeout_seconds": 180,
+  "target_length": 34,
+  "seed": 1088,
+  "beam_width": 16,
+  "tail_threshold": 8,
+  "tail_max_states": 100000,
+  "saved_word_or_witness_derived_prefix_hints_used": false,
+  "stage2_selection": "Only graphs lacking a stage1 independently verified length34 result.",
+  "scope": "Retrospective calibrated portfolio. Known H=34 comes from the separate exhaustive certificate; bounded misses give no lower bound."
+}

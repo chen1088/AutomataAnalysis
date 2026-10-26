@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-25",
+  "compiler": "MSVC 19.44.35229.0 x64",
+  "scope": "one study with explicit rows for every m=1..20",
+  "exact_exhaustive_states": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "formal_global_unresolved_states": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "larger_unique_graphs": 64,
+  "larger_unresolved_individual_scores": 63,
+  "whole_graph_sat_upper_bounds_reproduced": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "independent_cnf_solver": "PicoSAT (in addition to Z3), through m=4",
+  "drat_lrat_trace_checked": false,
+  "m20_lower_bound": 27,
+  "m20_projection_independently_replayed_through_depth": 26,
+  "m20_independent_seconds": 28.0236,
+  "pdf_atlas_pages": 20,
+  "tikz_pictures": 55,
+  "passed": [
+    "MSVC/vcpkg Debug and Release builds",
+    "All six CTest regressions in both configurations",
+    "Independent all-small static-mask scoring and enumeration",
+    "Independent canonicalization checks through m=4 and 3200 transformed m=20 graphs",
+    "Independent Z3/PicoSAT whole-graph UNSAT checks through m=4",
+    "Independent scalar replay of m20 H>=27",
+    "Study certificate replay before importing bounds",
+    "TikZ exact node/port preservation and all observed tie retention",
+    "PDF compilation and visual rendering of every page"
+  ],
+  "source_sha256": {
+    "Family1LargeGraph.h": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721",
+    "Family1LargeGraph.cpp": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52",
+    "Family1SatSolver.h": "dd9519f0cb82c451d9dee62406b954fc4c0d21f107b40f418b03154cb3d5b352",
+    "Family1SatSolver.cpp": "a9015b70b5894bf3310c6dc6785c9649930dfb492323913e3ba666abd5bad037",
+    "Family1Symbolic.h": "1b7c8f3484f412d962543b7fca3c44168510cf8cd56f1d3fd8be347883ecd2f8",
+    "Family1Symbolic.cpp": "9b0234f3ebfac5e43bd5af0e8a69de2719682a8da8bfe1c4603cc63c1589823b",
+    "Family1Synthesis.h": "7b7ea97368bffd3181c755ca13d6c5fad6dcc682839525cb1b5fbc516d47ae0a",
+    "Family1Synthesis.cpp": "658a4353f937b9bc49d69b1d9aa0f2def27a016dc2c293898b91b9fd030368bb",
+    "family1_explore.cpp": "089afc8300d2c232cce8fee506b967934f4f23a1659f03e16c38697a7a89eebc",
+    "family1_global.cpp": "bf1f2366aed302d0538c07873d70be4f780889e856c5636bd4cdf575ecb67bd3",
+    "CMakeLists.txt": "73d301a95e760895a700dc813a0f8839b91fb25a355524e4ddcf4485d377332d",
+    "vcpkg.json": "a9fde62e6cef8210916a8bf658b2dbd137b28805496000c09ded976f81274ab1",
+    "scripts/family1_study.py": "9eb39040782088385d9dbc78490b9416f2999d994795bc7a454a424704da7d45",
+    "scripts/family1_graph_atlas.py": "d8eff86a3807cda394b793290260a7c737a9f01f6914d614dda7fe56975a57d7",
+    "scripts/family1_tikz_atlas.py": "ad83b6e6a03f956c25c5c536eadd1cdbbcc7007f4e6d64cecabbe98f8bef33f4"
+  },
+  "pdf_sha256": {
+    "output\\pdf\\family1-atlas\\family1-atlas-1-20.pdf": "387f5728a829d34710cf2d8256a67c800f8b58fe655c39eb3b6523daa3f91009",
+    "output\\pdf\\family1-m5\\family1-m5.pdf": "6f98403e03e0d763252ff93231d40628bdb238e965a891af434dc320480d9de0"
+  }
+}

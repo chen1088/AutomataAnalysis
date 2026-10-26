@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "source": "out\\family1-neighbor-pilot-8-20-v3",
+  "files": [
+    {
+      "file": "run.json",
+      "bytes": 2813,
+      "sha256": "f45c5ef494e2607692cf8f5fec5d95e8b398697be89f3d7976e4a7f2398afc43"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 15770,
+      "sha256": "5cadab9ba6407c0aa236e231ae1710eabd9e870a3465d2898461e3e669059696"
+    },
+    {
+      "file": "audit.json",
+      "bytes": 653,
+      "sha256": "32f237041d997048f01681e4f49a4f9441093a28a6cf926eb0b43248d7ba5d97"
+    },
+    {
+      "file": "root-profiles.jsonl",
+      "bytes": 193987,
+      "sha256": "40e343bde25cd3ecd4ffc6124cebd31f590d03c1c73c01bc0bc590d1fff9cd21"
+    },
+    {
+      "file": "incumbents.jsonl",
+      "bytes": 565788,
+      "sha256": "8c7092966473ce50ba7907911bf8b49f8dd8cbb4e4bcfc7ee633be0a03ae3171"
+    },
+    {
+      "file": "potential-competitive.jsonl",
+      "bytes": 3508222,
+      "sha256": "b634e9f5e9e9cc05bf5a257869c8f4369f94e198186cddb73462d37364997813"
+    },
+    {
+      "file": "records.jsonl",
+      "bytes": 4204736,
+      "sha256": "fd55f58b7d37f8da01b75d18024bd9ad17e9e87af0f238e25d11ecae94f2f442"
+    },
+    {
+      "file": "complete-pilot-evidence.zip",
+      "bytes": 1568883,
+      "sha256": "c011e3db43222ae7f222ff1bc7b6bded82a99dbee169d84e2b2620db014f63ff"
+    }
+  ]
+}

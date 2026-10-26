@@ -3,6 +3,8 @@
 class BackToFirstDFA : public PDFA
 {
 public:
+   // Legacy convention: s mask-controlled states, plus absorbing sink s.
+   // This differs from a Family 1 seed with exactly s total states.
    BackToFirstDFA(unsigned int s);
    InfTwoRegularDigraphBackToZero graph;   // for now we just have one graph
    boost::dynamic_bitset<> labels; // This is the w for the PDFA M_w

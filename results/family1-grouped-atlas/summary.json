@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "description": "Ordinary shapes with all qualifying alternative roots marked separately",
+  "sources": [
+    {
+      "path": "results/family1-atlas-current/champions.jsonl",
+      "sha256": "506241c4193c425feb4e8bc65cff96399502f130175d12fd5a3cc3a8413905e2"
+    },
+    {
+      "path": "results/family1-m8-estimates/best-candidates.jsonl",
+      "sha256": "f4385db783c114143cef29380b4195b0e3693e2cc3f0fad9c48d1612500d6dd0"
+    },
+    {
+      "path": "figures/family1-atlas/source-manifest.json",
+      "sha256": "75f0a7ece806ff3a7ed9bd85884cd92412a4ff7eadc7243500eb66ac5cf6e129"
+    },
+    {
+      "path": "out/family1-m8-root-audit/audit.json",
+      "sha256": "50c512c1eb0be85c86c46d146377ad6d11869dbd605e1fe9672994ca7d10dfb9"
+    }
+  ],
+  "graphs": 26,
+  "page_count": 21,
+  "port_labels": "none",
+  "all_edges_solid": true,
+  "certified_rooted_classes": 20,
+  "certified_ordinary_shapes": 13,
+  "certificate_coverage": [
+    {
+      "m": 1,
+      "global_maximum": 1,
+      "rooted_classes": 1,
+      "ordinary_shapes": 1,
+      "every_source_class_retained_once": true,
+      "every_accessible_vertex_checked": true,
+      "all_upper_witnesses_replayed": true
+    },
+    {
+      "m": 2,
+      "global_maximum": 3,
+      "rooted_classes": 1,
+      "ordinary_shapes": 1,
+      "every_source_class_retained_once": true,
+      "every_accessible_vertex_checked": true,
+      "all_upper_witnesses_replayed": true
+    },
+    {
+      "m": 3,
+      "global_maximum": 6,
+      "rooted_classes": 2,
+      "ordinary_shapes": 1,
+      "every_source_class_retained_once": true,
+      "every_accessible_vertex_checked": true,
+      "all_upper_witnesses_replayed": true
+    },
+    {
+      "m": 4,
+      "global_maximum": 10,
+      "rooted_classes": 1,
+      "ordinary_shapes": 1,
+      "every_source_class_retained_once": true,
+      "every_accessible_vertex_checked": true,
+      "all_upper_witnesses_replayed": true
+    },
+    {
+      "m": 5,
+      "global_maximum": 15,
+      "rooted_classes": 5,
+      "ordinary_shapes": 4,
+      "every_source_class_retained_once": true,
+      "every_accessible_vertex_checked": true,
+      "all_upper_witnesses_replayed": true
+    },
+    {
+      "m": 6,
+      "global_maximum": 23,
+      "rooted_classes": 2,
+      "ordinary_shapes": 1,
+      "every_source_class_retained_once": true,
+      "every_accessible_vertex_checked": true,
+      "all_upper_witnesses_replayed": true
+    },
+    {
+      "m": 7,
+      "global_maximum": 34,
+      "rooted_classes": 8,
+      "ordinary_shapes": 4,
+      "every_source_class_retained_once": true,
+      "every_accessible_vertex_checked": true,
+      "all_upper_witnesses_replayed": true
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "kind": "overview"
+    },
+    {
+      "page": 2,
+      "m": 1,
+      "shape_keys": [
+        "0000"
+      ]
+    },
+    {
+      "page": 3,
+      "m": 2,
+      "shape_keys": [
+        "00010001"
+      ]
+    },
+    {
+      "page": 4,
+      "m": 3,
+      "shape_keys": [
+        "000100020002"
+      ]
+    },
+    {
+      "page": 5,
+      "m": 4,
+      "shape_keys": [
+        "0001020300030102"
+      ]
+    },
+    {
+      "page": 6,
+      "m": 5,
+      "shape_keys": [
+        "00010102030400020304",
+        "00010203000100040204",
+        "00010203000301040204",
+        "00010203000402030102"
+      ]
+    },
+    {
+      "page": 7,
+      "m": 6,
+      "shape_keys": [
+        "000102030203040500050104"
+      ]
+    },
+    {
+      "page": 8,
+      "m": 7,
+      "shape_keys": [
+        "0001020302030405000601060405",
+        "0001020302030405000604060105",
+        "0001020303040506050600010204",
+        "0001020304050406050600010203"
+      ]
+    },
+    {
+      "page": 9,
+      "m": 8,
+      "shape_keys": [
+        "00010203010403040506000702070506"
+      ]
+    },
+    {
+      "page": 10,
+      "m": 9,
+      "shape_keys": [
+        "000102030304040502060607000106080506"
+      ]
+    },
+    {
+      "page": 11,
+      "m": 10,
+      "shape_keys": [
+        "0001020303040405020606070001060806090506"
+      ]
+    },
+    {
+      "page": 12,
+      "m": 11,
+      "shape_keys": [
+        "00010203030404050206060700010608060906100506"
+      ]
+    },
+    {
+      "page": 13,
+      "m": 12,
+      "shape_keys": [
+        "000102030304040502060607000106080609061006110506"
+      ]
+    },
+    {
+      "page": 14,
+      "m": 13,
+      "shape_keys": [
+        "0001020303040405020606070001060806090610061106120506"
+      ]
+    },
+    {
+      "page": 15,
+      "m": 14,
+      "shape_keys": [
+        "00010203030404050206060700010608060906100611061206130506"
+      ]
+    },
+    {
+      "page": 16,
+      "m": 15,
+      "shape_keys": [
+        "000102030304040502060607000106080609061006110612061306140506"
+      ]
+    },
+    {
+      "page": 17,
+      "m": 16,
+      "shape_keys": [
+        "0001020303040405020606070001060806090610061106120613061406150506"
+      ]
+    },
+    {
+      "page": 18,
+      "m": 17,
+      "shape_keys": [
+        "00010203030404050206060700010608060906100611061206130614061506160506"
+      ]
+    },
+    {
+      "page": 19,
+      "m": 18,
+      "shape_keys": [
+        "000102030304040502060607000106080609061006110612061306140615061606170506"
+      ]
+    },
+    {
+      "page": 20,
+      "m": 19,
+      "shape_keys": [
+        "0001020303040405020606070001060806090610061106120613061406150616061706180506"
+      ]
+    },
+    {
+      "page": 21,
+      "m": 20,
+      "shape_keys": [
+        "00010203030404050206060700010608060906100611061206130614061506160617061806190506"
+      ]
+    }
+  ],
+  "m8_global_maximum_certified": false,
+  "m8_leader_rigorous_interval": [
+    1,
+    50
+  ],
+  "m8_global_lower_bound_from_different_graph": 35
+}

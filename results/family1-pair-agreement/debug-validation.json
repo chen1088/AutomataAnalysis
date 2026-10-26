@@ -1,0 +1,38 @@
+﻿{
+    "schema":  1,
+    "configuration":  "Debug",
+    "method":  "independent-scalar-full-counts-and-state-replay",
+    "tiny_rooted_classes":  64,
+    "tiny_distinct_pairs":  320,
+    "tiny_common_suffix_steps":  6,
+    "tiny_full_scalar_counts_and_copy_branches_passed":  true,
+    "large_case_sizes":  [
+                             20,
+                             20,
+                             20
+                         ],
+    "large_case_models":  [
+                              "balanced-circulant",
+                              "unbounded-indegree-reset",
+                              "coincident-cycle"
+                          ],
+    "large_initial_and_final_full_scalar_mask_counts":  1048576,
+    "large_per_step_scalar_state_spot_checks":  256,
+    "large_common_suffix_steps":  8,
+    "large_permutation_mask_counts":  [
+                                          32,
+                                          0,
+                                          1048576
+                                      ],
+    "exact_agreement_monotonicity_verified":  true,
+    "permutation_mismatch_invariance_verified":  true,
+    "production_cmake_modified":  false,
+    "source_sha256":  {
+                          "Family1LargeGraph.cpp":  "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52",
+                          "tests/Family1PairAgreementVerify.cpp":  "eb7432da25035d754f3287280af85f2ba9952c23fecd0bebeb97245dd0d7be5f",
+                          "tests/run-family1-pair-agreement.ps1":  "0827979507bfc9ea05fade276440a994bc615dd739b971eb9f8399dddbbafe98",
+                          "Family1PairAgreement.h":  "c843b5396e95e1566db2123adf9a4f5cf2c85836ef90ecc7c529237e78b7d197",
+                          "Family1LargeGraph.h":  "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+                      },
+    "test_output_sha256":  "443d7c702ee2fb91b2dde3adaced887da4089951bdc0c179783d2cb94e816675"
+}

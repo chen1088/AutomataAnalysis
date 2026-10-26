@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "fixed_length": 34,
+  "queries": 26,
+  "decisions": {
+    "collision": 0,
+    "no_collision": 0,
+    "unknown": 26
+  },
+  "sources": [
+    {
+      "run": {
+        "path": "out/family1-m8-threshold34-calibration/run.json",
+        "sha256": "24bc3a8dd07448b70e5c3e45fd5183383072a437fc54f26c749dea92acce7531"
+      },
+      "summary": {
+        "path": "out/family1-m8-threshold34-calibration/summary.json",
+        "sha256": "e583fefafffdaeb1ed2d547141c05ea21c67ebf83effc74df5ba8d429050afb5"
+      }
+    },
+    {
+      "run": {
+        "path": "out/family1-m8-threshold34-full/run.json",
+        "sha256": "ccd170b16e920c1f4e53e989900d4e407e7f83e64f36e17a7da2e5f466a471ea"
+      },
+      "summary": {
+        "path": "out/family1-m8-threshold34-full/summary.json",
+        "sha256": "8189959af201e12df57fdaf55027f5d604a375db9eeaf5de78dc0413592a6d92"
+      }
+    }
+  ],
+  "certified_H_ge35_from_these_SAT_queries": false,
+  "clone_lower34_independently_validated": 2,
+  "global_maximum_claimed": false
+}

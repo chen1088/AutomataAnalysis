@@ -1,0 +1,630 @@
+{
+  "schema": 1,
+  "passed": true,
+  "sizes": [
+    {
+      "m": 8,
+      "generated_classes": 1982,
+      "direct_endpoints": 256,
+      "selected_roots": 16,
+      "outcomes": {
+        "completed": 16
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 55,
+          "raw_proposals": 208,
+          "accepted_paths": 200,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 200,
+          "raw_proposals": 624,
+          "accepted_paths": 424,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 382,
+          "raw_proposals": 300,
+          "accepted_paths": 99,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 9,
+      "generated_classes": 2104,
+      "direct_endpoints": 256,
+      "selected_roots": 18,
+      "outcomes": {
+        "completed": 18
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 18,
+          "raw_proposals": 197,
+          "accepted_paths": 193,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 191,
+          "raw_proposals": 526,
+          "accepted_paths": 366,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 342,
+          "raw_proposals": 295,
+          "accepted_paths": 97,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 10,
+      "generated_classes": 2295,
+      "direct_endpoints": 256,
+      "selected_roots": 20,
+      "outcomes": {
+        "completed": 20
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 21,
+          "raw_proposals": 209,
+          "accepted_paths": 197,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 196,
+          "raw_proposals": 605,
+          "accepted_paths": 399,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 379,
+          "raw_proposals": 263,
+          "accepted_paths": 91,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 11,
+      "generated_classes": 2558,
+      "direct_endpoints": 256,
+      "selected_roots": 22,
+      "outcomes": {
+        "completed": 22
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 24,
+          "raw_proposals": 207,
+          "accepted_paths": 197,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 194,
+          "raw_proposals": 584,
+          "accepted_paths": 389,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 365,
+          "raw_proposals": 267,
+          "accepted_paths": 93,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 12,
+      "generated_classes": 2849,
+      "direct_endpoints": 256,
+      "selected_roots": 24,
+      "outcomes": {
+        "completed": 24
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 27,
+          "raw_proposals": 209,
+          "accepted_paths": 199,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 197,
+          "raw_proposals": 598,
+          "accepted_paths": 398,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 375,
+          "raw_proposals": 261,
+          "accepted_paths": 91,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 13,
+      "generated_classes": 3154,
+      "direct_endpoints": 256,
+      "selected_roots": 26,
+      "outcomes": {
+        "completed": 19,
+        "timeout": 7
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 30,
+          "raw_proposals": 199,
+          "accepted_paths": 184,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 180,
+          "raw_proposals": 613,
+          "accepted_paths": 418,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 400,
+          "raw_proposals": 250,
+          "accepted_paths": 89,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 14,
+      "generated_classes": 3327,
+      "direct_endpoints": 256,
+      "selected_roots": 28,
+      "outcomes": {
+        "timeout": 28
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 33,
+          "raw_proposals": 208,
+          "accepted_paths": 199,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 197,
+          "raw_proposals": 649,
+          "accepted_paths": 423,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 400,
+          "raw_proposals": 262,
+          "accepted_paths": 88,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 15,
+      "generated_classes": 3637,
+      "direct_endpoints": 256,
+      "selected_roots": 30,
+      "outcomes": {
+        "timeout": 27,
+        "completed": 3
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 36,
+          "raw_proposals": 212,
+          "accepted_paths": 201,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 201,
+          "raw_proposals": 645,
+          "accepted_paths": 418,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 397,
+          "raw_proposals": 270,
+          "accepted_paths": 92,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 16,
+      "generated_classes": 3911,
+      "direct_endpoints": 256,
+      "selected_roots": 32,
+      "outcomes": {
+        "timeout": 32
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 39,
+          "raw_proposals": 210,
+          "accepted_paths": 200,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 199,
+          "raw_proposals": 618,
+          "accepted_paths": 416,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 398,
+          "raw_proposals": 252,
+          "accepted_paths": 88,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 17,
+      "generated_classes": 4096,
+      "direct_endpoints": 256,
+      "selected_roots": 34,
+      "outcomes": {
+        "timeout": 34
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 42,
+          "raw_proposals": 211,
+          "accepted_paths": 202,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 201,
+          "raw_proposals": 621,
+          "accepted_paths": 426,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 404,
+          "raw_proposals": 265,
+          "accepted_paths": 88,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 18,
+      "generated_classes": 4402,
+      "direct_endpoints": 256,
+      "selected_roots": 36,
+      "outcomes": {
+        "timeout": 36
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 45,
+          "raw_proposals": 212,
+          "accepted_paths": 201,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 201,
+          "raw_proposals": 634,
+          "accepted_paths": 428,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 420,
+          "raw_proposals": 256,
+          "accepted_paths": 92,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 19,
+      "generated_classes": 4741,
+      "direct_endpoints": 256,
+      "selected_roots": 38,
+      "outcomes": {
+        "timeout": 38
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": false,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 48,
+          "raw_proposals": 213,
+          "accepted_paths": 199,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 199,
+          "raw_proposals": 708,
+          "accepted_paths": 467,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 450,
+          "raw_proposals": 240,
+          "accepted_paths": 87,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    },
+    {
+      "m": 20,
+      "generated_classes": 4832,
+      "direct_endpoints": 256,
+      "selected_roots": 40,
+      "outcomes": {
+        "timeout": 40
+      },
+      "eliminations": 0,
+      "generation_complete": false,
+      "representation_capped": true,
+      "path_capped": false,
+      "candidate_capped": true,
+      "depths": [
+        {
+          "depth": 1,
+          "frontier_nodes": 51,
+          "raw_proposals": 211,
+          "accepted_paths": 201,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 2,
+          "frontier_nodes": 201,
+          "raw_proposals": 504,
+          "accepted_paths": 333,
+          "new_rooted_candidates": 85,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        },
+        {
+          "depth": 3,
+          "frontier_nodes": 316,
+          "raw_proposals": 183,
+          "accepted_paths": 86,
+          "new_rooted_candidates": 86,
+          "complete": false,
+          "path_capped": false,
+          "candidate_capped": true
+        }
+      ]
+    }
+  ],
+  "generated_classes": 43888,
+  "merged_classes": 43992,
+  "imported_lower34_ties": 104,
+  "selected_roots": 364,
+  "attempts": 364,
+  "outcomes": {
+    "completed": 122,
+    "timeout": 242
+  },
+  "positive_upper_certificates": 0,
+  "eliminations_below34": 0,
+  "unique_primitive_steps_replayed": 9002,
+  "all_generated_and_ranked_classes_retained": true,
+  "all_selected_roots_processed_including_timeouts": true,
+  "all104_imported_lower_ties_preserved": true,
+  "new_lower_bound_claims": 0,
+  "enumeration_complete": false,
+  "global_maximum_certified": false,
+  "survival_gives_no_lower_bound": true,
+  "imported_projection_lower_proofs_attributed_not_reproved": true,
+  "source_run": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-edit-candidate-pilot-8-20",
+  "pilot_run_sha256": "9045fa4f9fb4d3bfbd2ad678ef1f711f317609f1c04208a33e62e3a2df10e3ea",
+  "pilot_summary_sha256": "637f00c0b85bf1acae45b1485488181b0a28c02e96fb4deb42c6394f37eb076a",
+  "publisher_sha256": "9447028922236e360ed2fad343a05f015925f61682062c790d6a19a12ed624ae"
+}

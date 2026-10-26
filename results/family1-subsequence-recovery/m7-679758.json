@@ -1,0 +1,145 @@
+{
+  "ordinal": 679758,
+  "key": "0001020304050406050600010203",
+  "known_H": 34,
+  "source_near_length": 36,
+  "distinct_source_pairs": 3,
+  "distinct_source_words": 6,
+  "target_length": 34,
+  "decision": "unknown",
+  "upper_bound": null,
+  "complete_within_subsequence_space": true,
+  "no_pair_in_subsequence_space": true,
+  "union_distinct_subsequences": 1017,
+  "unique_complete_profiles": 1017,
+  "colliding_profiles": 0,
+  "native_seconds": 0.0020892,
+  "nodes": 12948,
+  "native_result": {
+    "path": "out/family1-subsequence-recovery/minimum-pools/679758/result.json",
+    "sha256": "582d9f9dd6a83564825e32ea3da7e3f89da77ed1d873dbc59e7ffa99e0240e12"
+  },
+  "input_words": {
+    "path": "out/family1-subsequence-recovery/minimum-pools/679758/input-words.txt",
+    "sha256": "453275b3f8ce57978b46c7de742bd539113ed97937294156e396d4990abde05a"
+  },
+  "independent_length_count_dp_passed": true,
+  "stored_witnesses_scalar_verified": [],
+  "command": [
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+    "--graph",
+    "0001020304050406050600010203",
+    "--input-file",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-pools\\679758\\input-words.txt",
+    "--target",
+    "34",
+    "--out",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-pools\\679758",
+    "--max-nodes",
+    "10000000"
+  ],
+  "sources": [
+    {
+      "ordinal": 679758,
+      "run_id": "m7-679758-k1-w4-t0-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "217729b969f8628b2cddedcdb8bcbc6843201f697742657941507d04a95878ef"
+      },
+      "words": [
+        "001100011111001010010110010011000110",
+        "110011100111001010010110010011000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 679758,
+      "run_id": "m7-679758-k1-w4-t2-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+        "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "304082ada23f64e05958ab3b0bce96084232ed06343f9cbda174188b66ed1da2"
+      },
+      "words": [
+        "001100011111001010010110010011000110",
+        "110011100111001010010110010011000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 679758,
+      "run_id": "m7-679758-k12-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "b4eaba023b08f1e9c1ab1b305a57d6d0de0503460ac65b7bd21fc67e7ecc6f17"
+      },
+      "words": [
+        "001100011000110101101001101100111000",
+        "110011100000110101101001101100111000"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 679758,
+      "run_id": "m7-679758-k14-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "f2c6727b2f152b1d52009b16d29d3e00ef601729c02458c0e6c1c989395a601f"
+      },
+      "words": [
+        "001100011111001010010110010011000110",
+        "110011100111001010010110010011000110"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 679758,
+      "run_id": "m7-679758-k16-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "547be6e78891db6af15a5177f8f3e4c0e714c9dbeb1b147b5f569d030087c9f5"
+      },
+      "words": [
+        "001100011001000110110011011110011101",
+        "110011100001000110110011011110011101"
+      ],
+      "length": 36
+    },
+    {
+      "ordinal": 679758,
+      "run_id": "m7-679758-k8-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "ca28a208e60a45704844cc8467a353690b9a9badf64787b603bb98367de080d2"
+      },
+      "words": [
+        "001100011111001010010110010011000110",
+        "110011100111001010010110010011000110"
+      ],
+      "length": 36
+    }
+  ]
+}

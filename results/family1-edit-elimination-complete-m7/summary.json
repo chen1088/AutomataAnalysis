@@ -1,0 +1,41 @@
+{
+  "generation_seal": {
+    "path": "results/family1-edit-candidate-benchmark/generation-seal.json",
+    "sha256": "567805d0a604ce968d5bcd7a1a08040818088c355c5c25267da8877da47fb515"
+  },
+  "exe": {
+    "path": "out/family1-edit-elimination-complete-m7/binary/Family1Sample.exe",
+    "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+  },
+  "scorer": {
+    "path": "out/family1-edit-elimination-complete-m7/scorer-used.py",
+    "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+  },
+  "budgets": [
+    32,
+    128
+  ],
+  "samples": 128,
+  "beam": 4,
+  "timeout": 10,
+  "complete_size7_only": true,
+  "reuse_work_dir": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-edit-elimination-benchmark",
+  "same_size_cutoffs": {
+    "7": 33
+  },
+  "query_count": 13329,
+  "per_size_query_count": {
+    "7": 13329
+  },
+  "retrospective_operating_point": true,
+  "per_graph_truth_or_word_hints_passed": false,
+  "cohort_rows": 1,
+  "eliminated_unique_graphs": 12691,
+  "unresolved_unique_graphs": 638,
+  "false_eliminations": 0,
+  "reused_prior_queries": 579,
+  "scorer_outcomes": {
+    "completed": 13329
+  },
+  "no_new_global_optimality_claim": true
+}

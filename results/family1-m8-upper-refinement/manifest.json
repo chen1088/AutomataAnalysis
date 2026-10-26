@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "files": {
+    "complete-raw-evidence.zip": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\complete-raw-evidence.zip",
+      "sha256": "41e7b880a0a211781f0cd70e28e4da1c954aa73975bb3a9dc153814fda0435ea"
+    },
+    "independent-scalar-audit.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\independent-scalar-audit.json",
+      "sha256": "70017fc62c29af7af8414e6a4391359f93d81346855eca09dd81353b237ee76e"
+    },
+    "README.md": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\README.md",
+      "sha256": "aacba846e8e2cb54aec4e6d6b31154ea14f57e28943d68d0b4d0b26024f8d295"
+    },
+    "records.jsonl": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+      "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+    },
+    "summary.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\summary.json",
+      "sha256": "be0fa0ee927c6cf2b8359b7f8fe7c63ae6fa854c2ad0d1a6b25a49fbcf332770"
+    }
+  },
+  "all_final_witnesses_independently_scalar_replayed": true,
+  "raw_archive_contains_used_sources_and_native_configurations": true,
+  "raw_archive_entries": 4337,
+  "raw_archive_crc_checked": true
+}

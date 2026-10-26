@@ -1,0 +1,18 @@
+% Family 1 rooted seed, m=1; key=0000.
+% Requires \usepackage{tikz} and \usetikzlibrary{arrows.meta}.
+% Score and global-maximality metadata belong in the surrounding caption.
+\begin{tikzpicture}[x=1cm,y=1cm,
+  f1atlas state/.style={circle,draw=black,fill=white,line width=.5pt,inner sep=0pt,font=\fontsize{7}{8}\selectfont},
+  f1atlas root/.style={f1atlas state,double,double distance=.42mm},
+  f1atlas port0/.style={-{Stealth[length=1.45mm,width=1.05mm]},draw=black,line width=.48pt},
+  f1atlas port1/.style={f1atlas port0},
+  f1atlas label/.style={font=\fontsize{6}{7}\selectfont,fill=white,inner sep=.4pt}
+]
+\path[use as bounding box] (-3,-3) rectangle (3,3);
+% edge 0 0 0
+\draw[f1atlas port0] (-0.20270,-0.00880) .. controls (-0.76121,-0.11454) and (0.15129,0.65405) .. (-0.05791,0.16668);
+% edge 0 1 0
+\draw[f1atlas port1] (0.04784,0.12164) .. controls (-0.15129,0.65405) and (0.76121,-0.11454) .. (0.24538,0.00878);
+% state 0
+\node[f1atlas root,minimum size=4.1538mm,fill=black!10] (q0) at (0.00000,-0.09231) {$ 0 $};
+\end{tikzpicture}

@@ -1,0 +1,104 @@
+{
+  "per_size": [
+    {
+      "m": 2,
+      "queries": 6,
+      "eliminated": 5,
+      "unresolved_winners": 1,
+      "unresolved_nonwinners": 0,
+      "witness_gap_histogram": {
+        "0": 5
+      }
+    },
+    {
+      "m": 3,
+      "queries": 57,
+      "eliminated": 55,
+      "unresolved_winners": 2,
+      "unresolved_nonwinners": 0,
+      "witness_gap_histogram": {
+        "0": 40,
+        "1": 12,
+        "2": 1,
+        "3": 2
+      }
+    },
+    {
+      "m": 4,
+      "queries": 486,
+      "eliminated": 484,
+      "unresolved_winners": 1,
+      "unresolved_nonwinners": 1,
+      "witness_gap_histogram": {
+        "0": 215,
+        "1": 93,
+        "2": 93,
+        "3": 40,
+        "4": 31,
+        "5": 5,
+        "6": 4,
+        "7": 3
+      }
+    },
+    {
+      "m": 5,
+      "queries": 1163,
+      "eliminated": 1156,
+      "unresolved_winners": 3,
+      "unresolved_nonwinners": 4,
+      "witness_gap_histogram": {
+        "0": 199,
+        "1": 110,
+        "2": 149,
+        "3": 198,
+        "4": 223,
+        "5": 147,
+        "6": 79,
+        "7": 31,
+        "8": 12,
+        "9": 3,
+        "10": 1,
+        "11": 3,
+        "12": 1
+      }
+    },
+    {
+      "m": 6,
+      "queries": 2083,
+      "eliminated": 2063,
+      "unresolved_winners": 0,
+      "unresolved_nonwinners": 20,
+      "witness_gap_histogram": {
+        "0": 141,
+        "1": 56,
+        "2": 96,
+        "3": 161,
+        "4": 206,
+        "5": 228,
+        "6": 244,
+        "7": 226,
+        "8": 246,
+        "9": 175,
+        "10": 121,
+        "11": 95,
+        "12": 35,
+        "13": 16,
+        "14": 10,
+        "15": 3,
+        "17": 1,
+        "18": 1,
+        "19": 2
+      }
+    },
+    {
+      "m": 7,
+      "queries": 2197,
+      "eliminated": 2142,
+      "unresolved_winners": 1,
+      "unresolved_nonwinners": 54,
+      "witness_gap_histogram": {}
+    }
+  ],
+  "summed_native_invocation_seconds": 125.24335039639845,
+  "unique_queries_deduplicated_across_cohorts": true
+}

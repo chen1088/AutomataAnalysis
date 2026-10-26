@@ -1,0 +1,2 @@
+{"m":6,"ordinal":33343,"key":"012334250145","canonical_table":[[0,1],[2,3],[3,4],[2,5],[0,1],[4,5]],"status":"exact","merge_length":23,"lower_bound":23,"witness":["00000011010100000010110","00110101000000000010110"],"reason":"","depth":24,"max_layer_states":16777216}
+{"m":6,"ordinal":117031,"key":"120345230145","canonical_table":[[1,2],[0,3],[4,5],[2,3],[0,1],[4,5]],"status":"exact","merge_length":23,"lower_bound":23,"witness":["01001111001000111011110","01010100001000111011110"],"reason":"","depth":24,"max_layer_states":16777216}

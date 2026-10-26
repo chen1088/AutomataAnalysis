@@ -1,0 +1,1546 @@
+{
+  "schema": 1,
+  "method": "best-near-pair-exhaustive-subsequence-union",
+  "source_script": {
+    "path": "out/family1-subsequence-recovery/through42/source-snapshot/family1_subsequence_recovery.py",
+    "sha256": "fe797fe8c9d86acee52c7cc6f9fab9b17436f7743c40f78add308353c99db350"
+  },
+  "native_source": {
+    "path": "out/family1-subsequence-recovery/through42/source-snapshot/Family1SubsequenceRecovery.cpp",
+    "sha256": "7534bc1f569695b61b9e7029dc501bc5904af83719a721f97e8ae50d16593818"
+  },
+  "native_executable": {
+    "path": "out/family1-subsequence-recovery/through42/source-snapshot/Family1SubsequenceRecovery.exe",
+    "sha256": "815268dcdc8521a5b21cfd6f9508dc7291d83af935c91ed6dad06e1900797a89"
+  },
+  "row_sources": [
+    {
+      "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+      "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+    },
+    {
+      "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+      "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+    }
+  ],
+  "original_saved_witness_files_read": false,
+  "candidate_selection": "upto",
+  "max_source_length": 42,
+  "max_nodes": 100000000,
+  "max_profiles": 1000000,
+  "max_words": 1000000,
+  "graph_count": 3,
+  "target_length": 34,
+  "recovered_graph_ordinals": [],
+  "restricted_complete_negative_ordinals": [
+    679758,
+    2471796
+  ],
+  "no_global_lower_bound_claimed": true,
+  "outcomes": [
+    {
+      "ordinal": 679758,
+      "key": "0001020304050406050600010203",
+      "known_H": 34,
+      "source_near_length": 36,
+      "distinct_source_pairs": 13,
+      "source_length_range": [
+        36,
+        38
+      ],
+      "distinct_source_words": 26,
+      "target_length": 34,
+      "decision": "unknown",
+      "upper_bound": null,
+      "complete_within_subsequence_space": true,
+      "no_pair_in_subsequence_space": true,
+      "union_distinct_subsequences": 51361,
+      "unique_complete_profiles": 51361,
+      "colliding_profiles": 0,
+      "native_seconds": 0.0947765,
+      "nodes": 440403,
+      "cap_reason": "",
+      "complete_inputs": 26,
+      "per_input_count_reference": [
+        178,
+        162,
+        177,
+        159,
+        144,
+        197,
+        1131,
+        1095,
+        1129,
+        843,
+        699,
+        1078,
+        953,
+        919,
+        951,
+        699,
+        843,
+        1273,
+        5544,
+        5430,
+        4592,
+        3939,
+        4375,
+        4592,
+        5430,
+        4999
+      ],
+      "native_result": {
+        "path": "out/family1-subsequence-recovery/through42/679758/result.json",
+        "sha256": "9389360cd62a84d6ea9858334c89b1a96e7cc2cde7a2f65914fdeb224b906692"
+      },
+      "input_words": {
+        "path": "out/family1-subsequence-recovery/through42/679758/input-words.txt",
+        "sha256": "5ef53d27b5aaab50c49eb44c284b414bd8ea4e61e9cd3220c2cbd15bbcd0c6d1"
+      },
+      "independent_length_count_dp_passed": true,
+      "stored_witnesses_scalar_verified": [],
+      "command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+        "--graph",
+        "0001020304050406050600010203",
+        "--input-file",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\through42\\679758\\input-words.txt",
+        "--target",
+        "34",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\through42\\679758",
+        "--max-nodes",
+        "100000000",
+        "--max-profiles",
+        "1000000",
+        "--max-words",
+        "1000000"
+      ],
+      "sources": [
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k1-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t0-n128-s1088/result.json",
+            "sha256": "217729b969f8628b2cddedcdb8bcbc6843201f697742657941507d04a95878ef"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k1-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t2-n128-s1088/result.json",
+            "sha256": "304082ada23f64e05958ab3b0bce96084232ed06343f9cbda174188b66ed1da2"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k1-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t8-n128-s1088/result.json",
+            "sha256": "995e2ab7ca95c83d1e9a27a3d1fa947e64e243298a5164d7fb48b779c82d6757"
+          },
+          "words": [
+            "00110001111100101001011001111001001111",
+            "11001110011100101001011001111001001111"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k2-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k2-w4-t0-n128-s1088/result.json",
+            "sha256": "36e85d2e576511ef05527f90858f7613b2f933dfa4501b100b774e1fcde8ca1a"
+          },
+          "words": [
+            "00110001110111001101100100011000111001",
+            "11001110010111001101100100011000111001"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k2-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k2-w4-t2-n128-s1088/result.json",
+            "sha256": "97d1c2873a05fb251c050206b60fc7e5801b3e4d1591a83f0398c2e963f33eec"
+          },
+          "words": [
+            "00110001110111001101100100011000111001",
+            "11001110010111001101100100011000111001"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "05d4eb09a648211cfaa20fae7feb11124517299c68a9053d80dd5b027d2480a3"
+          },
+          "words": [
+            "00110001110111001101100100011000111001",
+            "11001110010111001101100100011000111001"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k3-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k3-w4-t0-n128-s1088/result.json",
+            "sha256": "cae55b7759626c2fad003b5ef2c337203dcd23c8ce05df3d4e386142d2f6673f"
+          },
+          "words": [
+            "00110001101000110010011011100111000110",
+            "11001110001000110010011011100111000110"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k3-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k3-w4-t2-n128-s1088/result.json",
+            "sha256": "ca76d658fb52a1010ed11e61d937a381cd7d2a551c499f0c4bb4fb349e3e11ed"
+          },
+          "words": [
+            "00110001101000110010011011100111000110",
+            "11001110001000110010011011100111000110"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k3-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k3-w4-t8-n128-s1088/result.json",
+            "sha256": "6c46bea51a518ff96834c5a15cb840a11d2bf4384fb6355ac5009c109e69a610"
+          },
+          "words": [
+            "00110001100011000101101100001111010101",
+            "11001110000011000101101100001111010101"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k4-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k4-w4-t0-n128-s1088/result.json",
+            "sha256": "dd816276f8cbfaf1c038473a673fd981331c4fa01cd144917005ebc23e3882f6"
+          },
+          "words": [
+            "0011000110001110001000110011101110010",
+            "1100111000001110001000110011101110010"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k4-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k4-w4-t2-n128-s1088/result.json",
+            "sha256": "07449b4854ea5db9d8587b413a2632e5b6b517ea99cd9e436f5b46076df4ded8"
+          },
+          "words": [
+            "0011000111110001110111001100010001101",
+            "1100111001110001110111001100010001101"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "04c701b653da7580b4f3e36b64c862493d993739f777676fd7a411007bc864fd"
+          },
+          "words": [
+            "0011000110001110001000110011101110010",
+            "1100111000001110001000110011101110010"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k5-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k5-w4-t0-n128-s1088/result.json",
+            "sha256": "d5724504dfb8f750183b3bdad98925d1d12acb87b300b6a5f69dc84be2a29b24"
+          },
+          "words": [
+            "0011000111110011101001100100101101110",
+            "1100111001110011101001100100101101110"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k5-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k5-w4-t2-n128-s1088/result.json",
+            "sha256": "ac6bca672e5ac60b7579e177cb821ff7eb7914eedd1f404e0526b3bc7a698bca"
+          },
+          "words": [
+            "0011000111110011101001100100101101110",
+            "1100111001110011101001100100101101110"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k5-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k5-w4-t8-n128-s1088/result.json",
+            "sha256": "3397dc7400f328d4587f9e781af6b7e1c673405077a1d6da901a7ade99dbd6b4"
+          },
+          "words": [
+            "0011000110001011100110011000110110100",
+            "1100111000001011100110011000110110100"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k6-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k6-w4-t0-n128-s1088/result.json",
+            "sha256": "4af4e647c5f80a236b807780c5046fd7b0f8b1d550807c894097fff3f67b8078"
+          },
+          "words": [
+            "0011000111110011101001100100101101110",
+            "1100111001110011101001100100101101110"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k6-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k6-w4-t2-n128-s1088/result.json",
+            "sha256": "76bfda9a29237891f6062d240ff5047b497537852f0d5b245332568192ecc586"
+          },
+          "words": [
+            "0011000110001100010110011011010010000",
+            "1100111000001100010110011011010010000"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k6-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k6-w4-t8-n128-s1088/result.json",
+            "sha256": "67cf9ca5cd6ae2810b589816a0f6fe7cca4c582616316828bbef3580618d604c"
+          },
+          "words": [
+            "0011000110001100010110011011010010000",
+            "1100111000001100010110011011010010000"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k10-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k10-w4-t8-n128-s1088/result.json",
+            "sha256": "f6f918e14dd62131b9110541e69549aae513b6c6271129cc45c00ecaa8c586dc"
+          },
+          "words": [
+            "0011000110001101100111000100110110100",
+            "1100111000001101100111000100110110100"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k12-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k12-w4-t8-n128-s1088/result.json",
+            "sha256": "b4eaba023b08f1e9c1ab1b305a57d6d0de0503460ac65b7bd21fc67e7ecc6f17"
+          },
+          "words": [
+            "001100011000110101101001101100111000",
+            "110011100000110101101001101100111000"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k14-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k14-w4-t8-n128-s1088/result.json",
+            "sha256": "f2c6727b2f152b1d52009b16d29d3e00ef601729c02458c0e6c1c989395a601f"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k16-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k16-w4-t8-n128-s1088/result.json",
+            "sha256": "547be6e78891db6af15a5177f8f3e4c0e714c9dbeb1b147b5f569d030087c9f5"
+          },
+          "words": [
+            "001100011001000110110011011110011101",
+            "110011100001000110110011011110011101"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "3dae60c60edbcccf48b69da15c1c650d28afd98200725040941d3366813ccbdd"
+          },
+          "words": [
+            "00110001110111001101100100011000111001",
+            "11001110010111001101100100011000111001"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "b6cef8b390605a8f035c0280620244ff11b7491629e7b25aa103c35cda430dcc"
+          },
+          "words": [
+            "0011000110001110001000110011101110010",
+            "1100111000001110001000110011101110010"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k6-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k6-w4-t8-n128-s1088/result.json",
+            "sha256": "da32b1d6fbbf0ff10bf148b581b742bd96f64d4c7ddceed99160bffcc57511ae"
+          },
+          "words": [
+            "0011000110001100010110011011010010000",
+            "1100111000001100010110011011010010000"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 679758,
+          "run_id": "m7-679758-k8-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k8-w4-t8-n128-s1088/result.json",
+            "sha256": "ca28a208e60a45704844cc8467a353690b9a9badf64787b603bb98367de080d2"
+          },
+          "words": [
+            "001100011111001010010110010011000110",
+            "110011100111001010010110010011000110"
+          ],
+          "length": 36
+        }
+      ]
+    },
+    {
+      "ordinal": 2221624,
+      "key": "0102000304050106000304050206",
+      "known_H": 34,
+      "source_near_length": 38,
+      "distinct_source_pairs": 12,
+      "source_length_range": [
+        38,
+        42
+      ],
+      "distinct_source_words": 24,
+      "target_length": 34,
+      "decision": "unknown",
+      "upper_bound": null,
+      "complete_within_subsequence_space": false,
+      "no_pair_in_subsequence_space": false,
+      "union_distinct_subsequences": 1000000,
+      "unique_complete_profiles": 1000000,
+      "colliding_profiles": 0,
+      "native_seconds": 1.8142,
+      "nodes": 4821981,
+      "cap_reason": "distinct-word-limit",
+      "complete_inputs": 20,
+      "per_input_count_reference": [
+        3831,
+        3002,
+        7251,
+        9984,
+        8803,
+        9590,
+        10352,
+        5116,
+        7278,
+        6466,
+        11880,
+        13893,
+        24614,
+        48667,
+        75295,
+        138162,
+        126437,
+        96069,
+        94639,
+        231655,
+        102122,
+        206427,
+        64054,
+        180198
+      ],
+      "native_result": {
+        "path": "out/family1-subsequence-recovery/through42/2221624/result.json",
+        "sha256": "2836cee061be455f9427aecd53863c407842d7c91f460ae2915b4541eade2810"
+      },
+      "input_words": {
+        "path": "out/family1-subsequence-recovery/through42/2221624/input-words.txt",
+        "sha256": "ec4be226db1b354a78f840374c1f7422203e74942f80f6fe82d7c22eae1cb726"
+      },
+      "independent_length_count_dp_passed": true,
+      "stored_witnesses_scalar_verified": [],
+      "command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+        "--graph",
+        "0102000304050106000304050206",
+        "--input-file",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\through42\\2221624\\input-words.txt",
+        "--target",
+        "34",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\through42\\2221624",
+        "--max-nodes",
+        "100000000",
+        "--max-profiles",
+        "1000000",
+        "--max-words",
+        "1000000"
+      ],
+      "sources": [
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k1-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k1-w4-t8-n128-s1088/result.json",
+            "sha256": "7656d0f67a502a7840f2064ef55bafd6c2dd235e57f3e33876d99af40cc93d6d"
+          },
+          "words": [
+            "000000110011010011111000011011100010001010",
+            "111111001100010011111000011011100010001010"
+          ],
+          "length": 42
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k2-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k2-w4-t0-n128-s1088/result.json",
+            "sha256": "3430a9f41b08851b08efa7d2b1b33134d9c4b712e7cbc47cf75f6292d6fb0e3e"
+          },
+          "words": [
+            "00000011001110111001110001000110010111110",
+            "11111100110010111001110001000110010111110"
+          ],
+          "length": 41
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k2-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k2-w4-t2-n128-s1088/result.json",
+            "sha256": "524e8a472300b71e23fd94e53398329539c5edd00b60a1aee98f5becba156790"
+          },
+          "words": [
+            "00000011001110111001110001000110010111110",
+            "11111100110010111001110001000110010111110"
+          ],
+          "length": 41
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "570fe4137ce42696046f6daf0e9b48e291a50a9c4df1d706084bb9be524a1087"
+          },
+          "words": [
+            "00000011001110111001110001000110010111110",
+            "11111100110010111001110001000110010111110"
+          ],
+          "length": 41
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k3-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k3-w4-t2-n128-s1088/result.json",
+            "sha256": "04025e748b0f46e5e604b6506db9293ad7a96a01ad6a5206aeb0bdff459ad3db"
+          },
+          "words": [
+            "000010101111111010111111010001110000010010",
+            "000111111010101010111111010001110000010010"
+          ],
+          "length": 42
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k3-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k3-w4-t8-n128-s1088/result.json",
+            "sha256": "8f0b0ca32e96aaaab584ed8871d9dbaae0eedfc3072446c6eb0e83bca995f59a"
+          },
+          "words": [
+            "000000110011001110111110001110000001001100",
+            "111111001100001110111110001110000001001100"
+          ],
+          "length": 42
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k4-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k4-w4-t0-n128-s1088/result.json",
+            "sha256": "50f47dce949d6df54e632ce85824f4da9ab86ec06199ed0bc184694fb172c86d"
+          },
+          "words": [
+            "000000110011110001111100010101100110010",
+            "111111001100110001111100010101100110010"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k4-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k4-w4-t2-n128-s1088/result.json",
+            "sha256": "efcc0cb76b17ffe66dc9587bff2a9f5c286677fcdb73c8719495aacf186e5154"
+          },
+          "words": [
+            "000000110011110001111100010101100110010",
+            "111111001100110001111100010101100110010"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "770255f5a025b1245a614394a561d20a063bb4c05a902854ae48e4bd3d2ab0ba"
+          },
+          "words": [
+            "000000110011000011101111100011000100110",
+            "111111001100000011101111100011000100110"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k5-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k5-w4-t0-n128-s1088/result.json",
+            "sha256": "f430e6cf2a963bf6ce4a11811d56da6737e7712ff31ba9a34c569acf19f1f5ee"
+          },
+          "words": [
+            "000000110011001110000011101010011000011",
+            "111111001100001110000011101010011000011"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k5-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k5-w4-t2-n128-s1088/result.json",
+            "sha256": "b370bcc7064b6f75e563a67caa1e0bcf9db17d4581f38fd8f980e885b04512e7"
+          },
+          "words": [
+            "000000110011001110000011101010011000011",
+            "111111001100001110000011101010011000011"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k5-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k5-w4-t8-n128-s1088/result.json",
+            "sha256": "233bc77dba55c338834dc56f8210cec0513ccdf80672f96883c85c85ff116068"
+          },
+          "words": [
+            "000000110011101110010000111110010010100",
+            "111111001100101110010000111110010010100"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k6-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k6-w4-t0-n128-s1088/result.json",
+            "sha256": "12daa922521a16578f845bb215735b2f4cb67be14341e6888a4da9337d256f15"
+          },
+          "words": [
+            "00000011101001100111011100000110010101101",
+            "01000010011111100111011100000110010101101"
+          ],
+          "length": 41
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k6-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k6-w4-t2-n128-s1088/result.json",
+            "sha256": "5337c85fc5c590771e1e8eea0fa9686e8c21cf93c2b4dcf43ce2f622b6398dfe"
+          },
+          "words": [
+            "0000100110111111101000110001100111110100",
+            "0001111010011011101000110001100111110100"
+          ],
+          "length": 40
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k6-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k6-w4-t8-n128-s1088/result.json",
+            "sha256": "a5683b72a8b989d2a1df7e5bcbfef4d59b35187beb761db56e66346e30ef6980"
+          },
+          "words": [
+            "000000110011110001111100010101100110010",
+            "111111001100110001111100010101100110010"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k10-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k10-w4-t8-n128-s1088/result.json",
+            "sha256": "e636a0acc563249e5d7bea20d72bc22b16750e606606bf22ae2b283761dd04f6"
+          },
+          "words": [
+            "000000110011001110000011101010011000011",
+            "111111001100001110000011101010011000011"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k12-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k12-w4-t8-n128-s1088/result.json",
+            "sha256": "70e635a7167dd5189454b383d1734e1a8646e692d8ee6447fc014f3c42f65ede"
+          },
+          "words": [
+            "000000110011001110000011101010011000011",
+            "111111001100001110000011101010011000011"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k14-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k14-w4-t8-n128-s1088/result.json",
+            "sha256": "1e9ead338b3d7098055d86d62493baa365eb8476148bd339fcc9b134fa9ad841"
+          },
+          "words": [
+            "00000010100001100001011010101100001110",
+            "10100001100000000001011010101100001110"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k16-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k16-w4-t8-n128-s1088/result.json",
+            "sha256": "8ecf2de0eef1bdb8f9dc7772ca359060a86d5d104da788a54236197edc1f484c"
+          },
+          "words": [
+            "000000110011110001111100010101100110010",
+            "111111001100110001111100010101100110010"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "81ce52ae468984e2739e559cfa91cf5f34ef89ba19a1dc701709ab8b3701299e"
+          },
+          "words": [
+            "00000011001110111001110001000110010111110",
+            "11111100110010111001110001000110010111110"
+          ],
+          "length": 41
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "d85f0615b63ae0ea9b37e88a8e6a08b270dcad58433cbb47ee9054c354337c09"
+          },
+          "words": [
+            "000000110011000011101111100011000100110",
+            "111111001100000011101111100011000100110"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k6-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k6-w4-t8-n128-s1088/result.json",
+            "sha256": "e889a5fed53fc24992a9b001a9b39be9f1aeff3b944cb4b9bc263741f6ce3c58"
+          },
+          "words": [
+            "000000110011110001111100010101100110010",
+            "111111001100110001111100010101100110010"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2221624,
+          "run_id": "m7-2221624-k8-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k8-w4-t8-n128-s1088/result.json",
+            "sha256": "d92c379950b59b955d0a55005f7cc4ab94030615ee3fc21caa3bb8fd608ef271"
+          },
+          "words": [
+            "000000110011001011111000001101000110010",
+            "111111001100001011111000001101000110010"
+          ],
+          "length": 39
+        }
+      ]
+    },
+    {
+      "ordinal": 2471796,
+      "key": "0102010203040005050600060304",
+      "known_H": 34,
+      "source_near_length": 36,
+      "distinct_source_pairs": 7,
+      "source_length_range": [
+        36,
+        39
+      ],
+      "distinct_source_words": 14,
+      "target_length": 34,
+      "decision": "unknown",
+      "upper_bound": null,
+      "complete_within_subsequence_space": true,
+      "no_pair_in_subsequence_space": true,
+      "union_distinct_subsequences": 123603,
+      "unique_complete_profiles": 123603,
+      "colliding_profiles": 0,
+      "native_seconds": 0.21003,
+      "nodes": 804660,
+      "cap_reason": "",
+      "complete_inputs": 14,
+      "per_input_count_reference": [
+        141,
+        159,
+        159,
+        141,
+        1552,
+        1114,
+        1761,
+        939,
+        6543,
+        7711,
+        7711,
+        6543,
+        50616,
+        42160
+      ],
+      "native_result": {
+        "path": "out/family1-subsequence-recovery/through42/2471796/result.json",
+        "sha256": "852354880b9a71290cf6eb32fe831e74ac1e6618c9dc35cd5e82f48f246fc904"
+      },
+      "input_words": {
+        "path": "out/family1-subsequence-recovery/through42/2471796/input-words.txt",
+        "sha256": "367e68efa576e0947fd1a4421db7b15dfc58e67ed954651f8487f4f01f1f070e"
+      },
+      "independent_length_count_dp_passed": true,
+      "stored_witnesses_scalar_verified": [],
+      "command": [
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+        "--graph",
+        "0102010203040005050600060304",
+        "--input-file",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\through42\\2471796\\input-words.txt",
+        "--target",
+        "34",
+        "--out",
+        "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\through42\\2471796",
+        "--max-nodes",
+        "100000000",
+        "--max-profiles",
+        "1000000",
+        "--max-words",
+        "1000000"
+      ],
+      "sources": [
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k1-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k1-w4-t0-n128-s1088/result.json",
+            "sha256": "cdf5bee0e8e0a97a4f27ff5aa326e93f01a25c8751cd4a5b230f90898f6d66a4"
+          },
+          "words": [
+            "01001110010111000101001100100011010111",
+            "10110001110111000101001100100011010111"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k1-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k1-w4-t2-n128-s1088/result.json",
+            "sha256": "9c6943287d096e2ec4b75aaf7e24382ddf4cbec70bb78d080ec8a5560d5f4d5c"
+          },
+          "words": [
+            "01001110001000111010110011011100101000",
+            "10110001101000111010110011011100101000"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k1-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k1-w4-t8-n128-s1088/result.json",
+            "sha256": "9086fe89cc1abcc54d9bfee7f83ec1fd4ce334454c89d8f8efaaa6efe8edc47f"
+          },
+          "words": [
+            "01001110010111000101001100100011010111",
+            "10110001110111000101001100100011010111"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k2-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t0-n128-s1088/result.json",
+            "sha256": "9fbb641c3b0224dc33c3ba12c92b11b921d0decf394dc0fe902bcf3c6145b67b"
+          },
+          "words": [
+            "01001110010111000101001100100011010111",
+            "10110001110111000101001100100011010111"
+          ],
+          "length": 38
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k2-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t2-n128-s1088/result.json",
+            "sha256": "a8f8204b211a587605963808c499b31851df3e93baa9309512a89de01bda4e1c"
+          },
+          "words": [
+            "010011100101110001010011001000110101010",
+            "101100011101110001010011001000110101010"
+          ],
+          "length": 39
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "3393cf90707dacbe0038540c926e9d89c6b140c1274225195695cfa8d06dd32a"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k3-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t0-n128-s1088/result.json",
+            "sha256": "ce7c67a116cb737f33ef115394ad7ffeb4556638ca064a1cc24bf0903a6fc131"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k3-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t2-n128-s1088/result.json",
+            "sha256": "9a46f9f59c679b15c96e6adea75851e93b40aa63c447273a0e061526a177a684"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k3-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t8-n128-s1088/result.json",
+            "sha256": "e3db5a8bc54f4f5f742688147efd6245a0aef11644f35dedc1d2be39019aa8bc"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t0-n128-s1088/result.json",
+            "sha256": "6f15ea40a9b25e7cd3c5d23fcc45a8a0e0c236c143ff195d53cb3932e1eba2ed"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t2-n128-s1088/result.json",
+            "sha256": "6cfc6df56032c04ee425704857a5124a5eb8200b33eb2f7a21ee03354578a83b"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "ae77a96637c5a2d4ea3c9b89831ec9f85bf0dd3851b9809479391848b84176d0"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k5-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t0-n128-s1088/result.json",
+            "sha256": "9727c924f4e637f5c4c7fd1a5947a3d7673a97f23832a9353ebece44af886475"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k5-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t2-n128-s1088/result.json",
+            "sha256": "85577c94872e0cad4a43f0853cff183b2e6ca0a24d3ec88b61632a6890b669c7"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k5-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t8-n128-s1088/result.json",
+            "sha256": "f949151d76e15d74b687063985cf99afdb6d0d0a91fe836b4dae316e5d358027"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k6-w4-t0-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k6-w4-t0-n128-s1088/result.json",
+            "sha256": "d75abe699d9f265dd311719651b76b64bd0e013ec020d30a3e8b63ddcf2d296b"
+          },
+          "words": [
+            "0100111000100011101110011001010100101",
+            "1011000110100011101110011001010100101"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k6-w4-t2-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k6-w4-t2-n128-s1088/result.json",
+            "sha256": "5c11f26f45a2fc9048db8c6b2ec4cfc0ee7d5d2c26067915e6169e87bef13860"
+          },
+          "words": [
+            "0100111000100011101110011001010100101",
+            "1011000110100011101110011001010100101"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k6-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+            "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k6-w4-t8-n128-s1088/result.json",
+            "sha256": "97e3592d02f9c7c69abce190f646c3d866121520afc0489ec56458080bc1bf47"
+          },
+          "words": [
+            "0100111000100011101110011001010100101",
+            "1011000110100011101110011001010100101"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k10-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k10-w4-t8-n128-s1088/result.json",
+            "sha256": "c0a3f886a63c2e8377d0aaf662ced79e5c24a741b177bb2c1864b557fb153e3a"
+          },
+          "words": [
+            "0100111001100100101101110011100011100",
+            "1011000111100100101101110011100011100"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k12-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k12-w4-t8-n128-s1088/result.json",
+            "sha256": "1fc3d8ee4da4dad5feab8a30ef19aabc4f0159116baf514c4908e9938ef5af6f"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k14-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k14-w4-t8-n128-s1088/result.json",
+            "sha256": "59fcd49777f1cdec9b563ae2d9b7c620065f2eb5391851149ec2d66ff58d58cc"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k16-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k16-w4-t8-n128-s1088/result.json",
+            "sha256": "534b7725b1e568775e5b28f7e4bc55913418fd349faf25472c30e82ade537b34"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k2-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+            "sha256": "378a149851b8a6de4fe5f543da9453ce2905e7aff2975f22644ec807dc8c6ddb"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k4-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+            "sha256": "00a1c0ad07ec39fef4a38fef4e7500585f73f5c5e35cb10569dfc714fec4b696"
+          },
+          "words": [
+            "010011100110001101110000100101111001",
+            "101100011110001101110000100101111001"
+          ],
+          "length": 36
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k6-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k6-w4-t8-n128-s1088/result.json",
+            "sha256": "089f78dc6cabedb1ba2138cac6f4ab9611cd23b5f69884fa844f0a1b2bbd0665"
+          },
+          "words": [
+            "0100111000100011101110011001010100101",
+            "1011000110100011101110011001010100101"
+          ],
+          "length": 37
+        },
+        {
+          "ordinal": 2471796,
+          "run_id": "m7-2471796-k8-w4-t8-n128-s1088",
+          "row_source": {
+            "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+            "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+          },
+          "native_result": {
+            "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k8-w4-t8-n128-s1088/result.json",
+            "sha256": "a173c72a6eca3df2e14a7fc9cb04e5a65bdf8f829c523a72f9309f8e92f3bbc1"
+          },
+          "words": [
+            "010011100001110010001111011010000110",
+            "101100011001110010001111011010000110"
+          ],
+          "length": 36
+        }
+      ]
+    }
+  ]
+}

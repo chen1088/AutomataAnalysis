@@ -1,0 +1,315 @@
+{
+  "schema": 1,
+  "method": "finder-calibration-constructed-pair-aggregation",
+  "script": {
+    "path": "scripts/family1_finder_calibration.py",
+    "sha256": "c830842dea97fe1a58920e46bda26c2a8cbaa6814c07340d1c98164ceef89c36"
+  },
+  "input_containers": [
+    {
+      "path": "results/family1-finder-lookahead-grid-v1/runs.jsonl",
+      "sha256": "784f3495ff4f68848a45e747e2cbb158478a54d51897a914f766122cfe935bfe"
+    },
+    {
+      "path": "results/family1-finder-lookahead-grid-v1/binding.json",
+      "sha256": "6d4548c7b46c7e11a9a840885e08004167f81a3905e3d0869470a771d7fb0347"
+    },
+    {
+      "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+      "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+    },
+    {
+      "path": "results/family1-finder-lookahead-grid-v2/binding.json",
+      "sha256": "09c2176b507fcc15ea951e73cc78507e358702ccdd4ebcdf9b5c1eaa0b3c2eba"
+    },
+    {
+      "path": "results/family1-finder-target34-k6-w16/runs.jsonl",
+      "sha256": "292aa24701f8f6219f5122ca4a570155f066accdac39453b52e41b2c00d6d137"
+    },
+    {
+      "path": "results/family1-finder-target34-k6-w16/binding.json",
+      "sha256": "b25e1658f7cb7e649106953d17a1235e4c30179844f83b977dc0fe9b676e4303"
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/run.json",
+      "sha256": "ff067ef1ec4b54859748dfcf4006f0fa5d6848d4ea55c9481f5c31b18f6695bd"
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/run.json",
+      "sha256": "4554c73853f4974a5cc49649b985b5396accd454da3503b6b20869f59b2c2fe6"
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/run.json",
+      "sha256": "32e206ca0c5853568395f08bd43757eb22fa90e8f82fac921369514b38d6fa0f"
+    },
+    {
+      "path": "out/family1-target34-common8-prefix21/run.json",
+      "sha256": "479bde1135a1bdcb46be61c88cfcd5f7e94836e6c8e9a2165637248726736b3d"
+    },
+    {
+      "path": "out/family1-target34-common8-wide65536/run.json",
+      "sha256": "5d72f17c3b469fd8afbf11d400e25a040b8dc890b342e3dfacfa48e0ec767a12"
+    },
+    {
+      "path": "out/family1-target34-distance-k8-16-prefix20/run.json",
+      "sha256": "2d5f17d6cecce09a0ba72f61431270d309d0e8fd6221cdd7dcdbb0a5a895b94d"
+    },
+    {
+      "path": "out/family1-target34-k16-complete-prefix20/run.json",
+      "sha256": "a2ff52e2dc09ccde3be17a535f88c8c7c9f083b9111dd6d69ebb0a29a68ada4f"
+    },
+    {
+      "path": "out/family1-target34-k8-complete-prefix20/run.json",
+      "sha256": "36c8f5bb547ffb826d0295c52db4d1d0c9060c830225510ce18318d36cdf8f06"
+    },
+    {
+      "path": "out/family1-target34-uniform-k16-budget50000/run.json",
+      "sha256": "2772e308b98dee3dd406f0ce6e28e3b63bb6f71cfb98409fffac89d9fda21060"
+    },
+    {
+      "path": "out/family1-target34-uniform-k16-other5/run.json",
+      "sha256": "efad0ea5c935b8ee419e67f7cb997da5ad7f0f70deef3a9b30c0d6726d024ba4"
+    }
+  ],
+  "original_saved_witness_files_read": false,
+  "known_H": 34,
+  "known_H_source": "Existing exhaustive m7 global certificate; no lower-bound inference from these heuristic runs.",
+  "case_count": 280,
+  "graph_count": 8,
+  "outcomes": {
+    "minimum34": 49,
+    "unknown": 34,
+    "near_collision": 195,
+    "time_capped_incomplete": 2
+  },
+  "independently_verified_minimum34_native_results": 49,
+  "independent_mask_coordinate_verifications": 6272,
+  "direct_minimum34_graph_ordinals": [
+    539749,
+    679758,
+    1783759,
+    2221624,
+    2470130,
+    2471796,
+    3411148,
+    4099217
+  ],
+  "all_eight_directly_rediscovered": true,
+  "uniform_configuration_signatures_recovering_all_eight": [],
+  "smallest_tested_successful_k_is_not_necessary_k_proof": true,
+  "controlled_and_adaptive_runs_are_separate": true,
+  "batches": [
+    {
+      "batch": "family1-finder-calibrated-portfolio/stage1-k6",
+      "cases": 8,
+      "outcomes": {
+        "minimum34": 3,
+        "unknown": 5
+      },
+      "minimum34_graph_ordinals": [
+        539749,
+        2470130,
+        3411148
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 7,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 9.5753376
+    },
+    {
+      "batch": "family1-finder-calibrated-portfolio/stage2-k16",
+      "cases": 5,
+      "outcomes": {
+        "minimum34": 5
+      },
+      "minimum34_graph_ordinals": [
+        679758,
+        1783759,
+        2221624,
+        2471796,
+        4099217
+      ],
+      "expansion_capped_cases": 5,
+      "exact_tail_capped_cases": 3,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 201.41661530000002
+    },
+    {
+      "batch": "family1-finder-lookahead-grid-v1",
+      "cases": 144,
+      "outcomes": {
+        "near_collision": 137,
+        "minimum34": 7
+      },
+      "minimum34_graph_ordinals": [
+        2470130
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 9,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 15.374834899999996
+    },
+    {
+      "batch": "family1-finder-lookahead-grid-v2",
+      "cases": 64,
+      "outcomes": {
+        "near_collision": 58,
+        "minimum34": 6
+      },
+      "minimum34_graph_ordinals": [
+        2470130
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 33,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 74.164413
+    },
+    {
+      "batch": "family1-finder-target34-k6-w16",
+      "cases": 8,
+      "outcomes": {
+        "minimum34": 3,
+        "unknown": 5
+      },
+      "minimum34_graph_ordinals": [
+        539749,
+        2470130,
+        3411148
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 7,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 11.7632614
+    },
+    {
+      "batch": "family1-target34-common8-prefix21",
+      "cases": 6,
+      "outcomes": {
+        "unknown": 6
+      },
+      "minimum34_graph_ordinals": [],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 6,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 119.5865266
+    },
+    {
+      "batch": "family1-target34-common8-wide65536",
+      "cases": 3,
+      "outcomes": {
+        "minimum34": 3
+      },
+      "minimum34_graph_ordinals": [
+        679758,
+        2221624,
+        2471796
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 1,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 197.6855809
+    },
+    {
+      "batch": "family1-target34-distance-k8-16-prefix20",
+      "cases": 13,
+      "outcomes": {
+        "unknown": 9,
+        "minimum34": 4
+      },
+      "minimum34_graph_ordinals": [
+        1783759,
+        2470130,
+        3411148,
+        4099217
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 12,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 456.11095460000007
+    },
+    {
+      "batch": "family1-target34-k16-complete-prefix20",
+      "cases": 8,
+      "outcomes": {
+        "unknown": 4,
+        "minimum34": 4
+      },
+      "minimum34_graph_ordinals": [
+        1783759,
+        2470130,
+        3411148,
+        4099217
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 7,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 1943.4373217000002
+    },
+    {
+      "batch": "family1-target34-k8-complete-prefix20",
+      "cases": 8,
+      "outcomes": {
+        "unknown": 5,
+        "minimum34": 3
+      },
+      "minimum34_graph_ordinals": [
+        1783759,
+        2470130,
+        3411148
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 7,
+      "time_capped_incomplete_cases": 0,
+      "native_seconds_total": 148.0610097
+    },
+    {
+      "batch": "family1-target34-uniform-k16-budget50000",
+      "cases": 8,
+      "outcomes": {
+        "time_capped_incomplete": 1,
+        "minimum34": 7
+      },
+      "minimum34_graph_ordinals": [
+        679758,
+        1783759,
+        2221624,
+        2470130,
+        2471796,
+        3411148,
+        4099217
+      ],
+      "expansion_capped_cases": 6,
+      "exact_tail_capped_cases": 4,
+      "time_capped_incomplete_cases": 1,
+      "native_seconds_total": 208.81401710000003
+    },
+    {
+      "batch": "family1-target34-uniform-k16-other5",
+      "cases": 5,
+      "outcomes": {
+        "time_capped_incomplete": 1,
+        "minimum34": 4
+      },
+      "minimum34_graph_ordinals": [
+        1783759,
+        2470130,
+        3411148,
+        4099217
+      ],
+      "expansion_capped_cases": 0,
+      "exact_tail_capped_cases": 3,
+      "time_capped_incomplete_cases": 1,
+      "native_seconds_total": 20.583102500000003
+    }
+  ],
+  "fresh_calibrated_portfolio": {
+    "summary": {
+      "path": "out/family1-finder-calibrated-portfolio/summary.json",
+      "sha256": "fe49862e5b6093d960827f14cb1b87026eaa822cee9966811bc51e2a1ac5f2d9"
+    },
+    "all_eight_verified": true,
+    "native_attempts": 13,
+    "whole_portfolio_seconds": 87.27271159994416,
+    "distinct_from_uniform_single_configuration": true
+  }
+}

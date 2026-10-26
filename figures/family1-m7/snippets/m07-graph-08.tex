@@ -1,0 +1,54 @@
+% Family 1 rooted seed, m=7; key=0102030405060001000203040506.
+% Requires \usepackage{tikz} and \usetikzlibrary{arrows.meta}.
+% Score and global-maximality metadata belong in the surrounding caption.
+\begin{tikzpicture}[x=1cm,y=1cm,
+  f1atlas state/.style={circle,draw=black,fill=white,line width=.5pt,inner sep=0pt,font=\fontsize{7}{8}\selectfont},
+  f1atlas root/.style={f1atlas state,double,double distance=.42mm},
+  f1atlas port0/.style={-{Stealth[length=1.45mm,width=1.05mm]},draw=black,line width=.48pt},
+  f1atlas port1/.style={f1atlas port0,dash pattern=on 2.5pt off 1.6pt},
+  f1atlas label/.style={font=\fontsize{6}{7}\selectfont,fill=white,inner sep=.4pt}
+]
+\path[use as bounding box] (-3,-3) rectangle (3,3);
+% edge 0 0 1
+\draw[f1atlas port0] (-0.19547,-1.12504) .. controls (-0.22894,-1.29170) and (-0.23007,-1.45466) .. (-0.19885,-1.61393);
+% edge 0 1 2
+\draw[f1atlas port1] (-0.25395,-0.71587) .. controls (-0.41244,-0.41309) and (-0.52964,-0.09904) .. (-0.60556,0.22628);
+% edge 1 0 3
+\draw[f1atlas port0] (0.02116,-1.78346) .. controls (0.32804,-1.68400) and (0.55805,-1.51006) .. (0.71119,-1.26165);
+% edge 1 1 4
+\draw[f1atlas port1] (-0.26430,-1.69200) .. controls (-0.47085,-1.41297) and (-0.63202,-1.12624) .. (-0.74783,-0.83181);
+% edge 2 0 5
+\draw[f1atlas port0] (-0.48562,0.38493) .. controls (-0.30624,0.31618) and (-0.13591,0.28398) .. (0.02537,0.28833);
+% edge 2 1 6
+\draw[f1atlas port1] (-0.60281,0.62718) .. controls (-0.51501,0.90742) and (-0.39688,1.15603) .. (-0.24843,1.37300);
+% edge 3 0 0
+\draw[f1atlas port0] (0.65821,-1.00375) .. controls (0.45565,-0.93224) and (0.27391,-0.89864) .. (0.11300,-0.90297);
+% edge 3 1 1
+\draw[f1atlas port1] (0.65667,-1.12214) .. controls (0.34980,-1.22160) and (0.11979,-1.39553) .. (-0.03336,-1.64395);
+% edge 4 0 0
+\draw[f1atlas port0] (-0.68546,-0.72896) .. controls (-0.58104,-0.80855) and (-0.49061,-0.85462) .. (-0.41418,-0.86715);
+% edge 4 1 2
+\draw[f1atlas port1] (-0.83363,-0.43244) .. controls (-0.83538,-0.18958) and (-0.80182,0.03214) .. (-0.73295,0.23274);
+% edge 5 0 3
+\draw[f1atlas port0] (0.30645,0.11695) .. controls (0.40827,-0.24191) and (0.54499,-0.56941) .. (0.71659,-0.86555);
+% edge 5 1 4
+\draw[f1atlas port1] (0.13100,0.15875) .. controls (-0.10890,-0.10176) and (-0.36515,-0.31898) .. (-0.63775,-0.49292);
+% edge 6 0 5
+\draw[f1atlas port0] (-0.09088,1.38087) .. controls (-0.04334,1.06222) and (0.04056,0.77019) .. (0.16082,0.50476);
+% edge 6 1 6
+\draw[f1atlas port1] (-0.09152,1.74615) .. controls (-0.31579,2.26299) and (0.60803,1.59703) .. (0.08802,1.66719);
+% state 0
+\node[f1atlas root,minimum size=4.1538mm] (q0) at (-0.15229,-0.91011) {$ 0 $};
+% state 1
+\node[f1atlas state,minimum size=3.4615mm] (q1) at (-0.15446,-1.84038) {$ 1 $};
+% state 2
+\node[f1atlas state,minimum size=3.4615mm] (q2) at (-0.65801,0.45101) {$ 2 $};
+% state 3
+\node[f1atlas state,minimum size=3.4615mm] (q3) at (0.83229,-1.06521) {$ 3 $};
+% state 4
+\node[f1atlas state,minimum size=3.4615mm] (q4) at (-0.83229,-0.61705) {$ 4 $};
+% state 5
+\node[f1atlas state,minimum size=3.4615mm] (q5) at (0.25606,0.29456) {$ 5 $};
+% state 6
+\node[f1atlas state,minimum size=3.4615mm] (q6) at (-0.11812,1.56346) {$ 6 $};
+\end{tikzpicture}

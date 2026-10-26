@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "scope": "Native edit CLI and general scorer integration pilot; finite capped pool only",
+  "scorer": {
+    "path": "scripts/family1_graph_candidate_search.py",
+    "sha256": "d031acf539fea8c5d1ccfa4ebc30b7127ab7e9f2135d4134b7875ee943ff2425"
+  },
+  "tests": {
+    "path": "tests/family1_graph_candidate_search_test.py",
+    "sha256": "156cd6dce471d2d266fd83cd1845fb10147be6378fe7ae30447e3786c30aa497"
+  },
+  "native_generation_run": {
+    "path": "out/family1-candidate-module-pilot/edit-m3-winner/run.json",
+    "sha256": "630e6681955dbd509ce91b6fc5c939f883a784ed0378ea57354215365cc40275"
+  },
+  "native_generation_summary": {
+    "schema": 1,
+    "completed": true,
+    "config_sha256": "630e6681955dbd509ce91b6fc5c939f883a784ed0378ea57354215365cc40275",
+    "target_m": 3,
+    "radius": 1,
+    "candidate_count": 12,
+    "root_fixed_candidate_count": 4,
+    "ordinary_shape_count": 4,
+    "accepted_paths": 3,
+    "materialized_paths": 4,
+    "raw_proposals": 13,
+    "inaccessible_rejected": 2,
+    "same_class_rejected": 0,
+    "duplicate_neighbors_rejected": 0,
+    "size_bound_pruned": 8,
+    "enumeration_complete": false,
+    "supported_universe_complete": false,
+    "intermediate_size_cap": 20,
+    "representation_capped": false,
+    "path_capped": false,
+    "candidate_capped": true,
+    "interrupted": false,
+    "root_closure": true,
+    "candidates_sha256": "2d68211f33ef7d010cc0fb019c2de760db6de393afed3a727434265121af8b72",
+    "paths_sha256": "f67bc3e99ba3836800e8a43629b07764fbc14dae49db03c975ffec5775f472b6",
+    "seconds": 3.92e-05,
+    "scoring_performed": false,
+    "global_optimality_claim": false,
+    "budget_policy": "Remaining path/unique rooted endpoint budgets shared across depths; parents, patterns and frontier nodes round-robin. Root closure outside candidate budget.",
+    "enumeration_scope": "Target-size rooted classes reachable by root-fixed unit edit paths of length at most radius; intermediate sizes1..20. Capped strata give no exclusion certificate.",
+    "depths": [
+      {
+        "depth": 1,
+        "frontier_nodes": 1,
+        "raw_proposals": 13,
+        "accepted_paths": 3,
+        "new_rooted_candidates": 3,
+        "complete": false,
+        "path_capped": false,
+        "candidate_capped": true
+      }
+    ],
+    "parents": [
+      {
+        "key": "000101020001",
+        "raw_proposals": 13,
+        "accepted_paths": 3,
+        "patterns": {
+          "retarget": {
+            "raw_proposals": 5,
+            "accepted_paths": 3
+          },
+          "insert-two-edges": {
+            "raw_proposals": 4,
+            "accepted_paths": 0
+          },
+          "insert-loop": {
+            "raw_proposals": 4,
+            "accepted_paths": 0
+          },
+          "smooth-two-edges": {
+            "raw_proposals": 0,
+            "accepted_paths": 0
+          },
+          "smooth-loop": {
+            "raw_proposals": 0,
+            "accepted_paths": 0
+          }
+        }
+      }
+    ]
+  },
+  "scoring_run": {
+    "path": "out/family1-candidate-module-pilot/scored-m3-winner-v2/run.json",
+    "sha256": "218bcfda7ccacedab4dc382efbd58d02c91571e34abe458a633cafa07005ea20"
+  },
+  "scoring_summary": {
+    "schema": 1,
+    "method": "general-bounded-calibrated-style-graph-candidate-portfolio",
+    "run_sha256": "218bcfda7ccacedab4dc382efbd58d02c91571e34abe458a633cafa07005ea20",
+    "sizes": [
+      {
+        "m": 3,
+        "best_certified_lower_bound": 1,
+        "all_top_lower_bound_ties": 12,
+        "recorded_rooted_classes": 12,
+        "potential_tie_or_better_classes": 12,
+        "strictly_excluded_by_upper_certificate": 0,
+        "selected_root_classes": 12,
+        "completed_root_classes": 12,
+        "finite_record_maximum_value_certified": false,
+        "finite_record_maximizer_collection_complete": false,
+        "global_maximum_certified": false,
+        "global_maximizer_collection_complete": false
+      }
+    ],
+    "native_attempt_count": 14,
+    "selected_root_classes": 12,
+    "completed_root_classes": 12,
+    "all_selected_roots_scored": true,
+    "all_candidate_roots_scored": true,
+    "enumeration_complete": false,
+    "global_maximum_certified": false,
+    "all_ties_retained": true,
+    "misses_give_no_lower_bounds": true,
+    "long_heuristic_witness_is_only_an_upper_bound": true,
+    "imported_lower_proofs_are_attributed_not_reproved": true,
+    "query_mode": "incumbent-elimination",
+    "incumbent_lower": 6,
+    "query_length_cap": 5,
+    "eliminated_recorded_classes": 10,
+    "surviving_recorded_classes": 2,
+    "survival_does_not_certify_competitiveness": true
+  },
+  "independent_truth_method": "Fresh straightforward same-length exhaustive word/product-state collision enumeration after candidate generation and scoring completed",
+  "native_proof_checks": "Every positive independently replayed on all8 static masks; native result/checksum/config pins checked; full resume rerun passed",
+  "test_result": "10/10 focused tests passed with both Release and Debug native executables, including contradictory redundant exact interval rejection",
+  "generated_root_classes": 12,
+  "generated_shapes": 4,
+  "native_invocations": 14,
+  "true_below_cutoff": 10,
+  "eliminated": 10,
+  "false_exclusions": 0,
+  "unresolved_survivors": 2,
+  "survivor_true_scores": [
+    6,
+    6
+  ],
+  "no_global_claim": true,
+  "no_lower_bound_from_miss": true,
+  "previous_scoring_run_preserved": {
+    "path": "out/family1-candidate-module-pilot/scored-m3-winner/run.json",
+    "sha256": "a72e3b26f573a0b7f315a1d36c8bf336a9ab6073ace2b40d8a6bbd39b5ec898b"
+  },
+  "revision": "v2 strict redundant exact-interval validation; v1 output/source snapshots retained unchanged",
+  "additional_native_finder_regression": "Release and Debug both passed:64/64 tiny classes under default and distance/remaining modes, all4096window scalar replay, caps/resume/common-prefix guards",
+  "v2_interval_and_witness_data_equal_v1": true
+}

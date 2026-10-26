@@ -5,6 +5,7 @@
   "builtin-baseline": "c748cb44f2a435fcf015c35225c9d5545fe0021c",
   "dependencies": [
     "boost-dynamic-bitset",
-    "flint"
+    "flint",
+    "z3"
   ]
 }

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "method": "exact-all-static-mask-common-suffix-beam",
+  "configuration": "native-msvc-O2-C++20",
+  "tiny_rooted_classes": 64,
+  "tiny_guidance_searches": 256,
+  "all_returned_trace_entries_independently_scalar_verified": true,
+  "neutral_plateau": {
+    "m": 3,
+    "known_exact_H": 4,
+    "first": "01",
+    "second": "10",
+    "score_trace": [
+      4,
+      4,
+      8
+    ],
+    "mask_count": 8,
+    "lookahead_values_verified": [
+      0,
+      1
+    ]
+  },
+  "budget_cancellation_and_seed_determinism_checked": true,
+  "larger_cases": [
+    {
+      "m": 7,
+      "family": "literal-circulant",
+      "first": "01",
+      "second": "10",
+      "suffix": "1110110011100101100110001",
+      "mask_count": 128,
+      "merged_count": 128,
+      "permutation_mismatch_count": 0,
+      "expanded_nodes": 182,
+      "lookahead_nodes": 354,
+      "constructed_length": 27,
+      "existing_exact_score": 14,
+      "seconds": 0.0001882
+    },
+    {
+      "m": 20,
+      "family": "literal-circulant",
+      "first": "01",
+      "second": "10",
+      "suffix": "",
+      "mask_count": 1048576,
+      "merged_count": 262144,
+      "permutation_mismatch_count": 16,
+      "expanded_nodes": 0,
+      "lookahead_nodes": 0,
+      "seconds": 0.0030273
+    },
+    {
+      "m": 20,
+      "family": "literal-circulant",
+      "first": "0000011111",
+      "second": "1111100000",
+      "suffix": "111111101101001000000110110010",
+      "mask_count": 1048576,
+      "merged_count": 1043502,
+      "unmerged_count": 5074,
+      "permutation_mismatch_count": 0,
+      "expanded_nodes": 230,
+      "lookahead_nodes": 444,
+      "seconds": 0.982265,
+      "no_lower_bound_from_miss": true
+    }
+  ],
+  "source_sha256": {
+    "Family1FullGuidance.h": "6a1233e2e3a49a4b2fcf87cb3040caf5e8b350b8935fe0a772d5e9b9c3f9e0ec",
+    "Family1PairAgreement.h": "c843b5396e95e1566db2123adf9a4f5cf2c85836ef90ecc7c529237e78b7d197",
+    "Family1LargeGraph.cpp": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52",
+    "Family1LargeGraph.h": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721",
+    "tests/Family1FullGuidanceVerify.cpp": "d01c51c624e3d64f7309e1c3ed310809bad12dfc093fb6f3f4904cf53e36ec8d"
+  },
+  "native_test_executable_sha256": "78ca22cbbec2d64279bc93aa837dd4cecc4ed475d8855319689b1d434fdef9e0",
+  "test_log_sha256": "18460fae1979552397b0d8710f0f7b49cc769d9c9211758f4493112adb5f9396",
+  "main_cmake_modified": false,
+  "existing_executables_modified_by_audit": false
+}

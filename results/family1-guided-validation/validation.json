@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "date": "2026-10-26",
+  "method": "independent scalar static-mask endpoint comparison against native guided/packed/full-agreement traces",
+  "math_checks": {
+    "rooted_classes": 64,
+    "word_pairs": 2240,
+    "suffix_traces": 15680,
+    "popcounts_match_scalar": true,
+    "common_suffix_monotonicity": true,
+    "permutation_obstruction": true
+  },
+  "Release": {
+    "rooted_classes": 64,
+    "word_pairs": 2240,
+    "suffix_traces": 15680,
+    "plateau": {
+      "key": "000101020000",
+      "initial_words": [
+        "01",
+        "10"
+      ],
+      "suffix": "00",
+      "full_score_trace": [
+        4,
+        4,
+        8
+      ],
+      "denominator": 8,
+      "exact_H": 4
+    },
+    "gate": {
+      "key": "000100020102",
+      "initial_words": [
+        "01",
+        "10"
+      ],
+      "permutation_masks": [
+        2,
+        5
+      ],
+      "mismatch_count": 2,
+      "full_score": 0,
+      "denominator": 8
+    },
+    "native_rooted_classes_checked": 64,
+    "plateau_witness_length": 4,
+    "hard_witness_length": 6,
+    "all_traces_scalar_verified": true,
+    "sampled_full_denominators_checked": true,
+    "permutation_gate_checked": true,
+    "resume_guards_checked": true,
+    "native_exe_sha256": "5e4d8c7da4571326f4afef200a7d7dbfc7a62acf6008a1df253eeda9c8dd8d2f"
+  },
+  "Debug": {
+    "rooted_classes": 64,
+    "word_pairs": 2240,
+    "suffix_traces": 15680,
+    "plateau": {
+      "key": "000101020000",
+      "initial_words": [
+        "01",
+        "10"
+      ],
+      "suffix": "00",
+      "full_score_trace": [
+        4,
+        4,
+        8
+      ],
+      "denominator": 8,
+      "exact_H": 4
+    },
+    "gate": {
+      "key": "000100020102",
+      "initial_words": [
+        "01",
+        "10"
+      ],
+      "permutation_masks": [
+        2,
+        5
+      ],
+      "mismatch_count": 2,
+      "full_score": 0,
+      "denominator": 8
+    },
+    "native_rooted_classes_checked": 64,
+    "plateau_witness_length": 4,
+    "hard_witness_length": 6,
+    "all_traces_scalar_verified": true,
+    "sampled_full_denominators_checked": true,
+    "permutation_gate_checked": true,
+    "resume_guards_checked": true,
+    "native_exe_sha256": "5622b8ea471dcce6cb180406089d1adf4e292688471d197c5d47c7a414aee5a8"
+  },
+  "tests": {
+    "path": "tests/family1_guided_cli_test.py",
+    "sha256": "2e26cf10d7928f4a77d0db6faea8d987b647832dd5de089e244e51782539101c"
+  },
+  "native_release": {
+    "path": "out/build/msvc-vcpkg/Release/Family1Sample.exe",
+    "sha256": "5e4d8c7da4571326f4afef200a7d7dbfc7a62acf6008a1df253eeda9c8dd8d2f"
+  },
+  "native_debug": {
+    "path": "out/build/msvc-vcpkg/Debug/Family1Sample.exe",
+    "sha256": "5622b8ea471dcce6cb180406089d1adf4e292688471d197c5d47c7a414aee5a8"
+  },
+  "shortest_plateau_witness": [
+    "0111",
+    "1011"
+  ],
+  "plateau_trace": [
+    4,
+    4,
+    8
+  ],
+  "shortest_m3_witness": [
+    "010110",
+    "100110"
+  ],
+  "m3_trace": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sampled_full_case": {
+    "sampled_trace": [
+      0,
+      0,
+      1
+    ],
+    "sampled_denominator": 1,
+    "full_trace": [
+      4,
+      4,
+      8
+    ],
+    "full_denominator": 8
+  },
+  "known_m7_trace_count": 8,
+  "known_m7_traces_with_zero_gain_steps": 7,
+  "known_m7_total_zero_gain_steps": 17,
+  "files": {
+    "plateau-lookahead2.json": {
+      "sha256": "b05546fc215993b683798f81f70d6acca2ea7bde80cb9e7b8064bcc367f27c32",
+      "source": "out/family1-guided-cli-release-20261026/case-065/result.json"
+    },
+    "plateau-lookahead0.json": {
+      "sha256": "e6daedd7b21687398501ea44cbda77f8c0d4f89b6880dbeb8da006e1d2fc9163",
+      "source": "out/family1-guided-cli-release-20261026/case-066/result.json"
+    },
+    "gate-blocked.json": {
+      "sha256": "bf268a095d80c4056fac6774004eddbcbbadda90bfabf8ebc7dd1bc1fe3ca63f",
+      "source": "out/family1-guided-cli-release-20261026/case-067/result.json"
+    },
+    "sampled-and-full.json": {
+      "sha256": "f81083563c5fcdc71009086a7e0b021555a4e23a08ce6ad87eb4a10e244cdaeb",
+      "source": "out/family1-guided-cli-release-20261026/case-069/result.json"
+    },
+    "shortest-m3.json": {
+      "sha256": "d8c9fe3e38d085f29f4caf77350f87257088369adea6ac76b3e3fbb3fc7cf595",
+      "source": "out/family1-guided-cli-release-20261026/case-070/result.json"
+    },
+    "known-m7-traces.jsonl": {
+      "sha256": "443640b097ada69f1fb2381ed0cf4a9f5ceda378604b4191fb46e2dba4ed0e29",
+      "source": {
+        "path": "results/family1-m7/maximizers.jsonl",
+        "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+      }
+    }
+  },
+  "scope": "Witness correctness, score traces, heuristic search behavior and resume guards; no new graph maximum or exhaustive word-search claim."
+}

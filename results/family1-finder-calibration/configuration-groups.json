@@ -1,0 +1,3396 @@
+[
+  {
+    "signature": "01660682510b12c20fc9a0bb671dc83cdcb5b437a57ad4abd355057e3ff7400e",
+    "case_count": 3,
+    "tested_graph_ordinals": [
+      679758,
+      2221624,
+      2471796
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020304050406050600010203",
+      "source_key_sha256": "adfeed06ae6f88cc2d6e10a044c50d34f20a3f56ffea948cddb6db5ac9bad9e1",
+      "key": "0001020304050406050600010203",
+      "m": 7,
+      "length": 34,
+      "samples": 8192,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "distance_coordinates": 128,
+      "beam_ranking": "remaining",
+      "prefix_common_depth": 8,
+      "window_k": 16,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 21,
+      "prefix_max_words": 2097152,
+      "prefix_max_pairs": 8192,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-target34-common8-prefix21/Family1Sample-used.exe",
+      "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-target34-common8-prefix21/case-679758/attempt-001/native/result.json",
+        "sha256": "5e6b4e659c0f3fe2ff247e95fb2494998dfaf7ec2af7d2b0583987ec6422bd73"
+      },
+      {
+        "path": "out/family1-target34-common8-prefix21/case-2221624/attempt-001/native/result.json",
+        "sha256": "7b7dc7919e2b38b33b9ea90ff32b51ac8cbca90f0725dedd87f2900b95ff30ed"
+      },
+      {
+        "path": "out/family1-target34-common8-prefix21/case-2471796/attempt-001/native/result.json",
+        "sha256": "8f0013abcbc7363c092c56a86cd243a091667678d773481a05ccd8eb77374b44"
+      }
+    ]
+  },
+  {
+    "signature": "0508ba76f7e79d330f28d9a7c9367881e04d7b16e4984f6f16189de1c9f8d9d4",
+    "case_count": 13,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020304050406050600010203",
+      "source_key_sha256": "adfeed06ae6f88cc2d6e10a044c50d34f20a3f56ffea948cddb6db5ac9bad9e1",
+      "key": "0001020304050406050600010203",
+      "m": 7,
+      "length": 34,
+      "samples": 65536,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 50000,
+      "max_expansions": 50000,
+      "distance_coordinates": 128,
+      "beam_ranking": "remaining",
+      "prefix_common_depth": 8,
+      "window_k": 16,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 21,
+      "prefix_max_words": 2097152,
+      "prefix_max_pairs": 65536,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/Family1Sample-used.exe",
+      "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/result.json",
+        "sha256": "d022916877d16c8b3fb1786890ae3747d06a67c1ca52b57b4720f2c5b4fedc6a"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/native/result.json",
+        "sha256": "f63dfd787a1a59f5676c84357fbeb38e7381b3d68cebbbbdef610eae963cd4e6"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/result.json",
+        "sha256": "7cbdba6b105120a06294db5e1333f37f21a8ba4afd63ed4df84bdc5afcec6411"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/result.json",
+        "sha256": "25a8a2403353768b643e0abbfd2659a829f5b8da09d37f0b087dc38593034fd6"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/native/result.json",
+        "sha256": "1eacbef465413095a246f4f82b21a241db59eb0e222ac341a67a2fea698bfe55"
+      },
+      null,
+      {
+        "path": "out/family1-target34-uniform-k16-budget50000/case-679758/attempt-000/native/result.json",
+        "sha256": "f0b39c78ee558c92e7585e9a0869249f4c8002608fcc56e30831b527ae8eb11e"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-budget50000/case-1783759/attempt-000/native/result.json",
+        "sha256": "981082a67184ada71eb137d2362158d230faed04e7a117aee49dfdbf9c36c737"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-budget50000/case-2221624/attempt-000/native/result.json",
+        "sha256": "61ee0cee7e66fee80dfcb049840d455899361ce6f59b83adc18990a946ab200f"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-budget50000/case-2470130/attempt-000/native/result.json",
+        "sha256": "1b768d246519d8e5638f3bf149c0267862490b0865031f5cd1999cbf2c099c17"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-budget50000/case-2471796/attempt-000/native/result.json",
+        "sha256": "e8285d0f460455e7ce3fca5142e49009674cbbd54555b96f13145cdf12caf5ba"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-budget50000/case-3411148/attempt-000/native/result.json",
+        "sha256": "4bbcdd2e32094f4088b88984a757f04132dce300a1918b53164dc4386c12e8ae"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-budget50000/case-4099217/attempt-000/native/result.json",
+        "sha256": "41e3c092bdc0b1e7a0828f8a7d152da22c8e3df8f0c155677ea91da15f28688c"
+      }
+    ]
+  },
+  {
+    "signature": "0a4314a30276c4af214c8a935fba76d09969ae21c679c0f90636085377e31a42",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 16,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "1d2fa962a8f2f88e76481035b9332c1ac6bb5006cda69fb55f28b455d9a014cf"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "547be6e78891db6af15a5177f8f3e4c0e714c9dbeb1b147b5f569d030087c9f5"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "23658c14687ef5292bfe21e53f9f51f68a405ea8ab93bfe70ab1d8ace508d251"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "8ecf2de0eef1bdb8f9dc7772ca359060a86d5d104da788a54236197edc1f484c"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "146d7a15f7822c924b50481b48d821a1917b49adc1e8a4a0adb764039415867e"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "534b7725b1e568775e5b28f7e4bc55913418fd349faf25472c30e82ade537b34"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "4dd7866db4e5dc3861b958c0cedc79edb5519350237b9086732061a1f9e6b479"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k16-w4-t8-n128-s1088/result.json",
+        "sha256": "0818d9b803770739e3e7dad234978ebdaa47c749c650888fd91eb4d78cfa3d41"
+      }
+    ]
+  },
+  {
+    "signature": "0a64dfa7f6e6cb3fccd0cbbd1cbea48ba53ca7199a7d50b277d3b643c803c7b5",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 6,
+      "tail_threshold": 2,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "2894620105de7f07b5c599d78992c9322c906ffe2d2805fe44d510e4403200c4"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "76bfda9a29237891f6062d240ff5047b497537852f0d5b245332568192ecc586"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "bafebdd6c3b861900f8e0908eb2bf25208dc36ce09b73fed57b726a9f83588a0"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "5337c85fc5c590771e1e8eea0fa9686e8c21cf93c2b4dcf43ce2f622b6398dfe"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "cc5e3421a057947fdf596ff947e2cd526606b52cf64a2c06730e35a4af50c326"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "5c11f26f45a2fc9048db8c6b2ec4cfc0ee7d5d2c26067915e6169e87bef13860"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "3eeb54d80cb0656a4ecfbb5ddabe61267762fa6a26b35ae3c4d409e14a4630bd"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k6-w4-t2-n128-s1088/result.json",
+        "sha256": "46039b33acb57ecbd7f89904b74ddbfc27283cfe6410fa68f117a9b1259df77d"
+      }
+    ]
+  },
+  {
+    "signature": "0d7fb9abbb17043bdbaf92800baccf3c072f1208110af4fa500a8bef4200c704",
+    "case_count": 3,
+    "tested_graph_ordinals": [
+      679758,
+      2221624,
+      2471796
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020304050406050600010203",
+      "source_key_sha256": "adfeed06ae6f88cc2d6e10a044c50d34f20a3f56ffea948cddb6db5ac9bad9e1",
+      "key": "0001020304050406050600010203",
+      "m": 7,
+      "length": 34,
+      "samples": 8192,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "distance_coordinates": 128,
+      "beam_ranking": "remaining",
+      "prefix_common_depth": 8,
+      "window_k": 8,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 21,
+      "prefix_max_words": 2097152,
+      "prefix_max_pairs": 8192,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-target34-common8-prefix21/Family1Sample-used.exe",
+      "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-target34-common8-prefix21/case-679758/attempt-000/native/result.json",
+        "sha256": "ec3684fa1f2dbf6f0323afa2674c0ee4af6e0109306483b5b5144d464c6f2425"
+      },
+      {
+        "path": "out/family1-target34-common8-prefix21/case-2221624/attempt-000/native/result.json",
+        "sha256": "4cd532ee04d6e93b1d8e41d8dfa5df62a7a99e5357d0545e503f5f5bcafcbf73"
+      },
+      {
+        "path": "out/family1-target34-common8-prefix21/case-2471796/attempt-000/native/result.json",
+        "sha256": "a9f22372c1a8ea80486d4231016b2fb3ea664927e59fe82e890d695800041364"
+      }
+    ]
+  },
+  {
+    "signature": "1270495b756d3f0c796ae5a40d3fb980d731698c242e08a1a1760cef2a4c385b",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 6,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "ccb12752b64c1f2284e575daf9ee98e9aa3611da8e870b868dcedaf0d1616532"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "67cf9ca5cd6ae2810b589816a0f6fe7cca4c582616316828bbef3580618d604c"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "abfdab5b9f632f19aded2ccf9c04cc696604225d3d1e1e90e7e8dbfc419629e6"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "a5683b72a8b989d2a1df7e5bcbfef4d59b35187beb761db56e66346e30ef6980"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "101b7d736c7d730215f5d61d6cb791df3d117e8d123999ca3f6412a5d9a02e7a"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "97e3592d02f9c7c69abce190f646c3d866121520afc0489ec56458080bc1bf47"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "196b22f72b0f6343aae1cd07f4e61a2812a51190bef4c81bf0f6e3b59083bef3"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "06a92948a9348e3cb3ad80342ac164e11e2921c37fcb6a9044993c367ba85d25"
+      }
+    ]
+  },
+  {
+    "signature": "14a0f1b50feb9645dc279f42d1f47f0313a662195860cc7f93b691a9e09225eb",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 1,
+      "tail_threshold": 0,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "6fea5efcbe812569c89701e2725daa5a3c37b7d14f519864c0185337dc79eedf"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "217729b969f8628b2cddedcdb8bcbc6843201f697742657941507d04a95878ef"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "d13488f572a83d2a581384d8cc254f5ff619848545ea72e89d3338f9b4a4b9f8"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "28d3784bb033f4dd93e830ddfd6aa4d6cc49c8b1df56b5b29da7ebcca31992ee"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "03ac354e5d55767a8ed70ac3233d12e9006e4d0ab585086cae89f02710d5493e"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "cdf5bee0e8e0a97a4f27ff5aa326e93f01a25c8751cd4a5b230f90898f6d66a4"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "67b401e5b666c222a7050a9be5357632ed875dc9b635c39d44476f3e984ddadc"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k1-w4-t0-n128-s1088/result.json",
+        "sha256": "92619da07d83ea538f93b9d747bc9fa7530329325c2cd5de3db1509845cd6097"
+      }
+    ]
+  },
+  {
+    "signature": "1fb5175f39c828bdba79b192000f3e1fe64a191ac01911798e61d05aff382f60",
+    "case_count": 5,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      2221624,
+      2471796,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      4099217
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 34,
+      "samples": 8192,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "distance_coordinates": 128,
+      "beam_ranking": "remaining",
+      "window_k": 16,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 20,
+      "prefix_max_words": 1048576,
+      "prefix_max_pairs": 8192,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-target34-distance-k8-16-prefix20/Family1Sample-used.exe",
+      "sha256": "21b0191f43b3d836edefa62f778c4d7c6a5867519a903ed5fdb4e7ac985e3c37"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-539749/attempt-001/native/result.json",
+        "sha256": "fa4b2b32ecb035129901388283a2537d87643abbc3c7b67a69fb283e0b9571a0"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-679758/attempt-001/native/result.json",
+        "sha256": "16a1625c3db844a172dee7630d91446955a25dc6049816a3ef4ce9c02a4d27b6"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-2221624/attempt-001/native/result.json",
+        "sha256": "f8ee085b647029db9f51bc3a5ee11bce82292d5a61d32bdaf8ba39a163881273"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-2471796/attempt-001/native/result.json",
+        "sha256": "67135763d04d1467397ef6e7c9ca74cd199ec84f6fa5d07c2e2d00a8d2a77877"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-4099217/attempt-001/native/result.json",
+        "sha256": "7a68bba6c42a73ee0f26ff7546c77dc79d0c3f46a5b9c3364a1bbe1155db5dd3"
+      }
+    ]
+  },
+  {
+    "signature": "23aedb3157c140faa2829f51be57a658035118f91f52726f833d7c99cef7c908",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 1,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "414e93e4046e4229dd7b75d880dd1173277cd15c457ef85766fe9149915ab9d3"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "995e2ab7ca95c83d1e9a27a3d1fa947e64e243298a5164d7fb48b779c82d6757"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "7ef0e8b0e9ea4692a2f5c2083592ab8e7864af9bcd6bbaf3481aec599a9425f2"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "7656d0f67a502a7840f2064ef55bafd6c2dd235e57f3e33876d99af40cc93d6d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "31f88051a25e00e4211c3fdf3dcbe4fe9f05df1b775dc6f001c63c1e9bbcf498"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "9086fe89cc1abcc54d9bfee7f83ec1fd4ce334454c89d8f8efaaa6efe8edc47f"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "9ac135e427d28b538e65a15c3b915d9ddb2cd39d344af1c614fdc820da9b0d55"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k1-w4-t8-n128-s1088/result.json",
+        "sha256": "414d6111c52c1696d88f8e3bf69fab965ef138793821621ab9bde0f891c2bb57"
+      }
+    ]
+  },
+  {
+    "signature": "30e557e151172995a56a4599fa8378b704729577ee6c7d317245c3ad36e2bbec",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 12,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "2691a574e0be539416c6827c1027ef4f0e9f2741605426413fdf240b3b3a3fa6"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "b4eaba023b08f1e9c1ab1b305a57d6d0de0503460ac65b7bd21fc67e7ecc6f17"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "dc82b679cad20396f368354a07ceb5a5f6105266179f4dcc6d0b4207e04ec4fa"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "70e635a7167dd5189454b383d1734e1a8646e692d8ee6447fc014f3c42f65ede"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "057bde518f73923a07192f20274bc5bd17501d40e07a32966b4c3997048b48a8"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "1fc3d8ee4da4dad5feab8a30ef19aabc4f0159116baf514c4908e9938ef5af6f"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "408d348c0c00734039a4bde98d2a833fc915b92c919496361b55add47d9455b1"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k12-w4-t8-n128-s1088/result.json",
+        "sha256": "8d831de78eca070a6ebdf727bbc3075c2707a6a35b772ceea7e23276c27fb2c6"
+      }
+    ]
+  },
+  {
+    "signature": "4919da09b88716dd3ca9df6d7b207aeea84c6033d6839d2891bef82eb91c4ed1",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 4,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "ca96b949b9ac518dd6566f8a382d2ed8f69cdb7408cd6280b6949571d64fdd60"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "b6cef8b390605a8f035c0280620244ff11b7491629e7b25aa103c35cda430dcc"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "1af69f103996066deea2a1aba0901ccbcd624feefcc51af15797a1938317faa1"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "d85f0615b63ae0ea9b37e88a8e6a08b270dcad58433cbb47ee9054c354337c09"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "029e6ba773de98d3f94f0948951d4383793811108e4857f6e1a79c6ff650883e"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "00a1c0ad07ec39fef4a38fef4e7500585f73f5c5e35cb10569dfc714fec4b696"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "e1948d75f2a3a936a7bf7305ebf90fa23e12f5a803adf7b64fb0728896797274"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "270e1cbea69f3c79445e28d2f12f897aa70e46cb6ccbeb6a3642ad32a7549e62"
+      }
+    ]
+  },
+  {
+    "signature": "5d3fc179bdd971a1f6533f2ab0c325a16d9ceec50079879279b06d70114587a0",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      1783759,
+      2470130,
+      3411148,
+      4099217
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 34,
+      "samples": 8192,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 16,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 20,
+      "prefix_max_words": 1048576,
+      "prefix_max_pairs": 8192,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-target34-k16-complete-prefix20/Family1Sample-used.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-539749/attempt-000/native/result.json",
+        "sha256": "ede54d6fd9aaa8c851888d1385dced9e2052af6122842007b195e47f38d5c32b"
+      },
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-679758/attempt-000/native/result.json",
+        "sha256": "7259090a48c6a3e044a97d6bd17db8f20fa7ba732f31687fcba0d52b72a9db34"
+      },
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-1783759/attempt-000/native/result.json",
+        "sha256": "7fa99c0c9717575eca0173cbe018a6a67456cce5d72737946e57cf5a4c6ea66e"
+      },
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-2221624/attempt-000/native/result.json",
+        "sha256": "7f6e02b26da34ebc3f3eb7bb39c7e1ae7fba6580d1cac53b8d9a40bff9baea92"
+      },
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-2470130/attempt-000/native/result.json",
+        "sha256": "4e6c4c0b80074b5f4241e76e8e49797fa66c3e1d16933bacc94f947cb5be9f05"
+      },
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-2471796/attempt-000/native/result.json",
+        "sha256": "ffe225cbb2c33861c6699934d7a3d37d4ca5209870bb9f78883b9bcfc71a6f9b"
+      },
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-3411148/attempt-000/native/result.json",
+        "sha256": "be6188af7aa00fc7c63b4d6ea3f758af50128c8c7afac5fb9eb62aef44c1e677"
+      },
+      {
+        "path": "out/family1-target34-k16-complete-prefix20/case-4099217/attempt-000/native/result.json",
+        "sha256": "3bea3445022be01471f0e654549214c632946b882b180c093d0bb76966e758ee"
+      }
+    ]
+  },
+  {
+    "signature": "6118a88fcceca52153bb1b4381fee5311563034e1012fb51868873fc37c65152",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 5,
+      "tail_threshold": 2,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "8e461e64f0b0ee226cf2650243b69940300428cf49824ffeb109fc4ca94fbe34"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "ac6bca672e5ac60b7579e177cb821ff7eb7914eedd1f404e0526b3bc7a698bca"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "5a7b05ecf1fd718c7f57d2a276c0e241bdee828c5523590f04084ae05af0639c"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "b370bcc7064b6f75e563a67caa1e0bcf9db17d4581f38fd8f980e885b04512e7"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "4d9f1a977b1c5e045803e272eb0368bdae4e5b1c394380db0878a337c10c074b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "85577c94872e0cad4a43f0853cff183b2e6ca0a24d3ec88b61632a6890b669c7"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "74aae66ddda9c53378a03a9533e5da94c1a68aef4f793bd626c0b1dfe33fa169"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k5-w4-t2-n128-s1088/result.json",
+        "sha256": "3c5817363c252abbe294e3ed84bea714f588c775c272093ab346dd921516b9f8"
+      }
+    ]
+  },
+  {
+    "signature": "615fc196da5814f38f415a285701acd787639f8aba37869be2e545dcfc354ba7",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 6,
+      "tail_threshold": 0,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "bf851aab66fab7477c15b226be41415dda26a60fc839788ad6b503820d107b90"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "4af4e647c5f80a236b807780c5046fd7b0f8b1d550807c894097fff3f67b8078"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "e53b9e54d9d3abbfc320201a3ef5d2a6e223bf51a77916a24f7102b11c7ac8e2"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "12daa922521a16578f845bb215735b2f4cb67be14341e6888a4da9337d256f15"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "9a577c389430dbfe8db7eb5da1f6369d79c97d0e3a1e3314df1594e8175b170a"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "d75abe699d9f265dd311719651b76b64bd0e013ec020d30a3e8b63ddcf2d296b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "f32fc2a13dded5c30fd2691fb674f90fc4fc24a6ee9aeba5b70f4cc541eb7f6a"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k6-w4-t0-n128-s1088/result.json",
+        "sha256": "be236bd965722cef02982a87e0ab319c110b463476afd86beb0db385bf37bac1"
+      }
+    ]
+  },
+  {
+    "signature": "622ad0e15680f8c65a5dfd05a2ed80ba5018a2bb9a64f38c454803de8bc95e4c",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020304050406050600010203",
+      "source_key_sha256": "adfeed06ae6f88cc2d6e10a044c50d34f20a3f56ffea948cddb6db5ac9bad9e1",
+      "key": "0001020304050406050600010203",
+      "m": 7,
+      "length": 34,
+      "samples": 65536,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "distance_coordinates": 128,
+      "beam_ranking": "remaining",
+      "prefix_common_depth": 8,
+      "window_k": 16,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 21,
+      "prefix_max_words": 2097152,
+      "prefix_max_pairs": 65536,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-target34-common8-wide65536/Family1Sample-used.exe",
+      "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-target34-common8-wide65536/case-679758/attempt-000/native/result.json",
+        "sha256": "91532531c7a6b960ca178a3fa4f40ab66057bf8b9ca547f66e451cfd2d5fb2dc"
+      },
+      {
+        "path": "out/family1-target34-common8-wide65536/case-2221624/attempt-000/native/result.json",
+        "sha256": "5f11118ca1dcd744af956a1817fffd7c4417e94f687ef529a7e181ed40068a9e"
+      },
+      {
+        "path": "out/family1-target34-common8-wide65536/case-2471796/attempt-000/native/result.json",
+        "sha256": "ab1a87c459e8ca134715630547b7b30767925221d49183c88f68caa7623ee35d"
+      },
+      null,
+      {
+        "path": "out/family1-target34-uniform-k16-other5/case-1783759/attempt-000/native/result.json",
+        "sha256": "6c603f80faa06f7ae41794aabd74f088559307ba2209b99720ce224e05a7ed52"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-other5/case-2470130/attempt-000/native/result.json",
+        "sha256": "7b6a82447c4c587a95af45bf6513f1b64c4bf3fbc3149cf7e2fc557e95604a7c"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-other5/case-3411148/attempt-000/native/result.json",
+        "sha256": "bb7de54709c2a72d6ab5a2a4ee6b52ce014edcf27d81997ab50b9fd706a329df"
+      },
+      {
+        "path": "out/family1-target34-uniform-k16-other5/case-4099217/attempt-000/native/result.json",
+        "sha256": "59ac1637eb2a1b225c0c67f14c6a547176b53be4241f0d4f89d07bcd8bfcdd91"
+      }
+    ]
+  },
+  {
+    "signature": "6d5f97f849c4dff45432ef40de41b19baf6b5d169ea9683f49c02241f29ca504",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 10,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "e15d0e30e9dbef284fe65f47506be38c016e054c32b11602a024f8f203207d83"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "f6f918e14dd62131b9110541e69549aae513b6c6271129cc45c00ecaa8c586dc"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "9bc0517384d55cae8c6fc84784a70d4cad7439b1d5a6e02b3c8a9719531e729f"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "e636a0acc563249e5d7bea20d72bc22b16750e606606bf22ae2b283761dd04f6"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "65450ce046874cd1e5ef220936d61b0ed605b778fd9ff29885b1abebd8e6f27e"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "c0a3f886a63c2e8377d0aaf662ced79e5c24a741b177bb2c1864b557fb153e3a"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "57e6b6647e9ae7b0f2de03eb8cfb7c538c6dd9e49fc6dd511bcbc041d73ff267"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k10-w4-t8-n128-s1088/result.json",
+        "sha256": "f561034bab951a1b2c96e8bc642f90aa06ae060c684fe34a05af56c8afb329de"
+      }
+    ]
+  },
+  {
+    "signature": "79214c3d034b7c2df176170a9f3839d3cc0f666056e21d54439672b84193f0ac",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 4,
+      "tail_threshold": 0,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "9d02a3046fa1529447eb6f7624c2af7b1ebba94ed2a3b3cf53f9ce928dddc43b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "dd816276f8cbfaf1c038473a673fd981331c4fa01cd144917005ebc23e3882f6"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "4b1db0c1463395d725457fe3211c97c94154132b1f0425dd1ffdba4a642e2fca"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "50f47dce949d6df54e632ce85824f4da9ab86ec06199ed0bc184694fb172c86d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "9f644b910cd1f5484bb6eed74973940784921d1ad6a8b576e53c0ad49f49c5e8"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "6f15ea40a9b25e7cd3c5d23fcc45a8a0e0c236c143ff195d53cb3932e1eba2ed"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "281ef9b6f143469366ce952b794efe96036e67a343ae209cf4ab518ac62ac50f"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k4-w4-t0-n128-s1088/result.json",
+        "sha256": "00a6b41ac4be2345ca18c3b65f581f02901c7ab0fe0fcc534ef2f633f93480e0"
+      }
+    ]
+  },
+  {
+    "signature": "853c041d545dfd476b424e7aa5aac3a4efc56f9105a66a9adad29d1e6966e319",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 4,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "dcd219ddd3b3d098ca134fe9c86730e4443cdebaf1a43ad6cf63ec509995698d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "04c701b653da7580b4f3e36b64c862493d993739f777676fd7a411007bc864fd"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "d8ebe77a022335782405979607d0d56a99c01775c80410adc0bcdbf17ef58e9d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "770255f5a025b1245a614394a561d20a063bb4c05a902854ae48e4bd3d2ab0ba"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "c593eb4648865f3360d1f9583a2e2d0c27fa014361adfb67fd7fe85db6486d7b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "ae77a96637c5a2d4ea3c9b89831ec9f85bf0dd3851b9809479391848b84176d0"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "de567d9247b2470b362e1909e108d6409fc986c73a595271a30ee2afde5beaf3"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k4-w4-t8-n128-s1088/result.json",
+        "sha256": "a503046e2c688200e8fedaf26644eda539a7b1f0bf5ce027d324116274c662ff"
+      }
+    ]
+  },
+  {
+    "signature": "9645835c0941a5acef7620fb6b493691d26836bfa3af747ca64babcd5a68ea69",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      1783759,
+      2470130,
+      3411148
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 34,
+      "samples": 8192,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 8,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 20,
+      "prefix_max_words": 1048576,
+      "prefix_max_pairs": 8192,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-target34-k8-complete-prefix20/Family1Sample-used.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-539749/attempt-000/native/result.json",
+        "sha256": "9739ed86921a4c464a1dc376de404824af0170722a41613d6f3f1d49d9b0c5ba"
+      },
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-679758/attempt-000/native/result.json",
+        "sha256": "ced46b8161c1a59a7bef1d8532f29e9ab615dcdba265be2f0bde6a515649d365"
+      },
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-1783759/attempt-000/native/result.json",
+        "sha256": "b37083d2c8157f8545d49b771dbf9e8450ad075bc32c649014600ff3ed65da7c"
+      },
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-2221624/attempt-000/native/result.json",
+        "sha256": "3543d9036c87bbb4c230b5615f190f5bd6ddd7b43aebcbd0e9b46f79aa3b85b3"
+      },
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-2470130/attempt-000/native/result.json",
+        "sha256": "07a4ed7ae4f415422e37f8af3f17c9083ffc50c7866e2b07ff115c19921b9f95"
+      },
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-2471796/attempt-000/native/result.json",
+        "sha256": "65e44a9de7800708b6c023a9788c4a261f06e04bbe2abaa73cc2b7a80753aafd"
+      },
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-3411148/attempt-000/native/result.json",
+        "sha256": "6fc2b4d490547dd5a3fa22e32f6144f783cc54ab8f7eac03a5e0ef9b3701db43"
+      },
+      {
+        "path": "out/family1-target34-k8-complete-prefix20/case-4099217/attempt-000/native/result.json",
+        "sha256": "8557939664920605a6c67d672f9fda9041b0c3d664ea574fa454a1f7e5f5cd61"
+      }
+    ]
+  },
+  {
+    "signature": "9c9b2f2c8eaa96c174e384506600966d5e5bf69377b9b061563460fd8991d142",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 1,
+      "tail_threshold": 2,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "a399e6c96d28d589cc553fa65837fc58c5aee6eb924346bb6a85916f40610e31"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "304082ada23f64e05958ab3b0bce96084232ed06343f9cbda174188b66ed1da2"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "af40fe2843e03e8896dee0b86c56f01febc3dfb0835092ef01abff207d2dae05"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "745b019c472c5964a15a1e187937d30e57b99d37c807baf412551f0e446d75c5"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "9b25f7f3f520cada7452b7c4904942f1a6a520b197955a0564b54f7716ebd8ac"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "9c6943287d096e2ec4b75aaf7e24382ddf4cbec70bb78d080ec8a5560d5f4d5c"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "33cadce68a21597f249033e32f1bf264aaa9e15810f8dc530a1b7e4f1f1c6374"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k1-w4-t2-n128-s1088/result.json",
+        "sha256": "3b177455c586b72144143c282fd8426586b5cf248e576fa63d5e63153ec981e1"
+      }
+    ]
+  },
+  {
+    "signature": "9fdd55893a233f70da378d9d839d4c3313db04cfd6f6c01a5d52884f403e6aa4",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 3,
+      "tail_threshold": 0,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "9f1f2701135db34dc948084c6f544a2ca35d31d3c65b3b8e755917e3a56d68aa"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "cae55b7759626c2fad003b5ef2c337203dcd23c8ce05df3d4e386142d2f6673f"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "77877f93b433a73c39a5a44e6d6006deabcbb8ee74269fb18da4d79002c65c21"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "c56a3b12acd1ea43a8985f6b92f208d949184a6934bf58c64942e034d5f42e79"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "2c5adcc7d874fbdd766630112d7386f563e5a3c6f6da3aa50f040a66e364c278"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "ce7c67a116cb737f33ef115394ad7ffeb4556638ca064a1cc24bf0903a6fc131"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "98f7418421b47e5d2e637890eca35d5410fba343c94770530792bc8ccda4e28d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k3-w4-t0-n128-s1088/result.json",
+        "sha256": "c0168ccd00cadb07c12ad21a26a4eca8c70c57b931d5b93311ea61b2affdcf4c"
+      }
+    ]
+  },
+  {
+    "signature": "a4a43c1eb52e577a78daf42b7c153e2d76d1e693cf5341d7c6a0ac925733f665",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      539749,
+      2470130,
+      3411148
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 34,
+      "samples": 1024,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 6,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 1024,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/Family1Sample-used.exe",
+      "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/native/result.json",
+        "sha256": "85aec921761e530669981a7b692869e24ba8d97ea5f2af9124ab26352fa4faa5"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/native/result.json",
+        "sha256": "4fc06b868b167bdffc55edabda33cbf2ff32d75a6ac3c63b4e7ef89b4e6de9e8"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/native/result.json",
+        "sha256": "a9d5bd518d0a9f866c97a759023557e4ae34726fad733ef1365897d0ed5be9bd"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/native/result.json",
+        "sha256": "4fcd9282797dac5e3ba3e5a2282f1e7c83365067708261179aa4a6481d9e495c"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/native/result.json",
+        "sha256": "933d2f4dc3c8f5ac038ba423672dddde3382abf9b8a8a1a212273db8e1d20250"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/native/result.json",
+        "sha256": "e0cd544b0fcd33ae1031a86b811f16a6e6eb04dce93504bbf2b71f5940ded781"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/native/result.json",
+        "sha256": "bb7ebf6dfc190a61fa308107f3f5aa2e7f029faa13c2b6b5dd73f31bcb309902"
+      },
+      {
+        "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/native/result.json",
+        "sha256": "3859c0002b2b51de68e5134e8f976cd1405cf9c251c46f404037ca2f58ea80c2"
+      }
+    ]
+  },
+  {
+    "signature": "a89f5fa91579aeacd6d3680e9bb42b24e84b148b0c4c5213d837613d7ff39262",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 14,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "08f2db2ec2afd66c58cda0f2b303916c156633937788cc5ac0ba624adfda01de"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "f2c6727b2f152b1d52009b16d29d3e00ef601729c02458c0e6c1c989395a601f"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "07f19127a29c1d347bd057b9de0afcc84a140666b0c1f953a3b613545ac63661"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "1e9ead338b3d7098055d86d62493baa365eb8476148bd339fcc9b134fa9ad841"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "7fc7c9fe873e939bfbaff79891fdff8aa9b88ff868a186d39155787e296b3547"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "59fcd49777f1cdec9b563ae2d9b7c620065f2eb5391851149ec2d66ff58d58cc"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "7b0a7117aa4dfa8629985edecd9a2645d0fb415f4d30108c2050142af31fb821"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "a19cff1d183be9456a2947ee2dce130d9b1c486732819f859b9d7472eb030710"
+      }
+    ]
+  },
+  {
+    "signature": "b4a18b563cb9b0e5fde6ea486d1a374338a63a3b6b6db6456b5c6e6b74d32db2",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 3,
+      "tail_threshold": 2,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "bc64f858e0a53bb5b05f22724835872c8632313e15c913fe7044a6e5af126f0b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "ca76d658fb52a1010ed11e61d937a381cd7d2a551c499f0c4bb4fb349e3e11ed"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "588265bd5d77477bf94f69815fe353793cc707ae0f142663656c324c9d00383e"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "04025e748b0f46e5e604b6506db9293ad7a96a01ad6a5206aeb0bdff459ad3db"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "b42c13f07af821646a272d000ff2ce805935218e873fbeeada508d275e3a6d41"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "9a46f9f59c679b15c96e6adea75851e93b40aa63c447273a0e061526a177a684"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "063088e195428d22ec7e69ac34c84e94479b51df1e9cfba3878b7758c70a5528"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k3-w4-t2-n128-s1088/result.json",
+        "sha256": "943266a71a4ed23aeec85d138f6c157d98c98dc91940b61dab210d36de3ad984"
+      }
+    ]
+  },
+  {
+    "signature": "b7721bee9645cc0c8f67c8f94431154bce05f495822d39bd08b4ff542183cf8f",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 2,
+      "tail_threshold": 2,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "1297405f788fafb56baecf27759318dde4a2df6587d9108c45fb518542a9e62b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "97d1c2873a05fb251c050206b60fc7e5801b3e4d1591a83f0398c2e963f33eec"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "f8a4e78ac155c236cf911c1939e94a1cbd3d8b9d55cc0085c34465117f4cba7d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "524e8a472300b71e23fd94e53398329539c5edd00b60a1aee98f5becba156790"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "e80d9b7207ee22f2d746e06eef26fff2d18bd01b289bbccdb566ace4f269cd49"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "a8f8204b211a587605963808c499b31851df3e93baa9309512a89de01bda4e1c"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "3589ce8981bc1e37f250db992f418999859d32219025efca7bdca6762ca29614"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k2-w4-t2-n128-s1088/result.json",
+        "sha256": "5b24e9c1a8885c0c01364b575e9fcd7999ebe859f61b562a54a9e697b44b02c4"
+      }
+    ]
+  },
+  {
+    "signature": "b8c6e73da714b4db3a6b2298f9d2d199bd16fb70c363c2814268f683474bfb78",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      539749,
+      2470130,
+      3411148
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 34,
+      "samples": 1024,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 6,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 1024,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-target34-k6-w16/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-539749-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "dc78c45230200afb2e56300f3ccabbd9bb38dc426f400dae4e48dda66f64eb3b"
+      },
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-679758-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "eebd93063720943b4a210dcb5f1baf7bfb4a63ffbf7d181c63ff3f2b161a1c10"
+      },
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-1783759-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "5dac8bd0ac06c4da1b21e1123778c21ef1f703edf2d5d1ee3d430220b46b93d1"
+      },
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-2221624-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "04fbe2bd5f43d07116febe8ea2656caef952d0e06eaeacba63d9286c984399f6"
+      },
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-2470130-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "9192d20f9ca64054803d6d5a2e815941590d15d4ecfd7971358555e6cdaa44ac"
+      },
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-2471796-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "15e392e9e70770c907e6fa1827b147c34b771a6c94698fd324ea817d8ed35579"
+      },
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-3411148-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "9cd415219416673813f43cab427b6fb6d0153c3839de5cf97c993e230d54fa5a"
+      },
+      {
+        "path": "out/family1-finder-target34-k6-w16/queries/m7-4099217-k6-w16-t8-n1024-s1088/result.json",
+        "sha256": "531d18412d90c5afacb9f7422df42f7a05d3f43f2f214a95a2e059b722bf8236"
+      }
+    ]
+  },
+  {
+    "signature": "c543f635fc7b6a56c205a90484e7b16cbe4408c8724fda633456f32a9be0d6a4",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 4,
+      "tail_threshold": 2,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "0d8b8bf318bc63b3f12c7462539a146d71c53e85db190c0d5d4f7760ad1f77b9"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "07449b4854ea5db9d8587b413a2632e5b6b517ea99cd9e436f5b46076df4ded8"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "8a0cd8359774746deccdbbfe3605fa5301ab407304824021f9c1097e597a32e1"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "efcc0cb76b17ffe66dc9587bff2a9f5c286677fcdb73c8719495aacf186e5154"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "7d5fcc744a332a238991c73deb54dab203c610478622cd89e7407bfcf25df8fc"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "6cfc6df56032c04ee425704857a5124a5eb8200b33eb2f7a21ee03354578a83b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "ddaea9a74c4710ad87cc4c95c57b1c87e7a9cb0de911bea3f24c543db10e6214"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k4-w4-t2-n128-s1088/result.json",
+        "sha256": "2857560bd37dcf06d9f74385df73852e48a5985bbf575fbf16743268410f94e8"
+      }
+    ]
+  },
+  {
+    "signature": "c977e95eceaf8aad0b131590ab55fb6f273ac3ea52ba9334cf5c25a307cd9b59",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 2,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "02047e337a1ea43868b8e233fdeb439dbfe0d5c7e439f12367722866b0158869"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "05d4eb09a648211cfaa20fae7feb11124517299c68a9053d80dd5b027d2480a3"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "a25091da9efea4ebd3ac206d9b543f442eff8c394c1294aa33337c9393c08b2d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "570fe4137ce42696046f6daf0e9b48e291a50a9c4df1d706084bb9be524a1087"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "2c0733b01ba1c5238f139df562e2b112318c61ef3fd96b92d87ee10d7cc4932c"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "3393cf90707dacbe0038540c926e9d89c6b140c1274225195695cfa8d06dd32a"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "ba8c5531be8b87bb1016cb70175e904d5b6cea4758e7ed9f1fb8506ffebbb803"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "06740979fc5349ac3e1391f418ed6df67082bb32b08c373d269803ea285da3fb"
+      }
+    ]
+  },
+  {
+    "signature": "cb245d92915201a621ee7726837ef89bf86981c95110ca88b230d0a12723f944",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 2,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "820fba2a7995e896e0466b1abccb7095ce6f0d421e108c35bcb1a88d2754a082"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "3dae60c60edbcccf48b69da15c1c650d28afd98200725040941d3366813ccbdd"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "3e6386b29491e9b1bdc325ab6535bcdbbb3abce63e649143551fa2f1ff66f887"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "81ce52ae468984e2739e559cfa91cf5f34ef89ba19a1dc701709ab8b3701299e"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "eca5ef855f2635fdc654c5a14d69b5a0b0c5c646908ba4240068f9fa4db3d3c7"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "378a149851b8a6de4fe5f543da9453ce2905e7aff2975f22644ec807dc8c6ddb"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "d6c4287d93150641e829bab7270b48a41e0dddf3743140677988adddd6bb1727"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k2-w4-t8-n128-s1088/result.json",
+        "sha256": "5224d02e6cb4dfe94a733e68fd03fdb8d538a358f292263eb1255d734777e37a"
+      }
+    ]
+  },
+  {
+    "signature": "cd4aceddbd27ad7c78ae6f2aca67c4cc908124a376a98283fdafb5b61fdfb679",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 5,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "3d15560ba239846a62cfedb0c9f1e539d73f8a7909dfc8c6a136b84d7a8786a7"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "3397dc7400f328d4587f9e781af6b7e1c673405077a1d6da901a7ade99dbd6b4"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "9e09331e5ecbe7fb50f11590d5ac239b7012d528bd684773fa1df151ea6c567b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "233bc77dba55c338834dc56f8210cec0513ccdf80672f96883c85c85ff116068"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "9217e9b9f4ac8e276fd88fee34bfc13c5a6df1f9b005dfa88e89083e8b572650"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "f949151d76e15d74b687063985cf99afdb6d0d0a91fe836b4dae316e5d358027"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "8a98cbb7f89d83159b3263bdd51fc6660d2ea2e5ee73b40d0cabbb40fdc653b2"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k5-w4-t8-n128-s1088/result.json",
+        "sha256": "585c54d3421f59f0de324e7b6602b673876750c6d9048ac7b47e9df5f930945c"
+      }
+    ]
+  },
+  {
+    "signature": "d74f805567698fd18de7d5d012a1d37f8962c4e4b594afbebdbf9e8e2d7d83a1",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 2,
+      "tail_threshold": 0,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "78ae1531d49e365e30573f357d804bdf95deeecaa96fa3ddca9e60bebe1db04d"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "36e85d2e576511ef05527f90858f7613b2f933dfa4501b100b774e1fcde8ca1a"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "222cfb7f9944ad8109a92a11255f3b96134507a57e39bc9858ff7fdcffd7b5c5"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "3430a9f41b08851b08efa7d2b1b33134d9c4b712e7cbc47cf75f6292d6fb0e3e"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "620463bed560d84d15dcff76d71ad467f72c64b6da78453161ac7c57e381c2e3"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "9fbb641c3b0224dc33c3ba12c92b11b921d0decf394dc0fe902bcf3c6145b67b"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "4c66e71e878e4ab57491736eee22b69c1ff2778964d93d798f971777dafa5070"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k2-w4-t0-n128-s1088/result.json",
+        "sha256": "21a1dd83cde7a9fb66502717bc1c60d4864fd94c8cdb86d39ba6080a4f6b8a3c"
+      }
+    ]
+  },
+  {
+    "signature": "dcacc345d5e16174c8310050a855439c3d22bd2d02c4af694b5c1d4e7d956930",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 3,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "b64614ebbc9bb516a1cb832255f6796040d1a64f4e48b660ff045502ec8cc952"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "6c46bea51a518ff96834c5a15cb840a11d2bf4384fb6355ac5009c109e69a610"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "2ae66c76ca38394ae4b56475cb057e150690d142871fda857a40f6fbf7eb3eab"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "8f0b0ca32e96aaaab584ed8871d9dbaae0eedfc3072446c6eb0e83bca995f59a"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "f96d16a803c2e5f6a61e3dd3b4b2fdc2f701dd27cc52b14d34421cb8977eefa4"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "e3db5a8bc54f4f5f742688147efd6245a0aef11644f35dedc1d2be39019aa8bc"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "8af6ba5ef2a30d6f7fdabc2b62f823bac6cf9f665aef893d52c6b88b6d794ae3"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k3-w4-t8-n128-s1088/result.json",
+        "sha256": "db955a52f85252d6db3d13df7b9a39f81d6918b769f0260f41fd65e510829e15"
+      }
+    ]
+  },
+  {
+    "signature": "dec53e1fac7173ae1120ad6b65ae4c957d8a58d47d65809a3429b86199a560d5",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      1783759,
+      2470130,
+      3411148
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 34,
+      "samples": 8192,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "distance_coordinates": 128,
+      "beam_ranking": "remaining",
+      "window_k": 8,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": false,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 16,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 20,
+      "prefix_max_words": 1048576,
+      "prefix_max_pairs": 8192,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-target34-distance-k8-16-prefix20/Family1Sample-used.exe",
+      "sha256": "21b0191f43b3d836edefa62f778c4d7c6a5867519a903ed5fdb4e7ac985e3c37"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-539749/attempt-000/native/result.json",
+        "sha256": "3399ea3968b09083fbe8810b0a594e2e6768df120db289e065fefb14f87a7609"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-679758/attempt-000/native/result.json",
+        "sha256": "7bbb3271bbc666382656852b8d15e894bf4def6050b7b2ffd60af911b7b0ac06"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-1783759/attempt-000/native/result.json",
+        "sha256": "4c38f3ad4199cd74f864702e7820a2489206723e689a577ad182647f51abafaa"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-2221624/attempt-000/native/result.json",
+        "sha256": "5adc9827f088ff8d4bb88e4d887212f6e3bfca9049f719e44392165332ac0e8c"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-2470130/attempt-000/native/result.json",
+        "sha256": "80f2a752249d8ec1ddf6dfa3a04b92e423c0a34685ccdf77aa81124cc1ed49e6"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-2471796/attempt-000/native/result.json",
+        "sha256": "c75f6a0d9cc595fb7acd5ec4c7568d4ac85fb052f35808f71426615cfbad6cd6"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-3411148/attempt-000/native/result.json",
+        "sha256": "a00a8ba75c61eaeafc7d8763818a0bdc45104ab0a7a9ee5f86414320f968c5ac"
+      },
+      {
+        "path": "out/family1-target34-distance-k8-16-prefix20/case-4099217/attempt-000/native/result.json",
+        "sha256": "e61b8199935801c9e6df5dc6b0b3a5229063cffc59de42d8f785557acdaac32e"
+      }
+    ]
+  },
+  {
+    "signature": "ea159abf5510487a0053095322a56202e64cb3c49bb9995c76aa940f60a1e4a1",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 10000,
+      "window_k": 5,
+      "tail_threshold": 0,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v1/binary/Family1Sample.exe",
+      "sha256": "a449658b73ec571300452810f4405f1fad7f9887adc53e98e7f64e66eee7ce3a"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-539749-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "fb7a764a8dc3c1a12b5d6cddafb5f6df21a2a58d799e9209913b2b6fdeb13959"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-679758-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "d5724504dfb8f750183b3bdad98925d1d12acb87b300b6a5f69dc84be2a29b24"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-1783759-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "75b7f4d43d46141302e487b43026d72d19477ed2a395871f58da88bdfc4c9251"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2221624-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "f430e6cf2a963bf6ce4a11811d56da6737e7712ff31ba9a34c569acf19f1f5ee"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2470130-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "99481577f13f377d7d793f0694457224953004bca1cf5b331ca012ada4b65f59"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-2471796-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "9727c924f4e637f5c4c7fd1a5947a3d7673a97f23832a9353ebece44af886475"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-3411148-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "9ee89e4c0177a74ff0c7deda568106700999a2860d637ad86e888c2312612688"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v1/queries/m7-4099217-k5-w4-t0-n128-s1088/result.json",
+        "sha256": "dc1e0326dd8b1d6b4ea8daf793ad9ac6471a6c811b648d4ae19bef2100d6588e"
+      }
+    ]
+  },
+  {
+    "signature": "f2c068b05494a24b7fbd71aafb2d3bcd4d3edecf74848ac1c40999f3d1caef6c",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 8,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "5aa3e167ad9e0995555902aacffc6ea5b20a53c30a4e1a42bc3c8e5ea0fe5e54"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "ca28a208e60a45704844cc8467a353690b9a9badf64787b603bb98367de080d2"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "a44703c1d8b3af014145287e22d59a123c45b592c4f38ec3706fbf654c9c5eea"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "d92c379950b59b955d0a55005f7cc4ab94030615ee3fc21caa3bb8fd608ef271"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "6deee218dde5a42166c2576b18198efeda0bbc60f17d7ba83ab673b4e71a2fd0"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "a173c72a6eca3df2e14a7fc9cb04e5a65bdf8f829c523a72f9309f8e92f3bbc1"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "1d8260db81ad233bd5a459d50be3eee7935f622e2933cd4d6f7aeac581565faf"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k8-w4-t8-n128-s1088/result.json",
+        "sha256": "b0b5a5d581397f169b34b9a441d2e147ed603290ba87ddd27de1d97d986baaf9"
+      }
+    ]
+  },
+  {
+    "signature": "f52447ea0f751af26570f968119db379f6309689fea9d3c13cf8aaaffa6c1186",
+    "case_count": 8,
+    "tested_graph_ordinals": [
+      539749,
+      679758,
+      1783759,
+      2221624,
+      2470130,
+      2471796,
+      3411148,
+      4099217
+    ],
+    "minimum34_graph_ordinals": [
+      2470130
+    ],
+    "uniform_all_eight_recovered": false,
+    "native_configuration_example": {
+      "schema": 1,
+      "method": "family1-graph-adapted-static-mask-sampler-v1",
+      "source_key": "0001020302030405000604060105",
+      "source_key_sha256": "014cab69542ece08cd80c8674d6f457303f7ad2bcb194ee50938b9261a672526",
+      "key": "0001020302030405000604060105",
+      "m": 7,
+      "length": 76,
+      "samples": 128,
+      "seed": 1088,
+      "masks": 64,
+      "mode": "finder",
+      "max_profiles": 65536,
+      "hash_bits": 64,
+      "self_check": 16,
+      "checkpoint_every": 4096,
+      "full_guidance": true,
+      "full_guidance_max_nodes": 1000000,
+      "max_expansions": 1000000,
+      "window_k": 6,
+      "tail_threshold": 8,
+      "tail_max_states": 100000,
+      "best_of_seeds": true,
+      "first_prefix": "",
+      "second_prefix": "",
+      "beam_width": 4,
+      "prefix_seed_method": "permutation-profile-depth-diverse-v2",
+      "prefix_depth": 16,
+      "prefix_max_words": 65536,
+      "prefix_max_pairs": 128,
+      "prefix_sample_depths": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "prefix_samples_per_depth": 16384,
+      "viability_coordinates": 8,
+      "viability_cache_max": 4096
+    },
+    "executable": {
+      "path": "out/family1-finder-lookahead-grid-v2/binary/Family1Sample.exe",
+      "sha256": "9389863194cc451d727e0835ec40085c50ef72ed3faa34769b01f9c9c32fec80"
+    },
+    "native_results": [
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-539749-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "f669a0a4b1b7465851b4436780f49e9dcb42f1b3d33da236b0687a977988370f"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-679758-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "da32b1d6fbbf0ff10bf148b581b742bd96f64d4c7ddceed99160bffcc57511ae"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-1783759-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "37c6e1e77449ede104eeafb2f3c727e63f2fdfea2b0df3bdff5766c514c06f90"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "e889a5fed53fc24992a9b001a9b39be9f1aeff3b944cb4b9bc263741f6ce3c58"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2470130-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "f82e9ae7940c5011f85c2cafc762e1be2315aa7a8faaa3f0322522efc68eff17"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2471796-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "089f78dc6cabedb1ba2138cac6f4ab9611cd23b5f69884fa844f0a1b2bbd0665"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-3411148-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "9ca74d3ff3f3e247d7495e4f300c739ed3df3bc856332d88c47662df9bffef2c"
+      },
+      {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-4099217-k6-w4-t8-n128-s1088/result.json",
+        "sha256": "ea176a8cace74c21b3f7a448cd04537a6770d21cdc68bbad5dec0ca8ae353b34"
+      }
+    ]
+  }
+]

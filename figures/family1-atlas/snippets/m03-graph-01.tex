@@ -1,0 +1,36 @@
+% Family 1 rooted seed, m=3; key=000101020001.
+% Requires \usepackage{tikz} and \usetikzlibrary{arrows.meta}.
+% Score and global-maximality metadata belong in the surrounding caption.
+\begin{tikzpicture}[x=1cm,y=1cm,
+  f1atlas state/.style={circle,draw=black,fill=white,line width=.5pt,inner sep=0pt,font=\fontsize{7}{8}\selectfont},
+  f1atlas root/.style={f1atlas state,double,double distance=.42mm},
+  f1atlas port0/.style={-{Stealth[length=1.45mm,width=1.05mm]},draw=black,line width=.48pt},
+  f1atlas port1/.style={f1atlas port0,dash pattern=on 2.5pt off 1.6pt},
+  f1atlas label/.style={font=\fontsize{6}{7}\selectfont,fill=white,inner sep=.4pt}
+]
+\path[use as bounding box] (-3,-3) rectangle (3,3);
+% edge 0 0 0
+\draw[f1atlas port0] (-0.20270,1.64697) .. controls (-0.76121,1.54122) and (0.15129,2.30982) .. (-0.05791,1.82245);
+% edge 0 1 1
+\draw[f1atlas port1] (0.11841,1.37896) .. controls (0.74790,0.39812) and (1.32828,-0.60665) .. (1.85953,-1.63534);
+% edge 1 0 1
+\draw[f1atlas port0] (2.13343,-1.76385) .. controls (2.44657,-1.29549) and (2.38675,-2.43275) .. (2.16423,-1.95755);
+% edge 1 1 2
+\draw[f1atlas port1] (1.78207,-1.81885) .. controls (0.59403,-1.67929) and (-0.57873,-1.67744) .. (-1.73623,-1.81328);
+% edge 2 0 0
+\draw[f1atlas port0] (-1.86570,-1.68481) .. controls (-1.22375,-0.68462) and (-0.64244,0.31954) .. (-0.12178,1.32767);
+% edge 2 1 1
+\draw[f1atlas port1] (-1.78207,-1.86172) .. controls (-0.59403,-2.00127) and (0.57873,-2.00313) .. (1.73623,-1.86728);
+\node[f1atlas label] at (-0.26130,1.87782) {$ 0 $};
+\node[f1atlas label] at (0.97585,-0.13910) {$ 1 $};
+\node[f1atlas label] at (2.34970,-1.86327) {$ 0 $};
+\node[f1atlas label] at (0.01147,-1.65510) {$ 1 $};
+\node[f1atlas label] at (-0.89830,-0.21040) {$ 0 $};
+\node[f1atlas label] at (-0.01147,-2.02547) {$ 1 $};
+% state 0
+\node[f1atlas root,minimum size=4.1538mm] (q0) at (0.00000,1.56346) {$ 0 $};
+% state 1
+\node[f1atlas state,minimum size=3.4615mm] (q1) at (1.96542,-1.84038) {$ 1 $};
+% state 2
+\node[f1atlas state,minimum size=3.4615mm] (q2) at (-1.96542,-1.84018) {$ 2 $};
+\end{tikzpicture}

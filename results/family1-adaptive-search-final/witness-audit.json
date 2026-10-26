@@ -1,0 +1,3740 @@
+{
+  "method": "independent scalar static-mask replay plus complete bitset vector equality",
+  "graphs": 311,
+  "mask_checks": 79616,
+  "all_passed": true,
+  "checks": [
+    {
+      "key": "00010002010304050206060703070405",
+      "length": 29,
+      "scalar_masks": 256,
+      "endpoint_digest": "c426a690909fff22e90a760ddc3c8a36008ffaa13b552bb5311247768b21f039",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1b4c31314465c54c277265532ff8749e2332c9cd58f85b02f4783b4512344923"
+      }
+    },
+    {
+      "key": "00010002020304050506060704070103",
+      "length": 28,
+      "scalar_masks": 256,
+      "endpoint_digest": "c10e0776d52951afc4c253f05f5fb4d454dcf8578f750ca7d9ab0ca31da8b5c6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "58e4ba73bcab77b131e8e023e63f62b9b621037b428ded36aa65f697226904ea"
+      }
+    },
+    {
+      "key": "00010002030401050607030604050207",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "f21f54c8ae0ffd207e458df96940e70a0906df315746614c0a3d61e41fca5807",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d40bccdbb23c74c81121eb381dc73eb457214acf542a2907dff5ad213fde58dc"
+      }
+    },
+    {
+      "key": "00010002030403050607060701020405",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "4279e32b70d55e12ff06b68da5d9aa2eb0511b917c529239d7145366fcdc58e1",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1906b89ae4c716e1c5a29da2277a6aa7c08715cd11f3d1a00983f69d82ea4aeb"
+      }
+    },
+    {
+      "key": "00010002030405060507030401060207",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "54f9a859faa9257e0326bd324aa58aecd58db061bfdbfd6d501d22c13e29c8b8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3741ce5176bb81c108b55342e378e7b23046efc68a98fa4d16ffda8cf8e62bc6"
+      }
+    },
+    {
+      "key": "00010002030405060507030401070206",
+      "length": 46,
+      "scalar_masks": 256,
+      "endpoint_digest": "a596f5309962b845b55a21989a37b5245a5f8729e3c8ba3557a0e9be18ec73ee",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a48999b433005323f7dcd4aa85ffdb7aac178e9c76f51156bf5d314a70e15aab"
+      }
+    },
+    {
+      "key": "00010102000304050206030406070507",
+      "length": 30,
+      "scalar_masks": 256,
+      "endpoint_digest": "fd9f8c9b6b03022adef0dba4174fc49167fbe4a130fa26c711a264cd6bfadc98",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "74d9e3c6dc78c500c2660ec6f3bf99bb9cf4d4efc0211ee5fe5e72de0bef87e3"
+      }
+    },
+    {
+      "key": "00010102020304050506060700040307",
+      "length": 30,
+      "scalar_masks": 256,
+      "endpoint_digest": "873eb41d325204079bf000feb085d38770f6163b30e8e02886d052d9c5710efc",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "80787bc86d4cf323190ffe6946f894a0dd47e2f7fe90ca386cd8d0fde19a7146"
+      }
+    },
+    {
+      "key": "00010102030400050203040606070507",
+      "length": 28,
+      "scalar_masks": 256,
+      "endpoint_digest": "a63c112003baee8e8a2c142087e7b2a9bf000f5f9ac07c9d0d66c3518e408a09",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "90478505e1bc6d0df87989bfb2f4e52e84dd178a50019d4aaa37b636320f7abd"
+      }
+    },
+    {
+      "key": "00010102030400050506030702060407",
+      "length": 26,
+      "scalar_masks": 256,
+      "endpoint_digest": "bf9dd88fb5166a17b9dc5c506dbe1335c03b7f41c1040ed520ceb47a18d5f660",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f2757bfc57449eccd712aa8caacb0f85f0129d7366e3743f92b6451351e65b00"
+      }
+    },
+    {
+      "key": "00010102030400050607050604070203",
+      "length": 28,
+      "scalar_masks": 256,
+      "endpoint_digest": "63b789d7eb691645efeefccb1e7cfaf874074089af1105b19c725b809b2d4023",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "eafa99d40db88bb009fcbc4dcce2e0a87bc5ec292ddedf0323971f102b92e129"
+      }
+    },
+    {
+      "key": "00010102030402040506000605070307",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "4cafcd4a14ffff30dd65cda3d940df45d1caa06e5ba601a71b6a3a3926617f50",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "85a5156107279e1b819753870767de6622d2875a767d9fb521b5b8875c38305f"
+      }
+    },
+    {
+      "key": "00010102030402050306040600070507",
+      "length": 30,
+      "scalar_masks": 256,
+      "endpoint_digest": "414d40de73e9f86da260dafe16ef0d6715647fe89078000de6e5501f4d9a9b77",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7e52319f4dc45feee49a9386d0e34de094978b1b4b21c6ec66bbfb4fc8765327"
+      }
+    },
+    {
+      "key": "00010102030402050607000603040507",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "e48fe7deaad3d2446f681406e878af5282b8fc6d7331878f26bd02f0e5b75906",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "aebfe7365ec34bedfa1c1f3f95fb83240404bd80323b2c245c8a8a05caf53b85"
+      }
+    },
+    {
+      "key": "00010102030404050506030702060007",
+      "length": 31,
+      "scalar_masks": 256,
+      "endpoint_digest": "06df63ed39e570da1f7e03f9fdfa8cba610926cc07d04c37045c96893120a517",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "674ba2649944458bb1377cd656acd6ee6981a94bd13ed4b61116220cb0fcee11"
+      }
+    },
+    {
+      "key": "00010203000204050106030406070507",
+      "length": 29,
+      "scalar_masks": 256,
+      "endpoint_digest": "85155476185ea1d727dcb8abc239c714715314a09ba827315054bc47d2372c05",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0653043c92b3ac63027d0b76846a166fbddd6de2513de2498ed933e33bbb9f1b"
+      }
+    },
+    {
+      "key": "00010203000402040305050606070107",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "9ac0f3cc55b38fca950ff35963ee94866327eeb035d6be8a4bd87ff4eb12154f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "16744697f6d108215bc49762b150a0ab065c2ec62f8c8318f8d4265904f6cbd7"
+      }
+    },
+    {
+      "key": "00010203000402050406010605070307",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "023df44124b49adfa2b299f6f1e1addd728b841bbf5744c25d4085ccdc6b31b4",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2614fd81b2118dd8bd03158f1879d775e65beebe0ff0d1cbdda77e976d438816"
+      }
+    },
+    {
+      "key": "00010203000402050406010706070305",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "e247a8f30db15d84fc3f52012f530ff82c30994375b93ac2f46dbbbb360b28c0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "50bd404db672da2e44bfda1c516e4b08b5f4ed1e59da57c8fae118f40667403e"
+      }
+    },
+    {
+      "key": "00010203000402050406060703050107",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "0274ce7a00c0a8b7c268ebea36e29c3cc77969639838519e6645ffb8a046c571",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0257db86cec279e847d51fb9f729b354c977cdd9f33fe7e83ec89e4c89da202b"
+      }
+    },
+    {
+      "key": "00010203000402050607050601040307",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "f108bbaf87a140aa3baefa88247b180db25a9a73d668b50957bcde4f20e04530",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "bfdd319fb8a0421efb976813a3a39e9d0e1eb601dde7737f324e884574365954"
+      }
+    },
+    {
+      "key": "00010203000403050206010406070507",
+      "length": 28,
+      "scalar_masks": 256,
+      "endpoint_digest": "9a4edaff7ac0f53ed01f85d87bb3de472c4a373a693358f2026b429cfc805560",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "141d13ba5eeb4d687af484ce587e215f8ab3737db98dd15cec1c719218a0182c"
+      }
+    },
+    {
+      "key": "00010203000403050405060701020607",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "30e4234402d422615482ced81bcadbffb9d43a283c99c7d51ac3071f6c41da45",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "63bee9368ec0340cb02e64891109da0d1579b70e551161fc82a2ed73d837a248"
+      }
+    },
+    {
+      "key": "00010203000404050203050601070607",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "1d5865da7425070e06337a5117b17de6cdc432a77e5d09d06e10c4b1bd6d9b45",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "14a9d9811a9b0012be6672cf29c091b666c256153871afce01c2816092226396"
+      }
+    },
+    {
+      "key": "00010203000404050206030701070506",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "3bcf2dfc2bdb0910101b3c3b9ba8081121cf910d0820e9440adb05dee6829550",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d8cc32a85ba165069096c6d2c75b551dff2c6128cc8f900ab83b8ef1524f0559"
+      }
+    },
+    {
+      "key": "00010203000404050206030705070106",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "6c8ba0253d55bd22544873598f545a0581da2fceb59150778388ffc9aa0f12c0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1e846f2cbeb8a7275cfd42d461078608b07f7efa6d3b67a5ca788acb110cbc53"
+      }
+    },
+    {
+      "key": "00010203000404050306050702060107",
+      "length": 26,
+      "scalar_masks": 256,
+      "endpoint_digest": "af481658c3ed6e7211a66f7031c8e1a7e44e06237ef62bb37cf173e193e68cf8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d7cad04218049d74bf6ffb35cc5df8ab21796ae1df1cc0fd3a95e8945c488671"
+      }
+    },
+    {
+      "key": "00010203000405060203010704050607",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "eb86c645554edbb2e9c22ca78072ee787cc20097e8fd7be79a1928b0662c6fb8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2a37a9cbd40767aa8b2bf63606cc7ff6fdb242763aba33a98a3e00a946003162"
+      }
+    },
+    {
+      "key": "00010203000405060203040705070106",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "bc31374f53ee167f07dbfc20a78442e779594bb5d2af8684131c41084ab4afdb",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c9ec107eb87aa30a7729b43496ddcc802ad6eac4f51e7d6f721d398a5631d120"
+      }
+    },
+    {
+      "key": "00010203000405060205030401070607",
+      "length": 19,
+      "scalar_masks": 256,
+      "endpoint_digest": "e305f89a53ae9c60a851c8659160c4d160a240db62c41938eba12fcc4c197ba4",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "67876719cac1fd7d8b03829bbd1d556050fc1fba216702be76d724e1fee3da52"
+      }
+    },
+    {
+      "key": "00010203000405060205060703040107",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "67b456fbc0324e9501eba079771eacc85a76a1c7ac769a18dff7ba0c2ab11127",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "482aa43252c21d1eb38944721eca9e391325bc0b49d04f306673579fd531f51e"
+      }
+    },
+    {
+      "key": "00010203000405060506010203070407",
+      "length": 31,
+      "scalar_masks": 256,
+      "endpoint_digest": "e8cfe5d25a456f08ca18727dc118077c77b619d7e118718f10d5e89678388fd0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9963c9fca0ea401b9927345982d1d8648d02b88d71fc761185365c3d6f0b4520"
+      }
+    },
+    {
+      "key": "00010203000405060507010402060307",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "a48319c1d80e2242ea21309889ec6edf55743081705ed863ffa5e36731a167b6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "93101b7f330c97d84e22447690c5e4ae1f63aca0212ba6eea747086470e5bd49"
+      }
+    },
+    {
+      "key": "00010203010204050006060704050307",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "26fd81dc01f3dfe4c24cd99cdc055f2c092726c86c73dc4cfd04d4fb8455a6c2",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2ebc4f4eea86ae0d36f2bef0033c2412c4b6c8823953a8d6bb4da73b5cb1d4ea"
+      }
+    },
+    {
+      "key": "00010203010304050004020606070507",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "2fb2a1d511967cb6040ba5a14ea0f4461b7a59a1ee23b8dff6e85f6e453a662f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9f6083fb66716048b7a00b347263346e3657b17abb66e1dbd2b61d17a64757a4"
+      }
+    },
+    {
+      "key": "00010203010304050005040606070207",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "6afae187fd9e8081001fb96b87295ce74c2754dbed4276f8782397190dcad085",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2d03857362c4ce51643f44ac482fd95a25028b8e5a175301cca29240c97278cd"
+      }
+    },
+    {
+      "key": "00010203010304050006020406070507",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "cd705351c620e65734c13171c2f5f5d50acd947d6869810147d7f8d451e7e70a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "aa04bd70c9f04d7991f7f748e0b03908a036cdb79172e287e5930a72d05188b5"
+      }
+    },
+    {
+      "key": "00010203010304050506040700060207",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "8305e5a1d891d19ab1982ca80616247467d0b42cbb56b3df40d0c54e92a260a2",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5954fd60d281e7b5842e4dc584721896d662e1506d57bcb99e0154d1bdedce51"
+      }
+    },
+    {
+      "key": "00010203010402050305060700060407",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "273dc380aab7f9b24926c253e7634f48a7808199d681b4d36713a074a1b3be14",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "90585926937bd79a30f2d0fa8a4fbf27411a0c05f032de69cb753fbccbc4e4b4"
+      }
+    },
+    {
+      "key": "00010203010402050406000703050607",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "002b3162ae09c7c7e92eaa463b4fc887a8dae65e67b54d6f14973fe0f73820cf",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2da545242b7b7e0b9a2c3183de3c8f963fdf0aa94ef2ff005327701a8851d844"
+      }
+    },
+    {
+      "key": "00010203010403040506000702070506",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "75767e65a4cd24776d5b0065014baaf2d2feedeb459055b42e73b93702737f70",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b420dfb66427409c408bed21b9446e6a5f78905159d9364e4ef8b6adeb269e7a"
+      }
+    },
+    {
+      "key": "00010203010403050506020600070407",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "93b5009940ecdaf3aeaf8b801a2450d53196e94c1f3140272c4f81cf3089cf71",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "91d8d9edff232251d7dce543f810d555e8ecbf8484746a60fec799e1eac7276d"
+      }
+    },
+    {
+      "key": "00010203010405060203000405070607",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "1e2901b02530c4581edb34da311957ba7ad97edfd69972debf964a1382981795",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f48c076a89c107101ecfbc5fca12609f30d4e728b9a857959c3ed7ed1d35819e"
+      }
+    },
+    {
+      "key": "00010203010405060405000602070307",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "4ef16f7812234dab34f1019266e0454d22d980af339adbaf5d554e4538420669",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "db4e73684d50729c662ac38f332baede183892fba08cee46238b22a4169856e0"
+      }
+    },
+    {
+      "key": "00010203010405060407020306070005",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "4d70f5b67e2fd32acf794fddec224a359b58d9f45ca02ea24aabdcf258b956fb",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "256268d513930af22729a5566eecb53cf4aa6223b860412e63513cb11349875a"
+      }
+    },
+    {
+      "key": "00010203010405060507020304060007",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "cc9c420ebe1d45039805e95facf1aae518cd9da11b7b6fe909fe7dd69852fa6a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b177950410dd3e185531242a68267643d81bf59a42e0153127dc75ff9db4ee67"
+      }
+    },
+    {
+      "key": "00010203020304050005060701060407",
+      "length": 45,
+      "scalar_masks": 256,
+      "endpoint_digest": "87d7c58f97598653a85d9f3287cd612df4746daf215d99bf39492e5cc016f079",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f19fbf26483da420d03028f33b766fe278fd86393221f72d0c24965081174e47"
+      }
+    },
+    {
+      "key": "00010203020304050006010705060407",
+      "length": 48,
+      "scalar_masks": 256,
+      "endpoint_digest": "b30aace66ecca19c22beb525b562944e7e7e0eb3dbf7839ed5b828fbbf73d449",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3820c00d1702a061b4fc4d13c5bfa2fcf412feb82b9a61a94abde98e9164ce23"
+      }
+    },
+    {
+      "key": "00010203020304050006010705070406",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "43bc537bef86723d4f074082ffb84f5c16bd6c06395ac3bb62aa548c62ab7e66",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "eb0c745058dc3ed00063eb542da773c09239acdf66dfee944b4f936e674338fb"
+      }
+    },
+    {
+      "key": "00010203020304050006040605070107",
+      "length": 48,
+      "scalar_masks": 256,
+      "endpoint_digest": "104bb5e35b7d6575f6e119a1f341691e9bf1d0cb798fa99eabbd4ffaca783ac9",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c616e86e8e29d800718b222f9c225df00be3d53ae0ce1762e35db961509375cc"
+      }
+    },
+    {
+      "key": "00010203020304050006040705060107",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "3ba8e21869a499cf778eb84291f65fd551c8fb58ebacd6f5a10d03bd46e2601e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9cba608569991d070b04954544794da900950e7735fa984da06b8b218b202b3f"
+      }
+    },
+    {
+      "key": "00010203020403050006040705070106",
+      "length": 27,
+      "scalar_masks": 256,
+      "endpoint_digest": "93d7025e50c5481dc0a7331370d98180f8a5f185124b62f0b016bc1a0ba80770",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4a1acfe9cd72ca5b34d564a0e98f4fc469ab07546d0cbf873e1e78299b59347f"
+      }
+    },
+    {
+      "key": "00010203020405060005060701070304",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "9b505ccdf90258bd9d97bf219e7d6407d52f94c0f44e356552ff858257bb5d1a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "535b842580b848943fca60d99c5a7c151479c0e6c7f8b60d1afd9d2204f4bb76"
+      }
+    },
+    {
+      "key": "00010203020405060005060703040107",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "ad554c074ca5a874d9e1194c343bed5f1cbce498f1e40c8bddf1617002d6dfd8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d50ebcdb621f010eb7aa7f3be560dfd3ac9d3e71397f32ccdb03c9219ce06596"
+      }
+    },
+    {
+      "key": "00010203020405060007010603040507",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "effefb6adc3bc91db5abe2d03238c2180d6620549f9f0845f95f22534c1484cf",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b83a082c6707f27b5cea92ca22263282c1acf1ad41c656fc304703ca3d66a72b"
+      }
+    },
+    {
+      "key": "00010203020405060007010704050306",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "caab738d44fb6682af94f86f52f9fc65ddbf0537a43d9611deca77b48209984e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "be81e449f8f44d2d84fc23e772419b69e15850fe00f9ad3c1f0a05fcb1c3d908"
+      }
+    },
+    {
+      "key": "00010203020405060007010704060305",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "33cf09c84dd9879f4b6b0640c965846bf624ee4094478932711cbb7ff69276c1",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9b2af04b0ddf53a34bb1a3653d2fc2027e37279bd80aae929e22a6463baa7c26"
+      }
+    },
+    {
+      "key": "00010203020405060107030406070005",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "9317025fc0c3af390b46b38ef57d6b7bf15d34e41080cc175daeeb6c7bd51778",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "53fa3741195c5b54870ac057ba8c96c1b68e77b7fb59d2ea37172906083fff4a"
+      }
+    },
+    {
+      "key": "00010203020405060407000301070506",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "89975a65b467b9820db006de2fe90d95ee74cb50a5ece5eae1810614a0f20c2b",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "71a1786f9d8c18a19a846b3d5efac07b40974635503bc8e83e6da4bd97d207cb"
+      }
+    },
+    {
+      "key": "00010203020405060506000304070107",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "ac97ef04dc85f26555c5f4b7aff886aaa089f924210fec35cf31106ffed19e14",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9d99c748c903ff17f7de7d4e7e23978a3560ab3154b6c004d10d621797f87a8d"
+      }
+    },
+    {
+      "key": "00010203020405060506000403070107",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "762839be166937c7470177600d71960a70794378dfd079a0c542e9799d8c8b21",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f7de1ab5bbb007b78c1f2b7f0b552800ca08e133b88817ee3f76a0a109a5a105"
+      }
+    },
+    {
+      "key": "00010203020405060507000301040607",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "3002069dc7849551fab168823bc812ea26c537501c9a8f33474d99b9048313c0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e54e9a08b155a333908143c3d5bd26cde181b8fa5930c35d082f192f7193cd3c"
+      }
+    },
+    {
+      "key": "00010203020405060507000406070103",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "1f8e4d35a0f60a8dbf62bdf01158950ab4fa8ccb06306dfb3def80234c0023a8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4b3af772eda90a5b3d376f72d5d01164d0cdf1c232caca414916aea831226f56"
+      }
+    },
+    {
+      "key": "00010203020405060507000603040107",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "3b5b8bfa3bd3ea7d8a6f05f59c8ecfec158a93861f85a99ebc74bea25493da11",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9740516443f0689c71185dee19815732990134e4d68306169ee7f86d359a333e"
+      }
+    },
+    {
+      "key": "00010203020405060507010604070003",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "49be08406f27b697e9f3a0970d188f801857f28bcec93c27130741b41c997ba6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "6ed34267c242a21835f2c6142338319fa53ddbc2ca1f411db160c02ded2949a3"
+      }
+    },
+    {
+      "key": "00010203030404050006060701070205",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "8801f052dbd8aea054839bd040f65e63ff8d0a63a169a6e7d5ce542828655948",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d0a894475b53f6a58b10ffc3f7159e8e7c89c9cb45b4ffb2d56e6d04ba004673"
+      }
+    },
+    {
+      "key": "00010203030404050205010600070607",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "2fe725b4bff4ee28243ce98123681f69c178891de3de886321f36f4bd64cd21f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "af2e72cd0fe207638d33f1657e0a69af06ace1123fcc2bd31a04578dc560feff"
+      }
+    },
+    {
+      "key": "00010203030404050206010506070007",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "ed1f1fd89ff6b59d120527e309b133f57cc77c217ae21186470ab9ffc1b99e4a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "68e036bac9f41c33c9e5226e11e41c223f4d0cc8eb91465bb331b07dbac8dad8"
+      }
+    },
+    {
+      "key": "00010203030405060007010506070204",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "9d27096815c9b4526417d6dee77475b6e65efa0b13de6c0857388d14f468a280",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d3c748cc8fd62b797868dc1f806d55747d2e787538873ce5d9dfe69034285634"
+      }
+    },
+    {
+      "key": "00010203030405060407020506070001",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "4d7938a018e8e0f9b893ae989852c038e4337d2b5139ab2a9456ed8a055c6567",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9d9ad012483d91c170fd2b2f4b3f1b488cb19121f47805bce4d1994ea5aaf5a4"
+      }
+    },
+    {
+      "key": "00010203040504060102000705060307",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "56f68073175d51e2075c052e16e1b7b6ef44363d51b7121d5fc31638e6c7f396",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "be0944a3856c5d231ba7e52489075c47ff41dc91fbaf31bb4beebde13284d2b3"
+      }
+    },
+    {
+      "key": "00010203040504060203010706070005",
+      "length": 46,
+      "scalar_masks": 256,
+      "endpoint_digest": "d5bf73540f7875dbe60ed77d2891e5ba6accf085dada1519f184aca3448e81b5",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "afd87127dcacfbdf96dc299d7ae04eb6990d9238cb2cd19080a35dee65b719d3"
+      }
+    },
+    {
+      "key": "00010203040504060207000501060307",
+      "length": 25,
+      "scalar_masks": 256,
+      "endpoint_digest": "ba4fde597882dcbd1f69c2f0a44dd599f3c888ba83153947b88869b05dad90e7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e53d632f8d7f7dedfae099fe1b34cb5f5d2f6e8a326bc198e02e6a42cc175e5c"
+      }
+    },
+    {
+      "key": "00010203040504060507020603070001",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "766c1973eff3ddf9edcd14331c098b27fcc4f9b9bf76829f0d277daec8b0bb6f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3253e70859349fad8d356ffc70a18050691defb21aaba2676e9bab8911b828c0"
+      }
+    },
+    {
+      "key": "00010203040506070001030602050407",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "4e2cba7addf5cfe261e8a761c45746d283c6595ea1c8880081e6edfcc678f114",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "52b1546c24fe95b8a5b0f18f716488d2fbe9baffc01937154ca558ea892d771d"
+      }
+    },
+    {
+      "key": "00010203040506070002010304060507",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "566d0a4fc2b712b7dea0f9d27cba436e4ff5da60a273823561be096685607879",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "cb040e97dc01010f9910de0783210d6a3bd7496d0df3916301a5738f5be1a864"
+      }
+    },
+    {
+      "key": "00010203040506070003040605070102",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "5bf2a1d6157f0e50e6dde05d9e1d26cb88960d076e437f6134fd8a25fd15917d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "00c901ca301638fac867cc689eeadd667bc99491694f442bb6f42117f0e9688a"
+      }
+    },
+    {
+      "key": "00010203040506070004050603070102",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "5d2e2205f163d3f5eb038c92b1167f63d560e1a6fe5214af23e568d3b76f2749",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "6a3914cbfe09c60c59b35126743b8d6fe389ef56802e30dd460bbd8e2f53aeed"
+      }
+    },
+    {
+      "key": "00010203040506070005020603040107",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "9a34b94fa8827033047d8479b01c1c8f523bbaba5b9cce1aab105bc15af164e3",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7902a9f10186361911ab3edaf2f0fdc46c2e6e57ca19ee1d6ba9712b5fe3b754"
+      }
+    },
+    {
+      "key": "00010203040506070005030401070206",
+      "length": 29,
+      "scalar_masks": 256,
+      "endpoint_digest": "769b75e5cea04c7da45ce7109238812db786653d453a17fe4844db63beae0901",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "6485e7f5b5611aad0481466ae5174ca2015fcc440312163021c434d775948719"
+      }
+    },
+    {
+      "key": "00010203040506070006010302050407",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "10c90477b62011a6fddff4b44f2769bf9c4cd3ca34e14f2de54116cafa038929",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "de4516c3a0339d9253b3b504472c797798b27e34fb2e9560580b14e86c22fb12"
+      }
+    },
+    {
+      "key": "00010203040506070006020403070105",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "29dfa01e90644bafd9526f9a671c1fe50d8289b41996ecb92b6ab2ae1ab7a3f9",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "eadc493fa97fdbd0c67a5cb1cc6019c60f2020e122f3d42c94df07fe268ae80a"
+      }
+    },
+    {
+      "key": "01020001000304050206060703070405",
+      "length": 21,
+      "scalar_masks": 256,
+      "endpoint_digest": "a647c93ae6d3e370a38d4b72130f41fe9e24f7d632c47f2f9bee26f7d427f1aa",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "8039e8d1862ce92ebb6ff39011c98b271209f581948a6e8be92f8ea4faf7bcf0"
+      }
+    },
+    {
+      "key": "01020001020304050506060704070003",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "5d4484a56f79be10c96c5d43bad0f1a18b0283b41c3907ab53fbe35969e0ba30",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f6dc35014f8edcbaa1fc15042ec493257ab79368774dc087c137ad4a4482ebc6"
+      }
+    },
+    {
+      "key": "01020001030400050607030604050207",
+      "length": 19,
+      "scalar_masks": 256,
+      "endpoint_digest": "496a69174ae5cfe7f363979db3a3751fd2044ff2bb7e341eeadfd0b6cd916714",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c2c4b0981532d5d0fc99c36a39e45a67054dc6ab30d964ed7fd6f408de0af342"
+      }
+    },
+    {
+      "key": "01020001030403050607060700020405",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "6dc3cded40062febee24aa6661477c6485d080fe5573b25a2458b5447a31d380",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a1db5d34ee8957e909ac4869ade1820e225d6171bf53c0abe2022571eaf620ee"
+      }
+    },
+    {
+      "key": "01020001030405060507030400060207",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "6b9d7dbc666da3b34e96b943697769ffce1fe39f18f52b8ac08fc9cb6417ee17",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1b50c3215849fd47affdc0261e41744c7f5a2feb9e0c021879f026fcbcef7516"
+      }
+    },
+    {
+      "key": "01020002030400040506010506070307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "bbf938cadc1398c45e8e579e0d43ae066dd6ac1b39be4006f95d6fce4f0b7420",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ed8e8b54ace55eaa8d8968046d7b650c66282a5f5a364bd63f4844cef272c853"
+      }
+    },
+    {
+      "key": "01020002030400050406050701060307",
+      "length": 28,
+      "scalar_masks": 256,
+      "endpoint_digest": "18e27359fd21dcfcb93c778897be2251d02babb8273de1b2cfac301bfcd480b4",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5970b8f09f885d48cae5a27ceb1e74895681b847fe04dad565ff60960ac6d2c7"
+      }
+    },
+    {
+      "key": "01020002030400050506040601070307",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "fcacb0133e7c6800769d7ad3d77ab7c8b273123a9a17f2488ec8056110fad498",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1b6eb63f39fdcf56fe8dba74dd5c50212c9fe2a6a18e06e8bfa76115d1bfa5ad"
+      }
+    },
+    {
+      "key": "01020002030400050607040603070105",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "ed4ce67cdf47bbaace8eae9fbe0c5f4591c78437c0a060f8283813a2d3899d3a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3ed9c37ea225b19d480daeb75b696c4987bfcd9ae769a7a891045a42cf83db78"
+      }
+    },
+    {
+      "key": "01020002030401040506000506070307",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "508cf7c1b741d1286209c77744ac76032c1f17129b01e2b1f21b8b6b6772208a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "116ea06bfb8345d07844173c4896635a44f5e106c82dd051fa8c33239c05e9ee"
+      }
+    },
+    {
+      "key": "01020002030401050406050700060307",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "08b888d942b2481624ce906cb0a7c5ba46c1e944482080981da8ead5b0275bc1",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4ddcc298314caecb1a0174015fd9d7cf18a182ea7f05fa42fd96e2ddc57a52b2"
+      }
+    },
+    {
+      "key": "01020002030401050506040600070307",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "1ab7321bccea9a328547df66fceb511e3d21d61302e4412007950a4a66ca9ebf",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "45d943a4599ad5ec80387e1b3f83aa5e94eb7dbd7796e096e34667f50185f1c7"
+      }
+    },
+    {
+      "key": "01020002030401050607040603070005",
+      "length": 45,
+      "scalar_masks": 256,
+      "endpoint_digest": "00b709f830e8d12430a1b370e07c8a2a746b535e2453a213275a0f156affb938",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "646ecfb3f17aa0c84caa4bffbf580f53ddad094921bce8ec58b3240acc6f795f"
+      }
+    },
+    {
+      "key": "01020002030403040506000705070206",
+      "length": 46,
+      "scalar_masks": 256,
+      "endpoint_digest": "3d5e0478a1ca69b34abbe301ba6ab66c60495f78d4429ba9d851e0b5d61d06ba",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0ebeefb12ae06fbea2a2d26caf6430e5e41727b3f02d293a18cc803e2a18ccf4"
+      }
+    },
+    {
+      "key": "01020002030403040506010705070206",
+      "length": 48,
+      "scalar_masks": 256,
+      "endpoint_digest": "2fb9fd215bc2d27b61c8746d4ab3558b983ccc36605e6c90c7ee58c7b917a6ff",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "814d7988f2f4d3dd1027430fa1bce168d27d9e5522ac5b5ccd89b49299415254"
+      }
+    },
+    {
+      "key": "01020002030403050607000604070105",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "26333b2212f4d7e5b25b159d7ab092254d7bec2ba3374463c46379d5d77bfd53",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "84eeb42f20b009081d5672677170d8bafc78e62ddbf5c9825a6d1bc479f54db1"
+      }
+    },
+    {
+      "key": "01020002030403050607010604070005",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "c7aea3a30ef875dea428bfb12fc15ca9fd53726492504eb3644ec91e6e959fce",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2f366bf8970a77f97d100d367bd4b76506615ea96cc034854d79d1496a1e02c1"
+      }
+    },
+    {
+      "key": "01020002030404050306000506070107",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "71c198d9a0c2065cc92042b4495648a9a8b217e02686e696c3650a89a084df3d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2df56608a18c706f4d5ff9cf641f7b12eef8283cf3e582deed3597710da2ecb6"
+      }
+    },
+    {
+      "key": "01020002030404050306010506070007",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "083788be2f3f102ded20bafa6a631b90bd1fa4b6f5fa8dc64696e81de0a680f0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "860f2eb78a36a21d5810ad6182cef04369d7f55fe4e07474368c7717e11104b4"
+      }
+    },
+    {
+      "key": "01020003000304050106040702060507",
+      "length": 25,
+      "scalar_masks": 256,
+      "endpoint_digest": "5de95cd427853591756d0c1463a022f1105aa3b7fb256f9503e123cda9a26fad",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d51749cee0632eefe3219c24aab21ef984f8a753f8b8a4d9a07855600afa6194"
+      }
+    },
+    {
+      "key": "01020003000401050306020604070507",
+      "length": 27,
+      "scalar_masks": 256,
+      "endpoint_digest": "5038b07d78ae7f2dd56752db12fbb56edc3e5de15fe7701c9947a18d50473d16",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3c8599a184b4727a6839e1a62474a0389a563e65685c51e59dca7b16849fdb17"
+      }
+    },
+    {
+      "key": "01020003000401050306020605070407",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "202cf9084f5a5cc983387a867ee0bce2e2a46cc6c14d0b5fd6411bb1c7053e4f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c203034f0102d7caa80bbe425f5a9b0f7d75267c084dea64b9b46ffab4d40ad7"
+      }
+    },
+    {
+      "key": "01020003000401050406060702030507",
+      "length": 20,
+      "scalar_masks": 256,
+      "endpoint_digest": "2bc0dc4efa04c2570f2337b0e91752ae7594587df860260f77e979a5f16e1e29",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "73f18aa1c81cf5bc8666836ee2a9e2d9d0ad707c6e1b2a92626f92d6d53311fb"
+      }
+    },
+    {
+      "key": "01020003000401050607050602030407",
+      "length": 21,
+      "scalar_masks": 256,
+      "endpoint_digest": "451d8cb45d32b59b828cb202bdf91c7a6142d17a5e0c41ba085659506643a72e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ef3eef5c507677504c3fc1072142fcaa98d873cb9748561690678c38385c96a5"
+      }
+    },
+    {
+      "key": "01020003000403050406010205070607",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "4e04edd6c79321deef53335b1fdaee8fcc7354cf83f5dc74e84769677d26deba",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3a8e3552dd00dd43cb73a8d59afe4b0518bce7fb5bc2643087fd6e2038522cae"
+      }
+    },
+    {
+      "key": "01020003000403050506040701020607",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "5571eb9579d352743b8a5df128eef410160e0b809249a1183374c7c0f29905b3",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "cde382890ae08afda98f4dc19eaec233efdcbfd0b7225295a387aef3c716b1c5"
+      }
+    },
+    {
+      "key": "01020003010304050002060704060507",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "74d70965b95084204281e336ee541c9702e4b2c1642cfa0ad477545a63d43b73",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1aae8a08dbc5739cc7475182131918ae049cbd19c5259452aa8111eeb1d34595"
+      }
+    },
+    {
+      "key": "01020003010400050405060702030607",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "8b14920a0d4a69b1000d3edca09558f7d3bb8a75624104ec17326a67433d91a5",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "6b446053982f46b06f66ea6bb0411e1e3c5bfe2188ab9707d5d55c303791fc99"
+      }
+    },
+    {
+      "key": "01020003010400050607040502030607",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "5b9b6bb55a737ea96baaade2427c6356253154174663417182716bc5daeb74aa",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7e6b91ce4bd01cfb78eaa79b827bf124efad075a5a5f49e6caf568464e64a77f"
+      }
+    },
+    {
+      "key": "01020003010402040506030506070007",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "4f5bbce39a6d9565f4ab8a9a6fe6707d6a4ca290961967654b177cddf5306784",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9d14c6be6e21074ec9047ab4352e8d40d4144af4abc7fef3fe4fc6599a42028c"
+      }
+    },
+    {
+      "key": "01020003010402050003040605070607",
+      "length": 20,
+      "scalar_masks": 256,
+      "endpoint_digest": "4a7f2b37e64b90e1b2c38d45c61e5292566615ba22d9b7f60320cb53b41598b2",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "53b81f398cb97bdb4510ee0d2ebd62ca2baef646bb5c33640441749de4968f74"
+      }
+    },
+    {
+      "key": "01020003010402050406030700050607",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "cb630e8680aea812ab1dc940fd16c07beaa6a80b95e368d9111f5a2ef10a3156",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ca68b089060ce56f24ef569074d9c01c03efff98dc12b18f3011edb9670b2096"
+      }
+    },
+    {
+      "key": "01020003010402050406050600070307",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "5758190a280bcbd4a434206e568d9465bddaa37d02f87840e07acef0d7acc1f1",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7fb9c37aaa4c232fcdb3a8f4e9016daa21d7e1114d0e29808ee1571f51acd20e"
+      }
+    },
+    {
+      "key": "01020003010402050506040700070306",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "76c1eb967cd50767d8cfb9f6d40d1d593bebe1d6201f79921a83bb87d632a73f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a74efeaac17d345060ff923e56afdf9be4d6adcb418e5d054d66c0d02d77d3a3"
+      }
+    },
+    {
+      "key": "01020003010403050406050700020607",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "617ba5a47a0c6492efc79cb0e43761b6cc34d0b35d35dbb529fb7751b3963ea5",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f030fd49b0d7111a3c2bb04c0777b7da30349a136659041b4badff5c48386e73"
+      }
+    },
+    {
+      "key": "01020003010403050607020400060507",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "2258c56f72a670d1a4a4d6e9abadb5bd0ed1ce4b903eb1be3b0e1964cdffb790",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "fc69c23ee369f04e33bc6dc7a6a9cde165fdeaa75f7a23ed047b63c578bf2dcf"
+      }
+    },
+    {
+      "key": "01020003010404050206060700050307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "6d2c1010dc666d020177d1b826a19bd9b86a7303cc3e1048ac9b9df281711555",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "6f3539468a9d0ae8c4d3917ce6fad28f07f96d13c270f67f608a8890ad87f9b0"
+      }
+    },
+    {
+      "key": "01020003010404050607020300050607",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "ab14a232de5b6a147b2458c814b10e1a023eca24cf581776413fb011d0843987",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c11327c6354efd265aff156f8ab447a56523dc30a68d2874e2fa08b912c14d51"
+      }
+    },
+    {
+      "key": "01020003010405060007020504060307",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "ed155c2f541226fc89e3a809bb57af3f602854c574a252a5b49b7d5b6d955c5a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "cd9bd886f9430bfb128d6b574959f84b284d0232a841c596a694d27d6f7d3d3a"
+      }
+    },
+    {
+      "key": "01020003010405060305000602070407",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "8ad4cb75493562087a03305bea4e049d20a50c3304ebe15fb27bdd3ec521355a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5f9e4770db479e0bc13aa9ef49cba967fe19702198287c75d2f51194f41bdf33"
+      }
+    },
+    {
+      "key": "01020003010405060506000204070307",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "afb4f4aeefd85759c3bb801f25008a1b9a11008c3b0d374af9b8b06c33d480a6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ee7382461f567403021e054dd758d5713a05da7b5109c1ace04a4d127ab42453"
+      }
+    },
+    {
+      "key": "01020003020304050106060704050007",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "383731d9d8bb4bc994319ea9d85bf3151b930fbcd38a6288e9639725f87725f5",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "69cd103f206f1caa3770a7225558f1f242c9dc63336c1c6d2e0ba273b6363f35"
+      }
+    },
+    {
+      "key": "01020003020400050305060701060407",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "43050fb22ea04f2c91a4459e19c1a18eb300279d0e8ef7f8d17d50b2655c2a5c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "24dacd1c7d132ee2d3caef340aad8b0e62a9cc8d1fecd0442fbfd3af6990360e"
+      }
+    },
+    {
+      "key": "01020003020400050406050706070103",
+      "length": 30,
+      "scalar_masks": 256,
+      "endpoint_digest": "fbb906fadbf39173a9d6d30c456ceb56bbe053ab7d990036bbf500b095da2a83",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3c88a21fb4b10712493b4861337ea5515332e6e0f53031c0402c8b7c496a9bf2"
+      }
+    },
+    {
+      "key": "01020003020401050003050604070607",
+      "length": 27,
+      "scalar_masks": 256,
+      "endpoint_digest": "bfffd34f70eaace8c95d14da6977e95a0749d292d7b09d2563775ca420f6ba21",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0d972963af6d345c5a2c354245d5b224dc9a9d05171397c314a062f46f18db85"
+      }
+    },
+    {
+      "key": "01020003020401050005030604070607",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "a98e3c9d20d8ab17cfe7a9de2acee5c04bc3aa6bae7e687de38cb7f21f1a0373",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4a9ea1df6aa4a5032ae34b099a0429ce22e5fe791f584642271db19565e1597f"
+      }
+    },
+    {
+      "key": "01020003020401050506040706070003",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "59b59fe989dccdb4069604e0fd42b2307388e85f1f657f07661ec5d37150bab8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "efc96fd7fab14be8bbe4be717a1cc9921ef5433187af8f7c3177093e42f1ad3d"
+      }
+    },
+    {
+      "key": "01020003020401050607050600030407",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "547e9254102127541c8dacfc54a48e800bbed23f4ed09373ea20bb8a30792fdd",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4684a7f87dede30950dc0d44f3510206b3847f7e0b88ffb2160c707a6476356d"
+      }
+    },
+    {
+      "key": "01020003020403050006050706070104",
+      "length": 25,
+      "scalar_masks": 256,
+      "endpoint_digest": "bbef1aa9da04f838d036cccf2b13209c135f672bc9fee52d326dcdab3ff5b099",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "53a581a0d5d1ace9cb06c33bd22edd4172c1dd737b2ebc41a38330caf8c86e3d"
+      }
+    },
+    {
+      "key": "01020003020403050406010700050607",
+      "length": 21,
+      "scalar_masks": 256,
+      "endpoint_digest": "20a83bf91949ae61a1e91dd84e113b4282a63ae9cd1d8dc56ffc0a361e866a4c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "89e06a7211a1ef185aec3d71af732c4beaa9e721a5061f9445fbede850c39133"
+      }
+    },
+    {
+      "key": "01020003020403050406060705070001",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "098940625dded34aee11363d01fb7a8edcea127f6ac08cbdd164e74b07346296",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "8b5d19ffe36497f632cd4ee8b360c439e4aadd7d8818c3114973fdceb90cb73e"
+      }
+    },
+    {
+      "key": "01020003020403050607050604070001",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "57c3aede50ed2ced62712fe23587730c74b1f3a95796b30540a18524815f214f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4096fde8f548f1e61b5889d1c6afe788d860da6404962b1ef05458e6fcf8468e"
+      }
+    },
+    {
+      "key": "01020003020404050006030701070506",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "d274e69d8a2c35b0fcab5e3eb42b7938e265e146b75eb90927bf435450ebe1cb",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2be24b01ed2bdeb6704113458299417cdd9890b3701f8fc33c0d11d491a7460d"
+      }
+    },
+    {
+      "key": "01020003020404050105060700060307",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "2d78bcb6b5afe26e8d42bdb937299d7954f6294f4b7ce6395c35c051d10aec44",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f0aa92742b98fa2afc73a853c7b17ea7f3945d8e27186354b2dd50a94ab1bf0b"
+      }
+    },
+    {
+      "key": "01020003020404050106000306070507",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "422927e6ae4807bcaa5baa27ad38042b9604f826ee7afdd79e8dd08f8ba47813",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2000506a3792fed88b2678a7c72cd61b18466c7f33a12ae6c105b7755a469ede"
+      }
+    },
+    {
+      "key": "01020003020404050106000705060307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "90aa1bf2985aa2c9cdc88b457da8bc978126f87aa47033364b33ddb10c5f25c4",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f2dfb7c462e1d0abc90abdd95b472eac37f6fb8a67fa3b53998068ce4e02d716"
+      }
+    },
+    {
+      "key": "01020003020404050506000701060307",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "c9c09464c84e94e4657cf85b29bafa55da0f5570a48a6f09fcd7ebada3405df2",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a7fef5fada5a34f596bbf535eec37c317b47c1290e25bed001656faedd4cec59"
+      }
+    },
+    {
+      "key": "01020003020405060003010604070507",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "fb2d88428402605b7149b9bd0b2dbdd6d5c3ad45a3f2a595a9545de40244290d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4ae0d850bdcb18d5dbceeb64cea2d38bdb520e5699c8005c5312711e4d643767"
+      }
+    },
+    {
+      "key": "01020003020405060003010705070406",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "1bcd1f6300a2a87dee014177bd26dc8ec57d0e0869d0686ca1b56d324e53ebbe",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e98debd06979f0b40137580ac15f2aa5503c425a96417a20bb70df81ecc63c06"
+      }
+    },
+    {
+      "key": "01020003020405060007010704060305",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "8d83e9fe1386aa160b7d8271def4668bf96dbd07aa987fb66b18624d78a7f572",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7d1935c7dc71e5d38a7022e9ea2f8ed968bc6d20f0e4f583d781f5062f6d73c8"
+      }
+    },
+    {
+      "key": "01020003020405060007030405070106",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "eea0c20990e114a10ebc908db3882d8e66f66ce782f22e0d90b93a566cad9205",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "cacdd27307a3c5c6adbf0ba7e7b9729f205cd4d66e2cc30d862b026de89e5304"
+      }
+    },
+    {
+      "key": "01020003020405060107000304060507",
+      "length": 30,
+      "scalar_masks": 256,
+      "endpoint_digest": "0fd4dc56d5f463eeac3c4dc1579f1006173e1a7f52bed5fd080ce9ae27c7c103",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "35c9258ce3613b1fc3c62ddc528b2900d395adb8c993e6aab6df0300a4d0eadd"
+      }
+    },
+    {
+      "key": "01020003020405060307040605070001",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "ccaa0bc33758d9a33fe38aaae59eab6b43279a8909ae3379ee73978e7249810b",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7fe5f078bc91e5e4a56d0913b69e334356229601bc71732c2cae474bf660fd24"
+      }
+    },
+    {
+      "key": "01020003020405060507000304060107",
+      "length": 46,
+      "scalar_masks": 256,
+      "endpoint_digest": "32ad7d457d9442b93a3aa2c538f617d87ea2ecabefb7fab5e0e70c85131b5706",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "89030aded9e5b9a364485406bacadd9bdececc57ea413b427ebc8234aaa200bb"
+      }
+    },
+    {
+      "key": "01020003030400040506020506070107",
+      "length": 30,
+      "scalar_masks": 256,
+      "endpoint_digest": "34d9735207c71697b85166534ae4cfdfab2d5bfa254ae848c8cc96a46c65cd20",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b8915eb6453ae7d364927a9e26d0905d0dad4bfcbeb26a8bc571f54726ba5216"
+      }
+    },
+    {
+      "key": "01020003030400050206050706070104",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "89b4aa82693c4696266c7b7c169ce5a40489da3a93c84033347909136baba73c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "59961c5ed661f3de1f10dfe81d71723da3f9f4be6ed8535910a9aa08e8ef8d45"
+      }
+    },
+    {
+      "key": "01020003030400050406050601070207",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "f4cf013b19f0688ca823c92ceae3b1ca89004d499aee0ab54aa9689f3975d1c3",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5f0b02e2246e49c951c6d65c49c99b047a48e93676071e908d999d2c13fd3fc2"
+      }
+    },
+    {
+      "key": "01020003030400050506010204070607",
+      "length": 18,
+      "scalar_masks": 256,
+      "endpoint_digest": "ec61152466f1f77be819f65d063dbd6534eb8c239670ad563a621e6a178fdf43",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4ef7abbfcda5a242eb5d4c5c805a9d8b502e03a84b0006cccd472432fea66c20"
+      }
+    },
+    {
+      "key": "01020003030400050506040702070106",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "39e6edf56b6c344bc3389693d5cd57bebd989a52c8f0441bedaae5cf0cce6368",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "11542ca981f24fce3853a1de7c96d952d18f42036fbc7f08b7bce7b67bf046c8"
+      }
+    },
+    {
+      "key": "01020003030402050005060701070406",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "1da530e66d91bd55a3070ec560a2a2fe20ab780814e4f530399e42f20cba4130",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7295094a4a68390342f4386740c8e00472a0513d6669cd538d2bd8eed4bf38ce"
+      }
+    },
+    {
+      "key": "01020003030402050006060701070405",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "abe7c8a2bb44b16b97c5f58e5d9c69714a2e05478a401ba911648a2a8d007bc1",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5b5c9cd83ee4d263e4e678361b1b98a79b31f1528d3b28971f68bc4ccb010d38"
+      }
+    },
+    {
+      "key": "01020003030402050607010400070506",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "dfac23093dcd8622e14a0f713228224148994e3b9a799d549b9024a719adccde",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9cb9b804a4715dafac66788c0ea1b343f811d8ce7c03bf19b8e4b3c7a9b99284"
+      }
+    },
+    {
+      "key": "01020003030402050607010600070405",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "6963073114422670353ce46b147e9f3f4a2be6bcaf7dbf8bf4c48f71f55c7493",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0c2c33ecb80887a3ccba2f4e3799515326d8cca1751a4f6a2d308106b5f095f3"
+      }
+    },
+    {
+      "key": "01020003030405060001040605070207",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "5ea350e3ee2b7e9742c6967704c137be3becf124f9930c45c61ffa4bc7e6961b",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "304425e85dce31b307645bea0623b80bac058c10f203f71a2825e603daba91ae"
+      }
+    },
+    {
+      "key": "01020003030405060007020605070104",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "e82e26c50901b716d8e0d7cdb8ce0844d41c11b9f7b6d9c8e399c4f7c8ff5f2c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e3d386d27bac3c416b6de5d44da42bb3ff12846195666d9a352baa367b3064a6"
+      }
+    },
+    {
+      "key": "01020003030405060107000705060204",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "6b256e89a57598970159193c166fc558896c90a7ec513350516cbe567c602c37",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9ec90680991ef3fd721fefc2e1ef70c890cdafdfe90b03c0e66dc2d650fb7c25"
+      }
+    },
+    {
+      "key": "01020003040500020103060704060507",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "94664287d7290369eaddc24684b7ea95f4f59e96ad45830aa54b77e64ecb7cc5",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "53594df822fc65bfd2ae05c4a133a4da573e71a6978628d2352744057daf6148"
+      }
+    },
+    {
+      "key": "01020003040500040306060701050207",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "e6d7b66afa811411e6b42f3287a7f8be70453ed5b274d2649cb559d35813f80d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "909b04a8316a043862548ddd2c3150b6ef826e65f4bf291fd4ca1fd87887f4b6"
+      }
+    },
+    {
+      "key": "01020003040500040607020301050607",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "7542f10a863791fd4ada32c9767f91d7ab6c56cff4d095ab3a0f305cc6b2cfa0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "de4d6665356c35843dd8a14cae157774627db513979efb7c2139d251a82878dd"
+      }
+    },
+    {
+      "key": "01020003040500060103060704050207",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "6f3a875f712fc3a41abae424a0a7ef1d9b888c4c82a61da479f5b2a55fab01ae",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d9b37f5d41fb4598c6c837067c63495952b4e7ec3488a39a4b5bf29f8ea17924"
+      }
+    },
+    {
+      "key": "01020003040500060105030702040607",
+      "length": 46,
+      "scalar_masks": 256,
+      "endpoint_digest": "34b00c6cd76a1fd88184e55eff7a4cbcf63f15588bc50a0ed87242548cfb681d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c1cb1e842fe1886f35b7fe56fe14b4ed3ac5e06dd61b2f2cfe2d28ad7a44b4db"
+      }
+    },
+    {
+      "key": "01020003040500060304050601070207",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "df21b5a3cb3462a4603be637c959ae621e842203072f48daecec81d5cbd43a1f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3bb130befa2291b4962d22cde230dd853ad114419340ce28d64da2289592fae8"
+      }
+    },
+    {
+      "key": "01020003040501020006040703060507",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "d91f96ede6b09a88c0e49995b2150070e606dc696836ed92773792d1b8bc54d1",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "41c51df7b01f53071e43e95cdca162c384ee5311381e8e92907f379e83d42fc4"
+      }
+    },
+    {
+      "key": "01020003040501020306040700060507",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "e0a391341dd19e44053e26d89fa04dd13a09c831bbc9f5082f63c1e3836b517f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c1e65217a66301a0d67d1ce025ee7fb4a05e115493a2c60b5ee4dd5883166fb1"
+      }
+    },
+    {
+      "key": "01020003040501030006060702070405",
+      "length": 20,
+      "scalar_masks": 256,
+      "endpoint_digest": "55744a7cff084b122382b9be61ff620c939736dd789d4473ecf5fadc8971f379",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4eb25da81cda59888a875055a6ce75df554d93d83573c79dcd664bd9b451c5b4"
+      }
+    },
+    {
+      "key": "01020003040501040306020700050607",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "d4cc9fc73a942873b2e3e45e4bf2fd9ada9305d080dfc38f2807d36fde403306",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0444721f75d3568300c229f6cccdfd15f6eee59ae7e3a7be068924e7afcafc11"
+      }
+    },
+    {
+      "key": "01020003040501040306060700050207",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "9975bb57505af5ca41b9133559b1a62e38ae09c8224abeba9159424caa32dbcd",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b354d4c833cc08f85de7ceac3e81d0e420abef3f785894a498d38675b54a9632"
+      }
+    },
+    {
+      "key": "01020003040501060003020705060407",
+      "length": 50,
+      "scalar_masks": 256,
+      "endpoint_digest": "23ca105a6e51dd46b273690cb2e6e487534eb13cb1776a2e32fd4303f7d85717",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5492fbd9d8abb4bc50afd94a68dc5cabcab3bf6e632530014879038a5c12257c"
+      }
+    },
+    {
+      "key": "01020003040501060003060702040507",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "667ba451b8958fa903d8af8984554f86c6161d019b057de2a3a51f9cb66e9e8a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "83d01d244d949db02eeaec65e98be2c1abb96c27a817cf7c75526cad74cc7b00"
+      }
+    },
+    {
+      "key": "01020003040501060006020503070407",
+      "length": 31,
+      "scalar_masks": 256,
+      "endpoint_digest": "63c33e6d23f0a5fa5beec811c55d4ad16bb995bd1bec8a92fca7e31996cc8d17",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "37d72cbff1840df94e798b7087644e8e551eb89019a895d000498919550c7ee7"
+      }
+    },
+    {
+      "key": "01020003040501060007040506070203",
+      "length": 46,
+      "scalar_masks": 256,
+      "endpoint_digest": "2a02353e96bf733fcff87bcba6f52aa3b2710ef35718494076c929a2f6358c08",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "8c14c1a14246b79e317b4cb626f5547ec7895f71bec3fdeb7bcc2cfe05ecc4a1"
+      }
+    },
+    {
+      "key": "01020003040502030006060704050107",
+      "length": 49,
+      "scalar_masks": 256,
+      "endpoint_digest": "ca3ef3128e208389bf4bfc1ff51d84fd3fa4660eb6d6a20bef7e1e534137979d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "050ae7514e3e82b1fdd8010397896610e61ce7535aecfa5482077996db86ce3f"
+      }
+    },
+    {
+      "key": "01020003040502060107040500070306",
+      "length": 45,
+      "scalar_masks": 256,
+      "endpoint_digest": "f40e3b3ecdef0284160a65a50d674d21390f9de6e683c5d521ad21bebe02ca6e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ba0f87b4e5e07d20a4e6a3dde07e29f72cdc0cdfb8e6214b638b8cb77c70d0a3"
+      }
+    },
+    {
+      "key": "01020003040502060305040701070006",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "1df232ad550c6efee1f24002183e5e5258c326a08f0025c8d5211099b9d9ea6f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1e6cd414f68b7f43ea2d4f5aa813823228a197ff38944028db9bfe2bb4a8fe16"
+      }
+    },
+    {
+      "key": "01020003040502060506040700010307",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "fbd932bc94c34fc231161e024b81489ede5d22e650c4401b9952f55c0ed2c258",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3898f5ef959dd110092fdf8d926cd952981ca102bb1133a2f16a891c7977dc1e"
+      }
+    },
+    {
+      "key": "01020003040503040005060701060207",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "afe22f3f22c6b6e6a41f8aa20df4f738fefba96e92acdda3cb502056a4b14a65",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f7e9ebd0133e13444533b7d702ed8ddb861e8985a0b39f39eca482e8d1ccde1e"
+      }
+    },
+    {
+      "key": "01020003040503040006010206070507",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "7e1de0dc6af8c537866280842c695599663fbec8eec56d8ebc50d6c1a902eafb",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0183fac070d17c2d7f0054d83902f7d37723bddb84bd0a69a977817a72180ffa"
+      }
+    },
+    {
+      "key": "01020003040503040006010705060207",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "9ad5a0c7b73e200892146e225bcbb331731f41c6c4f6c04353fbbdb25e89b64e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "71f9d9dcb401dbf903f132866e868d687711a8e5d557814bec783be288d9a52e"
+      }
+    },
+    {
+      "key": "01020003040503040106020700070506",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "16c8d3f83c644f702c2fb759a66ee815f9bf05ba41b980c94b8a7dd89d9ba66f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e68f90dda4b875920aecebee3aade35a444f74aa3ac45ed50ca906449584b714"
+      }
+    },
+    {
+      "key": "01020003040503040506010700060207",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "7ae3aa617a0fc650811a63a4e7d7d0d56e49cdfcfcaa5b1ec5dfafb144e3c7b0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "cdce7a264e8c0a9d7c1b188968810a8c165a786c62a6ddbe232aa8bf9402b8a2"
+      }
+    },
+    {
+      "key": "01020003040503060005060701020407",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "3cb1257d2fe3cba367f561720c1ed963d0a3e60b616f81fe94bf5d78900b3f06",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "28bb1a7416ed2e7e79d1d34bfb28c69af83ef60c27a3614e0f35cdfb1f7757b0"
+      }
+    },
+    {
+      "key": "01020003040503060007040701020506",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "2954809aefacf18818456260759c501a64ac5b9b495dfbe9bebb601766962812",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "209b0cbd4f63e6d49cee163ac9386b6b9c02346eee127ca516e249d0e75f862f"
+      }
+    },
+    {
+      "key": "01020003040503060007050601070204",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "3572a2cec73e1c7abf9a7a14eeec51815d3885ff0a13323ca2866ac4e8b0d944",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "93df7aa575b27d1aba8be222f9b5cc14243789686369df4ac8cbb66d19fef336"
+      }
+    },
+    {
+      "key": "01020003040503060102050600070407",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "21d69195e797d4c9614f994d549f78b0979976d39b76343d4020e4c8e6d3e30b",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ddb1735eff5c867a7cd128eb656939ee84f26417048c5491e684b78fbc68d9b0"
+      }
+    },
+    {
+      "key": "01020003040503060102050604070007",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "a08e84cd85c3aa2e421286d503d521de0aa316712e53379c26c97bd808065cc7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "985a2a6e0911784e31bbf91436af5413b3ef973704ebf0b54f42135899abe626"
+      }
+    },
+    {
+      "key": "01020003040503060206040701070005",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "a962cf5a786e151f0250fcf7a109efeefbf10582ad74ea27c8ee3e0c76319fab",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "16417e098e3d1811b6cf92702691423de9776ac14996a5107aafd0e1bcb47b36"
+      }
+    },
+    {
+      "key": "01020003040503060506040702070001",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "92b785433737982145d7fab073c771a8da7e8c2bdb1f37e71f03edaf4ab37041",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0757ce5c17c4ecf83c6dd2354923691fffaeb848ac85f10b70e132b797bf744d"
+      }
+    },
+    {
+      "key": "01020003040504060002010603070507",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "87fdb0fed66d373ee1638a588dea98648f650f2a31330b3ba8b566374a3f467c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ba6e8a02835f5683256bc98e7a474ff8b6347e4a7e40ca246929373f46fd36a1"
+      }
+    },
+    {
+      "key": "01020003040504060003050702060107",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "6ccdbfd790290eebcc82e979e5cd12f4c1ed0450895d921f39b017f34675ed82",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "645c6a5bae6da4106877956c66f4cdb0be9baf45ed9b7762aea29ce789cdcfc7"
+      }
+    },
+    {
+      "key": "01020003040504060102030506070007",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "2129df1017276613f98fbdb779d39759ad37c4d721f77c39c2325d1af40f1efb",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "091a4381dd2a16cf1312df586762a28cb8e10dfca7f6abd518bbf5311b729357"
+      }
+    },
+    {
+      "key": "01020003040504060103020700050607",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "62ac82e3e7f08573dab3600c51983b259d6dad0a3eacf140c6fa1d721f6ab50d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4d9443809b615b6f2c0a9e9ac25ec85cc2bf383b85bf32c08720653433c78a28"
+      }
+    },
+    {
+      "key": "01020003040504060207060700010305",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "ea57fef8c5f7ca6669ee788bcfc896479874efb7fb4151f326c7b508447e60a6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "301fe98bd3d4d1ae3a9089e6519715b4056c476967a1244c03c5068aa65c5c9e"
+      }
+    },
+    {
+      "key": "01020003040504060307000105070206",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "c4d6d11b294831b8e19d7192c79e76441edad9c06ab42f7b4eda9464e5d31172",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "41ceb981d9570bef1b9740d4c869e8ba0d741e1b96f037cebd01dc2ccb471791"
+      }
+    },
+    {
+      "key": "01020003040504060507020301070006",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "b68d32e27a80474b6e97d82743c1d79f6b2952c3b1eb48d848bee6e9d2f8873f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ab8e5cdbb8220bdc878e7f992ef1b33c8888ec8d059d35e4d0fd0ac5a75d27ca"
+      }
+    },
+    {
+      "key": "01020003040504060607000702030105",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "e8b6f522b140ac4765dc1dab3fd1d823e9fd796c042f5061755bd92f0535ac40",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "02c8a73c4dcab5f49df36a3fcf50b0989b49e0754e9713067a7e941ad165b1a3"
+      }
+    },
+    {
+      "key": "01020003040506070103040600020507",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "a76ff9dbf8d1624f7682e951d561b3a0c0e69771b375b292b12d6f35eefaf2c2",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5b1b1d52e87b16d6c561367c0f527f496a169852fc472402755a60c9e5f53773"
+      }
+    },
+    {
+      "key": "01020003040506070103050604070002",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "c761e9da7d58a7f3c97b31a62c16d82ca955542eb492ff1b0b7de59a6477c31a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "172c37d1f3859d7999d9e39e29fd57b1df281cb82095233a5cf6e03f4c6b7e84"
+      }
+    },
+    {
+      "key": "01020102030400040305000606070507",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "0c3d93e878754e1ab9a8030730877843267fb439204e853b006a0957eaa223a4",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "bd95168639aae8dc9e9f0e4a94e08268688dfa96affd76c4f597a59820ed4258"
+      }
+    },
+    {
+      "key": "01020102030400050607040603050007",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "310d5315b40b24fa885f1caff3a380010a2494097b8b14bbbfed795f7c8e8897",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "29ef53ce7ddd1c4d473dfa1324deb8ca3d7113973b9e34cbaab3ab23c044f257"
+      }
+    },
+    {
+      "key": "01020102030404050607000500060307",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "c813d0cc230b35d878175eb362e3e1b7197273c050ccbc989e7437d0df6f4bd0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7f8c420a5ecf8d69782345bbcfbed2804b7a1ee043a8858a62e54d4b81eeb407"
+      }
+    },
+    {
+      "key": "01020102030405060507000603070004",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "412c2ffdd2aba0219ce19675776107e500ecaf07d5cc6c0cf17d840db3e4cd9f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b28b2d57ce68d148cc2e07462da2ee6c9d5b26ab3ba57efcb17e2ef72a5129ec"
+      }
+    },
+    {
+      "key": "01020103020400050406000705070306",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "e02d1a73af4ee4ffcb7c8d280d09db2832e153d9e567744ea2f4fed7c6a47a48",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "0dbb5e367d05c6a30310de386a44bddb2900c8e56d85fedb7e6a43710957d1db"
+      }
+    },
+    {
+      "key": "01020103020400050506000604070307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "7b45c9a430da70f60490aabad30d4b0e84d80b13cecb82f5817c907d5d6991a6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a2597f2f3ba0c27515a5a3d459d16985f6f6ad9bb9a2583e6165d7bbcc07081c"
+      }
+    },
+    {
+      "key": "01020103020400050607000603040507",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "557a3c1e6221ba237afe2a15eb739bc8beddfc424f506c1d6c9bbed74ceadf8a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ac5fb02bf85d9e3fcc0a435fa51d817edaa9166d5843a6b51f7d28e1e67c2215"
+      }
+    },
+    {
+      "key": "01020103020400050607040500030607",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "5fcf46f712adcb0ef9a4e0baf27d5b42cf89007fdc4ae94f6de2ee8a1a5d2c0e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "dce3f750f580d3e19e915dde449082b4f2e43c3a493130145f8f5d9206a4878a"
+      }
+    },
+    {
+      "key": "01020103020403050607000604070005",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "b98eec758ec0128a91c2cd67459c2772764499bd77d76717a73d512a66acd86c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "269c9f16d437a74cedb77cb40fe0c13c6f5dfdabc97ff6ba83c85d593d475043"
+      }
+    },
+    {
+      "key": "01020103020404050607000603050007",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "ad4297ff32144e654c387bc43af26d218858c6c45c74818e741521ad0adcd395",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2a67185bee2814e86224cafa646bafee4e2e3d218c0ea87170e23e42986613a3"
+      }
+    },
+    {
+      "key": "01020103030405060507000600070204",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "0c95d5c7601fde6f2a1ebe4e7c795ca3d84e379563b3d44d1bc73c946624ac57",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "17fe1c8e792bbb2fe3f1cd0f35c6c975f70b7ea22438295cde14031a5da6c0bc"
+      }
+    },
+    {
+      "key": "01020103040500030006020406070507",
+      "length": 24,
+      "scalar_masks": 256,
+      "endpoint_digest": "f4ee440f5252610a11c87e9c5ef9d300564ca583c0e341df3abb85d1a60ff3f0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "327b147b3762c1b0d8cf3eb7498e45e2cfeff0e970c13370f84ec382ce64d73a"
+      }
+    },
+    {
+      "key": "01020103040500040002050606070307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "c4bfa71b214a38d5410b1ba7b139c610c5983692e48359c8d3f6b268fbcfdc5f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "47876654f2af2f4a69ea937da97621b7248cf4160a601edc4871016541cd8065"
+      }
+    },
+    {
+      "key": "01020103040500040206000506070307",
+      "length": 28,
+      "scalar_masks": 256,
+      "endpoint_digest": "41c0239e1f16f6d851226b9f34adcec490c42d35cca313b9e36c5877f0505b76",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7f280f9271704686d4f47f14c238943eb918e48df8ada421f91faabf865889d8"
+      }
+    },
+    {
+      "key": "01020103040500060003060704050207",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "b0ca40913270b0681a8a940062602e1e9da049cc7713debf000e96385e3d0933",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "adcd1d4e57fab6e72f6576700c01fa4da95a4029e5b96e53cf724cc7316074fc"
+      }
+    },
+    {
+      "key": "01020103040500060203050600070407",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "c9ea3ba6c87baa48bc34ca7f60ddf6a15b8fe20925c768b4eb32d8de6881b623",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f5e98ae37ef20dc61481ce144834c63966475f578c8787a5cc287abf2eb4add3"
+      }
+    },
+    {
+      "key": "01020103040500060203050604070007",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "82f4ce064dcb21f47448b94ede3e4aa4c021b92bceaf5a57ba4a21eacde963ec",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "bb6db26a0c259ae813a7ffef725eefa6ea80218cf7bc1d540fcba3b881921dab"
+      }
+    },
+    {
+      "key": "01020103040502060007030406070005",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "2ccbe1a723df7a891ea9ce35db1681522e11ca79dfde592bad4613f2da6ba6a7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "388febbeb57bba49ec53e16ba64b4c6216a061c994498de627750640c19b044c"
+      }
+    },
+    {
+      "key": "01020103040502060306040700070005",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "e6dcbfe5c2af6f9917905f509fd9a40f691665a3687cc158f0b4ee22bafa2961",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1976092c3b33790f15098d8641070b050cb9f3feba9a607f41d9e5d153323eaa"
+      }
+    },
+    {
+      "key": "01020103040503060006020704050007",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "16911556a3db47f87cc6ac70278a738aa108bfd85a9a7994133fa83da0530747",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d6468f766fb11afbeb3126864031a15fa14d6b2e4860105b98d98d4c558c663c"
+      }
+    },
+    {
+      "key": "01020103040503060006050700040207",
+      "length": 31,
+      "scalar_masks": 256,
+      "endpoint_digest": "a6ee91994303f8090233571d0ec57e9f580c5042ee38db9cc2a909ca5a1161fe",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4386197e2c70894b2e56466e3664f7a215bfd0d68b2d5f97e2b3fead4a99948d"
+      }
+    },
+    {
+      "key": "01020103040504050006020300070607",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "938e86eeb51362b7e38f68c7659c38ac5e3fc6b04c6fb43a934659176835c963",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7be25f908713bff401c6f4a3ff3a8dc0e0d56fe8b1e03e538c050f043cbd8566"
+      }
+    },
+    {
+      "key": "01020103040504050206030700060007",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "2db1a4e03cbe9fc408b32b65e88427a0afb906fd7688b25ce3229f4a0c0d7a23",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d4ef0d492eee33350d2c6f105bbaa5407a98f4e6eb36d2907761c4f1f4442760"
+      }
+    },
+    {
+      "key": "01020103040504060002000605070307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "21429be63e74984ca2afa24211c0c6c3e91ab35ab8ef239d2590f21a5e057a64",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "40a70d9709137cd59d25a79c3f8b5be142e2188c017a7b980f7f08937bf186bb"
+      }
+    },
+    {
+      "key": "01020103040504060002000705060307",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "76f87b702751f1a9c9227c04cbd5e9884554475f957746a9794299b2bd57d39d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "18659bb2c84bfa7c6312a47349e6e6f3ea146c6a172d3852bceb47b76dc7da4a"
+      }
+    },
+    {
+      "key": "01020103040504060005030602070007",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "9bdcf58f99b01f483be53bc1b78a5069df360801750eaff7beaf523b7604ad1c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2783e9eccb3760b231677ad77cfea38e2cb9dbd05336bda0aebcf707df104e4c"
+      }
+    },
+    {
+      "key": "01020103040504060205030700070006",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "d0fcf9d6bc5942f8cd23092f509be22f4138879c11ba126e3c590676da70bd01",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9e6a8fb73efc0f67b4807257035c1f8830918d6dd0b6ab8c95101c600d624251"
+      }
+    },
+    {
+      "key": "01020103040504060207000305060007",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "79b625f1f5678c24467a6de8f3525bcc6910a695df4a32bf20e9d4c97957996e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "452d37f1c08af949ddacc9e21b987638702a141ffe165de0cec4b3b3254ed24f"
+      }
+    },
+    {
+      "key": "01020103040504060307050600020007",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "906016f07fef959722af876de6247bc5d7ed721e31cb31abe03d204429f4377a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d0fe71bebef232179f68051694ed9f65fa97b5acab87c9baf1175d3ba08eafc1"
+      }
+    },
+    {
+      "key": "01020103040504060507000700060203",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "86a7f7e943f3e25167fe4225ff04ccb5f4e0566b44133458f1bfc7dc2791260d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "8ca882c574db3624e4329adb1a1928469d8e205eff875335ad91717b3d7f89de"
+      }
+    },
+    {
+      "key": "01020103040504060507020300060007",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "6ab9d42bb19b5290948832cdece2899bd9af5621df5442e5adf04e314ff9167f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ab56b3309da44aa50e17f18e13a93135023b0efc8c7e013e7390a0391d32bd5f"
+      }
+    },
+    {
+      "key": "01020103040506070002030400050607",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "065f18174bd3c0422563ea1bb094300770d5ef11ac9c07de815c63ee0b9376ed",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ecfcdcd1675729e9680ff47833086e97e496b24db1dc9cbfb53fbe5ae9194eb0"
+      }
+    },
+    {
+      "key": "01020103040506070004030500020607",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "46b75c9ee3e19b65df2bc9eae48466cd5e19a5194983d1232be732f7c9d34a50",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "95709f53727f109cd2cdb173d5bff79febaa8bb0d6b4f24b988f677e4e4c6bae"
+      }
+    },
+    {
+      "key": "01020103040506070005020300060407",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "4bdc165cf3f6e9ac35382fc7519b6531f722e4702a1e9a185467f295c0e45cee",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "285fe983e02b9d301cb75b0aa6a13757ade4519abbcf9147821b3cbea389cc52"
+      }
+    },
+    {
+      "key": "01020103040506070006030402050007",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "0e4fad2f19818f7eddbb4fe259062e22fe3f9fdbe612814e76a8234a3a3208d4",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b69ff0a9e0bca9493eaf7abda47ee505dcbceeb5079af64a8c4b801837c6fead"
+      }
+    },
+    {
+      "key": "01020103040506070006030502040007",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "071ef35f29524bc0e469d7cd1a2fc35a5f6f1604e2e826e2a71cfd534ed3d7c7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c19fafbabdf550cabaea9b67cecc5ee4afc49dab57552b64d8c6ef59bd44cb63"
+      }
+    },
+    {
+      "key": "01020203010400040506000605070307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "dd36ccf7b14c69d33544afb20a88c92d5a72203208ffc23dd01b8788aa6f1ad7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "cdc96cf5a42785ab4a79b65186a8ad8c590c01a80ef4aa6820a4f5d7ce646cb4"
+      }
+    },
+    {
+      "key": "01020203010400050406000503070607",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "cf7b6e07aa43d2ee68e219a62fd6c7bc9c5f5dd3c4189bc849ca7486cf0f0c14",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "05e016cc4ede5bee23a3a4c675d4ab57d50fe3bbe996c41071992ad94d730ae5"
+      }
+    },
+    {
+      "key": "01020203010400050506040700070306",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "4f0c9936389960be5d211cd40940f8d2b6eaf23da756179cdc4114ef84bf2431",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "782a0b5ef396b293e6b62b62a5358b4869d572d4c1684d073af04ca98739eb4d"
+      }
+    },
+    {
+      "key": "01020203010403050406000706070005",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "f94a6d2040d6de39246a104905997d6c875462f34be2861f02df741d556b249d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "185a860f9c37e30f90c3d79945331f230b921cc49eefa1f52d5d5fdef0a9b45d"
+      }
+    },
+    {
+      "key": "01020203010403050607000400070506",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "2a3a0bfbd459d3299af619e01947ee760ec2ffdfaab9ab7361aa8b953dcdb2c7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "972429f69cc3c849ffdac3fb2571e1473ca4a533931bd90f22e3a1e494ef33d9"
+      }
+    },
+    {
+      "key": "01020203030400050006010705060407",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "845959449efaeba3f432b98a134e268b10878f9d5433075defe99abb8a4834fc",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a9606d9e95676c1603d46c568bd7ae0e76d3fb074239a43a95c1b17ad91203ea"
+      }
+    },
+    {
+      "key": "01020203030400050006060705070104",
+      "length": 45,
+      "scalar_masks": 256,
+      "endpoint_digest": "a7fb7fd7f2a5871343eb4f488089209990ef55a05812f1a75da9490e3922753c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "118e0912ced21473a1a220470d066605b867cb09afae69a23bd99ca6b4e16803"
+      }
+    },
+    {
+      "key": "01020203030401040005060700060507",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "6cd92fa0a93116233fde906d5073c652fbd5d9289929c5e7f4b8c9071549c0f3",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "71055360c0ffc0505fa41ee4030cd432934913683f4f9578b11874d0cd47c422"
+      }
+    },
+    {
+      "key": "01020203030401050004050606070007",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "c25b0d2e7cdaad0b8d71dc7b1520741976149ea755ca932dab2fc675422750e7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "fa98133d863817379ddf8845625b6d279fcb1f858f192eadff8f903c82da7670"
+      }
+    },
+    {
+      "key": "01020203030401050006000604070507",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "2503ff61a53c235ef60383a4e5f0be48af37cef83363c83a502c6ab0a36cd44e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "363933d0b8fa8608c8767e03d981bedeeacd07d467c326b45bb665a331e6de6c"
+      }
+    },
+    {
+      "key": "01020203030405060507000700060104",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "90f0355b027f1352576e7acbc66c9bbbbcb87cd713cb4300543339b838df71b9",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3dd4dab859632d6ef42cd33782053c618e0b2e5edbf3bd287a217ff43eb4eccc"
+      }
+    },
+    {
+      "key": "01020203040500010003060704060507",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "ffea6a8aaf1e03697027740248fc52ce616587687df9bf6833be1a1a3fd0b2c8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "64df0fed9f97b8894d263d33657f9042ef255bfd7634159e69e31bd47f973216"
+      }
+    },
+    {
+      "key": "01020203040500060003050604070107",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "ad2f0ba28d5cbd7e99bc1e299f94702ff6808800eb2bfd454f8c940f2b5e14e2",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "bc7d19930533dcea28e7d11f65bc50073e86a28fc8d698274b3b1a1ee328b28f"
+      }
+    },
+    {
+      "key": "01020203040500060004050603070107",
+      "length": 33,
+      "scalar_masks": 256,
+      "endpoint_digest": "5f99b6b2552dffae878baf7cca1357e30c428ce88c21724808267e5ab5c5e1d5",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5f1d07131869e19b469832f8b2acc2cf64b27e0ec78f10123f7971713bff7a92"
+      }
+    },
+    {
+      "key": "01020203040500060004050701030607",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "5a71f9cc0a65bdd0a29f9f85f95b75ddf9ba248edb966e9265d428331e415990",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a312cf6b2bdf6e31bf145bf725582d1955583686de3ae04ca5b01c52083eb972"
+      }
+    },
+    {
+      "key": "01020203040500060006010503070407",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "61029067fb8dd40f9d83393de91a45b411e6b2cf7d4ce430af34319e8e2e3d5c",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9f96b6e253625c2c2b2c70ef3b7698c352036980428cb103c6feb6ef9abc06ed"
+      }
+    },
+    {
+      "key": "01020203040500060006030705070104",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "451555cc2bfc7b04d383d83c1c1355f4f902a5bb79f15c28dd16831c4c67f7a2",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4c56c7d251fc139d30b6cedeece257ac7c0c53341fabd4f95729caa57065bc6d"
+      }
+    },
+    {
+      "key": "01020203040500060007010405060307",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "dcd644e6c84312242d4a51beba11c55db84d877efefdfaf1f718fed044088b77",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c5c5b306279b444ae3b01940f5c924ba4d913b5b30c6dfd0e95f4bf9396f0274"
+      }
+    },
+    {
+      "key": "01020203040500060307040600050107",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "31cdd8243389b93c4d71c4792bf73e5644772e287ceab20df68cf4d68cbf0607",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "139ad1f05e74f0a712c58ca6268fdc76f94a57b84f58d2181f791c0abbc67be1"
+      }
+    },
+    {
+      "key": "01020203040500060406050700030107",
+      "length": 36,
+      "scalar_masks": 256,
+      "endpoint_digest": "ed99e1ae72925a07f084e6491829736294675e0d81ac810ae181911a9758e919",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4216cac49efbab135284591f9756f7da27347a90775945398bc1b3454bab8c92"
+      }
+    },
+    {
+      "key": "01020203040501030006050704070006",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "14b9b935a1046275c10d8a7d7954d2f2d9ba1d244e34246d1369df37da792af6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "6b223f47b7e1c0edb02b73777d697a65f472b895296a56aadf5075f60e0a8d87"
+      }
+    },
+    {
+      "key": "01020203040501060005030600070407",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "f88bb3ad810cd452e350ccb2014c3b03caed18d197f45ce2a9b6c32733d389bd",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e23787e67313eb913ca60639f410a4bb9ed87294192e1374385fe4ccf5422f0e"
+      }
+    },
+    {
+      "key": "01020203040501060306050700070004",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "842158a3c88e6afb4cff99048de55033f93e15e49328cf4be647ee61f74bf2f8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "486083d9282d7bf114776d0773f28318425ff22d7e3df2e1a36541ee176d9bc5"
+      }
+    },
+    {
+      "key": "01020203040503060004060700050107",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "27ba27289a59ec1a726ead1c936c9e7b9f9d464d7ac6de49a7721a6d3bcdfb57",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "14763faa71fe49ed7367fbdfbcf4918d9db3ea74f930e85036c0f32e4f080dda"
+      }
+    },
+    {
+      "key": "01020203040503060104050600070007",
+      "length": 45,
+      "scalar_masks": 256,
+      "endpoint_digest": "f0b24030061e43eb3eea1f4cb48994f3b95f66eae43fb3f3a5bfab4b113a3f69",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1d861eece21745404ce5700eca3475bc0d73720b2b947388b81ee1d5154b3448"
+      }
+    },
+    {
+      "key": "01020203040504060001000705060307",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "0f5998876c36c946f78f7875d88402e2987d00f20aa2682e5cb387b861ea3e8f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "32d961dfb5bb9942b9d261451afe4f162cc6ce9c0a0bbbfcee09fdaf85c464d0"
+      }
+    },
+    {
+      "key": "01020203040504060001060705070003",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "d74f284c8a2f16caf5ce7ec933376211b013c29600bec4848ed6e32da1e616c0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9d2f2f53ec43224dda02379d7f76da97916010db6a6cdc3f69284bf01d2682bd"
+      }
+    },
+    {
+      "key": "01020203040504060607050700030001",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "a460d92abdb1825d3e10ca41b428b3105fa930975a91f3cd2a558c3e53aacdcf",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c241c040c830a5d7cee9e74ecd0979633805a873bf062cc4055fb954a1b9fcc7"
+      }
+    },
+    {
+      "key": "01020203040506070004050601030007",
+      "length": 32,
+      "scalar_masks": 256,
+      "endpoint_digest": "1d263491267d836b5276a947e773525a739a77fff174c6d883da0ecf05c5bc81",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1f445ae7d41c2c56d967e40fda587d0ecbc93dedb030ece6379704ada298f1d8"
+      }
+    },
+    {
+      "key": "01020304030400010005020605070607",
+      "length": 23,
+      "scalar_masks": 256,
+      "endpoint_digest": "00e9dc6c89aeb202d73465c4523bb87143fe818f14a15bfb6810b6b3ee3b30e1",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "3e847aff5e5210b69c622bbefd291b6540510c6f0f91554346f31651ecb4a7e4"
+      }
+    },
+    {
+      "key": "01020304030500010607040500060207",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "5b839fe1c8b246388d7eae34ab3a98504e15e8abf5ab6658b839ddc599da2c44",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "8076f45173b8f29382532411cb8f60fb595f74246e7ac7b245cd376f5f2d8d29"
+      }
+    },
+    {
+      "key": "01020304030500040006050601070207",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "94f78cebaae87c9a8031a4a8bb48bac14b9e24333ea60a63ad35cdeb87112ff5",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "2632e68a279f05e8216523ab3ee451fe1d675cdba9f9c248bb523f928fbc16a5"
+      }
+    },
+    {
+      "key": "01020304030500040102000605070607",
+      "length": 21,
+      "scalar_masks": 256,
+      "endpoint_digest": "b816837c42b2bada52c473da04eaee155622420d8e639f4774b51b0dd61d54a4",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d90087def9741fc9b00ec232b51049eb241832b80514cf88e0c723d6842a7996"
+      }
+    },
+    {
+      "key": "01020304030500060006020701040507",
+      "length": 22,
+      "scalar_masks": 256,
+      "endpoint_digest": "cf2301835b4c0e7818956c1f8e8c1f97ee6ed14db94014ebdc13369269a3c992",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ff8fc07a593422f52195ccc794b5a971a8e492f62407ed617d59a102248d5a42"
+      }
+    },
+    {
+      "key": "01020304030500060405060700020107",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "7cf58d6e92724c2fb6dab828594be5351fa48e24fb6a08dcd30ce1c559b5746b",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "bc15cd0da0276a3fca1d04847a6f0bb62565fea7022f8e331687460c6d15a3b3"
+      }
+    },
+    {
+      "key": "01020304030500060507040700010206",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "80206c898d79cb127a7bdf0be9ee6ed4e3764fcaf2ce9cd1342dc02a18fd62c0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "fdc0816abbf441931a7f58518a660d50043e521791d4219787f4c7313467ab06"
+      }
+    },
+    {
+      "key": "01020304030501020004050600070607",
+      "length": 28,
+      "scalar_masks": 256,
+      "endpoint_digest": "75a59605bdc83e941ede162ec7c0edb6c49fb79ed25adc234e757f781da1a56a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "cbc95ea8a1c20069c875e53b397dc129fd9e6059fd8cec28506a2fef8314bec0"
+      }
+    },
+    {
+      "key": "01020304030501020006050604070007",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "59ff6bba2afb8d53a0ed2238d1f5560d57fa0e0a0d9c6487b2f5a93c0e55d57e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ed7234fdda450cd7d2cfda9754fba3ac197ddb48957a880f29c8dda5a9c7e4e8"
+      }
+    },
+    {
+      "key": "01020304030501040607000600050207",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "3473897cce16578889912cc6c322625f964497e9c427650ae8033c4e432ac11f",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9cfe0f152b22d744c4d23cb0d62fd454bbb6e4a5c933d2e7b395c648764fe8c8"
+      }
+    },
+    {
+      "key": "01020304030501060004020700070506",
+      "length": 35,
+      "scalar_masks": 256,
+      "endpoint_digest": "03782a8bc4b2dda97557ba7b2c2b9217baf8925539304599092734aff0179f50",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9ede62305819440063b2fd4ee033792412673ea2b4f90005e5aaa5992efd9213"
+      }
+    },
+    {
+      "key": "01020304030501060004020705070006",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "42c93a0f3121408c76eaffc51bdb82a75d35b95555f9be45254f170bc6495944",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "15ad2b270e75ec27162edfdb0c56050afb1bd67c408d81322a6a8ccdfe13057e"
+      }
+    },
+    {
+      "key": "01020304030501060006000704070205",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "724ce95a6d182a7b4e560fcbd42669296174bcf5ea75f04337ee55157fa2d199",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d7cf0e64e868c9808dc93681e485f1d7f6071d9f5cafc1828acbdc7700cb5515"
+      }
+    },
+    {
+      "key": "01020304030501060407000502060007",
+      "length": 24,
+      "scalar_masks": 256,
+      "endpoint_digest": "a725374524c33dfda7552d8db9180b9238aa34d200f9b0250eb8077a54bed07a",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "1b4176bcbcaeaf53b291e91c5e154d74b22fb19247fdcd4f5ebbaa0ca04866b1"
+      }
+    },
+    {
+      "key": "01020304030504060105020600070007",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "653c8cbd5eeb66a573d05c5a69822f4929f19c7a91325cd09010b3c977afcec3",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d092541770ef753a48d9207bd5be180629ce0565b49c99a2c1ae31c1ebd9ab98"
+      }
+    },
+    {
+      "key": "01020304030504060107050600070002",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "3195f15915a48dadb0947c2244e83a0006e18194c169a85c1f9f02af50d7d93e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "31e839bbc39039e54eb2c365bb2f1382b8fad27ea62fdbd94169a0c08f40fc5c"
+      }
+    },
+    {
+      "key": "01020304030504060506000200070107",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "765e551c5a7812c89d809bcfd9853ec7736902f65e9fe60ab2c0e68de23238b6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "68d56650bd9bd29b8afb43aea32b023a400b96e305b991c25c451832742c6b85"
+      }
+    },
+    {
+      "key": "01020304050600010002040506070307",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "becd930a4a59f0ecf9fa42cc7d8652bfc491285fad4ce80b79e5452d3bec08d6",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "ec6ffe135808b84d35e493b1d6ac99ccb4b0955c2e52d30dfc2ee31b26f94878"
+      }
+    },
+    {
+      "key": "01020304050600010005020703070406",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "29a4e91b7301c7126b87c2e8663ada13ac98412cb0fb20766f03d0c9a53a6640",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f05d7bfff81ee757fc55bd99a829cdc4deb96e55e2a9a7ef1e7cd82b5a46df8c"
+      }
+    },
+    {
+      "key": "01020304050600010207030705060004",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "32b29eaaa94e2cb7e488f497f85c02a4d16e2fbda5fe34e019c121dbf4b40648",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "48fc899a827b48c79f16bb2c6d7db8295e7c12d6744ea7ec7e655609baab4dc0"
+      }
+    },
+    {
+      "key": "01020304050600010307000405060207",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "3cfede981989e886b8bfa54f9bea1193d400b9ffeae14fbd5b1e765855f23377",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a16b9c59adf51b1ab73d3ff0e1f5c1f44eb806c22216c6284c075cf5231af637"
+      }
+    },
+    {
+      "key": "01020304050600010407030506070002",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "b89ceb2cd451fc87b7bcb95a2680e7723f181b203b877614c01b5cb421b5f79d",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e802cba1ba3622d0687776491e5bd658d011464b6e4c8ad46a69d15e685f4a71"
+      }
+    },
+    {
+      "key": "01020304050600010506000302070407",
+      "length": 44,
+      "scalar_masks": 256,
+      "endpoint_digest": "ac91cd50806ebccfb501f6a4cd70977e49dff256d5f372d4037e4b307bb62a23",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "5842865d195fa688db591e0634a4f78bd030de5aa921538d70cb6100d9a1170d"
+      }
+    },
+    {
+      "key": "01020304050600020103040506070007",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "7cc24600e8b7fe62a9fcd5065d74eb189fdf05b09deb652236fd097b4c1806e8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d808e8a8f9fbd090b55daa035f215b7ff4c4b6b3a0cb302f037f895a94a5b75b"
+      }
+    },
+    {
+      "key": "01020304050600020107000503040607",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "5eb8f3e16cf07df82149061a86a64ebefb3684d201035317202b3f3797842b9e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f9150c930aa614f050cef0225f7d5ada75ac8e19d516c21a3acf376a6b80c37c"
+      }
+    },
+    {
+      "key": "01020304050600020107030504060007",
+      "length": 38,
+      "scalar_masks": 256,
+      "endpoint_digest": "7857567300736380e975883c18207c6f17344618f6bef609d32aec6f53ad2f97",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "b82ccf59056d93f0d1c7e5cf8c4fc85b55fc1e649636d8c1759db6efb9db7049"
+      }
+    },
+    {
+      "key": "01020304050600020305040601070007",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "ffcc4f71212a22d2747b097890c8fc75f9062a5b141c8e794a21a480c13c3a11",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "4e1ab8e7123851c546fc42b1b2853f1eb70ca92af35798edf7bbf002d51fc674"
+      }
+    },
+    {
+      "key": "01020304050600020405000603070107",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "72b4cf2e1678f2a8733c155508b044858545655f90bb401fc1dd6f5b23604703",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "7ad3189bea7f0cfb8eab287e3fbe5ed613a67f721c85ba99e6b53e1e472bd438"
+      }
+    },
+    {
+      "key": "01020304050600020507010304060007",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "3c1d76eaa55d42d16326c69e6ada2bee76ff67d777dda305f91b1844da865459",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "f61e114106accaf15eda7370b15a2f60531f03fc2b8252f95825baaccb0bb008"
+      }
+    },
+    {
+      "key": "01020304050600020507010703040006",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "9cb2f9e021271a90624718068fcaf92aaac149d25d554d2d31f00420ebfe9700",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d904307aed750d2ac92e76224dee3c1783daf5653978fda5181de2062ada6cc1"
+      }
+    },
+    {
+      "key": "01020304050600030102000704050607",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "b9ec97216377f68d3cbea5405850920d849e112b7c3e44124e5b39a26b825738",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "eb2925812c36e38f982bbd6bd7f17d51aa5d5039a8126922cde81e3d5a9843b5"
+      }
+    },
+    {
+      "key": "01020304050600030102040705070006",
+      "length": 45,
+      "scalar_masks": 256,
+      "endpoint_digest": "4cba195bda4101eeea8345d3e5f5a1e45cc6fcbf04f5703c40e17f3818150435",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "a6db6352a9ec278736e6a57564f37ea003d4e4b29b9c224811c112b097410bb2"
+      }
+    },
+    {
+      "key": "01020304050600030105020400070607",
+      "length": 21,
+      "scalar_masks": 256,
+      "endpoint_digest": "a354170b258490e57e0371644b81c6c066c14bedd16a8d9a409bbdf2cdac5af7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "76f434e35e46aec1b66dc4af66528e17a53b7262ed14081757c74189a40c0102"
+      }
+    },
+    {
+      "key": "01020304050600030105060702040007",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "be08f406d652b624ac1030beb8a62af348254a15e915ba257ef342412d53a846",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "96173e1e7eabe04a20f585c78f957fd2122b974934edd9ee1e4dfa18090b915b"
+      }
+    },
+    {
+      "key": "01020304050600030507000401060207",
+      "length": 43,
+      "scalar_masks": 256,
+      "endpoint_digest": "7d1b08129bd26454c577bd98899d11aee1fb931b9c036f7d22ea315a19aa23b7",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "850d1486f03a7ac7e459804133b869763a5d6014281eeeba0c9b8d042f2f5cc0"
+      }
+    },
+    {
+      "key": "01020304050600040007020603070105",
+      "length": 45,
+      "scalar_masks": 256,
+      "endpoint_digest": "8ed0a9d75b36ea57ca6f63c8d6ae5c90c9a76f6e3b2be709995b6aa1875f469e",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9ca7e5cce5c847e285d6ef2dcd4f53cc1f665c8ee1e792711fdc55af139fef1e"
+      }
+    },
+    {
+      "key": "01020304050600040203010605070007",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "e439685401d59186d1ed3a98a50b35ebf62135a75a986dfb26924f0291d017bb",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e09af99be41761fad5e72c2bfc1c21bcc19cba0c53fb783250d9a1aab563b690"
+      }
+    },
+    {
+      "key": "01020304050600040305020700070106",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "a4ec9ce069c1d2503c26070671376767a91e0d87efad8d50f317461323752ab8",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "d954405626a0e342528b91f30b546f0b4883bf002d4d7eaecaa5c9c41ba28682"
+      }
+    },
+    {
+      "key": "01020304050600040507000603070102",
+      "length": 40,
+      "scalar_masks": 256,
+      "endpoint_digest": "7a21741f3e11aa7528dd7a0a0273658f17152a6e44905404411afb5101555249",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e91f64dcbbb57fbfd5762b446c789112b556f515c81a05b2fe3321bfc3f0f445"
+      }
+    },
+    {
+      "key": "01020304050600050103020604070007",
+      "length": 39,
+      "scalar_masks": 256,
+      "endpoint_digest": "76b26a5610b442d5a728f1f6fe11389dbf6999eba379562e1364c56aaa5b82e9",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "9bd1f64a5b41af70bb4cad53dfaf4884f9ca23a07cfb525508d413ecb71dd775"
+      }
+    },
+    {
+      "key": "01020304050600050103060700070204",
+      "length": 46,
+      "scalar_masks": 256,
+      "endpoint_digest": "3b8b4d7eb27ca40d91b8c1ed8b12fc3b5c485f74d489b4adfdf36f601ad00bfe",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c490459b13caf07fb8b3d6ad4d7d0c124ea083b81f97014b58f38d50a96811e1"
+      }
+    },
+    {
+      "key": "01020304050600050307060700040102",
+      "length": 37,
+      "scalar_masks": 256,
+      "endpoint_digest": "58aa7176c411dc064e74e3ba5c241621097194a3c32be815853e717dc3128ba0",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "117f535343e7e4c121da16b50eb80e9326c21d85522b5d1f49d8923e361815c8"
+      }
+    },
+    {
+      "key": "01020304050600070204010503060007",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "657e3f298c0f1350f02571ed4e433538d690dc43a8dac4a8023ca54b055a89ba",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "c9cb4e619a9c284678230b017b68fcf0a3b3ba5c2250b4830868ac7b46d3fc3f"
+      }
+    },
+    {
+      "key": "01020304050600070205010403060007",
+      "length": 34,
+      "scalar_masks": 256,
+      "endpoint_digest": "728f2b5b87e6c5dd2df81eccd51485848a2819af5519a5e2984d666071553124",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "108b30bc8f15c2c0769c9d204d16ff8a64982644efc10132f930282b5d98e9aa"
+      }
+    },
+    {
+      "key": "01020304050600070205010604070003",
+      "length": 42,
+      "scalar_masks": 256,
+      "endpoint_digest": "e98e601e871d14387d59b3a9dbf58ffbc04ebdcda9c3b7f7dff339bfb9bd3e56",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "e81e3224af507e8a72d800619935811e11fcb6d0c176d6f5b3b0582acc09b687"
+      }
+    },
+    {
+      "key": "01020304050600070205010703040006",
+      "length": 47,
+      "scalar_masks": 256,
+      "endpoint_digest": "7ea76f9e1b3b647168f6b3b811c4863c05eac7cbf867b4dba26b1f7d18a56fdb",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "bbbb2c5b7816f878290d131b0ec3c0542224bd1bfd6a69c74d299dc54a3bc09e"
+      }
+    },
+    {
+      "key": "01020304050600070307010502060004",
+      "length": 41,
+      "scalar_masks": 256,
+      "endpoint_digest": "067df64625aae7d1fe2db69f696013124c0aaa6f58896319db8027dad3faa4de",
+      "bitset_replay": {
+        "method": "python-arbitrary-precision-all-static-mask-bitsets",
+        "mask_count": 256,
+        "complete_state_vectors_compared": true,
+        "product_state_sha256": "539b3fd2900622b4234d1b06263a9e4c7a0aaf744e9ed4afd510caa8bfcd3ae8"
+      }
+    }
+  ]
+}

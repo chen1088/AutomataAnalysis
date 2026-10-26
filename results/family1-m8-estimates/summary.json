@@ -1,0 +1,60 @@
+{
+  "assumption": "User assumption: shortest merge length is approximately one or two below the verified finder length L; use point L-1 and rough band [L-2,L], clipped to certified bounds. This is not a validation guarantee.",
+  "best_estimated_bands": [
+    [
+      48,
+      50
+    ]
+  ],
+  "best_estimated_point": 49,
+  "best_keys": [
+    "01020003040501060003020705060407"
+  ],
+  "best_tie_count": 1,
+  "best_verified_finder_lengths": [
+    50
+  ],
+  "certified_bounds_scores_and_statuses_changed": false,
+  "coarse_pending_refinement_count": 12750,
+  "finite_estimate_count": 13231,
+  "full_derivative_archive": {
+    "bytes": 3693,
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-estimates-archive\\ce6df71c7c9051b8-21e1c3cfcf63\\manifest.json",
+    "sha256": "975329d84cfc62cfc198b92b422673262ba912982f2e9e9857c0f255a4c92464"
+  },
+  "global_maximum_claimed": false,
+  "input": {
+    "bytes": 1795384,
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-edit-r3\\archive-records.jsonl.gz",
+    "sha256": "ce6df71c7c9051b8ac7736a9e9e4a468ffcaa6d3e8f112e05af9737ca8aa3d89"
+  },
+  "input_record_count": 45004,
+  "pending_larger_upper_count": 2404,
+  "refined_eligible_count": 311,
+  "refined_eligible_finite_count": 311,
+  "refined_record_inputs": [
+    {
+      "bytes": 410759,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m8-adaptive-r3-broad-fixed-checkpoint\\records.jsonl",
+      "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+    },
+    {
+      "bytes": 67440,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+      "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+    },
+    {
+      "bytes": 36048,
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-upper-refinement\\records.jsonl",
+      "sha256": "d911e72c53f279638db10a1f7a9cd29876f4f94078b362b7b59072946a860973"
+    }
+  ],
+  "schema": 1,
+  "script": {
+    "bytes": 18329,
+    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_estimate_merge_lengths.py",
+    "sha256": "6f0ccba2a20cc64cd9996d38fc990cb779f4c07ee3f3ebdd2fabb43feb9dc3f4"
+  },
+  "selection": "all ties for highest requested estimated point among explicitly refined eligible graphs with verified finite upper bounds",
+  "unknown_estimate_count_archived": 31773
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "scope": "Truth-free post-generation ranking validation, no child-score truth loaded",
+  "ranker": {
+    "path": "scripts/family1_rank_edit_candidates.py",
+    "sha256": "c193f66c8423d31302cb47daaeaf3073e8b0a4e261f7b76946764a7103758926"
+  },
+  "tests": {
+    "path": "tests/family1_rank_edit_candidates_test.py",
+    "sha256": "d11190083752f47d6bd5a586fb2ad4906f687a323adbc05019cd000cbcd45255"
+  },
+  "test_result": "9/9 focused tests passed",
+  "strategies": {
+    "structural": {
+      "run": {
+        "path": "out/family1-rank-validation/m7-structural/run.json",
+        "sha256": "a9d1f4a39d11ab7a83a7b21f6ad749c2fb8b9a86291424ecc8db2a562198a1f7"
+      },
+      "manifest": {
+        "path": "out/family1-rank-validation/m7-structural/manifest.json",
+        "sha256": "b5f0035114376577b6ee9e0f4dca7c14c84d71abdba3398885fb7f06356dfd7d"
+      },
+      "summary": {
+        "schema": 1,
+        "method": "truth-free-whole-shape-post-generation-ranking",
+        "strategy": "structural",
+        "seed": 1088,
+        "candidate_rows": 13329,
+        "ordinary_shapes": 1926,
+        "all_rows_retained": true,
+        "whole_shape_blocks": true,
+        "root_multiset_unchanged": true,
+        "candidate_score_upper_or_witness_used": false,
+        "candidate_labels_are_opaque": true,
+        "previous_parent_lower_certificates_used": false,
+        "parent_strata_selected_shape_counts": {},
+        "non_strongly_connected_shapes_retained": 0,
+        "incomplete_input_root_blocks": 0,
+        "filters_applied": false,
+        "enumeration_coverage_unchanged": true,
+        "global_maximum_certified": false,
+        "score_computation_performed": false
+      }
+    },
+    "parent-strata": {
+      "run": {
+        "path": "out/family1-rank-validation/m7-parent-strata/run.json",
+        "sha256": "a027adaf12b819143d8803c1b4920d8888e508c501775b558c4b4a4fd40abfa0"
+      },
+      "manifest": {
+        "path": "out/family1-rank-validation/m7-parent-strata/manifest.json",
+        "sha256": "1dd566b2992b0d9989c0e4f76139e6bd65f92988a1a03e66974e3f531b9ee76e"
+      },
+      "summary": {
+        "schema": 1,
+        "method": "truth-free-whole-shape-post-generation-ranking",
+        "strategy": "parent-strata",
+        "seed": 1088,
+        "candidate_rows": 13329,
+        "ordinary_shapes": 1926,
+        "all_rows_retained": true,
+        "whole_shape_blocks": true,
+        "root_multiset_unchanged": true,
+        "candidate_score_upper_or_witness_used": false,
+        "candidate_labels_are_opaque": true,
+        "previous_parent_lower_certificates_used": true,
+        "parent_strata_selected_shape_counts": {
+          "21": 1671,
+          "22": 197,
+          "23": 58
+        },
+        "non_strongly_connected_shapes_retained": 0,
+        "incomplete_input_root_blocks": 0,
+        "filters_applied": false,
+        "enumeration_coverage_unchanged": true,
+        "global_maximum_certified": false,
+        "score_computation_performed": false
+      }
+    }
+  },
+  "candidate_scores_upper_bounds_or_witnesses_used": false,
+  "no_filters_or_global_score_claims": true,
+  "full_pool_resume_checked": true
+}

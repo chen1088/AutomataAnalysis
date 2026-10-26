@@ -1,0 +1,60 @@
+{
+  "ordinal": 2221624,
+  "key": "0102000304050106000304050206",
+  "known_H": 34,
+  "source_near_length": 38,
+  "distinct_source_pairs": 1,
+  "distinct_source_words": 2,
+  "target_length": 34,
+  "decision": "unknown",
+  "upper_bound": null,
+  "complete_within_subsequence_space": true,
+  "no_pair_in_subsequence_space": true,
+  "union_distinct_subsequences": 6830,
+  "unique_complete_profiles": 6830,
+  "colliding_profiles": 0,
+  "native_seconds": 0.0109447,
+  "nodes": 51694,
+  "native_result": {
+    "path": "out/family1-subsequence-recovery/minimum-pools/2221624/result.json",
+    "sha256": "06536073706f21dee7feddfaafcb04cb7f7dc81756e1a3c35d563fb9050d207e"
+  },
+  "input_words": {
+    "path": "out/family1-subsequence-recovery/minimum-pools/2221624/input-words.txt",
+    "sha256": "82e99dabc39e4299f4fda5c42a5fbeb9d471b1ef447257a3d4d6cd98c1f2ff81"
+  },
+  "independent_length_count_dp_passed": true,
+  "stored_witnesses_scalar_verified": [],
+  "command": [
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\Family1SubsequenceRecovery.exe",
+    "--graph",
+    "0102000304050106000304050206",
+    "--input-file",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-pools\\2221624\\input-words.txt",
+    "--target",
+    "34",
+    "--out",
+    "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-subsequence-recovery\\minimum-pools\\2221624",
+    "--max-nodes",
+    "10000000"
+  ],
+  "sources": [
+    {
+      "ordinal": 2221624,
+      "run_id": "m7-2221624-k14-w4-t8-n128-s1088",
+      "row_source": {
+        "path": "results/family1-finder-lookahead-grid-v2/runs.jsonl",
+        "sha256": "730bc59d2adce637b1b25b3a903db23796982018cb7754a150d9a51f7e00dca3"
+      },
+      "native_result": {
+        "path": "out/family1-finder-lookahead-grid-v2/queries/m7-2221624-k14-w4-t8-n128-s1088/result.json",
+        "sha256": "1e9ead338b3d7098055d86d62493baa365eb8476148bd339fcc9b134fa9ad841"
+      },
+      "words": [
+        "00000010100001100001011010101100001110",
+        "10100001100000000001011010101100001110"
+      ],
+      "length": 38
+    }
+  ]
+}

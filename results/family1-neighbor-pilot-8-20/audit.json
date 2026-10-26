@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "program_and_native_hashes_verified": true,
+  "cached_plan_files_hashes_verified": true,
+  "native_observations_reconstructed": 377,
+  "selected_shape_root_bundles_recomputed": 39,
+  "covered_vertex_roots": 546,
+  "completed_selected_root_classes": 377,
+  "explicit_circulant_shapes_each_one_rooted_class": 13,
+  "generated_paths": 208,
+  "operator_patterns": {
+    "G": 78,
+    "GR": 65,
+    "RG": 65
+  },
+  "native_decisions": {
+    "unknown": 377
+  },
+  "certified_root_classes_at_least_34": 104,
+  "all_size_lower_bounds_8_through_20": 34,
+  "no_op_resume_passed": true,
+  "global_maximum_claimed": false
+}

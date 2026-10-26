@@ -1,0 +1,824 @@
+{
+  "schema": 1,
+  "source_directory": "out/family1-finder-calibrated-portfolio",
+  "raw_file_count": 159,
+  "raw_file_bytes": 1854086,
+  "archive": {
+    "path": "raw-evidence.zip",
+    "sha256": "2203f07c96252d738e9734937d61f2b3f74888223341e72463a9db73e86ac1a3",
+    "bytes": 639889,
+    "all_members_hash_verified": true
+  },
+  "raw_entries": [
+    {
+      "path": "out/family1-finder-calibrated-portfolio/attempt-inventory.json",
+      "sha256": "93ee5de1664da674990ab3b577ee9d24c675af2319fb84b438485c598e2a7bb6",
+      "bytes": 9033
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/partial.json",
+      "sha256": "91d40e17ed8d32d2b263150e4157edec851729d0120daf490a410fdac2ad7c14",
+      "bytes": 15146
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/portfolio-used.py",
+      "sha256": "2ddb02347b5fe21a4aab6b8dc206002e4ffa60e57e856b21c792b0046b3d0616",
+      "bytes": 11742
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/README.md",
+      "sha256": "50322396c2b35cd9299b4d524a806ee7821815ae6fc713cdafbb95073a305402",
+      "bytes": 1418
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/run.json",
+      "sha256": "ff067ef1ec4b54859748dfcf4006f0fa5d6848d4ea55c9481f5c31b18f6695bd",
+      "bytes": 5952
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/attempts.jsonl",
+      "sha256": "3afeb2f702d58486f9775853b1d590b77eaf533cb4d84f21bf56f2d14fdc6733",
+      "bytes": 88667
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/attempt.json",
+      "sha256": "d555b5728e193de95062542eaee9362b2d951b7561502ea838d982838dd08c9f",
+      "bytes": 17759
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/invocation.json",
+      "sha256": "5d106b16df1535cdbfbf07bb2c699330fb84090280d27a8a1e47ba92007afd27",
+      "bytes": 1077
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/native/result.json",
+      "sha256": "a9d5bd518d0a9f866c97a759023557e4ae34726fad733ef1365897d0ed5be9bd",
+      "bytes": 9295
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/native/result.sha256",
+      "sha256": "3da39bbdc8c32e7de485b5070741fdc4f5c471b8ecc02a847aa845e56cd50c9c",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/native/run.json",
+      "sha256": "c46085003d9771af47de537c8c13497cbb8a9b03c6dbd5b262d2163987ee712e",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-1783759/attempt-000/stdout.txt",
+      "sha256": "5ec6eebb8ad04be34eeb53cea41c4306492fb0df36a8a55a3ba239b0f99782fb",
+      "bytes": 9297
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/attempt.json",
+      "sha256": "4a89da2ad0a0944fb726963f338589a2fb441d0217a33f81056107b1214f74c3",
+      "bytes": 17873
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/invocation.json",
+      "sha256": "6f97f76a12b1d3c038bd5daace58671e9f783aa823e4335353ad2b4999ab2994",
+      "bytes": 1077
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/native/result.json",
+      "sha256": "4fcd9282797dac5e3ba3e5a2282f1e7c83365067708261179aa4a6481d9e495c",
+      "bytes": 9348
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/native/result.sha256",
+      "sha256": "d3a677ac4baaa672a92fccc98cece8173d05d857e5091a48070c996109db0138",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/native/run.json",
+      "sha256": "1daea1e54dd7c706680229b41f39070c51477e31fad1d98ea3d266c1aaa7cd99",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2221624/attempt-000/stdout.txt",
+      "sha256": "08aedc022f1a3c221075865137ebf30b3cb7416baf5812769cb0f52f7cc2e944",
+      "bytes": 9350
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/attempt.json",
+      "sha256": "69eeb9e84b8b8f5920604e106b6c7c78e1147592f118d1b57998f55bebcc5ed9",
+      "bytes": 17861
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/invocation.json",
+      "sha256": "3d959d440b901830ccffd6a1687455775907cdf590b4c1049d4b68a8f8324423",
+      "bytes": 1077
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/native/result.json",
+      "sha256": "933d2f4dc3c8f5ac038ba423672dddde3382abf9b8a8a1a212273db8e1d20250",
+      "bytes": 9366
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/native/result.sha256",
+      "sha256": "20aac0a9bbc438d820889c8985a726159d2034b35282015d529450edcb8407d1",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/native/run.json",
+      "sha256": "9a925820a0571d2b4807f1657fae979b77d65e091bbac4e6878cf2902fa5a4e7",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2470130/attempt-000/stdout.txt",
+      "sha256": "6a9840c4d05d5176cdc7e71b8c082dcd078477e9ff1414b88221420413d1155f",
+      "bytes": 9368
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/attempt.json",
+      "sha256": "0196243bb75748a45f670df1da7712cffe11af93e55ef2e5786a6730237c650c",
+      "bytes": 18057
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/invocation.json",
+      "sha256": "b430eabf12c22bed7df2641bf0e44455415e82e949adfd6dfe1deeadc0a08007",
+      "bytes": 1077
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/native/result.json",
+      "sha256": "e0cd544b0fcd33ae1031a86b811f16a6e6eb04dce93504bbf2b71f5940ded781",
+      "bytes": 9398
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/native/result.sha256",
+      "sha256": "78d8ea723c1725c0b399b28112f148f7138a4c5b49f4e6d58bc70efc40714c51",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/native/run.json",
+      "sha256": "acfb070fd056d81d13f329344b7a8d2fa9f06943175b499bba5efbeb829f4971",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-2471796/attempt-000/stdout.txt",
+      "sha256": "46a3efb13365021f1d13e736b6a99047e057f2b91c8432454ff5127b7df6433a",
+      "bytes": 9400
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/attempt.json",
+      "sha256": "fe2b7d2fb20430f488005745e71644f0b55919817384aa354b2c2a2a7761e039",
+      "bytes": 18330
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/invocation.json",
+      "sha256": "cf6db327869da46fa954a57cb6ef05e19c5e2f4f18f9641f6f135137afee10e6",
+      "bytes": 1077
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/native/result.json",
+      "sha256": "bb7ebf6dfc190a61fa308107f3f5aa2e7f029faa13c2b6b5dd73f31bcb309902",
+      "bytes": 9616
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/native/result.sha256",
+      "sha256": "e94c1d324902a02bb898837b5c3acd2bfe09dc068b31fc6030b54086fb6c59c3",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/native/run.json",
+      "sha256": "fac5c55dc0dfe9e36fe97abea2e5023ea0c36a9d07199ebb0e60cb2fe54b1f42",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-3411148/attempt-000/stdout.txt",
+      "sha256": "82340a0fc5ec949f63b4b797eb8b28c767b05816ebd4a1c91ac24bb35c3d3c12",
+      "bytes": 9618
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/attempt.json",
+      "sha256": "82c7ddbd0074a7ea5991350e21b6f0af89bb79025c2002f215cf60eb72ee1c06",
+      "bytes": 18016
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/invocation.json",
+      "sha256": "20c3a2549f2a206b14daed354d2a42a8488e68625a3b7b04dba85371878040fc",
+      "bytes": 1077
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/native/result.json",
+      "sha256": "3859c0002b2b51de68e5134e8f976cd1405cf9c251c46f404037ca2f58ea80c2",
+      "bytes": 9397
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/native/result.sha256",
+      "sha256": "c263e6d0d611617f190f2816513e509a5396b0a15c5591806161ddd2cd729190",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/native/run.json",
+      "sha256": "f99b66defa8ee11015e02d0ab1464d914e5299a5c06fa776084d1b2cf4d6e156",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-4099217/attempt-000/stdout.txt",
+      "sha256": "91a8ea53445aec0dc0e3b525bb8c29417fbf87e01b11d3b2abb098d42c97fbb0",
+      "bytes": 9399
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/attempt.json",
+      "sha256": "92cdadbd6108afa063e706e5644169d333159597463bcc850040932ed9e9784a",
+      "bytes": 18376
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/invocation.json",
+      "sha256": "4d4484771e68bd462b62d71008cb649a0a04d921aa45ee2e2c2cbd1d47b9ddf4",
+      "bytes": 1075
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/native/result.json",
+      "sha256": "85aec921761e530669981a7b692869e24ba8d97ea5f2af9124ab26352fa4faa5",
+      "bytes": 9605
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/native/result.sha256",
+      "sha256": "0364bfb0fe28e31e7d760f216496404bcbfcaa3a9e0d96eee91af8a526dd5759",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/native/run.json",
+      "sha256": "8083cf1b70b7999ac56904cd9a0c072186b53c8b9fd6d0f3b4f7e5740a1c3cb8",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-539749/attempt-000/stdout.txt",
+      "sha256": "db4ff3e33ed704db1c632e2dda49e227f3b35305f2102ef63b268f4de9810846",
+      "bytes": 9607
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/attempt.json",
+      "sha256": "9e66637c9aa9dfd85218a44df858178c9c1ed97b6a4d5610da8a935fa7fd6dca",
+      "bytes": 18039
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/invocation.json",
+      "sha256": "17bcfdd1d2435246c0ff6494d714749ddbe89d9db30a71b1db3b0129bb37c917",
+      "bytes": 1075
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/native/result.json",
+      "sha256": "4fc06b868b167bdffc55edabda33cbf2ff32d75a6ac3c63b4e7ef89b4e6de9e8",
+      "bytes": 9369
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/native/result.sha256",
+      "sha256": "4d54be1d69187bb5dadae05816876a205b41d76038b38895e22dc70cbf6c473d",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/native/run.json",
+      "sha256": "cd31971fefb75c26bb0d0a0aa23d2d084c03404382ba27420b1f3947218c2a20",
+      "bytes": 819
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/case-679758/attempt-000/stdout.txt",
+      "sha256": "fc6675473c61f47f5db1e89156d8b7c046c1e1f8191d691d503c6dc6588ef553",
+      "bytes": 9371
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/driver-used.py",
+      "sha256": "a25a76da0a41233c4a2322c8c5d1e0642c6de5d2e3a74703d59ed5ecf3e1290f",
+      "bytes": 12716
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/Family1Sample-used.exe",
+      "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59",
+      "bytes": 408576
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/run.json",
+      "sha256": "4554c73853f4974a5cc49649b985b5396accd454da3503b6b20869f59b2c2fe6",
+      "bytes": 5457
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6/summary.json",
+      "sha256": "5bec46e93f18ce8ec7650a37fb03d9e45e440c0734c82d6789a07c6a99a37ebc",
+      "bytes": 1954
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6-invocation.json",
+      "sha256": "8b6bd3ef4abfe33766689a740f38ee80bac81f18cac07891ee3d479e82df3d92",
+      "bytes": 1347
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage1-k6.log",
+      "sha256": "49527b119ae05be51e252f2f04ea8badb4609055c3ab153c4d797f7e583273e0",
+      "bytes": 1175
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/attempts.jsonl",
+      "sha256": "5d79be0703c91678d331eba7bd9372e560de086e0f4284cddfc257f28ef266e9",
+      "bytes": 65117
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/attempt.json",
+      "sha256": "35e9a396d24e8932bf5b9f1f6b5b2a70331b5789501133e0b9a886e94dc48244",
+      "bytes": 20933
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/invocation.json",
+      "sha256": "9851b2d9e0c2d9c36ec07417258816b7a523017e8e80aa85aedaafe0592b8925",
+      "bytes": 1209
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/native/result.json",
+      "sha256": "f63dfd787a1a59f5676c84357fbeb38e7381b3d68cebbbbdef610eae963cd4e6",
+      "bytes": 11001
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/native/result.sha256",
+      "sha256": "26610d0006ebb4c2492eaba17717100fad312fd998c1eee0f6e48197c0246648",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/native/run.json",
+      "sha256": "33b5af4e5a02b3de9237feb76b982f5d40aa69df8545910cde7738c51b4badb4",
+      "bytes": 925
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-1783759/attempt-000/stdout.txt",
+      "sha256": "b85913fcb80841b7f63059b212dfd4cb3e08cfe7932162672f0199055207998f",
+      "bytes": 11003
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/attempt.json",
+      "sha256": "7acebb9889aee2a01bc1846bdc6ca3ab24a3b8795c04ea459769e6347143fff1",
+      "bytes": 21637
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/invocation.json",
+      "sha256": "0d9669561f33dadc2f6355ab5f712910b9a6ec890e8fca98da2486885b0993c9",
+      "bytes": 1209
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-12288.txt",
+      "sha256": "214081e83901cb5cd6dc27f1bb78ea47d38313c92ac62edd5de185fd1fcb35a5",
+      "bytes": 9723
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-12288.txt.sha256",
+      "sha256": "6101991491a2903ef7511787ed57c35e44b2b37bf70c4ea17154e4ec67ba223b",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-16384.txt",
+      "sha256": "60f188a544419c83ebe784e6a8daab9f33cfa22675a6c2aaa592254e598970ef",
+      "bytes": 9751
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-16384.txt.sha256",
+      "sha256": "dfab06f8e9ab8a4d5191df53c1f8e04ab141fa5b34779205def86aa750c4731e",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-20480.txt",
+      "sha256": "ee1f70743b37424f38d914fd62ca72fde25dd9e49f90e1527b18434da5024b55",
+      "bytes": 9749
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-20480.txt.sha256",
+      "sha256": "53e8bc0cc3fde9b90395bb7f3acc3e966f84521f6a2361d0a0e620ab34a9569f",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-24576.txt",
+      "sha256": "6895a1649081fce5ab67f024a41dc2f977b1e9f44eb3e05d7214b8c0c529c719",
+      "bytes": 9736
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-24576.txt.sha256",
+      "sha256": "dca23436bfc0fd16dcd4511cc1d0f47ac614222e21368f5df5fcf63aca1fc3ff",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-28672.txt",
+      "sha256": "51a65dccbdedff67f9cf0e212351a3566fded0c245a35580e0f49b23ecea015f",
+      "bytes": 9751
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-28672.txt.sha256",
+      "sha256": "aad76e0273d40c0961912bf8fe8bc30cf012ef06a66ad4f96cc943ab9e1f8da1",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-32768.txt",
+      "sha256": "a2b78f913daab4cff77d5fc82f210e99e6d6f6904e59ce65f33870cfa73a79f6",
+      "bytes": 9749
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-32768.txt.sha256",
+      "sha256": "85153f8ea916a177d54d4246d9f7781485f4894a1015cb1fd78b46101faea3c1",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-36864.txt",
+      "sha256": "c324ddc2b4394b8096cd7eddbc5d41038ec0c5b2b77e57f8cfb488a89c461ef0",
+      "bytes": 9750
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-36864.txt.sha256",
+      "sha256": "d72745ac76759cceccf500a8146be3e667feabaf22fa71e87fb430e0785e6ad3",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-4096.txt",
+      "sha256": "a4aec0d7d19e79eebab7a4496aab13e552ad7156c90ae502215f87d8618be4f0",
+      "bytes": 9732
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-4096.txt.sha256",
+      "sha256": "6a67386d6ed38f1a7f657f1bb08bb3f57a028445d65e1def58c6570daef1d63b",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-40960.txt",
+      "sha256": "77c8b23d2aabb7abdffd10c0197d66910a33cfaa81aad6e0cdd3f7739c49d9d0",
+      "bytes": 9751
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-40960.txt.sha256",
+      "sha256": "aade1705f1fe4ceab13dbb1c52e2d46dfe5a29f0ddb49a1e54f43c7119f628e6",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-45056.txt",
+      "sha256": "cd956a6a8d23d6d40c90a5c09cca9498b55a5bc5c968b410955739f88d42f17d",
+      "bytes": 9750
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-45056.txt.sha256",
+      "sha256": "57167312f49d36c30f562b2ac82be9e504046c51f5aeab8351314c17723f5c82",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-8192.txt",
+      "sha256": "56ec28e45249724b48f3384bf017cdcc4d51b0c1f8adff09537ef1d3545ef5f8",
+      "bytes": 9725
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/checkpoints/sample-8192.txt.sha256",
+      "sha256": "cfd760f66bfe7c1ace75d6fb5b0b8106f1619c75ddc79af908cbc9045c89e577",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/result.json",
+      "sha256": "7cbdba6b105120a06294db5e1333f37f21a8ba4afd63ed4df84bdc5afcec6411",
+      "bytes": 11411
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/result.sha256",
+      "sha256": "47e36cc23c114351a5108ad7003e919f723a81cdedd5e1aa7585019ed493eef6",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/native/run.json",
+      "sha256": "54909c6aa913bbf76bc0c37398833d7b3dba1cb9eb3bf7708799e648850d023d",
+      "bytes": 925
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2221624/attempt-000/stdout.txt",
+      "sha256": "d35a06fe0460feeb1e23c8a198e58192d56c532691a44278e868ab866c0b84b0",
+      "bytes": 11413
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/attempt.json",
+      "sha256": "43af6bc2b3cc6988480768d3db6bb1417531ce23820d38652fe603f7f4530dbd",
+      "bytes": 21280
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/invocation.json",
+      "sha256": "6e7beb32c2211c603605906a0e076d1d65ed58272160926ab40a3b88baf435ae",
+      "bytes": 1209
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-12288.txt",
+      "sha256": "6093016798f356f11fb3131581c0f9c59ee8a40b0fb556efbec12e56aacaefbb",
+      "bytes": 9663
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-12288.txt.sha256",
+      "sha256": "e9c57ab27103304bef357f9305b321f1e9e290dae2cecf4417403118123363c0",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-16384.txt",
+      "sha256": "5f30133d3386ec09b73c131e0c63402ff9f35d62158889de7adf7170a4453345",
+      "bytes": 9659
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-16384.txt.sha256",
+      "sha256": "5638dd3ab515adffc56ced2d6847a97cf9cada5661c92a7878c314f7c4e90caa",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-20480.txt",
+      "sha256": "6e24bfcb9e02edecf891bb827f7b6f8ca0521b17ec5d99d1e85d0dff72ceaec0",
+      "bytes": 9659
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-20480.txt.sha256",
+      "sha256": "28f73f17a356351c557187513aea1a25b3302ca8af81f0c11c37eb0b7886823b",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-24576.txt",
+      "sha256": "18983574514442dccdf33137ba6d6b49bf1d9f02bdc45ee28e357d628358681d",
+      "bytes": 9673
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-24576.txt.sha256",
+      "sha256": "510caf5f99e53c9b7087bbb7092ca2e58d15205ca3853b3fa8048cb37625915a",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-28672.txt",
+      "sha256": "7a0142f27025679c1d2fe64f979f4693dcf9063ce548400276dd6e656245891c",
+      "bytes": 9649
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-28672.txt.sha256",
+      "sha256": "317d24b1100b00ccf53295d2d957f69ddeae0ddfbf4ea436f73007d94e55506c",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-32768.txt",
+      "sha256": "367de192fa1c2a2ac8b7c190390c192f09399b96f71e511694e18ed784732ca6",
+      "bytes": 9661
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-32768.txt.sha256",
+      "sha256": "c32c8987eb7b9db825123817ae75c0278338bd8cd59fd830dfd00ab771c25aec",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-4096.txt",
+      "sha256": "848bcc68e3432a77baa26b9c72540fa1e537ca480265668ff43d1987fa446593",
+      "bytes": 9659
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-4096.txt.sha256",
+      "sha256": "cf38161eb9605de2f7237e6407af027f057fef9851ee7b61b19d9273e0c12d64",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-8192.txt",
+      "sha256": "5e4aa9340d1c7ccec71c9842287dc53080f9d058888e1d5475910b3e4f0fc212",
+      "bytes": 9661
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/checkpoints/sample-8192.txt.sha256",
+      "sha256": "f6a3b953be94a98897f7bb84692b6c31510b8d89aa6dbae3ae71737284b97aa6",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/result.json",
+      "sha256": "25a8a2403353768b643e0abbfd2659a829f5b8da09d37f0b087dc38593034fd6",
+      "bytes": 11150
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/result.sha256",
+      "sha256": "71b4ac03a426c1882e6b466c200e465a1c79a7a18f22582361c449557537ccf6",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/native/run.json",
+      "sha256": "ebe58d10f8c7ef30e874ea129d8034c4c941df5786ca7b1add7597809ffb9dc4",
+      "bytes": 925
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-2471796/attempt-000/stdout.txt",
+      "sha256": "9afc64145443816dcced5832c78074648b095b14b8cb883039817005fe61e137",
+      "bytes": 11152
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/attempt.json",
+      "sha256": "10d9fbcbf9626fb7d4da2e954489cbf0dfe6f85ecb45b2ee5cfcfae53e9730ce",
+      "bytes": 20855
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/invocation.json",
+      "sha256": "2e8aa2d0654c890e2d4aa7da5f5b2e67008b999a2a9c805f680b5012d891f913",
+      "bytes": 1209
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/native/result.json",
+      "sha256": "1eacbef465413095a246f4f82b21a241db59eb0e222ac341a67a2fea698bfe55",
+      "bytes": 11067
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/native/result.sha256",
+      "sha256": "1624594a0d1d4190909cbf86523a27ca98b4955b41759f7a87d86910a73563ac",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/native/run.json",
+      "sha256": "7e00f0ea793f0810954b021d10c6ad2c07460ac903b64abb4db17cbe369021e4",
+      "bytes": 925
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-4099217/attempt-000/stdout.txt",
+      "sha256": "d41841cf2e3c90aa48e9674262683e99e6b002ad8292a3cbb7c4b2745e9d1f5c",
+      "bytes": 11069
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/attempt.json",
+      "sha256": "fa3d9339654322a47ed92f55b1b513d5234ea34662b22b338e5975315e0aaf4a",
+      "bytes": 21763
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/invocation.json",
+      "sha256": "a76fea13fb7db1a7545733b028cbcf6d10b640c6911df37eaabb18ab34ee8dab",
+      "bytes": 1207
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-12288.txt",
+      "sha256": "2be981a2805b86812997f66c907c6db66e1efd93692c24d03a43179a489072d8",
+      "bytes": 9703
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-12288.txt.sha256",
+      "sha256": "10049ff18450d842a8e1474d8748baf05a390701bff067989c0a2cccf80c08d4",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-16384.txt",
+      "sha256": "a9dac97774437b90e20565114bae593c12e6a4c532e4cdbf055afcee25650a3a",
+      "bytes": 9702
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-16384.txt.sha256",
+      "sha256": "549e16ddeb9e5e3d1e5dd61498afd1c4e794c86d3ba366ed13036157c4902033",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-4096.txt",
+      "sha256": "0599f36c6c519d18c3ae181431ce5a9059a2017c54985cbf86c47b9ee922a22d",
+      "bytes": 9697
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-4096.txt.sha256",
+      "sha256": "0943b2db48f746d4200290fc52e86c15f00fc49dfe0ecb0c9ee41b7192c14a8f",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-8192.txt",
+      "sha256": "27f99cd4999a03ba90242810119dd96d4a89a7fa28fc64a89f1bc8f26118af85",
+      "bytes": 9701
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/checkpoints/sample-8192.txt.sha256",
+      "sha256": "17095908643b4a1d940ae6d74589732e355c73d933824f716edfbe9b89ac804f",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/result.json",
+      "sha256": "d022916877d16c8b3fb1786890ae3747d06a67c1ca52b57b4720f2c5b4fedc6a",
+      "bytes": 11397
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/result.sha256",
+      "sha256": "924aaef62aa7d1c11654ccfdda236d25a9049823584181b21ad42452490502b7",
+      "bytes": 64
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/native/run.json",
+      "sha256": "2b0292e50506bebb7cdbea7d53f67da06ece0d2fbfc9701dd9111a46f2aecebe",
+      "bytes": 925
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/case-679758/attempt-000/stdout.txt",
+      "sha256": "74da699fa75bae20ff32683bdfb2a8bddba5be78aa4038723e4dad431337a576",
+      "bytes": 11399
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/driver-used.py",
+      "sha256": "a25a76da0a41233c4a2322c8c5d1e0642c6de5d2e3a74703d59ed5ecf3e1290f",
+      "bytes": 12716
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/Family1Sample-used.exe",
+      "sha256": "5e641b5d1e361c520486f77f2bafed67d59fd628da7392b3c86599b86fadaf59",
+      "bytes": 408576
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/run.json",
+      "sha256": "32e206ca0c5853568395f08bd43757eb22fa90e8f82fac921369514b38d6fa0f",
+      "bytes": 3922
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16/summary.json",
+      "sha256": "f828566e23caa07dfdf3c059304cc263ef977d9d38c970c935e3ccce5b50daf6",
+      "bytes": 1626
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16-invocation.json",
+      "sha256": "e390845f0d59280028f41c262f7d70f29fb56030cc0399875c7a68ae0b7c0c33",
+      "bytes": 1272
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/stage2-k16.log",
+      "sha256": "f1b6aa1a057ada585e00d5fc596d0c7d34502ac9cf06095a4c096f0d49a3dbda",
+      "bytes": 782
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/summary.json",
+      "sha256": "fe49862e5b6093d960827f14cb1b87026eaa822cee9966811bc51e2a1ac5f2d9",
+      "bytes": 6276
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/target-runner-used.py",
+      "sha256": "a25a76da0a41233c4a2322c8c5d1e0642c6de5d2e3a74703d59ed5ecf3e1290f",
+      "bytes": 12716
+    },
+    {
+      "path": "out/family1-finder-calibrated-portfolio/verified-pairs.jsonl",
+      "sha256": "a49d20c1cae84588b9c886cef4dbd373eebf8d0db7c1ead1d686bcea373cc6c2",
+      "bytes": 12865
+    }
+  ],
+  "publication_file_sha256": {
+    "attempt-inventory.json": "93ee5de1664da674990ab3b577ee9d24c675af2319fb84b438485c598e2a7bb6",
+    "independent-validation.json": "cf187fa45713b20cdd3690957cf3c53a3fa9fe900b3c74319d87bfe6055cb86d",
+    "raw-evidence.zip": "2203f07c96252d738e9734937d61f2b3f74888223341e72463a9db73e86ac1a3",
+    "README.md": "e2d493becfcf82a3e77754738fe537d8a123a864da6e267167b3d518ceac199d",
+    "run.json": "ff067ef1ec4b54859748dfcf4006f0fa5d6848d4ea55c9481f5c31b18f6695bd",
+    "summary.json": "fe49862e5b6093d960827f14cb1b87026eaa822cee9966811bc51e2a1ac5f2d9",
+    "verified-pairs.jsonl": "a49d20c1cae84588b9c886cef4dbd373eebf8d0db7c1ead1d686bcea373cc6c2"
+  },
+  "publisher_script": {
+    "path": "scripts/family1_publish_calibrated_portfolio.py",
+    "sha256": "88d2c9daed63a70d5866a0dadd2c09104f97c3e01eee7cebdef87645b3d9d525"
+  },
+  "original_driver_snapshots_preserved_exactly": true,
+  "all_eight_scalar_replay_passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "files": {
+    "independent-scalar-audit.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\independent-scalar-audit.json",
+      "sha256": "ce396f5106860f02a86621677c0aa1adb23d389e2653a1b481c81095d507484c"
+    },
+    "raw-evidence.zip": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\raw-evidence.zip",
+      "sha256": "085adb62e9f990cd22439ad559d39ed3371caf8d3fa74821a7759f16f61305c3"
+    },
+    "README.md": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\README.md",
+      "sha256": "cbc3c20b5f203ce33a8dcfdfbf1fe9b2d7acacb13b44674c09ca3af82e69c7c7"
+    },
+    "records.jsonl": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\records.jsonl",
+      "sha256": "caf3a75210664093ecb1ee0df709083e1d4144df653612bcb7e646fee1f42916"
+    },
+    "summary.json": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-fresh-prefix-refinement\\summary.json",
+      "sha256": "9dd5addc4a8fcc10bd0055797b039ced5a35dad93b80cebfd8244c6a375bb4dd"
+    }
+  },
+  "all34_full256_scalar_replays_passed": true,
+  "archive_crc_checked": true
+}

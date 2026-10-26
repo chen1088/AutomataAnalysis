@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "parent_m": 1,
+  "child_m": 2,
+  "operation_scope": "Keep root 0; delete one nonroot indegree-2 vertex; reconnect both external edge bijections, or smooth one external edge and delete its single self-loop; retain root-accessible parents.",
+  "scope_exhaustive": "Every allowed operation on all certified child maximizers, not every possible definition of graph growth.",
+  "parent_global_maximum": 1,
+  "child_global_maximum": 3,
+  "child_maximizer_count": 1,
+  "child_count": 1,
+  "parent_maximizer_count": 1,
+  "parent_winners_with_winning_child": 1,
+  "winner_links": [
+    {
+      "parent_key": "0000",
+      "child_key": "00010001",
+      "parent_merge_length": 1,
+      "child_merge_length": 3,
+      "operations": [
+        {
+          "operation_id": 0,
+          "new_vertex": 1,
+          "replace_parent_edges": [
+            {
+              "source": 0,
+              "port": 1,
+              "target": 0
+            }
+          ],
+          "new_vertex_outgoing_ports": [
+            0,
+            1
+          ],
+          "child_to_growth_labels": [
+            0,
+            1
+          ],
+          "resulting_child_table": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "operation_ids": [
+        0
+      ]
+    }
+  ],
+  "parent_winner_coverage": [
+    {
+      "key": "0000",
+      "ordinal": 0,
+      "canonical_table": [
+        [
+          0,
+          0
+        ]
+      ],
+      "merge_length": 1,
+      "has_winning_child": true,
+      "child_keys": [
+        "00010001"
+      ],
+      "operation_ids": [
+        0
+      ]
+    }
+  ],
+  "children_with_global_maximizing_parent": 1,
+  "children_with_ordinary_winning_shape_parent": 1,
+  "child_ordinary_shape_count": 1,
+  "child_ordinary_shapes_with_ordinary_winning_shape_parent": 1,
+  "distinct_parent_classes": 1,
+  "operation_count": 1,
+  "accessible_operation_count": 1,
+  "inaccessible_operation_count": 0,
+  "all_accessible_operations_reverse_verified": true,
+  "parent_scores_loaded": 1,
+  "sources": {
+    "parent_scores": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\out\\family1-m1-m6\\graphs.jsonl",
+      "sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156"
+    },
+    "parent_summary": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m1-m6\\summary.json",
+      "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+    },
+    "child_maximizers": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m1-m6\\maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    "child_summary": {
+      "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m1-m6\\summary.json",
+      "sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+    }
+  },
+  "children": [
+    {
+      "key": "00010001",
+      "ordinal": 1,
+      "canonical_table": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "merge_length": 3,
+      "accessible_parent_count": 1,
+      "accessible_operation_count": 1,
+      "inaccessible_operation_count": 0,
+      "parent_score_histogram": {
+        "1": 1
+      },
+      "best_parent_merge_length": 1,
+      "best_parent_keys": [
+        "0000"
+      ],
+      "increase_from_best_parent": 2,
+      "has_global_maximizing_parent": true,
+      "ordinary_shape_key": "00010001",
+      "ordinary_winning_shape_parent_keys": [
+        "0000"
+      ],
+      "ordinary_winning_shape_parent_scores": {
+        "0000": 1
+      },
+      "best_operation_ids": [
+        0
+      ]
+    }
+  ]
+}

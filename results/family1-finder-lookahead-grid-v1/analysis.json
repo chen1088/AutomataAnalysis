@@ -1,0 +1,301 @@
+{
+  "schema": 1,
+  "runs": 144,
+  "graphs": 8,
+  "window_grid": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "beam_width": 4,
+  "tail_grid": [
+    0,
+    2,
+    8
+  ],
+  "outer_seeds": 128,
+  "length_cap": 76,
+  "positive_pairs_full128_masks_independently_replayed": 144,
+  "H34_matches": [
+    {
+      "ordinal": 2470130,
+      "window_k": 4,
+      "tail_threshold": 8,
+      "found_length": 34,
+      "run_id": "m7-2470130-k4-w4-t8-n128-s1088"
+    },
+    {
+      "ordinal": 2470130,
+      "window_k": 5,
+      "tail_threshold": 0,
+      "found_length": 34,
+      "run_id": "m7-2470130-k5-w4-t0-n128-s1088"
+    },
+    {
+      "ordinal": 2470130,
+      "window_k": 5,
+      "tail_threshold": 2,
+      "found_length": 34,
+      "run_id": "m7-2470130-k5-w4-t2-n128-s1088"
+    },
+    {
+      "ordinal": 2470130,
+      "window_k": 5,
+      "tail_threshold": 8,
+      "found_length": 34,
+      "run_id": "m7-2470130-k5-w4-t8-n128-s1088"
+    },
+    {
+      "ordinal": 2470130,
+      "window_k": 6,
+      "tail_threshold": 0,
+      "found_length": 34,
+      "run_id": "m7-2470130-k6-w4-t0-n128-s1088"
+    },
+    {
+      "ordinal": 2470130,
+      "window_k": 6,
+      "tail_threshold": 2,
+      "found_length": 34,
+      "run_id": "m7-2470130-k6-w4-t2-n128-s1088"
+    },
+    {
+      "ordinal": 2470130,
+      "window_k": 6,
+      "tail_threshold": 8,
+      "found_length": 34,
+      "run_id": "m7-2470130-k6-w4-t8-n128-s1088"
+    }
+  ],
+  "best_by_graph": [
+    {
+      "ordinal": 539749,
+      "best_length": 35,
+      "gap": 1,
+      "settings": [
+        {
+          "k": 6,
+          "T": 0
+        },
+        {
+          "k": 6,
+          "T": 2
+        },
+        {
+          "k": 6,
+          "T": 8
+        }
+      ]
+    },
+    {
+      "ordinal": 679758,
+      "best_length": 36,
+      "gap": 2,
+      "settings": [
+        {
+          "k": 1,
+          "T": 0
+        },
+        {
+          "k": 1,
+          "T": 2
+        }
+      ]
+    },
+    {
+      "ordinal": 1783759,
+      "best_length": 35,
+      "gap": 1,
+      "settings": [
+        {
+          "k": 1,
+          "T": 8
+        }
+      ]
+    },
+    {
+      "ordinal": 2221624,
+      "best_length": 39,
+      "gap": 5,
+      "settings": [
+        {
+          "k": 4,
+          "T": 0
+        },
+        {
+          "k": 4,
+          "T": 2
+        },
+        {
+          "k": 4,
+          "T": 8
+        },
+        {
+          "k": 5,
+          "T": 0
+        },
+        {
+          "k": 5,
+          "T": 2
+        },
+        {
+          "k": 5,
+          "T": 8
+        },
+        {
+          "k": 6,
+          "T": 8
+        }
+      ]
+    },
+    {
+      "ordinal": 2470130,
+      "best_length": 34,
+      "gap": 0,
+      "settings": [
+        {
+          "k": 4,
+          "T": 8
+        },
+        {
+          "k": 5,
+          "T": 0
+        },
+        {
+          "k": 5,
+          "T": 2
+        },
+        {
+          "k": 5,
+          "T": 8
+        },
+        {
+          "k": 6,
+          "T": 0
+        },
+        {
+          "k": 6,
+          "T": 2
+        },
+        {
+          "k": 6,
+          "T": 8
+        }
+      ]
+    },
+    {
+      "ordinal": 2471796,
+      "best_length": 36,
+      "gap": 2,
+      "settings": [
+        {
+          "k": 2,
+          "T": 8
+        },
+        {
+          "k": 3,
+          "T": 0
+        },
+        {
+          "k": 3,
+          "T": 2
+        },
+        {
+          "k": 3,
+          "T": 8
+        },
+        {
+          "k": 4,
+          "T": 0
+        },
+        {
+          "k": 4,
+          "T": 2
+        },
+        {
+          "k": 4,
+          "T": 8
+        },
+        {
+          "k": 5,
+          "T": 0
+        },
+        {
+          "k": 5,
+          "T": 2
+        },
+        {
+          "k": 5,
+          "T": 8
+        }
+      ]
+    },
+    {
+      "ordinal": 3411148,
+      "best_length": 38,
+      "gap": 4,
+      "settings": [
+        {
+          "k": 1,
+          "T": 8
+        },
+        {
+          "k": 2,
+          "T": 0
+        },
+        {
+          "k": 2,
+          "T": 2
+        },
+        {
+          "k": 2,
+          "T": 8
+        },
+        {
+          "k": 3,
+          "T": 8
+        }
+      ]
+    },
+    {
+      "ordinal": 4099217,
+      "best_length": 39,
+      "gap": 5,
+      "settings": [
+        {
+          "k": 2,
+          "T": 8
+        },
+        {
+          "k": 5,
+          "T": 0
+        },
+        {
+          "k": 5,
+          "T": 2
+        },
+        {
+          "k": 5,
+          "T": 8
+        },
+        {
+          "k": 6,
+          "T": 0
+        },
+        {
+          "k": 6,
+          "T": 2
+        },
+        {
+          "k": 6,
+          "T": 8
+        }
+      ]
+    }
+  ],
+  "scope": "Complete predeclared engineering grid, not exhaustive word-pair optimization.",
+  "expansion_limit_events": 0
+}

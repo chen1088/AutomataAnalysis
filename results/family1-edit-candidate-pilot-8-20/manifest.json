@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "raw_files": 3001,
+  "unique_archive_objects": 1852,
+  "raw_bytes": 887375361,
+  "archive_bytes": 30579996,
+  "files": {
+    "audit.json": {
+      "sha256": "51504fd1f0f2de2d50943baffaf406c9909bdb65d22c5589a563517518f5eba4",
+      "bytes": 17148
+    },
+    "baseline-import.jsonl": {
+      "sha256": "69c002217792d7d3340e4483023f2632fc2ae0b1226346f3a3cc2690cf31f61e",
+      "bytes": 97184
+    },
+    "evidence.zip": {
+      "sha256": "768521411e420e19da4d26f2f1a9c53c923785753a6670f018f5589ea3561f49",
+      "bytes": 30579996
+    },
+    "external-pins.json": {
+      "sha256": "42024d1d99e0c22af5ad58cf51009c8a52b5e40408f83e1ce0a6230e86e698e6",
+      "bytes": 3797
+    },
+    "generated-candidates.jsonl.gz": {
+      "sha256": "cdb3372cd64885c87cb87f64e2f340f30ebc9992519d60d657e3b8e16be593c6",
+      "bytes": 2128547
+    },
+    "observations.jsonl": {
+      "sha256": "e89af28e12922c3ad9d8760fe976521cf42f2b46287585d579daea33f46d96e1",
+      "bytes": 473113
+    },
+    "paths.jsonl.gz": {
+      "sha256": "4113e1115e0f6a79fcd3eaa553141e2575bbdb9de18db0adc2195c8607bc2ab1",
+      "bytes": 921383
+    },
+    "ranked-candidates.jsonl.gz": {
+      "sha256": "2bad4bc05a2798abfd9886efed3e58910505defcc1e06921108558fe2a43b036",
+      "bytes": 3317412
+    },
+    "ranking-features.jsonl.gz": {
+      "sha256": "2a33ddfc48e21b15bba905d7838928485197f3d66b9147d649e32ecbd22dcc54",
+      "bytes": 238151
+    },
+    "raw-inventory.json": {
+      "sha256": "5cd2f356107dce4eb81455db0371142c392e2a3546103433ef00d49c1dfa33bf",
+      "bytes": 631636
+    },
+    "README.md": {
+      "sha256": "27f4f0ba75dbbd13c9b13a5a87d78c67508d95584ab1e2d622cd4075c6968792",
+      "bytes": 3542
+    },
+    "records.jsonl.gz": {
+      "sha256": "df0e353c1e2cc496bfab4ad3499547e643376c177298c417d43e45986cb2ec67",
+      "bytes": 1533642
+    },
+    "selected-roots.jsonl": {
+      "sha256": "55e14609e7a169600f33f849fad6701727cec4aa3e264509236699ccdb402368",
+      "bytes": 422259
+    },
+    "top-lower-bound-ties.jsonl": {
+      "sha256": "0bd04ac57386d970953bdb473b54050da74630e55d1f81b07e84a69b8e732f89",
+      "bytes": 154271
+    }
+  }
+}

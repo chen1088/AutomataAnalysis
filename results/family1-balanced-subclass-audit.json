@@ -1,0 +1,5760 @@
+{
+  "schema": 1,
+  "source": "out/family1-m1-m6/graphs.jsonl",
+  "source_sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156",
+  "scope": "Root-accessible graphs, loops and coincident ports allowed; outdegree exactly two. Balanced subclass additionally requires indegree exactly two, counting port multiplicity.",
+  "equivalence": "Rooted counts identify independent port swaps and root-preserving vertex relabeling. Unrooted shape counts additionally allow changing the starting vertex.",
+  "method": "Filter all 203321 exact records, independently count indegrees, exhaust vertex permutations for every winning graph, and enumerate simple directed cycles. All-root scores are looked up by independently recomputed rooted canonical tables in the complete per-size dataset. Independently enumerate all ordered labelled transition tables through m=4 and match the complete balanced rooted class sets. Directly simulate each reported winning witness on every original static mask.",
+  "cycle_convention": "Simple directed cycles use distinct vertices except the closing vertex, identify cyclic rotations, retain orientation, and ignore parallel-port multiplicity; loop port counts are reported separately.",
+  "limitations": "No new full scoring run was performed. Completeness and exact scores through m=6 inherit the full exact-run certificate. This audit independently filters every record, checks winning witnesses/isomorphisms/invariants, and independently re-enumerates the strict balanced class sets through m=4. Winner multiplicity at m=5 is an observation, not a theorem explaining or predicting all maximizing classes.",
+  "sizes": [
+    {
+      "m": 1,
+      "full_rooted_classes": 1,
+      "full_maximum": 1,
+      "full_winners": {
+        "rooted_winner_count": 1,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "00",
+            "unrooted_canonical_table": [
+              [
+                0,
+                0
+              ]
+            ],
+            "rooted_winner_keys": [
+              "00"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "00",
+                "merge_length": 1
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "00",
+            "canonical_table": [
+              [
+                0,
+                0
+              ]
+            ],
+            "merge_length": 1,
+            "unrooted_key": "00",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2
+              ],
+              "indegree_multiset": [
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [
+                0
+              ],
+              "strongly_connected_components": [
+                [
+                  0
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_rooted_classes": 1,
+      "balanced_maximum": 1,
+      "balanced_winners": {
+        "rooted_winner_count": 1,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "00",
+            "unrooted_canonical_table": [
+              [
+                0,
+                0
+              ]
+            ],
+            "rooted_winner_keys": [
+              "00"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "00",
+                "merge_length": 1
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "00",
+            "canonical_table": [
+              [
+                0,
+                0
+              ]
+            ],
+            "merge_length": 1,
+            "unrooted_key": "00",
+            "witness": [
+              "0",
+              "1"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2
+              ],
+              "indegree_multiset": [
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [
+                0
+              ],
+              "strongly_connected_components": [
+                [
+                  0
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_score_distribution": {
+        "1": 1
+      },
+      "balanced_unrooted_classes": 1,
+      "balanced_rooted_class_orbits_without_root": [
+        [
+          "00"
+        ]
+      ],
+      "balanced_maximum_certified_from_full_exact_dataset": true
+    },
+    {
+      "m": 2,
+      "full_rooted_classes": 6,
+      "full_maximum": 3,
+      "full_winners": {
+        "rooted_winner_count": 1,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "0101",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "rooted_winner_keys": [
+              "0101"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0101",
+                "merge_length": 3
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "0101",
+                "merge_length": 3
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "0101",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "merge_length": 3,
+            "unrooted_key": "0101",
+            "witness": [
+              "010",
+              "100"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                1
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 2,
+              "root_automorphism_orbit": [
+                0,
+                1
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_rooted_classes": 2,
+      "balanced_maximum": 3,
+      "balanced_winners": {
+        "rooted_winner_count": 1,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "0101",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "rooted_winner_keys": [
+              "0101"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0101",
+                "merge_length": 3
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "0101",
+                "merge_length": 3
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "0101",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "merge_length": 3,
+            "unrooted_key": "0101",
+            "witness": [
+              "010",
+              "100"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                1
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  1
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 2,
+              "root_automorphism_orbit": [
+                0,
+                1
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_score_distribution": {
+        "1": 1,
+        "3": 1
+      },
+      "balanced_unrooted_classes": 2,
+      "balanced_rooted_class_orbits_without_root": [
+        [
+          "0101"
+        ],
+        [
+          "1100"
+        ]
+      ],
+      "balanced_maximum_certified_from_full_exact_dataset": true
+    },
+    {
+      "m": 3,
+      "full_rooted_classes": 57,
+      "full_maximum": 6,
+      "full_winners": {
+        "rooted_winner_count": 2,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "010202",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "rooted_winner_keys": [
+              "011201",
+              "120112"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "010202",
+                "merge_length": 5
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "120112",
+                "merge_length": 6
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "011201",
+                "merge_length": 6
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "011201",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "merge_length": 6,
+            "unrooted_key": "010202",
+            "witness": [
+              "000100",
+              "010000"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                3,
+                1
+              ],
+              "indegree_multiset": [
+                1,
+                2,
+                3
+              ],
+              "indegree_two_at_every_vertex": false,
+              "self_loop_vertices": [
+                0,
+                1
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  1
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "120112",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "merge_length": 6,
+            "unrooted_key": "010202",
+            "witness": [
+              "001111",
+              "011011"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                1,
+                3,
+                2
+              ],
+              "indegree_multiset": [
+                1,
+                2,
+                3
+              ],
+              "indegree_two_at_every_vertex": false,
+              "self_loop_vertices": [
+                1,
+                2
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_rooted_classes": 8,
+      "balanced_maximum": 5,
+      "balanced_winners": {
+        "rooted_winner_count": 3,
+        "unrooted_winner_shape_count": 3,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "011202",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "rooted_winner_keys": [
+              "011202"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "011202",
+                "merge_length": 5
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "011202",
+                "merge_length": 5
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "011202",
+                "merge_length": 5
+              }
+            ]
+          },
+          {
+            "unrooted_canonical_key": "012201",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "rooted_winner_keys": [
+              "012201"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "012201",
+                "merge_length": 5
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "110202",
+                "merge_length": 1
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "120012",
+                "merge_length": 4
+              }
+            ]
+          },
+          {
+            "unrooted_canonical_key": "010212",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "rooted_winner_keys": [
+              "120102"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "010212",
+                "merge_length": 4
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "120102",
+                "merge_length": 5
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "010212",
+                "merge_length": 4
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "011202",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "merge_length": 5,
+            "unrooted_key": "011202",
+            "witness": [
+              "00100",
+              "01000"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                1,
+                2
+              ],
+              "self_loop_port_count": 3,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 3,
+                "3": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 3,
+              "root_automorphism_orbit": [
+                0,
+                1,
+                2
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "012201",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "merge_length": 5,
+            "unrooted_key": "012201",
+            "witness": [
+              "01000",
+              "10110"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0
+              ],
+              "self_loop_port_count": 1,
+              "coincident_port_vertices": [
+                1
+              ],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 1,
+                "2": 1,
+                "3": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  2
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "120102",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "merge_length": 5,
+            "unrooted_key": "010212",
+            "witness": [
+              "00010",
+              "01000"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                1,
+                2
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 2
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  1
+                ],
+                [
+                  2
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 2,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_score_distribution": {
+        "1": 2,
+        "4": 3,
+        "5": 3
+      },
+      "balanced_unrooted_classes": 5,
+      "balanced_rooted_class_orbits_without_root": [
+        [
+          "010212",
+          "120102"
+        ],
+        [
+          "011202"
+        ],
+        [
+          "012201",
+          "110202",
+          "120012"
+        ],
+        [
+          "112200"
+        ],
+        [
+          "120201"
+        ]
+      ],
+      "balanced_maximum_certified_from_full_exact_dataset": true
+    },
+    {
+      "m": 4,
+      "full_rooted_classes": 678,
+      "full_maximum": 10,
+      "full_winners": {
+        "rooted_winner_count": 1,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "01230312",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "rooted_winner_keys": [
+              "12021303"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "01230312",
+                "merge_length": 9
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "12021303",
+                "merge_length": 10
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "12032301",
+                "merge_length": 7
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "12020313",
+                "merge_length": 8
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "12021303",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "merge_length": 10,
+            "unrooted_key": "01230312",
+            "witness": [
+              "0000010001",
+              "0010000001"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                3
+              ],
+              "self_loop_port_count": 1,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 1,
+                "2": 2,
+                "3": 2,
+                "4": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  3
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_rooted_classes": 36,
+      "balanced_maximum": 10,
+      "balanced_winners": {
+        "rooted_winner_count": 1,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "01230312",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "rooted_winner_keys": [
+              "12021303"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "01230312",
+                "merge_length": 9
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "12021303",
+                "merge_length": 10
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "12032301",
+                "merge_length": 7
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "12020313",
+                "merge_length": 8
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "12021303",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                3
+              ]
+            ],
+            "merge_length": 10,
+            "unrooted_key": "01230312",
+            "witness": [
+              "0000010001",
+              "0010000001"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                3
+              ],
+              "self_loop_port_count": 1,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 1,
+                "2": 2,
+                "3": 2,
+                "4": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  3
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_score_distribution": {
+        "1": 8,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 5,
+        "6": 3,
+        "7": 10,
+        "8": 3,
+        "9": 3,
+        "10": 1
+      },
+      "balanced_unrooted_classes": 14,
+      "balanced_rooted_class_orbits_without_root": [
+        [
+          "01021323",
+          "12010323"
+        ],
+        [
+          "01022313",
+          "01120323",
+          "01230213",
+          "12012303"
+        ],
+        [
+          "01023312",
+          "11020323",
+          "12001323",
+          "12013302"
+        ],
+        [
+          "01122303"
+        ],
+        [
+          "01123302",
+          "01221303",
+          "11022303",
+          "12002313"
+        ],
+        [
+          "01220313",
+          "11230203",
+          "12132300"
+        ],
+        [
+          "01223301",
+          "11220303",
+          "11230023",
+          "12123300"
+        ],
+        [
+          "01230123",
+          "12031203"
+        ],
+        [
+          "01230312",
+          "12020313",
+          "12021303",
+          "12032301"
+        ],
+        [
+          "11023302",
+          "12003312"
+        ],
+        [
+          "11223300"
+        ],
+        [
+          "11230302",
+          "12023301",
+          "12231300"
+        ],
+        [
+          "12030312"
+        ],
+        [
+          "12031302"
+        ]
+      ],
+      "balanced_maximum_certified_from_full_exact_dataset": true
+    },
+    {
+      "m": 5,
+      "full_rooted_classes": 10398,
+      "full_maximum": 15,
+      "full_winners": {
+        "rooted_winner_count": 5,
+        "unrooted_winner_shape_count": 4,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "0112340234",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "rooted_winner_keys": [
+              "0123013424",
+              "1203123404"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0112340234",
+                "merge_length": 14
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "0123142304",
+                "merge_length": 14
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "1203123404",
+                "merge_length": 15
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "1203240314",
+                "merge_length": 12
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "0123013424",
+                "merge_length": 15
+              }
+            ]
+          },
+          {
+            "unrooted_canonical_key": "0123031424",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "rooted_winner_keys": [
+              "0123031424"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0123031424",
+                "merge_length": 15
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "1203142304",
+                "merge_length": 14
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "1213340204",
+                "merge_length": 14
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "1203230414",
+                "merge_length": 13
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "0123043412",
+                "merge_length": 13
+              }
+            ]
+          },
+          {
+            "unrooted_canonical_key": "0123042312",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "rooted_winner_keys": [
+              "1203142314"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0123042312",
+                "merge_length": 13
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "1212340204",
+                "merge_length": 13
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "1203230404",
+                "merge_length": 12
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "0123143401",
+                "merge_length": 13
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "1203142314",
+                "merge_length": 15
+              }
+            ]
+          },
+          {
+            "unrooted_canonical_key": "0123010424",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "rooted_winner_keys": [
+              "1203340314"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0123010424",
+                "merge_length": 12
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "1203340314",
+                "merge_length": 15
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "1203122404",
+                "merge_length": 12
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "1213240413",
+                "merge_length": 14
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "0123142303",
+                "merge_length": 13
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "0123013424",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0112340234",
+            "witness": [
+              "000011011000011",
+              "001101100000011"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                3,
+                4
+              ],
+              "self_loop_port_count": 3,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 3,
+                "2": 1,
+                "3": 1,
+                "4": 1,
+                "5": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "0123031424",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0123031424",
+            "witness": [
+              "000000001010000",
+              "001010000000000"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                4
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 3,
+                "5": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "1203123404",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0112340234",
+            "witness": [
+              "001000011111100",
+              "001011000111100"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                2,
+                3,
+                4
+              ],
+              "self_loop_port_count": 3,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 3,
+                "2": 1,
+                "3": 1,
+                "4": 1,
+                "5": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  1,
+                  3,
+                  4
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "1203142314",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0123042312",
+            "witness": [
+              "000000000010001",
+              "000010000000001"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                1,
+                3,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                1,
+                2,
+                2,
+                2,
+                3
+              ],
+              "indegree_two_at_every_vertex": false,
+              "self_loop_vertices": [
+                3,
+                4
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 2,
+                "4": 2
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  4,
+                  1
+                ],
+                [
+                  1,
+                  3,
+                  2
+                ],
+                [
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  3
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "1203340314",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0123010424",
+            "witness": [
+              "000001111000011",
+              "000111100000011"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                1,
+                3,
+                2
+              ],
+              "indegree_multiset": [
+                1,
+                2,
+                2,
+                2,
+                3
+              ],
+              "indegree_two_at_every_vertex": false,
+              "self_loop_vertices": [
+                3,
+                4
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 2,
+                "4": 1,
+                "5": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  2,
+                  3
+                ],
+                [
+                  0,
+                  2,
+                  4,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  4,
+                  1,
+                  3
+                ],
+                [
+                  3
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_rooted_classes": 209,
+      "balanced_maximum": 15,
+      "balanced_winners": {
+        "rooted_winner_count": 3,
+        "unrooted_winner_shape_count": 2,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "0112340234",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "rooted_winner_keys": [
+              "0123013424",
+              "1203123404"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0112340234",
+                "merge_length": 14
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "0123142304",
+                "merge_length": 14
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "1203123404",
+                "merge_length": 15
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "1203240314",
+                "merge_length": 12
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "0123013424",
+                "merge_length": 15
+              }
+            ]
+          },
+          {
+            "unrooted_canonical_key": "0123031424",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "rooted_winner_keys": [
+              "0123031424"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "0123031424",
+                "merge_length": 15
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "1203142304",
+                "merge_length": 14
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "1213340204",
+                "merge_length": 14
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "1203230414",
+                "merge_length": 13
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "0123043412",
+                "merge_length": 13
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "0123013424",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0112340234",
+            "witness": [
+              "000011011000011",
+              "001101100000011"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                3,
+                4
+              ],
+              "self_loop_port_count": 3,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 3,
+                "2": 1,
+                "3": 1,
+                "4": 1,
+                "5": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "0123031424",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0123031424",
+            "witness": [
+              "000000001010000",
+              "001010000000000"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                4
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 3,
+                "5": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  4,
+                  2
+                ],
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  2,
+                  3,
+                  4
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "1203123404",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                4
+              ]
+            ],
+            "merge_length": 15,
+            "unrooted_key": "0112340234",
+            "witness": [
+              "001000011111100",
+              "001011000111100"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                2,
+                3,
+                4
+              ],
+              "self_loop_port_count": 3,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 3,
+                "2": 1,
+                "3": 1,
+                "4": 1,
+                "5": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  1,
+                  3,
+                  4
+                ],
+                [
+                  2
+                ],
+                [
+                  3
+                ],
+                [
+                  4
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_score_distribution": {
+        "1": 36,
+        "2": 6,
+        "3": 3,
+        "4": 3,
+        "5": 2,
+        "6": 2,
+        "7": 15,
+        "8": 16,
+        "9": 25,
+        "10": 32,
+        "11": 19,
+        "12": 20,
+        "13": 16,
+        "14": 11,
+        "15": 3
+      },
+      "balanced_unrooted_classes": 50,
+      "balanced_rooted_class_orbits_without_root": [
+        [
+          "0102132434",
+          "1201032434",
+          "1203041324"
+        ],
+        [
+          "0102133424",
+          "0112032434",
+          "0123021434",
+          "1201033424",
+          "1203241304"
+        ],
+        [
+          "0102134423",
+          "1102032434",
+          "1200132434",
+          "1201034423",
+          "1203441302"
+        ],
+        [
+          "0102231434",
+          "0102341324",
+          "0123041324",
+          "1201230434",
+          "1201340324"
+        ],
+        [
+          "0102233414",
+          "0112230434",
+          "0112340324",
+          "0123123404",
+          "1201233404"
+        ],
+        [
+          "0102234413",
+          "0122130434",
+          "1102340324",
+          "1200341324",
+          "1201234403"
+        ],
+        [
+          "0102331424",
+          "0122031434",
+          "1123020434",
+          "1201330424",
+          "1213340024"
+        ],
+        [
+          "0102332414",
+          "0123124403",
+          "1102230434",
+          "1200231434",
+          "1201332404"
+        ],
+        [
+          "0102334412",
+          "1122030434",
+          "1123002434",
+          "1201334402",
+          "1223441300"
+        ],
+        [
+          "0102341234",
+          "0123012434",
+          "1201340234",
+          "1203120434",
+          "1203140324"
+        ],
+        [
+          "0102341423",
+          "1201340423",
+          "1202031434",
+          "1202130434",
+          "1203340124"
+        ],
+        [
+          "0112033424",
+          "0123023414",
+          "1213240304"
+        ],
+        [
+          "0112034423",
+          "0123024413",
+          "1102033424",
+          "1200133424",
+          "1213440302"
+        ],
+        [
+          "0112233404"
+        ],
+        [
+          "0112234403",
+          "0112332404",
+          "0122133404",
+          "1102233404",
+          "1200233414"
+        ],
+        [
+          "0112330424",
+          "0122033414",
+          "0122340314",
+          "1123023404",
+          "1213240034"
+        ],
+        [
+          "0112334402",
+          "0122331404",
+          "1122033404",
+          "1123003424",
+          "1213442300"
+        ],
+        [
+          "0112340234",
+          "0123013424",
+          "0123142304",
+          "1203123404",
+          "1203240314"
+        ],
+        [
+          "0112340423",
+          "0123132404",
+          "1202033414",
+          "1202133404",
+          "1203240134"
+        ],
+        [
+          "0122034413",
+          "1102330424",
+          "1123024403",
+          "1200331424",
+          "1213440023"
+        ],
+        [
+          "0122134403",
+          "1102234403",
+          "1102332404",
+          "1200234413",
+          "1200332414"
+        ],
+        [
+          "0122330414",
+          "1122340304",
+          "1123243400",
+          "1213234400"
+        ],
+        [
+          "0122334401",
+          "1122330404",
+          "1122340034",
+          "1123234400",
+          "1212334400"
+        ],
+        [
+          "0122340134",
+          "0123234401",
+          "1123042304",
+          "1212330404",
+          "1212340034"
+        ],
+        [
+          "0122340413",
+          "1123032404",
+          "1203234401",
+          "1203442301",
+          "1223140034"
+        ],
+        [
+          "0123014423",
+          "1102340234",
+          "1200341234",
+          "1203124403",
+          "1203440312"
+        ],
+        [
+          "0123031424",
+          "0123043412",
+          "1203142304",
+          "1203230414",
+          "1213340204"
+        ],
+        [
+          "0123032414",
+          "1203243401",
+          "1223140304"
+        ],
+        [
+          "0123034412",
+          "1123030424",
+          "1213440203",
+          "1223340014",
+          "1223440301"
+        ],
+        [
+          "0123041234",
+          "1202340314",
+          "1213240403"
+        ],
+        [
+          "0123041423",
+          "1203031424",
+          "1203041234",
+          "1203241403",
+          "1203341204"
+        ],
+        [
+          "0123042314",
+          "0123243401",
+          "1212340304",
+          "1213230404"
+        ],
+        [
+          "0123042413",
+          "1203130424",
+          "1203140234",
+          "1213340402",
+          "1223340104"
+        ],
+        [
+          "0123134402",
+          "1123043402",
+          "1202330414",
+          "1202331404",
+          "1213342400"
+        ],
+        [
+          "0123142403",
+          "1203132404",
+          "1203143402",
+          "1203240413",
+          "1203340214"
+        ],
+        [
+          "0123143402",
+          "1203042314",
+          "1203231404"
+        ],
+        [
+          "0123342401",
+          "1202340134",
+          "1212340403",
+          "1223130404"
+        ],
+        [
+          "1102034423",
+          "1200134423",
+          "1233440102"
+        ],
+        [
+          "1102334402",
+          "1122034403",
+          "1123004423",
+          "1200334412",
+          "1233440012"
+        ],
+        [
+          "1102340423",
+          "1200341423",
+          "1202034413",
+          "1202134403",
+          "1203440123"
+        ],
+        [
+          "1122334400"
+        ],
+        [
+          "1122340403",
+          "1123342400",
+          "1202334401",
+          "1223134400"
+        ],
+        [
+          "1123034402",
+          "1223440013",
+          "1233440201"
+        ],
+        [
+          "1123040423",
+          "1203034412",
+          "1203441203",
+          "1234340012"
+        ],
+        [
+          "1123042403",
+          "1203134402",
+          "1203440213",
+          "1223341400",
+          "1223440103"
+        ],
+        [
+          "1202340413",
+          "1203342401",
+          "1223140403"
+        ],
+        [
+          "1203041423"
+        ],
+        [
+          "1203042413",
+          "1203140423",
+          "1203341402"
+        ],
+        [
+          "1203142403",
+          "1203340412",
+          "1234340102"
+        ],
+        [
+          "1223340401"
+        ]
+      ],
+      "balanced_maximum_certified_from_full_exact_dataset": true
+    },
+    {
+      "m": 6,
+      "full_rooted_classes": 192181,
+      "full_maximum": 23,
+      "full_winners": {
+        "rooted_winner_count": 2,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "012323450514",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "rooted_winner_keys": [
+              "012334250145",
+              "120345230145"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "012323450514",
+                "merge_length": 20
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "121234043505",
+                "merge_length": 22
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "012334250145",
+                "merge_length": 23
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "122314053405",
+                "merge_length": 22
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "120323450145",
+                "merge_length": 19
+              },
+              {
+                "root": 5,
+                "accessible": true,
+                "rooted_key": "120345230145",
+                "merge_length": 23
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "012334250145",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "merge_length": 23,
+            "unrooted_key": "012323450514",
+            "witness": [
+              "00000011010100000010110",
+              "00110101000000000010110"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                5
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 3,
+                "5": 3,
+                "6": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  1,
+                  2,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  1,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  5
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "120345230145",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "merge_length": 23,
+            "unrooted_key": "012323450514",
+            "witness": [
+              "01001111001000111011110",
+              "01010100001000111011110"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                3,
+                5
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 3,
+                "5": 3,
+                "6": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  2,
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  4,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  5,
+                  4,
+                  1
+                ],
+                [
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  3,
+                  2,
+                  5,
+                  4
+                ],
+                [
+                  3
+                ],
+                [
+                  5
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_rooted_classes": 1393,
+      "balanced_maximum": 23,
+      "balanced_winners": {
+        "rooted_winner_count": 2,
+        "unrooted_winner_shape_count": 1,
+        "unrooted_shapes": [
+          {
+            "unrooted_canonical_key": "012323450514",
+            "unrooted_canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                4
+              ]
+            ],
+            "rooted_winner_keys": [
+              "012334250145",
+              "120345230145"
+            ],
+            "all_root_scores_in_unrooted_canonical_labelling": [
+              {
+                "root": 0,
+                "accessible": true,
+                "rooted_key": "012323450514",
+                "merge_length": 20
+              },
+              {
+                "root": 1,
+                "accessible": true,
+                "rooted_key": "121234043505",
+                "merge_length": 22
+              },
+              {
+                "root": 2,
+                "accessible": true,
+                "rooted_key": "012334250145",
+                "merge_length": 23
+              },
+              {
+                "root": 3,
+                "accessible": true,
+                "rooted_key": "122314053405",
+                "merge_length": 22
+              },
+              {
+                "root": 4,
+                "accessible": true,
+                "rooted_key": "120323450145",
+                "merge_length": 19
+              },
+              {
+                "root": 5,
+                "accessible": true,
+                "rooted_key": "120345230145",
+                "merge_length": 23
+              }
+            ]
+          }
+        ],
+        "winning_graphs": [
+          {
+            "rooted_key": "012334250145",
+            "canonical_table": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "merge_length": 23,
+            "unrooted_key": "012323450514",
+            "witness": [
+              "00000011010100000010110",
+              "00110101000000000010110"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                0,
+                5
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 3,
+                "5": 3,
+                "6": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  1,
+                  2,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  1,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  3,
+                  5,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  5
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          },
+          {
+            "rooted_key": "120345230145",
+            "canonical_table": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "merge_length": 23,
+            "unrooted_key": "012323450514",
+            "witness": [
+              "01001111001000111011110",
+              "01010100001000111011110"
+            ],
+            "invariants": {
+              "indegree_by_vertex": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_multiset": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "indegree_two_at_every_vertex": true,
+              "self_loop_vertices": [
+                3,
+                5
+              ],
+              "self_loop_port_count": 2,
+              "coincident_port_vertices": [],
+              "strongly_connected_components": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "strongly_connected": true,
+              "simple_directed_cycles_by_length": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 3,
+                "5": 3,
+                "6": 1
+              },
+              "simple_directed_cycles": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  1,
+                  3,
+                  2,
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  4,
+                  1
+                ],
+                [
+                  0,
+                  2,
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  5,
+                  4,
+                  1
+                ],
+                [
+                  1,
+                  3,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  3,
+                  2,
+                  5,
+                  4
+                ],
+                [
+                  3
+                ],
+                [
+                  5
+                ]
+              ],
+              "cycle_length_gcd": 1,
+              "automorphism_count_without_root": 1,
+              "root_automorphism_orbit": [
+                0
+              ]
+            },
+            "saved_witness_independently_verified_over_all_static_masks": true
+          }
+        ]
+      },
+      "balanced_score_distribution": {
+        "1": 209,
+        "2": 28,
+        "3": 15,
+        "4": 9,
+        "5": 9,
+        "6": 9,
+        "7": 14,
+        "8": 21,
+        "9": 49,
+        "10": 57,
+        "11": 92,
+        "12": 85,
+        "13": 101,
+        "14": 88,
+        "15": 104,
+        "16": 132,
+        "17": 125,
+        "18": 85,
+        "19": 72,
+        "20": 48,
+        "21": 27,
+        "22": 12,
+        "23": 2
+      },
+      "balanced_unrooted_classes": 265,
+      "balanced_rooted_class_orbits_without_root": [
+        [
+          "010213243545",
+          "120103243545",
+          "120304132545"
+        ],
+        [
+          "010213244535",
+          "011203243545",
+          "012302143545",
+          "120103244535",
+          "120304134525",
+          "120324150435"
+        ],
+        [
+          "010213245534",
+          "110203243545",
+          "120013243545",
+          "120103245534",
+          "120304135524",
+          "120344150235"
+        ],
+        [
+          "010213342545",
+          "010234132545",
+          "012304132545",
+          "120103342545",
+          "120134032545",
+          "120324130545"
+        ],
+        [
+          "010213344525",
+          "011223043545",
+          "011234032545",
+          "012314352405",
+          "120103344525",
+          "120324134505"
+        ],
+        [
+          "010213345524",
+          "012213043545",
+          "110234032545",
+          "120034132545",
+          "120103345524",
+          "120324135504"
+        ],
+        [
+          "010213442535",
+          "012203143545",
+          "112302043545",
+          "120103442535",
+          "120344130525",
+          "121334002545"
+        ],
+        [
+          "010213443525",
+          "012314552403",
+          "110223043545",
+          "120023143545",
+          "120103443525",
+          "120344132505"
+        ],
+        [
+          "010213445523",
+          "112203043545",
+          "112300243545",
+          "120103445523",
+          "120344135502",
+          "122344150035"
+        ],
+        [
+          "010213452345",
+          "012301243545",
+          "120103452345",
+          "120312043545",
+          "120314032545",
+          "120345130245"
+        ],
+        [
+          "010213452435",
+          "010223143545",
+          "012304152435",
+          "120103452435",
+          "120123043545",
+          "120345130425"
+        ],
+        [
+          "010213452534",
+          "120103452534",
+          "120203143545",
+          "120213043545",
+          "120334012545",
+          "120345130524"
+        ],
+        [
+          "010223144535",
+          "011203452435",
+          "012302451435",
+          "012304352415",
+          "120123044535",
+          "121345030425"
+        ],
+        [
+          "010223145534",
+          "012304552413",
+          "110203452435",
+          "120013452435",
+          "120123045534",
+          "123345010425"
+        ],
+        [
+          "010223341545",
+          "010234234515",
+          "011234052435",
+          "012312450435",
+          "120123340545",
+          "120134234505"
+        ],
+        [
+          "010223344515",
+          "011223340545",
+          "011223450435",
+          "011234234505",
+          "012312344505",
+          "120123344505"
+        ],
+        [
+          "010223345514",
+          "011233240545",
+          "012213450435",
+          "110234234505",
+          "120034234515",
+          "120123345504"
+        ],
+        [
+          "010223441535",
+          "012203451435",
+          "012234051435",
+          "112302450435",
+          "120123440535",
+          "121345002435"
+        ],
+        [
+          "010223443515",
+          "012213340545",
+          "012312345504",
+          "110223450435",
+          "120023451435",
+          "120123443505"
+        ],
+        [
+          "010223445513",
+          "012233140545",
+          "112203450435",
+          "112300452435",
+          "120123445503",
+          "123345001425"
+        ],
+        [
+          "010223451345",
+          "012301452435",
+          "012314230545",
+          "120123450345",
+          "120312450435",
+          "120345031425"
+        ],
+        [
+          "010223451435",
+          "012312340545",
+          "120123450435"
+        ],
+        [
+          "010223451534",
+          "012313240545",
+          "120123450534",
+          "120203451435",
+          "120213450435",
+          "120345012435"
+        ],
+        [
+          "010233142545",
+          "112304052435",
+          "120133042545",
+          "123435001425"
+        ],
+        [
+          "010233144525",
+          "011233042545",
+          "012234031545",
+          "112304352405",
+          "120133044525",
+          "121345340025"
+        ],
+        [
+          "010233145524",
+          "110233042545",
+          "112304552403",
+          "120033142545",
+          "120133045524",
+          "123345140025"
+        ],
+        [
+          "010233241545",
+          "010234235514",
+          "110234052435",
+          "120034152435",
+          "120133240545",
+          "120134235504"
+        ],
+        [
+          "010233244515",
+          "011234235504",
+          "012312443505",
+          "110223340545",
+          "120023341545",
+          "120133244505"
+        ],
+        [
+          "010233245514",
+          "110233240545",
+          "110234235504",
+          "120033241545",
+          "120034235514",
+          "120133245504"
+        ],
+        [
+          "010233441525",
+          "012233041545",
+          "112234030545",
+          "112324450035",
+          "120133440525",
+          "121334552400"
+        ],
+        [
+          "010233442515",
+          "012312445503",
+          "112203340545",
+          "112300342545",
+          "120133442505",
+          "121344250035"
+        ],
+        [
+          "010233445512",
+          "112233040545",
+          "112234003545",
+          "112334552400",
+          "120133445502",
+          "122344135500"
+        ],
+        [
+          "010233451245",
+          "012334552401",
+          "112304230545",
+          "120133450245",
+          "121234003545",
+          "122344130505"
+        ],
+        [
+          "010233451425",
+          "012203341545",
+          "012312440535",
+          "112302340545",
+          "120133450425",
+          "121324003545"
+        ],
+        [
+          "010233451524",
+          "112303240545",
+          "120133450524",
+          "120334552401",
+          "120344250135",
+          "122314003545"
+        ],
+        [
+          "010234123545",
+          "120134023545",
+          "120314052435"
+        ],
+        [
+          "010234124535",
+          "011234023545",
+          "012314250435",
+          "120134024535",
+          "120314352405",
+          "120324051435"
+        ],
+        [
+          "010234125534",
+          "110234023545",
+          "120034123545",
+          "120134025534",
+          "120314552403",
+          "120344051235"
+        ],
+        [
+          "010234134525",
+          "011203342545",
+          "012302341545",
+          "012304134525",
+          "120134034525",
+          "121324030545"
+        ],
+        [
+          "010234135524",
+          "012304135524",
+          "110203342545",
+          "120013342545",
+          "120134035524",
+          "121344050235"
+        ],
+        [
+          "010234142535",
+          "012304451235",
+          "120134042535",
+          "120314230545",
+          "120323041545",
+          "123435010425"
+        ],
+        [
+          "010234143525",
+          "012303241545",
+          "120134043525",
+          "120324450135",
+          "120345340125",
+          "122314030545"
+        ],
+        [
+          "010234145523",
+          "112303042545",
+          "120134045523",
+          "122334001545",
+          "122344050135",
+          "123345040125"
+        ],
+        [
+          "010234152345",
+          "012304123545",
+          "120134052345",
+          "120234031545",
+          "120234051435",
+          "121345040325"
+        ],
+        [
+          "010234152435",
+          "120134052435"
+        ],
+        [
+          "010234152534",
+          "120134052534",
+          "120303142545",
+          "120304123545",
+          "120334120545",
+          "120345140325"
+        ],
+        [
+          "010234153425",
+          "012304231545",
+          "012324450135",
+          "120134053425",
+          "121234030545",
+          "121334052405"
+        ],
+        [
+          "010234153524",
+          "120134053524",
+          "120313042545",
+          "120314023545",
+          "122334010545",
+          "123435040125"
+        ],
+        [
+          "010234154523",
+          "012303142545",
+          "120134054523",
+          "120314250435",
+          "120334052415",
+          "121334020545"
+        ],
+        [
+          "010234243515",
+          "012312450534",
+          "120134243505",
+          "120203341545",
+          "120213340545",
+          "120324013545"
+        ],
+        [
+          "010234245513",
+          "112304450235",
+          "120134245503",
+          "120233041545",
+          "120233140545",
+          "123435140025"
+        ],
+        [
+          "010234253415",
+          "012301342545",
+          "012312450345",
+          "120134253405",
+          "120312340545",
+          "120324031545"
+        ],
+        [
+          "010234253514",
+          "120134253504",
+          "120313240545",
+          "120314450235",
+          "120334021545",
+          "120345041325"
+        ],
+        [
+          "010234254513",
+          "012314450235",
+          "120134254503",
+          "120304231545",
+          "120323140545",
+          "120334152405"
+        ],
+        [
+          "010234345512",
+          "012234013545",
+          "112304250435",
+          "120134345502",
+          "121233040545",
+          "122345130045"
+        ],
+        [
+          "010234354512",
+          "012304251435",
+          "120134354502",
+          "121323040545",
+          "122345130405"
+        ],
+        [
+          "010234453512",
+          "120134453502",
+          "120234013545",
+          "122313040545",
+          "122345130504"
+        ],
+        [
+          "011203244535",
+          "012302144535",
+          "120324350415"
+        ],
+        [
+          "011203245534",
+          "012302145534",
+          "110203244535",
+          "120013244535",
+          "120324550413",
+          "120344350215"
+        ],
+        [
+          "011203344525",
+          "011223044535",
+          "011234034525",
+          "012302344515",
+          "012324350415",
+          "121324034505"
+        ],
+        [
+          "011203345524",
+          "012213044535",
+          "012302345514",
+          "110234034525",
+          "120034134525",
+          "121324035504"
+        ],
+        [
+          "011203442535",
+          "012203144535",
+          "012302441535",
+          "112302044535",
+          "121334004525",
+          "121344030525"
+        ],
+        [
+          "011203443525",
+          "012302443515",
+          "012324551403",
+          "110223044535",
+          "120023144535",
+          "121344032505"
+        ],
+        [
+          "011203445523",
+          "012302445513",
+          "112203044535",
+          "112300244535",
+          "121344035502",
+          "122344350015"
+        ],
+        [
+          "011203452345",
+          "012301244535",
+          "012302451345",
+          "120312044535",
+          "120314034525",
+          "121345030245"
+        ],
+        [
+          "011203452534",
+          "012302451534",
+          "120203144535",
+          "120213044535",
+          "120334014525",
+          "121345030524"
+        ],
+        [
+          "011223045534",
+          "011234035524",
+          "012324550413",
+          "110203344525",
+          "120013344525",
+          "121344350205"
+        ],
+        [
+          "011223344505"
+        ],
+        [
+          "011223345504",
+          "011223443505",
+          "011233244505",
+          "012213344505",
+          "110223344505",
+          "120023344515"
+        ],
+        [
+          "011223440535",
+          "011233450425",
+          "012203344515",
+          "012234134505",
+          "112302344505",
+          "121324004535"
+        ],
+        [
+          "011223445503",
+          "011233442505",
+          "012233144505",
+          "112203344505",
+          "112300344525",
+          "121344350025"
+        ],
+        [
+          "011223450345",
+          "011234253405",
+          "012301344525",
+          "012314234505",
+          "120312344505",
+          "120324034515"
+        ],
+        [
+          "011223450534",
+          "011234243505",
+          "012313244505",
+          "120203344515",
+          "120213344505",
+          "120324014535"
+        ],
+        [
+          "011233044525",
+          "012234034515",
+          "112324350405",
+          "121324354500"
+        ],
+        [
+          "011233045524",
+          "012234035514",
+          "110233044525",
+          "112324550403",
+          "120033144525",
+          "121344352500"
+        ],
+        [
+          "011233245504",
+          "012213443505",
+          "110223345504",
+          "110233244505",
+          "120023345514",
+          "120033244515"
+        ],
+        [
+          "011233440525",
+          "012233044515",
+          "012233450415",
+          "112234034505",
+          "112324350045",
+          "121324345500"
+        ],
+        [
+          "011233445502",
+          "012233441505",
+          "112233044505",
+          "112234004535",
+          "112324553400",
+          "121344235500"
+        ],
+        [
+          "011233450245",
+          "012234153405",
+          "012324553401",
+          "112304234505",
+          "121234004535",
+          "121344230505"
+        ],
+        [
+          "011233450524",
+          "012234143505",
+          "112303244505",
+          "120324553401",
+          "120344350125",
+          "122314004535"
+        ],
+        [
+          "011234024535",
+          "012314350425",
+          "120324351405"
+        ],
+        [
+          "011234025534",
+          "012314550423",
+          "110234024535",
+          "120034124535",
+          "120324551403",
+          "120344351205"
+        ],
+        [
+          "011234042535",
+          "012304351245",
+          "012314253405",
+          "120314234505",
+          "120323044515",
+          "121345340205"
+        ],
+        [
+          "011234043525",
+          "012303244515",
+          "012334250415",
+          "120324350145",
+          "120324354501",
+          "122314034505"
+        ],
+        [
+          "011234045523",
+          "012334550412",
+          "112303044525",
+          "121344350502",
+          "122334004515",
+          "122344350105"
+        ],
+        [
+          "011234052345",
+          "012304124535",
+          "012313450425",
+          "120234034515",
+          "120234134505",
+          "121324054503"
+        ],
+        [
+          "011234052534",
+          "012314452305",
+          "120303144525",
+          "120304124535",
+          "120324154503",
+          "120334124505"
+        ],
+        [
+          "011234053425",
+          "012304234515",
+          "012323450415",
+          "012324350145",
+          "121234034505",
+          "121324053405"
+        ],
+        [
+          "011234053524",
+          "012334451205",
+          "120313044525",
+          "120314024535",
+          "121345340502",
+          "122334014505"
+        ],
+        [
+          "011234054523",
+          "012303144525",
+          "012324451305",
+          "120314350425",
+          "120324053415",
+          "121334024505"
+        ],
+        [
+          "011234245503",
+          "012313442505",
+          "112304350245",
+          "120233044515",
+          "120233144505",
+          "121345342500"
+        ],
+        [
+          "011234253504",
+          "012314243505",
+          "120313244505",
+          "120314350245",
+          "120324054513",
+          "120334024515"
+        ],
+        [
+          "011234254503",
+          "012314342505",
+          "012314350245",
+          "120304234515",
+          "120323144505",
+          "120324153405"
+        ],
+        [
+          "011234345502",
+          "012234014535",
+          "012323441505",
+          "112304350425",
+          "121233044505",
+          "121345230045"
+        ],
+        [
+          "011234354502",
+          "012304351425",
+          "012324341505",
+          "121323044505",
+          "121345230405"
+        ],
+        [
+          "011234453502",
+          "012334241505",
+          "120234014535",
+          "121345230504",
+          "122313044505"
+        ],
+        [
+          "012203145534",
+          "110203442535",
+          "112302045534",
+          "120013442535",
+          "121334005524",
+          "123344010525"
+        ],
+        [
+          "012203345514",
+          "012213440535",
+          "110233450425",
+          "112302345504",
+          "120033451425",
+          "121324005534"
+        ],
+        [
+          "012203441535",
+          "112302440535",
+          "121344003525"
+        ],
+        [
+          "012203443515",
+          "012234135504",
+          "110223440535",
+          "112302443505",
+          "120023441535",
+          "121344002535"
+        ],
+        [
+          "012203445513",
+          "112203440535",
+          "112300442535",
+          "112302445503",
+          "121344005523",
+          "123344001525"
+        ],
+        [
+          "012203451345",
+          "012301442535",
+          "112302450345",
+          "120312440535",
+          "120344031525",
+          "121345002345"
+        ],
+        [
+          "012203451534",
+          "112302450534",
+          "120203441535",
+          "120213440535",
+          "120344013525",
+          "121345002534"
+        ],
+        [
+          "012213045534",
+          "110203345524",
+          "110234035524",
+          "120013345524",
+          "120034135524",
+          "121344550203"
+        ],
+        [
+          "012213345504",
+          "110223443505",
+          "120023443515"
+        ],
+        [
+          "012213445503",
+          "110233442505",
+          "112203345504",
+          "112300345524",
+          "120033442515",
+          "121344550023"
+        ],
+        [
+          "012213450345",
+          "012301345524",
+          "110234253405",
+          "120034253415",
+          "120312345504",
+          "120324035514"
+        ],
+        [
+          "012213450534",
+          "110234243505",
+          "120034243515",
+          "120203345514",
+          "120213345504",
+          "120324015534"
+        ],
+        [
+          "012233045514",
+          "110233440525",
+          "112234035504",
+          "112324550034",
+          "120033441525",
+          "121344552300"
+        ],
+        [
+          "012233145504",
+          "110223445503",
+          "112203443505",
+          "112300443525",
+          "120023445513",
+          "123344002515"
+        ],
+        [
+          "012233440515",
+          "112233450405",
+          "112234354500",
+          "112324345500",
+          "121323445500"
+        ],
+        [
+          "012233445501",
+          "112233440505",
+          "112233450045",
+          "112234345500",
+          "112323445500",
+          "121233445500"
+        ],
+        [
+          "012233450145",
+          "012323445501",
+          "112234053405",
+          "112323450045",
+          "121233440505",
+          "121234345500"
+        ],
+        [
+          "012233450514",
+          "112234043505",
+          "112334250045",
+          "120323445501",
+          "120344235501",
+          "122314345500"
+        ],
+        [
+          "012234015534",
+          "110234345502",
+          "112304550423",
+          "120034345512",
+          "121233045504",
+          "123345120045"
+        ],
+        [
+          "012234041535",
+          "012304345512",
+          "112304253405",
+          "121334550402",
+          "121344050325",
+          "122345340015"
+        ],
+        [
+          "012234043515",
+          "112334250405",
+          "120324345501",
+          "122314354500"
+        ],
+        [
+          "012234045513",
+          "112304553402",
+          "112334550402",
+          "121344550302",
+          "122344351500",
+          "123345240015"
+        ],
+        [
+          "012234051345",
+          "012304553412",
+          "112303450425",
+          "121324045503",
+          "122345001435",
+          "123345020415"
+        ],
+        [
+          "012234051534",
+          "112304452305",
+          "120304345512",
+          "120324145503",
+          "120344150325",
+          "123435120045"
+        ],
+        [
+          "012234053415",
+          "012324345501",
+          "112323450405",
+          "121234354500",
+          "121323440505"
+        ],
+        [
+          "012234053514",
+          "112334450205",
+          "120314553402",
+          "120344051325",
+          "121334550204",
+          "122334154500"
+        ],
+        [
+          "012234054513",
+          "012314553402",
+          "112324450305",
+          "120323440515",
+          "120344231505",
+          "121334254500"
+        ],
+        [
+          "012234145503",
+          "112303442505",
+          "112304345502",
+          "121334550024",
+          "122344001535",
+          "123344020515"
+        ],
+        [
+          "012234153504",
+          "112304243505",
+          "120314345502",
+          "120324045513",
+          "122334150045",
+          "123345040215"
+        ],
+        [
+          "012234154503",
+          "012314345502",
+          "112304342505",
+          "120323441505",
+          "120344230515",
+          "121334250045"
+        ],
+        [
+          "012234345501",
+          "112323440505",
+          "121233450045"
+        ],
+        [
+          "012234354501",
+          "012323440515",
+          "112324340505",
+          "121233450405",
+          "121323450045"
+        ],
+        [
+          "012234453501",
+          "112334240505",
+          "120234345501",
+          "121233450504",
+          "122313450045"
+        ],
+        [
+          "012301245534",
+          "110203452345",
+          "120013452345",
+          "120312045534",
+          "120314035524",
+          "123345010245"
+        ],
+        [
+          "012301443525",
+          "012314235504",
+          "110223450345",
+          "120023451345",
+          "120312443505",
+          "120344032515"
+        ],
+        [
+          "012301445523",
+          "112203450345",
+          "112300452345",
+          "120312445503",
+          "120344035512",
+          "123345001245"
+        ],
+        [
+          "012301452345",
+          "120312450345",
+          "120345031245"
+        ],
+        [
+          "012301452534",
+          "120203451345",
+          "120213450345",
+          "120312450534",
+          "120345012345",
+          "120345031524"
+        ],
+        [
+          "012303145524",
+          "110234054523",
+          "120034154523",
+          "120314550423",
+          "120344052315",
+          "121334025504"
+        ],
+        [
+          "012303245514",
+          "110234043525",
+          "120034143525",
+          "120324550134",
+          "120344352501",
+          "122314035504"
+        ],
+        [
+          "012303441525",
+          "012324551304",
+          "112304340525",
+          "121334450025",
+          "121344023505",
+          "122344030515"
+        ],
+        [
+          "012303442515",
+          "012334551402",
+          "112304354502",
+          "121344020535",
+          "121345240035",
+          "122344031505"
+        ],
+        [
+          "012303445512",
+          "112234040535",
+          "112334450025",
+          "121344025503",
+          "122334551400",
+          "122344035501"
+        ],
+        [
+          "012303451245",
+          "012334450125",
+          "121234040535",
+          "121345020345",
+          "122334051405",
+          "122345030145"
+        ],
+        [
+          "012303451425",
+          "012304253415",
+          "012304354512",
+          "121324040535",
+          "121345020435",
+          "122345030415"
+        ],
+        [
+          "012303451524",
+          "120334450125",
+          "120345240135",
+          "121345020534",
+          "122314040535",
+          "122345030514"
+        ],
+        [
+          "012304125534",
+          "110234052345",
+          "120034152345",
+          "120234035514",
+          "120234135504",
+          "121344052503"
+        ],
+        [
+          "012304142535",
+          "120324350514",
+          "120334250415"
+        ],
+        [
+          "012304143525",
+          "012304352514",
+          "120304253415",
+          "120324140535",
+          "120334150425",
+          "121345042305"
+        ],
+        [
+          "012304145523",
+          "112304052345",
+          "120334550412",
+          "120344250315",
+          "121344050523",
+          "123435001245"
+        ],
+        [
+          "012304152345",
+          "120324450315",
+          "120345341205"
+        ],
+        [
+          "012304152534",
+          "120304142535",
+          "120304143525",
+          "120304154523",
+          "120324150534",
+          "120345142305"
+        ],
+        [
+          "012304153425",
+          "012314340525",
+          "012324350514",
+          "120323450415",
+          "120345230415",
+          "121324043505"
+        ],
+        [
+          "012304153524",
+          "120314052345",
+          "120314054523",
+          "120334450215",
+          "120345241305",
+          "121345043502"
+        ],
+        [
+          "012304154523",
+          "120303451425",
+          "120345120435",
+          "121324050534"
+        ],
+        [
+          "012304235514",
+          "012324550134",
+          "110234053425",
+          "120034153425",
+          "121234035504",
+          "121344052305"
+        ],
+        [
+          "012304241535",
+          "012304251345",
+          "121334040525",
+          "121334054502",
+          "122334050415",
+          "122345340105"
+        ],
+        [
+          "012304243515",
+          "012334450215",
+          "120314354502",
+          "120324051345",
+          "121345040235",
+          "122334150405"
+        ],
+        [
+          "012304245513",
+          "112304240535",
+          "121344053502",
+          "122334450015",
+          "122334550401",
+          "122344350501"
+        ],
+        [
+          "012304251534",
+          "120304241535",
+          "120334140525",
+          "120334154502",
+          "121334052504",
+          "122345140305"
+        ],
+        [
+          "012304253514",
+          "120314240535",
+          "120334041525",
+          "121345040523",
+          "122345041305",
+          "123435010245"
+        ],
+        [
+          "012304254513",
+          "012314240535",
+          "120313450425",
+          "120345021435",
+          "121324053504",
+          "122345010435"
+        ],
+        [
+          "012304341525",
+          "121334050425"
+        ],
+        [
+          "012304342515",
+          "012314354502",
+          "012324450315",
+          "120324340515",
+          "120324341505",
+          "121334250405"
+        ],
+        [
+          "012304351524",
+          "012314250345",
+          "120314253405",
+          "120334051425",
+          "121334050245",
+          "121345240305"
+        ],
+        [
+          "012304451325",
+          "012324451503",
+          "120314340525",
+          "120324041535",
+          "121334042505",
+          "123435012405"
+        ],
+        [
+          "012304451523",
+          "120314250345",
+          "120334054512",
+          "121334050524",
+          "123434010525",
+          "123435041205"
+        ],
+        [
+          "012304452315",
+          "120304354512",
+          "120324150345",
+          "123435120405"
+        ],
+        [
+          "012304452513",
+          "120314042535",
+          "120314043525",
+          "120324450513",
+          "120345341502",
+          "123435150402"
+        ],
+        [
+          "012304453512",
+          "120234041535",
+          "120234051345",
+          "121345042503",
+          "122345040315",
+          "123435140205"
+        ],
+        [
+          "012304551234",
+          "110234042535",
+          "120034142535",
+          "120314235504",
+          "120323045514",
+          "123345140205"
+        ],
+        [
+          "012304551324",
+          "112304250345",
+          "121334045502",
+          "122344050315",
+          "122345341500",
+          "123345240105"
+        ],
+        [
+          "012304551423",
+          "110234354502",
+          "120034354512",
+          "121323045504",
+          "123345120405"
+        ],
+        [
+          "012304552314",
+          "112304042535",
+          "120324550314",
+          "120344350512",
+          "123345041205",
+          "123434001525"
+        ],
+        [
+          "012313245504",
+          "110223450534",
+          "120023451534",
+          "120203443515",
+          "120213443505",
+          "120344012535"
+        ],
+        [
+          "012313440525",
+          "112324350504",
+          "120233450415",
+          "121324453500"
+        ],
+        [
+          "012313445502",
+          "112234054503",
+          "112324453500",
+          "120233440515",
+          "120233441505",
+          "121334245500"
+        ],
+        [
+          "012313450245",
+          "012324453501",
+          "120234053415",
+          "120234153405",
+          "121234054503",
+          "121334240505"
+        ],
+        [
+          "012313450524",
+          "120234043515",
+          "120234143505",
+          "120324453501",
+          "120345342501",
+          "122314054503"
+        ],
+        [
+          "012314245503",
+          "112304350524",
+          "120313442505",
+          "120344023515",
+          "121345243500",
+          "122344010535"
+        ],
+        [
+          "012314250534",
+          "120304254513",
+          "120314452305",
+          "120324153504",
+          "120334150245",
+          "120345042315"
+        ],
+        [
+          "012314253504",
+          "120314243505",
+          "120314350524",
+          "120324053514",
+          "120334042515",
+          "123435014502"
+        ],
+        [
+          "012314254503",
+          "012314350524",
+          "120314342505",
+          "120324043515",
+          "120324451305",
+          "120345340215"
+        ],
+        [
+          "012314352504",
+          "120304153425",
+          "120324143505"
+        ],
+        [
+          "012314450325",
+          "120324351504",
+          "120334251405"
+        ],
+        [
+          "012314450523",
+          "120314254503",
+          "120334051245",
+          "120334451205",
+          "120345240315",
+          "121345450203"
+        ],
+        [
+          "012314452503",
+          "120304243515",
+          "120314352504",
+          "120324051534",
+          "120334142505",
+          "120345140235"
+        ],
+        [
+          "012314453502",
+          "120234054513",
+          "120234154503",
+          "120334240515",
+          "120334241505",
+          "121334250504"
+        ],
+        [
+          "012314550234",
+          "110234254503",
+          "120034254513",
+          "120304235514",
+          "120323145504",
+          "120344152305"
+        ],
+        [
+          "012314550324",
+          "112304254503",
+          "120334551402",
+          "120344251305",
+          "121344250503",
+          "122345140035"
+        ],
+        [
+          "012314552304",
+          "112304352504",
+          "120303441525",
+          "120344120535",
+          "120344123505",
+          "121345450023"
+        ],
+        [
+          "012323450145",
+          "121234053405"
+        ],
+        [
+          "012323450514",
+          "012334250145",
+          "120323450145",
+          "120345230145",
+          "121234043505",
+          "122314053405"
+        ],
+        [
+          "012324340515",
+          "121323450405"
+        ],
+        [
+          "012324450513",
+          "120314053425",
+          "121334450205"
+        ],
+        [
+          "012324550314",
+          "112304053425",
+          "121344250305",
+          "123435002415"
+        ],
+        [
+          "012334240515",
+          "120234354501",
+          "121323450504",
+          "122313450405"
+        ],
+        [
+          "012334245501",
+          "112323450504",
+          "120233450145",
+          "121234453500",
+          "122313440505"
+        ],
+        [
+          "012334250514",
+          "120323450514",
+          "120334250145",
+          "120334254501",
+          "120345230514",
+          "122314043505"
+        ],
+        [
+          "012334450512",
+          "121334450502",
+          "122334040515",
+          "122334054501",
+          "122334450105",
+          "122345340501"
+        ],
+        [
+          "012334451502",
+          "121345240503",
+          "122334041505",
+          "122334050145",
+          "122345040135",
+          "123435040215"
+        ],
+        [
+          "012334452501",
+          "120313450245",
+          "120345021345",
+          "121234053504",
+          "122334140505",
+          "122345010345"
+        ],
+        [
+          "012334550124",
+          "112303450245",
+          "121234045503",
+          "122344051305",
+          "122345001345",
+          "123345020145"
+        ],
+        [
+          "012334550214",
+          "112304450325",
+          "120324551304",
+          "120344351502",
+          "122344150305",
+          "123435152400"
+        ],
+        [
+          "012334551204",
+          "112324450503",
+          "120313440525",
+          "120344021535",
+          "121334452500",
+          "122344013505"
+        ],
+        [
+          "012344550123",
+          "110233450245",
+          "112304235504",
+          "120033451245",
+          "121234005534",
+          "123344051205"
+        ],
+        [
+          "012344550213",
+          "110203443525",
+          "110223045534",
+          "120013443525",
+          "120023145534",
+          "123344012505"
+        ],
+        [
+          "012344550312",
+          "112303440525",
+          "112324550304",
+          "121344253500",
+          "122344003515",
+          "123344021505"
+        ],
+        [
+          "012345450123",
+          "120303451245",
+          "120345120345",
+          "121234050534",
+          "123434051205"
+        ],
+        [
+          "012345450213",
+          "120314450325",
+          "120324451503",
+          "120345041235",
+          "120345340512",
+          "123434012505"
+        ],
+        [
+          "110203245534",
+          "120013245534",
+          "120344550213"
+        ],
+        [
+          "110203445523",
+          "112203045534",
+          "112300245534",
+          "120013445523",
+          "122344550013",
+          "123344015502"
+        ],
+        [
+          "110203452534",
+          "120013452534",
+          "120203145534",
+          "120213045534",
+          "120334015524",
+          "123345010524"
+        ],
+        [
+          "110233045524",
+          "112344550203",
+          "120033145524",
+          "123344152500"
+        ],
+        [
+          "110233245504",
+          "120033245514"
+        ],
+        [
+          "110233445502",
+          "112233045504",
+          "112234005534",
+          "112344550023",
+          "120033445512",
+          "123344125500"
+        ],
+        [
+          "110233450524",
+          "112303245504",
+          "120033451524",
+          "120344550123",
+          "120344552301",
+          "122314005534"
+        ],
+        [
+          "110234025534",
+          "120034125534",
+          "120344551203"
+        ],
+        [
+          "110234045523",
+          "112303045524",
+          "120034145523",
+          "122334005514",
+          "122344550103",
+          "123344052501"
+        ],
+        [
+          "110234052534",
+          "120034152534",
+          "120303145524",
+          "120304125534",
+          "120334125504",
+          "120344152503"
+        ],
+        [
+          "110234053524",
+          "120034153524",
+          "120313045524",
+          "120314025534",
+          "122334015504",
+          "123345140502"
+        ],
+        [
+          "110234245503",
+          "112304550234",
+          "120034245513",
+          "120233045514",
+          "120233145504",
+          "123345142500"
+        ],
+        [
+          "110234253504",
+          "120034253514",
+          "120313245504",
+          "120314550234",
+          "120334025514",
+          "120344052513"
+        ],
+        [
+          "110234453502",
+          "120034453512",
+          "120234015534",
+          "122313045504",
+          "123345120504"
+        ],
+        [
+          "112203445503",
+          "112300445523",
+          "123344005512"
+        ],
+        [
+          "112203450534",
+          "112300452534",
+          "120203445513",
+          "120213445503",
+          "120344015523",
+          "123345001524"
+        ],
+        [
+          "112233445500"
+        ],
+        [
+          "112233450504",
+          "112234453500",
+          "112334245500",
+          "120233445501",
+          "122313445500"
+        ],
+        [
+          "112234045503",
+          "112303445502",
+          "112334550024",
+          "122344005513",
+          "122344551300",
+          "123344025501"
+        ],
+        [
+          "112234050534",
+          "112345450023",
+          "120303445512",
+          "120344125503",
+          "123434125500"
+        ],
+        [
+          "112234053504",
+          "112334452500",
+          "120313445502",
+          "120344025513",
+          "122334145500",
+          "122344015503"
+        ],
+        [
+          "112303450524",
+          "120334550124",
+          "120344253501",
+          "122314045503",
+          "122345001534",
+          "123345020514"
+        ],
+        [
+          "112304045523",
+          "123344050512",
+          "123434005512"
+        ],
+        [
+          "112304052534",
+          "120304145523",
+          "120344150523",
+          "123435001524"
+        ],
+        [
+          "112304053524",
+          "120314045523",
+          "123345041502",
+          "123435002514"
+        ],
+        [
+          "112304245503",
+          "112304550324",
+          "122334550014",
+          "122344550301",
+          "123344051502",
+          "123345241500"
+        ],
+        [
+          "112304250534",
+          "120304245513",
+          "120334145502",
+          "120344153502",
+          "122344150503",
+          "122345143500"
+        ],
+        [
+          "112304253504",
+          "120314550324",
+          "120344053512",
+          "122345450013",
+          "123345040512",
+          "123434015502"
+        ],
+        [
+          "112304450523",
+          "120314245503",
+          "120334045512",
+          "122344050513",
+          "123345450102",
+          "123435450012"
+        ],
+        [
+          "112304452503",
+          "120314552304",
+          "120334550214",
+          "120344051523",
+          "120344250513",
+          "123435150024"
+        ],
+        [
+          "112304453502",
+          "120234045513",
+          "120234145503",
+          "122344051503",
+          "123345042501",
+          "123435142500"
+        ],
+        [
+          "112304552304",
+          "120344550312",
+          "123345450012"
+        ],
+        [
+          "112334250504",
+          "120233450514",
+          "120334245501",
+          "122314453500"
+        ],
+        [
+          "112334450502",
+          "122334045501",
+          "122334451500",
+          "122334550104",
+          "122344053501",
+          "123345240501"
+        ],
+        [
+          "112334550204",
+          "120344551302",
+          "122344153500"
+        ],
+        [
+          "112344550302",
+          "123344251500"
+        ],
+        [
+          "112345450203",
+          "120334551204",
+          "120344251503",
+          "123434152500"
+        ],
+        [
+          "120203451534",
+          "120213450534",
+          "120345012534"
+        ],
+        [
+          "120234051534",
+          "120304453512",
+          "120345142503",
+          "123435120504"
+        ],
+        [
+          "120234053514",
+          "120234153504",
+          "120314453502",
+          "120345042513",
+          "122334150504",
+          "123435140502"
+        ],
+        [
+          "120234453501",
+          "122313450504"
+        ],
+        [
+          "120303451524",
+          "120345120534",
+          "120345450123",
+          "122314050534"
+        ],
+        [
+          "120304152534"
+        ],
+        [
+          "120304153524",
+          "120314052534",
+          "120345143502"
+        ],
+        [
+          "120304251534",
+          "120334152504"
+        ],
+        [
+          "120304253514",
+          "120314250534",
+          "120334052514",
+          "120334150524",
+          "120345140523",
+          "123435010524"
+        ],
+        [
+          "120313450524",
+          "120334452501",
+          "120345021534",
+          "120345243501",
+          "122314053504",
+          "122345010534"
+        ],
+        [
+          "120314053524",
+          "123435450102"
+        ],
+        [
+          "120314253504",
+          "120314450523",
+          "120334051524",
+          "120345041523",
+          "123435012504",
+          "123435041502"
+        ],
+        [
+          "120314452503",
+          "120345043512",
+          "120345450213"
+        ],
+        [
+          "120334250514"
+        ],
+        [
+          "120334251504"
+        ],
+        [
+          "120334450512",
+          "120345241503",
+          "122334050514",
+          "122345450103",
+          "123434051502",
+          "123435040512"
+        ],
+        [
+          "120334451502",
+          "120345240513",
+          "122334051504",
+          "122345043501",
+          "122345140503",
+          "123435150204"
+        ],
+        [
+          "120345450312"
+        ],
+        [
+          "122334450501"
+        ],
+        [
+          "122345040513",
+          "123435450201"
+        ],
+        [
+          "122345041503",
+          "123435042501"
+        ],
+        [
+          "123434050512"
+        ]
+      ],
+      "balanced_maximum_certified_from_full_exact_dataset": true
+    }
+  ],
+  "independent_small_balanced_enumeration": [
+    {
+      "m": 1,
+      "ordered_labeled_accessible_balanced_tables": 1,
+      "rooted_classes": 1,
+      "complete_class_set_matches_full_dataset_filter": true
+    },
+    {
+      "m": 2,
+      "ordered_labeled_accessible_balanced_tables": 5,
+      "rooted_classes": 2,
+      "complete_class_set_matches_full_dataset_filter": true
+    },
+    {
+      "m": 3,
+      "ordered_labeled_accessible_balanced_tables": 74,
+      "rooted_classes": 8,
+      "complete_class_set_matches_full_dataset_filter": true
+    },
+    {
+      "m": 4,
+      "ordered_labeled_accessible_balanced_tables": 2118,
+      "rooted_classes": 36,
+      "complete_class_set_matches_full_dataset_filter": true
+    }
+  ],
+  "deductions": [
+    "The strict balanced subclass is not the same optimization problem: at m=3 its exact maximum is 5, whereas the unrestricted-outdegree-two maximum is 6.",
+    "At m=5 the five rooted maximizers comprise four directed unrooted shapes. Three rooted classes (a,b,c) lie in the strict balanced subclass and comprise two unrooted shapes; the other two have indegree multiset [1,2,2,2,3].",
+    "Every general maximizer through m=6 is strongly connected, but this finite observation does not justify imposing strong connectivity in the original search.",
+    "The unrestricted maxima equal m*(m+1)/2 through m=5; m=6 has maximum 23 greater than 21, including in the strict balanced subclass. A universal triangular upper bound is therefore false for these graph classes.",
+    "The four m=5 unrooted winning shapes have different simple-cycle length histograms. This certifies structural differences; it does not prove why all four tie at 15 or predict winner multiplicities at larger sizes."
+  ],
+  "source_summary": "results/family1-m1-m6/summary.json",
+  "source_summary_sha256": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7"
+}

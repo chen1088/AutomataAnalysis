@@ -1,0 +1,31 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,landscape,margin=12mm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries Five-state extremal seed graphs}\par
+\vspace{2mm}
+All five rooted isomorphism classes attaining $H(G)=15$.
+\par\vspace{3mm}
+\begin{tabular}{@{}c@{\hspace{10mm}}c@{\hspace{10mm}}c@{}}
+\input{graph-01.tex}&\input{graph-02.tex}&\input{graph-03.tex}\\[-1mm]
+(a)&(b)&(c)
+\end{tabular}
+\par\vspace{4mm}
+\begin{tabular}{@{}c@{\hspace{10mm}}c@{}}
+\input{graph-04.tex}&\input{graph-05.tex}\\[-1mm]
+(d)&(e)
+\end{tabular}
+\par\vspace{4mm}
+\begin{minipage}{20cm}
+\centering\small
+The root $0$ is marked by a double circle. Solid arrows denote port $\tau_0$;
+dashed arrows denote port $\tau_1$. Edge labels give the port number.
+Each drawing represents one seed graph, with its static masks varying over all
+vertices.
+\end{minipage}
+\end{center}
+\end{document}

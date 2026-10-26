@@ -2,18 +2,13 @@
 bool VectorEnumerator::next(vector<unsigned int>& in)
 {
    unsigned int cur = 0;
-   while (in[cur] != 0)
+   while (cur < in.size() && in[cur] != 0)
    {
       in[cur] = 0;
-      if (cur < in.size())
-      {
-         cur++;
-      }
-      else
-      {
-         return false;
-      }
+      ++cur;
    }
+   if (cur == in.size())
+      return false;
    in[cur] = 1;
    return true;
 }
@@ -21,18 +16,13 @@ bool VectorEnumerator::next(vector<unsigned int>& in)
 bool VectorEnumerator::next(string& in)
 {
    unsigned int cur = 0;
-   while (in[cur] != '0')
+   while (cur < in.size() && in[cur] != '0')
    {
       in[cur] = '0';
-      if (cur < in.size())
-      {
-         cur++;
-      }
-      else
-      {
-         return false;
-      }
+      ++cur;
    }
+   if (cur == in.size())
+      return false;
    in[cur] = '1';
    return true;
 }
@@ -40,18 +30,13 @@ bool VectorEnumerator::next(string& in)
 bool VectorEnumerator::next(boost::dynamic_bitset<>& in)
 {
    boost::dynamic_bitset<>::size_type cur = 0;
-   while (in[cur])
+   while (cur < in.size() && in[cur])
    {
       in[cur] = false;
-      if (cur < in.size())
-      {
-         cur++;
-      }
-      else
-      {
-         return false;
-      }
+      ++cur;
    }
+   if (cur == in.size())
+      return false;
    in[cur] = true;
    return true;
 }

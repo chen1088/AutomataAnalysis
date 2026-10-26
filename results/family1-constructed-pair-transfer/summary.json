@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "method": "independent-scalar-static-mask-constructed-pair-transfer",
+  "source_script": {
+    "path": "scripts/family1_constructed_pair_transfer.py",
+    "sha256": "f9e0370cfd7f3a1f631c8722ade94cb9a1e62daaead0c453877d8c4d4144b3b4"
+  },
+  "original_saved_witness_files_read": false,
+  "known_H": 34,
+  "pair_length": 34,
+  "graph_count": 8,
+  "masks_per_graph": 128,
+  "constructed_pair_count": 6,
+  "variant_count": 20,
+  "native_results_examined": 245,
+  "native_length34_results": 27,
+  "replays": 160,
+  "mask_coordinate_replays": 20480,
+  "direct_rediscovery_graph_ordinals": [
+    539749,
+    1783759,
+    2470130,
+    3411148,
+    4099217
+  ],
+  "original_pair_coverage_graph_ordinals": [
+    539749,
+    1783759,
+    2470130,
+    3411148,
+    4099217
+  ],
+  "all_variant_coverage_graph_ordinals": [
+    539749,
+    1783759,
+    2470130,
+    3411148,
+    4099217
+  ],
+  "missing_graph_ordinals": [
+    679758,
+    2221624,
+    2471796
+  ],
+  "new_original_cross_class_transfers": [],
+  "independent_autofind_coverage_claimed": false,
+  "conditional_suffix_bfs_implies_global_shortest": false,
+  "scope": "Finite reuse of constructed candidates; successful length34 pairs are optimal only using separately certified H=34."
+}

@@ -1,0 +1,28 @@
+% Family 1 rooted seed, m=2; key=00010001.
+% Requires \usepackage{tikz} and \usetikzlibrary{arrows.meta}.
+% Score and global-maximality metadata belong in the surrounding caption.
+\begin{tikzpicture}[x=1cm,y=1cm,
+  f1atlas state/.style={circle,draw=black,fill=white,line width=.5pt,inner sep=0pt,font=\fontsize{7}{8}\selectfont},
+  f1atlas root/.style={f1atlas state,double,double distance=.42mm},
+  f1atlas port0/.style={-{Stealth[length=1.45mm,width=1.05mm]},draw=black,line width=.48pt},
+  f1atlas port1/.style={f1atlas port0,dash pattern=on 2.5pt off 1.6pt},
+  f1atlas label/.style={font=\fontsize{6}{7}\selectfont,fill=white,inner sep=.4pt}
+]
+\path[use as bounding box] (-3,-3) rectangle (3,3);
+% edge 0 0 0
+\draw[f1atlas port0] (-0.20270,1.64697) .. controls (-0.76121,1.54122) and (0.15129,2.30982) .. (-0.05791,1.82245);
+% edge 0 1 1
+\draw[f1atlas port1] (-0.02946,1.34622) .. controls (-0.16367,0.35643) and (-0.16418,-0.62954) .. (-0.03101,-1.61171);
+% edge 1 0 0
+\draw[f1atlas port0] (0.02481,-1.65744) .. controls (0.16211,-0.64479) and (0.16573,0.34119) .. (0.03566,1.30048);
+% edge 1 1 1
+\draw[f1atlas port1] (-0.04029,-2.02055) .. controls (0.14442,-2.55282) and (-0.72661,-1.81916) .. (-0.21337,-1.92829);
+\node[f1atlas label] at (-0.26130,1.87782) {$ 0 $};
+\node[f1atlas label] at (-0.18819,-0.13560) {$ 1 $};
+\node[f1atlas label] at (0.18819,-0.15847) {$ 0 $};
+\node[f1atlas label] at (-0.25003,-2.13310) {$ 1 $};
+% state 0
+\node[f1atlas root,minimum size=4.1538mm] (q0) at (0.00000,1.56346) {$ 0 $};
+% state 1
+\node[f1atlas state,minimum size=3.4615mm] (q1) at (0.00000,-1.84038) {$ 1 $};
+\end{tikzpicture}

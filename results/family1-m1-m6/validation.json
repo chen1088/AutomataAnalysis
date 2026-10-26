@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-25",
+  "base_commit": "3dfe58a3863dfec00da4caa9745f8443a4daef84",
+  "compiler": "MSVC 19.44.35229.0 x64",
+  "full_search_configuration": "Release",
+  "command": ".\\out\\build\\msvc-vcpkg\\Release\\Family1Search.exe --min-m 1 --max-m 6 --depth 24 --out out\\family1-m1-m6 --dot",
+  "evaluated_graphs": 203321,
+  "exact_graphs": 203321,
+  "depth_capped_graphs": 0,
+  "incomplete_graphs": 0,
+  "saved_maximizers": 12,
+  "passed": [
+    "Native MSVC/vcpkg Debug and Release builds",
+    "CTest family1-core and legacy-regression in Debug and Release",
+    "CLI stop/resume, raised depth/resource budget, torn checkpoint recovery, config rejection, DOT export in Debug and Release",
+    "Independent ordered-labelled graph enumeration and class sets through m=4",
+    "Independent per-word per-mask exact scores through m=3",
+    "All 203321 saved witness pairs simulated independently over every static mask",
+    "Full m=1..6 Release enumeration, exact scoring, all ties and distributions",
+    "Completed full-run resume with all 203321 journal records",
+    "ProductAutomata and MatM exited 0 in Debug and Release",
+    "Noncanonical complete checkpoint record rejected before limited resume, preserving all files byte for byte, in Debug and Release"
+  ],
+  "unverified": [
+    "No full independent score-minimality cross-check for m=4..6",
+    "No full Debug search through m=6",
+    "Linux/WSL builds not run"
+  ],
+  "unsupported": [
+    "m > 6",
+    "depth > 31"
+  ],
+  "full_run_directory": "out/family1-m1-m6",
+  "full_run_hashes": {
+    "graphs.jsonl": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156",
+    "checkpoint.jsonl": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156",
+    "summary.json": "06feb4519d837df3c51a519760826c635012415f6a6234c6117a396a0796a0b7",
+    "maximizers.jsonl": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+  },
+  "source_sha256": {
+    "Family1Search.h": "9b6f1fb0d057a67fe4bf9236da3e2a24368c4bb21bad26bf70e623794b24013c",
+    "Family1Search.cpp": "e35685b2bffdb7f5fa19ff578e38ef8857f9bf9aa51ac224a77fbab0d51ee171",
+    "GraphBasedPDFAEnumerator.h": "71396d94b55a398a90338032adcc6d7b42d98aaa2651d14d0ca46a3e21d6fe2c",
+    "GraphBasedPDFAEnumerator.cpp": "9cb0d9c363a37a0f653ce3317a7bfa9d808abaec8264c29fbe0a58b4cec11444",
+    "TwoRegularDigraph.h": "9c8820e9dd9911c0693ef7b83c2b66afbc0054d4de973d58b90df89dff68484b",
+    "TwoRegularDigraph.cpp": "45649cd4ef09b97aba7eb1f384df5537a2026d3f823d597a12e8b5a6fd2de38c",
+    "family1_main.cpp": "9efeeb9a61c08e74bef9e398015697f7355b0a734848745443cc32a1011331ed",
+    "CMakeLists.txt": "35288e15eedb60e51a5d52d8e2d036ffbcf0a8211f53eff4e5a2ce0052721303",
+    "BackToFirstDFA.cpp": "c1df4cd7d96e53cb60282019a06088848f301dffd9e46a5e195f11fed2ca7bd3",
+    "BackToFirstDFA.h": "8d327915182ccbb5e771bf1a70fccadc9a0396c70ac03707564555245d748c50",
+    "VectorEnumerator.cpp": "c139b9cb308cfcb541293474933e35fb973e2270fdaa4389dce19b10e6ca3483",
+    "PDFA.h": "209e78ba1ceb1824d77f83ec1fce3cac1cc50e5c187cbcb6410baa63db9061ff",
+    "ProductDFAExperiment.cpp": "13afa034a9cdca634ce385f84f20000ed005ed6b53046652e7b3d03a029c1ffc",
+    "RegPDFA.cpp": "4d01f389a10f2739a959cfc6a6a3a5d07bdc2d0ba359d237a9004231a6b4b0c7"
+  },
+  "release_executable_sha256": "b7f419ee9dfb323955e427eb75ee01122e0374b140737f3d2a5d58a68a93a187",
+  "evidence_logs": [
+    "out/family1-build-debug.log",
+    "out/family1-build-release.log",
+    "out/family1-full-release.log",
+    "out/family1-full-resume.log",
+    "out/family1-verify-full.log",
+    "out/family1-independent.log"
+  ],
+  "test_source_sha256": {
+    "tests/Family1Regression.cpp": "cd00d9f1b7e2fe3f5aa722288a9ae8de706ca448fe60c1de7f1cd2f04f6eb8ee",
+    "tests/LegacyRegression.cpp": "38dd37a11e8d07106e0790d14d1843a552a738ef717617bd3011dbef71096d84",
+    "tests/family1_reference.py": "faf3ae382ad67a9c1f02fa34207c0bf52d2d0a3bfdfc66a1701c029a20fcc1af",
+    "tests/family1_cli_test.py": "54c52245e9e26b3930471066dd91477a234165178b338e17f8463b80758fd5b7",
+    "tests/family1_verify_run.py": "2a34b576ea48f131a9ca08aa78dc23529aca8b8a664d6bfec7cba96cf594b046"
+  },
+  "executable_provenance": "Current validated executable; after the full scoring run, CLI checkpoint validation was strengthened and tested by completed full-run resume plus corruption regressions. The scoring and enumeration cores are unchanged."
+}
