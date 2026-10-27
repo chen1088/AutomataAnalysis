@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "bytes": 3826,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/README.md",
+      "sha256": "ea47c4dedab88d1b0e12e48591ec7b04e92a5ce66f460c13f41ebd55179a27b2"
+    },
+    {
+      "bytes": 46966,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/cases.csv",
+      "sha256": "00c54f096d8dfdb60e53941318f8983a472c8b253373d6fb3989c01628c46091"
+    },
+    {
+      "bytes": 1243,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/input-cases.csv",
+      "sha256": "91c6be282803658d99d7a94fe688292d47c022797801e37b82883eeb439c2ab6"
+    },
+    {
+      "bytes": 17862,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/query-audit.json",
+      "sha256": "6491fd4ad0d2dc28b2ac1b93a78e1da3222d95dd6aed9c7e3f3db920cc762ba2"
+    },
+    {
+      "bytes": 11445,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/run.json",
+      "sha256": "8ed2c91ebf428adba9b27cfff1dd5895dd7077eab2d1a09141d550b9cd95ac7d"
+    },
+    {
+      "bytes": 37693,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/summary.json",
+      "sha256": "7e209eaaec29af42fa8e5007232f7857e28be2f95ad409abbdf965baead79e00"
+    },
+    {
+      "bytes": 1655,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/validation.json",
+      "sha256": "87f25970a46082114f4f6cbaa93a7c1d47921b1444d440e6a7953f676c9dccb4"
+    },
+    {
+      "bytes": 90330,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/winning-decisions.csv",
+      "sha256": "f518025ea0238c782e81a5e01530db1be291c57290cf9df6b1e2060906ac16c2"
+    },
+    {
+      "bytes": 749823,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/winning-window-moments-000.csv",
+      "sha256": "a0c1d05a3977568f05628f156ee516000741200a701ae4d54e93871bf1e55b35"
+    },
+    {
+      "bytes": 239068,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/winning-window-moments-001.csv",
+      "sha256": "cd58ff9dc0e207cae0b3fa39ce0e44c0671328424c1261194f46c57f8b82cba6"
+    }
+  ]
+}

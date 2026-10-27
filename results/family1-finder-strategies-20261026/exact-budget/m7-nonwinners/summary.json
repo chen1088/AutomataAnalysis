@@ -1,0 +1,30 @@
+{
+  "all_queries_completed": true,
+  "approx_parallel_wall_seconds_manifest_to_last_flush": 22.689114570617676,
+  "cases": 47,
+  "depth_cap": 24,
+  "evaluated_words": 788529058,
+  "independent_mask_replays_for_exact_positives": 0,
+  "k": null,
+  "lower_bound_histogram": {
+    "24": 47
+  },
+  "max_native_seconds": 2.01092,
+  "maximum_payload_bytes": 234889984,
+  "median_native_seconds": 1.85014,
+  "memory_cap_bytes": 268435456,
+  "minimality_not_claimed_for_unknown": true,
+  "query_seal": {
+    "bytes": 1089,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget-m7/query-seal.json",
+    "sha256": "69e38070161e3fd38889440ff8ab5bd2174d5dc664e1a4a7d711681e9209921e"
+  },
+  "reason_counts": {
+    "max-working-bytes": 47
+  },
+  "status_counts": {
+    "incomplete": 47
+  },
+  "sum_native_seconds": 87.54441000000003,
+  "window": "exact-word-layers"
+}

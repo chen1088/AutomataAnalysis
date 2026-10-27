@@ -59,6 +59,9 @@ struct WindowDistribution {
 struct FinderOptions {
     unsigned int window_k = 2, beam_width = 4, max_suffix = 64;
     bool rank_by_remaining = false;
+    // Enumerate letters in 0,1 order and break every search tie by the suffix
+    // itself. This path never derives search order from tie_seed or its hash.
+    bool deterministic = false;
     std::uint64_t tail_threshold = 2, max_expansions = 10000, tie_seed = 1088, max_tail_calls = 16;
     TailLimits tail_limits;
     const volatile std::sig_atomic_t* interrupted = nullptr;
@@ -263,7 +266,7 @@ FinderResult find_hard_pair_suffix(State initial, const FinderOptions& options, 
         State state; std::string suffix; std::vector<std::uint64_t> trace;
         std::uint64_t token = 0, drop = 0; std::size_t parent = 0;
     };
-    auto best_token = detail::mix(options.tie_seed);
+    auto best_token = options.deterministic ? std::uint64_t{0} : detail::mix(options.tie_seed);
     const auto blocked = [&](const State& state) {
         if constexpr (requires { state.has_proven_obstruction(); }) {
             ++result.obstruction_checks;
@@ -294,8 +297,9 @@ FinderResult find_hard_pair_suffix(State initial, const FinderOptions& options, 
     };
     auto consider = [&](const Node& node) {
         const auto remaining = detail::remaining(node.state);
+        const bool preferred_tie = options.deterministic ? node.suffix < result.suffix : node.token < best_token;
         if (remaining < result.remaining_count || (remaining == result.remaining_count && node.suffix.size() > result.suffix.size())
-            || (remaining == result.remaining_count && node.suffix.size() == result.suffix.size() && node.token < best_token)) {
+            || (remaining == result.remaining_count && node.suffix.size() == result.suffix.size() && preferred_tie)) {
             result.remaining_count = remaining; result.suffix = node.suffix; result.remaining_trace = node.trace; best_token = node.token;
         }
     };
@@ -338,6 +342,8 @@ FinderResult find_hard_pair_suffix(State initial, const FinderOptions& options, 
             return detail::remaining(a.state) < detail::remaining(b.state);
         if (a.drop != b.drop) return a.drop > b.drop;
         if (detail::remaining(a.state) != detail::remaining(b.state)) return detail::remaining(a.state) < detail::remaining(b.state);
+        if (options.deterministic)
+            return a.suffix != b.suffix ? a.suffix < b.suffix : a.parent < b.parent;
         return a.token != b.token ? a.token < b.token : a.suffix < b.suffix;
     };
     while (!beam.empty() && beam.front().suffix.size() < options.max_suffix) {
@@ -373,7 +379,8 @@ FinderResult find_hard_pair_suffix(State initial, const FinderOptions& options, 
                     if (next_state.mask_count() != result.mask_count || remaining > detail::remaining(node.state))
                         throw std::logic_error("common-letter family count is not monotone");
                     Node next{std::move(next_state), node.suffix + static_cast<char>('0' + letter), node.trace,
-                              detail::mix(node.token ^ (0xd1b54a32d192ed03ULL + letter)), 0, parent};
+                              options.deterministic ? std::uint64_t{0}
+                                  : detail::mix(node.token ^ (0xd1b54a32d192ed03ULL + letter)), 0, parent};
                     next.trace.push_back(remaining);
                     if (remaining && blocked(next.state)) continue;
                     if (remaining && beyond_budget(next.state, next.suffix.size())) continue;
@@ -415,7 +422,10 @@ FinderResult find_hard_pair_suffix(State initial, const FinderOptions& options, 
         for (const auto& node : pool) add_distinct(node);
         if (!flat && next.size() >= 2) {
             const Node* absolute = nullptr;
-            for (const auto& node : parent_best) if (node && (!absolute || detail::remaining(node->state) < detail::remaining(absolute->state))) absolute = &*node;
+            for (const auto& node : parent_best) if (node && (!absolute
+                || detail::remaining(node->state) < detail::remaining(absolute->state)
+                || (options.deterministic && detail::remaining(node->state) == detail::remaining(absolute->state)
+                    && node->suffix < absolute->suffix))) absolute = &*node;
             if (absolute && std::none_of(next.begin(), next.end(), [&](const auto& node) { return node.suffix == absolute->suffix; })) next.back() = *absolute;
         }
         beam = std::move(next);

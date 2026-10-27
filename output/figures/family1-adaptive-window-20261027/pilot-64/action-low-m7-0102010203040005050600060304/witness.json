@@ -1,0 +1,330 @@
+{
+  "canonical_table": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "family_size": 128,
+  "first": "010011100001110010001111011010000110",
+  "first_difference_position": 1,
+  "fixture": null,
+  "gap": 2,
+  "id": "0102010203040005050600060304",
+  "key": "0102010203040005050600060304",
+  "length": 36,
+  "m": 7,
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "minimality_certified": false,
+  "new_finder_result_not_historical_floor": true,
+  "reference_H": 34,
+  "schema": 1,
+  "search_parameters": {
+    "advance": "first",
+    "advance_policy": null,
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "beam_width": 16,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "common_prefix_depth": null,
+    "complete_windows": 39635,
+    "configured_k_max": 5,
+    "configured_k_min": 2,
+    "deterministic": null,
+    "diagonal_width": null,
+    "exact_depth": 0,
+    "expanded_nodes": 3452992,
+    "expansion_cap": 2000000,
+    "greedy_advance": "one joint symbol",
+    "k": null,
+    "k_label": "2..5; winning lookaheads 2\u00d723",
+    "max_length": 80,
+    "policy": "action-roll",
+    "prefix_depth": null,
+    "prefix_pairs": null,
+    "prefix_words": null,
+    "priority": true,
+    "producer_k_known": true,
+    "producing_k_sequence": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "score": "permutation then D",
+    "single_k_applicable": false,
+    "startup_policy": null,
+    "target_upper": null,
+    "threshold_ppm": 1000,
+    "unequal_width": null,
+    "window_kind": "adaptive-joint-pair",
+    "winning_attempt": {
+      "first_greedy_depth": 14,
+      "initial_first": "010011100001",
+      "initial_length": 12,
+      "initial_second": "101100011001"
+    }
+  },
+  "second": "101100011001110010001111011010000110",
+  "source": {
+    "manifest": {
+      "bytes": 12691,
+      "path": "out/family1-adaptive-window-20261027/pilot-64/manifest.json",
+      "sha256": "f8556158deaaa2cb7a92076727d027ff9515dce1c62b0b0d60b1f1a93bfdaa5a"
+    },
+    "records": {
+      "bytes": 388519,
+      "path": "out/family1-adaptive-window-20261027/pilot-64/records.jsonl",
+      "sha256": "74ead7e2511e3bb9094f5bdbef413bce7ae1f3aea64c6ed737e79567b92da691"
+    }
+  },
+  "source_native_minimality_certified": false,
+  "status": "verified-upper",
+  "trace": [
+    {
+      "differing": 0,
+      "length": 0,
+      "synchronized": 128
+    },
+    {
+      "differing": 128,
+      "length": 1,
+      "synchronized": 0
+    },
+    {
+      "differing": 128,
+      "length": 2,
+      "synchronized": 0
+    },
+    {
+      "differing": 128,
+      "length": 3,
+      "synchronized": 0
+    },
+    {
+      "differing": 104,
+      "length": 4,
+      "synchronized": 24
+    },
+    {
+      "differing": 126,
+      "length": 5,
+      "synchronized": 2
+    },
+    {
+      "differing": 120,
+      "length": 6,
+      "synchronized": 8
+    },
+    {
+      "differing": 120,
+      "length": 7,
+      "synchronized": 8
+    },
+    {
+      "differing": 124,
+      "length": 8,
+      "synchronized": 4
+    },
+    {
+      "differing": 104,
+      "length": 9,
+      "synchronized": 24
+    },
+    {
+      "differing": 97,
+      "length": 10,
+      "synchronized": 31
+    },
+    {
+      "differing": 86,
+      "length": 11,
+      "synchronized": 42
+    },
+    {
+      "differing": 71,
+      "length": 12,
+      "synchronized": 57
+    },
+    {
+      "differing": 66,
+      "length": 13,
+      "synchronized": 62
+    },
+    {
+      "differing": 60,
+      "length": 14,
+      "synchronized": 68
+    },
+    {
+      "differing": 50,
+      "length": 15,
+      "synchronized": 78
+    },
+    {
+      "differing": 47,
+      "length": 16,
+      "synchronized": 81
+    },
+    {
+      "differing": 42,
+      "length": 17,
+      "synchronized": 86
+    },
+    {
+      "differing": 36,
+      "length": 18,
+      "synchronized": 92
+    },
+    {
+      "differing": 35,
+      "length": 19,
+      "synchronized": 93
+    },
+    {
+      "differing": 31,
+      "length": 20,
+      "synchronized": 97
+    },
+    {
+      "differing": 26,
+      "length": 21,
+      "synchronized": 102
+    },
+    {
+      "differing": 22,
+      "length": 22,
+      "synchronized": 106
+    },
+    {
+      "differing": 20,
+      "length": 23,
+      "synchronized": 108
+    },
+    {
+      "differing": 19,
+      "length": 24,
+      "synchronized": 109
+    },
+    {
+      "differing": 16,
+      "length": 25,
+      "synchronized": 112
+    },
+    {
+      "differing": 13,
+      "length": 26,
+      "synchronized": 115
+    },
+    {
+      "differing": 12,
+      "length": 27,
+      "synchronized": 116
+    },
+    {
+      "differing": 9,
+      "length": 28,
+      "synchronized": 119
+    },
+    {
+      "differing": 9,
+      "length": 29,
+      "synchronized": 119
+    },
+    {
+      "differing": 8,
+      "length": 30,
+      "synchronized": 120
+    },
+    {
+      "differing": 7,
+      "length": 31,
+      "synchronized": 121
+    },
+    {
+      "differing": 5,
+      "length": 32,
+      "synchronized": 123
+    },
+    {
+      "differing": 5,
+      "length": 33,
+      "synchronized": 123
+    },
+    {
+      "differing": 3,
+      "length": 34,
+      "synchronized": 125
+    },
+    {
+      "differing": 1,
+      "length": 35,
+      "synchronized": 127
+    },
+    {
+      "differing": 0,
+      "length": 36,
+      "synchronized": 128
+    }
+  ],
+  "verification": {
+    "D_empty": 0,
+    "D_final": 0,
+    "dfa_count": 128,
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "passed": true
+  },
+  "witness": [
+    "010011100001110010001111011010000110",
+    "101100011001110010001111011010000110"
+  ]
+}

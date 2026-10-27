@@ -1,21 +1,15 @@
-# Active eight-state estimate
+# Active eight-state candidate and its pair
 
-`active-best.pdf` draws every graph currently tied for the best refined
-estimate. There is one leader: point 49, rough range 48-50, from a verified
-length-50 pair. These are heuristic estimates of its shortest merge length.
+The figure displays the verified length-50 upper witness below. The shortest length and global maximum remain unproved. The displayed estimate 49 is a historical working conjecture.
 
-Reuse `graph-01.tex` with `\usepackage{tikz}` and
-`\usetikzlibrary{arrows.meta}`. It contains a complete `tikzpicture` with the
-best estimated starting vertices marked by double circles. All arrows are
-identical and carry no port labels. Isomorphic rooted cases share one drawing;
-each marked start is chosen separately. Static masks stay fixed on revisits.
+u = `00001101101010101011000111100000011010010011100010`
 
-`active-best.tex` builds the complete plate. `records.json` retains the exact
-canonical table, witness and source hashes. The generator checks all 16 edges
-and independently replays all 256 masks before compiling the PDF.
+v = `00100011011010101011000111100000011010010011100010`
 
-Regenerate in a fresh directory with:
+k=unknown; common-suffix-historical. Producing beam and prefix settings are unknown. Separate refinement: completed common-suffix k=10,12; attempted k=16 (incomplete). These values do not identify the producer of this imported pair.
 
-```powershell
-uv run --no-project python scripts/family1_active_best_figure.py --out out/my-active-best-figure
-```
+Independent scalar replay checks all 256 original static masks, including duplicate realizations from coincident ports. D(i) is the number with different endpoints after both prefixes of length i; D(empty)=0. witnesses.json retains both words, every prefix score, search provenance and verification.
+
+graph-01.tex preserves the complete original transition drawing. All arrows remain solid and unlabelled; marked vertices are alternative starts chosen separately. The displayed pair belongs to representative start 0. records.json retains all source-rooted cases and audits.
+
+Regenerate in a fresh directory with `python3 scripts/family1_active_best_figure.py --out out/my-active-best-figure`. The default renderer uses TeX when available and otherwise writes a vector PDF with matplotlib using the same atlas edge geometry. Editable TikZ is emitted in both cases.

@@ -1,0 +1,979 @@
+{
+  "all_declared_neighborhood_members_evaluated": true,
+  "audit_source": {
+    "bytes": 9552,
+    "path": "scripts/family1_adaptiveness_audit.py",
+    "sha256": "c27cff558b7c25bd78666b20b0dd9b1c7c08c9302dd9428220c8ec40d7ac8a15"
+  },
+  "baseline_complete_joint_runs": [
+    {
+      "count": 11693,
+      "k": 2,
+      "m": 6,
+      "miss_count": 5681,
+      "positive_count": 6012,
+      "records": {
+        "bytes": 168707495,
+        "path": "out/family1-adaptiveness-20261026/policy/m6/total-c2-k2/records.jsonl",
+        "sha256": "2f009bea53a25994cbcaf31524c7fb2073c10ea60e939c69a8b292a880758bdf"
+      },
+      "score": "total",
+      "window_kind": "joint-pair"
+    },
+    {
+      "count": 13329,
+      "k": 2,
+      "m": 7,
+      "miss_count": 10094,
+      "positive_count": 3235,
+      "records": {
+        "bytes": 253755126,
+        "path": "out/family1-adaptiveness-20261026/policy/m7/total-c2-k2/records.jsonl",
+        "sha256": "60401a5506c4b1a487170d495b515a484a7823f16ea6c37cd22a353455cb3d44"
+      },
+      "score": "total",
+      "window_kind": "joint-pair"
+    }
+  ],
+  "declared_neighborhood_comparisons": 40,
+  "exact_truth_k": null,
+  "exact_truth_window": "N/A: exhaustive word-layer oracle",
+  "generation_seal": {
+    "bytes": 51874,
+    "path": "out/family1-adaptiveness-20261026/edit/generation-seal.json",
+    "sha256": "6f3527e4ddb8ba48e245c7a80c9c0a524c8127e3c00292a40829d8604ea552db"
+  },
+  "limits": [
+    "Exact numerical nonwinner H is available here through m5 only.",
+    "A completed bounded pair-finder query may miss; it is still recorded as an evaluation.",
+    "Complete candidate neighborhoods and correct witness certificates do not prove global optimality at m8."
+  ],
+  "neighborhoods": [
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 2,
+      "evaluated_count": 2,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-winners-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 2,
+      "evaluated_count": 2,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-winners-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 2,
+      "evaluated_count": 2,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-near2-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 2,
+      "evaluated_count": 2,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-near2-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 7,
+      "evaluated_count": 7,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-winners-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 7,
+      "evaluated_count": 7,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-winners-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 33,
+      "evaluated_count": 33,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-near2-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 42,
+      "evaluated_count": 42,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-near2-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 39,
+      "evaluated_count": 39,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-winners-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 70,
+      "evaluated_count": 70,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-winners-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 276,
+      "evaluated_count": 276,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-near2-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 364,
+      "evaluated_count": 364,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-near2-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 25,
+      "evaluated_count": 25,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-winners-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 72,
+      "evaluated_count": 72,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-winners-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 1065,
+      "evaluated_count": 1065,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-near2-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 1915,
+      "evaluated_count": 1915,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-near2-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 212,
+      "evaluated_count": 212,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 168707495,
+        "path": "out/family1-adaptiveness-20261026/policy/m6/total-c2-k2/records.jsonl",
+        "sha256": "2f009bea53a25994cbcaf31524c7fb2073c10ea60e939c69a8b292a880758bdf"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 6,
+      "missing_count": 0,
+      "pool": "m6-winners-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 885,
+      "evaluated_count": 885,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 168707495,
+        "path": "out/family1-adaptiveness-20261026/policy/m6/total-c2-k2/records.jsonl",
+        "sha256": "2f009bea53a25994cbcaf31524c7fb2073c10ea60e939c69a8b292a880758bdf"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 6,
+      "missing_count": 0,
+      "pool": "m6-winners-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 5066,
+      "evaluated_count": 5066,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 168707495,
+        "path": "out/family1-adaptiveness-20261026/policy/m6/total-c2-k2/records.jsonl",
+        "sha256": "2f009bea53a25994cbcaf31524c7fb2073c10ea60e939c69a8b292a880758bdf"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 6,
+      "missing_count": 0,
+      "pool": "m6-near2-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 11693,
+      "evaluated_count": 11693,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 168707495,
+        "path": "out/family1-adaptiveness-20261026/policy/m6/total-c2-k2/records.jsonl",
+        "sha256": "2f009bea53a25994cbcaf31524c7fb2073c10ea60e939c69a8b292a880758bdf"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 6,
+      "missing_count": 0,
+      "pool": "m6-near2-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 123,
+      "evaluated_count": 123,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 253755126,
+        "path": "out/family1-adaptiveness-20261026/policy/m7/total-c2-k2/records.jsonl",
+        "sha256": "60401a5506c4b1a487170d495b515a484a7823f16ea6c37cd22a353455cb3d44"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 7,
+      "missing_count": 0,
+      "pool": "m7-winners-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 391,
+      "evaluated_count": 391,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 253755126,
+        "path": "out/family1-adaptiveness-20261026/policy/m7/total-c2-k2/records.jsonl",
+        "sha256": "60401a5506c4b1a487170d495b515a484a7823f16ea6c37cd22a353455cb3d44"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 7,
+      "missing_count": 0,
+      "pool": "m7-winners-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 3581,
+      "evaluated_count": 3581,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 253755126,
+        "path": "out/family1-adaptiveness-20261026/policy/m7/total-c2-k2/records.jsonl",
+        "sha256": "60401a5506c4b1a487170d495b515a484a7823f16ea6c37cd22a353455cb3d44"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 7,
+      "missing_count": 0,
+      "pool": "m7-near2-r1",
+      "radius": 1,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 13329,
+      "evaluated_count": 13329,
+      "evaluation_k": 2,
+      "evaluation_records": {
+        "bytes": 253755126,
+        "path": "out/family1-adaptiveness-20261026/policy/m7/total-c2-k2/records.jsonl",
+        "sha256": "60401a5506c4b1a487170d495b515a484a7823f16ea6c37cd22a353455cb3d44"
+      },
+      "evaluation_window": "joint-pair",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 7,
+      "missing_count": 0,
+      "pool": "m7-near2-r1",
+      "radius": 1,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 5,
+      "evaluated_count": 5,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-winners-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 5,
+      "evaluated_count": 5,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-winners-r2",
+      "radius": 2,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 5,
+      "evaluated_count": 5,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-near2-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 5,
+      "evaluated_count": 5,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 2,
+      "missing_count": 0,
+      "pool": "m2-near2-r2",
+      "radius": 2,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 36,
+      "evaluated_count": 36,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-winners-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 36,
+      "evaluated_count": 36,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-winners-r2",
+      "radius": 2,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 57,
+      "evaluated_count": 57,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-near2-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 57,
+      "evaluated_count": 57,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 3,
+      "missing_count": 0,
+      "pool": "m3-near2-r2",
+      "radius": 2,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 346,
+      "evaluated_count": 346,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-winners-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 445,
+      "evaluated_count": 445,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-winners-r2",
+      "radius": 2,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 649,
+      "evaluated_count": 649,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-near2-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 649,
+      "evaluated_count": 649,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 4,
+      "missing_count": 0,
+      "pool": "m4-near2-r2",
+      "radius": 2,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 636,
+      "evaluated_count": 636,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-winners-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 1510,
+      "evaluated_count": 1510,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-winners-r2",
+      "radius": 2,
+      "root_closure": true
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 6745,
+      "evaluated_count": 6745,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-near2-r2",
+      "radius": 2,
+      "root_closure": false
+    },
+    {
+      "all_members_evaluated": true,
+      "candidate_count": 7634,
+      "evaluated_count": 7634,
+      "evaluation_k": null,
+      "evaluation_records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "evaluation_window": "exact-word-layer-oracle",
+      "generation_k": null,
+      "generation_window": "N/A: graph generation",
+      "m": 5,
+      "missing_count": 0,
+      "pool": "m5-near2-r2",
+      "radius": 2,
+      "root_closure": true
+    }
+  ],
+  "passed": true,
+  "randomness": false,
+  "schema": 1,
+  "search_launched": false,
+  "truth": [
+    {
+      "count": 1,
+      "histogram": {
+        "1": 1
+      },
+      "k": null,
+      "m": 1,
+      "maximum": 1,
+      "records": {
+        "bytes": 719,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-1/records.jsonl",
+        "sha256": "e4682f0b009e0c1a446f27731381247878a6e4270ac95a5ff828f4cf658258e3"
+      },
+      "summary": {
+        "bytes": 962,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-1/summary.json",
+        "sha256": "e78cb6ed85745edb01b3a8ea50edde397994b4af5fb23be0aeb2146eadb589aa"
+      },
+      "window_kind": "exact-word-layer-oracle",
+      "winner_count": 1
+    },
+    {
+      "count": 6,
+      "histogram": {
+        "1": 3,
+        "2": 2,
+        "3": 1
+      },
+      "k": null,
+      "m": 2,
+      "maximum": 3,
+      "records": {
+        "bytes": 4382,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/records.jsonl",
+        "sha256": "1b83f13faebe6995756a4eb750a18feb243c6180ef6669b3d783f14c66abc884"
+      },
+      "summary": {
+        "bytes": 962,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-2/summary.json",
+        "sha256": "72312656629557a340db63e12c2a4587175c5db735ee9f7753d7658e75ef169c"
+      },
+      "window_kind": "exact-word-layer-oracle",
+      "winner_count": 1
+    },
+    {
+      "count": 57,
+      "histogram": {
+        "1": 18,
+        "2": 6,
+        "3": 8,
+        "4": 14,
+        "5": 9,
+        "6": 2
+      },
+      "k": null,
+      "m": 3,
+      "maximum": 6,
+      "records": {
+        "bytes": 42343,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/records.jsonl",
+        "sha256": "7475e631b6290c01da175696d8d042c5c22e870cda128041a2c3c18879214ccb"
+      },
+      "summary": {
+        "bytes": 966,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-3/summary.json",
+        "sha256": "f8bdbc598a5acccf03b2357c1238582021aa250372e7966113c9c54d681793d5"
+      },
+      "window_kind": "exact-word-layer-oracle",
+      "winner_count": 2
+    },
+    {
+      "count": 678,
+      "histogram": {
+        "1": 175,
+        "10": 1,
+        "2": 37,
+        "3": 42,
+        "4": 68,
+        "5": 111,
+        "6": 97,
+        "7": 100,
+        "8": 37,
+        "9": 10
+      },
+      "k": null,
+      "m": 4,
+      "maximum": 10,
+      "records": {
+        "bytes": 512910,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+        "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b"
+      },
+      "summary": {
+        "bytes": 973,
+        "path": "out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/summary.json",
+        "sha256": "971c33a7391c5298b535507060b6aca0d6c0ce4fbfe8885f2039beed87cde49c"
+      },
+      "window_kind": "exact-word-layer-oracle",
+      "winner_count": 1
+    },
+    {
+      "count": 10398,
+      "histogram": {
+        "1": 2215,
+        "10": 781,
+        "11": 544,
+        "12": 245,
+        "13": 107,
+        "14": 27,
+        "15": 5,
+        "2": 393,
+        "3": 251,
+        "4": 391,
+        "5": 731,
+        "6": 1001,
+        "7": 1238,
+        "8": 1310,
+        "9": 1159
+      },
+      "k": null,
+      "m": 5,
+      "maximum": 15,
+      "records": {
+        "bytes": 8018206,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/records.jsonl",
+        "sha256": "060f9d3e5b5d9fe5ebeb9139b2fb90d0d42930abb01300633112d7baf35cff5d"
+      },
+      "summary": {
+        "bytes": 981,
+        "path": "out/family1-adaptiveness-20261026/exact-m5/summary.json",
+        "sha256": "cadd2d8dede20663aac2421f02c83797fe52b0a8540979252cbd4302ca1c51d9"
+      },
+      "window_kind": "exact-word-layer-oracle",
+      "winner_count": 5
+    }
+  ],
+  "truth_sources": [
+    {
+      "bytes": 984,
+      "path": "results/family1-m1-m6/score-distributions.json",
+      "sha256": "7b97174fd42ad935184f45ef0c4d918070a110583753d0cf97d1467677dc3440"
+    },
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "unique_evaluated_graphs_through_m7": 36162,
+  "verification": {
+    "all_passed": true,
+    "final_pairs_replayed": 20387,
+    "joint_prefix_mask_updates": 25468194,
+    "method": "independent Python scalar replay on every original static mask",
+    "word_pair_mask_checks": 1142914
+  }
+}

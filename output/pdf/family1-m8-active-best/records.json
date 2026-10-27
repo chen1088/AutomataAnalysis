@@ -1,6 +1,6 @@
 {
   "source": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\results\\family1-m8-estimates\\best-candidates.jsonl",
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m8-estimates/best-candidates.jsonl",
     "sha256": "f4385db783c114143cef29380b4195b0e3693e2cc3f0fad9c48d1612500d6dd0",
     "bytes": 9919
   },
@@ -1094,9 +1094,382 @@
         "mask_count": 256,
         "complete_state_vectors_compared": true,
         "product_state_sha256": "5492fbd9d8abb4bc50afd94a68dc5cabcab3bf6e632530014879038a5c12257c"
+      },
+      "scalar_witness_certificate": {
+        "schema": 1,
+        "id": "01020003040501060003020705060407",
+        "m": 8,
+        "key": "01020003040501060003020705060407",
+        "canonical_table": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            4,
+            7
+          ]
+        ],
+        "witness": [
+          "00001101101010101011000111100000011010010011100010",
+          "00100011011010101011000111100000011010010011100010"
+        ],
+        "first": "00001101101010101011000111100000011010010011100010",
+        "second": "00100011011010101011000111100000011010010011100010",
+        "length": 50,
+        "first_difference_position": 3,
+        "status": "verified-upper",
+        "minimality_certified": false,
+        "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+        "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+        "family_size": 256,
+        "search_parameters": {
+          "k": null,
+          "window_kind": "common-suffix-historical",
+          "alphabet": [
+            "00",
+            "11"
+          ],
+          "producer_k_known": false,
+          "beam_width": null,
+          "diagonal_width": null,
+          "unequal_width": null,
+          "prefix_pairs": null,
+          "prefix_depth": null,
+          "prefix_words": null,
+          "common_prefix_depth": null,
+          "max_length": null,
+          "expansion_cap": null,
+          "target_upper": null,
+          "deterministic": null,
+          "bootstrap_depth": null,
+          "bootstrap_width": null,
+          "startup_policy": null,
+          "advance_policy": null,
+          "separate_refinement_completed_k": 12,
+          "separate_refinement_max_attempted_k": 16,
+          "provenance_note": "Refinement k values do not identify the producer of this imported witness."
+        },
+        "verification": {
+          "method": "independent-scalar-complete-family-prefix-replay",
+          "dfa_count": 256,
+          "passed": true,
+          "D_empty": 0,
+          "D_final": 0
+        },
+        "trace": [
+          {
+            "length": 0,
+            "differing": 0,
+            "synchronized": 256
+          },
+          {
+            "length": 1,
+            "differing": 0,
+            "synchronized": 256
+          },
+          {
+            "length": 2,
+            "differing": 0,
+            "synchronized": 256
+          },
+          {
+            "length": 3,
+            "differing": 256,
+            "synchronized": 0
+          },
+          {
+            "length": 4,
+            "differing": 256,
+            "synchronized": 0
+          },
+          {
+            "length": 5,
+            "differing": 200,
+            "synchronized": 56
+          },
+          {
+            "length": 6,
+            "differing": 240,
+            "synchronized": 16
+          },
+          {
+            "length": 7,
+            "differing": 232,
+            "synchronized": 24
+          },
+          {
+            "length": 8,
+            "differing": 215,
+            "synchronized": 41
+          },
+          {
+            "length": 9,
+            "differing": 234,
+            "synchronized": 22
+          },
+          {
+            "length": 10,
+            "differing": 223,
+            "synchronized": 33
+          },
+          {
+            "length": 11,
+            "differing": 205,
+            "synchronized": 51
+          },
+          {
+            "length": 12,
+            "differing": 187,
+            "synchronized": 69
+          },
+          {
+            "length": 13,
+            "differing": 157,
+            "synchronized": 99
+          },
+          {
+            "length": 14,
+            "differing": 136,
+            "synchronized": 120
+          },
+          {
+            "length": 15,
+            "differing": 121,
+            "synchronized": 135
+          },
+          {
+            "length": 16,
+            "differing": 106,
+            "synchronized": 150
+          },
+          {
+            "length": 17,
+            "differing": 91,
+            "synchronized": 165
+          },
+          {
+            "length": 18,
+            "differing": 85,
+            "synchronized": 171
+          },
+          {
+            "length": 19,
+            "differing": 81,
+            "synchronized": 175
+          },
+          {
+            "length": 20,
+            "differing": 73,
+            "synchronized": 183
+          },
+          {
+            "length": 21,
+            "differing": 66,
+            "synchronized": 190
+          },
+          {
+            "length": 22,
+            "differing": 62,
+            "synchronized": 194
+          },
+          {
+            "length": 23,
+            "differing": 54,
+            "synchronized": 202
+          },
+          {
+            "length": 24,
+            "differing": 53,
+            "synchronized": 203
+          },
+          {
+            "length": 25,
+            "differing": 49,
+            "synchronized": 207
+          },
+          {
+            "length": 26,
+            "differing": 45,
+            "synchronized": 211
+          },
+          {
+            "length": 27,
+            "differing": 40,
+            "synchronized": 216
+          },
+          {
+            "length": 28,
+            "differing": 38,
+            "synchronized": 218
+          },
+          {
+            "length": 29,
+            "differing": 36,
+            "synchronized": 220
+          },
+          {
+            "length": 30,
+            "differing": 30,
+            "synchronized": 226
+          },
+          {
+            "length": 31,
+            "differing": 25,
+            "synchronized": 231
+          },
+          {
+            "length": 32,
+            "differing": 22,
+            "synchronized": 234
+          },
+          {
+            "length": 33,
+            "differing": 21,
+            "synchronized": 235
+          },
+          {
+            "length": 34,
+            "differing": 21,
+            "synchronized": 235
+          },
+          {
+            "length": 35,
+            "differing": 21,
+            "synchronized": 235
+          },
+          {
+            "length": 36,
+            "differing": 19,
+            "synchronized": 237
+          },
+          {
+            "length": 37,
+            "differing": 18,
+            "synchronized": 238
+          },
+          {
+            "length": 38,
+            "differing": 17,
+            "synchronized": 239
+          },
+          {
+            "length": 39,
+            "differing": 16,
+            "synchronized": 240
+          },
+          {
+            "length": 40,
+            "differing": 16,
+            "synchronized": 240
+          },
+          {
+            "length": 41,
+            "differing": 15,
+            "synchronized": 241
+          },
+          {
+            "length": 42,
+            "differing": 14,
+            "synchronized": 242
+          },
+          {
+            "length": 43,
+            "differing": 11,
+            "synchronized": 245
+          },
+          {
+            "length": 44,
+            "differing": 10,
+            "synchronized": 246
+          },
+          {
+            "length": 45,
+            "differing": 7,
+            "synchronized": 249
+          },
+          {
+            "length": 46,
+            "differing": 6,
+            "synchronized": 250
+          },
+          {
+            "length": 47,
+            "differing": 5,
+            "synchronized": 251
+          },
+          {
+            "length": 48,
+            "differing": 2,
+            "synchronized": 254
+          },
+          {
+            "length": 49,
+            "differing": 1,
+            "synchronized": 255
+          },
+          {
+            "length": 50,
+            "differing": 0,
+            "synchronized": 256
+          }
+        ],
+        "fixture": null
+      },
+      "preserved_drawing_source": {
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/graph-01.tex",
+        "sha256": "ad3ef1617c7fa820144f26e6ee31e825178250f88ebb00b0a4ba21573f4e65c8",
+        "bytes": 3574
       }
     }
   ],
   "all_edges_unlabelled_and_solid": true,
-  "heuristic_estimates_are_certificates": false
+  "heuristic_estimates_are_certificates": false,
+  "pdf_renderer": "matplotlib",
+  "generator": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_active_best_figure.py",
+    "sha256": "dcd99dfe6ab7410a6a6932a36ae4c7ed1e1f3fb29b1e97f456bbd644bd9b4142",
+    "bytes": 15952
+  },
+  "renderer_sources": [
+    {
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_tikz_atlas.py",
+      "sha256": "da63b82ec91adb9ab623343a038ac56843e61cba7ec23597c944142ac5b1aeac",
+      "bytes": 31033
+    },
+    {
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_grouped_atlas.py",
+      "sha256": "34c6d5ecde6342db4e1ac8fdb5764580477a645eb1eb4acc5f07b083cca66bc0",
+      "bytes": 19943
+    },
+    {
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/hard_pair_witness_figure.py",
+      "sha256": "70d79bdc8f7fcad4633594ad6fa74ddbe8be80c0b683221cdf78130b2d42a901",
+      "bytes": 18867
+    }
+  ]
 }

@@ -1,0 +1,80 @@
+{
+  "alphabet": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "cases": 13329,
+  "configs": [
+    {
+      "beam": 1,
+      "common_depth": 2,
+      "expansions": 2000000,
+      "id": "total-c2-k2",
+      "k": 2,
+      "max_length": 80,
+      "score": "total"
+    },
+    {
+      "beam": 1,
+      "common_depth": 2,
+      "expansions": 2000000,
+      "id": "total-c2-k4",
+      "k": 4,
+      "max_length": 80,
+      "score": "total"
+    },
+    {
+      "beam": 1,
+      "common_depth": 2,
+      "expansions": 2000000,
+      "id": "permutation-c2-k4",
+      "k": 4,
+      "max_length": 80,
+      "score": "permutation"
+    }
+  ],
+  "driver": {
+    "bytes": 12955,
+    "path": "scripts/family1_adaptive_policy_benchmark.py",
+    "sha256": "121cb625de4e162e6c463c37a05d64e7116f3910d1c24c50d31e76ddd20010a9"
+  },
+  "every_candidate_scored_in_every_configuration": true,
+  "executable": {
+    "bytes": 268024,
+    "path": "out/build/joint-solid-linux/Family1Joint",
+    "sha256": "5a57362b5305b121692805718444e15154e4a7da62f7a94b1a984dffdc02bd42"
+  },
+  "finder_helper": {
+    "bytes": 24163,
+    "path": "out/family1-adaptiveness-20261026/policy/m7/finder-driver-source.py",
+    "sha256": "8d5c94179f919a5ec831958dcacbb99d016277f131d16d63fc42604cc8ee3694"
+  },
+  "m": 7,
+  "query_inputs": "canonical tables and fixed configuration only",
+  "radius": 1,
+  "search_randomness": false,
+  "sources": [
+    {
+      "bytes": 74167,
+      "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-winners-r1/candidates.jsonl",
+      "sha256": "2e4b0b9a4b8da302dd941a6d939f79272bc7cb4abd528a7bd4706aa91fbfdfdd"
+    },
+    {
+      "bytes": 2256,
+      "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-winners-r1/seal.json",
+      "sha256": "68af965bf411f9f0adf9b4c5e800e0c37f3b7e9c5827de36739da7c970936e58"
+    },
+    {
+      "bytes": 2528929,
+      "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-near2-r1/candidates.jsonl",
+      "sha256": "27bb3924d995f6658b5af60b9fcd31f97477e09f451695f8ac1980b569591ff3"
+    },
+    {
+      "bytes": 2245,
+      "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-near2-r1/seal.json",
+      "sha256": "3c7a9f20c169de40334e86d2873def4dc4e9f5919a2bfbae9eeafc70d1015a48"
+    }
+  ]
+}

@@ -33,6 +33,10 @@ struct PrefixSeedOptions {
     bool force_hash_collisions = false;
     std::vector<unsigned int> sample_depths; // Explicit, independently sampled longer layers.
     std::uint64_t samples_per_depth = 16384, seed = 1088;
+    // Strict traversal: complete lexicographic word layers only, canonical
+    // pair order and actual-LCP strata. Ignores sample_depths and seed. The
+    // explicit word/depth/pair limits still make the collection bounded.
+    bool deterministic = false;
     const volatile std::sig_atomic_t* interrupted = nullptr;
 };
 struct PrefixSeedPair {
@@ -82,12 +86,15 @@ inline std::string word(std::uint64_t id, unsigned int length)
 // across different word/parent positions rather than exhausting one star.
 struct PairCursor {
     std::size_t size = 0, gap = 1, offset = 0, emitted = 0, stride = 1;
-    explicit PairCursor(std::size_t count) : size(count) { reset_round(); }
+    bool canonical_order = false;
+    explicit PairCursor(std::size_t count, bool canonical = false)
+        : size(count), canonical_order(canonical) { reset_round(); }
     void reset_round()
     {
         emitted = offset = 0;
         if (gap >= size) return;
         const auto count = size - gap;
+        if (canonical_order) { stride = 1; return; }
         stride = count / 2 + 1;
         if (stride >= count) stride = 1;
         while (std::gcd(stride, count) != 1) { ++stride; if (stride >= count) stride = 1; }
@@ -149,6 +156,10 @@ PrefixSeedResult enumerate_prefix_seeds(const std::vector<std::uint32_t>& initia
     std::sort(sampled_depths.begin(), sampled_depths.end());
     sampled_depths.erase(std::unique(sampled_depths.begin(), sampled_depths.end()), sampled_depths.end());
     for (auto depth : sampled_depths) if (!depth || depth > 63) throw std::invalid_argument("sampled prefix depths must be1..63");
+    // Strict mode never draws or substitutes a sampled long word. A complete
+    // layer that exceeds max_words stops the lexicographic layer traversal;
+    // the word_capped flag below preserves that coverage limitation.
+    if (options.deterministic) sampled_depths.clear();
     const auto started = std::chrono::steady_clock::now();
     PrefixSeedResult result; result.coordinate_count = initial_states.size();
     std::vector<std::vector<PrefixSeedPair>> layer_candidates;
@@ -249,9 +260,12 @@ PrefixSeedResult enumerate_prefix_seeds(const std::vector<std::uint32_t>& initia
         result.unique_profiles = groups.size();
         std::vector<std::size_t> colliding;
         std::vector<prefix_seed_detail::DiversePairCursor> cursors;
+        std::vector<prefix_seed_detail::PairCursor> canonical_cursors;
         for (std::size_t group_id = 0; group_id < groups.size(); ++group_id) {
             const auto size = groups[group_id].words.size(); if (size < 2) continue;
-            colliding.push_back(group_id); cursors.emplace_back(size);
+            colliding.push_back(group_id);
+            if (options.deterministic) canonical_cursors.emplace_back(size, true);
+            else cursors.emplace_back(size);
             const auto a = size % 2 ? size : size / 2, b = size % 2 ? (size - 1) / 2 : size - 1;
             if (b && a > (std::numeric_limits<std::uint64_t>::max() - layer.total_pairs_available) / b) {
                 layer.total_pairs_available = std::numeric_limits<std::uint64_t>::max(); layer.pair_count_saturated = true;
@@ -272,7 +286,10 @@ PrefixSeedResult enumerate_prefix_seeds(const std::vector<std::uint32_t>& initia
         while (candidates.size() < wanted && progress) {
             progress = false;
             for (std::size_t i = 0; i < colliding.size() && candidates.size() < wanted; ++i) {
-                const auto selected = cursors[i].next(); if (!selected) continue; progress = true;
+                // Canonical mode visits adjacent word IDs across the bucket,
+                // then gap two, etc.; no seeded/hash-based proposals execute.
+                const auto selected = options.deterministic ? canonical_cursors[i].next() : cursors[i].next();
+                if (!selected) continue; progress = true;
                 const auto& group = groups[colliding[i]];
                 const auto first_id = group.words[selected->first], second_id = group.words[selected->second];
                 candidates.push_back({prefix_seed_detail::word(first_id, depth), prefix_seed_detail::word(second_id, depth), profiles[group.representative], first_id, second_id});
@@ -305,7 +322,9 @@ PrefixSeedResult enumerate_prefix_seeds(const std::vector<std::uint32_t>& initia
                     if (quota[p] < counts[p]) { ++quota[p]; ++allocated; more = true; }
             }
             // Two bounded reservoirs: one representative per profile group,
-            // and one hash-spread sample of all its branch boundaries.
+            // and one spread of branch boundaries. Strict traversal keeps
+            // lexical boundaries, rather than using seeded ranks. The same
+            // quotas and depth/LCP channels retain fair stratum coverage.
             using Boundary = std::tuple<std::uint64_t, std::size_t, std::uint64_t, std::uint64_t>;
             std::array<std::multiset<Boundary>, 9> spread, group_spread;
             const auto offer = [&](auto& reservoir, unsigned int p, const Boundary& boundary) {
@@ -320,8 +339,9 @@ PrefixSeedResult enumerate_prefix_seeds(const std::vector<std::uint32_t>& initia
                     const auto a = words[j - 1], b = words[j];
                     const auto p = lcp(a, b);
                     if (p > options.common_prefix_depth || !quota[p]) continue;
-                    const auto rank = prefix_seed_detail::mix(options.seed ^ prefix_seed_detail::mix(a)
-                        ^ prefix_seed_detail::mix(b ^ (std::uint64_t{depth} << 56)));
+                    const auto rank = options.deterministic ? a
+                        : prefix_seed_detail::mix(options.seed ^ prefix_seed_detail::mix(a)
+                            ^ prefix_seed_detail::mix(b ^ (std::uint64_t{depth} << 56)));
                     Boundary boundary{rank, id, a, b}; offer(spread[p], p, boundary);
                     if (!best[p] || boundary < *best[p]) best[p] = boundary;
                 }

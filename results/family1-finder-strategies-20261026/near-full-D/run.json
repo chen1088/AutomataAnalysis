@@ -1,0 +1,103 @@
+{
+  "calibration": {
+    "bytes": 8532,
+    "path": "out/family1-finder-strategies-20261026/final-calibration/manifest.json",
+    "sha256": "56d2720e1c995d4647c60e9783ca42d9d456e6c4c9193b7676cf77770331ded0"
+  },
+  "compile_source_fingerprint": "2135b6e4522ef9bf6401167d0bfb65df451b6cbc7ac37320e1f9eeb5051bb513",
+  "compile_source_inventory": {
+    "executable_sha256": "2efec7d3a06ec9bb4ee32f24aa765bf770342c1aae3346be5ce98d8c81629e15",
+    "sources": [
+      {
+        "path": "family1_near.cpp",
+        "sha256": "6b0daa6ec4f4211650b124da6b736e14e1d3c75ce74d2f7b5be14785c645dfce"
+      },
+      {
+        "path": "Family1NearPair.h",
+        "sha256": "1f06251f1bc05bfd5eef37af79354bbcc6675b6dbeff280d5e354aa7d45ea1f4"
+      },
+      {
+        "path": "Family1ScoredSeeds.h",
+        "sha256": "3db1d7add4b3ab8b0d5f87758de73df40f98fe927a15af54a7104647296eea63"
+      },
+      {
+        "path": "Family1JointPair.h",
+        "sha256": "e21321806725611c87fb16475234f99e963628e96c85c50ce7b55dbce453a272"
+      },
+      {
+        "path": "Family1JointSeeds.h",
+        "sha256": "50b62dd9e9e277d9721187efa3a72b1d75bf68024ce1149e1650040f9dab715a"
+      },
+      {
+        "path": "HardPairJointFinder.h",
+        "sha256": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+      },
+      {
+        "path": "HardPairPrefixSeeds.h",
+        "sha256": "a465d603f3465459345f93d8b2f3a8ac0dd5b9900813c125af13679f693bb7e9"
+      },
+      {
+        "path": "Family1ExactPacked.h",
+        "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+      },
+      {
+        "path": "Family1ExactPacked.cpp",
+        "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+      },
+      {
+        "path": "Family1LargeGraph.h",
+        "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+      },
+      {
+        "path": "Family1LargeGraph.cpp",
+        "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+      },
+      {
+        "path": "Family1PairAgreement.h",
+        "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+      },
+      {
+        "path": "Family1CliArtifacts.h",
+        "sha256": "42d99ccb98fa6093a604aa03c9c0f606028ebba3e917ccc725a796e7281924b1"
+      }
+    ]
+  },
+  "frontier": {
+    "bytes": 116921,
+    "path": "out/family1-finder-strategies-20261026/final-frontier343/manifest.json",
+    "sha256": "1599ff9694496290bff102357ed904c80e60aa0f80746773c62e677b56774d71"
+  },
+  "m8": {
+    "bytes": 1946,
+    "path": "out/family1-finder-strategies-20261026/final-m8/manifest.json",
+    "sha256": "979d2095e2cfab96681a9c43caa804a8113234dca708c2aa87fb8b001a811591"
+  },
+  "m8_prior_certificate": {
+    "bytes": 410759,
+    "path": "results/family1-adaptive-search-final/records.jsonl",
+    "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+  },
+  "m8_prior_producing_k": "unknown, historical common suffix",
+  "publisher": {
+    "bytes": 19359,
+    "path": "scripts/family1_near_publish.py",
+    "sha256": "6d84b94ea3e710d498e6200ebe2bc4d2495fa60da129dd93bef37a8e18d0fb7b"
+  },
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    },
+    {
+      "bytes": 171061,
+      "path": "results/family1-neighbor-seeds/near-top.jsonl",
+      "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+    }
+  ]
+}

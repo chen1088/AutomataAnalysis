@@ -1,0 +1,21 @@
+{
+  "all21_cases_completed_under_both_configurations": true,
+  "reference_labels_opened_during_queries": false,
+  "input": {
+    "path": "out/family1-finder-strategies-20261026/final-window-trials/keys-21.txt",
+    "bytes": 473,
+    "sha256": "fe96e82910b275ff41778bef9f3c75f5aab7f878db85dbc577d139c9884c296f"
+  },
+  "records": [
+    {
+      "path": "out/family1-finder-strategies-20261026/final-window-trials/records-k8-b1.jsonl",
+      "bytes": 7677,
+      "sha256": "fb1bb3c5f7b6b36911bdbb6d84fa1152d35e03656e17a28e75c778b5f9417014"
+    },
+    {
+      "path": "out/family1-finder-strategies-20261026/final-window-trials/records-k6-b4.jsonl",
+      "bytes": 7662,
+      "sha256": "2578f114d8c90cf6326c109c11a29297ef39375b8a11ee5bc410ebfdcf30a602"
+    }
+  ]
+}

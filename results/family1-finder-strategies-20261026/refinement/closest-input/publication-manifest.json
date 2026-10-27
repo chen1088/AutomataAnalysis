@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "bytes": 9743,
+      "path": "cases.csv",
+      "sha256": "99faaf41bab6fc6b97a90086ac79331d464f5df033d9dde56b0656355962e44b"
+    },
+    {
+      "bytes": 5863,
+      "path": "input-cases.csv",
+      "sha256": "40760cb1dd156d300db49e72c585cffa1556aeb72f24ece66e9f73fed0cb00cf"
+    },
+    {
+      "bytes": 865,
+      "path": "query-audit.json",
+      "sha256": "721b6fb44d3c3aa1e248c348d6eeb92fd80505bc0509f1412f2169fe62365597"
+    },
+    {
+      "bytes": 5098,
+      "path": "run.json",
+      "sha256": "eabe9d51337dae3147dcdb711d3e4fd6df194263901ba458815633d05f35a05f"
+    },
+    {
+      "bytes": 3769,
+      "path": "summary.json",
+      "sha256": "8c7aab75e7219b333ca7e08eac123eefcce2f0ab825561d1026c1e05781417fe"
+    },
+    {
+      "bytes": 1144,
+      "path": "validation.json",
+      "sha256": "92a70ad58d7f42131d6f12a65e93d93311e2bbec4a84330cbfb897a844ec2ca9"
+    }
+  ]
+}

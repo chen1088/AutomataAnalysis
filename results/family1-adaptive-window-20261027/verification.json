@@ -1,0 +1,273 @@
+{
+  "adaptive_joint_k_ranges": [
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "all_public_files_below_1MiB": true,
+  "alphabet": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "beam_width": 16,
+  "ctest": {
+    "failed": 0,
+    "independent_scalar_window_populations": 1545,
+    "log": {
+      "bytes": 24917,
+      "path": "out/build/adaptive-window-linux/Testing/Temporary/LastTest.log",
+      "sha256": "b84ea06eb0ce888256076eeafde23a6b8d34c920a71979a5d675fa2c2714e1d5"
+    },
+    "passed": 13,
+    "test_source": {
+      "bytes": 18161,
+      "path": "tests/HardPairJointAdaptiveIndependent.cpp",
+      "sha256": "ad84d5afc22e08c61d43c927889eb6fda6d11206836b02d506d3a9f7e3ecc668"
+    }
+  },
+  "date": "2026-10-27",
+  "deterministic": true,
+  "documents": [
+    {
+      "bytes": 14286,
+      "path": "docs/family1-adaptive-window-report.md",
+      "sha256": "f1195db35a84fa52f79ced771e25ada912d7c10bd51569d9f7d4b28318794e23"
+    },
+    {
+      "bytes": 4379,
+      "path": "results/family1-adaptive-window-20261027/README.md",
+      "sha256": "57f3f676b97811276137011b78aa3153dce5c01bb3486796c97b2e3ddf342d26"
+    },
+    {
+      "bytes": 5585,
+      "path": "docs/family1-near-cli.md",
+      "sha256": "68d85876c06a04096b360bcea668fea068bec3c2ad48db527905bed86c5a1ac9"
+    },
+    {
+      "bytes": 15740,
+      "path": "README.md",
+      "sha256": "621632c77337742e5591a9f55074d65a0baed778143a65107011d6e01541e6e2"
+    }
+  ],
+  "exact_oracle_disabled": true,
+  "executable_sha256": "bfe575a0d7782e8f1a4dd3fe3436279513170211587d5353f6fd60132b83d917",
+  "fixed_joint_k": [
+    2,
+    4,
+    5
+  ],
+  "limitations": [
+    "Winning moment layers are arithmetic-checked against full sparse histograms; complete leaf scalar references are separate native semantic tests.",
+    "Development and frontier cases overlap.",
+    "No full graph enumeration was rerun.",
+    "Three broader winning paths include k3 probes despite returning the fixedk2 pair.",
+    "No universal near-shortest error bound is certified."
+  ],
+  "matched_controls": {
+    "original_oracle_off_block4_all20_pairs_bounds_traces_nodes_identical": true,
+    "rolling2_and_low_variance_all343_frontier_and20_calibration_pairs_identical": true
+  },
+  "passed": true,
+  "public_files_checked": 201,
+  "publications": [
+    {
+      "manifest": {
+        "bytes": 2480,
+        "path": "results/family1-adaptive-window-20261027/pilot-64/publication-manifest.json",
+        "sha256": "a7de5f285591bfb800b60706cbd2507fb01c949eda6a3cf6391ecb822e7a80d4"
+      },
+      "name": "pilot-64",
+      "summary": {
+        "bytes": 79022,
+        "path": "results/family1-adaptive-window-20261027/pilot-64/summary.json",
+        "sha256": "0864d265f6df59b1aca161df2400e25a6f4ff560978cc290a1baa136eafec9e4"
+      },
+      "validation": {
+        "bytes": 2065,
+        "path": "results/family1-adaptive-window-20261027/pilot-64/validation.json",
+        "sha256": "16b90b9748580b00f32ab1af1fa9b01cdc1a565afe8f6e2928166d203553993c"
+      }
+    },
+    {
+      "manifest": {
+        "bytes": 2114,
+        "path": "results/family1-adaptive-window-20261027/calibration-512/publication-manifest.json",
+        "sha256": "05a97dc8d4152a7b7c743d1ded68084de563fd21e215e7540b7909502a218f13"
+      },
+      "name": "calibration-512",
+      "summary": {
+        "bytes": 37693,
+        "path": "results/family1-adaptive-window-20261027/calibration-512/summary.json",
+        "sha256": "7e209eaaec29af42fa8e5007232f7857e28be2f95ad409abbdf965baead79e00"
+      },
+      "validation": {
+        "bytes": 1655,
+        "path": "results/family1-adaptive-window-20261027/calibration-512/validation.json",
+        "sha256": "87f25970a46082114f4f6cbaa93a7c1d47921b1444d440e6a7953f676c9dccb4"
+      }
+    },
+    {
+      "manifest": {
+        "bytes": 4059,
+        "path": "results/family1-adaptive-window-20261027/frontier-64/publication-manifest.json",
+        "sha256": "a11a1b6a81e91b1722a3ea19e5fad565d84559c42659178ad40a67fc8c950edd"
+      },
+      "name": "frontier-64",
+      "summary": {
+        "bytes": 45189,
+        "path": "results/family1-adaptive-window-20261027/frontier-64/summary.json",
+        "sha256": "34be5e48e025993f6131720b4f3f07e507c19d1fd3c2271c45a15b746569c394"
+      },
+      "validation": {
+        "bytes": 3629,
+        "path": "results/family1-adaptive-window-20261027/frontier-64/validation.json",
+        "sha256": "92bb05a30a1b536286384ccc1e4960b185c003740cef06634971dd02eadb8dc9"
+      }
+    },
+    {
+      "manifest": {
+        "bytes": 1956,
+        "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/publication-manifest.json",
+        "sha256": "86e451fa5668d073babe1a0b6f3540be7d02c9a87eff85f6438b1a66731778a6"
+      },
+      "name": "shallow-calibration-512",
+      "summary": {
+        "bytes": 9049,
+        "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/summary.json",
+        "sha256": "2659eeea8d6d74c4386395a9ddf9b9db799f8c336ce069a303b5081afb82dc6b"
+      },
+      "validation": {
+        "bytes": 1445,
+        "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/validation.json",
+        "sha256": "90ee07f1201872507af519cd76ebef3adf2e059ba3d5a52c0bbee2e40766407c"
+      }
+    },
+    {
+      "manifest": {
+        "bytes": 2615,
+        "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/publication-manifest.json",
+        "sha256": "c536440fe89078decb6d1cbdf4e1e325e9525f84f4288f1479de82d24a62026e"
+      },
+      "name": "shallow-frontier-64",
+      "summary": {
+        "bytes": 16678,
+        "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/summary.json",
+        "sha256": "0f95c810124793e79e3ae39e93d5c0713fd7892cd41597b1636e8455178bad43"
+      },
+      "validation": {
+        "bytes": 2132,
+        "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/validation.json",
+        "sha256": "24962f185174d161d9ac5c1b546c484d812d6ec0f2021fd6db9239c54bbd0f0a"
+      }
+    }
+  ],
+  "publisher": {
+    "bytes": 43684,
+    "path": "scripts/family1_adaptive_window_report.py",
+    "sha256": "afa36de78fac577bf3227d30d985d2161e7c60c188e413d3c0a750026c01f1b6"
+  },
+  "quality": {
+    "frontier_adaptive_low_max_finite_error": 13,
+    "frontier_adaptive_low_optimal": 236,
+    "frontier_block4_optimal": 237,
+    "frontier_known_H_cases": 296,
+    "frontier_rolling4_optimal": 264,
+    "general_reliability_passed": false,
+    "strong_adaptive_low_optimal": 15,
+    "strong_champion_all_within_one": true,
+    "strong_champion_cases": 20,
+    "strong_k4_optimal": 16,
+    "variance_quality_gain_demonstrated": false
+  },
+  "review_tracks": [
+    "independent scalar leaf-population tests",
+    "independent scalar certificate replay and arithmetic publication audit",
+    "additional read-only core/method review",
+    "final review using a different model as requested"
+  ],
+  "source_fingerprint": "06010060d90beebc8c15e9d3663895771320ab990fdc2c42386e8302ab69519c",
+  "source_inventory": [
+    {
+      "path": "tests/Family1AdaptiveWindowBenchmark.cpp",
+      "sha256": "09ffcf5a89957132e641d40de3ccab2767d6c960c919180ae1b7073321b7e140"
+    },
+    {
+      "path": "HardPairJointAdaptive.h",
+      "sha256": "1a8a4ff21d198fbf083cb51d4d620ded080cd83e17045ffc4416a8d199b99c75"
+    },
+    {
+      "path": "Family1ScoredSeeds.h",
+      "sha256": "ea2942100e62ead16005e64a2716d135faa04c84929c9eb08e71f47870a99c91"
+    },
+    {
+      "path": "Family1TailScoredSeeds.h",
+      "sha256": "94f8c46bf23b1d22f7d9f0615ab8bd66a03b0ec19338aec5eca45201383f180c"
+    },
+    {
+      "path": "Family1JointPair.h",
+      "sha256": "e21321806725611c87fb16475234f99e963628e96c85c50ce7b55dbce453a272"
+    },
+    {
+      "path": "Family1JointSeeds.h",
+      "sha256": "50b62dd9e9e277d9721187efa3a72b1d75bf68024ce1149e1650040f9dab715a"
+    },
+    {
+      "path": "HardPairJointFinder.h",
+      "sha256": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+    },
+    {
+      "path": "HardPairPrefixSeeds.h",
+      "sha256": "a465d603f3465459345f93d8b2f3a8ac0dd5b9900813c125af13679f693bb7e9"
+    },
+    {
+      "path": "Family1ExactPacked.h",
+      "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+    },
+    {
+      "path": "Family1ExactPacked.cpp",
+      "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+    },
+    {
+      "path": "Family1LargeGraph.h",
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    },
+    {
+      "path": "Family1LargeGraph.cpp",
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    {
+      "path": "Family1PairAgreement.h",
+      "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+    },
+    {
+      "path": "Family1CliArtifacts.h",
+      "sha256": "42d99ccb98fa6093a604aa03c9c0f606028ebba3e917ccc725a796e7281924b1"
+    },
+    {
+      "path": "HardPairViability.h",
+      "sha256": "04152a0fecdccccbbc263da62d11c6121cb3b9323fec41344a28ccc50320ff21"
+    }
+  ],
+  "starts_per_ranking": [
+    64,
+    512
+  ],
+  "totals": {
+    "figures": 63,
+    "mask_replays": 326812,
+    "moments": 35492,
+    "queries": 1712
+  },
+  "unique_graphs": 343
+}

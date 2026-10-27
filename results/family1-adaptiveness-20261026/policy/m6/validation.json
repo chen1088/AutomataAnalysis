@@ -1,0 +1,37 @@
+{
+  "all_candidate_keys_and_query_hashes_verified": true,
+  "all_finite_pairs_in_public_csv": true,
+  "candidate_count": 11693,
+  "configurations": [
+    {
+      "all_candidates_tested": true,
+      "complete_windows": 4595238,
+      "configuration": {
+        "beam": 1,
+        "common_depth": 2,
+        "expansions": 2000000,
+        "id": "total-c2-k2",
+        "k": 2,
+        "max_length": 80,
+        "score": "total"
+      },
+      "expanded_nodes": 90394952,
+      "expansion_capped_graphs": 0,
+      "graphs": 11693,
+      "independent_scalar_mask_replays": 864512,
+      "partial_windows": 0,
+      "run_audit_sha256": "bb8312f504a1d2185fd0f115ced1f50c88ace500e7a072ffca2527f6151eeb63"
+    }
+  ],
+  "crowding_gate": "finite upper within2 of maximum finite upper, count>=3; no misses included",
+  "finder_helper_snapshot_sha256": "8d5c94179f919a5ec831958dcacbb99d016277f131d16d63fc42604cc8ee3694",
+  "finite_pairs": 6012,
+  "forced_and_gated_policy_cells_are_separate": true,
+  "m": 6,
+  "misses": 5681,
+  "portfolio_bounds": "minimum of earlier and refinement verified uppers; misses never replace positives",
+  "portfolio_cost": "sum of both queried configurations, including unresolved attempts",
+  "publisher_sha256": "3cd92efe790e57d13c1be12a0d47305594db0bb44116ebb81384fd2dac90d839",
+  "query_driver_snapshot_sha256": "121cb625de4e162e6c463c37a05d64e7116f3910d1c24c50d31e76ddd20010a9",
+  "target_labels_used_only_after_query_seal": true
+}

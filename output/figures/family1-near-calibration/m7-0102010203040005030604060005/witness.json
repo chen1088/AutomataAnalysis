@@ -1,0 +1,311 @@
+{
+  "canonical_table": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "family_size": 128,
+  "first": "0101011101110001010011110010001011",
+  "first_difference_position": 1,
+  "fixture": null,
+  "gap": 0,
+  "generator": {
+    "bytes": 18867,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/hard_pair_witness_figure.py",
+    "sha256": "70d79bdc8f7fcad4633594ad6fa74ddbe8be80c0b683221cdf78130b2d42a901"
+  },
+  "graph_geometry_source": {
+    "bytes": 29393,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_graph_atlas.py",
+    "sha256": "d8eff86a3807cda394b793290260a7c737a9f01f6914d614dda7fe56975a57d7"
+  },
+  "id": "0102010203040005030604060005",
+  "key": "0102010203040005030604060005",
+  "length": 34,
+  "m": 7,
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "minimality_certified": false,
+  "reference_H": 34,
+  "reference_source": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "schema": 1,
+  "search_parameters": {
+    "advance_policy": null,
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "beam_width": 16,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "common_prefix_depth": null,
+    "complete_windows": 54368,
+    "deterministic": true,
+    "diagonal_width": 0,
+    "expanded_nodes": 14457984,
+    "expansion_cap": 2000000,
+    "expansion_limit_reached": false,
+    "greedy_advance": "whole joint window block",
+    "k": 4,
+    "length_limit_reached": true,
+    "max_length": 80,
+    "prefix_depth": 20,
+    "prefix_pair_capped": true,
+    "prefix_pairs": null,
+    "prefix_word_capped": false,
+    "prefix_words": 1048576,
+    "producer_k_known": true,
+    "score": "permutation",
+    "startup_policy": null,
+    "target_upper": null,
+    "unequal_width": 0,
+    "window_kind": "joint-pair",
+    "winning_attempt": {
+      "effective_max_length": 80,
+      "first_difference_depth": 1,
+      "first_greedy_depth": 16,
+      "initial_first": "010101110111",
+      "initial_length": 12,
+      "initial_second": "101010001000",
+      "kind": "scored-seed-joint",
+      "seed_mode": "scored/full-D"
+    }
+  },
+  "second": "1010100010000001010011110010001011",
+  "source": {
+    "bytes": 83404,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/family1-near-calibration/figure-inputs.json",
+    "sha256": "c305e5f2ec403b1c61dc932d4bcb6465a6c6f1f865fd2769f3435e7e0acb102c"
+  },
+  "source_coordinate_weight_policy": "every original static mask; coincident-port duplicates retain multiplicity",
+  "source_native_lower_bound": 24,
+  "source_native_minimality_certified": false,
+  "source_native_producer": "scored-seed-joint",
+  "status": "verified-upper",
+  "trace": [
+    {
+      "differing": 0,
+      "length": 0,
+      "synchronized": 128
+    },
+    {
+      "differing": 128,
+      "length": 1,
+      "synchronized": 0
+    },
+    {
+      "differing": 128,
+      "length": 2,
+      "synchronized": 0
+    },
+    {
+      "differing": 128,
+      "length": 3,
+      "synchronized": 0
+    },
+    {
+      "differing": 120,
+      "length": 4,
+      "synchronized": 8
+    },
+    {
+      "differing": 128,
+      "length": 5,
+      "synchronized": 0
+    },
+    {
+      "differing": 122,
+      "length": 6,
+      "synchronized": 6
+    },
+    {
+      "differing": 114,
+      "length": 7,
+      "synchronized": 14
+    },
+    {
+      "differing": 112,
+      "length": 8,
+      "synchronized": 16
+    },
+    {
+      "differing": 116,
+      "length": 9,
+      "synchronized": 12
+    },
+    {
+      "differing": 118,
+      "length": 10,
+      "synchronized": 10
+    },
+    {
+      "differing": 124,
+      "length": 11,
+      "synchronized": 4
+    },
+    {
+      "differing": 108,
+      "length": 12,
+      "synchronized": 20
+    },
+    {
+      "differing": 94,
+      "length": 13,
+      "synchronized": 34
+    },
+    {
+      "differing": 77,
+      "length": 14,
+      "synchronized": 51
+    },
+    {
+      "differing": 68,
+      "length": 15,
+      "synchronized": 60
+    },
+    {
+      "differing": 59,
+      "length": 16,
+      "synchronized": 69
+    },
+    {
+      "differing": 46,
+      "length": 17,
+      "synchronized": 82
+    },
+    {
+      "differing": 41,
+      "length": 18,
+      "synchronized": 87
+    },
+    {
+      "differing": 38,
+      "length": 19,
+      "synchronized": 90
+    },
+    {
+      "differing": 35,
+      "length": 20,
+      "synchronized": 93
+    },
+    {
+      "differing": 26,
+      "length": 21,
+      "synchronized": 102
+    },
+    {
+      "differing": 21,
+      "length": 22,
+      "synchronized": 107
+    },
+    {
+      "differing": 18,
+      "length": 23,
+      "synchronized": 110
+    },
+    {
+      "differing": 18,
+      "length": 24,
+      "synchronized": 110
+    },
+    {
+      "differing": 15,
+      "length": 25,
+      "synchronized": 113
+    },
+    {
+      "differing": 13,
+      "length": 26,
+      "synchronized": 115
+    },
+    {
+      "differing": 10,
+      "length": 27,
+      "synchronized": 118
+    },
+    {
+      "differing": 7,
+      "length": 28,
+      "synchronized": 121
+    },
+    {
+      "differing": 7,
+      "length": 29,
+      "synchronized": 121
+    },
+    {
+      "differing": 6,
+      "length": 30,
+      "synchronized": 122
+    },
+    {
+      "differing": 3,
+      "length": 31,
+      "synchronized": 125
+    },
+    {
+      "differing": 1,
+      "length": 32,
+      "synchronized": 127
+    },
+    {
+      "differing": 1,
+      "length": 33,
+      "synchronized": 127
+    },
+    {
+      "differing": 0,
+      "length": 34,
+      "synchronized": 128
+    }
+  ],
+  "verification": {
+    "D_empty": 0,
+    "D_final": 0,
+    "dfa_count": 128,
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "passed": true
+  },
+  "witness": [
+    "0101011101110001010011110010001011",
+    "1010100010000001010011110010001011"
+  ]
+}

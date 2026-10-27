@@ -1,0 +1,52 @@
+{
+  "arguments": [
+    "KEYS",
+    "24",
+    "256"
+  ],
+  "cases": 47,
+  "executable": {
+    "bytes": 65280,
+    "path": "out/family1-finder-strategies-20261026/exact-budget-m7/Family1ExactBudgetBenchmark",
+    "sha256": "9ce64e972754d6726f2b7f51b55bcf5797dd0e93d8a9cd49fbc95ce62ba8d59f"
+  },
+  "input": {
+    "bytes": 6204,
+    "path": "out/family1-finder-strategies-20261026/exact-budget-m7/input-cases.jsonl",
+    "sha256": "899b7ee5272fd8d6b1ddd6c8f1de0b7968136cb1dd31c7d1c8b6c5069ec538f5"
+  },
+  "k": null,
+  "sources": [
+    {
+      "bytes": 4614,
+      "path": "out/family1-finder-strategies-20261026/exact-budget-m7/evidence/Family1CliArtifacts.h",
+      "sha256": "42d99ccb98fa6093a604aa03c9c0f606028ebba3e917ccc725a796e7281924b1"
+    },
+    {
+      "bytes": 2148,
+      "path": "out/family1-finder-strategies-20261026/exact-budget-m7/evidence/Family1ExactBudgetBenchmark.cpp",
+      "sha256": "5026966e4f1eb05761ed6f39d58623d8e91b1dc512fc27360006142c485bd56f"
+    },
+    {
+      "bytes": 20868,
+      "path": "out/family1-finder-strategies-20261026/exact-budget-m7/evidence/Family1ExactPacked.cpp",
+      "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+    },
+    {
+      "bytes": 4578,
+      "path": "out/family1-finder-strategies-20261026/exact-budget-m7/evidence/Family1ExactPacked.h",
+      "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+    },
+    {
+      "bytes": 5101,
+      "path": "out/family1-finder-strategies-20261026/exact-budget-m7/evidence/Family1LargeGraph.cpp",
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    {
+      "bytes": 1035,
+      "path": "out/family1-finder-strategies-20261026/exact-budget-m7/evidence/Family1LargeGraph.h",
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    }
+  ],
+  "window": "exact-word-layers"
+}

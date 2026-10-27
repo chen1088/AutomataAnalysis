@@ -1,0 +1,317 @@
+{
+  "canonical_table": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "family_size": 128,
+  "first": "0000111001111111110010100011000011100",
+  "first_difference_position": 1,
+  "fixture": null,
+  "gap_to_known_upper": 5,
+  "id": "0001020304050406020300010506",
+  "key": "0001020304050406020300010506",
+  "length": 37,
+  "m": 7,
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "minimality_certified": false,
+  "new_finder_result_not_historical_floor": true,
+  "reference_upper": 32,
+  "schema": 1,
+  "search_parameters": {
+    "advance": "block",
+    "advance_policy": null,
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "beam_width": 16,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "common_prefix_depth": null,
+    "complete_windows": 8928,
+    "configured_k_max": 4,
+    "configured_k_min": 4,
+    "deterministic": null,
+    "diagonal_width": null,
+    "exact_depth": 0,
+    "expanded_nodes": 2590848,
+    "expansion_cap": 2000000,
+    "greedy_advance": "whole joint window block",
+    "k": null,
+    "k_label": "4; winning lookaheads 4\u00d75",
+    "max_length": 80,
+    "policy": "fixed-block",
+    "prefix_depth": null,
+    "prefix_pairs": null,
+    "prefix_words": null,
+    "priority": true,
+    "producer_k_known": true,
+    "producing_k_sequence": [
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "score": "permutation then D",
+    "single_k_applicable": false,
+    "startup_policy": null,
+    "target_upper": null,
+    "threshold_ppm": 0,
+    "unequal_width": null,
+    "window_kind": "adaptive-joint-pair",
+    "winning_attempt": {
+      "first_greedy_depth": 21,
+      "initial_first": "00001110011111111",
+      "initial_length": 17,
+      "initial_second": "11000011111001111"
+    }
+  },
+  "second": "1100001111100111110010100011000011100",
+  "source": {
+    "manifest": {
+      "bytes": 119394,
+      "path": "out/family1-adaptive-window-20261027/frontier-64/manifest.json",
+      "sha256": "42a24a5dfb7e53e82783318098c2db17eb85eda0e85abd6ef50d67ba02c6b24a"
+    },
+    "records": {
+      "bytes": 1746887,
+      "path": "out/family1-adaptive-window-20261027/frontier-64/records.jsonl",
+      "sha256": "5cf5af24a574b7f2b4735cba71d1453b9c9c08e8f25360c6699cde45fcf70293"
+    }
+  },
+  "source_native_minimality_certified": false,
+  "status": "verified-upper",
+  "trace": [
+    {
+      "differing": 0,
+      "length": 0,
+      "synchronized": 128
+    },
+    {
+      "differing": 128,
+      "length": 1,
+      "synchronized": 0
+    },
+    {
+      "differing": 128,
+      "length": 2,
+      "synchronized": 0
+    },
+    {
+      "differing": 128,
+      "length": 3,
+      "synchronized": 0
+    },
+    {
+      "differing": 104,
+      "length": 4,
+      "synchronized": 24
+    },
+    {
+      "differing": 116,
+      "length": 5,
+      "synchronized": 12
+    },
+    {
+      "differing": 104,
+      "length": 6,
+      "synchronized": 24
+    },
+    {
+      "differing": 88,
+      "length": 7,
+      "synchronized": 40
+    },
+    {
+      "differing": 119,
+      "length": 8,
+      "synchronized": 9
+    },
+    {
+      "differing": 116,
+      "length": 9,
+      "synchronized": 12
+    },
+    {
+      "differing": 110,
+      "length": 10,
+      "synchronized": 18
+    },
+    {
+      "differing": 94,
+      "length": 11,
+      "synchronized": 34
+    },
+    {
+      "differing": 126,
+      "length": 12,
+      "synchronized": 2
+    },
+    {
+      "differing": 92,
+      "length": 13,
+      "synchronized": 36
+    },
+    {
+      "differing": 82,
+      "length": 14,
+      "synchronized": 46
+    },
+    {
+      "differing": 58,
+      "length": 15,
+      "synchronized": 70
+    },
+    {
+      "differing": 39,
+      "length": 16,
+      "synchronized": 89
+    },
+    {
+      "differing": 33,
+      "length": 17,
+      "synchronized": 95
+    },
+    {
+      "differing": 30,
+      "length": 18,
+      "synchronized": 98
+    },
+    {
+      "differing": 29,
+      "length": 19,
+      "synchronized": 99
+    },
+    {
+      "differing": 24,
+      "length": 20,
+      "synchronized": 104
+    },
+    {
+      "differing": 20,
+      "length": 21,
+      "synchronized": 108
+    },
+    {
+      "differing": 19,
+      "length": 22,
+      "synchronized": 109
+    },
+    {
+      "differing": 19,
+      "length": 23,
+      "synchronized": 109
+    },
+    {
+      "differing": 16,
+      "length": 24,
+      "synchronized": 112
+    },
+    {
+      "differing": 13,
+      "length": 25,
+      "synchronized": 115
+    },
+    {
+      "differing": 10,
+      "length": 26,
+      "synchronized": 118
+    },
+    {
+      "differing": 7,
+      "length": 27,
+      "synchronized": 121
+    },
+    {
+      "differing": 7,
+      "length": 28,
+      "synchronized": 121
+    },
+    {
+      "differing": 7,
+      "length": 29,
+      "synchronized": 121
+    },
+    {
+      "differing": 6,
+      "length": 30,
+      "synchronized": 122
+    },
+    {
+      "differing": 5,
+      "length": 31,
+      "synchronized": 123
+    },
+    {
+      "differing": 5,
+      "length": 32,
+      "synchronized": 123
+    },
+    {
+      "differing": 3,
+      "length": 33,
+      "synchronized": 125
+    },
+    {
+      "differing": 2,
+      "length": 34,
+      "synchronized": 126
+    },
+    {
+      "differing": 2,
+      "length": 35,
+      "synchronized": 126
+    },
+    {
+      "differing": 2,
+      "length": 36,
+      "synchronized": 126
+    },
+    {
+      "differing": 0,
+      "length": 37,
+      "synchronized": 128
+    }
+  ],
+  "verification": {
+    "D_empty": 0,
+    "D_final": 0,
+    "dfa_count": 128,
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "passed": true
+  },
+  "witness": [
+    "0000111001111111110010100011000011100",
+    "1100001111100111110010100011000011100"
+  ]
+}

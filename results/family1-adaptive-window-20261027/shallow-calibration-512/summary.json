@@ -1,0 +1,301 @@
+{
+  "action_variance_definition": "population variance across the four conditional MEAN D values, not action minima",
+  "budget_policy": "a refused growth layer ends that attempt; no commit of a last-eligible-k fallback",
+  "candidates_scored_shared_once_per_graph": 655360,
+  "configurations": {
+    "rolling2": {
+      "all": {
+        "bounded_seed_collisions": 1,
+        "capped_attempts": 0,
+        "cases": 20,
+        "complete_layers": 4367917,
+        "completed_k_histogram": {
+          "1": 2279307,
+          "2": 2088610
+        },
+        "criterion_windows": 2279307,
+        "exact_reference_cases": 20,
+        "expanded_nodes": 42534988,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 20,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 15,
+        "per_policy_candidates_scored": 655360,
+        "per_policy_preprocessing_words": 41943000,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 190697,
+          "2": 2088610
+        },
+        "tested_k_histogram": {
+          "1": 190697,
+          "2": 2088610
+        },
+        "within_one": 20,
+        "within_two": 20
+      },
+      "configuration": {
+        "advance": "first",
+        "beam_width": 16,
+        "max_k": 2,
+        "min_k": 2,
+        "name": "rolling2",
+        "policy": "fixed-roll",
+        "priority": true,
+        "threshold_ppm": 0
+      },
+      "m6_m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 10,
+        "complete_layers": 4188432,
+        "completed_k_histogram": {
+          "1": 2175872,
+          "2": 2012560
+        },
+        "criterion_windows": 2175872,
+        "exact_reference_cases": 10,
+        "expanded_nodes": 40904448,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 10,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.5,
+        "misses": 0,
+        "optimal": 5,
+        "per_policy_candidates_scored": 327680,
+        "per_policy_preprocessing_words": 20971500,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 163312,
+          "2": 2012560
+        },
+        "tested_k_histogram": {
+          "1": 163312,
+          "2": 2012560
+        },
+        "within_one": 10,
+        "within_two": 10
+      },
+      "m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 8,
+        "complete_layers": 3758512,
+        "completed_k_histogram": {
+          "1": 1944576,
+          "2": 1813936
+        },
+        "criterion_windows": 1944576,
+        "exact_reference_cases": 8,
+        "expanded_nodes": 36801280,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 8,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 5,
+        "per_policy_candidates_scored": 262144,
+        "per_policy_preprocessing_words": 16777200,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 130640,
+          "2": 1813936
+        },
+        "tested_k_histogram": {
+          "1": 130640,
+          "2": 1813936
+        },
+        "within_one": 8,
+        "within_two": 8
+      }
+    }
+  },
+  "exact_depth": 0,
+  "graph_cases": 20,
+  "graph_queries": 20,
+  "histogram_scope": "all attempts; selected horizons can be provisional on budget-aborted decisions",
+  "moment_scope": "complete all-leaf moments along winning-attempt ancestry only; misses have no winning moments",
+  "oracle_disabled": true,
+  "prior_certificate_floor_separate_from_new_finder": true,
+  "query_seal": {
+    "bytes": 18325,
+    "path": "out/family1-adaptive-window-20261027/shallow-calibration-512/query-seal.json",
+    "sha256": "b1eb7d6ee5a591eafd349e883d9f64f1c33fbd8049d084f2c43b2eb49e1c8793"
+  },
+  "schema": 1,
+  "seed_words_shared_once_per_graph": 41943000,
+  "source_fingerprint": "06010060d90beebc8c15e9d3663895771320ab990fdc2c42386e8302ab69519c",
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    },
+    {
+      "bytes": 171061,
+      "path": "results/family1-neighbor-seeds/near-top.jsonl",
+      "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+    },
+    {
+      "bytes": 410759,
+      "path": "results/family1-adaptive-search-final/records.jsonl",
+      "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+    },
+    {
+      "bytes": 801705,
+      "path": "results/family1-finder-strategies-20261026/near/records-frontier.jsonl",
+      "sha256": "bd5ad0649df3692e4f1fed8245af8b715522075a47e4e098541b9853e9a82d40"
+    },
+    {
+      "bytes": 2859,
+      "path": "results/family1-finder-strategies-20261026/near/records-m8.jsonl",
+      "sha256": "d8d0112ab784664e61b2df122b19b96b7ca5a1adfcaa4e31c510de92c868c532"
+    }
+  ],
+  "universal_error_bound_certified": false,
+  "variance_definition": "D counts ORIGINAL unequal endpoint coordinates; synchronized count N-D has the same variance",
+  "work": {
+    "bytes": 10604,
+    "path": "out/family1-adaptive-window-20261027/shallow-calibration-512/manifest.json",
+    "sha256": "a6dd2db4e1438a635261aa4d30b73b59e2e3d194b8efef4e97091ca8d2164849"
+  }
+}

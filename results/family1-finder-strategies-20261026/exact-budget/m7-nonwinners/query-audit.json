@@ -1,0 +1,27 @@
+{
+  "all47cases_completed": true,
+  "k": null,
+  "native": [
+    {
+      "bytes": 4572,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget-m7/native-0.jsonl",
+      "sha256": "4577c0d2f562fa6fb1f27abd83aed74a3bcf73e5b37416422fdf37d71cf6f9c2"
+    },
+    {
+      "bytes": 4572,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget-m7/native-1.jsonl",
+      "sha256": "84e5df42dcde062f48f7a116adb64895a51f08647ef3b565785c7300a56a35e1"
+    },
+    {
+      "bytes": 4572,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget-m7/native-2.jsonl",
+      "sha256": "05e17ec282eb502f2c05ea1d21dd67bc854271fcc875b2e1a6622229b8051ade"
+    },
+    {
+      "bytes": 4187,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget-m7/native-3.jsonl",
+      "sha256": "058cb89f00deee73555d8f28efa641723f98caa3ef6d39bb5a618a628d079f8d"
+    }
+  ],
+  "target_labels_used": false
+}

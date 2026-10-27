@@ -1,0 +1,22 @@
+{
+  "all_cases_scored": true,
+  "all_final_positive_pairs_scalar_verified": true,
+  "complete_rows": 232,
+  "independent_mask_replays": 20608,
+  "publisher": {
+    "bytes": 5127,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_pair_strategy_publish.py",
+    "sha256": "fc07b53c7593e8b2a7aae3f50bd68fcfc68cd1a0aff40dd63abe0b92ad510beb"
+  },
+  "query_seal": {
+    "bytes": 838,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/query-seal.json",
+    "sha256": "0451e1d268cd4a21bce24d73061527589efdeb085ed43b7a6c996dbf8e518bb9"
+  },
+  "scope": "initial scored-seed heldout",
+  "source_manifest": {
+    "bytes": 6048,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/manifest.json",
+    "sha256": "086a0aade8a1806b4858b466af3ba39422824421172b0260d475b6a87faae78e"
+  }
+}

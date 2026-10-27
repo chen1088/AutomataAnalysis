@@ -1,0 +1,22 @@
+{
+  "all69_exact": true,
+  "all_match_exhaustive": true,
+  "approx_parallel_wall_seconds_manifest_to_last_flush": 4.627537965774536,
+  "cases": 69,
+  "configured_joint_k": 4,
+  "exact_depth_cap": 24,
+  "exact_word_evaluations": 266328512,
+  "independent_mask_replays": 4416,
+  "joint_nodes": 0,
+  "max_layer_states": 16777216,
+  "memory_mib": 256,
+  "producing_k": null,
+  "producing_window": "exact word layers, no joint finder invoked",
+  "query_seal": {
+    "bytes": 1061,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget/query-seal.json",
+    "sha256": "2a02357bc7f7aabcdf2d441af3c52f74a2511bceb63595ceec5463def237261d"
+  },
+  "seed_attempts": 0,
+  "time_limits": false
+}

@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "bytes": 3317,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/README.md",
+      "sha256": "b37eadc1f7e40ecb646daf61d90d41abf1274255c0ccf0089fd5c5f84392f5b9"
+    },
+    {
+      "bytes": 9468,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/cases.csv",
+      "sha256": "efe5551d9e0b601199c17b94d5d538bdd9ca236b5c58b150eb357a1c52a583bb"
+    },
+    {
+      "bytes": 1243,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/input-cases.csv",
+      "sha256": "91c6be282803658d99d7a94fe688292d47c022797801e37b82883eeb439c2ab6"
+    },
+    {
+      "bytes": 18325,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/query-audit.json",
+      "sha256": "b1eb7d6ee5a591eafd349e883d9f64f1c33fbd8049d084f2c43b2eb49e1c8793"
+    },
+    {
+      "bytes": 10604,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/run.json",
+      "sha256": "a6dd2db4e1438a635261aa4d30b73b59e2e3d194b8efef4e97091ca8d2164849"
+    },
+    {
+      "bytes": 9049,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/summary.json",
+      "sha256": "2659eeea8d6d74c4386395a9ddf9b9db799f8c336ce069a303b5081afb82dc6b"
+    },
+    {
+      "bytes": 1445,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/validation.json",
+      "sha256": "90ee07f1201872507af519cd76ebef3adf2e059ba3d5a52c0bbee2e40766407c"
+    },
+    {
+      "bytes": 23105,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/winning-decisions.csv",
+      "sha256": "d8216f9ad84c9b21a1bd49d249bf1bc911f19b31fcd99e2ca87d38c8489f6647"
+    },
+    {
+      "bytes": 153176,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/winning-window-moments.csv",
+      "sha256": "183bde63626e639105233a8e27e87fe6ea7627628ce6647ad8b0ba2f36956ba1"
+    }
+  ]
+}

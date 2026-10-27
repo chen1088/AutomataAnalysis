@@ -1,0 +1,41 @@
+{
+  "compile_source_manifest": {
+    "bytes": 2247,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/scored-seeds/fast-source/manifest.json",
+    "sha256": "cb19667a359078670bc3456ff546779858f69b4a34670d08c9448b1d28cb4886"
+  },
+  "native_run": {
+    "arguments": [
+      "KEYS",
+      "4",
+      "16",
+      "20",
+      "1048576",
+      "4096",
+      "512",
+      "24",
+      "fast"
+    ],
+    "cases": 69,
+    "exact_depth": 24,
+    "executable": {
+      "bytes": 215560,
+      "path": "out/family1-finder-strategies-20261026/exact-budget/Family1ScoredSeedFastBenchmark",
+      "sha256": "881d2b8ac01ef49752f383b89bbb7ae79a9cc9f28699882c0330a9c34d06a467"
+    },
+    "input": {
+      "bytes": 8416,
+      "path": "out/family1-finder-strategies-20261026/exact-budget/input-cases.jsonl",
+      "sha256": "dcdf466c55b00640c6c2d9037826d255d70a37bd269d9dbf900f006edbfc3265"
+    },
+    "max_layer_states": 16777216,
+    "memory_mib": 256,
+    "time_limit": null,
+    "truth_used_in_queries": false
+  },
+  "source_cases": {
+    "bytes": 14620,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/input-cases.jsonl",
+    "sha256": "4724c6acd13e87a58fa9521b774a0244b831a569c60a08cc6cbcf6f5c879b325"
+  }
+}

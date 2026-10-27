@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "k": 2,
+  "startup": "divergence",
+  "common_depth": 0,
+  "witness": [
+    "000",
+    "110"
+  ],
+  "D_trace": [
+    0,
+    4,
+    2,
+    0
+  ],
+  "first_difference_position": 1,
+  "first_greedy_window_end_depth": 3,
+  "scalar_dfa_replays": 4,
+  "all_edges_checked": 4,
+  "visual_review_passed": true,
+  "visual_preview": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/hard-pair-joint-startup-example-checked-20261026-preview.png",
+    "sha256": "434222e924b0727c43baae029632a7bc15df096117a732cc77c2c6a0ea55f3fc",
+    "bytes": 103524
+  },
+  "preview_method": "SVG path/text/circle geometry rendered with matplotlib; final SVG upper-bound title updated",
+  "semantic_tests_passed": 6,
+  "source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-joint-startup-demo-20261026/records.jsonl",
+    "sha256": "5e1d5d9bb73f68476f2b3f377f34de02677e19e638c3a77073acb6017cd8828e",
+    "bytes": 2710
+  },
+  "renderer": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/hard_pair_witness_figure.py",
+    "sha256": "70d79bdc8f7fcad4633594ad6fa74ddbe8be80c0b683221cdf78130b2d42a901",
+    "bytes": 18867
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "executables": {
+    "rolling-benchmark": "cac67052c0560e6ede0926e45ce7c803ac8a9b31c43d96d23f7469aee4b7a065",
+    "rolling-benchmark-v3": "321cd9054ec9bdfac92708c4bb94a21649b35f357302f7032a2ed5728e95155a",
+    "rolling-distance-benchmark": "4fc4f9437b0a9874b2895bf58845029933d839c5a00f99b5849c33709c2ff760",
+    "rolling-distance-independent": "19e32479045125c87d8f6d149975fa76f427bc855e407c99b356432d436206cb",
+    "rolling-scored-benchmark": "ef1d2b0656b9a7972dc4d3424173598675505974085f191ffe935e9b612c9bc3"
+  },
+  "notes": [
+    "Main canonical runs use v1; lookahead tie experiments and full-frontier64 check use v3; distance main variants use v2.",
+    "Current experimental sources preserve the query algorithms, add optional tie policies, and add overflow validation and complete-window assertions.",
+    "Independent current distance test includes unreachable pairs, coincident ports, and m8."
+  ],
+  "source_archives": [
+    "source-v1",
+    "source-v2",
+    "source-v3",
+    "source-current"
+  ],
+  "source_files": {
+    "Family1ExactPacked.cpp": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d",
+    "Family1ExactPacked.h": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b",
+    "Family1JointPair.h": "e21321806725611c87fb16475234f99e963628e96c85c50ce7b55dbce453a272",
+    "Family1JointRollingDistance.h": "d847bc14e92f851a1e9530a14af942a6f3f52a6acf1e16ba3c9efc56c1bacae4",
+    "Family1JointSeeds.h": "50b62dd9e9e277d9721187efa3a72b1d75bf68024ce1149e1650040f9dab715a",
+    "Family1LargeGraph.cpp": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52",
+    "Family1LargeGraph.h": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721",
+    "Family1PairAgreement.h": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c",
+    "HardPairJointRolling.h": "43961dea21a4e70a84114dfed0c7e549966100fee59e01dff49aa0b510afec03",
+    "HardPairPrefixSeeds.h": "a465d603f3465459345f93d8b2f3a8ac0dd5b9900813c125af13679f693bb7e9",
+    "tests/Family1JointRollingDistanceIndependent.cpp": "dfb05635f7a1a6beefaf3559891afdfee5b3d1fdb5d0b3fb927dce83987d173a",
+    "tests/HardPairJointRollingBenchmark.cpp": "db6dd8378e761929de62d69bc16f3f1fd8a49de40c1b54542953ff53457d4cfa",
+    "tests/HardPairJointRollingDistanceBenchmark.cpp": "4b87fed564bde10884cb103ad1f7ff53e3aa1d8ec3a765560ab1722178e50b4f",
+    "tests/HardPairJointRollingScoredBenchmark.cpp": "5dae8c7e190a47fedb182d9f4a5c93f2a186e761e1393c98a1826aef6e8c0d69"
+  }
+}

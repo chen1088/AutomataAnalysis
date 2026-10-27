@@ -1,0 +1,464 @@
+{
+  "schema": 1,
+  "id": "0102030403040105020600050206",
+  "m": 7,
+  "key": "0102030403040105020600050206",
+  "canonical_table": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      2,
+      6
+    ]
+  ],
+  "witness": [
+    "1100001111100001100111100010111010000010001000010001000100000000001",
+    "1111001111100001100111100010111010000010001000010001000100000000001"
+  ],
+  "first": "1100001111100001100111100010111010000010001000010001000100000000001",
+  "second": "1111001111100001100111100010111010000010001000010001000100000000001",
+  "length": 67,
+  "first_difference_position": 3,
+  "status": "verified-upper",
+  "minimality_certified": false,
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "family_size": 128,
+  "search_parameters": {
+    "k": 2,
+    "window_kind": "joint-pair",
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "producer_k_known": true,
+    "beam_width": 1,
+    "diagonal_width": 0,
+    "unequal_width": 0,
+    "prefix_pairs": 0,
+    "prefix_depth": 16,
+    "prefix_words": 65536,
+    "common_prefix_depth": 8,
+    "max_length": 80,
+    "expansion_cap": 2000000,
+    "target_upper": 0,
+    "deterministic": true,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "startup_policy": null,
+    "advance_policy": null,
+    "winning_attempt": {
+      "kind": "divergence",
+      "number": 13,
+      "initial_length": 3,
+      "initial_first": "110",
+      "initial_second": "111",
+      "common_prefix": "11",
+      "orientation": "01",
+      "first_difference_depth": 3,
+      "first_greedy_depth": 5
+    },
+    "startup": "divergence",
+    "common_depth": 2,
+    "score": "total",
+    "priority_coordinate_count": 0,
+    "greedy_advance": "whole joint window block",
+    "expanded_nodes": 10536,
+    "complete_windows": 534,
+    "expansion_limit_reached": false,
+    "length_limit_reached": true,
+    "prefix_pair_capped": false,
+    "prefix_word_capped": false
+  },
+  "verification": {
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "dfa_count": 128,
+    "passed": true,
+    "D_empty": 0,
+    "D_final": 0
+  },
+  "trace": [
+    {
+      "length": 0,
+      "differing": 0,
+      "synchronized": 128
+    },
+    {
+      "length": 1,
+      "differing": 0,
+      "synchronized": 128
+    },
+    {
+      "length": 2,
+      "differing": 0,
+      "synchronized": 128
+    },
+    {
+      "length": 3,
+      "differing": 128,
+      "synchronized": 0
+    },
+    {
+      "length": 4,
+      "differing": 128,
+      "synchronized": 0
+    },
+    {
+      "length": 5,
+      "differing": 92,
+      "synchronized": 36
+    },
+    {
+      "length": 6,
+      "differing": 81,
+      "synchronized": 47
+    },
+    {
+      "length": 7,
+      "differing": 67,
+      "synchronized": 61
+    },
+    {
+      "length": 8,
+      "differing": 61,
+      "synchronized": 67
+    },
+    {
+      "length": 9,
+      "differing": 55,
+      "synchronized": 73
+    },
+    {
+      "length": 10,
+      "differing": 46,
+      "synchronized": 82
+    },
+    {
+      "length": 11,
+      "differing": 44,
+      "synchronized": 84
+    },
+    {
+      "length": 12,
+      "differing": 42,
+      "synchronized": 86
+    },
+    {
+      "length": 13,
+      "differing": 39,
+      "synchronized": 89
+    },
+    {
+      "length": 14,
+      "differing": 38,
+      "synchronized": 90
+    },
+    {
+      "length": 15,
+      "differing": 35,
+      "synchronized": 93
+    },
+    {
+      "length": 16,
+      "differing": 35,
+      "synchronized": 93
+    },
+    {
+      "length": 17,
+      "differing": 32,
+      "synchronized": 96
+    },
+    {
+      "length": 18,
+      "differing": 30,
+      "synchronized": 98
+    },
+    {
+      "length": 19,
+      "differing": 28,
+      "synchronized": 100
+    },
+    {
+      "length": 20,
+      "differing": 27,
+      "synchronized": 101
+    },
+    {
+      "length": 21,
+      "differing": 25,
+      "synchronized": 103
+    },
+    {
+      "length": 22,
+      "differing": 24,
+      "synchronized": 104
+    },
+    {
+      "length": 23,
+      "differing": 23,
+      "synchronized": 105
+    },
+    {
+      "length": 24,
+      "differing": 23,
+      "synchronized": 105
+    },
+    {
+      "length": 25,
+      "differing": 22,
+      "synchronized": 106
+    },
+    {
+      "length": 26,
+      "differing": 20,
+      "synchronized": 108
+    },
+    {
+      "length": 27,
+      "differing": 19,
+      "synchronized": 109
+    },
+    {
+      "length": 28,
+      "differing": 18,
+      "synchronized": 110
+    },
+    {
+      "length": 29,
+      "differing": 14,
+      "synchronized": 114
+    },
+    {
+      "length": 30,
+      "differing": 13,
+      "synchronized": 115
+    },
+    {
+      "length": 31,
+      "differing": 11,
+      "synchronized": 117
+    },
+    {
+      "length": 32,
+      "differing": 11,
+      "synchronized": 117
+    },
+    {
+      "length": 33,
+      "differing": 10,
+      "synchronized": 118
+    },
+    {
+      "length": 34,
+      "differing": 10,
+      "synchronized": 118
+    },
+    {
+      "length": 35,
+      "differing": 9,
+      "synchronized": 119
+    },
+    {
+      "length": 36,
+      "differing": 8,
+      "synchronized": 120
+    },
+    {
+      "length": 37,
+      "differing": 7,
+      "synchronized": 121
+    },
+    {
+      "length": 38,
+      "differing": 7,
+      "synchronized": 121
+    },
+    {
+      "length": 39,
+      "differing": 6,
+      "synchronized": 122
+    },
+    {
+      "length": 40,
+      "differing": 6,
+      "synchronized": 122
+    },
+    {
+      "length": 41,
+      "differing": 6,
+      "synchronized": 122
+    },
+    {
+      "length": 42,
+      "differing": 6,
+      "synchronized": 122
+    },
+    {
+      "length": 43,
+      "differing": 5,
+      "synchronized": 123
+    },
+    {
+      "length": 44,
+      "differing": 5,
+      "synchronized": 123
+    },
+    {
+      "length": 45,
+      "differing": 5,
+      "synchronized": 123
+    },
+    {
+      "length": 46,
+      "differing": 4,
+      "synchronized": 124
+    },
+    {
+      "length": 47,
+      "differing": 4,
+      "synchronized": 124
+    },
+    {
+      "length": 48,
+      "differing": 4,
+      "synchronized": 124
+    },
+    {
+      "length": 49,
+      "differing": 3,
+      "synchronized": 125
+    },
+    {
+      "length": 50,
+      "differing": 3,
+      "synchronized": 125
+    },
+    {
+      "length": 51,
+      "differing": 3,
+      "synchronized": 125
+    },
+    {
+      "length": 52,
+      "differing": 3,
+      "synchronized": 125
+    },
+    {
+      "length": 53,
+      "differing": 2,
+      "synchronized": 126
+    },
+    {
+      "length": 54,
+      "differing": 2,
+      "synchronized": 126
+    },
+    {
+      "length": 55,
+      "differing": 2,
+      "synchronized": 126
+    },
+    {
+      "length": 56,
+      "differing": 2,
+      "synchronized": 126
+    },
+    {
+      "length": 57,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 58,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 59,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 60,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 61,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 62,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 63,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 64,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 65,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 66,
+      "differing": 1,
+      "synchronized": 127
+    },
+    {
+      "length": 67,
+      "differing": 0,
+      "synchronized": 128
+    }
+  ],
+  "fixture": null,
+  "reference_upper": 17,
+  "gap_to_known_upper": 50,
+  "source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/family1-adaptiveness/m7-inflated-k2-source.json",
+    "sha256": "bd84eacb47400cee53377baf4f43050be8946d845fc0cd8c93b335913e58dc49",
+    "bytes": 26471
+  },
+  "generator": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/hard_pair_witness_figure.py",
+    "sha256": "70d79bdc8f7fcad4633594ad6fa74ddbe8be80c0b683221cdf78130b2d42a901",
+    "bytes": 18867
+  },
+  "graph_geometry_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_graph_atlas.py",
+    "sha256": "d8eff86a3807cda394b793290260a7c737a9f01f6914d614dda7fe56975a57d7",
+    "bytes": 29393
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "all_cases_scored": true,
+  "all_final_positive_pairs_scalar_verified": true,
+  "complete_rows": 232,
+  "independent_mask_replays": 20288,
+  "publisher": {
+    "bytes": 5127,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_pair_strategy_publish.py",
+    "sha256": "fc07b53c7593e8b2a7aae3f50bd68fcfc68cd1a0aff40dd63abe0b92ad510beb"
+  },
+  "query_seal": {
+    "bytes": 874,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout-prefix/query-seal.json",
+    "sha256": "13ca87b1705def24ab5f91aee8e08e8f2a1478749e1f580a28f8a55dc67c8ce5"
+  },
+  "scope": "post-hoc development reuse of the original heldout pool",
+  "source_manifest": {
+    "bytes": 5327,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout-prefix/manifest.json",
+    "sha256": "0a856e53bf2e96a315475c75ccd074326aff882c24e404254a925cc54d9319a7"
+  }
+}

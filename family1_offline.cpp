@@ -44,6 +44,7 @@ struct Options {
     unsigned int m = 0, depth = 24, exact_depth = 8, memory_mib = 512;
     unsigned int radius = 1, window = 8, max_window = 12, beam = 8;
     unsigned int prefix_depth = 16, common_prefix_depth = 8, tail_depth = 64, max_length = 128;
+    unsigned int target_upper = 0;
     unsigned int crowding = 3, band_width = 2, window_reports = 16;
     unsigned int viability_coordinates = 256, distance_coordinates = 256;
     std::uint64_t max_layer_states = 1ULL << 20, per_graph_ms = 2000, wall_seconds = 0;
@@ -51,6 +52,7 @@ struct Options {
     std::uint64_t prefix_words = 65536, prefix_pairs = 128, prefix_samples = 16384;
     std::uint64_t tail_threshold = 8, tail_states = 50000, expansions = 1000000;
     bool heuristics = false, mode_set = false, resume = false, dot = false;
+    bool deterministic = true;
     fs::path out;
     std::vector<std::string> graphs, parents;
 };
@@ -76,8 +78,12 @@ void help() {
         "Common: --m 1..20 --graph KEY (repeatable supplied subset) --out DIR\n"
         " --depth 24 (exact mode,0..31) --max-layer-states 1048576\n"
         " --memory-mib 512 --per-graph-ms 2000 (0 unlimited)\n"
+        " --deterministic (always enabled: canonical candidates, exhaustive\n"
+        " prefix layers, lexical beam ties; no random sampling or shuffles)\n"
         " --max-graphs N (NEW evaluations per invocation; off default0/unlimited,\n"
-        "               on default1000) --wall-seconds 0 --seed 1088\n"
+        "               on default1000) --wall-seconds 0\n"
+        " --seed and --prefix-samples are accepted for old command compatibility\n"
+        " but have no effect in this deterministic runner.\n"
         " --resume (same configuration/executable; skip finished journal rows)\n"
         " --dot (export unlabelled edges for every current best tie)\n\n"
         "Heuristic graph controls: --parent KEY (repeatable; overrides parents)\n"
@@ -96,6 +102,9 @@ void help() {
         " pair; individual shortest distances lower-bound its remaining suffix.\n"
         " --expansions 1000000 (per prefix, automatically raised to cover\n"
         " complete beam windows at the chosen k) --max-length 128 (1..4096)\n"
+        " --target-upper 0 (0 disabled,1..4096: stop a graph after a verified\n"
+        " pair at or below this length; no shortest-length claim or adaptive\n"
+        " refinement for a graph that has reached this upper-bound target)\n"
         " --crowding 3 --band-width 2 (crowded leaders trigger larger k)\n\n"
         " --window-reports 16 (retain latest compact distributions per graph;\n"
         " 0 disables; histograms use at most64 bins, never all ranked leaves)\n\n"
@@ -114,6 +123,7 @@ Options parse(int argc, char** argv) {
         if (a == "--help" || a == "-h") { help(); std::exit(0); }
         if (a == "--resume") { o.resume = true; continue; }
         if (a == "--dot") { o.dot = true; continue; }
+        if (a == "--deterministic") { o.deterministic = true; continue; }
         if (++i == argc) throw std::invalid_argument("missing value: " + a);
         const std::string v = argv[i];
         if (a == "--m") o.m = unsigned_number(v);
@@ -145,6 +155,7 @@ Options parse(int argc, char** argv) {
         else if (a == "--tail-depth") o.tail_depth = unsigned_number(v);
         else if (a == "--expansions") o.expansions = number(v);
         else if (a == "--max-length") o.max_length = unsigned_number(v);
+        else if (a == "--target-upper") o.target_upper = unsigned_number(v);
         else if (a == "--crowding") o.crowding = unsigned_number(v);
         else if (a == "--band-width") o.band_width = unsigned_number(v);
         else if (a == "--window-reports") o.window_reports = unsigned_number(v);
@@ -159,7 +170,7 @@ Options parse(int argc, char** argv) {
         || o.window > o.max_window || !o.beam || o.beam > 64 || !o.prefix_depth || o.prefix_depth > 63
         || !o.prefix_words || o.prefix_words > (1ULL << 24) || !o.prefix_pairs || o.prefix_pairs > 1000000
         || o.common_prefix_depth > 8 || !o.tail_states || o.tail_states > (1ULL << 32) || !o.expansions || !o.max_length || o.max_length > 4096
-        || !o.crowding || o.window_reports > 1000 || o.viability_coordinates > 1024 || o.distance_coordinates > 1024
+        || o.target_upper > 4096 || !o.crowding || o.window_reports > 1000 || o.viability_coordinates > 1024 || o.distance_coordinates > 1024
         || o.per_graph_ms > 31536000000ULL || o.wall_seconds > 31536000ULL)
         throw std::invalid_argument("invalid heuristic or time budget");
     if (!o.heuristics && !o.parents.empty()) throw std::invalid_argument("--parent requires heuristics on");
@@ -199,13 +210,17 @@ std::string executable_sha(const char* argument) {
 std::string configuration(const Options& o, const std::string& exe) {
     std::ostringstream s;
     s << "{\"schema\":1,\"program\":\"Family1Offline/1\",\"executable_sha256\":" << cli::quote(exe)
-      << ",\"m\":" << o.m << ",\"heuristics\":" << boolean(o.heuristics);
+      << ",\"m\":" << o.m << ",\"heuristics\":" << boolean(o.heuristics)
+      << ",\"deterministic\":" << boolean(o.deterministic)
+      << ",\"candidate_order\":\"canonical parents and neighbors; fixed edit-kind round robin\""
+      << ",\"prefix_selection\":\"complete binary layers within word budget; no sampling\""
+      << ",\"finder_ties\":\"lexicographic suffix\"";
 #define CONFIG(field) s << ",\"" #field "\":" << o.field
     CONFIG(depth); CONFIG(exact_depth); CONFIG(memory_mib); CONFIG(max_layer_states); CONFIG(per_graph_ms);
     CONFIG(wall_seconds); CONFIG(max_graphs); CONFIG(seed); CONFIG(radius); CONFIG(max_paths); CONFIG(max_candidates);
     CONFIG(window); CONFIG(max_window); CONFIG(beam); CONFIG(prefix_depth); CONFIG(prefix_words); CONFIG(prefix_pairs);
     CONFIG(prefix_samples); CONFIG(common_prefix_depth); CONFIG(tail_threshold); CONFIG(tail_states); CONFIG(tail_depth);
-    CONFIG(expansions); CONFIG(max_length); CONFIG(crowding); CONFIG(band_width); CONFIG(window_reports);
+    CONFIG(expansions); CONFIG(max_length); CONFIG(target_upper); CONFIG(crowding); CONFIG(band_width); CONFIG(window_reports);
     CONFIG(viability_coordinates); CONFIG(distance_coordinates);
 #undef CONFIG
     s << ",\"dot\":" << boolean(o.dot) << ",\"max_graphs_scope\":\"new evaluations per invocation\",\"graphs\":[";
@@ -226,6 +241,15 @@ struct Record {
     std::string viability = "null";
 };
 using Records = std::map<std::string, Record>;
+bool target_reached(const Options& o, const Record& r) {
+    return o.heuristics && o.target_upper && r.upper && r.upper <= o.target_upper;
+}
+void describe_target_reached(const Options& o, Record& r) {
+    if (target_reached(o, r) && !r.merge)
+        r.reason = "target upper reached: verified pair length " + std::to_string(r.upper)
+            + " <= " + std::to_string(o.target_upper)
+            + "; stopped at threshold witness, shortest merge length not certified";
+}
 unsigned int estimate(const Record& r) { return r.merge ? r.merge : r.upper ? std::max(r.lower, r.upper - 1) : 0; }
 std::string record_json(const Record& r, bool heuristic) {
     auto g = Graph::from_key(r.key);
@@ -383,6 +407,7 @@ Pool generate(const Options& o) {
             family1::edit::Options edit;
             edit.target_m = o.m; edit.radius = o.radius; edit.max_paths = o.max_paths;
             edit.max_candidates = o.max_candidates; edit.seed = o.seed; edit.root_closure = true; edit.interrupted = &interrupted;
+            edit.deterministic = o.deterministic;
             auto result = family1::edit::search(parents, edit);
             pool.generation_complete = result.enumeration_complete;
             pool.path_capped = result.path_capped; pool.candidate_capped = result.candidate_capped; pool.accepted_paths = result.accepted_paths;
@@ -411,7 +436,7 @@ std::uint64_t expansion_quota(const Options& o, unsigned int k) {
     std::uint64_t rounds = 0, width = 1;
     unsigned int left = o.max_length;
     while (left) { auto span = std::min(left, k); rounds += width * ((1ULL << (span + 1)) - 2); width = o.beam; left -= span; }
-    return std::max({o.expansions, 4ULL * ((1ULL << (k + 1)) - 2) * o.beam, rounds});
+    return std::max<std::uint64_t>({o.expansions, 4ULL * ((1ULL << (k + 1)) - 2) * o.beam, rounds});
 }
 Clock::time_point deadline(Clock::time_point started, std::uint64_t milliseconds) {
     return milliseconds ? started + std::chrono::milliseconds(milliseconds) : Clock::time_point::max();
@@ -468,6 +493,7 @@ void retain_reports(const hardpair::FinderResult& result, Record& record, unsign
     }
 }
 void heuristic(const Graph& g, const Options& o, Record& r, unsigned int k, Clock::time_point end, Journal& journal) {
+    if (target_reached(o, r)) { describe_target_reached(o, r); return; }
     r.window = k; r.evaluated = true; r.finished = false;
     r.status = r.upper ? "heuristic" : "incomplete";
     if (Clock::now() >= end || interrupted) { r.reason = "time budget or interrupt"; return; }
@@ -496,7 +522,8 @@ void heuristic(const Graph& g, const Options& o, Record& r, unsigned int k, Cloc
     prefixes.max_words = std::min(o.prefix_words, word_budget);
     prefixes.max_pairs = o.prefix_pairs; prefixes.samples_per_depth = std::min(o.prefix_samples, prefixes.max_words);
     prefixes.common_prefix_depth = o.common_prefix_depth; prefixes.seed = o.seed; prefixes.interrupted = &interrupted;
-    if (prefixes.samples_per_depth && prefixes.max_depth > 1) {
+    prefixes.deterministic = o.deterministic;
+    if (!o.deterministic && prefixes.samples_per_depth && prefixes.max_depth > 1) {
         for (unsigned int d = std::max(1U, prefixes.max_depth / 2); d <= prefixes.max_depth; ++d) prefixes.sample_depths.push_back(d);
     }
     r.prefix_words = prefixes.max_words;
@@ -528,6 +555,7 @@ void heuristic(const Graph& g, const Options& o, Record& r, unsigned int k, Cloc
         find.window_k = k; find.beam_width = o.beam; find.max_suffix = cap - static_cast<unsigned int>(seed.first.size());
         find.rank_by_remaining = true; find.tail_threshold = o.tail_threshold; find.max_expansions = r.effective_expansions;
         find.tie_seed = o.seed ^ r.attempts; find.interrupted = &interrupted;
+        find.deterministic = o.deterministic;
         find.retain_ranked_windows = false; find.max_window_reports = o.window_reports;
         find.tail_limits.max_states = static_cast<std::size_t>(o.tail_states); find.tail_limits.max_depth = o.tail_depth;
         auto tail = [&](const TimedPair& state, const hardpair::TailLimits& limits) {
@@ -543,6 +571,7 @@ void heuristic(const Graph& g, const Options& o, Record& r, unsigned int k, Cloc
         r.viability = viability->json();
         retain_reports(result, r, o.window_reports);
         if (result.found) accept(g, r, seed.first + result.suffix, seed.second + result.suffix, journal);
+        if (target_reached(o, r)) { describe_target_reached(o, r); return; }
         if (r.merge) break;
     }
     r.reason = r.upper ? "verified upper witness; bounded prefix/window search completed" : "bounded prefix/window search found no universal pair";
@@ -584,6 +613,7 @@ std::string publish(const Options& o, const Journal& journal, const Pool& pool, 
     replace(o.out / "records.jsonl", records.str()); replace(o.out / "best.jsonl", best.str());
     std::ostringstream s;
     s << "{\"schema\":1,\"m\":" << o.m << ",\"heuristics\":" << boolean(o.heuristics)
+      << ",\"deterministic\":" << boolean(o.deterministic)
       << ",\"scope\":" << cli::quote(o.heuristics ? pool.scope : o.graphs.empty() ? "all rooted accessible classes of exactly m states" : "supplied graph subset")
       << ",\"enumeration_complete\":" << boolean(enumeration_complete)
       << ",\"neighborhood_generation_complete\":" << boolean(pool.generation_complete)
@@ -624,8 +654,9 @@ int main(int argc, char** argv) {
             r.key = key; r.finished = false; r.evaluated = true; ++new_evaluations;
             const auto graph_end = std::min(wall_end, deadline(Clock::now(), o.per_graph_ms));
             exact(graph, o, r, o.heuristics ? o.exact_depth : o.depth, graph_end);
+            describe_target_reached(o, r);
             journal.save(r);
-            if (o.heuristics && !r.merge && !interrupted && Clock::now() < graph_end) {
+            if (o.heuristics && !r.merge && !target_reached(o, r) && !interrupted && Clock::now() < graph_end) {
                 try { heuristic(graph, o, r, o.window, graph_end, journal); }
                 catch (const Deadline&) { r.reason = interrupted ? "interrupted during bounded finder" : "time budget during bounded finder"; }
                 catch (const std::bad_alloc&) { r.reason = "allocation failed during bounded finder"; }
@@ -651,10 +682,10 @@ int main(int argc, char** argv) {
             unsigned int k = o.window;
             while (k < o.max_window && !interrupted && Clock::now() < wall_end) {
                 unsigned int top = 0;
-                for (const auto& [key, r] : journal.records) if (!r.merge) top = std::max(top, r.upper);
+                for (const auto& [key, r] : journal.records) if (!r.merge && !target_reached(o, r)) top = std::max(top, r.upper);
                 std::vector<std::string> band;
                 for (const auto& [key, r] : journal.records)
-                    if (!r.merge && r.upper && top - r.upper <= o.band_width) band.push_back(key);
+                    if (!r.merge && !target_reached(o, r) && r.upper && top - r.upper <= o.band_width) band.push_back(key);
                 if (band.size() < o.crowding) break;
                 k = std::min(o.max_window, k + 2);
                 for (const auto& key : band) {

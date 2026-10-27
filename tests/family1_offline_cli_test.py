@@ -284,6 +284,58 @@ def exercise(executable, directory):
     assert rows[0]["upper_bound"] is None and rows[0]["estimated_merge_length"] is None, rows[0]
     assert rows[0]["lower_bound"] == 1 and not summary["global_maximum_certified"], summary
 
+    # A threshold witness can rule out a challenger without finding the
+    # shortest pair. Use fixed work, no clocks, and a crowding threshold that
+    # would otherwise force adaptive refinement of this single graph.
+    threshold_options = [*heuristic_options, "--max-window", "6", "--crowding", "1",
+                         "--prefix-words", "64", "--common-prefix-depth", "3",
+                         "--max-length", "8", "--per-graph-ms", "0", "--wall-seconds", "0",
+                         "--window-reports", "0"]
+    target_hit = run("target-upper-hit", 2, "on", "--graph", key(two),
+                     *threshold_options, "--target-upper", "3")
+    hit_rows, _, hit_summary = read_run(target_hit)
+    config = json.loads((target_hit / "run.json").read_text(encoding="utf-8-sig"))
+    hit = hit_rows[0]
+    verify_record(hit)
+    assert config["target_upper"] == 3 and config["per_graph_ms"] == config["wall_seconds"] == 0, config
+    assert hit["upper_bound"] == 3 and hit["prefix_attempts"] == 1, hit
+    assert hit["window_k"] == 2 and hit["finished"] is True, hit
+    assert hit["lower_bound"] == 1 and hit["merge_length"] is None, hit
+    assert "target upper reached" in hit["reason"] and "shortest merge length not certified" in hit["reason"], hit
+    assert not hit_summary["global_maximum_certified"], hit_summary
+
+    target_miss = run("target-upper-miss", 2, "on", "--graph", key(two),
+                      *threshold_options, "--target-upper", "2", "--max-length", "2", "--prefix-depth", "2")
+    miss_rows, miss_best, miss_summary = read_run(target_miss)
+    verify_record(miss_rows[0])
+    assert miss_rows[0]["upper_bound"] is None and miss_rows[0]["lower_bound"] == 1, miss_rows[0]
+    assert miss_rows[0]["merge_length"] is None and miss_rows[0]["estimated_merge_length"] is None, miss_rows[0]
+    assert not miss_best and not miss_summary["global_maximum_certified"], miss_summary
+
+    other = ((0, 1), (1, 1))
+    target_all = run("target-upper-all-supplied", 2, "on", "--graph", key(two), "--graph", key(other),
+                     *threshold_options, "--target-upper", "3")
+    all_rows, _, all_summary = read_run(target_all)
+    assert len(all_rows) == 2 and {record["key"] for record in all_rows} == {key(two), key(other)}, all_rows
+    assert all_summary["evaluated_graphs"] == 2 and all_summary["pending_graphs"] == 0, all_summary
+    for record in all_rows:
+        verify_record(record)
+        assert record["finished"] is True and record["upper_bound"] <= 3 and record["window_k"] == 2, record
+
+    target_default = run("target-upper-default-zero", 2, "on", "--graph", key(two), *threshold_options)
+    default_rows, _, _ = read_run(target_default)
+    default_config = json.loads((target_default / "run.json").read_text(encoding="utf-8-sig"))
+    verify_record(default_rows[0])
+    assert default_config["target_upper"] == 0, default_config
+    assert default_rows[0]["prefix_attempts"] > hit["prefix_attempts"] and default_rows[0]["window_k"] == 6, default_rows
+    assert "target upper reached" not in default_rows[0]["reason"], default_rows
+
+    before = {path.name: path.read_bytes() for path in target_hit.iterdir() if path.is_file()}
+    run("target-upper-hit", 2, "on", "--graph", key(two), *threshold_options,
+        "--target-upper", "2", reuse=True, success=False)
+    assert before == {path.name: path.read_bytes() for path in target_hit.iterdir() if path.is_file()}, "Changed threshold resume modified evidence"
+    print("Verified target upper stops a graph after one prefix without adaptive refinement; misses, other graphs, default-zero work and resume integrity remain explicit.")
+
     # Disable conditional tails so the common-window route must enumerate
     # actual windows. Short fixed prefixes leave several complete layers before
     # a collision; retaining only one report must record the discarded count.
@@ -312,6 +364,43 @@ def exercise(executable, directory):
     assert rows[0]["window_reports_truncated"] == len(record["window_distributions"]), rows[0]
     assert rows[0]["window_distributions"] == [] and rows[0]["upper_bound"] == record["upper_bound"], rows[0]
 
+    # A complete prefix layer of size four stops at depth two. Requesting a
+    # greater depth and a nonzero sample budget must not add sampled words in
+    # the default strict traversal. Disable both clocks so comparisons concern
+    # algorithmic choices, including real window work, rather than timing.
+    deterministic_window_options = [*window_options, "--prefix-depth", "6", "--prefix-words", "4",
+                                    "--prefix-pairs", "16", "--common-prefix-depth", "3",
+                                    "--per-graph-ms", "0", "--wall-seconds", "0", "--window-reports", "64"]
+    evidence_fields = ("key", "canonical_table", "status", "lower_bound", "upper_bound", "witness",
+                       "prefix_attempts", "expanded_nodes", "tail_calls", "effective_prefix_words",
+                       "prefix_constraint_coordinates", "effective_expansions_per_prefix",
+                       "window_reports_truncated", "window_distributions", "static_masks_verified")
+    deterministic_evidence = None
+    for label, seed, samples in (("base", "0", "0"),
+                                 ("different-seed", "18446744073709551615", "0"),
+                                 ("ignored-samples", "18446744073709551615", "64")):
+        target = run(f"deterministic-window-{label}", 3, "on", *deterministic_window_options,
+                     "--seed", seed, "--prefix-samples", samples)
+        strict_rows, _, strict_summary = read_run(target)
+        config = json.loads((target / "run.json").read_text(encoding="utf-8-sig"))
+        assert config["deterministic"] is True and strict_summary["deterministic"] is True, config
+        assert config["seed"] == int(seed) and config["prefix_samples"] == int(samples), config
+        assert config["per_graph_ms"] == config["wall_seconds"] == 0, config
+        assert "no sampling" in config["prefix_selection"], config
+        assert len(strict_rows) == 1, strict_rows
+        strict_record = strict_rows[0]
+        verify_record(strict_record)
+        verify_distributions(strict_record, 64)
+        assert strict_record["witness"] is not None and strict_record["effective_prefix_words"] == 4, strict_record
+        assert strict_record["prefix_attempts"] > 0 and strict_record["expanded_nodes"] > 0, strict_record
+        assert strict_record["tail_calls"] == 0 and strict_record["finished"] is True, strict_record
+        evidence = {field: strict_record[field] for field in evidence_fields}
+        if deterministic_evidence is None:
+            deterministic_evidence = evidence
+        else:
+            assert evidence == deterministic_evidence, (label, evidence, deterministic_evidence)
+    print("Default strict word search ignores seeds and sampled-word budgets; witnesses and finder counters agree without clock caps.")
+
     constrained = run("heuristic-memory-capped", 3, "on", "--graph", key(window_graph), *heuristic_options,
                       "--memory-mib", "1", "--window-reports", "1")
     rows, best, summary = read_run(constrained)
@@ -338,6 +427,45 @@ def exercise(executable, directory):
     resumed, _, summary = read_run(generated)
     assert len(resumed) == len(rows) and sum(row["evaluated"] for row in resumed) == 2, summary
     print("Native candidate generation exports pending roots and resumes the bounded evaluation plan.")
+
+    # Public records are sorted for export, so inspect first journal arrivals
+    # as well: matching exports alone would not establish evaluation order.
+    def journal_order(target):
+        seen, order = set(), []
+        for line in (target / "checkpoint.journal").read_text(encoding="utf-8-sig").splitlines():
+            graph_key = line.split("\t", 1)[1].split(" ", 1)[0]
+            if graph_key not in seen:
+                seen.add(graph_key)
+                order.append(graph_key)
+        return order
+
+    generation_options = ["--exact-depth", "12", "--radius", "2", "--max-paths", "12",
+                          "--max-candidates", "5", "--max-graphs", "3",
+                          "--per-graph-ms", "0", "--wall-seconds", "0"]
+    for row in winners3:
+        generation_options += ["--parent", row["key"]]
+    candidate_evidence = None
+    for label, seed in (("base", "0"), ("different-seed", "18446744073709551615")):
+        target = run(f"deterministic-generation-{label}", 4, "on", *generation_options, "--seed", seed)
+        strict_rows, _, strict_summary = read_run(target)
+        config = json.loads((target / "run.json").read_text(encoding="utf-8-sig"))
+        assert config["deterministic"] is True and strict_summary["deterministic"] is True, config
+        assert config["seed"] == int(seed), config
+        assert strict_summary["evaluated_graphs"] == 3 and strict_summary["pending_graphs"] > 0, strict_summary
+        assert strict_summary["path_capped"] or strict_summary["candidate_capped"], strict_summary
+        for strict_record in strict_rows:
+            verify_record(strict_record)
+        order = journal_order(target)
+        assert len(order) == 3 and set(order) == {row["key"] for row in strict_rows if row["evaluated"]}, order
+        evidence = {"pool_keys_in_export_order": [row["key"] for row in strict_rows],
+                    "evaluation_order": order,
+                    "accepted_edit_paths": strict_summary["accepted_edit_paths"],
+                    "neighborhood_generation_complete": strict_summary["neighborhood_generation_complete"]}
+        if candidate_evidence is None:
+            candidate_evidence = evidence
+        else:
+            assert evidence == candidate_evidence, (label, evidence, candidate_evidence)
+    print("Capped deterministic candidate pools and actual journal evaluation order agree across seed values.")
 
     # Direct noncanonical port order must be normalized; repeated class inputs
     # cannot create duplicate entries or collapse a different rooted class.

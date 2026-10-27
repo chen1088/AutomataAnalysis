@@ -1,0 +1,33 @@
+{
+  "all22cases_scored_at_each_fixed_common_k": true,
+  "all_final_positive_pairs_scalar_replayed": true,
+  "analysis_source": {
+    "bytes": 14173,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_common_aux_benchmark.py",
+    "sha256": "be3d68965be010e578bb2a48ae6c5346e00956b81cf4c21203b118d2cc3669d1"
+  },
+  "configured_common_ks": [
+    8,
+    12
+  ],
+  "final_positives": 42,
+  "full_joint_coverage_claimed": false,
+  "independent_final_mask_replays": 3212,
+  "misses": 2,
+  "native_outputs_unchanged_during_analysis": true,
+  "oracle_producing_k_is_not_applicable": true,
+  "proof_pruned_metric_reports_retained": true,
+  "queries": 44,
+  "source_records": [
+    {
+      "bytes": 89123,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/common-aux/records-common-k8.jsonl",
+      "sha256": "3dd2d6611e3d8d75694d9dfe38cc28378b627d6dbd7e84c10203c152c2bf1882"
+    },
+    {
+      "bytes": 88172,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/common-aux/records-common-k12.jsonl",
+      "sha256": "539661650aa7a235853e0feee599113d86bc4b3d158a762012b8c87412f72086"
+    }
+  ]
+}

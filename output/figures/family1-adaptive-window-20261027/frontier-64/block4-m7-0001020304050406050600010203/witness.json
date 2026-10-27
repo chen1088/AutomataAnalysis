@@ -1,0 +1,301 @@
+{
+  "canonical_table": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "family_size": 128,
+  "first": "0100000000000000001100000011011010",
+  "first_difference_position": 7,
+  "fixture": null,
+  "gap": 0,
+  "id": "0001020304050406050600010203",
+  "key": "0001020304050406050600010203",
+  "length": 34,
+  "m": 7,
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "minimality_certified": false,
+  "new_finder_result_not_historical_floor": true,
+  "reference_H": 34,
+  "schema": 1,
+  "search_parameters": {
+    "advance": "block",
+    "advance_policy": null,
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "beam_width": 16,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "common_prefix_depth": null,
+    "complete_windows": 8032,
+    "configured_k_max": 4,
+    "configured_k_min": 4,
+    "deterministic": null,
+    "diagonal_width": null,
+    "exact_depth": 0,
+    "expanded_nodes": 2280064,
+    "expansion_cap": 2000000,
+    "greedy_advance": "whole joint window block",
+    "k": null,
+    "k_label": "4; winning lookaheads 4\u00d73\u21923",
+    "max_length": 80,
+    "policy": "fixed-block",
+    "prefix_depth": null,
+    "prefix_pairs": null,
+    "prefix_words": null,
+    "priority": true,
+    "producer_k_known": true,
+    "producing_k_sequence": [
+      4,
+      4,
+      4,
+      3
+    ],
+    "score": "permutation then D",
+    "single_k_applicable": false,
+    "startup_policy": null,
+    "target_upper": null,
+    "threshold_ppm": 0,
+    "unequal_width": null,
+    "window_kind": "adaptive-joint-pair",
+    "winning_attempt": {
+      "first_greedy_depth": 24,
+      "initial_first": "01000000000000000011",
+      "initial_length": 20,
+      "initial_second": "01000011000000000000"
+    }
+  },
+  "second": "0100001100000000000000000011011010",
+  "source": {
+    "manifest": {
+      "bytes": 119394,
+      "path": "out/family1-adaptive-window-20261027/frontier-64/manifest.json",
+      "sha256": "42a24a5dfb7e53e82783318098c2db17eb85eda0e85abd6ef50d67ba02c6b24a"
+    },
+    "records": {
+      "bytes": 1746887,
+      "path": "out/family1-adaptive-window-20261027/frontier-64/records.jsonl",
+      "sha256": "5cf5af24a574b7f2b4735cba71d1453b9c9c08e8f25360c6699cde45fcf70293"
+    }
+  },
+  "source_native_minimality_certified": false,
+  "status": "verified-upper",
+  "trace": [
+    {
+      "differing": 0,
+      "length": 0,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 1,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 2,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 3,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 4,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 5,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 6,
+      "synchronized": 128
+    },
+    {
+      "differing": 128,
+      "length": 7,
+      "synchronized": 0
+    },
+    {
+      "differing": 122,
+      "length": 8,
+      "synchronized": 6
+    },
+    {
+      "differing": 114,
+      "length": 9,
+      "synchronized": 14
+    },
+    {
+      "differing": 106,
+      "length": 10,
+      "synchronized": 22
+    },
+    {
+      "differing": 96,
+      "length": 11,
+      "synchronized": 32
+    },
+    {
+      "differing": 93,
+      "length": 12,
+      "synchronized": 35
+    },
+    {
+      "differing": 89,
+      "length": 13,
+      "synchronized": 39
+    },
+    {
+      "differing": 89,
+      "length": 14,
+      "synchronized": 39
+    },
+    {
+      "differing": 89,
+      "length": 15,
+      "synchronized": 39
+    },
+    {
+      "differing": 89,
+      "length": 16,
+      "synchronized": 39
+    },
+    {
+      "differing": 89,
+      "length": 17,
+      "synchronized": 39
+    },
+    {
+      "differing": 89,
+      "length": 18,
+      "synchronized": 39
+    },
+    {
+      "differing": 123,
+      "length": 19,
+      "synchronized": 5
+    },
+    {
+      "differing": 86,
+      "length": 20,
+      "synchronized": 42
+    },
+    {
+      "differing": 58,
+      "length": 21,
+      "synchronized": 70
+    },
+    {
+      "differing": 38,
+      "length": 22,
+      "synchronized": 90
+    },
+    {
+      "differing": 18,
+      "length": 23,
+      "synchronized": 110
+    },
+    {
+      "differing": 13,
+      "length": 24,
+      "synchronized": 115
+    },
+    {
+      "differing": 10,
+      "length": 25,
+      "synchronized": 118
+    },
+    {
+      "differing": 10,
+      "length": 26,
+      "synchronized": 118
+    },
+    {
+      "differing": 8,
+      "length": 27,
+      "synchronized": 120
+    },
+    {
+      "differing": 6,
+      "length": 28,
+      "synchronized": 122
+    },
+    {
+      "differing": 4,
+      "length": 29,
+      "synchronized": 124
+    },
+    {
+      "differing": 4,
+      "length": 30,
+      "synchronized": 124
+    },
+    {
+      "differing": 2,
+      "length": 31,
+      "synchronized": 126
+    },
+    {
+      "differing": 1,
+      "length": 32,
+      "synchronized": 127
+    },
+    {
+      "differing": 1,
+      "length": 33,
+      "synchronized": 127
+    },
+    {
+      "differing": 0,
+      "length": 34,
+      "synchronized": 128
+    }
+  ],
+  "verification": {
+    "D_empty": 0,
+    "D_final": 0,
+    "dfa_count": 128,
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "passed": true
+  },
+  "witness": [
+    "0100000000000000001100000011011010",
+    "0100001100000000000000000011011010"
+  ]
+}

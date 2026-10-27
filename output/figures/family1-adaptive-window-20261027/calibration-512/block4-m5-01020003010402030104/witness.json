@@ -1,0 +1,198 @@
+{
+  "canonical_table": [
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "family_size": 32,
+  "first": "000010110001100",
+  "first_difference_position": 1,
+  "fixture": null,
+  "gap": 0,
+  "id": "01020003010402030104",
+  "key": "01020003010402030104",
+  "length": 15,
+  "m": 5,
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "minimality_certified": false,
+  "new_finder_result_not_historical_floor": true,
+  "reference_H": 15,
+  "schema": 1,
+  "search_parameters": {
+    "advance": "block",
+    "advance_policy": null,
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "beam_width": 16,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "common_prefix_depth": null,
+    "complete_windows": 6064,
+    "configured_k_max": 4,
+    "configured_k_min": 4,
+    "deterministic": null,
+    "diagonal_width": null,
+    "exact_depth": 0,
+    "expanded_nodes": 945856,
+    "expansion_cap": 2000000,
+    "greedy_advance": "whole joint window block",
+    "k": null,
+    "k_label": "4; winning lookaheads 4\u00d73\u21921",
+    "max_length": 80,
+    "policy": "fixed-block",
+    "prefix_depth": null,
+    "prefix_pairs": null,
+    "prefix_words": null,
+    "priority": true,
+    "producer_k_known": true,
+    "producing_k_sequence": [
+      4,
+      4,
+      4,
+      1
+    ],
+    "score": "permutation then D",
+    "single_k_applicable": false,
+    "startup_policy": null,
+    "target_upper": null,
+    "threshold_ppm": 0,
+    "unequal_width": null,
+    "window_kind": "adaptive-joint-pair",
+    "winning_attempt": {
+      "first_greedy_depth": 6,
+      "initial_first": "00",
+      "initial_length": 2,
+      "initial_second": "10"
+    }
+  },
+  "second": "101010110001100",
+  "source": {
+    "manifest": {
+      "bytes": 11445,
+      "path": "out/family1-adaptive-window-20261027/calibration-512/manifest.json",
+      "sha256": "8ed2c91ebf428adba9b27cfff1dd5895dd7077eab2d1a09141d550b9cd95ac7d"
+    },
+    "records": {
+      "bytes": 177630,
+      "path": "out/family1-adaptive-window-20261027/calibration-512/records.jsonl",
+      "sha256": "2f6eb9e6dcfc2bbe0aa586d7d30b3a2f99db60fe58cb30560734a0192cfa8537"
+    }
+  },
+  "source_native_minimality_certified": false,
+  "status": "verified-upper",
+  "trace": [
+    {
+      "differing": 0,
+      "length": 0,
+      "synchronized": 32
+    },
+    {
+      "differing": 32,
+      "length": 1,
+      "synchronized": 0
+    },
+    {
+      "differing": 32,
+      "length": 2,
+      "synchronized": 0
+    },
+    {
+      "differing": 26,
+      "length": 3,
+      "synchronized": 6
+    },
+    {
+      "differing": 22,
+      "length": 4,
+      "synchronized": 10
+    },
+    {
+      "differing": 17,
+      "length": 5,
+      "synchronized": 15
+    },
+    {
+      "differing": 13,
+      "length": 6,
+      "synchronized": 19
+    },
+    {
+      "differing": 11,
+      "length": 7,
+      "synchronized": 21
+    },
+    {
+      "differing": 8,
+      "length": 8,
+      "synchronized": 24
+    },
+    {
+      "differing": 7,
+      "length": 9,
+      "synchronized": 25
+    },
+    {
+      "differing": 5,
+      "length": 10,
+      "synchronized": 27
+    },
+    {
+      "differing": 3,
+      "length": 11,
+      "synchronized": 29
+    },
+    {
+      "differing": 2,
+      "length": 12,
+      "synchronized": 30
+    },
+    {
+      "differing": 1,
+      "length": 13,
+      "synchronized": 31
+    },
+    {
+      "differing": 1,
+      "length": 14,
+      "synchronized": 31
+    },
+    {
+      "differing": 0,
+      "length": 15,
+      "synchronized": 32
+    }
+  ],
+  "verification": {
+    "D_empty": 0,
+    "D_final": 0,
+    "dfa_count": 32,
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "passed": true
+  },
+  "witness": [
+    "000010110001100",
+    "101010110001100"
+  ]
+}

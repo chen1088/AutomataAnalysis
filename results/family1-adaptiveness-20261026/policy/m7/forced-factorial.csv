@@ -1,0 +1,13 @@
+m,initial_pool,action,forced_factorial,baseline_finite_topband_count,crowding_tau,crowding_gate_fired,result_pool,configuration,joint_k,unique_candidates,native_graph_queries,true_winners_in_pool,complete_winner_count,finite_verified_pairs,unresolved,reference_cutoff_survivors,reference_cutoff_false_finite,reference_cutoff_false_survivors,operational_topband_count,operational_topband_true_winners,operational_topband_shapes,expanded_nodes,complete_windows
+7,winners-fixedroot,keep-parents/keep-finder,True,2,3,False,winners-fixedroot,total-c2-k2,2,123,123,1,8,11,112,118,6,117,2,0,2,1262272,64056
+7,winners-fixedroot,keep-parents/total-c2-k2+total-c2-k4,True,2,3,False,winners-fixedroot,total-c2-k2+total-c2-k4,2;4,123,246,1,8,34,89,108,19,107,2,0,2,10812192,93628
+7,winners-fixedroot,keep-parents/total-c2-k2+permutation-c2-k4,True,2,3,False,winners-fixedroot,total-c2-k2+permutation-c2-k4,2;4,123,246,1,8,110,13,100,87,99,3,0,3,7872416,84688
+7,winners-fixedroot,broaden-parents/keep-finder,True,2,3,False,near2-fixedroot,total-c2-k2,2,3581,3581,8,8,647,2934,3415,481,3407,1,0,1,35859156,1819649
+7,winners-fixedroot,broaden-parents/total-c2-k2+total-c2-k4,True,2,3,False,near2-fixedroot,total-c2-k2+total-c2-k4,2;4,3581,7162,8,8,1982,1599,2996,1397,2988,1,0,1,278669156,2573669
+7,winners-fixedroot,broaden-parents/total-c2-k2+permutation-c2-k4,True,2,3,False,near2-fixedroot,total-c2-k2+permutation-c2-k4,2;4,3581,7162,8,8,3203,378,2717,2337,2709,7,0,6,224433644,2409031
+7,winners-allroots,keep-parents/keep-finder,True,3,3,True,winners-allroots,total-c2-k2,2,391,391,3,8,36,355,379,24,376,3,0,3,4043584,205184
+7,winners-allroots,keep-parents/total-c2-k2+total-c2-k4,True,3,3,True,winners-allroots,total-c2-k2+total-c2-k4,2;4,391,782,3,8,117,274,353,79,350,4,0,4,34587328,299732
+7,winners-allroots,keep-parents/total-c2-k2+permutation-c2-k4,True,3,3,True,winners-allroots,total-c2-k2+permutation-c2-k4,2;4,391,782,3,8,357,34,306,271,303,3,0,3,23947552,267424
+7,winners-allroots,broaden-parents/keep-finder,True,3,3,True,near2-allroots,total-c2-k2,2,13329,13329,8,8,3235,10094,12366,2272,12358,1,0,1,129674472,6580694
+7,winners-allroots,broaden-parents/total-c2-k2+total-c2-k4,True,3,3,True,near2-allroots,total-c2-k2+total-c2-k4,2;4,13329,26658,8,8,9549,3780,10048,6268,10040,8,0,7,922287596,9050651
+7,winners-allroots,broaden-parents/total-c2-k2+permutation-c2-k4,True,3,3,True,near2-allroots,total-c2-k2+permutation-c2-k4,2;4,13329,26658,8,8,11828,1501,9321,7818,9313,16,0,14,814998124,8725515

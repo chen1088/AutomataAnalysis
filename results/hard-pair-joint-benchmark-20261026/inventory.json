@@ -1,0 +1,149 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 9419,
+      "sha256": "7854f0331e5ca489c9ca645d3276a779e1ad3bef0d7ff74dc524ebb619cd1ea1"
+    },
+    {
+      "path": "deep-startup-improvements.jsonl",
+      "bytes": 151012,
+      "sha256": "01104e995aff6aadc7adf2fd03b90e316adc69139f18dc449657625a60ec88e9"
+    },
+    {
+      "path": "deep-startup-records.jsonl",
+      "bytes": 148219,
+      "sha256": "f113d910e2b909df24f066c7a878283d7bb65ad8d5ff1afb10dba6ea128c462a"
+    },
+    {
+      "path": "deep-startup-summary.json",
+      "bytes": 10956,
+      "sha256": "c65ceadae95b5806ada7dc4f6ac6bdf4e1d3e7a43150eb7e037f9f08c85406b2"
+    },
+    {
+      "path": "fixtures.json",
+      "bytes": 956882,
+      "sha256": "31c449421dafe0845ff4652b7fa0ba62259e7d7a454595b2a4faf3a43f2b3596"
+    },
+    {
+      "path": "quality-validation.json",
+      "bytes": 6684,
+      "sha256": "80f8609d531ce3996816085d7e71856fa56718c99276b9e737d4733d4454928e"
+    },
+    {
+      "path": "records-divergence-c2-k2.jsonl",
+      "bytes": 320327,
+      "sha256": "6522fe890cbb2fcbc643eff50c44e5ed840ed5f4c476bd81664310ba408fc3ba"
+    },
+    {
+      "path": "records-divergence-c2-k4.jsonl",
+      "bytes": 325912,
+      "sha256": "ba8b01dbbd22480b26ecf78a94cef92dabc77bfb03ebfc77401bc367363cfda7"
+    },
+    {
+      "path": "records-divergence-c2-k6.jsonl",
+      "bytes": 329526,
+      "sha256": "eb3b2d2ff87d88235fa02a64fac20bacfa9b5981956d9ff013c7b2ceaa463541"
+    },
+    {
+      "path": "records-divergence-c2-k8.jsonl",
+      "bytes": 331860,
+      "sha256": "e3af3a630e5fda7150e5e16111e2903d74fc903c9ab80dad2d667e01a6fcd7d3"
+    },
+    {
+      "path": "records-empty-root-k2.jsonl",
+      "bytes": 101041,
+      "sha256": "8e37315bd8853b89ca99ba14979ae71926379e3eca424337225a33abce12e777"
+    },
+    {
+      "path": "records-empty-root-k4.jsonl",
+      "bytes": 101164,
+      "sha256": "253da02730e284cb061ce45bd224b9e68ddb7fe9db40a69b1d8da5822e5ff628"
+    },
+    {
+      "path": "records-empty-root-k6.jsonl",
+      "bytes": 102096,
+      "sha256": "9c9f43779202465992d69ddfada2f48035db00f0b1f6dcf3e245045dff3ab0aa"
+    },
+    {
+      "path": "records-empty-root-k8.jsonl",
+      "bytes": 102435,
+      "sha256": "cf70d4664371716698d3d35d603d4a8e8077b79e7db4a23a1d4fbfbe8ead4569"
+    },
+    {
+      "path": "records-permutation-c2-k2.jsonl",
+      "bytes": 325856,
+      "sha256": "b8f8a84498f58395935e4f6bf9e7e08d2a0e51d4d5fafa9310863589c831995f"
+    },
+    {
+      "path": "records-permutation-c2-k4.jsonl",
+      "bytes": 344162,
+      "sha256": "3b55b1a5f172d8db9cbe5081968c214a2b725754da337706fc0aa59cee005cd5"
+    },
+    {
+      "path": "records-permutation-c2-k6.jsonl",
+      "bytes": 347505,
+      "sha256": "440f5ed4d29a3831bfd4f951b760874ef4b445c79b5a086d016087898f05c39c"
+    },
+    {
+      "path": "records-permutation-c2-k8.jsonl",
+      "bytes": 350430,
+      "sha256": "0c680c7d5832e5b746b3ff8b9c5c81028803c2a9128d9dde5f4696408de98b6c"
+    },
+    {
+      "path": "run-divergence-c2.json",
+      "bytes": 1257,
+      "sha256": "9c4d120409eac7ea848b692b5fdb12f5bf680b7aba26c7bbf5632be76daf67e6"
+    },
+    {
+      "path": "run-empty-root.json",
+      "bytes": 1257,
+      "sha256": "1aeb4499ada87e5b7df80b2b9fcf2906de0c724a90b4441a0844dacee894aa53"
+    },
+    {
+      "path": "run-permutation-c2.json",
+      "bytes": 1272,
+      "sha256": "ab31de88d5895fbe3468bb5d6c254b4857f95b3c403981cd771d76dc49e65c0d"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 13619,
+      "sha256": "5a58668e08175871aa8f78fe67e70e923e26d7096774de1efeef28cc9cda7dee"
+    }
+  ],
+  "local_source_snapshot": {
+    "directory": "evidence",
+    "tracked": false,
+    "files": [
+      {
+        "bytes": 15218,
+        "path": "evidence/HardPairJointBenchmark.cpp",
+        "sha256": "676bd5d83ad9730201d48aa50d587bfb23c6c96be51226030b6e477b1cbb126a"
+      },
+      {
+        "bytes": 22349,
+        "path": "evidence/HardPairJointFinder.h",
+        "sha256": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+      },
+      {
+        "bytes": 19979,
+        "path": "evidence/hard_pair_joint_benchmark.py",
+        "sha256": "68e32dd23fcb309990cfb83cbb373b27822cfbce83aa2b83410981e516400eba"
+      }
+    ]
+  },
+  "repository_sources": [
+    {
+      "path": "HardPairJointFinder.h",
+      "sha256": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+    },
+    {
+      "path": "tests/HardPairJointBenchmark.cpp",
+      "sha256": "676bd5d83ad9730201d48aa50d587bfb23c6c96be51226030b6e477b1cbb126a"
+    },
+    {
+      "path": "tests/hard_pair_joint_benchmark.py",
+      "sha256": "68e32dd23fcb309990cfb83cbb373b27822cfbce83aa2b83410981e516400eba"
+    }
+  ]
+}

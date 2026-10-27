@@ -1,0 +1,42 @@
+{
+  "all_case_config_combinations_verified": true,
+  "cases_files": [
+    {
+      "bytes": 9468,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/cases.csv",
+      "sha256": "efe5551d9e0b601199c17b94d5d538bdd9ca236b5c58b150eb357a1c52a583bb"
+    }
+  ],
+  "decision_files": [
+    {
+      "bytes": 23105,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/winning-decisions.csv",
+      "sha256": "d8216f9ad84c9b21a1bd49d249bf1bc911f19b31fcd99e2ca87d38c8489f6647"
+    }
+  ],
+  "graph_queries": 20,
+  "historical_certificate_mask_replays": 4050,
+  "moments_files": [
+    {
+      "bytes": 153176,
+      "path": "results/family1-adaptive-window-20261027/shallow-calibration-512/winning-window-moments.csv",
+      "sha256": "183bde63626e639105233a8e27e87fe6ea7627628ce6647ad8b0ba2f36956ba1"
+    }
+  ],
+  "moments_use_exact_integer_arithmetic": true,
+  "native_improvements_checked": 51,
+  "parent_metric_mask_comparisons": 20644,
+  "partial_windows": 0,
+  "passed": true,
+  "positive_and_improvement_mask_replays": 5628,
+  "positive_figures": 0,
+  "report_source": {
+    "bytes": 43684,
+    "path": "scripts/family1_adaptive_window_report.py",
+    "sha256": "afa36de78fac577bf3227d30d985d2161e7c60c188e413d3c0a750026c01f1b6"
+  },
+  "scalar_profile_mask_steps": 304252,
+  "source_and_executable_pins_checked": true,
+  "winning_decisions_checked": 215,
+  "winning_window_moments_checked": 430
+}

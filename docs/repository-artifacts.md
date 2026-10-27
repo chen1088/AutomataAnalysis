@@ -43,12 +43,28 @@ check reused the matching installed dependencies with
 MPFR checks or Windows security settings.
 
 Run CTest from the configured build directory, selecting `-C Release` or
-`-C Debug`. With `uv` installed, a fresh checkout registers **35 tests**. The
-optional 36th test, `family1-independent-m5`, is registered after the full local
+`-C Debug` for a multi-configuration generator. Use `ctest --test-dir <build> -N`
+for the actual test list: registration depends on build options, Python/uv,
+and available local reference datasets. The optional `family1-independent-m5`
+test is registered after the full local
 `out/family1-m1-m6/graphs.jsonl` journal has been regenerated and CMake has been
 reconfigured. That journal contains 203,321 evaluations and is intentionally
 excluded. See [the exact search commands](family1-search.md) and
 [seven-state bootstrap/certificate workflow](family1-seven-state-search.md).
+
+The dependency-free finder build needs no Boost, FLINT or SAT dependencies:
+
+```sh
+cmake -S . -B out/build/heuristics -DFAMILY1_OFFLINE_ONLY=ON -DCMAKE_BUILD_TYPE=Release
+cmake --build out/build/heuristics -j 4
+ctest --test-dir out/build/heuristics --output-on-failure
+```
+
+On Windows, `scripts/build-family1-offline.ps1` builds the tools and test
+executables before CTest. Its `-SkipTests` option builds only Family1Offline.
+The [heuristics reference](shortest-hard-pair-heuristics.md) explains the
+algorithms; [CLI commands](family1-near-cli.md) and the separate experiment
+reports preserve the work budgets and actual paired-word certificates.
 
 The committed adaptive result contains all **311 qualified graphs**, not the
 45,004-graph raw archive. To start another bounded refinement using only inputs

@@ -1,0 +1,121 @@
+{
+  "m": 8,
+  "candidate_definition": "all accessible canonical m8 rooted classes at primitive rooted edit distance<=1 from32 listed parents, which are every accessible root of four selected underlying shapes",
+  "candidate_count": 3010,
+  "parent_count": 32,
+  "complete_generation_independently_verified": true,
+  "every_candidate_tested": true,
+  "new_joint_runs": [
+    {
+      "k": 8,
+      "beam": 1,
+      "prefix_pairs": 0,
+      "max_length": 80,
+      "expansions_per_attempt": 2000000,
+      "target_upper": 0
+    },
+    {
+      "k": 6,
+      "beam": 1,
+      "prefix_pairs": 128,
+      "prefix_depth": 16,
+      "prefix_words": 65536,
+      "max_length": 80,
+      "expansions_per_attempt": 2000000,
+      "target_upper": 50
+    }
+  ],
+  "alphabet": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "deterministic": true,
+  "clock_limits_used": false,
+  "new_joint_upper_at_most50": 2379,
+  "new_joint_upper_above50": 604,
+  "new_joint_no_hit": 27,
+  "new_joint_chosen_positive_scalar_mask_checks": 763648,
+  "prior_certificates_independently_replayed": 2950,
+  "prior_certificate_scalar_mask_checks": 755200,
+  "all_certificates_upper_at_most50": 2812,
+  "all_certificates_upper_above50": 180,
+  "all_certificates_no_hit": 18,
+  "unresolved_above50": 198,
+  "confirmed_new_graph_score_above50": false,
+  "global_maximum_certified": false,
+  "shortest_length_49_or50_certified": false,
+  "one_or_two_step_error_guarantee": false,
+  "current_leader_key": "01020003040501060003020705060407",
+  "current_leader_existing_upper": 50,
+  "current_leader_graph_only_joint_calibration": {
+    "k6_P1024": 58,
+    "k8_P1024": 56
+  },
+  "calibration_all_m7_true_scores": 34,
+  "raw_evidence": [
+    {
+      "path": "out/family1-m8-joint-combined-20261026/summary.json",
+      "sha256": "a33175123a4dd59653cd300d4a69762a36145f27e8a12ea3fd2d6bef17aa8dc2",
+      "bytes": 3134350
+    },
+    {
+      "path": "out/family1-m8-prior-certificate-pool-20261026/summary.json",
+      "sha256": "da769debe5c7c51255226f66199c49ce58332c55334a74aa25ebc5eafa61b11f",
+      "bytes": 115717
+    },
+    {
+      "path": "out/family1-m8-prior-certificate-pool-20261026/records.jsonl",
+      "sha256": "6dbcedaec15a2279cd0e74756b32bf51bf31b127b37ddf96eb5baf84bc8b4010",
+      "bytes": 1642703
+    },
+    {
+      "path": "out/family1-m8-challenger-20261026/independent-radius1/summary.json",
+      "sha256": "4edc024663324a1e773058070d366f4d6954b91d68b6b9fb54a71220667065dc",
+      "bytes": 1732
+    },
+    {
+      "path": "out/family1-m8-challenger-20261026/deterministic-native-radius1/independent-keyset-validation.json",
+      "sha256": "308ee4e9f64a9c1f8d8c21817567c86f36bad0ce83b9a758c6568484995edff8",
+      "bytes": 279
+    },
+    {
+      "path": "out/family1-joint-calibration-v2-20261026/prefix1024/summary.json",
+      "sha256": "9f997ef6f72848ea6851cbce6415ed75dd4d8c18f59bb0c6eca006fa39462482",
+      "bytes": 3721
+    },
+    {
+      "path": "out/family1-m8-leader-local-pair-check-20261026/summary.json",
+      "sha256": "b3c64a64da7d558ea9c810c04410488812a1cbfbaffb3cfdaaa947a541223134",
+      "bytes": 7449
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/family1-m8-joint-audit-20261026/new-joint-cases.csv",
+      "sha256": "35e5d7b14c123cbf1a0d53def2f4091bf06ff6fb79a4c19072047a53068003de",
+      "bytes": 449923
+    },
+    {
+      "path": "results/family1-m8-joint-audit-20261026/all-certificates.csv",
+      "sha256": "bbafd381d5523847331bc107b0cf7f0e1812e7fd346b02105e511cb40316c548",
+      "bytes": 457019
+    },
+    {
+      "path": "results/family1-m8-joint-audit-20261026/unresolved-cases.csv",
+      "sha256": "33e30b79fb1a46f4449dbbc493f9c64d44fe7fb1466ff3097b548f3a522250f2",
+      "bytes": 33307
+    },
+    {
+      "path": "results/family1-m8-joint-audit-20261026/parents.csv",
+      "sha256": "e356aed3e6e432dda674655c0f4df5adff5266a51d3b975ba93c954e4990e43b",
+      "bytes": 1159
+    },
+    {
+      "path": "results/family1-m8-joint-audit-20261026/calibration.csv",
+      "sha256": "322d56409ad56abad5fce78a3083f1d2edb0ca9f416e1f4798513a345d38cca4",
+      "bytes": 3913
+    }
+  ]
+}

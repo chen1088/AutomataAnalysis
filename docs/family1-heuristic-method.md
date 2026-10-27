@@ -1,5 +1,9 @@
 # Family 1 heuristic search
 
+For the four-symbol shortest-pair algorithms, start with the
+[heuristics reference](shortest-hard-pair-heuristics.md). This chapter covers
+the offline graph search and its restricted common-suffix continuation.
+
 This document describes the graph-candidate and hard-word-pair heuristics used
 by the native offline runner. The [command reference](family1-offline.md)
 explains how to run it. The earlier Python controllers remain available for
@@ -57,8 +61,12 @@ rooted edit. See [the full edit definition](family1-graph-edits.md).
 The radius limits the number of primitive edits. Path and candidate budgets
 bound the generated neighborhood. Parents, edit types and depth layers share
 work, rather than requiring an explosive shallow layer to finish before any
-deeper layer can be visited. Deterministic seeds and canonical-key ordering
-make a fixed bounded plan reproducible, subject to clock-based stopping.
+deeper layer can be visited. The offline runner orders parents and neighbors
+canonically and rotates through edit kinds in fixed order. It never shuffles
+or uses a seed to select candidates. An experiment defined as the complete
+radius-`d` neighborhood must finish generation without caps and test every
+member; otherwise its coverage remains incomplete. Fixed work limits with
+both time limits disabled make traversal independent of machine speed.
 
 The executable embeds only graph tables: all 20 certified rooted maximizing
 classes through size seven, and two eight-state experimental graphs. It does
@@ -89,10 +97,14 @@ selects distinct words from matching buckets. This is a prefix-generation
 optimization: a subsequent gate checks every permutation coordinate, and the
 suffix objective and positive replay use all masks. An incompatible prefix
 cannot become a positive finding merely by passing the selected coordinates.
-If there are no permutation masks, this necessary constraint is empty. Complete short
-prefix layers and sampled longer layers have explicit word, pair and sample
-budgets. Common-prefix strata can retain pairs with different initial shared
-prefix lengths. Prefix breadth matters independently of the lookahead window.
+If there are no permutation masks, this necessary constraint is empty.
+Prefixes are enumerated in complete lexicographic binary layers until the
+word or depth limit is reached. There are no sampled longer layers. Within
+each collision bucket, pairs are traversed by increasing index gap and then
+increasing word ID. Fixed depth and common-prefix strata share the pair
+budget, with lexical boundary selection. Prefix breadth matters independently
+of the lookahead window. These explicit pair limits can leave valid pairs
+untested even when every word in a layer has been enumerated.
 
 ## Agreement metric and lookahead
 
@@ -111,8 +123,9 @@ leaves and `2^(k+1)-2` transition edges. With multiple retained parents,
 multiple rounds and multiple prefix pairs, the work is substantially larger
 than `2^k` for the entire search.
 
-Retain several promising leaves by remaining disagreement, using deterministic
-tie breaking, and continue from them. A beam preserves alternatives that a
+Retain several promising leaves by remaining disagreement, using lexical
+suffix ties, and continue from them. No seed or pseudo-random rank affects
+this order. A beam preserves alternatives that a
 single greedy choice would discard. Window reports include drop distributions:
 minimum, maximum, mean, spread and histogram. A complete distribution describes
 all leaves of that particular window, not all word pairs at that total length.
@@ -164,7 +177,7 @@ separate in every report.
 
 ## Calibration and limits
 
-The earlier graph-only seven-state calibration had eight known score-34
+The historical seeded graph-only seven-state calibration had eight known score-34
 classes. Its bounded initial lengths were `34,34,34,35,36,36,38,38`; broader
 prefix work improved them to `34,34,34,34,34,35,36,38`. The rough two-step range
 covered seven of eight classes in that experiment. This directly rules out
@@ -184,7 +197,7 @@ all five maximizing classes, with 332,736 independent graph/mask witness replays
 Both full-project Windows configurations passed 36 tests, and both standalone
 configurations passed their two CTests, including the independent CLI suite.
 
-A new graph-only seven-state run used `k=8`, beam 16, 1,024 prefix pairs,
+An earlier seeded graph-only seven-state run used `k=8`, beam 16, 1,024 prefix pairs,
 prefix depth 18, 262,144 complete words per layer, 32,768 samples per sampled
 depth, and five seconds per graph. In canonical-key order its returned lengths
 were **35,36,34,38,34,36,34,38**, against true score 34 for every graph. All pairs

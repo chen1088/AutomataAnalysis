@@ -1,11 +1,38 @@
 # Offline Family 1 executable
 
+For four-symbol `00,01,10,11` lookahead, use the
+[joint word-pair finder](family1-joint.md). The word-finder mode documented
+here selects distinct prefixes and then explores common suffixes (`00,11`);
+its k-step windows have `2^k` leaves. Verified pairs remain valid upper bounds,
+but this restricted mode does not implement the joint greedy window.
+
 `Family1Offline.exe` searches one exact reachable size `m` in `1..20`. It has
 exact and heuristic modes and writes machine-readable findings. The Windows
 release is compiled with the static MSVC runtime: copy the executable and its
 documentation to another Windows x64 machine and run it without Python,
 vcpkg, a GPU or an internet connection. No repository datasets are required
 at runtime. Outputs go to the directory supplied with `--out`.
+
+The runner now uses deterministic search throughout: canonical graph-edit
+ordering, complete lexicographic prefix layers within the word budget, and
+lexicographic suffix ties. It performs no shuffled traversal, random prefix
+sampling, or seeded tie ranking. `--deterministic` explicitly records the same
+default behavior. Legacy `--seed` and `--prefix-samples` arguments remain
+accepted for command compatibility and do not affect search choices.
+
+For reproducible fixed-work experiments, use `--per-graph-ms 0` and
+`--wall-seconds 0`, with explicit word, pair, expansion and memory budgets.
+Time-limited runs can still stop at different work positions on different
+machines. Deterministic word search remains bounded and does not by itself
+prove that its best pair is shortest.
+
+If the candidate set is defined as every graph within edit distance at most
+`d` of specified parents, complete that entire neighborhood and test every
+member. Require `neighborhood_generation_complete: true`, no generation cap,
+and `pending_graphs: 0` before describing that experiment as complete. A
+generation cap or unfinished scoring leaves an incomplete experiment; a
+finder miss leaves an unresolved graph. Moving the root is recorded separately
+from primitive rooted edits.
 
 ## Quick start
 
@@ -73,7 +100,8 @@ defaults and accepted range checks.
 | `--per-graph-ms N` | Per-graph time budget; see the timing scope below. |
 | `--wall-seconds N` | Overall soft stopping budget; zero disables it. |
 | `--max-graphs N` | New graph evaluations per invocation; zero disables the count limit. A compatible resume can evaluate the next batch. |
-| `--seed N` | Deterministic sampling/tie seed. |
+| `--deterministic` | Canonical edits, complete prefix layers and lexical ties; enabled by default. |
+| `--seed N` | Legacy configuration field; ignored by deterministic search. |
 | `--radius R` | Primitive graph edit radius, from 1 through 3. |
 | `--max-paths N` | Accepted edit-path budget. |
 | `--max-candidates N` | Distinct direct rooted endpoint budget before all-accessible-root expansion. |
@@ -83,7 +111,7 @@ defaults and accepted range checks.
 | `--prefix-depth N` | Prefix-generation depth. |
 | `--prefix-words N` | Maximum completely enumerated words per prefix layer. |
 | `--prefix-pairs N` | Maximum retained prefix-pair trials. |
-| `--prefix-samples N` | Sampling budget at sampled prefix depths. |
+| `--prefix-samples N` | Legacy configuration field; random sampling is disabled. |
 | `--common-prefix-depth N` | Retain diverse actual common-prefix strata, from 0 through 8. |
 | `--tail-threshold N` | Start bounded exact suffix search once few masks remain unmerged. |
 | `--tail-states N`, `--tail-depth N` | Exact conditional suffix BFS state and depth budgets. |
@@ -91,6 +119,7 @@ defaults and accepted range checks.
 | `--distance-coordinates N` | Use single-coordinate shortest suffix distances as an admissible remaining-length bound. |
 | `--expansions N` | Requested minimum window expansion quota per prefix-pair trial; automatically raised for the chosen window and beam. Effective quota is recorded. |
 | `--max-length N` | Maximum total word-pair length sought. |
+| `--target-upper L` | Stop a graph after a verified pair of length at most L; zero disables. This excludes H>L without claiming a shortest pair. |
 | `--crowding N`, `--band-width N` | Refine when sufficiently many estimated leaders lie in the top band. |
 | `--window-reports N` | Retain the latest N compact drop-distribution reports per graph; zero disables retention. |
 | `--dot` | Export graph drawings as unlabelled Graphviz source. |
@@ -124,6 +153,13 @@ Each evaluated graph retains its canonical table, witness when found, and
 certified bounds. Heuristic estimates are separate from these bounds. Every
 distinct rooted class tied at the current best score or estimate is retained.
 Pending or unresolved classes must be consulted when interpreting that list.
+
+When testing whether a complete neighborhood contains a graph with `H>50`,
+`--target-upper 50` gives a deterministic certificate-based stopping rule for
+each graph. Every graph still receives its scheduled test. A verified pair of
+length at most 50 rules that graph out; larger pairs and misses remain
+unresolved and can receive a stronger pass. This threshold mode is an
+exclusion screen, so its best-only export is not a shortest-pair ranking.
 
 An exact score belongs to one graph. A global maximum additionally requires
 complete graph enumeration and sufficient scoring bounds for every graph.
@@ -170,7 +206,7 @@ replay may finish their current unit before the next clock check. Memory
 estimates exclude some allocator/runtime overhead. These flags do not impose
 an operating-system-wide hard limit.
 
-## Reproduce the eight-state word-finder benchmark
+## Historical eight-state word-finder benchmark
 
 This command supplies only the graph, with no saved word pair or score hint:
 
@@ -178,11 +214,15 @@ This command supplies only the graph, with no saved word pair or score hint:
 .\Family1Offline.exe --m 8 --heuristics on --graph 01020003040501060003020705060407 --exact-depth 0 --window 8 --max-window 8 --beam 16 --prefix-depth 18 --prefix-words 262144 --prefix-pairs 1024 --prefix-samples 32768 --max-length 80 --per-graph-ms 10000 --memory-mib 512 --out m8-word-benchmark
 ```
 
-The packaged version found a verified length-50 pair in about 7.34 seconds on
+The earlier packaged version found a verified length-50 pair in about 7.34 seconds on
 the development machine. The estimate is 49, not a certificate. Slower machines
 may need a larger `--per-graph-ms` budget. The method document records the
 seven-state benchmark as well, including the cases where the short run missed
 the actual shortest pair.
+
+That benchmark used the earlier seeded search. The current deterministic
+runner uses a different prefix and tie order, so its returned lengths and
+timings must be measured separately.
 
 ## Build and package
 

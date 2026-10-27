@@ -1,0 +1,26 @@
+{
+  "portfolio": "minimum verified upper, original+compact joint k4/B16",
+  "strict_m6": {
+    "cases": 67,
+    "optimal": 40,
+    "within_two": 61,
+    "median_gap": 0,
+    "max_gap": 12,
+    "histogram": {
+      "0": 40,
+      "1": 16,
+      "2": 5,
+      "3": 3,
+      "6": 1,
+      "10": 1,
+      "12": 1
+    }
+  },
+  "m7": {
+    "cases": 47,
+    "misses": 0,
+    "exclusions": 24,
+    "false_finite_compatible": 23
+  },
+  "cost": "sum of both independent queries, not selected-witness cost"
+}

@@ -1,0 +1,31 @@
+{
+  "all_output_and_local_positive_pairs_scalar_verified": true,
+  "budget_refused_cases": 0,
+  "complete_rows": 40,
+  "partial_evaluated_neighborhoods": 0,
+  "publisher": {
+    "bytes": 5127,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_pair_strategy_publish.py",
+    "sha256": "fc07b53c7593e8b2a7aae3f50bd68fcfc68cd1a0aff40dd63abe0b92ad510beb"
+  },
+  "query_seal": {
+    "bytes": 865,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-closest/query-seal.json",
+    "sha256": "721b6fb44d3c3aa1e248c348d6eeb92fd80505bc0509f1412f2169fe62365597"
+  },
+  "self_test": {
+    "deletion_catalogs_checked": 1522,
+    "partial_neighborhoods": 0,
+    "self_test": true,
+    "semantic_graphs": 2
+  },
+  "source_manifest": {
+    "bytes": 5098,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-closest/manifest.json",
+    "sha256": "eabe9d51337dae3147dcdb711d3e4fd6df194263901ba458815633d05f35a05f"
+  },
+  "verification": {
+    "input_mask_replays": 1350,
+    "output_and_improvement_mask_replays": 2700
+  }
+}

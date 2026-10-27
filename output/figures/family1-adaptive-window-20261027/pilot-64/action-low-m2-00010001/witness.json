@@ -1,0 +1,123 @@
+{
+  "canonical_table": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "family_size": 4,
+  "first": "000",
+  "first_difference_position": 1,
+  "fixture": null,
+  "gap": 0,
+  "id": "00010001",
+  "key": "00010001",
+  "length": 3,
+  "m": 2,
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "minimality_certified": false,
+  "new_finder_result_not_historical_floor": true,
+  "reference_H": 3,
+  "schema": 1,
+  "search_parameters": {
+    "advance": "first",
+    "advance_policy": null,
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "beam_width": 16,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "common_prefix_depth": null,
+    "complete_windows": 1,
+    "configured_k_max": 5,
+    "configured_k_min": 2,
+    "deterministic": null,
+    "diagonal_width": null,
+    "exact_depth": 0,
+    "expanded_nodes": 20,
+    "expansion_cap": 2000000,
+    "greedy_advance": "one joint symbol",
+    "k": null,
+    "k_label": "2..5; winning lookaheads 2",
+    "max_length": 80,
+    "policy": "action-roll",
+    "prefix_depth": null,
+    "prefix_pairs": null,
+    "prefix_words": null,
+    "priority": true,
+    "producer_k_known": true,
+    "producing_k_sequence": [
+      2
+    ],
+    "score": "permutation then D",
+    "single_k_applicable": false,
+    "startup_policy": null,
+    "target_upper": null,
+    "threshold_ppm": 1000,
+    "unequal_width": null,
+    "window_kind": "adaptive-joint-pair",
+    "winning_attempt": {
+      "first_greedy_depth": 4,
+      "initial_first": "00",
+      "initial_length": 2,
+      "initial_second": "11"
+    }
+  },
+  "second": "110",
+  "source": {
+    "manifest": {
+      "bytes": 12691,
+      "path": "out/family1-adaptive-window-20261027/pilot-64/manifest.json",
+      "sha256": "f8556158deaaa2cb7a92076727d027ff9515dce1c62b0b0d60b1f1a93bfdaa5a"
+    },
+    "records": {
+      "bytes": 388519,
+      "path": "out/family1-adaptive-window-20261027/pilot-64/records.jsonl",
+      "sha256": "74ead7e2511e3bb9094f5bdbef413bce7ae1f3aea64c6ed737e79567b92da691"
+    }
+  },
+  "source_native_minimality_certified": false,
+  "status": "verified-upper",
+  "trace": [
+    {
+      "differing": 0,
+      "length": 0,
+      "synchronized": 4
+    },
+    {
+      "differing": 4,
+      "length": 1,
+      "synchronized": 0
+    },
+    {
+      "differing": 2,
+      "length": 2,
+      "synchronized": 2
+    },
+    {
+      "differing": 0,
+      "length": 3,
+      "synchronized": 4
+    }
+  ],
+  "verification": {
+    "D_empty": 0,
+    "D_final": 0,
+    "dfa_count": 4,
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "passed": true
+  },
+  "witness": [
+    "000",
+    "110"
+  ]
+}

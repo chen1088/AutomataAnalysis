@@ -1,0 +1,306 @@
+{
+  "canonical_table": [
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      2,
+      6
+    ]
+  ],
+  "family_size": 128,
+  "first": "00100111010101111111100111100000111",
+  "first_difference_position": 9,
+  "fixture": null,
+  "gap": 1,
+  "id": "0102000304050106000304050206",
+  "key": "0102000304050106000304050206",
+  "length": 35,
+  "m": 7,
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "minimality_certified": false,
+  "new_finder_result_not_historical_floor": true,
+  "reference_H": 34,
+  "schema": 1,
+  "search_parameters": {
+    "advance": "block",
+    "advance_policy": null,
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "beam_width": 16,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "common_prefix_depth": null,
+    "complete_windows": 59632,
+    "configured_k_max": 4,
+    "configured_k_min": 4,
+    "deterministic": null,
+    "diagonal_width": null,
+    "exact_depth": 0,
+    "expanded_nodes": 16496576,
+    "expansion_cap": 2000000,
+    "greedy_advance": "whole joint window block",
+    "k": null,
+    "k_label": "4; winning lookaheads 4\u00d74",
+    "max_length": 80,
+    "policy": "fixed-block",
+    "prefix_depth": null,
+    "prefix_pairs": null,
+    "prefix_words": null,
+    "priority": true,
+    "producer_k_known": true,
+    "producing_k_sequence": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "score": "permutation then D",
+    "single_k_applicable": false,
+    "startup_policy": null,
+    "target_upper": null,
+    "threshold_ppm": 0,
+    "unequal_width": null,
+    "window_kind": "adaptive-joint-pair",
+    "winning_attempt": {
+      "first_greedy_depth": 24,
+      "initial_first": "00100111010101111111",
+      "initial_length": 20,
+      "initial_second": "00100111111111010101"
+    }
+  },
+  "second": "00100111111111010101100111100000111",
+  "source": {
+    "manifest": {
+      "bytes": 11445,
+      "path": "out/family1-adaptive-window-20261027/calibration-512/manifest.json",
+      "sha256": "8ed2c91ebf428adba9b27cfff1dd5895dd7077eab2d1a09141d550b9cd95ac7d"
+    },
+    "records": {
+      "bytes": 177630,
+      "path": "out/family1-adaptive-window-20261027/calibration-512/records.jsonl",
+      "sha256": "2f6eb9e6dcfc2bbe0aa586d7d30b3a2f99db60fe58cb30560734a0192cfa8537"
+    }
+  },
+  "source_native_minimality_certified": false,
+  "status": "verified-upper",
+  "trace": [
+    {
+      "differing": 0,
+      "length": 0,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 1,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 2,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 3,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 4,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 5,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 6,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 7,
+      "synchronized": 128
+    },
+    {
+      "differing": 0,
+      "length": 8,
+      "synchronized": 128
+    },
+    {
+      "differing": 128,
+      "length": 9,
+      "synchronized": 0
+    },
+    {
+      "differing": 114,
+      "length": 10,
+      "synchronized": 14
+    },
+    {
+      "differing": 127,
+      "length": 11,
+      "synchronized": 1
+    },
+    {
+      "differing": 105,
+      "length": 12,
+      "synchronized": 23
+    },
+    {
+      "differing": 123,
+      "length": 13,
+      "synchronized": 5
+    },
+    {
+      "differing": 95,
+      "length": 14,
+      "synchronized": 33
+    },
+    {
+      "differing": 124,
+      "length": 15,
+      "synchronized": 4
+    },
+    {
+      "differing": 101,
+      "length": 16,
+      "synchronized": 27
+    },
+    {
+      "differing": 123,
+      "length": 17,
+      "synchronized": 5
+    },
+    {
+      "differing": 104,
+      "length": 18,
+      "synchronized": 24
+    },
+    {
+      "differing": 100,
+      "length": 19,
+      "synchronized": 28
+    },
+    {
+      "differing": 55,
+      "length": 20,
+      "synchronized": 73
+    },
+    {
+      "differing": 45,
+      "length": 21,
+      "synchronized": 83
+    },
+    {
+      "differing": 33,
+      "length": 22,
+      "synchronized": 95
+    },
+    {
+      "differing": 33,
+      "length": 23,
+      "synchronized": 95
+    },
+    {
+      "differing": 28,
+      "length": 24,
+      "synchronized": 100
+    },
+    {
+      "differing": 22,
+      "length": 25,
+      "synchronized": 106
+    },
+    {
+      "differing": 16,
+      "length": 26,
+      "synchronized": 112
+    },
+    {
+      "differing": 12,
+      "length": 27,
+      "synchronized": 116
+    },
+    {
+      "differing": 10,
+      "length": 28,
+      "synchronized": 118
+    },
+    {
+      "differing": 9,
+      "length": 29,
+      "synchronized": 119
+    },
+    {
+      "differing": 8,
+      "length": 30,
+      "synchronized": 120
+    },
+    {
+      "differing": 7,
+      "length": 31,
+      "synchronized": 121
+    },
+    {
+      "differing": 4,
+      "length": 32,
+      "synchronized": 124
+    },
+    {
+      "differing": 2,
+      "length": 33,
+      "synchronized": 126
+    },
+    {
+      "differing": 1,
+      "length": 34,
+      "synchronized": 127
+    },
+    {
+      "differing": 0,
+      "length": 35,
+      "synchronized": 128
+    }
+  ],
+  "verification": {
+    "D_empty": 0,
+    "D_final": 0,
+    "dfa_count": 128,
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "passed": true
+  },
+  "witness": [
+    "00100111010101111111100111100000111",
+    "00100111111111010101100111100000111"
+  ]
+}

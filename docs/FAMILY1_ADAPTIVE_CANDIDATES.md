@@ -1,5 +1,12 @@
 # Adaptive candidate search
 
+The [2026-10-26 exhaustive benchmark](family1-adaptiveness-report.md) tests this
+adaptation question with deterministic complete neighborhoods. Generation has
+k=N/A; corrected four-symbol finder runs use joint k=2,4,6,8. Broader parents
+improve winner coverage, but the historical crowding trigger can remain quiet
+despite severe finder misses. The earlier common-suffix windows and budgeted
+candidate runs below are historical evidence with narrower coverage.
+
 The active collection contains only graphs tied for the highest **estimated**
 shortest merge length. The current list is
 [`best-candidates.jsonl`](../results/family1-m8-estimates/best-candidates.jsonl).

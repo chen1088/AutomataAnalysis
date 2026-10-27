@@ -1,0 +1,236 @@
+{
+  "analysis_reused_native_batches": true,
+  "analysis_seconds": 0.3445081999998365,
+  "analysis_source": {
+    "bytes": 14173,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_common_aux_benchmark.py",
+    "sha256": "be3d68965be010e578bb2a48ae6c5346e00956b81cf4c21203b118d2cc3669d1"
+  },
+  "batch_times": [
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 3,
+      "seconds": 0.010395098999651964
+    },
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 1,
+      "seconds": 0.011278078998657293
+    },
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 2,
+      "seconds": 0.011076310000134981
+    },
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 4,
+      "seconds": 0.010635971000738209
+    },
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 5,
+      "seconds": 0.010348339999836753
+    },
+    {
+      "batch": 1,
+      "common_k": 8,
+      "m": 5,
+      "seconds": 0.010313570999642252
+    },
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 6,
+      "seconds": 0.010536945001149434
+    },
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 7,
+      "seconds": 0.011779745000239927
+    },
+    {
+      "batch": 1,
+      "common_k": 8,
+      "m": 7,
+      "seconds": 0.010313573000530596
+    },
+    {
+      "batch": 2,
+      "common_k": 8,
+      "m": 7,
+      "seconds": 0.010694303000491345
+    },
+    {
+      "batch": 0,
+      "common_k": 8,
+      "m": 8,
+      "seconds": 0.01077869000073406
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 1,
+      "seconds": 0.011727651999535738
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 2,
+      "seconds": 0.010091482999996515
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 3,
+      "seconds": 0.01028142099858087
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 4,
+      "seconds": 0.010783924999486771
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 5,
+      "seconds": 0.00997776599979261
+    },
+    {
+      "batch": 1,
+      "common_k": 12,
+      "m": 5,
+      "seconds": 0.009971866000341834
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 6,
+      "seconds": 0.010026040999946417
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 7,
+      "seconds": 0.01032945400038443
+    },
+    {
+      "batch": 1,
+      "common_k": 12,
+      "m": 7,
+      "seconds": 0.010303883000233327
+    },
+    {
+      "batch": 0,
+      "common_k": 12,
+      "m": 8,
+      "seconds": 0.009385865998410736
+    },
+    {
+      "batch": 2,
+      "common_k": 12,
+      "m": 7,
+      "seconds": 0.010648635001416551
+    }
+  ],
+  "cases": 22,
+  "configured_common_ks": [
+    8,
+    12
+  ],
+  "independent_final_mask_replays": 3212,
+  "limits": [
+    "The unpruned common-tail tree has2^k leaves, not4^k; native proof pruning can omit branches.",
+    "Incomplete retained metric reports and truncation counts are preserved, not claimed as exhaustive metric distributions.",
+    "Known H labels qualify only the20 certified winners; m7/m8 extra H remains unknown.",
+    "Every found pair is independently scalar-verified; a heuristic miss gives no hardness bound."
+  ],
+  "manifest": {
+    "bytes": 5889,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/common-aux/manifest.json",
+    "sha256": "31a5b4070f959f3bfe1b4c2a9c88783b6c784f79946c9755e903417f75e6e1af"
+  },
+  "metrics": [
+    {
+      "bad_m7_upper": null,
+      "common_k": 8,
+      "expanded_nodes": 2932405,
+      "held_m8_upper": 53,
+      "m7_winner_lengths": [
+        37,
+        36,
+        34,
+        38,
+        34,
+        36,
+        38,
+        36
+      ],
+      "maximum_positive_gap": 4,
+      "optimal": 14,
+      "retained_metric_complete_reports": 28,
+      "retained_metric_incomplete_reports": 116,
+      "tail_calls": 2079,
+      "window_reports_truncated": 13213,
+      "winner_cases": 20,
+      "winner_misses": 0,
+      "within_two": 17
+    },
+    {
+      "bad_m7_upper": null,
+      "common_k": 12,
+      "expanded_nodes": 11045185,
+      "held_m8_upper": 55,
+      "m7_winner_lengths": [
+        36,
+        37,
+        34,
+        38,
+        34,
+        36,
+        38,
+        38
+      ],
+      "maximum_positive_gap": 4,
+      "optimal": 14,
+      "retained_metric_complete_reports": 19,
+      "retained_metric_incomplete_reports": 125,
+      "tail_calls": 2725,
+      "window_reports_truncated": 8565,
+      "winner_cases": 20,
+      "winner_misses": 0,
+      "within_two": 16
+    }
+  ],
+  "queries": 44,
+  "query_seal": {
+    "bytes": 835,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/common-aux/query-seal.json",
+    "sha256": "bf7833768238164d758a1628dabff306487a78b9588045a2116433d7e17ded38"
+  },
+  "schema": 1,
+  "scope": "restricted suffix after distinct graph-derived prefixes; not full-joint search",
+  "scores_used_after_queries_only": true,
+  "timing_scope": "post-query validation only; native batches reused",
+  "truth_k": null,
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "wall_seconds": null
+}

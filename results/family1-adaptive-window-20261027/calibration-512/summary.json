@@ -1,0 +1,1378 @@
+{
+  "action_variance_definition": "population variance across the four conditional MEAN D values, not action minima",
+  "budget_policy": "a refused growth layer ends that attempt; no commit of a last-eligible-k fallback",
+  "candidates_scored_shared_once_per_graph": 655360,
+  "configurations": {
+    "block4": {
+      "all": {
+        "bounded_seed_collisions": 1,
+        "capped_attempts": 0,
+        "cases": 20,
+        "complete_layers": 1882163,
+        "completed_k_histogram": {
+          "1": 541268,
+          "2": 492121,
+          "3": 445667,
+          "4": 403107
+        },
+        "criterion_windows": 541268,
+        "exact_reference_cases": 20,
+        "expanded_nodes": 141757088,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 20,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 16,
+        "per_policy_candidates_scored": 655360,
+        "per_policy_preprocessing_words": 41943000,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 49147,
+          "2": 46454,
+          "3": 42560,
+          "4": 403107
+        },
+        "tested_k_histogram": {
+          "1": 49147,
+          "2": 46454,
+          "3": 42560,
+          "4": 403107
+        },
+        "within_one": 20,
+        "within_two": 20
+      },
+      "configuration": {
+        "advance": "block",
+        "beam_width": 16,
+        "max_k": 4,
+        "min_k": 4,
+        "name": "block4",
+        "policy": "fixed-block",
+        "priority": true,
+        "threshold_ppm": 0
+      },
+      "m6_m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 10,
+        "complete_layers": 1824768,
+        "completed_k_histogram": {
+          "1": 519328,
+          "2": 475936,
+          "3": 434192,
+          "4": 395312
+        },
+        "criterion_windows": 519328,
+        "exact_reference_cases": 10,
+        "expanded_nodes": 138680448,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 10,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 6,
+        "per_policy_candidates_scored": 327680,
+        "per_policy_preprocessing_words": 20971500,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 43392,
+          "2": 41744,
+          "3": 38880,
+          "4": 395312
+        },
+        "tested_k_histogram": {
+          "1": 43392,
+          "2": 41744,
+          "3": 38880,
+          "4": 395312
+        },
+        "within_one": 10,
+        "within_two": 10
+      },
+      "m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 8,
+        "complete_layers": 1661248,
+        "completed_k_histogram": {
+          "1": 467312,
+          "2": 431776,
+          "3": 397280,
+          "4": 364880
+        },
+        "criterion_windows": 467312,
+        "exact_reference_cases": 8,
+        "expanded_nodes": 127612864,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 8,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 6,
+        "per_policy_candidates_scored": 262144,
+        "per_policy_preprocessing_words": 16777200,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 35536,
+          "2": 34496,
+          "3": 32400,
+          "4": 364880
+        },
+        "tested_k_histogram": {
+          "1": 35536,
+          "2": 34496,
+          "3": 32400,
+          "4": 364880
+        },
+        "within_one": 8,
+        "within_two": 8
+      }
+    },
+    "rolling4": {
+      "all": {
+        "bounded_seed_collisions": 1,
+        "capped_attempts": 0,
+        "cases": 20,
+        "complete_layers": 7910135,
+        "completed_k_histogram": {
+          "1": 2255089,
+          "2": 2064722,
+          "3": 1882368,
+          "4": 1707956
+        },
+        "criterion_windows": 2255089,
+        "exact_reference_cases": 20,
+        "expanded_nodes": 599764196,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 20,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 16,
+        "per_policy_candidates_scored": 655360,
+        "per_policy_preprocessing_words": 41943000,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 190367,
+          "2": 182354,
+          "3": 174412,
+          "4": 1707956
+        },
+        "tested_k_histogram": {
+          "1": 190367,
+          "2": 182354,
+          "3": 174412,
+          "4": 1707956
+        },
+        "within_one": 20,
+        "within_two": 20
+      },
+      "configuration": {
+        "advance": "first",
+        "beam_width": 16,
+        "max_k": 4,
+        "min_k": 4,
+        "name": "rolling4",
+        "policy": "fixed-roll",
+        "priority": true,
+        "threshold_ppm": 0
+      },
+      "m6_m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 10,
+        "complete_layers": 7646900,
+        "completed_k_histogram": {
+          "1": 2154560,
+          "2": 1991216,
+          "3": 1829792,
+          "4": 1671332
+        },
+        "criterion_windows": 2154560,
+        "exact_reference_cases": 10,
+        "expanded_nodes": 585445376,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 10,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 6,
+        "per_policy_candidates_scored": 327680,
+        "per_policy_preprocessing_words": 20971500,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 163344,
+          "2": 161424,
+          "3": 158460,
+          "4": 1671332
+        },
+        "tested_k_histogram": {
+          "1": 163344,
+          "2": 161424,
+          "3": 158460,
+          "4": 1671332
+        },
+        "within_one": 10,
+        "within_two": 10
+      },
+      "m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 8,
+        "complete_layers": 6920608,
+        "completed_k_histogram": {
+          "1": 1926112,
+          "2": 1795472,
+          "3": 1664832,
+          "4": 1534192
+        },
+        "criterion_windows": 1926112,
+        "exact_reference_cases": 8,
+        "expanded_nodes": 535734400,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 8,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 6,
+        "per_policy_candidates_scored": 262144,
+        "per_policy_preprocessing_words": 16777200,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 130640,
+          "2": 130640,
+          "3": 130640,
+          "4": 1534192
+        },
+        "tested_k_histogram": {
+          "1": 130640,
+          "2": 130640,
+          "3": 130640,
+          "4": 1534192
+        },
+        "within_one": 8,
+        "within_two": 8
+      }
+    },
+    "variance-deeper": {
+      "all": {
+        "bounded_seed_collisions": 1,
+        "capped_attempts": 0,
+        "cases": 20,
+        "complete_layers": 8179326,
+        "completed_k_histogram": {
+          "1": 2255089,
+          "2": 2064722,
+          "3": 1882368,
+          "4": 1707956,
+          "5": 145924,
+          "6": 123267
+        },
+        "criterion_windows": 2524280,
+        "exact_reference_cases": 20,
+        "expanded_nodes": 1254092004,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 20,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 16,
+        "per_policy_candidates_scored": 655360,
+        "per_policy_preprocessing_words": 41943000,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 190367,
+          "2": 182354,
+          "3": 174412,
+          "4": 1562032,
+          "5": 22657,
+          "6": 123267
+        },
+        "tested_k_histogram": {
+          "1": 190367,
+          "2": 182354,
+          "3": 174412,
+          "4": 1707956,
+          "5": 145924,
+          "6": 123267
+        },
+        "within_one": 20,
+        "within_two": 20
+      },
+      "configuration": {
+        "advance": "first",
+        "beam_width": 16,
+        "max_k": 6,
+        "min_k": 4,
+        "name": "variance-deeper",
+        "policy": "total-roll",
+        "priority": true,
+        "threshold_ppm": 10000
+      },
+      "m6_m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 10,
+        "complete_layers": 7916091,
+        "completed_k_histogram": {
+          "1": 2154560,
+          "2": 1991216,
+          "3": 1829792,
+          "4": 1671332,
+          "5": 145924,
+          "6": 123267
+        },
+        "criterion_windows": 2423751,
+        "exact_reference_cases": 10,
+        "expanded_nodes": 1239773184,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 10,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 6,
+        "per_policy_candidates_scored": 327680,
+        "per_policy_preprocessing_words": 20971500,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 163344,
+          "2": 161424,
+          "3": 158460,
+          "4": 1525408,
+          "5": 22657,
+          "6": 123267
+        },
+        "tested_k_histogram": {
+          "1": 163344,
+          "2": 161424,
+          "3": 158460,
+          "4": 1671332,
+          "5": 145924,
+          "6": 123267
+        },
+        "within_one": 10,
+        "within_two": 10
+      },
+      "m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 8,
+        "complete_layers": 7189761,
+        "completed_k_histogram": {
+          "1": 1926112,
+          "2": 1795472,
+          "3": 1664832,
+          "4": 1534192,
+          "5": 145886,
+          "6": 123267
+        },
+        "criterion_windows": 2195265,
+        "exact_reference_cases": 8,
+        "expanded_nodes": 1190023296,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 34
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 8,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 6,
+        "per_policy_candidates_scored": 262144,
+        "per_policy_preprocessing_words": 16777200,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 130640,
+          "2": 130640,
+          "3": 130640,
+          "4": 1388306,
+          "5": 22619,
+          "6": 123267
+        },
+        "tested_k_histogram": {
+          "1": 130640,
+          "2": 130640,
+          "3": 130640,
+          "4": 1534192,
+          "5": 145886,
+          "6": 123267
+        },
+        "within_one": 8,
+        "within_two": 8
+      }
+    },
+    "variance-low": {
+      "all": {
+        "bounded_seed_collisions": 1,
+        "capped_attempts": 0,
+        "cases": 20,
+        "complete_layers": 4368452,
+        "completed_k_histogram": {
+          "1": 2279307,
+          "2": 2088610,
+          "3": 535
+        },
+        "criterion_windows": 2279842,
+        "exact_reference_cases": 20,
+        "expanded_nodes": 42569228,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 20,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 15,
+        "per_policy_candidates_scored": 655360,
+        "per_policy_preprocessing_words": 41943000,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 190697,
+          "2": 2088075,
+          "3": 535
+        },
+        "tested_k_histogram": {
+          "1": 190697,
+          "2": 2088610,
+          "3": 535
+        },
+        "within_one": 20,
+        "within_two": 20
+      },
+      "configuration": {
+        "advance": "first",
+        "beam_width": 16,
+        "max_k": 5,
+        "min_k": 2,
+        "name": "variance-low",
+        "policy": "total-roll",
+        "priority": true,
+        "threshold_ppm": 1000
+      },
+      "m6_m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 10,
+        "complete_layers": 4188967,
+        "completed_k_histogram": {
+          "1": 2175872,
+          "2": 2012560,
+          "3": 535
+        },
+        "criterion_windows": 2176407,
+        "exact_reference_cases": 10,
+        "expanded_nodes": 40938688,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 10,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.5,
+        "misses": 0,
+        "optimal": 5,
+        "per_policy_candidates_scored": 327680,
+        "per_policy_preprocessing_words": 20971500,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 163312,
+          "2": 2012025,
+          "3": 535
+        },
+        "tested_k_histogram": {
+          "1": 163312,
+          "2": 2012560,
+          "3": 535
+        },
+        "within_one": 10,
+        "within_two": 10
+      },
+      "m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 8,
+        "complete_layers": 3759044,
+        "completed_k_histogram": {
+          "1": 1944576,
+          "2": 1813936,
+          "3": 532
+        },
+        "criterion_windows": 1945108,
+        "exact_reference_cases": 8,
+        "expanded_nodes": 36835328,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 8,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 5,
+        "per_policy_candidates_scored": 262144,
+        "per_policy_preprocessing_words": 16777200,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 130640,
+          "2": 1813404,
+          "3": 532
+        },
+        "tested_k_histogram": {
+          "1": 130640,
+          "2": 1813936,
+          "3": 532
+        },
+        "within_one": 8,
+        "within_two": 8
+      }
+    },
+    "variance-progress": {
+      "all": {
+        "bounded_seed_collisions": 1,
+        "capped_attempts": 5,
+        "cases": 20,
+        "complete_layers": 5009930,
+        "completed_k_histogram": {
+          "1": 2276785,
+          "2": 2086168,
+          "3": 212082,
+          "4": 165810,
+          "5": 145061,
+          "6": 124024
+        },
+        "criterion_windows": 2923762,
+        "exact_reference_cases": 20,
+        "expanded_nodes": 755051204,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 20,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 15,
+        "per_policy_candidates_scored": 655360,
+        "per_policy_preprocessing_words": 41943000,
+        "proven_error_above_two": [],
+        "refused_layers": 36,
+        "selected_k_histogram": {
+          "1": 190617,
+          "2": 1874086,
+          "3": 46272,
+          "4": 20749,
+          "5": 21037,
+          "6": 124024
+        },
+        "tested_k_histogram": {
+          "1": 190617,
+          "2": 2086168,
+          "3": 212082,
+          "4": 165810,
+          "5": 145061,
+          "6": 124024
+        },
+        "within_one": 20,
+        "within_two": 20
+      },
+      "configuration": {
+        "advance": "first",
+        "beam_width": 16,
+        "max_k": 6,
+        "min_k": 2,
+        "name": "variance-progress",
+        "policy": "progress-roll",
+        "priority": true,
+        "threshold_ppm": 10000
+      },
+      "m6_m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 5,
+        "cases": 10,
+        "complete_layers": 4826142,
+        "completed_k_histogram": {
+          "1": 2173414,
+          "2": 2010182,
+          "3": 207756,
+          "4": 165722,
+          "5": 145049,
+          "6": 124019
+        },
+        "criterion_windows": 2815960,
+        "exact_reference_cases": 10,
+        "expanded_nodes": 753089784,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 10,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.5,
+        "misses": 0,
+        "optimal": 5,
+        "per_policy_candidates_scored": 327680,
+        "per_policy_preprocessing_words": 20971500,
+        "proven_error_above_two": [],
+        "refused_layers": 36,
+        "selected_k_histogram": {
+          "1": 163232,
+          "2": 1802426,
+          "3": 42034,
+          "4": 20673,
+          "5": 21030,
+          "6": 124019
+        },
+        "tested_k_histogram": {
+          "1": 163232,
+          "2": 2010182,
+          "3": 207756,
+          "4": 165722,
+          "5": 145049,
+          "6": 124019
+        },
+        "within_one": 10,
+        "within_two": 10
+      },
+      "m7": {
+        "bounded_seed_collisions": 0,
+        "capped_attempts": 0,
+        "cases": 8,
+        "complete_layers": 4352674,
+        "completed_k_histogram": {
+          "1": 1945200,
+          "2": 1814560,
+          "3": 176218,
+          "4": 152425,
+          "5": 142339,
+          "6": 121932
+        },
+        "criterion_windows": 2538114,
+        "exact_reference_cases": 8,
+        "expanded_nodes": 732301120,
+        "finite_topband": {
+          "cases": 8,
+          "certified_winners": 8,
+          "maximum_upper": 35,
+          "rows": [
+            {
+              "key": "0001020302030405000604060105",
+              "upper": 35
+            },
+            {
+              "key": "0001020304050406050600010203",
+              "upper": 34
+            },
+            {
+              "key": "0102000301040204050600030506",
+              "upper": 35
+            },
+            {
+              "key": "0102000304050106000304050206",
+              "upper": 35
+            },
+            {
+              "key": "0102010203040005030604060005",
+              "upper": 34
+            },
+            {
+              "key": "0102010203040005050600060304",
+              "upper": 34
+            },
+            {
+              "key": "0102020304050006000604050103",
+              "upper": 34
+            },
+            {
+              "key": "0102030405060001000203040506",
+              "upper": 34
+            }
+          ],
+          "width": 2
+        },
+        "found": 8,
+        "m7_false_finite_compatible": 0,
+        "m7_new_finder_exclusions": 0,
+        "m7_nonwinner_cases": 0,
+        "m7_nonwinner_misses": 0,
+        "maximum_gap_if_found": 1,
+        "median_gap_if_found": 0.0,
+        "misses": 0,
+        "optimal": 5,
+        "per_policy_candidates_scored": 262144,
+        "per_policy_preprocessing_words": 16777200,
+        "proven_error_above_two": [],
+        "refused_layers": 0,
+        "selected_k_histogram": {
+          "1": 130640,
+          "2": 1638342,
+          "3": 23793,
+          "4": 10086,
+          "5": 20407,
+          "6": 121932
+        },
+        "tested_k_histogram": {
+          "1": 130640,
+          "2": 1814560,
+          "3": 176218,
+          "4": 152425,
+          "5": 142339,
+          "6": 121932
+        },
+        "within_one": 8,
+        "within_two": 8
+      }
+    }
+  },
+  "exact_depth": 0,
+  "graph_cases": 20,
+  "graph_queries": 100,
+  "histogram_scope": "all attempts; selected horizons can be provisional on budget-aborted decisions",
+  "moment_scope": "complete all-leaf moments along winning-attempt ancestry only; misses have no winning moments",
+  "oracle_disabled": true,
+  "prior_certificate_floor_separate_from_new_finder": true,
+  "query_seal": {
+    "bytes": 17862,
+    "path": "out/family1-adaptive-window-20261027/calibration-512/query-seal.json",
+    "sha256": "6491fd4ad0d2dc28b2ac1b93a78e1da3222d95dd6aed9c7e3f3db920cc762ba2"
+  },
+  "schema": 1,
+  "seed_words_shared_once_per_graph": 41943000,
+  "source_fingerprint": "06010060d90beebc8c15e9d3663895771320ab990fdc2c42386e8302ab69519c",
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    },
+    {
+      "bytes": 171061,
+      "path": "results/family1-neighbor-seeds/near-top.jsonl",
+      "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+    },
+    {
+      "bytes": 410759,
+      "path": "results/family1-adaptive-search-final/records.jsonl",
+      "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+    },
+    {
+      "bytes": 801705,
+      "path": "results/family1-finder-strategies-20261026/near/records-frontier.jsonl",
+      "sha256": "bd5ad0649df3692e4f1fed8245af8b715522075a47e4e098541b9853e9a82d40"
+    },
+    {
+      "bytes": 2859,
+      "path": "results/family1-finder-strategies-20261026/near/records-m8.jsonl",
+      "sha256": "d8d0112ab784664e61b2df122b19b96b7ca5a1adfcaa4e31c510de92c868c532"
+    }
+  ],
+  "universal_error_bound_certified": false,
+  "variance_definition": "D counts ORIGINAL unequal endpoint coordinates; synchronized count N-D has the same variance",
+  "work": {
+    "bytes": 11445,
+    "path": "out/family1-adaptive-window-20261027/calibration-512/manifest.json",
+    "sha256": "8ed2c91ebf428adba9b27cfff1dd5895dd7077eab2d1a09141d550b9cd95ac7d"
+  }
+}

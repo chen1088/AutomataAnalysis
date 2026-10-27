@@ -229,11 +229,16 @@ Result search(const std::vector<LargeGraph>& inputs, const Options& options) {
             frontier.push_back({parent,graph,result.paths.back().id});
     }
     std::vector<std::size_t> parent_order(result.parents.size()); std::iota(parent_order.begin(),parent_order.end(),0);
-    std::sort(parent_order.begin(),parent_order.end(),[&](auto a, auto b) {
-        return std::pair{mix(options.seed ^ text_hash(result.parents[a].key)),a} < std::pair{mix(options.seed ^ text_hash(result.parents[b].key)),b};
-    });
+    if (!options.deterministic)
+        std::sort(parent_order.begin(),parent_order.end(),[&](auto a, auto b) {
+            return std::pair{mix(options.seed ^ text_hash(result.parents[a].key)),a} < std::pair{mix(options.seed ^ text_hash(result.parents[b].key)),b};
+        });
     const auto canceled = [&]() { return options.interrupted && *options.interrupted; };
     for (unsigned int depth = 1; depth <= options.radius; ++depth) {
+        if (options.deterministic)
+            std::sort(frontier.begin(),frontier.end(),[](const Node& a, const Node& b) {
+                return std::tuple{a.parent,a.graph.key(),a.path_id} < std::tuple{b.parent,b.graph.key(),b.path_id};
+            });
         DepthCoverage coverage; coverage.depth = depth; coverage.frontier_nodes = frontier.size();
         if (canceled()) { result.interrupted = true; result.depths.push_back(coverage); break; }
         if (result.accepted_paths >= options.max_paths || result.root_fixed_candidate_count >= options.max_candidates) {
@@ -245,9 +250,26 @@ Result search(const std::vector<LargeGraph>& inputs, const Options& options) {
         const auto path_budget = std::max<std::uint64_t>(1,(options.max_paths - result.accepted_paths) / levels);
         const auto candidate_budget = std::max<std::uint64_t>(1,(options.max_candidates - result.root_fixed_candidate_count) / levels);
         struct Work {
-            std::size_t node; ProposalCursor cursor; std::set<std::string> neighbors;
-            Work(std::size_t index, const Node& item, Kind kind, std::uint64_t seed) : node(index),
-                cursor(item.graph,kind,seed,true) {}
+            std::size_t node; Kind kind; std::optional<ProposalCursor> cursor;
+            std::set<std::string> neighbors;
+            std::vector<Step> ordered_neighbors;
+            std::size_t next_neighbor = 0;
+            bool initialized = false;
+            Work(std::size_t index, const Node& item, Kind selected, const Options& settings, unsigned int depth)
+                : node(index), kind(selected) {
+                if (!settings.deterministic)
+                    cursor.emplace(item.graph,kind,
+                        mix(settings.seed ^ text_hash(item.graph.key()) ^ (static_cast<std::uint64_t>(kind) << 32) ^ depth),true);
+            }
+            std::optional<Operation> next(const LargeGraph& graph) {
+                if (cursor) return cursor->next(graph);
+                if (!initialized) {
+                    ordered_neighbors = unit_edits(graph,kind);
+                    initialized = true;
+                }
+                if (next_neighbor == ordered_neighbors.size()) return std::nullopt;
+                return ordered_neighbors[next_neighbor++].operation;
+            }
         };
         struct Queue { std::vector<Work> work; std::size_t next = 0; bool exhausted = false; };
         std::vector<std::array<Queue,5>> queues(result.parents.size());
@@ -256,8 +278,7 @@ Result search(const std::vector<LargeGraph>& inputs, const Options& options) {
             const auto next_size = static_cast<int>(node.graph.size()) + size_change(static_cast<Kind>(k));
             if (next_size > 20 && std::abs(next_size - static_cast<int>(options.target_m)) <= static_cast<int>(options.radius - depth))
                 result.unsupported_size_paths_possible = true;
-            queues[node.parent][k].work.emplace_back(index,node,static_cast<Kind>(k),
-                mix(options.seed ^ text_hash(node.graph.key()) ^ (std::uint64_t{k} << 32) ^ depth));
+            queues[node.parent][k].work.emplace_back(index,node,static_cast<Kind>(k),options,depth);
         }
         std::vector<Node> next_frontier;
         bool exhausted = false, stop_depth = false;
@@ -265,16 +286,17 @@ Result search(const std::vector<LargeGraph>& inputs, const Options& options) {
             bool progress = false;
             for (auto parent : parent_order) {
                 std::array<unsigned int,5> kinds{0,1,2,3,4};
-                std::sort(kinds.begin(),kinds.end(),[&](auto a,auto b) {
-                    return std::pair{mix(options.seed ^ text_hash(result.parents[parent].key) ^ depth ^ (a + 17)),a}
-                        < std::pair{mix(options.seed ^ text_hash(result.parents[parent].key) ^ depth ^ (b + 17)),b};
-                });
+                if (!options.deterministic)
+                    std::sort(kinds.begin(),kinds.end(),[&](auto a,auto b) {
+                        return std::pair{mix(options.seed ^ text_hash(result.parents[parent].key) ^ depth ^ (a + 17)),a}
+                            < std::pair{mix(options.seed ^ text_hash(result.parents[parent].key) ^ depth ^ (b + 17)),b};
+                    });
                 for (auto k : kinds) {
                     auto& queue = queues[parent][k]; if (queue.exhausted) continue;
                     std::optional<Operation> operation; Work* chosen = nullptr;
                     for (std::size_t tried = 0; tried < queue.work.size(); ++tried) {
                         auto& work = queue.work[queue.next++ % queue.work.size()];
-                        operation = work.cursor.next(frontier[work.node].graph);
+                        operation = work.next(frontier[work.node].graph);
                         if (operation) { chosen = &work; break; }
                     }
                     if (!operation) { queue.exhausted = true; continue; }

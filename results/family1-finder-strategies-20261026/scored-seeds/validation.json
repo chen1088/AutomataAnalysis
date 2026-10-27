@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "k": null,
+  "scope": "independent complete scalar compatible-pair enumeration through word depth6",
+  "small_graphs": 742,
+  "extra_m8_graphs": 4,
+  "total_graphs": 746,
+  "complete_seed_pairs_compared": 1888160,
+  "scalar_word_mask_evaluations": 1556604,
+  "scalar_pair_mask_comparisons": 29944370,
+  "bounded_repeat_and_cap_checks": 5222,
+  "fallback_graphs": 2,
+  "width0_graphs": 1,
+  "width3_graphs": 4,
+  "invalid_option_guard_checks": 10,
+  "fallback_budget_semantics": "legacy global pair cap; compact path has per-layer cap",
+  "source_files": [
+    {
+      "path": "tests/Family1ScoredSeedsIndependent.cpp",
+      "bytes": 11899,
+      "sha256": "01248b998d053cbb3093eaf946b1b9d1d77c3f16e6c5e93a98515c7e595309d8"
+    },
+    {
+      "path": "Family1ScoredSeeds.h",
+      "bytes": 8209,
+      "sha256": "3db1d7add4b3ab8b0d5f87758de73df40f98fe927a15af54a7104647296eea63"
+    },
+    {
+      "path": "Family1JointSeeds.h",
+      "bytes": 2919,
+      "sha256": "50b62dd9e9e277d9721187efa3a72b1d75bf68024ce1149e1650040f9dab715a"
+    },
+    {
+      "path": "Family1JointPair.h",
+      "bytes": 6695,
+      "sha256": "e21321806725611c87fb16475234f99e963628e96c85c50ce7b55dbce453a272"
+    },
+    {
+      "path": "HardPairPrefixSeeds.h",
+      "bytes": 25240,
+      "sha256": "a465d603f3465459345f93d8b2f3a8ac0dd5b9900813c125af13679f693bb7e9"
+    },
+    {
+      "path": "Family1ExactPacked.h",
+      "bytes": 4578,
+      "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+    },
+    {
+      "path": "Family1ExactPacked.cpp",
+      "bytes": 20868,
+      "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+    },
+    {
+      "path": "Family1PairAgreement.h",
+      "bytes": 11177,
+      "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+    },
+    {
+      "path": "Family1LargeGraph.h",
+      "bytes": 1035,
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    },
+    {
+      "path": "Family1LargeGraph.cpp",
+      "bytes": 5101,
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    {
+      "path": "Family1LargeEnumerator.h",
+      "bytes": 1041,
+      "sha256": "d7223edfa432ce9ca8ac581b40ccdaa3b204cce3d64face4d144ebeefcc3ee76"
+    },
+    {
+      "path": "Family1LargeEnumerator.cpp",
+      "bytes": 2431,
+      "sha256": "2fecc4ff183a11ac0244df3caace3a6657b8284761530f81dc4638088c964186"
+    }
+  ],
+  "native_executable": {
+    "path": "out/family1-finder-strategies-20261026/profile/scored_seeds_independent",
+    "bytes": 207304,
+    "sha256": "d1f124cfa792a7d08d3a40ce623a3307ab764b09ac8fb936e8bb53da1a91572d"
+  },
+  "linked_core": {
+    "path": "out/build/joint-solid-linux/libFamily1OfflineCore.a",
+    "bytes": 209638,
+    "sha256": "e16d62342bc02f9ceee8c194f05f153a436444c08282302ba0d76e69d3e5c1fd"
+  },
+  "canonical_key_input": {
+    "path": "out/family1-finder-strategies-20261026/profile/complete-small742.keys",
+    "bytes": 12326,
+    "sha256": "dc4cc68e1dc4a7e3686c8a151987da929baaf1e45331d67f380eed145912f036"
+  },
+  "build_command": "g++ -O2 -std=c++23 -I . tests/Family1ScoredSeedsIndependent.cpp out/build/joint-solid-linux/libFamily1OfflineCore.a -o out/family1-finder-strategies-20261026/profile/scored_seeds_independent",
+  "self_contained_run": "out/family1-finder-strategies-20261026/profile/scored_seeds_independent",
+  "external_corpus_and_self_enumeration_both_passed": true,
+  "independence": "DFA permutation tests, every word endpoint, every compatible pair, full original-mask D, channel sorting and selection are enumerated separately using graph port tables; no packed-product endpoint accessor supplies expected values.",
+  "limitations": [
+    "Full-catalogue equality covers every compatible pair through word depth6, not arbitrary production depth16.",
+    "Bounded catalogues are deterministic subsets; pair-cap semantics differ between packed per-layer and fallback legacy global collection.",
+    "Seeding correctness does not certify near-shortest search accuracy."
+  ]
+}

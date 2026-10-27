@@ -1,0 +1,22 @@
+{
+  "README.md": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/hard-pair-joint-startup-example/README.md",
+    "sha256": "c4361586e4cffe9d172d61fe1e92d80dcbbf2fb2b601bf903200a167cbf72dd0",
+    "bytes": 428
+  },
+  "validation.json": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/hard-pair-joint-startup-example/validation.json",
+    "sha256": "bc26374839747aeef6eac96a72730d318c6a51ea7eedd74711096df521f387d5",
+    "bytes": 1168
+  },
+  "witness.json": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/hard-pair-joint-startup-example/witness.json",
+    "sha256": "4b239824d704bb04f0a66418f56ceca459bedecf53ad91779e9037661da60384",
+    "bytes": 2955
+  },
+  "witness.svg": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/hard-pair-joint-startup-example/witness.svg",
+    "sha256": "8e9d515029296025c600ea50c13e4184e2a53d1ce5d28d735f9481f8b546d183",
+    "bytes": 6398
+  }
+}

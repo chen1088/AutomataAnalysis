@@ -12,25 +12,115 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # This standard-library-only executable is deliberately separate from the
 # legacy algebra experiments and the SAT targets. A dedicated offline build
 # never enters dependency discovery or vcpkg manifest installation.
-option(FAMILY1_OFFLINE_ONLY "Build only the dependency-free Family1Offline executable" OFF)
+option(FAMILY1_OFFLINE_ONLY "Build only the dependency-free Family1 executables" OFF)
 add_library(Family1OfflineCore STATIC Family1LargeGraph.cpp Family1LargeEnumerator.cpp
     Family1ExactPacked.cpp Family1EditSearch.cpp)
 target_include_directories(Family1OfflineCore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(Family1Offline family1_offline.cpp)
 target_link_libraries(Family1Offline PRIVATE Family1OfflineCore)
+add_executable(Family1Joint family1_joint.cpp)
+target_link_libraries(Family1Joint PRIVATE Family1OfflineCore)
+add_executable(Family1NearPair family1_near.cpp)
+target_link_libraries(Family1NearPair PRIVATE Family1OfflineCore)
+set(FAMILY1_NEAR_COMPILE_SOURCES family1_near.cpp Family1NearPair.h Family1ScoredSeeds.h
+    Family1JointPair.h Family1JointSeeds.h HardPairJointFinder.h HardPairPrefixSeeds.h
+    Family1ExactPacked.h Family1ExactPacked.cpp Family1LargeGraph.h Family1LargeGraph.cpp
+    Family1PairAgreement.h Family1CliArtifacts.h Family1TailScoredSeeds.h HardPairViability.h)
+set(FAMILY1_NEAR_COMPILE_FINGERPRINT "")
+foreach(FAMILY1_NEAR_SOURCE IN LISTS FAMILY1_NEAR_COMPILE_SOURCES)
+    file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/${FAMILY1_NEAR_SOURCE}" FAMILY1_NEAR_FILE_SHA256)
+    string(APPEND FAMILY1_NEAR_COMPILE_FINGERPRINT "${FAMILY1_NEAR_FILE_SHA256}\n")
+    set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/${FAMILY1_NEAR_SOURCE}")
+endforeach()
+string(SHA256 FAMILY1_NEAR_SOURCE_SHA256 "${FAMILY1_NEAR_COMPILE_FINGERPRINT}")
+target_compile_definitions(Family1NearPair PRIVATE FAMILY1_NEAR_SOURCE_SHA256="${FAMILY1_NEAR_SOURCE_SHA256}")
 if(MSVC)
-    set_property(TARGET Family1OfflineCore Family1Offline PROPERTY
+    set_property(TARGET Family1OfflineCore Family1Offline Family1Joint Family1NearPair PROPERTY
         MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
-    set_target_properties(Family1OfflineCore Family1Offline PROPERTIES
+    set_target_properties(Family1OfflineCore Family1Offline Family1Joint Family1NearPair PROPERTIES
         VS_GLOBAL_VcpkgEnabled "false" VS_GLOBAL_VcpkgEnableManifest "false")
 endif()
-install(TARGETS Family1Offline RUNTIME DESTINATION .)
+install(TARGETS Family1Offline Family1Joint Family1NearPair RUNTIME DESTINATION .)
 include(CTest)
 if(BUILD_TESTING)
     add_test(NAME family1-offline-help COMMAND Family1Offline --help)
+    add_test(NAME family1-joint-help COMMAND Family1Joint --help)
+    add_test(NAME family1-near-help COMMAND Family1NearPair --help)
+    add_executable(Family1NearPairIndependent tests/Family1NearPairIndependent.cpp)
+    target_link_libraries(Family1NearPairIndependent PRIVATE Family1OfflineCore)
+    add_test(NAME family1-near-independent COMMAND Family1NearPairIndependent)
+    add_executable(Family1CommonTailDistanceIndependent tests/Family1CommonTailDistanceIndependent.cpp)
+    target_link_libraries(Family1CommonTailDistanceIndependent PRIVATE Family1OfflineCore)
+    add_test(NAME family1-common-tail-distance-independent COMMAND Family1CommonTailDistanceIndependent)
+    add_executable(Family1ScoredSeedsIndependent tests/Family1ScoredSeedsIndependent.cpp)
+    target_link_libraries(Family1ScoredSeedsIndependent PRIVATE Family1OfflineCore)
+    add_test(NAME family1-scored-seeds-independent COMMAND Family1ScoredSeedsIndependent)
+    set_tests_properties(family1-scored-seeds-independent PROPERTIES TIMEOUT 180)
+    add_executable(HardPairJointStartup tests/HardPairJointStartup.cpp)
+    target_include_directories(HardPairJointStartup PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+    add_test(NAME hard-pair-joint-startup COMMAND HardPairJointStartup)
+    add_executable(Family1JointPriorityIndependent tests/Family1JointPriorityIndependent.cpp)
+    target_link_libraries(Family1JointPriorityIndependent PRIVATE Family1OfflineCore)
+    add_test(NAME family1-joint-priority-independent COMMAND Family1JointPriorityIndependent)
+    add_executable(HardPairJointBenchmark tests/HardPairJointBenchmark.cpp)
+    target_include_directories(HardPairJointBenchmark PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+    add_executable(HardPairJointAdaptiveIndependent tests/HardPairJointAdaptiveIndependent.cpp)
+    target_include_directories(HardPairJointAdaptiveIndependent PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+    add_test(NAME hard-pair-joint-adaptive-independent COMMAND HardPairJointAdaptiveIndependent)
+    add_executable(Family1AdaptiveWindowBenchmark tests/Family1AdaptiveWindowBenchmark.cpp)
+    target_link_libraries(Family1AdaptiveWindowBenchmark PRIVATE Family1OfflineCore)
+    set(FAMILY1_ADAPTIVE_COMPILE_SOURCES tests/Family1AdaptiveWindowBenchmark.cpp HardPairJointAdaptive.h
+        Family1ScoredSeeds.h Family1TailScoredSeeds.h Family1JointPair.h Family1JointSeeds.h
+        HardPairJointFinder.h HardPairPrefixSeeds.h Family1ExactPacked.h Family1ExactPacked.cpp
+        Family1LargeGraph.h Family1LargeGraph.cpp Family1PairAgreement.h Family1CliArtifacts.h HardPairViability.h)
+    set(FAMILY1_ADAPTIVE_COMPILE_FINGERPRINT "")
+    foreach(FAMILY1_ADAPTIVE_SOURCE IN LISTS FAMILY1_ADAPTIVE_COMPILE_SOURCES)
+        file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/${FAMILY1_ADAPTIVE_SOURCE}" FAMILY1_ADAPTIVE_FILE_SHA256)
+        string(APPEND FAMILY1_ADAPTIVE_COMPILE_FINGERPRINT "${FAMILY1_ADAPTIVE_FILE_SHA256}\n")
+        set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+            "${CMAKE_CURRENT_SOURCE_DIR}/${FAMILY1_ADAPTIVE_SOURCE}")
+    endforeach()
+    string(SHA256 FAMILY1_ADAPTIVE_SOURCE_SHA256 "${FAMILY1_ADAPTIVE_COMPILE_FINGERPRINT}")
+    target_compile_definitions(Family1AdaptiveWindowBenchmark PRIVATE FAMILY1_ADAPTIVE_SOURCE_SHA256="${FAMILY1_ADAPTIVE_SOURCE_SHA256}")
+    if(MSVC)
+        set_property(TARGET Family1AdaptiveWindowBenchmark HardPairJointAdaptiveIndependent
+            Family1NearPairIndependent Family1CommonTailDistanceIndependent
+            Family1ScoredSeedsIndependent Family1JointPriorityIndependent
+            HardPairJointStartup HardPairJointBenchmark PROPERTY
+            MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+        set_target_properties(Family1AdaptiveWindowBenchmark HardPairJointAdaptiveIndependent
+            Family1NearPairIndependent Family1CommonTailDistanceIndependent
+            Family1ScoredSeedsIndependent Family1JointPriorityIndependent
+            HardPairJointStartup HardPairJointBenchmark PROPERTIES
+            VS_GLOBAL_VcpkgEnabled "false" VS_GLOBAL_VcpkgEnableManifest "false")
+    endif()
+    find_program(FAMILY1_JOINT_PYTHON NAMES python3 python)
+    if(FAMILY1_JOINT_PYTHON)
+        add_test(NAME family1-near-cli COMMAND "${FAMILY1_JOINT_PYTHON}"
+            "${CMAKE_CURRENT_SOURCE_DIR}/tests/family1_near_cli_test.py"
+            --exe $<TARGET_FILE:Family1NearPair>)
+        set_tests_properties(family1-near-cli PROPERTIES TIMEOUT 180)
+        add_test(NAME family1-joint-cli COMMAND "${FAMILY1_JOINT_PYTHON}"
+            "${CMAKE_CURRENT_SOURCE_DIR}/tests/family1_joint_cli_test.py"
+            --exe $<TARGET_FILE:Family1Joint>)
+        set_tests_properties(family1-joint-cli PROPERTIES TIMEOUT 180)
+        add_test(NAME hard-pair-joint-benchmark COMMAND "${FAMILY1_JOINT_PYTHON}"
+            "${CMAKE_CURRENT_SOURCE_DIR}/tests/hard_pair_joint_benchmark.py"
+            --exe $<TARGET_FILE:HardPairJointBenchmark> --self-test)
+        set_tests_properties(hard-pair-joint-benchmark PROPERTIES TIMEOUT 180)
+        add_test(NAME hard-pair-witness-figure COMMAND "${FAMILY1_JOINT_PYTHON}"
+            "${CMAKE_CURRENT_SOURCE_DIR}/tests/hard_pair_witness_figure_test.py")
+    endif()
     find_program(FAMILY1_OFFLINE_UV_EXECUTABLE NAMES uv)
     if(FAMILY1_OFFLINE_UV_EXECUTABLE)
         add_test(NAME family1-offline-cli COMMAND "${FAMILY1_OFFLINE_UV_EXECUTABLE}" run --no-project python
+            "${CMAKE_CURRENT_SOURCE_DIR}/tests/family1_offline_cli_test.py"
+            --exe $<TARGET_FILE:Family1Offline>)
+        set_tests_properties(family1-offline-cli PROPERTIES
+            WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}" TIMEOUT 180)
+    elseif(FAMILY1_JOINT_PYTHON)
+        add_test(NAME family1-offline-cli COMMAND "${FAMILY1_JOINT_PYTHON}"
             "${CMAKE_CURRENT_SOURCE_DIR}/tests/family1_offline_cli_test.py"
             --exe $<TARGET_FILE:Family1Offline>)
         set_tests_properties(family1-offline-cli PROPERTIES

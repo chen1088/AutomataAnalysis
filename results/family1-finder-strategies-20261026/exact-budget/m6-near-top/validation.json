@@ -1,0 +1,18 @@
+{
+  "all_expected_keys_evaluated": true,
+  "all_positive_pairs_scalar_replayed": true,
+  "cases": 69,
+  "independent_mask_replays": 4416,
+  "no_time_caps": true,
+  "source_input": {
+    "bytes": 8416,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget/input-cases.jsonl",
+    "sha256": "dcdf466c55b00640c6c2d9037826d255d70a37bd269d9dbf900f006edbfc3265"
+  },
+  "source_records": {
+    "bytes": 29867,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/exact-budget/records.jsonl",
+    "sha256": "f102b8913fa51cf7d0046604f75c532005721635d001fe06964cd60a67ae4996"
+  },
+  "unknown_is_not_exact": true
+}

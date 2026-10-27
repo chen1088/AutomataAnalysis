@@ -1,0 +1,296 @@
+{
+  "all_candidates_scored": true,
+  "candidate_count": 11693,
+  "certified_maximum": 23,
+  "complete_champion_count": 2,
+  "configurations": [
+    {
+      "beam": 1,
+      "common_depth": 2,
+      "expansions": 2000000,
+      "id": "total-c2-k2",
+      "k": 2,
+      "max_length": 80,
+      "score": "total"
+    }
+  ],
+  "k": [
+    2
+  ],
+  "limits": [
+    "Verified witness lengths are upper bounds; misses are unresolved.",
+    "m7 nonwinner labels imply H<=33, not exact nonwinner gaps.",
+    "A global rarity rate is not the null rate in an enriched edit pool.",
+    "Threshold tau3 is diagnostic, not a calibrated champion count test."
+  ],
+  "m": 6,
+  "metrics": [
+    {
+      "actual_H_not_inferred_from_upper_or_miss": true,
+      "all_exhaustive_winners": 2,
+      "certified_global_maximum": 23,
+      "complete_windows": 4595238,
+      "configuration": {
+        "beam": 1,
+        "common_depth": 2,
+        "expansions": 2000000,
+        "id": "total-c2-k2",
+        "k": 2,
+        "max_length": 80,
+        "score": "total"
+      },
+      "expanded_nodes": 90394952,
+      "expansion_capped_graphs": 0,
+      "finite_verified_pairs": 6012,
+      "full_joint_alphabet": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "k": [
+        2
+      ],
+      "m": 6,
+      "operational_topband": {
+        "band": 2,
+        "crowding_threshold": 3,
+        "crowding_triggered": true,
+        "false_apparent_champions": 4,
+        "finite_winners_outside_topband": 0,
+        "maximum_finite_upper": 66,
+        "misses_are_not_in_the_finite_topband": true,
+        "rule": "finite verified upper >= maximum finite upper - band; preserve every tie",
+        "shapes": 4,
+        "size": 4,
+        "true_winners": 0,
+        "unresolved_winners": 2,
+        "winner_recall_global": 0.0,
+        "winners_in_pool_outside_topband": 2
+      },
+      "partial_windows": 0,
+      "pool": "near2-allroots",
+      "queries": 11693,
+      "reference_cutoff": {
+        "false_survivors": 8855,
+        "finite_champion_precision": 0.0,
+        "finite_compatible": 3176,
+        "finite_false_apparent_champions": 3176,
+        "rule": "survive iff no verified pair or best verified upper >= certified global maximum",
+        "survivor_champion_precision": 0.00022581009371118888,
+        "survivors": 8857,
+        "true_winners": 2,
+        "unresolved_nonwinners": 5679,
+        "witness_excluded_nonwinners": 2836
+      },
+      "unresolved_no_pair": 5681,
+      "winner_count_in_pool": 2,
+      "winner_recall": 1.0
+    },
+    {
+      "actual_H_not_inferred_from_upper_or_miss": true,
+      "all_exhaustive_winners": 2,
+      "certified_global_maximum": 23,
+      "complete_windows": 2132556,
+      "configuration": {
+        "beam": 1,
+        "common_depth": 2,
+        "expansions": 2000000,
+        "id": "total-c2-k2",
+        "k": 2,
+        "max_length": 80,
+        "score": "total"
+      },
+      "expanded_nodes": 41969920,
+      "expansion_capped_graphs": 0,
+      "finite_verified_pairs": 2285,
+      "full_joint_alphabet": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "k": [
+        2
+      ],
+      "m": 6,
+      "operational_topband": {
+        "band": 2,
+        "crowding_threshold": 3,
+        "crowding_triggered": false,
+        "false_apparent_champions": 2,
+        "finite_winners_outside_topband": 0,
+        "maximum_finite_upper": 55,
+        "misses_are_not_in_the_finite_topband": true,
+        "rule": "finite verified upper >= maximum finite upper - band; preserve every tie",
+        "shapes": 2,
+        "size": 2,
+        "true_winners": 0,
+        "unresolved_winners": 2,
+        "winner_recall_global": 0.0,
+        "winners_in_pool_outside_topband": 2
+      },
+      "partial_windows": 0,
+      "pool": "near2-fixedroot",
+      "queries": 5066,
+      "reference_cutoff": {
+        "false_survivors": 4220,
+        "finite_champion_precision": 0.0,
+        "finite_compatible": 1441,
+        "finite_false_apparent_champions": 1441,
+        "rule": "survive iff no verified pair or best verified upper >= certified global maximum",
+        "survivor_champion_precision": 0.0004737091425864519,
+        "survivors": 4222,
+        "true_winners": 2,
+        "unresolved_nonwinners": 2779,
+        "witness_excluded_nonwinners": 844
+      },
+      "unresolved_no_pair": 2781,
+      "winner_count_in_pool": 2,
+      "winner_recall": 1.0
+    },
+    {
+      "actual_H_not_inferred_from_upper_or_miss": true,
+      "all_exhaustive_winners": 2,
+      "certified_global_maximum": 23,
+      "complete_windows": 417212,
+      "configuration": {
+        "beam": 1,
+        "common_depth": 2,
+        "expansions": 2000000,
+        "id": "total-c2-k2",
+        "k": 2,
+        "max_length": 80,
+        "score": "total"
+      },
+      "expanded_nodes": 8217008,
+      "expansion_capped_graphs": 0,
+      "finite_verified_pairs": 234,
+      "full_joint_alphabet": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "k": [
+        2
+      ],
+      "m": 6,
+      "operational_topband": {
+        "band": 2,
+        "crowding_threshold": 3,
+        "crowding_triggered": true,
+        "false_apparent_champions": 4,
+        "finite_winners_outside_topband": 0,
+        "maximum_finite_upper": 42,
+        "misses_are_not_in_the_finite_topband": true,
+        "rule": "finite verified upper >= maximum finite upper - band; preserve every tie",
+        "shapes": 4,
+        "size": 4,
+        "true_winners": 0,
+        "unresolved_winners": 2,
+        "winner_recall_global": 0.0,
+        "winners_in_pool_outside_topband": 2
+      },
+      "partial_windows": 0,
+      "pool": "winners-allroots",
+      "queries": 885,
+      "reference_cutoff": {
+        "false_survivors": 802,
+        "finite_champion_precision": 0.0,
+        "finite_compatible": 153,
+        "finite_false_apparent_champions": 153,
+        "rule": "survive iff no verified pair or best verified upper >= certified global maximum",
+        "survivor_champion_precision": 0.0024875621890547263,
+        "survivors": 804,
+        "true_winners": 2,
+        "unresolved_nonwinners": 649,
+        "witness_excluded_nonwinners": 81
+      },
+      "unresolved_no_pair": 651,
+      "winner_count_in_pool": 2,
+      "winner_recall": 1.0
+    },
+    {
+      "actual_H_not_inferred_from_upper_or_miss": true,
+      "all_exhaustive_winners": 2,
+      "certified_global_maximum": 23,
+      "complete_windows": 103628,
+      "configuration": {
+        "beam": 1,
+        "common_depth": 2,
+        "expansions": 2000000,
+        "id": "total-c2-k2",
+        "k": 2,
+        "max_length": 80,
+        "score": "total"
+      },
+      "expanded_nodes": 2041056,
+      "expansion_capped_graphs": 0,
+      "finite_verified_pairs": 43,
+      "full_joint_alphabet": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "k": [
+        2
+      ],
+      "m": 6,
+      "operational_topband": {
+        "band": 2,
+        "crowding_threshold": 3,
+        "crowding_triggered": false,
+        "false_apparent_champions": 2,
+        "finite_winners_outside_topband": 0,
+        "maximum_finite_upper": 40,
+        "misses_are_not_in_the_finite_topband": true,
+        "rule": "finite verified upper >= maximum finite upper - band; preserve every tie",
+        "shapes": 2,
+        "size": 2,
+        "true_winners": 0,
+        "unresolved_winners": 1,
+        "winner_recall_global": 0.0,
+        "winners_in_pool_outside_topband": 1
+      },
+      "partial_windows": 0,
+      "pool": "winners-fixedroot",
+      "queries": 212,
+      "reference_cutoff": {
+        "false_survivors": 198,
+        "finite_champion_precision": 0.0,
+        "finite_compatible": 30,
+        "finite_false_apparent_champions": 30,
+        "rule": "survive iff no verified pair or best verified upper >= certified global maximum",
+        "survivor_champion_precision": 0.005025125628140704,
+        "survivors": 199,
+        "true_winners": 1,
+        "unresolved_nonwinners": 168,
+        "witness_excluded_nonwinners": 13
+      },
+      "unresolved_no_pair": 169,
+      "winner_count_in_pool": 1,
+      "winner_recall": 0.5
+    }
+  ],
+  "query_seal": {
+    "bytes": 527,
+    "path": "out/family1-adaptiveness-20261026/policy/m6/query-seal.json",
+    "sha256": "0452cea45e12ad51fcbc3261850224e8095fa674bad89fe1d636677cd59ea900"
+  },
+  "retained_upper_portfolios": [],
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "window": "full four-symbol joint"
+}

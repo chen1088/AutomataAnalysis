@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "k": null,
+  "randomness": false,
+  "reference_labels_joined_after_complete_queries": true,
+  "comparisons": [
+    {
+      "method": "SAT-CEGAR",
+      "k": null,
+      "cases": 20,
+      "positive_count": 10,
+      "miss_count": 10,
+      "matching_reference_count": 6,
+      "largest_positive_gap": 4,
+      "m6_m7_positive_count": 0,
+      "total_conflicts": 332415,
+      "total_propagations": 342849107,
+      "total_profiles": 0,
+      "total_graph_edges": 0
+    },
+    {
+      "method": "profile-cycle-BFS",
+      "k": null,
+      "cases": 20,
+      "positive_count": 10,
+      "miss_count": 10,
+      "matching_reference_count": 10,
+      "largest_positive_gap": 0,
+      "m6_m7_positive_count": 0,
+      "total_conflicts": 0,
+      "total_propagations": 0,
+      "total_profiles": 4035205,
+      "total_graph_edges": 8070410
+    }
+  ],
+  "sat_limits": {
+    "max_length": 80,
+    "conflicts_per_length": 20000,
+    "propagations_per_length": 5000000,
+    "encoding": "onehot+inverse-support",
+    "input_decisions_only": true,
+    "initial_masks": "all permutation masks, else 0",
+    "refinement": "all failing masks in numeric order",
+    "schedule": "powers of two to 80, then bracket/near-upper refinement"
+  },
+  "cycle_limits": {
+    "max_states": 262144,
+    "max_roots": 64,
+    "max_length": 80,
+    "max_return_edges": 10000000
+  },
+  "verification": {
+    "final_positive_mask_replays": 396,
+    "all_passed": true
+  },
+  "semantic_validation": {
+    "passed": true,
+    "exact_reference_cases": 64,
+    "encoding_case_checks": 128,
+    "scalar_mask_checks": 964,
+    "encodings": [
+      "binary",
+      "onehot"
+    ],
+    "k": null,
+    "profile_cycle_small_cases": 64,
+    "profile_cycle_small_exact_matches": 64,
+    "sat_exact_repeat_result_and_work_counters_equal": true
+  },
+  "backend_build": {
+    "archive": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/profile/source/unpacked/python_sat-1.9.dev17/solvers/minisat22.tar.gz",
+    "archive_sha256": "92957d851cdc3baddfe07b5fc80ed5a0237c489d0c52ae72f62844b3b46d7808",
+    "patched_solver_sha256": "7bbacb7a4eea39c77da24e98209f16fd255e3ccca8315e863f75cf9518557310",
+    "patched_header_sha256": "dea6a672204e1c58cc3f5f1c9c1b743a1f4ab9d2ab8202fc467842a19e0bfab9",
+    "wrapper_sha256": "925ec093f298e963e40096f6a1c87b17872ae359767f541ab97afad0a78ef521",
+    "library_sha256": "7290fcd7f4439058d7f4a74b2e19dd50766e4d0ba413e570e974402df3ca7eb6",
+    "random_calls_compiled_out": true,
+    "command": [
+      "g++",
+      "-O3",
+      "-std=c++11",
+      "-fPIC",
+      "-shared",
+      "-fpermissive",
+      "-I",
+      "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/profile/native/minisat",
+      "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/profile/native/wrapper.cpp",
+      "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/profile/native/minisat/core/Solver.cc",
+      "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/profile/native/minisat/utils/Options.cc",
+      "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/profile/native/minisat/utils/System.cc",
+      "-o",
+      "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/profile/native/libdeterministic_minisat.so"
+    ]
+  },
+  "query_sources": [
+    {
+      "path": "out/family1-finder-strategies-20261026/profile/onehot-final-matrix/records.jsonl",
+      "bytes": 57760,
+      "sha256": "d2248d002e496052c80af55a8814939b55ecae052fd1fe6bbae43ad7817d8440"
+    },
+    {
+      "path": "out/family1-finder-strategies-20261026/profile/cycles-final-matrix.jsonl",
+      "bytes": 7989,
+      "sha256": "40080c8eb40559e9b87066e7616dbbed6f2e09b54c78a13382fa93b94fb4b80c"
+    },
+    {
+      "path": "out/family1-finder-strategies-20261026/profile/cases.jsonl",
+      "bytes": 1800,
+      "sha256": "5290a893ae4140b5fece226546cdfb74499eb9f93cd69bf039b835d9cecae19d"
+    }
+  ],
+  "truth_sources": [
+    {
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "bytes": 2753,
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "path": "results/family1-m7/maximizers.jsonl",
+      "bytes": 2694,
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "scripts/family1_sat_pair_experiment.py",
+      "bytes": 17747,
+      "sha256": "23cd3a2a0161fc5bf95081bbefd3b7df310b43eaddff51ca0a6d51da24a98c52"
+    },
+    {
+      "path": "Family1ProfileCycles.h",
+      "bytes": 8873,
+      "sha256": "0af4af77dd225760e0d07f288315bb743bc3c45e7250271ff678f477dd2ace00"
+    },
+    {
+      "path": "tests/Family1ProfileCyclesBenchmark.cpp",
+      "bytes": 2416,
+      "sha256": "9f4991448f89d95cbed736a457dc1a42e3d7002bc9fd958499da9d7b0ed0644f"
+    },
+    {
+      "path": "scripts/family1_alternative_strategy_publish.py",
+      "bytes": 7101,
+      "sha256": "9775daee7ab46df3f509d98c6cd0e2e77af697b1720698ee8d9839d0b8289bca"
+    }
+  ],
+  "records": {
+    "path": "results/family1-finder-strategies-20261026/alternative/cases.csv",
+    "bytes": 7306,
+    "sha256": "3f647bdd10276af9365e1423ebef841c4783b3cbb941aa36d819b0c63f078028"
+  },
+  "limits": [
+    "Neither alternative recovers the m6/m7 champions at these budgets.",
+    "Full-profile cycle BFS is bounded; unseen states/cycles are not excluded.",
+    "SAT UNKNOWN is a work-limit result, never UNSAT.",
+    "SAT query lower/minimality claims are CNF-solver conclusions; exact reference labels are independent.",
+    "Observed runtime was collected alongside other experiments and is not a controlled speed comparison."
+  ]
+}

@@ -1,5 +1,14 @@
 # Generic hard-pair finder
 
+The [heuristics reference](shortest-hard-pair-heuristics.md) gives the complete
+algorithm overview, including joint block, rolling and adaptive search.
+
+For the four-symbol `00,01,10,11` finder and its first-difference startup,
+see [joint search](family1-joint.md) and the
+[generic calibration](../results/hard-pair-joint-benchmark-20261026/README.md).
+The module described below searches a common suffix after distinct prefixes;
+its binary-window k is different from joint-symbol k.
+
 `HardPairFinder.h` is a reusable header for finite families of binary DFAs.
 It has no Family 1 dependency. Coordinates may have different state counts,
 different roots, and unrelated transitions. The Family 1 command-line adapter

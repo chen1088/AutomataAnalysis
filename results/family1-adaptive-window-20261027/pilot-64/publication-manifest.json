@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "bytes": 4589,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/README.md",
+      "sha256": "dbabed2e4d30112ac72a23591a8013dce2f0f5b7ae5380302f19584dd078139d"
+    },
+    {
+      "bytes": 101118,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/cases.csv",
+      "sha256": "7b4a8c7d160a39bca21b0138638dabf077aa4bd5799ce4650afb3f197466db41"
+    },
+    {
+      "bytes": 1243,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/input-cases.csv",
+      "sha256": "91c6be282803658d99d7a94fe688292d47c022797801e37b82883eeb439c2ab6"
+    },
+    {
+      "bytes": 17476,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/query-audit.json",
+      "sha256": "cc6c5e1ca5cb8dea5559b15cde7a45c46da25a1e7c0d6ad91c895109ae8db94c"
+    },
+    {
+      "bytes": 12691,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/run.json",
+      "sha256": "f8556158deaaa2cb7a92076727d027ff9515dce1c62b0b0d60b1f1a93bfdaa5a"
+    },
+    {
+      "bytes": 79022,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/summary.json",
+      "sha256": "0864d265f6df59b1aca161df2400e25a6f4ff560978cc290a1baa136eafec9e4"
+    },
+    {
+      "bytes": 2065,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/validation.json",
+      "sha256": "16b90b9748580b00f32ab1af1fa9b01cdc1a565afe8f6e2928166d203553993c"
+    },
+    {
+      "bytes": 242466,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-decisions.csv",
+      "sha256": "db6b137faf80d9ceae02a7a0b7ce36e4acf576c316c154bb8dc266886b991ef6"
+    },
+    {
+      "bytes": 749841,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-000.csv",
+      "sha256": "8d983d86d1d42fb60e71dc33ffc4e90ee2cb1ef0a6ce7493ceb874dcd51afbb3"
+    },
+    {
+      "bytes": 749637,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-001.csv",
+      "sha256": "afb452e167c8f39568afe170203e1348a0fe8ee878e57cc083edf1d0ed269976"
+    },
+    {
+      "bytes": 749780,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-002.csv",
+      "sha256": "6949fdd7fcee8c4b3d9ff16e8bfc6e36bbaf63128fd7583c25cd4b305ddf43af"
+    },
+    {
+      "bytes": 191857,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-003.csv",
+      "sha256": "266569206288a040fdb853b7d77b590a99317d83c0b83a13f480f7e3c361826f"
+    }
+  ]
+}

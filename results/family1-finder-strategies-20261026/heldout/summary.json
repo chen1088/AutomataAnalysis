@@ -1,0 +1,222 @@
+{
+  "all_cases_scored": true,
+  "analysis_source": {
+    "bytes": 14877,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_scored_seed_heldout.py",
+    "sha256": "2be1a19a9b3e38925deb5aca4efca34328134c0746fbfe73d84082fcf1907d02"
+  },
+  "batch_times": [],
+  "configured_joint_ks": [
+    4
+  ],
+  "exact_reference_k": null,
+  "graph_queries": 232,
+  "independent_mask_replays": 20608,
+  "input_cases": 116,
+  "limits": [
+    "Held out from new scored-seed tuning, not a representative sample of full m6/m7 universes.",
+    "Two m6 champions overlap training; strict metrics omit them.",
+    "m7 labels supply nonwinner membership, not exact H or numerical gaps.",
+    "Returned upper bounds do not prove shortestness unless exact=true."
+  ],
+  "manifest": {
+    "bytes": 6048,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/manifest.json",
+    "sha256": "086a0aade8a1806b4858b466af3ba39422824421172b0260d475b6a87faae78e"
+  },
+  "metrics": [
+    {
+      "cases": 116,
+      "complete_windows": 2715374,
+      "configuration": {
+        "beam": 16,
+        "catalogue": 16384,
+        "exact_depth": 16,
+        "fast": false,
+        "id": "original",
+        "joint_k": 4,
+        "prefix_depth": 20,
+        "prefix_words": 1048576,
+        "selected": 512
+      },
+      "expanded_nodes": 736259224,
+      "m6": {
+        "cases": 69,
+        "gap_histogram": {
+          "0": 33,
+          "1": 20,
+          "2": 5,
+          "3": 4,
+          "4": 1,
+          "5": 3,
+          "8": 1,
+          "10": 1,
+          "12": 1
+        },
+        "maximum_gap_if_found": 12,
+        "median_gap_if_found": 1,
+        "misses": 0,
+        "optimal": 33,
+        "within_two": 58
+      },
+      "m7": {
+        "cases": 47,
+        "exact_H_not_claimed": true,
+        "finite_false_compatible_upper_ge34": 21,
+        "misses": 2,
+        "verified_exclusions_upper_le33": 24
+      },
+      "misses": 2,
+      "positive_count": 114,
+      "strict_heldout": false
+    },
+    {
+      "cases": 114,
+      "complete_windows": 2687758,
+      "configuration": {
+        "beam": 16,
+        "catalogue": 16384,
+        "exact_depth": 16,
+        "fast": false,
+        "id": "original",
+        "joint_k": 4,
+        "prefix_depth": 20,
+        "prefix_words": 1048576,
+        "selected": 512
+      },
+      "expanded_nodes": 730254104,
+      "m6": {
+        "cases": 67,
+        "gap_histogram": {
+          "0": 33,
+          "1": 19,
+          "2": 4,
+          "3": 4,
+          "4": 1,
+          "5": 3,
+          "8": 1,
+          "10": 1,
+          "12": 1
+        },
+        "maximum_gap_if_found": 12,
+        "median_gap_if_found": 1,
+        "misses": 0,
+        "optimal": 33,
+        "within_two": 56
+      },
+      "m7": {
+        "cases": 47,
+        "exact_H_not_claimed": true,
+        "finite_false_compatible_upper_ge34": 21,
+        "misses": 2,
+        "verified_exclusions_upper_le33": 24
+      },
+      "misses": 2,
+      "positive_count": 112,
+      "strict_heldout": true
+    },
+    {
+      "cases": 116,
+      "complete_windows": 2661519,
+      "configuration": {
+        "beam": 16,
+        "catalogue": 4096,
+        "exact_depth": 16,
+        "fast": true,
+        "id": "compact",
+        "joint_k": 4,
+        "prefix_depth": 20,
+        "prefix_words": 1048576,
+        "selected": 512
+      },
+      "expanded_nodes": 715646828,
+      "m6": {
+        "cases": 69,
+        "gap_histogram": {
+          "0": 39,
+          "1": 16,
+          "2": 7,
+          "3": 3,
+          "4": 1,
+          "6": 1,
+          "11": 1,
+          "12": 1
+        },
+        "maximum_gap_if_found": 12,
+        "median_gap_if_found": 0,
+        "misses": 0,
+        "optimal": 39,
+        "within_two": 62
+      },
+      "m7": {
+        "cases": 47,
+        "exact_H_not_claimed": true,
+        "finite_false_compatible_upper_ge34": 27,
+        "misses": 0,
+        "verified_exclusions_upper_le33": 20
+      },
+      "misses": 0,
+      "positive_count": 116,
+      "strict_heldout": false
+    },
+    {
+      "cases": 114,
+      "complete_windows": 2632543,
+      "configuration": {
+        "beam": 16,
+        "catalogue": 4096,
+        "exact_depth": 16,
+        "fast": true,
+        "id": "compact",
+        "joint_k": 4,
+        "prefix_depth": 20,
+        "prefix_words": 1048576,
+        "selected": 512
+      },
+      "expanded_nodes": 709254572,
+      "m6": {
+        "cases": 67,
+        "gap_histogram": {
+          "0": 39,
+          "1": 15,
+          "2": 6,
+          "3": 3,
+          "4": 1,
+          "6": 1,
+          "11": 1,
+          "12": 1
+        },
+        "maximum_gap_if_found": 12,
+        "median_gap_if_found": 0,
+        "misses": 0,
+        "optimal": 39,
+        "within_two": 60
+      },
+      "m7": {
+        "cases": 47,
+        "exact_H_not_claimed": true,
+        "finite_false_compatible_upper_ge34": 27,
+        "misses": 0,
+        "verified_exclusions_upper_le33": 20
+      },
+      "misses": 0,
+      "positive_count": 114,
+      "strict_heldout": true
+    }
+  ],
+  "native_expansion_cap_cannot_be_reached": {
+    "assumptions": "k4, B16, no diagonal or unequal beam, L<=80",
+    "cap": 2000000,
+    "max_possible_nodes_per_attempt": 108800
+  },
+  "query_seal": {
+    "bytes": 838,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/query-seal.json",
+    "sha256": "0451e1d268cd4a21bce24d73061527589efdeb085ed43b7a6c996dbf8e518bb9"
+  },
+  "schema": 1,
+  "scores_used_after_queries_only": true,
+  "strict_heldout_cases": 114,
+  "training_overlap_cases": 2,
+  "wall_seconds": 87.57582029399964
+}

@@ -1,0 +1,22 @@
+{
+  "all_configured_cases_completed": true,
+  "keys": {
+    "bytes": 506,
+    "path": "out/family1-finder-strategies-20261026/tail-scored/keys.txt",
+    "sha256": "19812d29318a42c830f1fa87aabc117d368fd226488ee5bf982abe7fa1fd02a7"
+  },
+  "queries": [
+    {
+      "bytes": 31780,
+      "path": "out/family1-finder-strategies-20261026/tail-scored/records-max-first.jsonl",
+      "sha256": "763f8c0b38e02ff4013208928917febc287c7dc77b12fb9bcf5897af037c303a"
+    },
+    {
+      "bytes": 31780,
+      "path": "out/family1-finder-strategies-20261026/tail-scored/records-sum-first.jsonl",
+      "sha256": "5c7e3cc0b0a1ffea791e2f5678c598bf30affd6b0ed07a6edb3c71310eac76cd"
+    }
+  ],
+  "reference_labels_not_used_in_queries": true,
+  "same_catalogue_and_exact_phase_confirmed": true
+}

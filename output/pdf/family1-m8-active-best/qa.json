@@ -1,27 +1,48 @@
 {
+  "schema": 1,
   "visual_review_passed": true,
+  "visual_review_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-active-best-with-witness-final-gallery-pins-20261026-preview.png",
+    "sha256": "c626bcd79947285b0d219308ca7d38d8d645e1abc2f8ce51e2dfe63081cbb48d",
+    "bytes": 120784
+  },
+  "pdf": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/active-best.pdf",
+    "sha256": "98a85c7fd22cc7c84f94a4f68321b6b128d306d460691f987375fe406652e829",
+    "bytes": 32850
+  },
+  "source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/records.json",
+    "sha256": "9c4b0e4f266a2e25756c6b9d55608e8f3fbcef8c014188456a03af22cc0cc4f1",
+    "bytes": 47180
+  },
+  "generator": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_active_best_figure.py",
+    "sha256": "dcd99dfe6ab7410a6a6932a36ae4c7ed1e1f3fb29b1e97f456bbd644bd9b4142",
+    "bytes": 15952
+  },
+  "renderer": "matplotlib-vector-pdf",
+  "editable_tikz_emitted": true,
+  "tex_compilation_performed": false,
   "all_edges_solid": true,
   "edge_labels_shown": false,
+  "original_graph_tikz_unchanged": true,
+  "edges_checked": 16,
   "pages": 1,
-  "source": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\records.json",
-    "sha256": "d7e43127ea97d0bf37ccdfe48582d5f247d639623173959fc5ec1a1a341e3930",
-    "bytes": 38888
-  },
-  "preview": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\tmp\\pdfs\\family1-unlabelled-final\\final-active.png",
-    "sha256": "b8d0fc90432582887c8d2f8d455c041337e32029b52a1b46415e34b8735f40c6",
-    "bytes": 48894
-  },
   "all_top_rooted_cases_retained": true,
-  "generator": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_active_best_figure.py",
-    "sha256": "3bfd66d11e961c91fd713ac8e25e7fc62bf70431baacf75d63f8eb9660f397fb",
-    "bytes": 5347
+  "both_witness_words_displayed": true,
+  "witness_length": 50,
+  "producer_k": null,
+  "producer_k_label": "unknown",
+  "window_kind": "common-suffix-historical",
+  "scalar_replay_dfa_count": 256,
+  "empty_pair_metric": 0,
+  "final_pair_metric": 0,
+  "shortestness_certified": false,
+  "trace_length": 51,
+  "semantic_tests": {
+    "command": "python3 tests/hard_pair_witness_figure_test.py",
+    "passed": 6
   },
-  "grouping": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\scripts\\family1_grouped_atlas.py",
-    "sha256": "34c6d5ecde6342db4e1ac8fdb5764580477a645eb1eb4acc5f07b083cca66bc0",
-    "bytes": 19943
-  }
+  "prior_plate_archive": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-active-best-before-paired-words-20261026"
 }

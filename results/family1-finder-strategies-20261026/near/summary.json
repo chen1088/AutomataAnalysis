@@ -1,0 +1,298 @@
+{
+  "broader_within_two_gate_passed": false,
+  "calibration": {
+    "all_exact_reference_cases_optimal": false,
+    "all_exact_reference_cases_within_one": true,
+    "all_exact_reference_cases_within_two": true,
+    "cases": 20,
+    "configured_joint_k": 4,
+    "exact_evaluated_words": 162283144,
+    "exact_reference_cases": 20,
+    "expanded_nodes": 127612864,
+    "expansion_capped_graphs": 0,
+    "found": 20,
+    "independent_final_and_improvement_mask_replays": 5132,
+    "m7_lengths": [
+      35,
+      34,
+      34,
+      35,
+      34,
+      34,
+      34,
+      34
+    ],
+    "maximum_gap_if_found": 1,
+    "misses": 0,
+    "observed_wall_seconds": 61.52191150900035,
+    "optimal_pairs": 18,
+    "oracle_depth": 24,
+    "oracle_producing_k": null,
+    "partial_windows": 0,
+    "prefix_words_evaluated": 16777200,
+    "records": {
+      "bytes": 48532,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/final-calibration-portfolio/records.jsonl",
+      "sha256": "7cc63525fc90e98dd12dde008355c614ea51d3bc322678674895fc617354e669"
+    },
+    "seed_mode": "scored",
+    "seed_ranking": "portfolio",
+    "truth_loaded_after_query_seal": true,
+    "truth_sources": [
+      {
+        "bytes": 2753,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m1-m6/maximizers.jsonl",
+        "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+      },
+      {
+        "bytes": 2694,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m7/maximizers.jsonl",
+        "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+      }
+    ],
+    "universal_error_bound_certified": false,
+    "upper_histogram": {
+      "1": 1,
+      "10": 1,
+      "15": 5,
+      "23": 2,
+      "3": 1,
+      "34": 6,
+      "35": 2,
+      "6": 2
+    },
+    "within_one": 20,
+    "within_two": 20
+  },
+  "frontier": {
+    "all_exact_reference_cases_optimal": false,
+    "all_exact_reference_cases_within_one": true,
+    "all_exact_reference_cases_within_two": true,
+    "cases": 343,
+    "configured_joint_k": 4,
+    "exact_evaluated_words": 1191295686,
+    "exact_reference_cases": 296,
+    "expanded_nodes": 1074470144,
+    "expansion_capped_graphs": 0,
+    "found": 343,
+    "independent_final_and_improvement_mask_replays": 52100,
+    "m7_lengths": [
+      34,
+      36,
+      34,
+      32,
+      35,
+      32,
+      33,
+      34,
+      33,
+      35,
+      32,
+      33,
+      33,
+      34,
+      34,
+      34,
+      33,
+      35,
+      32,
+      32,
+      32,
+      34,
+      32,
+      32,
+      37,
+      35,
+      34,
+      33,
+      33,
+      43,
+      41,
+      32,
+      32,
+      32,
+      34,
+      32,
+      33,
+      34,
+      35,
+      35,
+      34,
+      35,
+      33,
+      33,
+      32,
+      32,
+      34,
+      32,
+      40,
+      34,
+      32,
+      33,
+      33,
+      34,
+      33
+    ],
+    "maximum_gap_if_found": 1,
+    "misses": 0,
+    "observed_wall_seconds": 132.75131202199918,
+    "optimal_pairs": 294,
+    "oracle_depth": 24,
+    "oracle_producing_k": null,
+    "partial_windows": 0,
+    "prefix_words_evaluated": 119537550,
+    "records": {
+      "bytes": 801705,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/final-frontier343-portfolio/records.jsonl",
+      "sha256": "bd5ad0649df3692e4f1fed8245af8b715522075a47e4e098541b9853e9a82d40"
+    },
+    "seed_mode": "scored",
+    "seed_ranking": "portfolio",
+    "truth_loaded_after_query_seal": true,
+    "truth_sources": [
+      {
+        "bytes": 2753,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m1-m6/maximizers.jsonl",
+        "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+      },
+      {
+        "bytes": 2694,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m7/maximizers.jsonl",
+        "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+      },
+      {
+        "bytes": 171061,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-neighbor-seeds/near-top.jsonl",
+        "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+      }
+    ],
+    "universal_error_bound_certified": false,
+    "upper_histogram": {
+      "1": 4,
+      "10": 1,
+      "13": 107,
+      "14": 27,
+      "15": 5,
+      "2": 2,
+      "21": 55,
+      "22": 12,
+      "23": 2,
+      "3": 1,
+      "32": 16,
+      "33": 13,
+      "34": 14,
+      "35": 7,
+      "36": 1,
+      "37": 1,
+      "4": 14,
+      "40": 1,
+      "41": 1,
+      "43": 1,
+      "5": 9,
+      "6": 2,
+      "8": 37,
+      "9": 10
+    },
+    "within_one": 296,
+    "within_two": 296
+  },
+  "frontier_compact_retries": 2,
+  "frontier_proven_error_above_two": [
+    {
+      "error_lower_bound": 4,
+      "key": "0001020301040506020300040506",
+      "prior_verified_upper": 32,
+      "returned_upper": 36
+    },
+    {
+      "error_lower_bound": 4,
+      "key": "0102000304050104050600030206",
+      "prior_verified_upper": 33,
+      "returned_upper": 37
+    },
+    {
+      "error_lower_bound": 11,
+      "key": "0102000304050203000604050003",
+      "prior_verified_upper": 32,
+      "returned_upper": 43
+    },
+    {
+      "error_lower_bound": 9,
+      "key": "0102000304050206000104050206",
+      "prior_verified_upper": 32,
+      "returned_upper": 41
+    },
+    {
+      "error_lower_bound": 3,
+      "key": "0102010304050002000603060405",
+      "prior_verified_upper": 32,
+      "returned_upper": 35
+    },
+    {
+      "error_lower_bound": 3,
+      "key": "0102010304050405000300060206",
+      "prior_verified_upper": 32,
+      "returned_upper": 35
+    },
+    {
+      "error_lower_bound": 8,
+      "key": "0102020304050304000602030006",
+      "prior_verified_upper": 32,
+      "returned_upper": 40
+    }
+  ],
+  "m7_nonwinner_reference_cutoff_exclusions": 29,
+  "m8": {
+    "all_exact_reference_cases_optimal": null,
+    "all_exact_reference_cases_within_one": null,
+    "all_exact_reference_cases_within_two": null,
+    "cases": 1,
+    "configured_joint_k": 4,
+    "exact_evaluated_words": 8388606,
+    "exact_reference_cases": 0,
+    "expanded_nodes": 44178176,
+    "expansion_capped_graphs": 0,
+    "found": 1,
+    "independent_final_and_improvement_mask_replays": 768,
+    "m7_lengths": [],
+    "maximum_gap_if_found": null,
+    "misses": 0,
+    "observed_wall_seconds": 18.575081184999362,
+    "optimal_pairs": 0,
+    "oracle_depth": 24,
+    "oracle_producing_k": null,
+    "partial_windows": 0,
+    "prefix_words_evaluated": 2097150,
+    "records": {
+      "bytes": 2859,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/final-m8-portfolio/records.jsonl",
+      "sha256": "d8d0112ab784664e61b2df122b19b96b7ca5a1adfcaa4e31c510de92c868c532"
+    },
+    "seed_mode": "scored",
+    "seed_ranking": "portfolio",
+    "truth_loaded_after_query_seal": true,
+    "truth_sources": [
+      {
+        "bytes": 2753,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m1-m6/maximizers.jsonl",
+        "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+      },
+      {
+        "bytes": 2694,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m7/maximizers.jsonl",
+        "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+      }
+    ],
+    "universal_error_bound_certified": false,
+    "upper_histogram": {
+      "52": 1
+    },
+    "within_one": 0,
+    "within_two": 0
+  },
+  "m8_error_at_least": 2,
+  "native_exact_frontier_graphs": 288,
+  "universal_error_bound_certified": false,
+  "winner_within_one_gate_passed": true,
+  "winner_within_two_gate_passed": true
+}

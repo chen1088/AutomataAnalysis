@@ -3,6 +3,7 @@
 #include <array>
 #include <cstdint>
 #include <iostream>
+#include <limits>
 #include <map>
 #include <set>
 #include <stdexcept>
@@ -66,6 +67,9 @@ int main()
                 require(validate(f,stratified)==expected&&stratified.complete_pair_collection,"LCP strata lost complete bounded pair collection");
                 o.force_hash_collisions=false;
                 require(ordered_pairs(stratified)==ordered_pairs(enumerate(f,o)),"LCP strata depended on matching hashes");
+                o.deterministic=true;
+                const auto canonical=enumerate(f,o);
+                require(validate(f,canonical)==expected&&canonical.complete_pair_collection,"strict deterministic traversal lost exhaustive reference pairs");
                 total_pairs+=expected.size();++tables;
             }
         }
@@ -133,11 +137,41 @@ int main()
         o.max_pairs=1;require(validate(constant,enumerate(constant,o)).size()==1,"one-pair LCP budget failed");
         o.common_prefix_depth=9;bool rejected=false;try{enumerate(constant,o);}catch(const std::invalid_argument&){rejected=true;}
         require(rejected,"LCP strata depth guard missing");
+
+        // Strict traversal must not use fixed-seed sampling or seeded pair
+        // ranks. It still distributes a bounded pair budget across depths and
+        // every available actual common-prefix stratum.
+        o=hardpair::PrefixSeedOptions{};o.deterministic=true;
+        o.max_depth=10;o.max_words=1024;o.max_pairs=128;o.common_prefix_depth=8;
+        o.sample_depths={20,24,63};o.samples_per_depth=65536;o.seed=0;
+        const auto strict=enumerate(constant,o);validate(constant,strict);
+        o.seed=std::numeric_limits<std::uint64_t>::max();
+        o.samples_per_depth=1;o.sample_depths={11,16};
+        require(ordered_pairs(strict)==ordered_pairs(enumerate(constant,o)),"strict traversal depended on seed or sampled-word settings");
+        o.force_hash_collisions=true;
+        require(ordered_pairs(strict)==ordered_pairs(enumerate(constant,o)),"strict traversal depended on profile hash collisions");
+        require(strict.completed_depth==10&&strict.sampled_words_evaluated==0&&strict.largest_sampled_depth==0,
+                "strict traversal evaluated sampled words or skipped complete layers");
+        std::set<std::size_t> strict_depths,strict_lcps;
+        for(const auto&p:strict.pairs){strict_depths.insert(p.first.size());strict_lcps.insert(lcp(p.first,p.second));}
+        require(strict_depths.size()==10,"strict traversal crowded out complete depths");
+        for(std::size_t p=0;p<=8;++p)require(strict_lcps.count(p),"strict traversal crowded out an actual-LCP stratum");
+        for(const auto&layer:strict.per_depth)
+            require(layer.complete_enumeration&&!layer.sampled&&layer.retained_candidates<=2*o.max_pairs,
+                    "strict traversal claimed sampled coverage or exceeded its candidate budget");
+        o.max_words=256;const auto strict_capped=enumerate(constant,o);validate(constant,strict_capped);
+        require(strict_capped.completed_depth==8&&strict_capped.word_capped&&!strict_capped.complete_pair_collection
+                &&strict_capped.sampled_words_evaluated==0,"strict traversal bypassed the complete-word-layer cap");
+        hardpair::prefix_seed_detail::PairCursor lexical(4,true);
+        const std::array<std::pair<std::size_t,std::size_t>,6> lexical_expected{{{0,1},{1,2},{2,3},{0,2},{1,3},{0,3}}};
+        for(const auto&expected:lexical_expected)require(lexical.next()==expected,"canonical bucket pair traversal is not gap-then-lexical");
+        require(!lexical.next(),"canonical bucket traversal repeated a pair");
         std::cout<<"{\"passed\":true,\"explicit_binary_DFAs\":"<<tables<<",\"complete_reference_pairs\":"<<total_pairs
             <<",\"fresh_per_length_tables_checked\":true,\"full_profiles_checked_under_forced_hash\":true"
             <<",\"common_prefix_preserved\":true,\"heterogeneous_roots_checked\":true,\"depth_diversity_checked\":true"
             <<",\"long_sampled_layers_labeled_and_deterministic\":true,\"caps_interrupt_empty_family_checked\":true"
-            <<",\"actual_LCP_0_through_8_diverse_and_bounded\":true,\"LCP_complete_reference_pairs_checked\":"<<total_pairs<<"}\n";
+            <<",\"actual_LCP_0_through_8_diverse_and_bounded\":true,\"LCP_complete_reference_pairs_checked\":"<<total_pairs
+            <<",\"strict_deterministic_seed_independence_and_caps_checked\":true}\n";
         return 0;
     }catch(const std::exception&e){std::cerr<<"HardPairPrefixSeedsIndependent: "<<e.what()<<'\n';return 1;}
 }

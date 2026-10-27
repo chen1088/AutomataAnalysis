@@ -1,0 +1,36 @@
+{
+  "all_queries_completed": true,
+  "manifest": {
+    "bytes": 5128,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/manifest.json",
+    "sha256": "dddc186aa67412f6b7a5718dda5cc956df786e54800ded96fbff4fa6fc03b764"
+  },
+  "native_outputs": [
+    {
+      "bytes": 29333,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-deletion.jsonl",
+      "sha256": "77dc6be155e5739d7a569dd388d46234c3839f877c9f8c62521266c7a545fc6e"
+    },
+    {
+      "bytes": 196317,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-mixed.jsonl",
+      "sha256": "ea1126cc1e1333143d16a70d412e1ee73d8926dfd0d4b49e2d1d0af22dc4f46c"
+    },
+    {
+      "bytes": 40151,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-edits4.jsonl",
+      "sha256": "a5cc8f301588f9ab9cb41696532f87318691c5cf0c6bdd2a41169dbb564d5703"
+    },
+    {
+      "bytes": 180554,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-tail16.jsonl",
+      "sha256": "f32cbc28c54439be2652d9a54b711c196e91ec3cbb8872e936bb1ca31b65a966"
+    },
+    {
+      "bytes": 175778,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-prefix16.jsonl",
+      "sha256": "bfc353cdaf02ff1e3a8c5706581262a20928554d00d1001c4ed518da215ec9b7"
+    }
+  ],
+  "target_truth_read": false
+}

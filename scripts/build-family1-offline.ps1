@@ -46,7 +46,11 @@ $sourcePins = @(Get-SourcePins)
 # Override an inherited toolchain explicitly: this build needs the MSVC STL,
 # not vcpkg, and must not trigger a manifest dependency installation.
 Invoke-Native { & $cmakeExe -S $repoRoot -B $BuildDirectory -G "Visual Studio 17 2022" -A x64 "-DCMAKE_TOOLCHAIN_FILE=" "-DFAMILY1_OFFLINE_ONLY=ON" "-DBUILD_TESTING=ON" }
-Invoke-Native { & $cmakeExe --build $BuildDirectory --config $Configuration --target Family1Offline }
+if ($SkipTests) {
+    Invoke-Native { & $cmakeExe --build $BuildDirectory --config $Configuration --target Family1Offline }
+} else {
+    Invoke-Native { & $cmakeExe --build $BuildDirectory --config $Configuration }
+}
 if (-not $SkipTests) {
     $ctestExe = Join-Path (Split-Path -Parent $cmakeExe) "ctest.exe"
     if (-not (Test-Path -LiteralPath $ctestExe -PathType Leaf)) { throw "ctest.exe was not found beside CMake: $ctestExe" }

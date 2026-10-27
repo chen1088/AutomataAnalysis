@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "passed": true,
+  "randomness": false,
+  "development_trial_not_heldout": true,
+  "query_seal": {
+    "path": "out/family1-finder-strategies-20261026/final-window-trials/query-seal.json",
+    "bytes": 761,
+    "sha256": "a5eea7183cfee96e8e7d49d54f18589f9ef245bc73930cf893846d904e67fdaf"
+  },
+  "query_manifest": {
+    "path": "out/family1-finder-strategies-20261026/final-window-trials/manifest.json",
+    "bytes": 1839,
+    "sha256": "482020dda0ebff5e2f020d9052701d7b1a17bbe170a9153bcd5dea015a0c055c"
+  },
+  "reference_labels_joined_only_after_seal": true,
+  "truth_sources": [
+    {
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "bytes": 2753,
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "path": "results/family1-m7/maximizers.jsonl",
+      "bytes": 2694,
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "baseline": {
+    "path": "out/family1-finder-strategies-20261026/production-frontier343/records.jsonl",
+    "bytes": 741455,
+    "sha256": "15682e773ac80f4f8fd0f2407b5f4dea16dbc15331ab9d2636d04f9eb9eeaaf8"
+  },
+  "exact_prefix_producing_k": null,
+  "exact_prefix_depth": 24,
+  "configurations": [
+    {
+      "configuration": "k8-b1",
+      "joint_k": 8,
+      "beam": 1,
+      "winner_cases": 20,
+      "winner_pairs_found": 20,
+      "winner_exact_reference_matches": 13,
+      "winner_within_two": 19,
+      "m7_lengths": [
+        36,
+        36,
+        35,
+        35,
+        36,
+        37,
+        35,
+        34
+      ],
+      "m7_gaps": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        3,
+        1,
+        0
+      ],
+      "largest_winner_gap": 3,
+      "improved_over_baseline": 0,
+      "regressed_from_baseline": 5,
+      "posthoc_nonwinner": {
+        "configuration": "k8-b1",
+        "configured_joint_k": 8,
+        "beam": 1,
+        "m": 7,
+        "key": "0102000304050203000604050003",
+        "producing_k": 8,
+        "producer": "scored-seed-joint",
+        "upper_bound": 45,
+        "reference_H": null,
+        "gap": null,
+        "nonwinner_known_upper": 33,
+        "error_lower_bound": 12,
+        "baseline_upper": 45,
+        "change_from_baseline": 0,
+        "first": "000100111111111100001001100101101011000101010",
+        "second": "000101000000000100001001100101101011000101010",
+        "D_trace": "[0,0,0,0,0,0,128,124,111,116,117,123,123,117,125,116,102,88,80,70,60,51,41,36,33,32,27,20,17,17,14,12,11,10,7,7,6,5,4,2,2,1,1,1,1,0]",
+        "expanded_nodes": 302151720,
+        "complete_windows": 3894,
+        "attempts": 512,
+        "exact_words": 16777214,
+        "catalogue_scored": 16384,
+        "seed_words": 2097150
+      },
+      "expanded_nodes": 971767468,
+      "complete_windows": 14731,
+      "maximum_nodes_per_attempt_theoretical_bound": 873800,
+      "expansion_cap_cannot_bind_at_these_k_beam_length_settings": true
+    },
+    {
+      "configuration": "k6-b4",
+      "joint_k": 6,
+      "beam": 4,
+      "winner_cases": 20,
+      "winner_pairs_found": 20,
+      "winner_exact_reference_matches": 16,
+      "winner_within_two": 18,
+      "m7_lengths": [
+        36,
+        37,
+        34,
+        38,
+        34,
+        36,
+        34,
+        34
+      ],
+      "m7_gaps": [
+        2,
+        3,
+        0,
+        4,
+        0,
+        2,
+        0,
+        0
+      ],
+      "largest_winner_gap": 4,
+      "improved_over_baseline": 1,
+      "regressed_from_baseline": 3,
+      "posthoc_nonwinner": {
+        "configuration": "k6-b4",
+        "configured_joint_k": 6,
+        "beam": 4,
+        "m": 7,
+        "key": "0102000304050203000604050003",
+        "producing_k": 6,
+        "producer": "scored-seed-joint",
+        "upper_bound": 44,
+        "reference_H": null,
+        "gap": null,
+        "nonwinner_known_upper": 33,
+        "error_lower_bound": 11,
+        "baseline_upper": 45,
+        "change_from_baseline": -1,
+        "first": "00000010001111110010010000101110110011010100",
+        "second": "00000010010000001010010000101110110011010100",
+        "D_trace": "[0,0,0,0,0,0,0,0,0,0,128,120,118,122,117,124,120,112,100,94,83,71,56,48,45,41,33,28,23,20,18,15,12,10,10,6,5,4,4,2,2,1,1,1,0]",
+        "expanded_nodes": 88154928,
+        "complete_windows": 17676,
+        "attempts": 512,
+        "exact_words": 16777214,
+        "catalogue_scored": 16384,
+        "seed_words": 2097150
+      },
+      "expanded_nodes": 250389808,
+      "complete_windows": 60588,
+      "maximum_nodes_per_attempt_theoretical_bound": 305760,
+      "expansion_cap_cannot_bind_at_these_k_beam_length_settings": true
+    }
+  ],
+  "all_original_mask_pair_replays": 2956,
+  "records": {
+    "path": "out/family1-finder-strategies-20261026/final-window-trials/cases.csv",
+    "bytes": 9244,
+    "sha256": "87292cddca5424b1190c95b3d4c1c5dcdcc99f267334c6191564ccad1f272267"
+  },
+  "audit_source": {
+    "path": "out/family1-finder-strategies-20261026/final-window-trials/verify.py",
+    "bytes": 7861,
+    "sha256": "0f5a029db697681e4108a1d81fec10fa3df2e5a5554d182450d0aea42954cdeb"
+  },
+  "limits": [
+    "The posthoc m7 nonwinner has certified H<=33, without an exact individual H.",
+    "No finite witness from a bounded joint search is a global shortestness proof.",
+    "Raw old benchmark k is configured k; producing k is N/A on exact-word-layer rows.",
+    "Full-window completion follows the frozen native source and zero-error exit; raw records have no individual-window reports.",
+    "A replacement can regress; any combined result must retain every prior verified upper."
+  ],
+  "public_records": {
+    "path": "results/family1-finder-strategies-20261026/final-window-trials/cases.csv",
+    "sha256": "87292cddca5424b1190c95b3d4c1c5dcdcc99f267334c6191564ccad1f272267"
+  },
+  "baseline_configuration": {
+    "configured_joint_k": 4,
+    "beam_width": 16,
+    "exact_depth": 24,
+    "prefix_depth": 20,
+    "prefix_words": 1048576,
+    "catalogue_size": 16384,
+    "selected_pairs": 512,
+    "seed_mode": "scored"
+  },
+  "decision": "Neither configuration improves any certified winner versus baseline; retain only the additional verified nonwinner length44 upper as a certificate, without promoting either replacement."
+}

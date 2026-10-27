@@ -1,0 +1,464 @@
+{
+  "all_pairs_independently_verified": true,
+  "configurations": [
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        37,
+        35,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 45350056,
+      "records": {
+        "bytes": 8917,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-distance-Psum-k4-b64.jsonl",
+        "sha256": "2e2f3e64fc3560491e363c6219052d0baaccfa1f52982b1d0cf23188bf9629cd"
+      },
+      "variant": "all-distance-Psum-k4-b64",
+      "within_two": 17
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 12,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        36,
+        37,
+        35,
+        38,
+        36,
+        40,
+        34,
+        39
+      ],
+      "maximum_gap": 6,
+      "nodes": 46654632,
+      "records": {
+        "bytes": 8941,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-distance-max-k4-b64.jsonl",
+        "sha256": "b259b4f15dc3135b8f9f8b05df55d48e35442841dc2f15b24b72fff960a0cd09"
+      },
+      "variant": "all-distance-max-k4-b64",
+      "within_two": 16
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        37,
+        35,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 45363880,
+      "records": {
+        "bytes": 8917,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-distance-sum-k4-b64.jsonl",
+        "sha256": "a45e17f520262a814fe1ffb86ee73465fa57f4fdff86762567f87409728f9a87"
+      },
+      "variant": "all-distance-sum-k4-b64",
+      "within_two": 17
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 12,
+      "found": 20,
+      "k": 3,
+      "m7_uppers": [
+        35,
+        37,
+        36,
+        38,
+        34,
+        37,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 10119132,
+      "records": {
+        "bytes": 8536,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k3-b64-diverse-tabu.jsonl",
+        "sha256": "dd41a43fe51f0e01194007b381a191872fecbf7809a1460d5e4faf17d40dfd0e"
+      },
+      "variant": "all-prefix1024-k3-b64-diverse-tabu",
+      "within_two": 16
+    },
+    {
+      "beam": 256,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        36,
+        35,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 160070408,
+      "records": {
+        "bytes": 8605,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b256-tabu.jsonl",
+        "sha256": "062bd08fc3d710d2ff8fdfcd67bc5a480175a07ffea5765ab88d711d12d5b3a4"
+      },
+      "variant": "all-prefix1024-k4-b256-tabu",
+      "within_two": 18
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        37,
+        35,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 45363880,
+      "records": {
+        "bytes": 8817,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b64-bestcount.jsonl",
+        "sha256": "249ca2f983ebc635d595580feee96b2e3c195b91f5e43f6ed440e0c1ab2d52e9"
+      },
+      "variant": "all-prefix1024-k4-b64-bestcount",
+      "within_two": 17
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        37,
+        36,
+        38,
+        34,
+        37,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 45597352,
+      "records": {
+        "bytes": 8827,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b64-futuresum.jsonl",
+        "sha256": "82faf660c3e570021dcbb715b3058d798017a4a2b799655ccf325272e8c83bf0"
+      },
+      "variant": "all-prefix1024-k4-b64-futuresum",
+      "within_two": 16
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        37,
+        35,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 45370792,
+      "records": {
+        "bytes": 8557,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b64.jsonl",
+        "sha256": "b8214306f352cd73049bed9f0aefbfe34f6fb0c17e63e531112e057bd5759bbc"
+      },
+      "variant": "all-prefix1024-k4-b64",
+      "within_two": 17
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 5,
+      "m7_uppers": [
+        35,
+        37,
+        35,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 165407496,
+      "records": {
+        "bytes": 8576,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k5-b64.jsonl",
+        "sha256": "5c995880081ad3a5722e63f0f75c695b3aa12ab20c1b70ba468e9e1ca6a07482"
+      },
+      "variant": "all-prefix1024-k5-b64",
+      "within_two": 17
+    },
+    {
+      "beam": 16,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 13,
+      "found": 20,
+      "k": 6,
+      "m7_uppers": [
+        35,
+        37,
+        36,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 205875176,
+      "records": {
+        "bytes": 8574,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k6-b16.jsonl",
+        "sha256": "383853bb737d0476e7a276a8fb755ddd54d4837309b3c747aefd3e53a4eaa1ea"
+      },
+      "variant": "all-prefix1024-k6-b16",
+      "within_two": 17
+    },
+    {
+      "beam": 16,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 11,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        37,
+        36,
+        38,
+        34,
+        38,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 11800200,
+      "records": {
+        "bytes": 8512,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix128-k4-b16.jsonl",
+        "sha256": "ae9bb3198ed071c9e4a042b443dfc216304546415aaa03635c02c1398240f818"
+      },
+      "variant": "all-prefix128-k4-b16",
+      "within_two": 16
+    },
+    {
+      "beam": 64,
+      "capped_attempts": 0,
+      "cases": 20,
+      "exact": 12,
+      "found": 20,
+      "k": 4,
+      "m7_uppers": [
+        35,
+        37,
+        35,
+        38,
+        34,
+        36,
+        34,
+        39
+      ],
+      "maximum_gap": 5,
+      "nodes": 52128120,
+      "records": {
+        "bytes": 8570,
+        "path": "out/family1-finder-strategies-20261026/rolling/all-prefix4096-k4-b64.jsonl",
+        "sha256": "d3b76c4e925b5ff716a24231f36e355a20bf3bc158e00fc1759677b09ddeaa20"
+      },
+      "variant": "all-prefix4096-k4-b64",
+      "within_two": 17
+    }
+  ],
+  "distance_aggregation_test": {
+    "paired_states": 7843,
+    "passed": true,
+    "scalar_mask_checks": 553102
+  },
+  "exploratory_query_count": 22,
+  "exploratory_subset_queries": [
+    {
+      "cases": 8,
+      "k": 4,
+      "nodes": 312353152,
+      "post_hoc_training_subset": true,
+      "records": {
+        "bytes": 4763,
+        "path": "out/family1-finder-strategies-20261026/rolling/scored-m7-k4-b16-independent.jsonl",
+        "sha256": "efe9b999bb37b221580be07bc34f7c931c162b281986a727eaf7a936b4adf054"
+      },
+      "uppers": [
+        35,
+        36,
+        34,
+        35,
+        34,
+        36,
+        34,
+        34
+      ],
+      "variant": "scored-m7-k4-b16-independent"
+    },
+    {
+      "cases": 8,
+      "k": 4,
+      "nodes": 34408528,
+      "post_hoc_training_subset": true,
+      "records": {
+        "bytes": 4745,
+        "path": "out/family1-finder-strategies-20261026/rolling/scored-m7-k4-b64-grouped.jsonl",
+        "sha256": "632bfff040b5fe7e0d085cad242547ed407ba99d6c22eb3f583a7f1e42db8e5d"
+      },
+      "uppers": [
+        35,
+        36,
+        34,
+        38,
+        34,
+        36,
+        34,
+        34
+      ],
+      "variant": "scored-m7-k4-b64-grouped"
+    },
+    {
+      "cases": 2,
+      "k": 2,
+      "nodes": 5298752,
+      "post_hoc_training_subset": true,
+      "records": {
+        "bytes": 1205,
+        "path": "out/family1-finder-strategies-20261026/rolling/scored-two-k2-b16.jsonl",
+        "sha256": "44c6564e4c5c25cb0ac9b7cc03e268842f1bb45803392c82e20cf9c9238e2f77"
+      },
+      "uppers": [
+        36,
+        36
+      ],
+      "variant": "scored-two-k2-b16"
+    },
+    {
+      "cases": 2,
+      "k": 3,
+      "nodes": 20985792,
+      "post_hoc_training_subset": true,
+      "records": {
+        "bytes": 1207,
+        "path": "out/family1-finder-strategies-20261026/rolling/scored-two-k3-b16.jsonl",
+        "sha256": "519bda8f6ef18b26cfd2fe882b1ed3f5c68abec1e98fd9d860a3df7bcfdeb2b4"
+      },
+      "uppers": [
+        36,
+        36
+      ],
+      "variant": "scored-two-k3-b16"
+    },
+    {
+      "cases": 2,
+      "k": 4,
+      "nodes": 79286144,
+      "post_hoc_training_subset": true,
+      "records": {
+        "bytes": 1213,
+        "path": "out/family1-finder-strategies-20261026/rolling/scored-two-k4-b16-futuresum.jsonl",
+        "sha256": "d89ba3066b57900756614c3977600583071146e1abd708c348035f65fea26ed3"
+      },
+      "uppers": [
+        36,
+        36
+      ],
+      "variant": "scored-two-k4-b16-futuresum"
+    }
+  ],
+  "final_mask_replays": 19498,
+  "joint_alphabet": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "limits": [
+    "These are exploratory training comparisons on certified maximizers, not a held-out quality guarantee.",
+    "Exact state-key deduplication is valid only within the same product; cycle avoidance is explicitly heuristic.",
+    "A verified pair is an upper certificate; the reference supplies shortestness labels.",
+    "Canonical prefix catalogues are bounded deterministic selections, not all compatible word pairs."
+  ],
+  "query_count": 240,
+  "reference_k": null,
+  "reference_window": "N/A: separately certified exhaustive findings",
+  "schema": 1,
+  "small_fullfrontier_test": {
+    "all_exact": true,
+    "beam": 4096,
+    "cases": 64,
+    "joint_k": 1
+  },
+  "truth": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ]
+}

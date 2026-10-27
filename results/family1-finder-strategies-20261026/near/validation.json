@@ -1,0 +1,52 @@
+{
+  "all_public_files_under_1MiB": true,
+  "compile_fingerprints_checked": true,
+  "files": [
+    {
+      "bytes": 66667,
+      "path": "results/family1-finder-strategies-20261026/near/cases.csv",
+      "sha256": "ccae81611c58266ba5e290f8188857a2723511bbc123d5cf4d4c39bacfd57877"
+    },
+    {
+      "bytes": 45302,
+      "path": "results/family1-finder-strategies-20261026/near/prefix-cases.csv",
+      "sha256": "bf5a06876b892ce34def4c05563576be1880906cdd98168f6adedebe69ebc7b8"
+    },
+    {
+      "bytes": 48532,
+      "path": "results/family1-finder-strategies-20261026/near/records-calibration.jsonl",
+      "sha256": "7cc63525fc90e98dd12dde008355c614ea51d3bc322678674895fc617354e669"
+    },
+    {
+      "bytes": 801705,
+      "path": "results/family1-finder-strategies-20261026/near/records-frontier.jsonl",
+      "sha256": "bd5ad0649df3692e4f1fed8245af8b715522075a47e4e098541b9853e9a82d40"
+    },
+    {
+      "bytes": 2859,
+      "path": "results/family1-finder-strategies-20261026/near/records-m8.jsonl",
+      "sha256": "d8d0112ab784664e61b2df122b19b96b7ca5a1adfcaa4e31c510de92c868c532"
+    },
+    {
+      "bytes": 4011,
+      "path": "results/family1-finder-strategies-20261026/near/run.json",
+      "sha256": "d4e63bc2ecc362074c06ae7380c5d25ffb49f5b8dfe361f797620a2b769e3b49"
+    },
+    {
+      "bytes": 1221,
+      "path": "results/family1-finder-strategies-20261026/near/strategy-comparison.csv",
+      "sha256": "61cc65d96b4bd5e0c84f701679de8c53e4d85e03cfd1636b0a8fcf60de625beb"
+    },
+    {
+      "bytes": 7780,
+      "path": "results/family1-finder-strategies-20261026/near/summary.json",
+      "sha256": "3521eec05573ba3d5c08da27dc2ba9425139fc56af8515c9fe2a30364c7d5722"
+    }
+  ],
+  "final_pairs_replayed": 364,
+  "independent_final_mask_replays": 18504,
+  "m8_prior_certificate_independent_mask_replays": 256,
+  "passed": true,
+  "positive_figures": 21,
+  "prior_reference_independent_mask_replays": 18248
+}

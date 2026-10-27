@@ -1,0 +1,97 @@
+{
+  "exploratory_subset_queries": [
+    {
+      "bytes": 4763,
+      "path": "out/family1-finder-strategies-20261026/rolling/scored-m7-k4-b16-independent.jsonl",
+      "sha256": "efe9b999bb37b221580be07bc34f7c931c162b281986a727eaf7a936b4adf054"
+    },
+    {
+      "bytes": 4745,
+      "path": "out/family1-finder-strategies-20261026/rolling/scored-m7-k4-b64-grouped.jsonl",
+      "sha256": "632bfff040b5fe7e0d085cad242547ed407ba99d6c22eb3f583a7f1e42db8e5d"
+    },
+    {
+      "bytes": 1205,
+      "path": "out/family1-finder-strategies-20261026/rolling/scored-two-k2-b16.jsonl",
+      "sha256": "44c6564e4c5c25cb0ac9b7cc03e268842f1bb45803392c82e20cf9c9238e2f77"
+    },
+    {
+      "bytes": 1207,
+      "path": "out/family1-finder-strategies-20261026/rolling/scored-two-k3-b16.jsonl",
+      "sha256": "519bda8f6ef18b26cfd2fe882b1ed3f5c68abec1e98fd9d860a3df7bcfdeb2b4"
+    },
+    {
+      "bytes": 1213,
+      "path": "out/family1-finder-strategies-20261026/rolling/scored-two-k4-b16-futuresum.jsonl",
+      "sha256": "d89ba3066b57900756614c3977600583071146e1abd708c348035f65fea26ed3"
+    }
+  ],
+  "graph_input": {
+    "bytes": 444,
+    "path": "out/family1-finder-strategies-20261026/rolling/all-keys.txt",
+    "sha256": "6d6bb92b6396b18f3a7102ed6f0c6d18dacef14cfb7ff68ddf07886090de2169"
+  },
+  "queries": [
+    {
+      "bytes": 8917,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-distance-Psum-k4-b64.jsonl",
+      "sha256": "2e2f3e64fc3560491e363c6219052d0baaccfa1f52982b1d0cf23188bf9629cd"
+    },
+    {
+      "bytes": 8941,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-distance-max-k4-b64.jsonl",
+      "sha256": "b259b4f15dc3135b8f9f8b05df55d48e35442841dc2f15b24b72fff960a0cd09"
+    },
+    {
+      "bytes": 8917,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-distance-sum-k4-b64.jsonl",
+      "sha256": "a45e17f520262a814fe1ffb86ee73465fa57f4fdff86762567f87409728f9a87"
+    },
+    {
+      "bytes": 8536,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k3-b64-diverse-tabu.jsonl",
+      "sha256": "dd41a43fe51f0e01194007b381a191872fecbf7809a1460d5e4faf17d40dfd0e"
+    },
+    {
+      "bytes": 8605,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b256-tabu.jsonl",
+      "sha256": "062bd08fc3d710d2ff8fdfcd67bc5a480175a07ffea5765ab88d711d12d5b3a4"
+    },
+    {
+      "bytes": 8817,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b64-bestcount.jsonl",
+      "sha256": "249ca2f983ebc635d595580feee96b2e3c195b91f5e43f6ed440e0c1ab2d52e9"
+    },
+    {
+      "bytes": 8827,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b64-futuresum.jsonl",
+      "sha256": "82faf660c3e570021dcbb715b3058d798017a4a2b799655ccf325272e8c83bf0"
+    },
+    {
+      "bytes": 8557,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k4-b64.jsonl",
+      "sha256": "b8214306f352cd73049bed9f0aefbfe34f6fb0c17e63e531112e057bd5759bbc"
+    },
+    {
+      "bytes": 8576,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k5-b64.jsonl",
+      "sha256": "5c995880081ad3a5722e63f0f75c695b3aa12ab20c1b70ba468e9e1ca6a07482"
+    },
+    {
+      "bytes": 8574,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix1024-k6-b16.jsonl",
+      "sha256": "383853bb737d0476e7a276a8fb755ddd54d4837309b3c747aefd3e53a4eaa1ea"
+    },
+    {
+      "bytes": 8512,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix128-k4-b16.jsonl",
+      "sha256": "ae9bb3198ed071c9e4a042b443dfc216304546415aaa03635c02c1398240f818"
+    },
+    {
+      "bytes": 8570,
+      "path": "out/family1-finder-strategies-20261026/rolling/all-prefix4096-k4-b64.jsonl",
+      "sha256": "d3b76c4e925b5ff716a24231f36e355a20bf3bc158e00fc1759677b09ddeaa20"
+    }
+  ],
+  "query_inputs": "canonical graph keys and fixed options only"
+}

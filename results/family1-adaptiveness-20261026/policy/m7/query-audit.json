@@ -1,0 +1,26 @@
+{
+  "all_configurations_and_candidates_completed": true,
+  "manifest": {
+    "bytes": 2251,
+    "path": "out/family1-adaptiveness-20261026/policy/m7/manifest.json",
+    "sha256": "208babe8f9a0b1e739d4668342515e27187ddf9fc562d6168b844ee5f60a114c"
+  },
+  "records": [
+    {
+      "bytes": 253755126,
+      "path": "out/family1-adaptiveness-20261026/policy/m7/total-c2-k2/records.jsonl",
+      "sha256": "60401a5506c4b1a487170d495b515a484a7823f16ea6c37cd22a353455cb3d44"
+    },
+    {
+      "bytes": 121214741,
+      "path": "out/family1-adaptiveness-20261026/policy/m7/total-c2-k4/records.jsonl",
+      "sha256": "f734a46fb776cee1cceba9e88dbb6bd0ce20c18caf7cf20f29d24ed85edf9acc"
+    },
+    {
+      "bytes": 109888589,
+      "path": "out/family1-adaptiveness-20261026/policy/m7/permutation-c2-k4/records.jsonl",
+      "sha256": "1129a2f4e10813dab7cf76946a9fee12ee8874f9d5aa2715bfc2de10cf28f13f"
+    }
+  ],
+  "target_truth_opened_during_scoring": false
+}

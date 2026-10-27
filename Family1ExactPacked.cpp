@@ -105,6 +105,7 @@ ExactPackedProduct::ExactPackedProduct(const LargeGraph& graph)
     : size_(graph.size()), width_(state_width(graph.size())), effective_bits_(mask_bits(graph))
 {
     graph.validate();
+    graph_key_ = graph.key();
     masks_ = 1U << effective_bits_;
     blocks_ = (masks_ + 63) / 64;
     mask_positions_.fill(-1);
@@ -187,6 +188,61 @@ unsigned int ExactPackedProduct::endpoint(const Profile& state, std::uint32_t fu
     return result;
 }
 
+std::uint64_t ExactPackedProduct::disagreement_count(const Profile& left, const Profile& right) const
+{
+    if (left.size() != profile_planes() || right.size() != profile_planes())
+        throw std::invalid_argument("packed profile has wrong size");
+    const auto valid = masks_ < 64 ? (std::uint64_t{1} << masks_) - 1 : ~std::uint64_t{0};
+    std::uint64_t disagreements = 0;
+    for (unsigned int block = 0; block < blocks_; ++block) {
+        std::uint64_t different = 0;
+        for (unsigned int plane = 0; plane < width_; ++plane) {
+            const auto index = static_cast<std::size_t>(plane) * blocks_ + block;
+            different |= left[index] ^ right[index];
+        }
+        disagreements += std::popcount(different & valid);
+    }
+    return disagreements << (size_ - effective_bits_);
+}
+
+ExactPackedProduct::MaskSelection ExactPackedProduct::select_mask_classes(
+    const std::vector<std::uint32_t>& full_mask_representatives) const
+{
+    MaskSelection result;
+    result.owner_ = this;
+    result.blocks_.assign(blocks_, 0);
+    for (const auto full_mask : full_mask_representatives) {
+        if (full_mask >= (1U << size_)) throw std::out_of_range("selected mask outside full family");
+        unsigned int mask = 0;
+        for (unsigned int vertex = 0; vertex < size_; ++vertex)
+            if (mask_positions_[vertex] >= 0 && (full_mask & (1U << vertex)))
+                mask |= 1U << mask_positions_[vertex];
+        result.blocks_[mask / 64] |= std::uint64_t{1} << (mask % 64);
+    }
+    for (const auto block : result.blocks_) result.selected_count_ += std::popcount(block);
+    result.selected_count_ <<= size_ - effective_bits_;
+    return result;
+}
+
+std::uint64_t ExactPackedProduct::disagreement_count(const Profile& left, const Profile& right,
+                                                   const MaskSelection& selection) const
+{
+    if (left.size() != profile_planes() || right.size() != profile_planes())
+        throw std::invalid_argument("packed profile has wrong size");
+    if (selection.owner_ != this || selection.blocks_.size() != blocks_)
+        throw std::invalid_argument("mask selection belongs to another packed product");
+    std::uint64_t disagreements = 0;
+    for (unsigned int block = 0; block < blocks_; ++block) {
+        std::uint64_t different = 0;
+        for (unsigned int plane = 0; plane < width_; ++plane) {
+            const auto index = static_cast<std::size_t>(plane) * blocks_ + block;
+            different |= left[index] ^ right[index];
+        }
+        disagreements += std::popcount(different & selection.blocks_[block]);
+    }
+    return disagreements << (size_ - effective_bits_);
+}
+
 PackedScore score_packed(const LargeGraph& graph, const PackedLimits& limits)
 {
     graph.validate();
@@ -219,7 +275,7 @@ PackedScore score_packed(const LargeGraph& graph, const PackedLimits& limits)
     // Product destination planes, one scratch profile for the overlapping root
     // entry, and a separate T(profile) buffer when using complement symmetry.
     const auto scratch_profiles = limits.quotient_complements ? 2U : 1U;
-    const auto fixed_bytes = profile_bytes * (2ULL * graph.size() + scratch_profiles);
+    const auto fixed_bytes = profile_bytes * (std::uint64_t{2} * graph.size() + scratch_profiles);
     if (fixed_bytes >= limits.max_working_bytes) {
         result.reason = "max-working-bytes"; return finish();
     }
@@ -280,7 +336,7 @@ PackedScore score_packed(const LargeGraph& graph, const PackedLimits& limits)
                 * result.profile_planes))));
         for (unsigned int depth = 1; depth <= limits.depth; ++depth) {
             if (stopped()) return finish();
-            const auto all_words = 1ULL << depth;
+            const auto all_words = std::uint64_t{1} << depth;
             if (all_words > limits.max_layer_states) {
                 result.reason = "max-layer-states"; return finish();
             }

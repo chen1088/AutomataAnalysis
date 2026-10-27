@@ -1,0 +1,315 @@
+{
+  "all_configured_cases_completed": true,
+  "case_count": 20,
+  "configuration_count": 11,
+  "native_journals": [
+    {
+      "bytes": 1418,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0000-0000/native/decisions.jsonl",
+      "sha256": "67921dc55d680e57e286782d86927b852b8449faaa68ca5f9e503af885c40b1b"
+    },
+    {
+      "bytes": 1747,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0000-0000/native/improvements.jsonl",
+      "sha256": "ba411d97fb891f2baf1ea79593362db19545331781d0eedb0f500e18407a8470"
+    },
+    {
+      "bytes": 16332,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0000-0000/native/records.jsonl",
+      "sha256": "f647386197a528b07987c63dbec4674fed6643c687411b991b5cbd8ceb5c32bc"
+    },
+    {
+      "bytes": 13212,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0001-00010001/native/decisions.jsonl",
+      "sha256": "c05e53691d71b98a8a23e182cc9bdd9c9875921855de571ff64cd5b2440bfe19"
+    },
+    {
+      "bytes": 1890,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0001-00010001/native/improvements.jsonl",
+      "sha256": "639557c91c6c3cdc40ac1890cfde47b6409e418eaf1e7e73e629d90321ddc52a"
+    },
+    {
+      "bytes": 16502,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0001-00010001/native/records.jsonl",
+      "sha256": "a109365c6f1d75f45aae10f902e6af8235b6010cd7982e60f6d4c7cf0d444b89"
+    },
+    {
+      "bytes": 34781,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0002-000101020001/native/decisions.jsonl",
+      "sha256": "9fc865a484a812211b22399e3d393e05e81cdff58b0c1207145f86b5f4c83079"
+    },
+    {
+      "bytes": 2102,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0002-000101020001/native/improvements.jsonl",
+      "sha256": "b033062a00fc49d4ffe8467511e640cf6d56bc0c986f4c20dc9d0523fa8da5be"
+    },
+    {
+      "bytes": 17028,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0002-000101020001/native/records.jsonl",
+      "sha256": "fcc1738a5a18e3fdc3bfa36804398e005f71a86f284f9636ef7fa59e0b5d6292"
+    },
+    {
+      "bytes": 34352,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0003-010200010102/native/decisions.jsonl",
+      "sha256": "ac6caa8fedf3ea829994f27732c1ccf1c126723476228db967729b615c845b02"
+    },
+    {
+      "bytes": 2102,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0003-010200010102/native/improvements.jsonl",
+      "sha256": "767de513a20faad4d96023d7e1a2b4bd298917ceaff287dd0acf8ecc00ff2725"
+    },
+    {
+      "bytes": 17028,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0003-010200010102/native/records.jsonl",
+      "sha256": "a9c6808a5b02f86f7d856306679acc3c4dc7df0d27b83867ce70121f6fe82543"
+    },
+    {
+      "bytes": 38180,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0004-0102000201030003/native/decisions.jsonl",
+      "sha256": "ad568586ffb091f6763a2f52706103664fe7df3cc2575994e2bd296d40f0005b"
+    },
+    {
+      "bytes": 4907,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0004-0102000201030003/native/improvements.jsonl",
+      "sha256": "bbf02b136edb71b1fc8a73af37d85e868fdd484965ebafe6d9b2d5a94c6da71c"
+    },
+    {
+      "bytes": 17703,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0004-0102000201030003/native/records.jsonl",
+      "sha256": "b5b7924e16c121328b5797a6d0d012118c3848c3c351cb9aa3f5bf26c0d5a04b"
+    },
+    {
+      "bytes": 67329,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0005-00010203000103040204/native/decisions.jsonl",
+      "sha256": "a287ca4f94b99964918f23b1269f1934d2e175d526acf3890c803cfa62eb24ca"
+    },
+    {
+      "bytes": 5643,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0005-00010203000103040204/native/improvements.jsonl",
+      "sha256": "c57d7c0ae291a007c2887c2efc57c438096c4dc435e12610c26d27a34db7e9ea"
+    },
+    {
+      "bytes": 18561,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0005-00010203000103040204/native/records.jsonl",
+      "sha256": "a7060c3ff1d3bedec0fee5a2c4581c7586da70270388abf52024dac772239e32"
+    },
+    {
+      "bytes": 104160,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0006-00010203000301040204/native/decisions.jsonl",
+      "sha256": "2659a9e959dc86260ee3b7be4058866309737e34f561d4de4a1f5d0d951e15bb"
+    },
+    {
+      "bytes": 11137,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0006-00010203000301040204/native/improvements.jsonl",
+      "sha256": "8e56081d4debfab910119435bd73360bbfd4894fa4ee38f847514d2316c7e8ec"
+    },
+    {
+      "bytes": 18689,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0006-00010203000301040204/native/records.jsonl",
+      "sha256": "64a59ed58e59e726f4a14d62b0dd733459161bbc31734fd9be3f935c4881acf7"
+    },
+    {
+      "bytes": 40434,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0007-01020003010203040004/native/decisions.jsonl",
+      "sha256": "090f045f3f8c4fcb527161648f97895eeb642c54056f0479ed76514814a6bd99"
+    },
+    {
+      "bytes": 5593,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0007-01020003010203040004/native/improvements.jsonl",
+      "sha256": "3a11136a21c31c725891090d881fa5498c5c20ad8990615d738bb6fd94d7ddd4"
+    },
+    {
+      "bytes": 18516,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0007-01020003010203040004/native/records.jsonl",
+      "sha256": "5df6cadd97d0ec913708eaafbb68a5a38c3c820e953476a1f648aa14e4e91794"
+    },
+    {
+      "bytes": 178260,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0008-01020003010402030104/native/decisions.jsonl",
+      "sha256": "063f2fb911daf2373d81ea4243989d00836c208a9b7848b409f721426939e3c1"
+    },
+    {
+      "bytes": 4715,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0008-01020003010402030104/native/improvements.jsonl",
+      "sha256": "e7fdf04b11fd24c090610d1848dad5ad983a646ac483689afd30ae360c4c79a3"
+    },
+    {
+      "bytes": 18634,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0008-01020003010402030104/native/records.jsonl",
+      "sha256": "9870b7b5d9b92367b192c9350cb5ce6385b36c679ce5d1214b97a8579d66eb1d"
+    },
+    {
+      "bytes": 140725,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0009-01020003030400030104/native/decisions.jsonl",
+      "sha256": "09e46db744e95f07f71f1e811eeb612b472106233a43d61f22cd68e40940545d"
+    },
+    {
+      "bytes": 6298,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0009-01020003030400030104/native/improvements.jsonl",
+      "sha256": "59a180e9dbc68718108eb85b4b7556e5c7339b707bf0c88f9ca17bc201053891"
+    },
+    {
+      "bytes": 18638,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0009-01020003030400030104/native/records.jsonl",
+      "sha256": "579a69f2a64db55ccaa430cd07625855c58b58b5ff4c0032b4fe539f7f77ed3f"
+    },
+    {
+      "bytes": 209146,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0010-000102030304020500010405/native/decisions.jsonl",
+      "sha256": "43f91743b72fd2504ef5b3c40dd1ec8b2ac11811faf917c006c88614c0673d3a"
+    },
+    {
+      "bytes": 10657,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0010-000102030304020500010405/native/improvements.jsonl",
+      "sha256": "bbb3038c968c5c75cf4d854df37c467032affd688707aeab990e77baba415b63"
+    },
+    {
+      "bytes": 19853,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0010-000102030304020500010405/native/records.jsonl",
+      "sha256": "47b30b93d5163c5cc68f36efeb99e8c0c6a7b17247a2a2d91b0cdbf97850a5c7"
+    },
+    {
+      "bytes": 235314,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0011-010200030405020300010405/native/decisions.jsonl",
+      "sha256": "717b0e6f91fb7814ae3d2275de67e844b719dcdaa255933e660a5bc217844f31"
+    },
+    {
+      "bytes": 8179,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0011-010200030405020300010405/native/improvements.jsonl",
+      "sha256": "5279249343415bf90e55133e4561bb7b32324a12caac1c71205cd251480458c4"
+    },
+    {
+      "bytes": 19832,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0011-010200030405020300010405/native/records.jsonl",
+      "sha256": "6ed1e8560cce9fb768160f8fbcc0448765562bcb88435bd8e249bc23bd655bd3"
+    },
+    {
+      "bytes": 441640,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0012-0001020302030405000604060105/native/decisions.jsonl",
+      "sha256": "b5c196a650057f51280172efb7a81d2b96dee332583739f403595ffc0441b21e"
+    },
+    {
+      "bytes": 4853,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0012-0001020302030405000604060105/native/improvements.jsonl",
+      "sha256": "6fea87b5a93536688e7668c496e0f26ce47b68cd5af186f6c29e411e5cb2fb72"
+    },
+    {
+      "bytes": 21417,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0012-0001020302030405000604060105/native/records.jsonl",
+      "sha256": "7286a9dfb698a16c5cdd6d95af75ed64934c3ae97c3d305ed517b3aacf3a4fa2"
+    },
+    {
+      "bytes": 184864,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0013-0001020304050406050600010203/native/decisions.jsonl",
+      "sha256": "488d76fe4e76d5a039ed44a292fcbb392efe8e3ac204a0b6c759b2343ff39d0f"
+    },
+    {
+      "bytes": 12891,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0013-0001020304050406050600010203/native/improvements.jsonl",
+      "sha256": "96316810be66c3dd80a042d59ea4e2cd062b7f1618b2159fccb79954a0e9c43e"
+    },
+    {
+      "bytes": 21331,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0013-0001020304050406050600010203/native/records.jsonl",
+      "sha256": "c20888b3cbb1edfa443596d3710809990f74c2c69fd06bae7e0f7aaf28a36e10"
+    },
+    {
+      "bytes": 238955,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0014-0102000301040204050600030506/native/decisions.jsonl",
+      "sha256": "32c7ee49f9e38190e0f0bface9e837a6e7d4e01eb2b2c5d638f0af048a02cc0b"
+    },
+    {
+      "bytes": 9511,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0014-0102000301040204050600030506/native/improvements.jsonl",
+      "sha256": "c56fa14449bc359417b74e8abd7ea716ab0bac783b167dc714e3deb5c67930c2"
+    },
+    {
+      "bytes": 21422,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0014-0102000301040204050600030506/native/records.jsonl",
+      "sha256": "d95dfe31d05fdd38d3547cf83a2591a3dc005c82a0d71908e8d2552d9b2ea896"
+    },
+    {
+      "bytes": 220008,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0015-0102000304050106000304050206/native/decisions.jsonl",
+      "sha256": "4730cb0f80116d41d6708eed90f283b4ab6a5b2214c2d93b2be1ae886d5e016c"
+    },
+    {
+      "bytes": 23355,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0015-0102000304050106000304050206/native/improvements.jsonl",
+      "sha256": "525a6f3eb6dfe06db1e295f1a55c43ba0db351fc422df9b212a99e31a3938f56"
+    },
+    {
+      "bytes": 21480,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0015-0102000304050106000304050206/native/records.jsonl",
+      "sha256": "ad87216baba8ae2cc6e705d97944f92aa803b37c542b297be5a13f8c565ab1b5"
+    },
+    {
+      "bytes": 324755,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0016-0102010203040005030604060005/native/decisions.jsonl",
+      "sha256": "ac1a901aaa76959aeedbab4c0a0759f0e141aeb8cf4a19c7f6d7fcd1f5722e35"
+    },
+    {
+      "bytes": 4310,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0016-0102010203040005030604060005/native/improvements.jsonl",
+      "sha256": "04b79f7f206c38364267f4cdd8f8a77627d3f0d0f794fedf3fb9476fd524932c"
+    },
+    {
+      "bytes": 21338,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0016-0102010203040005030604060005/native/records.jsonl",
+      "sha256": "c100241f93ed8121fe144531416f149e53944203a33ac10a56c453067fd7c190"
+    },
+    {
+      "bytes": 349453,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0017-0102010203040005050600060304/native/decisions.jsonl",
+      "sha256": "a02f4d3b182f89024bc2c5927f706a916f7833e6839fe2f7694038dfc10675c2"
+    },
+    {
+      "bytes": 10340,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0017-0102010203040005050600060304/native/improvements.jsonl",
+      "sha256": "8c17343e195a7c6d02200b0eead9533397b84f3c5b28c2305b91917b2dad91ba"
+    },
+    {
+      "bytes": 21524,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0017-0102010203040005050600060304/native/records.jsonl",
+      "sha256": "d9efbec0e58603fa614a5dc3fbb92e0c5c97e0d7a8617882d53d88388b20855d"
+    },
+    {
+      "bytes": 246144,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0018-0102020304050006000604050103/native/decisions.jsonl",
+      "sha256": "25f81d7b5c7f9e52c06eb17d8804baed0757fc97c225229125e2ee6d50d7d33f"
+    },
+    {
+      "bytes": 18792,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0018-0102020304050006000604050103/native/improvements.jsonl",
+      "sha256": "d4ae627ecda5526326602bca34831c71b0e5c8832fe5f1102657587120ec3190"
+    },
+    {
+      "bytes": 21316,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0018-0102020304050006000604050103/native/records.jsonl",
+      "sha256": "e611de8aafb31f9f379de33fc71c79e7b886a153ac94af8b7c5c372bd6e5d197"
+    },
+    {
+      "bytes": 182121,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0019-0102030405060001000203040506/native/decisions.jsonl",
+      "sha256": "7a210c501485d87f891a236fcedb47062f4ed98e59767033bf7ec1ef239b38d1"
+    },
+    {
+      "bytes": 30544,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0019-0102030405060001000203040506/native/improvements.jsonl",
+      "sha256": "60b9be6b50dd93f63e6b69da5c429e52ce3b78a256a0fed134e9641f4e20aa80"
+    },
+    {
+      "bytes": 21375,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/queries/0019-0102030405060001000203040506/native/records.jsonl",
+      "sha256": "5f9af3a339cc7e714ca332d1973cd29f97201b4557c8c88ef4191c3cda004003"
+    }
+  ],
+  "records": {
+    "bytes": 388519,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptive-window-20261027/pilot-64/records.jsonl",
+    "sha256": "74ead7e2511e3bb9094f5bdbef413bce7ae1f3aea64c6ed737e79567b92da691"
+  },
+  "rows": 220,
+  "truth_not_loaded_until_after_query_seal": true,
+  "truth_not_used_in_queries": true
+}

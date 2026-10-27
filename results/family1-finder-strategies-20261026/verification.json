@@ -1,0 +1,143 @@
+{
+  "all_public_files_below_1MiB": true,
+  "beam_width": 16,
+  "common_distance_forward_reference": {
+    "graphs": 745,
+    "pair_mask_distances": 226922,
+    "score_aggregates": 4470
+  },
+  "configured_joint_k": 4,
+  "ctest": {
+    "build": "out/build/near-solid-linux",
+    "failed": 0,
+    "passed": 12,
+    "test_log": {
+      "bytes": 23998,
+      "path": "out/build/near-solid-linux/Testing/Temporary/LastTest.log",
+      "sha256": "0bbdd45eb3a9684f45ab20d488e444880598832ef8d5ff5dd1040c74bf581dc1"
+    }
+  },
+  "date": "2026-10-26",
+  "exact_producing_k": null,
+  "final_publication": {
+    "bytes": 1926,
+    "path": "results/family1-finder-strategies-20261026/near/validation.json",
+    "sha256": "9f095357d57c710f3ee702085858a0fb9f71a49c7172f709bba6506b5e211078"
+  },
+  "full_D_baseline_publication": {
+    "bytes": 1982,
+    "path": "results/family1-finder-strategies-20261026/near-full-D/validation.json",
+    "sha256": "59339722c5b71afa409b4412504566b7d2f4846a2d9dbbb54efe3f5d47db20a5"
+  },
+  "independent_result_audits": {
+    "final_pair_mask_coordinates_replayed": 18504,
+    "material_issues_remaining": 0,
+    "native_batches_checked": 54,
+    "portfolio_certificate_floor_checked_on_all_frontier_graphs": true,
+    "reviewers": 3
+  },
+  "independent_seed_scalar_mask_comparisons": 29944370,
+  "independent_seed_selector_pairs": 1888160,
+  "limitations": [
+    "Winner cases and two extra graphs were used for method development.",
+    "The saved frontier overlaps development cases.",
+    "The m7 and m8 exhaustive searches were not rerun.",
+    "No universal near-shortest error bound is certified."
+  ],
+  "links_checked": true,
+  "method_documents": [
+    {
+      "bytes": 13171,
+      "path": "docs/family1-finder-strategies-report.md",
+      "sha256": "718eede46311eefcc59555089839583d1437e7b8a2a33cf6c79e611dc072306e"
+    },
+    {
+      "bytes": 5280,
+      "path": "docs/family1-near-cli.md",
+      "sha256": "8cb4f20644cab0a1272765d1fed5fecbc1a4af5e1836ce5031167610b56517b7"
+    },
+    {
+      "bytes": 7301,
+      "path": "results/family1-finder-strategies-20261026/README.md",
+      "sha256": "5c1cab83906d009015fe653ce9b745ccfd748818090723c9cf48bd90ad13e5de"
+    }
+  ],
+  "native_source_inventory": {
+    "executable_sha256": "745fe4fa03ec6841614fdee86665c12e7e74f3ae219f1ca4048d36ee43b74ad4",
+    "sources": [
+      {
+        "path": "family1_near.cpp",
+        "sha256": "a8a622e23a113da214964eec09247a275b19d85967bf0b520dc13a6fe4e1dc8f"
+      },
+      {
+        "path": "Family1NearPair.h",
+        "sha256": "af4a74ec3304890596e4d8fae9c16b72dd0ee6d75264a4109e688f2897e8210c"
+      },
+      {
+        "path": "Family1ScoredSeeds.h",
+        "sha256": "ea2942100e62ead16005e64a2716d135faa04c84929c9eb08e71f47870a99c91"
+      },
+      {
+        "path": "Family1JointPair.h",
+        "sha256": "e21321806725611c87fb16475234f99e963628e96c85c50ce7b55dbce453a272"
+      },
+      {
+        "path": "Family1JointSeeds.h",
+        "sha256": "50b62dd9e9e277d9721187efa3a72b1d75bf68024ce1149e1650040f9dab715a"
+      },
+      {
+        "path": "HardPairJointFinder.h",
+        "sha256": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+      },
+      {
+        "path": "HardPairPrefixSeeds.h",
+        "sha256": "a465d603f3465459345f93d8b2f3a8ac0dd5b9900813c125af13679f693bb7e9"
+      },
+      {
+        "path": "Family1ExactPacked.h",
+        "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+      },
+      {
+        "path": "Family1ExactPacked.cpp",
+        "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+      },
+      {
+        "path": "Family1LargeGraph.h",
+        "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+      },
+      {
+        "path": "Family1LargeGraph.cpp",
+        "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+      },
+      {
+        "path": "Family1PairAgreement.h",
+        "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+      },
+      {
+        "path": "Family1CliArtifacts.h",
+        "sha256": "42d99ccb98fa6093a604aa03c9c0f606028ebba3e917ccc725a796e7281924b1"
+      },
+      {
+        "path": "Family1TailScoredSeeds.h",
+        "sha256": "94f8c46bf23b1d22f7d9f0615ab8bd66a03b0ec19338aec5eca45201383f180c"
+      },
+      {
+        "path": "HardPairViability.h",
+        "sha256": "04152a0fecdccccbbc263da62d11c6121cb3b9323fec41344a28ccc50320ff21"
+      }
+    ]
+  },
+  "quality": {
+    "frontier_graphs_found": 343,
+    "frontier_native_exact": 288,
+    "general_near_shortest_gate_passed": false,
+    "m7_nonwinner_exclusions": 29,
+    "m7_nonwinners": 47,
+    "m8_previous_verified_upper": 50,
+    "m8_upper": 52,
+    "proven_error_at_least": 11,
+    "winner_calibration_found": 20,
+    "winner_calibration_optimal": 18,
+    "winner_calibration_within_one": 20
+  }
+}

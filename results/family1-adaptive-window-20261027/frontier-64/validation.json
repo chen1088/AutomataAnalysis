@@ -1,0 +1,92 @@
+{
+  "all_case_config_combinations_verified": true,
+  "cases_files": [
+    {
+      "bytes": 426167,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/cases.csv",
+      "sha256": "4c6f807e596a1e04b009dd265ec85d3e5d7b8345d9788a4b515344e0c7b73a32"
+    }
+  ],
+  "decision_files": [
+    {
+      "bytes": 639555,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-decisions.csv",
+      "sha256": "6915c2f415e75ee1418333ecd7ee43cb9b56fc73ad4ffba63e55fe0d05a725d5"
+    }
+  ],
+  "graph_queries": 1029,
+  "historical_certificate_mask_replays": 35146,
+  "moments_files": [
+    {
+      "bytes": 749826,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-000.csv",
+      "sha256": "df95b7a67be19db47be20b91cba31cb9ff03ca345feab2c7a6175a3d6bfd1e2d"
+    },
+    {
+      "bytes": 749906,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-001.csv",
+      "sha256": "6a355550a85bf56049fa2ad89f0316bf4fc8671b150ed1bd14183af761a33d28"
+    },
+    {
+      "bytes": 749882,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-002.csv",
+      "sha256": "88962baabb3ba61b84f0e5ae17b0220bf6d11af2ebd1f7ea40b44d4cf3d890ba"
+    },
+    {
+      "bytes": 749479,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-003.csv",
+      "sha256": "b0340b93752683dee9dcfbaf09d8bbfb012af1b8da89b4e46aaf7ee6ffa11227"
+    },
+    {
+      "bytes": 749882,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-004.csv",
+      "sha256": "3fecf165e4080f7fb49a4082629eb0a4035eaaf28db7c4d45b6caa062a92f6c3"
+    },
+    {
+      "bytes": 749880,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-005.csv",
+      "sha256": "51662d330be3b674a3853032ce4306a8d74299222abf4edffc2f8e246c3ae771"
+    },
+    {
+      "bytes": 749637,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-006.csv",
+      "sha256": "077cecee0210acb1cf59ed275c34d295629c15c0e6b24e2fb2bb95715386a6a1"
+    },
+    {
+      "bytes": 749494,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-007.csv",
+      "sha256": "96dd311172db5f56919d00030270674271fedfc127b12672939fee180d36e561"
+    },
+    {
+      "bytes": 749965,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-008.csv",
+      "sha256": "cf12060c148ab2cefa0e7c845a7738e87a2d415324067ecb9c7455336db39f91"
+    },
+    {
+      "bytes": 749894,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-009.csv",
+      "sha256": "033d3597d7dcdb97202a135ae1c06837f21eb23a32944afa471a0976a0939c2f"
+    },
+    {
+      "bytes": 152746,
+      "path": "results/family1-adaptive-window-20261027/frontier-64/winning-window-moments-010.csv",
+      "sha256": "9bb762485063e810208e2e87b2046a7a91f56ba942affd0368bacafd594b6822"
+    }
+  ],
+  "moments_use_exact_integer_arithmetic": true,
+  "native_improvements_checked": 2142,
+  "parent_metric_mask_comparisons": 458160,
+  "partial_windows": 0,
+  "passed": true,
+  "positive_and_improvement_mask_replays": 174740,
+  "positive_figures": 23,
+  "report_source": {
+    "bytes": 43684,
+    "path": "scripts/family1_adaptive_window_report.py",
+    "sha256": "afa36de78fac577bf3227d30d985d2161e7c60c188e413d3c0a750026c01f1b6"
+  },
+  "scalar_profile_mask_steps": 4144044,
+  "source_and_executable_pins_checked": true,
+  "winning_decisions_checked": 6723,
+  "winning_window_moments_checked": 19619
+}

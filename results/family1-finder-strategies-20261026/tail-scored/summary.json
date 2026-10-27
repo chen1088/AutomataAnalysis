@@ -1,0 +1,170 @@
+{
+  "all_44_queries_complete": true,
+  "all_final_words_and_prefix_traces_verified": true,
+  "baseline_sources": [
+    {
+      "bytes": 46701,
+      "path": "out/family1-finder-strategies-20261026/final-calibration/records.jsonl",
+      "sha256": "c14da94ef0cdf10a75fe4746a458364b4cf9f9b5f8d7851f817dab22d7d7d64b"
+    },
+    {
+      "bytes": 777035,
+      "path": "out/family1-finder-strategies-20261026/final-frontier343/records.jsonl",
+      "sha256": "0bfb30a185b348af6a92ab3ad2d6634e4af3c250cdfc5ae977553220fd6a1ea4"
+    },
+    {
+      "bytes": 2710,
+      "path": "out/family1-finder-strategies-20261026/final-m8/records.jsonl",
+      "sha256": "fcceb134706de142a8bd44868c85059f66b7c22f284fcb8bbc7ea2925ad34880"
+    }
+  ],
+  "common_distance_validation": {
+    "graphs": 22,
+    "method": "independent scalar forward BFS on every ordered pair in every concrete DFA",
+    "ordered_pair_checks": 81858,
+    "passed": true
+  },
+  "configured_joint_k": 4,
+  "independent_final_mask_replays": 5586,
+  "joint_alphabet": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "limits": [
+    "Common-tail infinity is only a seed ranking preference; no joint symbol or branch is pruned.",
+    "These graphs were used for strategy development, not a held-out validation.",
+    "Bad m7 has prior verified upper32; m8 has prior verified upper50. Their exact H is unknown.",
+    "All tested champion gaps are empirical; no universal near-shortest error bound is established."
+  ],
+  "matched_baseline": {
+    "maximum_winner_gap": 2,
+    "winner_cases": 20,
+    "winner_optimal": 16,
+    "winner_within_one": 18
+  },
+  "native_manifest": {
+    "bytes": 2929,
+    "path": "out/family1-finder-strategies-20261026/tail-scored/manifest.json",
+    "sha256": "9e8720ebe58a0cbd5aea381c453777fe78d48e76d20eabcc82945b97725c6e2d"
+  },
+  "oracle_producing_k": null,
+  "prior_upper_sources": [
+    {
+      "bytes": 171061,
+      "path": "results/family1-neighbor-seeds/near-top.jsonl",
+      "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+    },
+    {
+      "bytes": 410759,
+      "path": "results/family1-adaptive-search-final/records.jsonl",
+      "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+    }
+  ],
+  "schema": 1,
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "variants": [
+    {
+      "cases": 22,
+      "complete_windows": 374384,
+      "configured_joint_k": 4,
+      "expanded_nodes": 107751872,
+      "expansion_capped_attempts": 0,
+      "found": 22,
+      "m7_winner_uppers": [
+        35,
+        34,
+        34,
+        35,
+        34,
+        34,
+        34,
+        34
+      ],
+      "maximum_winner_gap": 1,
+      "nonwinner_prior_upper_comparisons": [
+        {
+          "baseline_upper": 45,
+          "exact_H_known": false,
+          "key": "0102000304050203000604050003",
+          "new_upper": 43,
+          "prior_verified_upper": 32
+        },
+        {
+          "baseline_upper": 53,
+          "exact_H_known": false,
+          "key": "01020003040501060003020705060407",
+          "new_upper": 52,
+          "prior_verified_upper": 50
+        }
+      ],
+      "rank": "infinite-max-sum-D",
+      "records": {
+        "bytes": 31780,
+        "path": "out/family1-finder-strategies-20261026/tail-scored/records-max-first.jsonl",
+        "sha256": "763f8c0b38e02ff4013208928917febc287c7dc77b12fb9bcf5897af037c303a"
+      },
+      "winner_cases": 20,
+      "winner_optimal": 18,
+      "winner_within_one": 20,
+      "winner_within_two": 20
+    },
+    {
+      "cases": 22,
+      "complete_windows": 374416,
+      "configured_joint_k": 4,
+      "expanded_nodes": 107804992,
+      "expansion_capped_attempts": 0,
+      "found": 22,
+      "m7_winner_uppers": [
+        35,
+        34,
+        34,
+        35,
+        34,
+        34,
+        34,
+        34
+      ],
+      "maximum_winner_gap": 1,
+      "nonwinner_prior_upper_comparisons": [
+        {
+          "baseline_upper": 45,
+          "exact_H_known": false,
+          "key": "0102000304050203000604050003",
+          "new_upper": 43,
+          "prior_verified_upper": 32
+        },
+        {
+          "baseline_upper": 53,
+          "exact_H_known": false,
+          "key": "01020003040501060003020705060407",
+          "new_upper": 52,
+          "prior_verified_upper": 50
+        }
+      ],
+      "rank": "infinite-sum-max-D",
+      "records": {
+        "bytes": 31780,
+        "path": "out/family1-finder-strategies-20261026/tail-scored/records-sum-first.jsonl",
+        "sha256": "5c7e3cc0b0a1ffea791e2f5678c598bf30affd6b0ed07a6edb3c71310eac76cd"
+      },
+      "winner_cases": 20,
+      "winner_optimal": 18,
+      "winner_within_one": 20,
+      "winner_within_two": 20
+    }
+  ]
+}

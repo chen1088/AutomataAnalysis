@@ -1,0 +1,71 @@
+{
+  "m": 4,
+  "key": "0001000200030203",
+  "canonical_table": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "status": "exact",
+  "merge_length": 8,
+  "lower_bound": 8,
+  "upper_bound": 8,
+  "witness": [
+    "00110011",
+    "11000011"
+  ],
+  "estimated_merge_length": 8,
+  "estimate_certified": true,
+  "estimated_band": [
+    8,
+    8
+  ],
+  "heuristics": false,
+  "evaluated": true,
+  "finished": true,
+  "window_k": 0,
+  "exact_depth": 12,
+  "prefix_attempts": 0,
+  "expanded_nodes": 0,
+  "tail_calls": 0,
+  "effective_prefix_words": 0,
+  "prefix_constraint_coordinates": 0,
+  "prefix_generation_trivial_coordinate": false,
+  "effective_expansions_per_prefix": 0,
+  "estimated_working_bytes": 0,
+  "static_masks_verified": 16,
+  "window_reports_truncated": 0,
+  "window_distributions": [],
+  "viability": null,
+  "finder_counter_scope": "returned finder calls; deadline-aborted call counters can be partial",
+  "reason": "",
+  "k": null,
+  "window_kind": "exact-oracle",
+  "reference_H": 8,
+  "reference_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+    "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b",
+    "bytes": 512910
+  },
+  "gap": 0,
+  "search_parameters": {
+    "alphabet": [
+      "0",
+      "1"
+    ],
+    "deterministic": true
+  }
+}

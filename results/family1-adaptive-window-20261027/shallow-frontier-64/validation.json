@@ -1,0 +1,57 @@
+{
+  "all_case_config_combinations_verified": true,
+  "cases_files": [
+    {
+      "bytes": 141261,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/cases.csv",
+      "sha256": "a8a5b96ad4a8b7150a776e66213597e5bb218e3140771ff972d5e462b3e5961a"
+    }
+  ],
+  "decision_files": [
+    {
+      "bytes": 335330,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-decisions.csv",
+      "sha256": "3d90afafe3a6dfdf59ab20c57acbeff53123b81479766c62f7b690693d88bfaf"
+    }
+  ],
+  "graph_queries": 343,
+  "historical_certificate_mask_replays": 35146,
+  "moments_files": [
+    {
+      "bytes": 749705,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-000.csv",
+      "sha256": "aa784b51c1fc9093f47d341c68fbc7553381433ef49e0e1562b6c14e4515b88e"
+    },
+    {
+      "bytes": 749940,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-001.csv",
+      "sha256": "fae219bae5572de28a44fd038b93ea99dc8474d2d2454a469a026f3ce317376c"
+    },
+    {
+      "bytes": 749817,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-002.csv",
+      "sha256": "f665e2c3d7088527e3411204e9a8236f5b766a2b7b9f1d8eaf2c26f8e255b927"
+    },
+    {
+      "bytes": 173029,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-003.csv",
+      "sha256": "c7eb1eca9406cb063a7e394a195885b5f447e8e0851f12b874c500cc42859ad7"
+    }
+  ],
+  "moments_use_exact_integer_arithmetic": true,
+  "native_improvements_checked": 739,
+  "parent_metric_mask_comparisons": 243252,
+  "partial_windows": 0,
+  "passed": true,
+  "positive_and_improvement_mask_replays": 59436,
+  "positive_figures": 0,
+  "report_source": {
+    "bytes": 43684,
+    "path": "scripts/family1_adaptive_window_report.py",
+    "sha256": "afa36de78fac577bf3227d30d985d2161e7c60c188e413d3c0a750026c01f1b6"
+  },
+  "scalar_profile_mask_steps": 2937116,
+  "source_and_executable_pins_checked": true,
+  "winning_decisions_checked": 3635,
+  "winning_window_moments_checked": 7270
+}

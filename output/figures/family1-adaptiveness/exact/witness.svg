@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="770" viewBox="0 0 1000 770" role="img">
+<title>Verified hard pair and disagreement trace</title>
+<metadata>{&quot;schema&quot;:1,&quot;id&quot;:&quot;0001000200030203&quot;,&quot;m&quot;:4,&quot;key&quot;:&quot;0001000200030203&quot;,&quot;canonical_table&quot;:[[0,1],[0,2],[0,3],[2,3]],&quot;witness&quot;:[&quot;00110011&quot;,&quot;11000011&quot;],&quot;first&quot;:&quot;00110011&quot;,&quot;second&quot;:&quot;11000011&quot;,&quot;length&quot;:8,&quot;first_difference_position&quot;:1,&quot;status&quot;:&quot;verified-upper&quot;,&quot;minimality_certified&quot;:false,&quot;metric_definition&quot;:&quot;D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ&quot;,&quot;metric_counting&quot;:&quot;all original 2^m static masks; coincident-port duplicates retain multiplicity&quot;,&quot;family_size&quot;:16,&quot;search_parameters&quot;:{&quot;k&quot;:null,&quot;window_kind&quot;:&quot;exact-oracle&quot;,&quot;alphabet&quot;:[&quot;0&quot;,&quot;1&quot;],&quot;producer_k_known&quot;:false,&quot;beam_width&quot;:null,&quot;diagonal_width&quot;:null,&quot;unequal_width&quot;:null,&quot;prefix_pairs&quot;:null,&quot;prefix_depth&quot;:null,&quot;prefix_words&quot;:null,&quot;common_prefix_depth&quot;:null,&quot;max_length&quot;:null,&quot;expansion_cap&quot;:null,&quot;target_upper&quot;:null,&quot;deterministic&quot;:true,&quot;bootstrap_depth&quot;:null,&quot;bootstrap_width&quot;:null,&quot;startup_policy&quot;:null,&quot;advance_policy&quot;:null,&quot;expanded_nodes&quot;:0},&quot;verification&quot;:{&quot;method&quot;:&quot;independent-scalar-complete-family-prefix-replay&quot;,&quot;dfa_count&quot;:16,&quot;passed&quot;:true,&quot;D_empty&quot;:0,&quot;D_final&quot;:0},&quot;trace&quot;:[{&quot;length&quot;:0,&quot;differing&quot;:0,&quot;synchronized&quot;:16},{&quot;length&quot;:1,&quot;differing&quot;:16,&quot;synchronized&quot;:0},{&quot;length&quot;:2,&quot;differing&quot;:8,&quot;synchronized&quot;:8},{&quot;length&quot;:3,&quot;differing&quot;:16,&quot;synchronized&quot;:0},{&quot;length&quot;:4,&quot;differing&quot;:6,&quot;synchronized&quot;:10},{&quot;length&quot;:5,&quot;differing&quot;:3,&quot;synchronized&quot;:13},{&quot;length&quot;:6,&quot;differing&quot;:2,&quot;synchronized&quot;:14},{&quot;length&quot;:7,&quot;differing&quot;:1,&quot;synchronized&quot;:15},{&quot;length&quot;:8,&quot;differing&quot;:0,&quot;synchronized&quot;:16}],&quot;fixture&quot;:null,&quot;reference_H&quot;:8,&quot;reference_source&quot;:{&quot;path&quot;:&quot;/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl&quot;,&quot;sha256&quot;:&quot;2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b&quot;,&quot;bytes&quot;:512910},&quot;gap&quot;:0,&quot;source&quot;:{&quot;path&quot;:&quot;/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/family1-adaptiveness/exact-source.json&quot;,&quot;sha256&quot;:&quot;59e890738e99bb897084a2d0661d6b48f4cd42434a3ed1d9f8a9a2e8ee5366ff&quot;,&quot;bytes&quot;:1458},&quot;generator&quot;:{&quot;path&quot;:&quot;/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/hard_pair_witness_figure.py&quot;,&quot;sha256&quot;:&quot;70d79bdc8f7fcad4633594ad6fa74ddbe8be80c0b683221cdf78130b2d42a901&quot;,&quot;bytes&quot;:18867},&quot;graph_geometry_source&quot;:{&quot;path&quot;:&quot;/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_graph_atlas.py&quot;,&quot;sha256&quot;:&quot;d8eff86a3807cda394b793290260a7c737a9f01f6914d614dda7fe56975a57d7&quot;,&quot;bytes&quot;:29393}}</metadata>
+<defs><marker id="arrow" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" fill="#111"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial,sans-serif" fill="#111">
+<text x="35" y="35" font-size="23">Verified pair length 8 — search upper bound</text>
+<text x="35" y="63" font-size="14">k=not applicable; exact-oracle</text>
+<text x="35" y="87" font-size="14">16 DFA coordinates independently replayed; D(empty)=0; D(final)=0.</text>
+<text x="35" y="109" font-size="14">Reference shortest H=8; gap L-H=0; reference k=N/A.</text>
+<path data-source="0" data-port="0" data-target="0" d="M 243.196,174.277 C 200.832,182.240 267.776,133.701 253.614,163.384" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path data-source="0" data-port="1" data-target="1" d="M 270.420,188.284 Q 299.075,212.519 339.507,219.516" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path data-source="1" data-port="0" data-target="0" d="M 347.191,214.397 Q 316.738,188.642 278.897,182.093" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path data-source="1" data-port="1" data-target="2" d="M 346.129,229.765 Q 306.019,257.111 262.556,275.996" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path data-source="2" data-port="0" data-target="0" d="M 249.836,271.893 Q 260.119,231.172 259.362,194.498" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path data-source="2" data-port="1" data-target="3" d="M 237.338,290.686 Q 194.860,325.379 178.278,368.675" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path data-source="3" data-port="0" data-target="2" d="M 182.989,373.901 Q 225.467,339.207 242.049,295.912" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path data-source="3" data-port="1" data-target="3" d="M 163.101,389.583 C 152.721,422.235 127.412,357.161 155.834,379.331" fill="none" stroke="#111" stroke-width="1.3" marker-end="url(#arrow)"/>
+<circle cx="259.035" cy="178.656" r="12" fill="white" stroke="#111"/>
+<circle cx="259.035" cy="178.656" r="9.5" fill="none" stroke="#111"/>
+<text x="259.035" y="182.656" text-anchor="middle" font-size="11">0</text>
+<circle cx="356.778" cy="222.505" r="12" fill="white" stroke="#111"/>
+<text x="356.778" y="226.505" text-anchor="middle" font-size="11">1</text>
+<circle cx="247.105" cy="282.709" r="12" fill="white" stroke="#111"/>
+<text x="247.105" y="286.709" text-anchor="middle" font-size="11">2</text>
+<circle cx="173.222" cy="381.878" r="12" fill="white" stroke="#111"/>
+<text x="173.222" y="385.878" text-anchor="middle" font-size="11">3</text>
+<text x="35" y="442" font-size="13">Graph drawings: 1 of 1 saved base DFA(s); roots are double circles; arrows unlabelled.</text>
+<text x="35" y="472" font-size="14" font-family="monospace">u = 00110011</text>
+<text x="35" y="496" font-size="14" font-family="monospace">v = 11000011</text>
+<text x="35" y="528" font-size="15">D(i): number of DFAs with different endpoints after i joint symbols</text>
+<path d="M60,558 V683 H940" fill="none" stroke="#888"/>
+<polyline points="60.00,683.00 170.00,558.00 280.00,620.50 390.00,558.00 500.00,636.12 610.00,659.56 720.00,667.38 830.00,675.19 940.00,683.00" fill="none" stroke="#1b5d8c" stroke-width="2"/>
+<text x="35" y="563" font-size="11">16</text>
+<text x="43" y="687" font-size="11">0</text>
+<text x="56" y="704" font-size="11">0</text>
+<text x="925" y="704" font-size="11">8</text>
+<text x="35" y="733" font-size="13">First difference: depth 1.</text>
+<text x="35" y="755" font-size="13">Agreements may be lost under 01 or 10. Complete search parameters and prefix scores are in witness.json.</text>
+</g></svg>

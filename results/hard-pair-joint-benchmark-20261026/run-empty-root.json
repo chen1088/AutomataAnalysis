@@ -1,0 +1,28 @@
+{
+  "beam": 1,
+  "compiled_source_sha256": {
+    "HardPairJointBenchmark.cpp": "676bd5d83ad9730201d48aa50d587bfb23c6c96be51226030b6e477b1cbb126a",
+    "HardPairJointFinder.h": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+  },
+  "compiled_source_snapshot": "evidence",
+  "coordinate_weight_policy": "one-per-distinct-rooted-DFA-table",
+  "diagonal_beam": 1,
+  "executable": "/tmp/HardPairJointBenchmark-final",
+  "executable_sha256": "4b73a0340bdfc688cf46d41ad8fc087041a3d0071d49502cd232d4b7a86813ad",
+  "expansion_cap": 2000000,
+  "fixtures_sha256": "31c449421dafe0845ff4652b7fa0ba62259e7d7a454595b2a4faf3a43f2b3596",
+  "k": "2,4,6,8",
+  "max_length": 80,
+  "oracle_cap": 150000,
+  "oracle_depth": 40,
+  "ranking": "total-D,lex",
+  "raw_output_path": "out/hard-pair-joint-benchmark-20261026/stable-empty-root",
+  "search_randomness": false,
+  "source_sha256": {
+    "HardPairJointFinder.h": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641",
+    "tests/HardPairJointBenchmark.cpp": "676bd5d83ad9730201d48aa50d587bfb23c6c96be51226030b6e477b1cbb126a",
+    "tests/hard_pair_joint_benchmark.py": "68e32dd23fcb309990cfb83cbb373b27822cfbce83aa2b83410981e516400eba"
+  },
+  "startup_common_depth": null,
+  "unequal_beam": 0
+}

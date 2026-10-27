@@ -1,0 +1,227 @@
+{
+  "definition": "Every exact-reference case must return a verified pair no longer than H+2; a miss fails this empirical criterion. This is not a universal error proof.",
+  "fixture_generation_randomness_only": true,
+  "search_randomness": false,
+  "quality_accepted": false,
+  "groups": [
+    {
+      "file": "records-divergence-c2-k2.jsonl",
+      "joint_k": 2,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 36,
+      "within_two": 32,
+      "misses": 15,
+      "largest_successful_gap": 12,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-divergence-c2-k4.jsonl",
+      "joint_k": 4,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 37,
+      "within_two": 34,
+      "misses": 14,
+      "largest_successful_gap": 4,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-divergence-c2-k6.jsonl",
+      "joint_k": 6,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 39,
+      "within_two": 37,
+      "misses": 12,
+      "largest_successful_gap": 5,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-divergence-c2-k8.jsonl",
+      "joint_k": 8,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 39,
+      "within_two": 38,
+      "misses": 12,
+      "largest_successful_gap": 3,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-empty-root-k2.jsonl",
+      "joint_k": 2,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 1,
+        "common_depth": null,
+        "expected_starts": 1,
+        "mode": "empty-root"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 32,
+      "within_two": 31,
+      "misses": 19,
+      "largest_successful_gap": 11,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-empty-root-k4.jsonl",
+      "joint_k": 4,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 1,
+        "common_depth": null,
+        "expected_starts": 1,
+        "mode": "empty-root"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 33,
+      "within_two": 31,
+      "misses": 18,
+      "largest_successful_gap": 6,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-empty-root-k6.jsonl",
+      "joint_k": 6,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 1,
+        "common_depth": null,
+        "expected_starts": 1,
+        "mode": "empty-root"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 36,
+      "within_two": 33,
+      "misses": 15,
+      "largest_successful_gap": 8,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-empty-root-k8.jsonl",
+      "joint_k": 8,
+      "ranking": "total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 1,
+        "common_depth": null,
+        "expected_starts": 1,
+        "mode": "empty-root"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 39,
+      "within_two": 36,
+      "misses": 12,
+      "largest_successful_gap": 7,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-permutation-c2-k2.jsonl",
+      "joint_k": 2,
+      "ranking": "permutation-D,total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 39,
+      "within_two": 34,
+      "misses": 12,
+      "largest_successful_gap": 21,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-permutation-c2-k4.jsonl",
+      "joint_k": 4,
+      "ranking": "permutation-D,total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 45,
+      "within_two": 37,
+      "misses": 6,
+      "largest_successful_gap": 41,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-permutation-c2-k6.jsonl",
+      "joint_k": 6,
+      "ranking": "permutation-D,total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 45,
+      "within_two": 38,
+      "misses": 6,
+      "largest_successful_gap": 37,
+      "all_known_cases_found_within_two": false
+    },
+    {
+      "file": "records-permutation-c2-k8.jsonl",
+      "joint_k": 8,
+      "ranking": "permutation-D,total-D,lex",
+      "startup": {
+        "all_starts_tested": true,
+        "attempted_starts": 14,
+        "common_depth": 2,
+        "expected_starts": 14,
+        "mode": "all-common-prefixes-then-first-difference"
+      },
+      "exact_reference_cases": 51,
+      "found_exact_reference_cases": 48,
+      "within_two": 40,
+      "misses": 3,
+      "largest_successful_gap": 43,
+      "all_known_cases_found_within_two": false
+    }
+  ],
+  "semantic_ctests_passed": 7,
+  "benchmark_cases_per_config": 52,
+  "exact_reference_cases_per_config": 51
+}

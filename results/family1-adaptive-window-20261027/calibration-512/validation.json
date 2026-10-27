@@ -1,0 +1,47 @@
+{
+  "all_case_config_combinations_verified": true,
+  "cases_files": [
+    {
+      "bytes": 46966,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/cases.csv",
+      "sha256": "00c54f096d8dfdb60e53941318f8983a472c8b253373d6fb3989c01628c46091"
+    }
+  ],
+  "decision_files": [
+    {
+      "bytes": 90330,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/winning-decisions.csv",
+      "sha256": "f518025ea0238c782e81a5e01530db1be291c57290cf9df6b1e2060906ac16c2"
+    }
+  ],
+  "graph_queries": 100,
+  "historical_certificate_mask_replays": 4050,
+  "moments_files": [
+    {
+      "bytes": 749823,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/winning-window-moments-000.csv",
+      "sha256": "a0c1d05a3977568f05628f156ee516000741200a701ae4d54e93871bf1e55b35"
+    },
+    {
+      "bytes": 239068,
+      "path": "results/family1-adaptive-window-20261027/calibration-512/winning-window-moments-001.csv",
+      "sha256": "cd58ff9dc0e207cae0b3fa39ce0e44c0671328424c1261194f46c57f8b82cba6"
+    }
+  ],
+  "moments_use_exact_integer_arithmetic": true,
+  "native_improvements_checked": 250,
+  "parent_metric_mask_comparisons": 77136,
+  "partial_windows": 0,
+  "passed": true,
+  "positive_and_improvement_mask_replays": 27788,
+  "positive_figures": 20,
+  "report_source": {
+    "bytes": 43684,
+    "path": "scripts/family1_adaptive_window_report.py",
+    "sha256": "afa36de78fac577bf3227d30d985d2161e7c60c188e413d3c0a750026c01f1b6"
+  },
+  "scalar_profile_mask_steps": 446364,
+  "source_and_executable_pins_checked": true,
+  "winning_decisions_checked": 796,
+  "winning_window_moments_checked": 2331
+}

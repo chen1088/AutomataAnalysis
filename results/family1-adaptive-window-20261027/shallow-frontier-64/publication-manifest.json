@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "bytes": 3614,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/README.md",
+      "sha256": "892d695260be61410834199fe5531b987954d724bb42703aeb332ae7be541156"
+    },
+    {
+      "bytes": 141261,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/cases.csv",
+      "sha256": "a8a5b96ad4a8b7150a776e66213597e5bb218e3140771ff972d5e462b3e5961a"
+    },
+    {
+      "bytes": 20507,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/input-cases.csv",
+      "sha256": "38e3ed4126cc5773cc693a5128e27e0e4937576443040c06a0ceab09829cb870"
+    },
+    {
+      "bytes": 301878,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/query-audit.json",
+      "sha256": "358707c2798e7db33dccc6c736f5cfd5fd4a81cd259cfd1b058dc2f5b6f85902"
+    },
+    {
+      "bytes": 118988,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/run.json",
+      "sha256": "c8704fca4b998d465509f451f70d0dde060997568eae1011ad29c824ca727d9c"
+    },
+    {
+      "bytes": 16678,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/summary.json",
+      "sha256": "0f95c810124793e79e3ae39e93d5c0713fd7892cd41597b1636e8455178bad43"
+    },
+    {
+      "bytes": 2132,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/validation.json",
+      "sha256": "24962f185174d161d9ac5c1b546c484d812d6ec0f2021fd6db9239c54bbd0f0a"
+    },
+    {
+      "bytes": 335330,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-decisions.csv",
+      "sha256": "3d90afafe3a6dfdf59ab20c57acbeff53123b81479766c62f7b690693d88bfaf"
+    },
+    {
+      "bytes": 749705,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-000.csv",
+      "sha256": "aa784b51c1fc9093f47d341c68fbc7553381433ef49e0e1562b6c14e4515b88e"
+    },
+    {
+      "bytes": 749940,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-001.csv",
+      "sha256": "fae219bae5572de28a44fd038b93ea99dc8474d2d2454a469a026f3ce317376c"
+    },
+    {
+      "bytes": 749817,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-002.csv",
+      "sha256": "f665e2c3d7088527e3411204e9a8236f5b766a2b7b9f1d8eaf2c26f8e255b927"
+    },
+    {
+      "bytes": 173029,
+      "path": "results/family1-adaptive-window-20261027/shallow-frontier-64/winning-window-moments-003.csv",
+      "sha256": "c7eb1eca9406cb063a7e394a195885b5f447e8e0851f12b874c500cc42859ad7"
+    }
+  ]
+}

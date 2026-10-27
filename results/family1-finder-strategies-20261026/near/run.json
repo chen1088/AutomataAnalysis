@@ -1,0 +1,111 @@
+{
+  "calibration": {
+    "bytes": 8595,
+    "path": "out/family1-finder-strategies-20261026/final-calibration-portfolio/manifest.json",
+    "sha256": "9bfb3875d3382019750199c8e9983d01d2ad3c760b872eeaf3cb52754e8c3987"
+  },
+  "compile_source_fingerprint": "f1a714897e29b64070a39dacbd537292e8b10574b01fc75565db862d6e9d743d",
+  "compile_source_inventory": {
+    "executable_sha256": "745fe4fa03ec6841614fdee86665c12e7e74f3ae219f1ca4048d36ee43b74ad4",
+    "sources": [
+      {
+        "path": "family1_near.cpp",
+        "sha256": "a8a622e23a113da214964eec09247a275b19d85967bf0b520dc13a6fe4e1dc8f"
+      },
+      {
+        "path": "Family1NearPair.h",
+        "sha256": "af4a74ec3304890596e4d8fae9c16b72dd0ee6d75264a4109e688f2897e8210c"
+      },
+      {
+        "path": "Family1ScoredSeeds.h",
+        "sha256": "ea2942100e62ead16005e64a2716d135faa04c84929c9eb08e71f47870a99c91"
+      },
+      {
+        "path": "Family1JointPair.h",
+        "sha256": "e21321806725611c87fb16475234f99e963628e96c85c50ce7b55dbce453a272"
+      },
+      {
+        "path": "Family1JointSeeds.h",
+        "sha256": "50b62dd9e9e277d9721187efa3a72b1d75bf68024ce1149e1650040f9dab715a"
+      },
+      {
+        "path": "HardPairJointFinder.h",
+        "sha256": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+      },
+      {
+        "path": "HardPairPrefixSeeds.h",
+        "sha256": "a465d603f3465459345f93d8b2f3a8ac0dd5b9900813c125af13679f693bb7e9"
+      },
+      {
+        "path": "Family1ExactPacked.h",
+        "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+      },
+      {
+        "path": "Family1ExactPacked.cpp",
+        "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+      },
+      {
+        "path": "Family1LargeGraph.h",
+        "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+      },
+      {
+        "path": "Family1LargeGraph.cpp",
+        "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+      },
+      {
+        "path": "Family1PairAgreement.h",
+        "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+      },
+      {
+        "path": "Family1CliArtifacts.h",
+        "sha256": "42d99ccb98fa6093a604aa03c9c0f606028ebba3e917ccc725a796e7281924b1"
+      },
+      {
+        "path": "Family1TailScoredSeeds.h",
+        "sha256": "94f8c46bf23b1d22f7d9f0615ab8bd66a03b0ec19338aec5eca45201383f180c"
+      },
+      {
+        "path": "HardPairViability.h",
+        "sha256": "04152a0fecdccccbbc263da62d11c6121cb3b9323fec41344a28ccc50320ff21"
+      }
+    ]
+  },
+  "frontier": {
+    "bytes": 116984,
+    "path": "out/family1-finder-strategies-20261026/final-frontier343-portfolio/manifest.json",
+    "sha256": "74cbf7579a79c720ffeb3751760811571568f2dd2bf0fff46be5e33dd3055f38"
+  },
+  "m8": {
+    "bytes": 2009,
+    "path": "out/family1-finder-strategies-20261026/final-m8-portfolio/manifest.json",
+    "sha256": "515a2696e880e8fbe20ea0da71d013867ad73734597d0461ff843f73d0451d21"
+  },
+  "m8_prior_certificate": {
+    "bytes": 410759,
+    "path": "results/family1-adaptive-search-final/records.jsonl",
+    "sha256": "fea2859e148ae4a118b8d1a1c75f4727f4624853be1c474967a1ef814fe06e88"
+  },
+  "m8_prior_producing_k": "unknown, historical common suffix",
+  "publisher": {
+    "bytes": 19359,
+    "path": "scripts/family1_near_publish.py",
+    "sha256": "6d84b94ea3e710d498e6200ebe2bc4d2495fa60da129dd93bef37a8e18d0fb7b"
+  },
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    },
+    {
+      "bytes": 171061,
+      "path": "results/family1-neighbor-seeds/near-top.jsonl",
+      "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+    }
+  ]
+}

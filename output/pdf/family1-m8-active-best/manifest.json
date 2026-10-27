@@ -1,47 +1,37 @@
 {
-  "active-best.aux": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\active-best.aux",
-    "sha256": "fbabe80c887f95a1ede6847f22dd91b380bda9d17ae8bfaa72e1741b16aa41e9",
-    "bytes": 32
-  },
-  "active-best.log": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\active-best.log",
-    "sha256": "61b8a8cec718dee462b97c691ccbe936c9593f1fa3a4be802fc80a3b21c57296",
-    "bytes": 27406
+  "README.md": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/README.md",
+    "sha256": "ce6837b9362ff9be558b62a14fff6bd8d5e6773e596b027f330517dd5656e987",
+    "bytes": 1443
   },
   "active-best.pdf": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\active-best.pdf",
-    "sha256": "3e62c8d261c7a5dcf5275f381680449b20b23fc01ff24caf2a7dbd841fcec661",
-    "bytes": 135701
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/active-best.pdf",
+    "sha256": "98a85c7fd22cc7c84f94a4f68321b6b128d306d460691f987375fe406652e829",
+    "bytes": 32850
   },
   "active-best.tex": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\active-best.tex",
-    "sha256": "639eb3eb043dfac52733350f8847508c1c56ea4a08d51ff63740cf0c36b33509",
-    "bytes": 899
-  },
-  "build.log": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\build.log",
-    "sha256": "76203a0c6a8e5df595082560de283d3f641db84c5ed34b8691ba1cfc73fc9b3d",
-    "bytes": 11945
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/active-best.tex",
+    "sha256": "54786caa120684175d0d2a08933df2d132021590d4a51d2fa3362c56dd32992d",
+    "bytes": 2845
   },
   "graph-01.tex": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\graph-01.tex",
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/graph-01.tex",
     "sha256": "ad3ef1617c7fa820144f26e6ee31e825178250f88ebb00b0a4ba21573f4e65c8",
     "bytes": 3574
   },
   "qa.json": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\qa.json",
-    "sha256": "f649553f2d6d7730d0e646daa5e17cdc1cd901c100c43c3d9b3142c4741ffb45",
-    "bytes": 1104
-  },
-  "README.md": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\README.md",
-    "sha256": "cd710a537405698599d91f30dc8485a881ba325398b2f4b75d737cf308fda006",
-    "bytes": 992
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/qa.json",
+    "sha256": "eee9d1cd772937f9ea70cabaffac998537be40999fafa21ca04c7e1f60a0cc1d",
+    "bytes": 1819
   },
   "records.json": {
-    "path": "C:\\Users\\chenxu\\Projects\\SWP\\AutomataAnalysis\\output\\pdf\\family1-m8-active-best\\records.json",
-    "sha256": "d7e43127ea97d0bf37ccdfe48582d5f247d639623173959fc5ec1a1a341e3930",
-    "bytes": 38888
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/records.json",
+    "sha256": "9c4b0e4f266a2e25756c6b9d55608e8f3fbcef8c014188456a03af22cc0cc4f1",
+    "bytes": 47180
+  },
+  "witnesses.json": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/pdf/family1-m8-active-best/witnesses.json",
+    "sha256": "9cf2d8f0b550d55df60af650cd15a04e9c04e6206b0fc58f332509bcf06cc60a",
+    "bytes": 7758
   }
 }

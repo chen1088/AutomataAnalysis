@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "id": "0001000200030203",
+  "m": 4,
+  "key": "0001000200030203",
+  "canonical_table": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "witness": [
+    "110011000010001",
+    "111111000010001"
+  ],
+  "first": "110011000010001",
+  "second": "111111000010001",
+  "length": 15,
+  "first_difference_position": 3,
+  "status": "verified-upper",
+  "minimality_certified": false,
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "family_size": 16,
+  "search_parameters": {
+    "k": 2,
+    "window_kind": "joint-pair",
+    "alphabet": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "producer_k_known": true,
+    "beam_width": 1,
+    "diagonal_width": 0,
+    "unequal_width": 0,
+    "prefix_pairs": 0,
+    "prefix_depth": 16,
+    "prefix_words": 65536,
+    "common_prefix_depth": 8,
+    "max_length": 80,
+    "expansion_cap": 2000000,
+    "target_upper": 0,
+    "deterministic": true,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "startup_policy": null,
+    "advance_policy": null,
+    "winning_attempt": {
+      "kind": "divergence",
+      "number": 13,
+      "initial_length": 3,
+      "initial_first": "110",
+      "initial_second": "111",
+      "common_prefix": "11",
+      "orientation": "01",
+      "first_difference_depth": 3,
+      "first_greedy_depth": 5
+    },
+    "startup": "divergence",
+    "common_depth": 2,
+    "score": "total",
+    "priority_coordinate_count": 0,
+    "greedy_advance": "whole joint window block",
+    "expanded_nodes": 9496,
+    "complete_windows": 482,
+    "expansion_limit_reached": false,
+    "length_limit_reached": true,
+    "prefix_pair_capped": false,
+    "prefix_word_capped": false
+  },
+  "verification": {
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "dfa_count": 16,
+    "passed": true,
+    "D_empty": 0,
+    "D_final": 0
+  },
+  "trace": [
+    {
+      "length": 0,
+      "differing": 0,
+      "synchronized": 16
+    },
+    {
+      "length": 1,
+      "differing": 0,
+      "synchronized": 16
+    },
+    {
+      "length": 2,
+      "differing": 0,
+      "synchronized": 16
+    },
+    {
+      "length": 3,
+      "differing": 16,
+      "synchronized": 0
+    },
+    {
+      "length": 4,
+      "differing": 8,
+      "synchronized": 8
+    },
+    {
+      "length": 5,
+      "differing": 5,
+      "synchronized": 11
+    },
+    {
+      "length": 6,
+      "differing": 4,
+      "synchronized": 12
+    },
+    {
+      "length": 7,
+      "differing": 3,
+      "synchronized": 13
+    },
+    {
+      "length": 8,
+      "differing": 2,
+      "synchronized": 14
+    },
+    {
+      "length": 9,
+      "differing": 2,
+      "synchronized": 14
+    },
+    {
+      "length": 10,
+      "differing": 2,
+      "synchronized": 14
+    },
+    {
+      "length": 11,
+      "differing": 1,
+      "synchronized": 15
+    },
+    {
+      "length": 12,
+      "differing": 1,
+      "synchronized": 15
+    },
+    {
+      "length": 13,
+      "differing": 1,
+      "synchronized": 15
+    },
+    {
+      "length": 14,
+      "differing": 1,
+      "synchronized": 15
+    },
+    {
+      "length": 15,
+      "differing": 0,
+      "synchronized": 16
+    }
+  ],
+  "fixture": null,
+  "reference_H": 8,
+  "reference_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+    "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b",
+    "bytes": 512910
+  },
+  "gap": 7,
+  "source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/family1-adaptiveness/inflated-k2-source.json",
+    "sha256": "df4cc8edfb43c6eb740375b6855d5c66e599bafd669f0be33e101df652121107",
+    "bytes": 9192
+  },
+  "generator": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/hard_pair_witness_figure.py",
+    "sha256": "70d79bdc8f7fcad4633594ad6fa74ddbe8be80c0b683221cdf78130b2d42a901",
+    "bytes": 18867
+  },
+  "graph_geometry_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_graph_atlas.py",
+    "sha256": "d8eff86a3807cda394b793290260a7c737a9f01f6914d614dda7fe56975a57d7",
+    "bytes": 29393
+  }
+}

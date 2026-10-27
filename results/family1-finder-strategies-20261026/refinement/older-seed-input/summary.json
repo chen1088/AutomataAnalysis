@@ -1,0 +1,186 @@
+{
+  "input_count": 20,
+  "input_joint_ks": [
+    4
+  ],
+  "limits": [
+    "A local minimum is not a global shortestness certificate.",
+    "Common-tail k counts binary common-continuation steps, not joint steps.",
+    "Prefix-replacement k counts binary replacement-prefix symbols, not joint steps.",
+    "A refused neighborhood was not evaluated and is never labeled complete."
+  ],
+  "manifest": {
+    "bytes": 5128,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/manifest.json",
+    "sha256": "dddc186aa67412f6b7a5718dda5cc956df786e54800ded96fbff4fa6fc03b764"
+  },
+  "minimality_certified": false,
+  "modes": [
+    {
+      "budget_refused_cases": 0,
+      "cases": 20,
+      "command": [
+        "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark",
+        "deletion",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/input.tsv",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/native-deletion.jsonl",
+        "100000000",
+        "100000000"
+      ],
+      "evaluated_candidates": 18464,
+      "evaluated_neighborhoods": 56,
+      "improved_cases": 0,
+      "maximum_gap": 5,
+      "mode": "deletion",
+      "native": {
+        "bytes": 29333,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-deletion.jsonl",
+        "sha256": "77dc6be155e5739d7a569dd388d46234c3839f877c9f8c62521266c7a545fc6e"
+      },
+      "optimal": 11,
+      "partial_evaluated_neighborhoods": 0,
+      "profile_steps": 169264,
+      "reference_cases": 20,
+      "seconds": 0.055096398000387126,
+      "within_two": 17
+    },
+    {
+      "budget_refused_cases": 0,
+      "cases": 20,
+      "command": [
+        "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark",
+        "mixed",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/input.tsv",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/native-mixed.jsonl",
+        "100000000",
+        "100000000"
+      ],
+      "evaluated_candidates": 242130,
+      "evaluated_neighborhoods": 515,
+      "improved_cases": 0,
+      "maximum_gap": 5,
+      "mode": "mixed",
+      "native": {
+        "bytes": 196317,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-mixed.jsonl",
+        "sha256": "ea1126cc1e1333143d16a70d412e1ee73d8926dfd0d4b49e2d1d0af22dc4f46c"
+      },
+      "optimal": 11,
+      "partial_evaluated_neighborhoods": 0,
+      "profile_steps": 2178327,
+      "reference_cases": 20,
+      "seconds": 0.24424473299950478,
+      "within_two": 17
+    },
+    {
+      "budget_refused_cases": 0,
+      "cases": 20,
+      "command": [
+        "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark",
+        "edits4",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/input.tsv",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/native-edits4.jsonl",
+        "100000000",
+        "100000000"
+      ],
+      "evaluated_candidates": 3599667,
+      "evaluated_neighborhoods": 81,
+      "improved_cases": 1,
+      "maximum_gap": 5,
+      "mode": "edits4",
+      "native": {
+        "bytes": 40151,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-edits4.jsonl",
+        "sha256": "a5cc8f301588f9ab9cb41696532f87318691c5cf0c6bdd2a41169dbb564d5703"
+      },
+      "optimal": 12,
+      "partial_evaluated_neighborhoods": 0,
+      "profile_steps": 24653609,
+      "reference_cases": 20,
+      "seconds": 4.084979744999146,
+      "within_two": 18
+    },
+    {
+      "budget_refused_cases": 0,
+      "cases": 20,
+      "command": [
+        "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark",
+        "tail16",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/input.tsv",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/native-tail16.jsonl",
+        "100000000",
+        "100000000"
+      ],
+      "evaluated_candidates": 25077640,
+      "evaluated_neighborhoods": 468,
+      "improved_cases": 3,
+      "maximum_gap": 5,
+      "mode": "tail16",
+      "native": {
+        "bytes": 180554,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-tail16.jsonl",
+        "sha256": "f32cbc28c54439be2652d9a54b711c196e91ec3cbb8872e936bb1ca31b65a966"
+      },
+      "optimal": 13,
+      "partial_evaluated_neighborhoods": 0,
+      "profile_steps": 50154344,
+      "reference_cases": 20,
+      "seconds": 2.598090447998402,
+      "within_two": 18
+    },
+    {
+      "budget_refused_cases": 0,
+      "cases": 20,
+      "command": [
+        "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark",
+        "prefix16",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/input.tsv",
+        "out/family1-finder-strategies-20261026/refine/final-prefix/native-prefix16.jsonl",
+        "100000000",
+        "100000000"
+      ],
+      "evaluated_candidates": 25393448,
+      "evaluated_neighborhoods": 456,
+      "improved_cases": 1,
+      "maximum_gap": 5,
+      "mode": "prefix16",
+      "native": {
+        "bytes": 175778,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/native-prefix16.jsonl",
+        "sha256": "bfc353cdaf02ff1e3a8c5706581262a20928554d00d1001c4ed518da215ec9b7"
+      },
+      "optimal": 12,
+      "partial_evaluated_neighborhoods": 0,
+      "profile_steps": 271576168,
+      "reference_cases": 20,
+      "seconds": 27.20137695199992,
+      "within_two": 17
+    }
+  ],
+  "query_seal": {
+    "bytes": 1641,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/query-seal.json",
+    "sha256": "beb3772d47517ab22e31745581f58b58bc6aef138dfe66ee1f9c6ae54f5934dd"
+  },
+  "randomness": false,
+  "schema": 1,
+  "truth_k": null,
+  "truth_sources": [
+    {
+      "bytes": 2753,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "bytes": 2694,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "truth_used_after_search_only": true,
+  "truth_window_kind": "N/A: exhaustive reference",
+  "verification": {
+    "input_mask_replays": 1350,
+    "output_and_improvement_mask_replays": 9022
+  }
+}

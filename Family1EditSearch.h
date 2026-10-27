@@ -32,6 +32,9 @@ struct Options {
     std::uint64_t max_paths = 10000, max_candidates = 1000, seed = 1088;
     bool root_closure = false;
     const volatile std::sig_atomic_t* interrupted = nullptr;
+    // Canonical parents/neighbors and fixed round-robin edit kinds. The seed
+    // is ignored and no seeded ordering is constructed on this path.
+    bool deterministic = false;
 };
 struct Path {
     std::uint64_t id = 0;

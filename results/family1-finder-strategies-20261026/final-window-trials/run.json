@@ -1,0 +1,57 @@
+{
+  "deterministic": true,
+  "input_kind": "canonical graph keys only, no word pairs or score labels",
+  "cases": 21,
+  "certified_winner_keys": 20,
+  "posthoc_case_selection": {
+    "source": {
+      "path": "out/family1-finder-strategies-20261026/production-frontier343/records.jsonl",
+      "bytes": 741455,
+      "sha256": "15682e773ac80f4f8fd0f2407b5f4dea16dbc15331ab9d2636d04f9eb9eeaaf8"
+    },
+    "rule": "lexically first m7 record with previously observed upper45",
+    "selected_key": "0102000304050203000604050003",
+    "labels_not_passed_to_native": true
+  },
+  "executable": {
+    "path": "out/family1-finder-strategies-20261026/final-window-trials/Family1ScoredSeedBenchmark",
+    "bytes": 198704,
+    "sha256": "cb05d4b79c83ccb32f7efc55ebab500c39e06fe14839ee9732bf84c3b706e665"
+  },
+  "original_executable": {
+    "path": "out/build/joint-solid-linux/Family1ScoredSeedBenchmark",
+    "bytes": 198704,
+    "sha256": "cb05d4b79c83ccb32f7efc55ebab500c39e06fe14839ee9732bf84c3b706e665"
+  },
+  "input": {
+    "path": "out/family1-finder-strategies-20261026/final-window-trials/keys-21.txt",
+    "bytes": 473,
+    "sha256": "fe96e82910b275ff41778bef9f3c75f5aab7f878db85dbc577d139c9884c296f"
+  },
+  "original_source_manifest": {
+    "path": "out/family1-finder-strategies-20261026/scored-seeds/manifest.json",
+    "bytes": 1500,
+    "sha256": "231f0a560afca55bfcd8a7caf3cac590fa3d59b80999a26041ad3f03a31ef839"
+  },
+  "configs": [
+    {
+      "joint_k": 8,
+      "beam": 1
+    },
+    {
+      "joint_k": 6,
+      "beam": 4
+    }
+  ],
+  "prefix_depth": 20,
+  "prefix_words": 1048576,
+  "catalogue": 16384,
+  "starts": 512,
+  "exact_depth": 24,
+  "exact_words_per_layer": 16777216,
+  "exact_memory_mib": 256,
+  "max_length": 80,
+  "expansion_cap_per_attempt": 2000000,
+  "time_caps": false,
+  "target_reference_labels_loaded": false
+}

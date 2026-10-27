@@ -5,23 +5,62 @@ The repository includes source, compact results and current PDF/TikZ figures.
 Large raw datasets and build artifacts stay local; see the
 [artifact policy and fresh-checkout commands](docs/repository-artifacts.md).
 
-## Offline executable
+## Shortest hard-pair finder
 
-`Family1Offline.exe` accepts a seed size, an exact/heuristic switch and explicit
-graph-edit and hard-pair-search budgets. Its separate Windows build needs no
-vcpkg dependencies and produces a single executable with the static MSVC
-runtime. The executable runs offline without Python or repository datasets.
+Start with [Heuristics for shortest hard word pairs](docs/shortest-hard-pair-heuristics.md).
+It defines the distinct equal-length pair objective, the full alphabet
+00,01,10,11, deterministic starting pairs, block and one-symbol rolling
+lookahead, adaptive variance, work budgets, certificates and reporting rules.
+Joint k enumerates all 4^k extensions per retained pair; common-suffix k
+uses only 2^k extensions after distinct prefixes. Exact layers have k=N/A.
+
+| Executable | Method | Commands |
+|---|---|---|
+| Family1NearPair | Exact layers followed by full-D/common-distance starting pairs and joint k=4, beam 16 | [CLI guide](docs/family1-near-cli.md) |
+| Family1Joint | Full four-symbol block lookahead with explicit startup and beam controls | [Joint finder](docs/family1-joint.md) |
+| Family1Offline | Graph-edit runner with exact scoring or restricted common-suffix search | [Offline guide](docs/family1-offline.md) |
+
+Build the dependency-free tools and their tests on Linux:
+
+```sh
+cmake -S . -B out/build/heuristics -DFAMILY1_OFFLINE_ONLY=ON -DCMAKE_BUILD_TYPE=Release
+cmake --build out/build/heuristics -j 4
+ctest --test-dir out/build/heuristics --output-on-failure
+out/build/heuristics/Family1NearPair --m 7 --graph 0001020302030405000604060105 --k 4 --beam 16 --out out/my-pair-run
+```
+
+The separate Windows build uses the static MSVC runtime and needs no vcpkg
+installation. It builds the offline tools and test targets before running CTest:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -File scripts/build-family1-offline.ps1 -Configuration Release -Package
 .\out\build\family1-offline\Release\Family1Offline.exe --m 4 --heuristics off --depth 16 --max-layer-states 65536 --out out\offline-m4
-.\out\build\family1-offline\Release\Family1Offline.exe --m 8 --heuristics on --max-candidates 32 --max-graphs 32 --window 8 --max-window 12 --out out\offline-m8
 ```
 
-See the [offline command reference](docs/family1-offline.md) and
-[heuristic method](docs/family1-heuristic-method.md). Release ZIPs stay in ignored
-`out/releases/`. Bounds, estimates, pending graphs and all tied best findings
-remain distinct in the exports.
+Use a fresh output directory. The Family1NearPair default exact phase is
+depth 24 with 256 MiB of planned payload; its producing k is N/A. On the
+20 certified winners through m=7, the hybrid pipeline matches 18 exact lengths
+and stays within one on all 20. With the exact oracle disabled and the same
+joint k=4, beam 16, 512 starts per ranking, it matches 16 and stays within one.
+Broader saved-graph tests still expose large errors and misses. A verified
+pair supplies an upper certificate, not a general shortestness guarantee.
+
+| Evidence | Scope |
+|---|---|
+| [Finder strategies](docs/family1-finder-strategies-report.md) | Seed scoring, exact budgets, rolling search, local rewrites and unsuccessful alternatives |
+| [Adaptive windows](docs/family1-adaptive-window-report.md) | Complete joint k=2..5 and k=4..6 variance policies, oracle-off fixed controls, and actual winning k sequences |
+| [Candidate and finder adaptiveness](docs/family1-adaptiveness-report.md) | Complete edit neighborhoods, exhaustive winner ties and the limits of champion crowding |
+| [Generic joint benchmark](results/hard-pair-joint-benchmark-20261026/README.md) | Family 1, fixed heterogeneous DFA sets and complete local-swap closures at joint k=2,4,6,8 |
+| [Complete m=8 recheck](results/family1-m8-joint-audit-20261026/README.md) | Every member of a 3,010-class radius-one neighborhood at joint k=6 and k=8 |
+| [Paired-word figures](docs/hard-pair-figures.md) | Actual u,v, full D traces, original-mask counts and producing parameters beside each graph |
+
+Candidate ordering, starting pairs and lexical ties are deterministic.
+An experiment defined by an edit radius must generate and test every member
+of that neighborhood. Bounded catalogues and capped generation report their
+coverage explicitly. Source/configuration pins, all ties, negative outcomes,
+and historical certificates remain in the evidence; large raw runs stay
+under ignored out/. The [common-suffix method](docs/family1-heuristic-method.md)
+documents the older restricted algorithm separately.
 
 ## Family 1 graph search
 
@@ -43,8 +82,10 @@ The absolute maxima for sizes eight through twenty remain unresolved. The
 **lower bound of 35**, exhaustively covering the entire length-34 layer of one
 graph. The current [adaptive search](docs/FAMILY1_ADAPTIVE_CANDIDATES.md) keeps
 only the best refined estimates and every top tie in its
-[active shortlist](results/family1-m8-estimates/best-candidates.jsonl). Crowded
-top bands trigger larger word windows and then wider edit neighborhoods.
+[active shortlist](results/family1-m8-estimates/best-candidates.jsonl). The
+historical search used crowded top bands to trigger larger windows and then
+wider edit neighborhoods; the new exhaustive benchmark exposes failures of
+that trigger.
 The [best-only PDF](output/pdf/family1-m8-active-best/active-best.pdf) and
 [TikZ picture](output/pdf/family1-m8-active-best/graph-01.tex) display the current
 working leader, estimated at 49 from a verified length-50 pair.
@@ -66,10 +107,11 @@ and possible near-winners through size 20, ranks certified hard-root support,
 and queries every accessible root of each selected shape. Generation budgets
 are explicit; they do not give global pruning certificates. `Family1Threshold`
 tests one chosen equal length and preserves `unknown` without adding a bound.
-The native Windows Debug and Release builds each pass 36 local CTests, including
-170 independent threshold decisions over all 64 classes through three states.
-Fresh checkouts register 35 tests; the additional test uses a regenerated full
-evaluation journal, as described in the artifact policy.
+The original Windows exact/threshold validation passed in Debug and Release,
+including 170 independent threshold decisions over all 64 classes through
+three states. Test registration depends on build options, Python/uv and the
+optional regenerated evaluation journal; use ctest -N for the configured
+suite, as described in the artifact policy.
 See also the [edit-priority limits](docs/family1-edit-priority.md) and
 [circulant construction comparison](docs/family1-circulant-comparison.md).
 

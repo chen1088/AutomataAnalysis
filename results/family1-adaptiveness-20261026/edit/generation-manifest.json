@@ -1,0 +1,1474 @@
+{
+  "generation_seal": {
+    "path": "out/family1-adaptiveness-20261026/edit/generation-seal.json",
+    "sha256": "6f3527e4ddb8ba48e245c7a80c9c0a524c8127e3c00292a40829d8604ea552db"
+  },
+  "independent_validation": {
+    "path": "out/family1-adaptiveness-20261026/edit/independent-validation.json",
+    "sha256": "a7461b6c527f8a2ae4b1121b8dd397a282f010a58e7ace7e2b65e427538158ed"
+  },
+  "k": null,
+  "limitations": [
+    "Scoring each candidate is a separate controlled experiment; this manifest certifies generation and exhaustive winner coverage only.",
+    "Target m7 provides the complete eight-winner set and H<=33 for all others; no complete pergraph score journal is assumed.",
+    "Complete radius 2 is tested only for target sizes 2..5. Intermediate sizes cannot exceed target for these net +1 paths, so the size20 representation cap prunes no valid path.",
+    "Historical random-seeded or budget-capped pools are not used."
+  ],
+  "native_build": {
+    "path": "out/family1-adaptiveness-20261026/edit/native/build.json",
+    "sha256": "50b917405bc54ad7c8ce9facbf5209abd14fbd14251938210f2972d0915b10c1"
+  },
+  "parent_distribution": {
+    "path": "results/family1-m1-m6/score-distributions.json",
+    "sha256": "7b97174fd42ad935184f45ef0c4d918070a110583753d0cf97d1467677dc3440"
+  },
+  "parent_label_original_source": {
+    "path": "out\\family1-m1-m6\\graphs.jsonl",
+    "sha256": "8cac5ae84c8418bf313511a374add3d75a13bb2d5b731c9e4d24d186ff83b156"
+  },
+  "parent_selection_completeness": "Every m1..6 selected row is exact, canonical, unique; selected score histogram exactly matches all exhaustive max-minus-two histogram levels. Thus no qualifying parent is omitted.",
+  "parent_selection_manifest": {
+    "path": "results/family1-neighbor-seeds/summary.json",
+    "sha256": "f929d0f4043f2664b1b5f105747f8c80dc438c3442d5148b6138492bd667b71f"
+  },
+  "parent_source": {
+    "path": "results/family1-neighbor-seeds/near-top.jsonl",
+    "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+  },
+  "pools": [
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r1/candidates.jsonl",
+        "sha256": "5c462b5d1294ce7a9c4ca887899967c4a4a2242825925f6d333dda35226bb977"
+      },
+      "candidates_all_roots": 2,
+      "candidates_root_fixed": 2,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "2",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 2,
+        "candidate_capped": 0,
+        "candidate_count": 2,
+        "depths": [
+          {
+            "accepted_paths": 2,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 2
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 2,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 2,
+        "seconds": 0.000355987,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r1/native-summary.json",
+        "sha256": "1568a728453c2bf42cf996b8b266e3ad6dd0862fb5674f821b9778c895716ad0"
+      },
+      "ordered_keys_sha256": "1f63cc2f83c759dd4afa294a4b27029b9339a43168dcef89a25bf2643bbbfb5b",
+      "parent_count": 1,
+      "parent_maximum": 1,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m1-winners.jsonl",
+        "sha256": "e60d893d3c1beddaaeda88efb13b7c390079dc41444325dc46509aa575d06614"
+      },
+      "pool_id": "m2-winners-r1",
+      "radius": 1,
+      "target_m": 2,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 2,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r1/candidates.jsonl",
+        "sha256": "5c462b5d1294ce7a9c4ca887899967c4a4a2242825925f6d333dda35226bb977"
+      },
+      "candidates_all_roots": 2,
+      "candidates_root_fixed": 2,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "2",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 2,
+        "candidate_capped": 0,
+        "candidate_count": 2,
+        "depths": [
+          {
+            "accepted_paths": 2,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 2
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 2,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 2,
+        "seconds": 0.000286969,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r1/native-summary.json",
+        "sha256": "1e93281356c07e296b27492a18b343bd54a6475c270cc27609a0509e1f98a37f"
+      },
+      "ordered_keys_sha256": "1f63cc2f83c759dd4afa294a4b27029b9339a43168dcef89a25bf2643bbbfb5b",
+      "parent_count": 1,
+      "parent_maximum": 1,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m1-near2.jsonl",
+        "sha256": "e60d893d3c1beddaaeda88efb13b7c390079dc41444325dc46509aa575d06614"
+      },
+      "pool_id": "m2-near2-r1",
+      "radius": 1,
+      "target_m": 2,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 2,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r1/candidates.jsonl",
+        "sha256": "ea6d4e8a2de689b46ba5e6ad20286a975229a430ba615f79a571f5089a19c61b"
+      },
+      "candidates_all_roots": 7,
+      "candidates_root_fixed": 7,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "3",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 8,
+        "candidate_capped": 0,
+        "candidate_count": 7,
+        "depths": [
+          {
+            "accepted_paths": 8,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 12
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 12,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 7,
+        "seconds": 0.000424568,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r1/native-summary.json",
+        "sha256": "76f0a10a8e07114cc6fbbf648dce7653df65aedb78dac4e65caffe3d43129713"
+      },
+      "ordered_keys_sha256": "45a94cc78088bcf14a90ef5512bb6b996ffba39c8703a6150ff3aa7a98fd3d10",
+      "parent_count": 1,
+      "parent_maximum": 3,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m2-winners.jsonl",
+        "sha256": "de941a7307fd68a6ef0a9421312afcc47ab3b2197a03acabfdde6800ae74c9af"
+      },
+      "pool_id": "m3-winners-r1",
+      "radius": 1,
+      "target_m": 3,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r1/candidates.jsonl",
+        "sha256": "4692e50fa55ed7625534737b087dafbf58f8f59f32ce8c1840e9e27be641216c"
+      },
+      "candidates_all_roots": 42,
+      "candidates_root_fixed": 33,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "3",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 38,
+        "candidate_capped": 0,
+        "candidate_count": 42,
+        "depths": [
+          {
+            "accepted_paths": 38,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 6,
+            "path_capped": 0,
+            "raw_proposals": 54
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 54,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 33,
+        "seconds": 0.000510188,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r1/native-summary.json",
+        "sha256": "cb277997523363de36e2d9d4947cbc664fc4258bd6781c68262fe4afeaac4e1a"
+      },
+      "ordered_keys_sha256": "54493413e89356a5fce1b0de03e1e838b84ba4d0d815a6f693f636d71c79c2ec",
+      "parent_count": 6,
+      "parent_maximum": 3,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m2-near2.jsonl",
+        "sha256": "bb844a0ef5c326cf521d2b594aa9d042c8321e7a1c888421dae927fcb883c6cc"
+      },
+      "pool_id": "m3-near2-r1",
+      "radius": 1,
+      "target_m": 3,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r1/candidates.jsonl",
+        "sha256": "407e6ad6198da4169b1e16e0520927f47cdac006ab1a6a6b7b07cb9c251c4d8b"
+      },
+      "candidates_all_roots": 70,
+      "candidates_root_fixed": 39,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "4",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 40,
+        "candidate_capped": 0,
+        "candidate_count": 70,
+        "depths": [
+          {
+            "accepted_paths": 40,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 2,
+            "path_capped": 0,
+            "raw_proposals": 60
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 60,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 39,
+        "seconds": 0.000537707,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r1/native-summary.json",
+        "sha256": "cb4affec587dd7c1e12d70355f9791c4a4e555b2cfb73d5c70720a1af45a0c8a"
+      },
+      "ordered_keys_sha256": "71307a3f3d76e86a27ee754cee3d3d31627dae451e8f13659bb823801a2739f4",
+      "parent_count": 2,
+      "parent_maximum": 6,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m3-winners.jsonl",
+        "sha256": "d972210e56695454a577813cf342cfd1e4d37b86d494353e6100715fbb4d9df8"
+      },
+      "pool_id": "m4-winners-r1",
+      "radius": 1,
+      "target_m": 4,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r1/candidates.jsonl",
+        "sha256": "b515b8404c88b8ec77adc18fac2dead6c49823668cd4dff5c80a79d6f5dc71c5"
+      },
+      "candidates_all_roots": 364,
+      "candidates_root_fixed": 276,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "4",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 381,
+        "candidate_capped": 0,
+        "candidate_count": 364,
+        "depths": [
+          {
+            "accepted_paths": 381,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 25,
+            "path_capped": 0,
+            "raw_proposals": 594
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 594,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 276,
+        "seconds": 0.00246224,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r1/native-summary.json",
+        "sha256": "65a8423631f65fa853331f4f1193f624c2d2556d518fb132ae97fe1d1c3a13a5"
+      },
+      "ordered_keys_sha256": "377abd2f583790702bf36e5f2ab52edb03243fb8ffa84bc2adcf127d38157255",
+      "parent_count": 25,
+      "parent_maximum": 6,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m3-near2.jsonl",
+        "sha256": "0ad65130ef536a306f79c8f25a9fcb9c07e3d5fe682730e854b899130c0f6b66"
+      },
+      "pool_id": "m4-near2-r1",
+      "radius": 1,
+      "target_m": 4,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r1/candidates.jsonl",
+        "sha256": "a4aa54b75f6623a175f51aacb1416fdc237f93f12fc4e38b1e831aba3addd564"
+      },
+      "candidates_all_roots": 72,
+      "candidates_root_fixed": 25,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "5",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 26,
+        "candidate_capped": 0,
+        "candidate_count": 72,
+        "depths": [
+          {
+            "accepted_paths": 26,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 51
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 51,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 25,
+        "seconds": 0.000565817,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r1/native-summary.json",
+        "sha256": "3a8c64a8f83f9fd37621452d24ce39ca061e369bd9a3a1a263877a864e167a62"
+      },
+      "ordered_keys_sha256": "15d1ba68b58bfb628ebb173554f16b4bfe6516036a94e25832b6e688f17591f4",
+      "parent_count": 1,
+      "parent_maximum": 10,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m4-winners.jsonl",
+        "sha256": "aca4419695573d13d33c6ff68856c54343cb2f0a45ef6733c2eb093fc66b1999"
+      },
+      "pool_id": "m5-winners-r1",
+      "radius": 1,
+      "target_m": 5,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r1/candidates.jsonl",
+        "sha256": "c79382b8853da3fe26dca9015e22c9068b32414c45b9ebfb339ca1ceceb87481"
+      },
+      "candidates_all_roots": 1915,
+      "candidates_root_fixed": 1065,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "5",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 1451,
+        "candidate_capped": 0,
+        "candidate_count": 1915,
+        "depths": [
+          {
+            "accepted_paths": 1451,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 48,
+            "path_capped": 0,
+            "raw_proposals": 2450
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 2450,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 1065,
+        "seconds": 0.0119656,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r1/native-summary.json",
+        "sha256": "7678b8a86e99d247b721c9e5f035fb231e26186ce45e19958247d5e91e2fc44c"
+      },
+      "ordered_keys_sha256": "88ee1cc828a6d76dfb9a5c5f3e85cb0892b8a738fa550fd4bd1a8d538d41de79",
+      "parent_count": 48,
+      "parent_maximum": 10,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m4-near2.jsonl",
+        "sha256": "1a0787a03a3105b4e313b05f8dffb8505fac16e87d82536d1a79c6c54c839f7a"
+      },
+      "pool_id": "m5-near2-r1",
+      "radius": 1,
+      "target_m": 5,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m6-winners-r1/candidates.jsonl",
+        "sha256": "325e52f11f40a9eefa5cb0fef3366053003bd844faae5819e26b90facea24a6e"
+      },
+      "candidates_all_roots": 885,
+      "candidates_root_fixed": 212,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "6",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m6-winners-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m6-winners-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m6-winners-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 228,
+        "candidate_capped": 0,
+        "candidate_count": 885,
+        "depths": [
+          {
+            "accepted_paths": 228,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 5,
+            "path_capped": 0,
+            "raw_proposals": 406
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 406,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 212,
+        "seconds": 0.00338735,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m6-winners-r1/native-summary.json",
+        "sha256": "ede7fc255b3dd4063a695d068c940f921d42ba0f6a07d4f9704db0b1dafead09"
+      },
+      "ordered_keys_sha256": "5f1103dfb37b5d53478e937e6749ac270bb2c973bbc3501b9c6eafca84e826f3",
+      "parent_count": 5,
+      "parent_maximum": 15,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m5-winners.jsonl",
+        "sha256": "1c978d42474750e24672dd75675935b401c7ef442ede68460013ca8d7df6ce0f"
+      },
+      "pool_id": "m6-winners-r1",
+      "radius": 1,
+      "target_m": 6,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m6-near2-r1/candidates.jsonl",
+        "sha256": "2838d5a6ffbd7a97074f984449b1b84b5c72a850531ad7d3e7018e6cfd07a377"
+      },
+      "candidates_all_roots": 11693,
+      "candidates_root_fixed": 5066,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "6",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m6-near2-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m6-near2-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m6-near2-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 6536,
+        "candidate_capped": 0,
+        "candidate_count": 11693,
+        "depths": [
+          {
+            "accepted_paths": 6536,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 139,
+            "path_capped": 0,
+            "raw_proposals": 11587
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 11587,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 5066,
+        "seconds": 0.0771095,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m6-near2-r1/native-summary.json",
+        "sha256": "f5edd18b0e5e00b43e4001277f1ac62d62c3346aeb7cfa5886d3e3fc00163a60"
+      },
+      "ordered_keys_sha256": "5e667165aa160ccfd0df37cf6db14e14aa44eb6191fc6296301dd15ac31b3169",
+      "parent_count": 139,
+      "parent_maximum": 15,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m5-near2.jsonl",
+        "sha256": "8bc9e011ace9724e33b346999cd21a02b2a8cdc02ee7d19d96668fbb59d657ad"
+      },
+      "pool_id": "m6-near2-r1",
+      "radius": 1,
+      "target_m": 6,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-winners-r1/candidates.jsonl",
+        "sha256": "2e4b0b9a4b8da302dd941a6d939f79272bc7cb4abd528a7bd4706aa91fbfdfdd"
+      },
+      "candidates_all_roots": 391,
+      "candidates_root_fixed": 123,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "7",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m7-winners-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m7-winners-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m7-winners-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 126,
+        "candidate_capped": 0,
+        "candidate_count": 391,
+        "depths": [
+          {
+            "accepted_paths": 126,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 2,
+            "path_capped": 0,
+            "raw_proposals": 246
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 246,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 123,
+        "seconds": 0.00192647,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-winners-r1/native-summary.json",
+        "sha256": "312574af0b9c695f76d7764722bb19695180d2bbb4fa7d78dfd8a5ff1e3a748b"
+      },
+      "ordered_keys_sha256": "94e6c8043b5f30d559d76b37713430524256f6af190ab10d2853207cf7b43c75",
+      "parent_count": 2,
+      "parent_maximum": 23,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m6-winners.jsonl",
+        "sha256": "55584e9aecd37eb892b3f177b5293a468d93de00eb4a73873b91b6e89477d299"
+      },
+      "pool_id": "m7-winners-r1",
+      "radius": 1,
+      "target_m": 7,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-near2-r1/candidates.jsonl",
+        "sha256": "27bb3924d995f6658b5af60b9fcd31f97477e09f451695f8ac1980b569591ff3"
+      },
+      "candidates_all_roots": 13329,
+      "candidates_root_fixed": 3581,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "7",
+        "1",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m7-near2-r1/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m7-near2-r1/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m7-near2-r1/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 4414,
+        "candidate_capped": 0,
+        "candidate_count": 13329,
+        "depths": [
+          {
+            "accepted_paths": 4414,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 69,
+            "path_capped": 0,
+            "raw_proposals": 8474
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 8474,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 3581,
+        "seconds": 0.0703272,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m7-near2-r1/native-summary.json",
+        "sha256": "f282450437e8efb1db04e4e389dea04c6fd27193e9bdedcbdde71f6509892044"
+      },
+      "ordered_keys_sha256": "9a498dbd903a4d0f5f70639e1e4f89d4edce6fbdeeb2bad27ecc946e5a86ac4f",
+      "parent_count": 69,
+      "parent_maximum": 23,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m6-near2.jsonl",
+        "sha256": "23818d53be1f0799d2786bd22fe3c98e8a57857486f0dd4190111f501c747daa"
+      },
+      "pool_id": "m7-near2-r1",
+      "radius": 1,
+      "target_m": 7,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_occurrence_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r2/candidates.jsonl",
+        "sha256": "5ede70d7026d80cc55c5409503ce38e7a3e694bf96864dc8a09ff91db3b50aac"
+      },
+      "candidates_all_roots": 5,
+      "candidates_root_fixed": 5,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "2",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 7,
+        "candidate_capped": 0,
+        "candidate_count": 5,
+        "depths": [
+          {
+            "accepted_paths": 2,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 2
+          },
+          {
+            "accepted_paths": 5,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 2,
+            "path_capped": 0,
+            "raw_proposals": 19
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 21,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 5,
+        "seconds": 0.000460238,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-winners-r2/native-summary.json",
+        "sha256": "0ecdf1751815c46ad96304fe02a30755814711c43c9f5741f3afd99eabc5d5e0"
+      },
+      "ordered_keys_sha256": "0007a872fae5cb998fd214c09abfeb551d05363d0f8042e6e9f6853c1e50fff9",
+      "parent_count": 1,
+      "parent_maximum": 1,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m1-winners.jsonl",
+        "sha256": "e60d893d3c1beddaaeda88efb13b7c390079dc41444325dc46509aa575d06614"
+      },
+      "pool_id": "m2-winners-r2",
+      "radius": 2,
+      "target_m": 2,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r2/candidates.jsonl",
+        "sha256": "5ede70d7026d80cc55c5409503ce38e7a3e694bf96864dc8a09ff91db3b50aac"
+      },
+      "candidates_all_roots": 5,
+      "candidates_root_fixed": 5,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "2",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 7,
+        "candidate_capped": 0,
+        "candidate_count": 5,
+        "depths": [
+          {
+            "accepted_paths": 2,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 2
+          },
+          {
+            "accepted_paths": 5,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 2,
+            "path_capped": 0,
+            "raw_proposals": 19
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 21,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 5,
+        "seconds": 0.000367099,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m2-near2-r2/native-summary.json",
+        "sha256": "5773b01bc9a4c25f8a6b67a7564b4a9c7c9dc173c88e82c3991780c3668bb14c"
+      },
+      "ordered_keys_sha256": "0007a872fae5cb998fd214c09abfeb551d05363d0f8042e6e9f6853c1e50fff9",
+      "parent_count": 1,
+      "parent_maximum": 1,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m1-near2.jsonl",
+        "sha256": "e60d893d3c1beddaaeda88efb13b7c390079dc41444325dc46509aa575d06614"
+      },
+      "pool_id": "m2-near2-r2",
+      "radius": 2,
+      "target_m": 2,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r2/candidates.jsonl",
+        "sha256": "3e5d18efb22331800ab6c6347c47cc0abda374b9fe6b02677e25fc7f4d7b5ab9"
+      },
+      "candidates_all_roots": 36,
+      "candidates_root_fixed": 36,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "3",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 84,
+        "candidate_capped": 0,
+        "candidate_count": 36,
+        "depths": [
+          {
+            "accepted_paths": 11,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 12
+          },
+          {
+            "accepted_paths": 73,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 10,
+            "path_capped": 0,
+            "raw_proposals": 175
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 187,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 36,
+        "seconds": 0.00121779,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-winners-r2/native-summary.json",
+        "sha256": "546f3d7785846df026ac2beca5cf0ff4e9d957ca08d20875d6f1a011e88af6b5"
+      },
+      "ordered_keys_sha256": "3577dc24fd46171b9ffbefc6094863cb92beae1cf8b754dfc1aa7a52d890e3ad",
+      "parent_count": 1,
+      "parent_maximum": 3,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m2-winners.jsonl",
+        "sha256": "de941a7307fd68a6ef0a9421312afcc47ab3b2197a03acabfdde6800ae74c9af"
+      },
+      "pool_id": "m3-winners-r2",
+      "radius": 2,
+      "target_m": 3,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r2/candidates.jsonl",
+        "sha256": "7ce8e4d75eae775ff2ce8b7adcfb342c0491f14b87e6cc13aaa259ded119cc23"
+      },
+      "candidates_all_roots": 57,
+      "candidates_root_fixed": 57,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "3",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 426,
+        "candidate_capped": 0,
+        "candidate_count": 57,
+        "depths": [
+          {
+            "accepted_paths": 52,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 6,
+            "path_capped": 0,
+            "raw_proposals": 54
+          },
+          {
+            "accepted_paths": 374,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 51,
+            "path_capped": 0,
+            "raw_proposals": 929
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 983,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 57,
+        "seconds": 0.00247407,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m3-near2-r2/native-summary.json",
+        "sha256": "10a46e8e94b0defeebd2ffdeba4257ff4a37810025baabf3ee9844c2b2e9d8dd"
+      },
+      "ordered_keys_sha256": "8463e6eadabb8d39dd9e8129032cb6e1b9fe467db44e603cedf86818d39322a4",
+      "parent_count": 6,
+      "parent_maximum": 3,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m2-near2.jsonl",
+        "sha256": "bb844a0ef5c326cf521d2b594aa9d042c8321e7a1c888421dae927fcb883c6cc"
+      },
+      "pool_id": "m3-near2-r2",
+      "radius": 2,
+      "target_m": 3,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r2/candidates.jsonl",
+        "sha256": "ba645dab364cd5a8cd53713070116c7aa0985c044d071d308fa69d009b2ebe68"
+      },
+      "candidates_all_roots": 445,
+      "candidates_root_fixed": 346,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "4",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 1049,
+        "candidate_capped": 0,
+        "candidate_count": 445,
+        "depths": [
+          {
+            "accepted_paths": 59,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 2,
+            "path_capped": 0,
+            "raw_proposals": 60
+          },
+          {
+            "accepted_paths": 990,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 58,
+            "path_capped": 0,
+            "raw_proposals": 2362
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 2422,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 346,
+        "seconds": 0.00685951,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-winners-r2/native-summary.json",
+        "sha256": "39b3cce39201533cf7a002b40efdd020f1ff165d9835d30dcf412dd12af228c6"
+      },
+      "ordered_keys_sha256": "5976276e088a566c47973df18dc8b59ace2db74a8704dacf826c5a01cf89afe7",
+      "parent_count": 2,
+      "parent_maximum": 6,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m3-winners.jsonl",
+        "sha256": "d972210e56695454a577813cf342cfd1e4d37b86d494353e6100715fbb4d9df8"
+      },
+      "pool_id": "m4-winners-r2",
+      "radius": 2,
+      "target_m": 4,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r2/candidates.jsonl",
+        "sha256": "7f9ca73d6d24627df29cf7dbffd82092fd5bac5732b802a58ed992b3a42fdc28"
+      },
+      "candidates_all_roots": 649,
+      "candidates_root_fixed": 649,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "4",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 9526,
+        "candidate_capped": 0,
+        "candidate_count": 649,
+        "depths": [
+          {
+            "accepted_paths": 573,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 25,
+            "path_capped": 0,
+            "raw_proposals": 594
+          },
+          {
+            "accepted_paths": 8953,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 561,
+            "path_capped": 0,
+            "raw_proposals": 20824
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 21418,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 649,
+        "seconds": 0.0660751,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m4-near2-r2/native-summary.json",
+        "sha256": "ebeb42793cac899a500477e7422cdd3300ac2ebf37bda2b4fbde60ee2116f585"
+      },
+      "ordered_keys_sha256": "1cab5551024c8c67933dc408bb19f7bed4498ebd9b3e2162011f7f4868c15df3",
+      "parent_count": 25,
+      "parent_maximum": 6,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m3-near2.jsonl",
+        "sha256": "0ad65130ef536a306f79c8f25a9fcb9c07e3d5fe682730e854b899130c0f6b66"
+      },
+      "pool_id": "m4-near2-r2",
+      "radius": 2,
+      "target_m": 4,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r2/candidates.jsonl",
+        "sha256": "12b45dccb19bd3be332727bcc27f8ac5b45658694da54cebcf3154d1d034afc6"
+      },
+      "candidates_all_roots": 1510,
+      "candidates_root_fixed": 636,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "5",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 1446,
+        "candidate_capped": 0,
+        "candidate_count": 1510,
+        "depths": [
+          {
+            "accepted_paths": 47,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 1,
+            "path_capped": 0,
+            "raw_proposals": 51
+          },
+          {
+            "accepted_paths": 1399,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 46,
+            "path_capped": 0,
+            "raw_proposals": 2887
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 2938,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 636,
+        "seconds": 0.0146757,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-winners-r2/native-summary.json",
+        "sha256": "bc58be0f5061de426ff3ad414ec7da7caa0e3c1f6a6efcebacbcd43ed69a6d5a"
+      },
+      "ordered_keys_sha256": "143f5f47ad686d129b4b1a24a84c4147115a34891b681f0fd201b52223937cc1",
+      "parent_count": 1,
+      "parent_maximum": 10,
+      "parent_score_gap": 0,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m4-winners.jsonl",
+        "sha256": "aca4419695573d13d33c6ff68856c54343cb2f0a45ef6733c2eb093fc66b1999"
+      },
+      "pool_id": "m5-winners-r2",
+      "radius": 2,
+      "target_m": 5,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    },
+    {
+      "candidate_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r2/candidates.jsonl",
+        "sha256": "c673e4dccdd30d51b7754300a462da24c5ac04749001a8a4efabd5fd3616ae8d"
+      },
+      "candidates_all_roots": 7634,
+      "candidates_root_fixed": 6745,
+      "command": [
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/native/complete_edit_pool",
+        "5",
+        "2",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r2/parent-keys.txt",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r2/native-candidates.tsv",
+        "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r2/native-summary.json",
+        "10000000"
+      ],
+      "completion_flags": {
+        "accepted_paths": 72753,
+        "candidate_capped": 0,
+        "candidate_count": 7634,
+        "depths": [
+          {
+            "accepted_paths": 2354,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 1,
+            "frontier_nodes": 48,
+            "path_capped": 0,
+            "raw_proposals": 2450
+          },
+          {
+            "accepted_paths": 70399,
+            "candidate_capped": 0,
+            "complete": 1,
+            "depth": 2,
+            "frontier_nodes": 2316,
+            "path_capped": 0,
+            "raw_proposals": 154757
+          }
+        ],
+        "deterministic": true,
+        "enumeration_complete": 1,
+        "interrupted": 0,
+        "k": null,
+        "path_capped": 0,
+        "raw_proposals": 157207,
+        "representation_capped": 0,
+        "root_fixed_candidate_count": 6745,
+        "seconds": 0.830039,
+        "supported_universe_complete": 1,
+        "window": "N/A: generation only"
+      },
+      "generation_complete": true,
+      "native_summary": {
+        "path": "out/family1-adaptiveness-20261026/edit/sealed-pools/m5-near2-r2/native-summary.json",
+        "sha256": "5fd561e592bafb225345f6fcb23c5af1bb0cb6efc4b32f184c079c3707928c51"
+      },
+      "ordered_keys_sha256": "8590d87986508dfb83cca2ee327519d0bb7893bcf575e9bcfcd1721552e218d7",
+      "parent_count": 48,
+      "parent_maximum": 10,
+      "parent_score_gap": 2,
+      "parent_source": {
+        "path": "out/family1-adaptiveness-20261026/edit/parents/m4-near2.jsonl",
+        "sha256": "1a0787a03a3105b4e313b05f8dffb8505fac16e87d82536d1a79c6c54c839f7a"
+      },
+      "pool_id": "m5-near2-r2",
+      "radius": 2,
+      "target_m": 5,
+      "validation": {
+        "all_tables_canonical": true,
+        "factorial_canonical_samples": 3,
+        "independent_python_full_two_edit_enumeration": true,
+        "native_completion_flags": true
+      }
+    }
+  ],
+  "randomness": false,
+  "reproduce": "python3 scripts/family1_adaptive_edit_benchmark.py --resume",
+  "schema": 1,
+  "scope": "Complete root-fixed edit paths of length <= radius, then optional accessible-root closure. All intermediates accessible. No score or target winning key enters generation.",
+  "source_files": [
+    {
+      "path": "scripts/family1_adaptive_edit_benchmark.py",
+      "sha256": "a62490e41c3cb20f8a9be3580f10f7d0cbc7633057ebd3442fc597fa21bf63f6"
+    },
+    {
+      "path": "scripts/family1_study.py",
+      "sha256": "dabe12fc4cfe4e1a99b7c51da43ba1d690e82924d6490ab4ec8f85d95c9d1fe0"
+    },
+    {
+      "path": "Family1EditSearch.cpp",
+      "sha256": "ecab69af89aef82469283d425f72b251d203e599953940e2eade35df323e9d8f"
+    },
+    {
+      "path": "Family1EditSearch.h",
+      "sha256": "7939e5941d330b51cc81f29bc949c2809a3f0977baad464f9e4474ac90bd978a"
+    },
+    {
+      "path": "Family1LargeGraph.cpp",
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    {
+      "path": "Family1LargeGraph.h",
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    }
+  ],
+  "target_truth_loaded_after_seal": true,
+  "truth_sources": [
+    {
+      "path": "results/family1-m1-m6/maximizers.jsonl",
+      "sha256": "725a372594274e67614efc8118a89d0736cdd01b2c7a3c054322b290edf679ee"
+    },
+    {
+      "path": "results/family1-m7/maximizers.jsonl",
+      "sha256": "d994b440f92b08949dfe76b39e396188028341460c7356b22a6fd65b9853526f"
+    }
+  ],
+  "window": "N/A: generation and exhaustive-label coverage only"
+}

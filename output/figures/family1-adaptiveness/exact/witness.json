@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "0001000200030203",
+  "m": 4,
+  "key": "0001000200030203",
+  "canonical_table": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "witness": [
+    "00110011",
+    "11000011"
+  ],
+  "first": "00110011",
+  "second": "11000011",
+  "length": 8,
+  "first_difference_position": 1,
+  "status": "verified-upper",
+  "minimality_certified": false,
+  "metric_definition": "D(i) = number of family DFAs whose endpoints after u[:i] and v[:i] differ",
+  "metric_counting": "all original 2^m static masks; coincident-port duplicates retain multiplicity",
+  "family_size": 16,
+  "search_parameters": {
+    "k": null,
+    "window_kind": "exact-oracle",
+    "alphabet": [
+      "0",
+      "1"
+    ],
+    "producer_k_known": false,
+    "beam_width": null,
+    "diagonal_width": null,
+    "unequal_width": null,
+    "prefix_pairs": null,
+    "prefix_depth": null,
+    "prefix_words": null,
+    "common_prefix_depth": null,
+    "max_length": null,
+    "expansion_cap": null,
+    "target_upper": null,
+    "deterministic": true,
+    "bootstrap_depth": null,
+    "bootstrap_width": null,
+    "startup_policy": null,
+    "advance_policy": null,
+    "expanded_nodes": 0
+  },
+  "verification": {
+    "method": "independent-scalar-complete-family-prefix-replay",
+    "dfa_count": 16,
+    "passed": true,
+    "D_empty": 0,
+    "D_final": 0
+  },
+  "trace": [
+    {
+      "length": 0,
+      "differing": 0,
+      "synchronized": 16
+    },
+    {
+      "length": 1,
+      "differing": 16,
+      "synchronized": 0
+    },
+    {
+      "length": 2,
+      "differing": 8,
+      "synchronized": 8
+    },
+    {
+      "length": 3,
+      "differing": 16,
+      "synchronized": 0
+    },
+    {
+      "length": 4,
+      "differing": 6,
+      "synchronized": 10
+    },
+    {
+      "length": 5,
+      "differing": 3,
+      "synchronized": 13
+    },
+    {
+      "length": 6,
+      "differing": 2,
+      "synchronized": 14
+    },
+    {
+      "length": 7,
+      "differing": 1,
+      "synchronized": 15
+    },
+    {
+      "length": 8,
+      "differing": 0,
+      "synchronized": 16
+    }
+  ],
+  "fixture": null,
+  "reference_H": 8,
+  "reference_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+    "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b",
+    "bytes": 512910
+  },
+  "gap": 0,
+  "source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/output/figures/family1-adaptiveness/exact-source.json",
+    "sha256": "59e890738e99bb897084a2d0661d6b48f4cd42434a3ed1d9f8a9a2e8ee5366ff",
+    "bytes": 1458
+  },
+  "generator": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/hard_pair_witness_figure.py",
+    "sha256": "70d79bdc8f7fcad4633594ad6fa74ddbe8be80c0b683221cdf78130b2d42a901",
+    "bytes": 18867
+  },
+  "graph_geometry_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/scripts/family1_graph_atlas.py",
+    "sha256": "d8eff86a3807cda394b793290260a7c737a9f01f6914d614dda7fe56975a57d7",
+    "bytes": 29393
+  }
+}

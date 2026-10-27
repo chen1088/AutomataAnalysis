@@ -1,0 +1,126 @@
+{
+  "compile_command": [
+    "g++",
+    "-std=c++23",
+    "-O3",
+    "-I",
+    "out/family1-finder-strategies-20261026/refine/final-prefix/evidence",
+    "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark.cpp",
+    "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1ExactPacked.cpp",
+    "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1LargeGraph.cpp",
+    "-o",
+    "out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark"
+  ],
+  "executable": {
+    "bytes": 163240,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark",
+    "sha256": "2f4bb9dccbebf7c211d0aa57f539e8f57d4b35d48d987fafb3149008301cc81e"
+  },
+  "input": {
+    "bytes": 1406,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/input.tsv",
+    "sha256": "08b302a6ff7934766271b40d3d0fca566185f1a5e126955a98c5b201851002b9"
+  },
+  "input_cases": {
+    "bytes": 9060,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/input-cases.jsonl",
+    "sha256": "d97acc1c176d50bdc2aff9bbdb4ed4cfe60fa81bfda0a9d636fcfeaa5cdd3442"
+  },
+  "max_catalog": 100000000,
+  "max_words": 100000000,
+  "modes": [
+    "deletion",
+    "mixed",
+    "edits4",
+    "tail16",
+    "prefix16"
+  ],
+  "query_fields": [
+    "graph key",
+    "actual found pair",
+    "input producing joint k"
+  ],
+  "randomness": false,
+  "runner": {
+    "bytes": 12144,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/runner.py",
+    "sha256": "258309134a1e18fa12e8f500526221153fcb0e0aa10039a5749d6bac38ce8cbe"
+  },
+  "schema": 1,
+  "sources": [
+    {
+      "original": {
+        "bytes": 21896,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/Family1PairRefine.h",
+        "sha256": "cb4a1e25fd2ad8b35fd26a5278c8bb3d9e86b436584e52fa791df209f4637e17"
+      },
+      "snapshot": {
+        "bytes": 21896,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefine.h",
+        "sha256": "cb4a1e25fd2ad8b35fd26a5278c8bb3d9e86b436584e52fa791df209f4637e17"
+      }
+    },
+    {
+      "original": {
+        "bytes": 4578,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/Family1ExactPacked.h",
+        "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+      },
+      "snapshot": {
+        "bytes": 4578,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1ExactPacked.h",
+        "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+      }
+    },
+    {
+      "original": {
+        "bytes": 20868,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/Family1ExactPacked.cpp",
+        "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+      },
+      "snapshot": {
+        "bytes": 20868,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1ExactPacked.cpp",
+        "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+      }
+    },
+    {
+      "original": {
+        "bytes": 1035,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/Family1LargeGraph.h",
+        "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+      },
+      "snapshot": {
+        "bytes": 1035,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1LargeGraph.h",
+        "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+      }
+    },
+    {
+      "original": {
+        "bytes": 5101,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/Family1LargeGraph.cpp",
+        "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+      },
+      "snapshot": {
+        "bytes": 5101,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1LargeGraph.cpp",
+        "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+      }
+    },
+    {
+      "original": {
+        "bytes": 8781,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/tests/Family1PairRefineBenchmark.cpp",
+        "sha256": "f8518799eec2fdc968efc098b23c8bfb13d4a6e8d7c64626f65562fb44a21974"
+      },
+      "snapshot": {
+        "bytes": 8781,
+        "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/final-prefix/evidence/Family1PairRefineBenchmark.cpp",
+        "sha256": "f8518799eec2fdc968efc098b23c8bfb13d4a6e8d7c64626f65562fb44a21974"
+      }
+    }
+  ],
+  "time_caps": false,
+  "truth_used_in_queries": false
+}

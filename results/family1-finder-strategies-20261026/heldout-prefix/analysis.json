@@ -1,0 +1,27 @@
+{
+  "portfolio": "min verified upper of scored original/compact and canonical deep/wide",
+  "joint_k": 4,
+  "strict_m6": {
+    "cases": 67,
+    "optimal": 48,
+    "within_two": 62,
+    "median_gap": 0,
+    "maximum_gap": 11,
+    "gap_histogram": {
+      "0": 48,
+      "1": 9,
+      "2": 5,
+      "3": 2,
+      "5": 2,
+      "11": 1
+    }
+  },
+  "m7": {
+    "cases": 47,
+    "misses": 0,
+    "verified_exclusions_upper_le33": 30,
+    "false_compatible_upper_ge34": 17,
+    "worst_gap_lower_bound_from_existing_upper": 12
+  },
+  "cost": "sum all four queries, preserve minimum bound"
+}

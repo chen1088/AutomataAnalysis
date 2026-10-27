@@ -1,0 +1,16 @@
+{
+  "all_configurations_and_candidates_completed": true,
+  "manifest": {
+    "bytes": 1896,
+    "path": "out/family1-adaptiveness-20261026/policy/m6/manifest.json",
+    "sha256": "d6e392c6c9c8364319e92d0eeb2f7df698bb6ae7f8a4e07370c4fd7d5cfaf487"
+  },
+  "records": [
+    {
+      "bytes": 168707495,
+      "path": "out/family1-adaptiveness-20261026/policy/m6/total-c2-k2/records.jsonl",
+      "sha256": "2f009bea53a25994cbcaf31524c7fb2073c10ea60e939c69a8b292a880758bdf"
+    }
+  ],
+  "target_truth_opened_during_scoring": false
+}

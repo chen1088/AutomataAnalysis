@@ -8,8 +8,19 @@
 \node[font=\large\bfseries] at (0,4.3) {Eight-state estimated leader};
 \node[font=\large] at (0,3.85) {$\widehat H=49\quad\text{(rough range }48\text{--}50\text{)}$};
 \node[inner sep=0pt] at (0,0) {\scalebox{1.2}{\input{graph-01.tex}}};
-\node[align=center,font=\small] at (0,-4.05) {Verified pair length: 50. Best estimated start(s): $\{0\}$.\\The shortest length is estimated; all arrows are unlabelled.};
+\node[align=center,font=\small] at (0,-4.05) {Verified upper pair length: 50; shortestness unproved.\\Best estimated start(s): $\{0\}$. All arrows are unlabelled.};
 \node[align=center,font=\small] at (0,-4.7) {Marked vertices are alternative starting states, chosen one at a time.\\Isomorphic rooted cases share one graph drawing.};
-\node[font=\scriptsize\ttfamily] at (0,-5.2) {01020003040501060003020705060407};
+\node[font=\small\ttfamily] at (0,-5.2) {u = 00001101101010101011000111100000011010010011100010};
+\node[font=\small\ttfamily] at (0,-5.65) {v = 00100011011010101011000111100000011010010011100010};
+\node[font=\small] at (0,-6.1) {Pair producer: common-suffix window; $k=\text{unknown}$. Beam/prefix settings unknown.};
+\node[font=\scriptsize] at (0,-6.55) {Separate refinement: completed common-suffix k=10,12; attempted k=16 (incomplete).};
+\node[font=\small] at (0,-7) {Pair above: representative start 0; all 256 original static masks replayed.};
+\node[font=\small] at (0,-7.35) {$D(i)$ counts different endpoints; $D(\epsilon,\epsilon)=0$. Agreement may be lost.};
+\draw[gray] (-4,-7.5) -- (-4,-8.5) -- (4,-8.5);
+\node[font=\tiny,anchor=east] at (-4,-7.5) {256};
+\node[font=\tiny,anchor=east] at (-4,-8.5) {0};
+\draw[blue!60!black,line width=.7pt] (-4.0000,-8.5000) -- (-3.8400,-8.5000) -- (-3.6800,-8.5000) -- (-3.5200,-7.5000) -- (-3.3600,-7.5000) -- (-3.2000,-7.7188) -- (-3.0400,-7.5625) -- (-2.8800,-7.5938) -- (-2.7200,-7.6602) -- (-2.5600,-7.5859) -- (-2.4000,-7.6289) -- (-2.2400,-7.6992) -- (-2.0800,-7.7695) -- (-1.9200,-7.8867) -- (-1.7600,-7.9688) -- (-1.6000,-8.0273) -- (-1.4400,-8.0859) -- (-1.2800,-8.1445) -- (-1.1200,-8.1680) -- (-0.9600,-8.1836) -- (-0.8000,-8.2148) -- (-0.6400,-8.2422) -- (-0.4800,-8.2578) -- (-0.3200,-8.2891) -- (-0.1600,-8.2930) -- (0.0000,-8.3086) -- (0.1600,-8.3242) -- (0.3200,-8.3438) -- (0.4800,-8.3516) -- (0.6400,-8.3594) -- (0.8000,-8.3828) -- (0.9600,-8.4023) -- (1.1200,-8.4141) -- (1.2800,-8.4180) -- (1.4400,-8.4180) -- (1.6000,-8.4180) -- (1.7600,-8.4258) -- (1.9200,-8.4297) -- (2.0800,-8.4336) -- (2.2400,-8.4375) -- (2.4000,-8.4375) -- (2.5600,-8.4414) -- (2.7200,-8.4453) -- (2.8800,-8.4570) -- (3.0400,-8.4609) -- (3.2000,-8.4727) -- (3.3600,-8.4766) -- (3.5200,-8.4805) -- (3.6800,-8.4922) -- (3.8400,-8.4961) -- (4.0000,-8.5000);
+\node[font=\scriptsize] at (0,-8.9) {Joint symbols read: $0\ldots 50$};
+\node[font=\scriptsize\ttfamily] at (0,-9.4) {01020003040501060003020705060407};
 \end{tikzpicture}
 \end{document}

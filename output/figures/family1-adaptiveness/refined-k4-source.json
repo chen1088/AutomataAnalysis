@@ -1,0 +1,324 @@
+{
+  "m": 4,
+  "key": "0001000200030203",
+  "canonical_table": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "status": "verified-upper",
+  "lower_bound": 1,
+  "upper_bound": 9,
+  "witness": [
+    "000111010",
+    "110111010"
+  ],
+  "k": 4,
+  "alphabet": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "startup": "divergence",
+  "common_depth": 2,
+  "score": "total",
+  "priority_coordinate_count": 0,
+  "dfa_count": 16,
+  "metric_definition": "number of original static-mask DFA coordinates with unequal endpoints",
+  "greedy_advance": "whole joint window block",
+  "deterministic": true,
+  "beam_width": 1,
+  "diagonal_width": 0,
+  "max_length": 80,
+  "unequal_width": 0,
+  "expansion_cap": 2000000,
+  "expanded_nodes": 5296,
+  "complete_windows": 28,
+  "partial_windows": 0,
+  "windows_refused": 0,
+  "visited_leaves": 4000,
+  "rounds": 28,
+  "expansion_limit_reached": false,
+  "length_limit_reached": true,
+  "beam_truncated": true,
+  "capped": true,
+  "interrupted": false,
+  "maximum_depth_visited": 9,
+  "divergent_leaves": 4000,
+  "diagonal_leaves": 0,
+  "attempts": 14,
+  "empty_root_attempts": 0,
+  "divergence_attempts": 14,
+  "divergence_starts_planned": 14,
+  "divergence_starts_skipped_by_length": 0,
+  "divergence_startup_evaluated_all": true,
+  "prefix_attempts": 0,
+  "target_upper": 0,
+  "target_upper_reached": false,
+  "prefix_pairs": 0,
+  "prefix_depth": 16,
+  "prefix_words": 65536,
+  "common_prefix_depth": 8,
+  "prefix_plan_generated": false,
+  "prefix_pairs_available": 0,
+  "prefix_words_evaluated": 0,
+  "prefix_completed_depth": 0,
+  "prefix_pair_capped": false,
+  "prefix_word_capped": false,
+  "prefix_permutation_coordinates": 0,
+  "prefix_seeds_skipped_by_length_cap": 0,
+  "accepted_positives_scalar_verified": 1,
+  "expansion_cap_scope": "per joint attempt",
+  "expansion_capped_attempts": 0,
+  "length_capped_attempts": 13,
+  "unequal_leaves": 3720,
+  "equivalent_leaves": 0,
+  "cross_pool_equivalent_leaves": 0,
+  "window_reports_truncated": 12,
+  "minimality_certified": false,
+  "static_masks_verified": 16,
+  "window_reports": [
+    {
+      "attempt": 7,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 7,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    },
+    {
+      "attempt": 8,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 8,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    },
+    {
+      "attempt": 9,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 9,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    },
+    {
+      "attempt": 10,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 10,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    },
+    {
+      "attempt": 11,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 11,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    },
+    {
+      "attempt": 12,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 12,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    },
+    {
+      "attempt": 13,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 13,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    },
+    {
+      "attempt": 14,
+      "span": 4,
+      "expected_leaves": 256,
+      "leaves": 256,
+      "nodes": 340,
+      "complete": true
+    },
+    {
+      "attempt": 14,
+      "span": 1,
+      "expected_leaves": 4,
+      "leaves": 4,
+      "nodes": 4,
+      "complete": true
+    }
+  ],
+  "witness_metric_trace": [
+    0,
+    16,
+    8,
+    6,
+    4,
+    3,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synchronized_count_trace": [
+    16,
+    0,
+    8,
+    10,
+    12,
+    13,
+    13,
+    14,
+    15,
+    16
+  ],
+  "first_difference_position": 1,
+  "winning_attempt": {
+    "kind": "divergence",
+    "number": 1,
+    "initial_length": 1,
+    "initial_first": "0",
+    "initial_second": "1",
+    "common_prefix": "",
+    "orientation": "01",
+    "first_difference_depth": 1,
+    "first_greedy_depth": 5
+  },
+  "round_trace_role": "winning-attempt",
+  "trace_attempt": 1,
+  "trace_initial_length": 1,
+  "trace_initial_D": 16,
+  "trace_initial_priority_D": 0,
+  "round_trace_records_truncated": 0,
+  "round_trace": [
+    {
+      "round": 1,
+      "parent_depth": 1,
+      "span": 4,
+      "endpoint_depth": 5,
+      "parent_count": 1,
+      "parents_expanded": 1,
+      "min_parent_D": 16,
+      "max_parent_D": 16,
+      "min_parent_priority_D": 0,
+      "max_parent_priority_D": 0,
+      "min_leaf_D": 3,
+      "retained_count": 1,
+      "min_retained_D": 3,
+      "max_retained_D": 3,
+      "selected_D": 3,
+      "selected_priority_D": 0,
+      "selected_first": "00011",
+      "selected_second": "11011",
+      "positive_found": false,
+      "positive_length": 0
+    },
+    {
+      "round": 2,
+      "parent_depth": 5,
+      "span": 4,
+      "endpoint_depth": 9,
+      "parent_count": 1,
+      "parents_expanded": 1,
+      "min_parent_D": 3,
+      "max_parent_D": 3,
+      "min_parent_priority_D": 0,
+      "max_parent_priority_D": 0,
+      "min_leaf_D": 0,
+      "retained_count": 0,
+      "min_retained_D": 0,
+      "max_retained_D": 0,
+      "selected_D": 0,
+      "selected_priority_D": 0,
+      "selected_first": "",
+      "selected_second": "",
+      "positive_found": true,
+      "positive_length": 9
+    }
+  ],
+  "reference_H": 8,
+  "reference_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-m8-challenger-20261026/target-full-cli-test/exact-4/records.jsonl",
+    "sha256": "2f22b57ef1be3a440009818eb274975e4cf37975ca61061d94ed6293dc3e009b",
+    "bytes": 512910
+  },
+  "gap": 1,
+  "native_query_source": {
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-adaptiveness-20261026/finder/total-c2-k4/records.jsonl",
+    "sha256": "36cdb663b1bb8ebe276851871e9f89e7bc566aebb5676ce412c7310d5fd631ad",
+    "bytes": 4898160
+  }
+}

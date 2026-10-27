@@ -1,0 +1,14 @@
+source,strategy,joint_k,beam,prefix_depth,prefix_pairs,cases,seed_ranking,found,matches_H,within_two,within_one,maximum_gap,joint_nodes
+prefix,k4-b1-total-p128,4,1,16,128,20,canonical,20,7,8,8,10,3095572
+prefix,k4-b1-permutation-p128,4,1,16,128,20,canonical,20,7,8,8,10,3051112
+prefix,k4-b4-permutation-p128,4,4,16,128,20,canonical,20,8,15,10,5,8105540
+prefix,k6-b1-permutation-p128,6,1,16,128,20,canonical,20,7,10,8,8,26389632
+prefix,k4-b1-permutation-p1024,4,1,16,1024,20,canonical,20,9,12,12,8,15779460
+prefix,k4-b4-permutation-p1024,4,4,16,1024,20,canonical,20,11,17,14,5,42488216
+prefix-wide,k4-b16-permutation-p512,4,16,16,512,20,canonical,20,12,17,15,5,99000744
+prefix-wide,k4-b64-permutation-p128,4,64,16,128,20,canonical,20,12,18,16,4,103595312
+prefix-wide,k3-b32-permutation-p1024,3,32,16,1024,20,canonical,20,12,18,16,5,110780416
+prefix-wide,k4-b8-permutation-p4096,4,8,16,4096,20,canonical,20,12,17,14,5,137496612
+prefix-deep,k4-b16-permutation-p1024,4,16,20,1024,20,canonical,20,13,18,17,4,155954512
+prefix-deep,k4-b64-permutation-p128,4,64,20,128,20,canonical,20,12,19,17,5,89565420
+final-calibration,exact24 + full-D/common-distance portfolio,4,16,20,512,20,portfolio,20,18,20,20,1,127612864

@@ -1,0 +1,57 @@
+{
+  "all_case_config_combinations_verified": true,
+  "cases_files": [
+    {
+      "bytes": 101118,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/cases.csv",
+      "sha256": "7b4a8c7d160a39bca21b0138638dabf077aa4bd5799ce4650afb3f197466db41"
+    }
+  ],
+  "decision_files": [
+    {
+      "bytes": 242466,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-decisions.csv",
+      "sha256": "db6b137faf80d9ceae02a7a0b7ce36e4acf576c316c154bb8dc266886b991ef6"
+    }
+  ],
+  "graph_queries": 220,
+  "historical_certificate_mask_replays": 4050,
+  "moments_files": [
+    {
+      "bytes": 749841,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-000.csv",
+      "sha256": "8d983d86d1d42fb60e71dc33ffc4e90ee2cb1ef0a6ce7493ceb874dcd51afbb3"
+    },
+    {
+      "bytes": 749637,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-001.csv",
+      "sha256": "afb452e167c8f39568afe170203e1348a0fe8ee878e57cc083edf1d0ed269976"
+    },
+    {
+      "bytes": 749780,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-002.csv",
+      "sha256": "6949fdd7fcee8c4b3d9ff16e8bfc6e36bbaf63128fd7583c25cd4b305ddf43af"
+    },
+    {
+      "bytes": 191857,
+      "path": "results/family1-adaptive-window-20261027/pilot-64/winning-window-moments-003.csv",
+      "sha256": "266569206288a040fdb853b7d77b590a99317d83c0b83a13f480f7e3c361826f"
+    }
+  ],
+  "moments_use_exact_integer_arithmetic": true,
+  "native_improvements_checked": 533,
+  "parent_metric_mask_comparisons": 212136,
+  "partial_windows": 0,
+  "passed": true,
+  "positive_and_improvement_mask_replays": 59220,
+  "positive_figures": 20,
+  "report_source": {
+    "bytes": 43684,
+    "path": "scripts/family1_adaptive_window_report.py",
+    "sha256": "afa36de78fac577bf3227d30d985d2161e7c60c188e413d3c0a750026c01f1b6"
+  },
+  "scalar_profile_mask_steps": 538940,
+  "source_and_executable_pins_checked": true,
+  "winning_decisions_checked": 2166,
+  "winning_window_moments_checked": 5842
+}

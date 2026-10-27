@@ -1,0 +1,144 @@
+{
+  "caps": {
+    "max_expansions_per_attempt": 2000000,
+    "max_length": 80
+  },
+  "case_count": 116,
+  "configurations": [
+    {
+      "beam": 16,
+      "catalogue": 16384,
+      "exact_depth": 16,
+      "fast": false,
+      "id": "original",
+      "joint_k": 4,
+      "prefix_depth": 20,
+      "prefix_words": 1048576,
+      "selected": 512
+    },
+    {
+      "beam": 16,
+      "catalogue": 4096,
+      "exact_depth": 16,
+      "fast": true,
+      "id": "compact",
+      "joint_k": 4,
+      "prefix_depth": 20,
+      "prefix_words": 1048576,
+      "selected": 512
+    }
+  ],
+  "input_cases": {
+    "bytes": 14620,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/input-cases.jsonl",
+    "sha256": "4724c6acd13e87a58fa9521b774a0244b831a569c60a08cc6cbcf6f5c879b325"
+  },
+  "native_executable": {
+    "bytes": 215560,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1ScoredSeedFastBenchmark",
+    "sha256": "881d2b8ac01ef49752f383b89bbb7ae79a9cc9f28699882c0330a9c34d06a467"
+  },
+  "query_fields": [
+    "graph key",
+    "fixed parameters"
+  ],
+  "randomness": false,
+  "schema": 1,
+  "scope": "held out from scored-seed strategy tuning, deliberately enriched frontier rather than full universes",
+  "source": {
+    "bytes": 171061,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/results/family1-neighbor-seeds/near-top.jsonl",
+    "sha256": "d23eb6d5626679355f86b9bcfe7325a830129d7fc58dd4963506c3c1b1e69b81"
+  },
+  "sources": [
+    {
+      "bytes": 4614,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1CliArtifacts.h",
+      "sha256": "42d99ccb98fa6093a604aa03c9c0f606028ebba3e917ccc725a796e7281924b1"
+    },
+    {
+      "bytes": 20868,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1ExactPacked.cpp",
+      "sha256": "dcd1be38c5915bf0c8d8bbf67c351703412bafa132ee3ee70176f7460b9d767d"
+    },
+    {
+      "bytes": 4578,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1ExactPacked.h",
+      "sha256": "7bdb0ad0b918270d328db4483b73f29c5eb9ed96459d4572af558498856aea5b"
+    },
+    {
+      "bytes": 6695,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1JointPair.h",
+      "sha256": "e21321806725611c87fb16475234f99e963628e96c85c50ce7b55dbce453a272"
+    },
+    {
+      "bytes": 2919,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1JointSeeds.h",
+      "sha256": "50b62dd9e9e277d9721187efa3a72b1d75bf68024ce1149e1650040f9dab715a"
+    },
+    {
+      "bytes": 5101,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1LargeGraph.cpp",
+      "sha256": "adf9e79c534429af88181597fd829d4eb7168593b3ca22f1361813c0c527db52"
+    },
+    {
+      "bytes": 1035,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1LargeGraph.h",
+      "sha256": "d462ca3502957420adcffc68ca999de031ea3caabdbcd1721c2404a1ca2a0721"
+    },
+    {
+      "bytes": 11177,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1PairAgreement.h",
+      "sha256": "25a0234a2f1db35dae15f5cfb039a3baca0fe3dcc916adcc08fd2c9bb946bd9c"
+    },
+    {
+      "bytes": 4439,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1ScoredSeedBenchmark.cpp",
+      "sha256": "632b3b0babadfa0589a357f92ca0825bd3c244ebd9be459de828f1fe795da6b4"
+    },
+    {
+      "bytes": 215560,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1ScoredSeedFastBenchmark",
+      "sha256": "881d2b8ac01ef49752f383b89bbb7ae79a9cc9f28699882c0330a9c34d06a467"
+    },
+    {
+      "bytes": 7672,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/Family1ScoredSeeds.h",
+      "sha256": "c55036a580f8dbd3bce9ade52fcf0b6c65038aa6487d7923384fe63486d48cd1"
+    },
+    {
+      "bytes": 22349,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/HardPairJointFinder.h",
+      "sha256": "0fa58c3b70a3240a6290d29de1437af763ad926e8d8e99990961d88077ab5641"
+    },
+    {
+      "bytes": 25240,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/HardPairPrefixSeeds.h",
+      "sha256": "a465d603f3465459345f93d8b2f3a8ac0dd5b9900813c125af13679f693bb7e9"
+    },
+    {
+      "bytes": 13315,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/driver.py",
+      "sha256": "ff56530acd188eeedf7f753b70d7c0b81f50e2401ce1cbf1947cdc47778a119d"
+    },
+    {
+      "bytes": 2247,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/original-source-manifest.json",
+      "sha256": "cb19667a359078670bc3456ff546779858f69b4a34670d08c9448b1d28cb4886"
+    },
+    {
+      "bytes": 12144,
+      "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/heldout/evidence/scalar-replay.py",
+      "sha256": "258309134a1e18fa12e8f500526221153fcb0e0aa10039a5749d6bac38ce8cbe"
+    }
+  ],
+  "strict_heldout_count": 114,
+  "time_limits": false,
+  "training_overlaps": 2,
+  "truth_used_in_queries": false,
+  "tuned_input": {
+    "bytes": 5269,
+    "path": "/mnt/c/Users/MacOS/Desktop/AutomataAnalysis/out/family1-finder-strategies-20261026/refine/scored-portfolio-input.json",
+    "sha256": "86a10b53de89ec0507954b1c7a9d63e99319c72900e126d9e48a3ce5abe8065d"
+  }
+}
