@@ -17,6 +17,7 @@ uses only 2^k extensions after distinct prefixes. Exact layers have k=N/A.
 | Executable | Method | Commands |
 |---|---|---|
 | Family1NearPair | Exact layers followed by full-D/common-distance starting pairs and joint k=4, beam 16 | [CLI guide](docs/family1-near-cli.md) |
+| Family1Certified | Union of complete seed closures, observer refinement, signature certificates and independently checked intervals | [Certified finder](docs/family1-certified-finder.md) |
 | Family1Joint | Full four-symbol block lookahead with explicit startup and beam controls | [Joint finder](docs/family1-joint.md) |
 | Family1Offline | Graph-edit runner with exact scoring or restricted common-suffix search | [Offline guide](docs/family1-offline.md) |
 

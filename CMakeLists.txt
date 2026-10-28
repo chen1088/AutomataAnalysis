@@ -22,6 +22,19 @@ add_executable(Family1Joint family1_joint.cpp)
 target_link_libraries(Family1Joint PRIVATE Family1OfflineCore)
 add_executable(Family1NearPair family1_near.cpp)
 target_link_libraries(Family1NearPair PRIVATE Family1OfflineCore)
+add_executable(Family1Certified family1_certified.cpp Family1Certified.cpp Family1Signatures.cpp)
+target_link_libraries(Family1Certified PRIVATE Family1OfflineCore)
+set(FAMILY1_CERTIFIED_COMPILE_FINGERPRINT "")
+foreach(FAMILY1_CERTIFIED_SOURCE IN ITEMS family1_certified.cpp Family1Certified.h Family1Certified.cpp
+        Family1Signatures.h Family1Signatures.cpp Family1CertifiedHeuristic.h HardPairJointFinder.h
+        Family1CliArtifacts.h Family1LargeGraph.h Family1LargeGraph.cpp)
+    file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/${FAMILY1_CERTIFIED_SOURCE}" FAMILY1_CERTIFIED_FILE_SHA256)
+    string(APPEND FAMILY1_CERTIFIED_COMPILE_FINGERPRINT "${FAMILY1_CERTIFIED_FILE_SHA256}\n")
+    set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/${FAMILY1_CERTIFIED_SOURCE}")
+endforeach()
+string(SHA256 FAMILY1_CERTIFIED_SOURCE_SHA256 "${FAMILY1_CERTIFIED_COMPILE_FINGERPRINT}")
+target_compile_definitions(Family1Certified PRIVATE FAMILY1_CERTIFIED_SOURCE_SHA256="${FAMILY1_CERTIFIED_SOURCE_SHA256}")
 set(FAMILY1_NEAR_COMPILE_SOURCES family1_near.cpp Family1NearPair.h Family1ScoredSeeds.h
     Family1JointPair.h Family1JointSeeds.h HardPairJointFinder.h HardPairPrefixSeeds.h
     Family1ExactPacked.h Family1ExactPacked.cpp Family1LargeGraph.h Family1LargeGraph.cpp
@@ -36,17 +49,18 @@ endforeach()
 string(SHA256 FAMILY1_NEAR_SOURCE_SHA256 "${FAMILY1_NEAR_COMPILE_FINGERPRINT}")
 target_compile_definitions(Family1NearPair PRIVATE FAMILY1_NEAR_SOURCE_SHA256="${FAMILY1_NEAR_SOURCE_SHA256}")
 if(MSVC)
-    set_property(TARGET Family1OfflineCore Family1Offline Family1Joint Family1NearPair PROPERTY
+    set_property(TARGET Family1OfflineCore Family1Offline Family1Joint Family1NearPair Family1Certified PROPERTY
         MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
-    set_target_properties(Family1OfflineCore Family1Offline Family1Joint Family1NearPair PROPERTIES
+    set_target_properties(Family1OfflineCore Family1Offline Family1Joint Family1NearPair Family1Certified PROPERTIES
         VS_GLOBAL_VcpkgEnabled "false" VS_GLOBAL_VcpkgEnableManifest "false")
 endif()
-install(TARGETS Family1Offline Family1Joint Family1NearPair RUNTIME DESTINATION .)
+install(TARGETS Family1Offline Family1Joint Family1NearPair Family1Certified RUNTIME DESTINATION .)
 include(CTest)
 if(BUILD_TESTING)
     add_test(NAME family1-offline-help COMMAND Family1Offline --help)
     add_test(NAME family1-joint-help COMMAND Family1Joint --help)
     add_test(NAME family1-near-help COMMAND Family1NearPair --help)
+    add_test(NAME family1-certified-help COMMAND Family1Certified --help)
     add_executable(Family1NearPairIndependent tests/Family1NearPairIndependent.cpp)
     target_link_libraries(Family1NearPairIndependent PRIVATE Family1OfflineCore)
     add_test(NAME family1-near-independent COMMAND Family1NearPairIndependent)
@@ -97,6 +111,10 @@ if(BUILD_TESTING)
     endif()
     find_program(FAMILY1_JOINT_PYTHON NAMES python3 python)
     if(FAMILY1_JOINT_PYTHON)
+        add_test(NAME family1-certified-cli COMMAND "${FAMILY1_JOINT_PYTHON}"
+            "${CMAKE_CURRENT_SOURCE_DIR}/tests/family1_certified_test.py"
+            --exe $<TARGET_FILE:Family1Certified>)
+        set_tests_properties(family1-certified-cli PROPERTIES TIMEOUT 180)
         add_test(NAME family1-near-cli COMMAND "${FAMILY1_JOINT_PYTHON}"
             "${CMAKE_CURRENT_SOURCE_DIR}/tests/family1_near_cli_test.py"
             --exe $<TARGET_FILE:Family1NearPair>)
